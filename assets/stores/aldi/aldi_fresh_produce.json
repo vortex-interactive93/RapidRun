@@ -1,0 +1,2484 @@
+﻿[
+    {
+        "id":  "aldi_fruit_1",
+        "name":  "Bananas",
+        "brand":  "ALDI",
+        "price":  0.16,
+        "unit":  "$0.49 / lb",
+        "unitShort":  "$0.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f391b17e-67cc-4753-b589-39e68bde6382.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Bananas are a versatile kitchen staple. Perfect for blending into smoothies, topping cereal, or enjoying as a quick snack. Their natural sweetness and creamy texture make them a favorite for baking desserts or adding to lunchboxes. Stock up on these potassium-rich fruits and taste the difference in every bite.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_2",
+        "name":  "Mandarin Oranges",
+        "brand":  "ALDI",
+        "price":  3.19,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8dd1e7c6-a219-49c9-9ffd-79991639939f.jpeg",
+        "aisle":  "Fruits",
+        "description":  "Juicy, citrusy sweet oranges packed with immune-boosting Vitamin C. Easy to peel and perfect for lunchboxes, fresh morning juice, or healthy snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_3",
+        "name":  "Golden Kiwi",
+        "brand":  "ALDI",
+        "price":  4.39,
+        "unit":  "1 lb container",
+        "unitShort":  "1 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_07a173a7-faa5-4a6e-a802-cd3223b2d3ed.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Golden Kiwi from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_4",
+        "name":  "Green Grapes",
+        "brand":  "ALDI",
+        "price":  3.58,
+        "unit":  "$1.59 / lb",
+        "unitShort":  "$1.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_33c80776-8c65-4394-a317-31a8a92c0f75.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_5",
+        "name":  "Plums",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7b528baf-ff47-4ae5-9d34-def51bb8a64f.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Plums from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_6",
+        "name":  "Red Grapes",
+        "brand":  "ALDI",
+        "price":  3.35,
+        "unit":  "$1.49 / lb",
+        "unitShort":  "$1.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_df21f925-4691-4f9d-97a6-040b0dd79be9.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_1",
+        "name":  "Mini Sweet Peppers",
+        "brand":  "ALDI",
+        "price":  2.89,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_47d31bcd-2f4b-40a3-8907-c636a1f9c53e.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Indulgent, delicious Mini Sweet Peppers from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_7",
+        "name":  "Strawberries",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9f136b30-e243-4ea1-920b-49752d5ab66f.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Juicy, vibrant red fresh strawberries packed with natural sweetness and Vitamin C. Ideal for fresh snacking, tossing into summer salads, blending into morning smoothies, or layering over yogurt and desserts.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_8",
+        "name":  "Pineapple, each",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "1 ct",
+        "unitShort":  "1 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_51807dec-db9b-426f-b131-52a752a18c37.jpeg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_2",
+        "name":  "Sweet Potatoes",
+        "brand":  "ALDI",
+        "price":  2.49,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aa885e7f-92fe-4e48-b101-0448b199694d.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_9",
+        "name":  "Cherub Grape Tomatoes",
+        "brand":  "ALDI",
+        "price":  2.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bd7b44f0-6aba-47e7-b491-adb5745d6e60.png",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_10",
+        "name":  "Specially Selected Cara Cara Oranges",
+        "brand":  "Specially Selected",
+        "price":  3.69,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_36247d55-066d-4a5b-b297-38dfcefa4f2b.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Juicy, citrusy sweet oranges packed with immune-boosting Vitamin C. Easy to peel and perfect for lunchboxes, fresh morning juice, or healthy snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_11",
+        "name":  "Limes, each",
+        "brand":  "ALDI",
+        "price":  0.19,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1a1249e1-4787-4aac-ab09-bf587c8c35d5.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Limes, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_3",
+        "name":  "Radishes",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0c2cc9eb-033e-4983-9221-b45ab9aa1d36.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Radishes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_12",
+        "name":  "Bartlett Pears",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3b4143f8-8a5c-4c4e-bc92-89bd016b55e8.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Bartlett Pears from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_13",
+        "name":  "Nectarines",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3e7808a1-c778-48d8-b78b-06f18faf6e1f.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Nectarines from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_14",
+        "name":  "Kiwi",
+        "brand":  "ALDI",
+        "price":  4.19,
+        "unit":  "1 container",
+        "unitShort":  "1 container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5b62415b-e0e5-49a7-a63e-3b23659e3013.jpeg",
+        "aisle":  "Ambient Produce",
+        "description":  "Kiwi from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_4",
+        "name":  "Russet Potatoes",
+        "brand":  "ALDI",
+        "price":  3.59,
+        "unit":  "10 lb",
+        "unitShort":  "10 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_63f6747a-46d2-43e6-8b96-f0046821aeac.jpeg",
+        "aisle":  "Ambient Produce",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_5",
+        "name":  "Sweet Onions",
+        "brand":  "ALDI",
+        "price":  2.19,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b2de728d-b274-4a2a-9cc8-b1cca023f16f.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_6",
+        "name":  "Green Onions",
+        "brand":  "ALDI",
+        "price":  1.05,
+        "unit":  "5.5 oz",
+        "unitShort":  "5.5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_16fdb0b9-0692-4ead-bda0-7572be4832f8.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_7",
+        "name":  "Fresh Whole Carrots",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "2 lb container",
+        "unitShort":  "2 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b8f42694-c952-4a09-afd8-ea180d4d6abe.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Fresh Whole Carrots from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_8",
+        "name":  "Brussels Sprouts",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6e5ea46a-15aa-48af-b544-31de90856c5f.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Brussels Sprouts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_15",
+        "name":  "Honeycrisp Apples, Bag",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e29c40c9-1491-4457-b4a9-b9cbd78e03db.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_16",
+        "name":  "Raspberries",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1fc8c8b6-a4b4-49b8-a069-58f781b42176.jpg",
+        "aisle":  "Produce",
+        "description":  "Raspberries from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_9",
+        "name":  "Mini Cucumbers",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4bf679f4-6d54-452b-86e4-2549ba72daf2.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Mini Cucumbers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_17",
+        "name":  "Navel Oranges, Bag",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_85949630-f394-4673-a5aa-e44d6c333272.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Juicy, citrusy sweet oranges packed with immune-boosting Vitamin C. Easy to peel and perfect for lunchboxes, fresh morning juice, or healthy snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_10",
+        "name":  "Cilantro Bunch, each",
+        "brand":  "ALDI",
+        "price":  0.45,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9f825713-4389-462f-9424-bb56c39fd835.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Cilantro Bunch, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_11",
+        "name":  "Fresh Green Asparagus",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "$3.29 / lb",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d31464b8-f5e5-45f4-8459-0b77ffe4ead1.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Fresh Green Asparagus from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_12",
+        "name":  "Celery, each",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "1 lb container",
+        "unitShort":  "1 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fc59f9c4-8b81-4ca4-8804-4c8f69e506a7.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Celery, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_13",
+        "name":  "Cucumber, each",
+        "brand":  "ALDI",
+        "price":  0.49,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_62a91f78-883e-4900-8534-79c9d8ff0c90.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Cucumber, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_18",
+        "name":  "Organic Pears",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e3a44dc8-b0e2-46a1-b6e5-e6027625866b.jpg",
+        "aisle":  "Fruits",
+        "description":  "Organic Pears from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_19",
+        "name":  "Blackberries",
+        "brand":  "ALDI",
+        "price":  1.79,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_32cfc106-82ee-4848-afd6-327702583c22.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Blackberries from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_14",
+        "name":  "Organic Baby Peeled Carrots",
+        "brand":  "ALDI",
+        "price":  1.79,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6b12283d-2fd0-4c20-8f59-55fdb2d15f25.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Organic Baby Peeled Carrots from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_20",
+        "name":  "Cantaloupe, each",
+        "brand":  "ALDI",
+        "price":  2.89,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c414b16b-6d4d-407f-9d41-5336ce4a1291.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Cantaloupe, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_21",
+        "name":  "Organic Blueberries",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "1 lb container",
+        "unitShort":  "1 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8a88e0ad-8ea5-4123-ad0b-75cb6783d2b8.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_15",
+        "name":  "Baby Bella Mushrooms",
+        "brand":  "ALDI",
+        "price":  1.69,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_08e97643-d81b-4bb8-b9a6-5ce8a4d1d2e8.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Baby Bella Mushrooms from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_16",
+        "name":  "Red Onions",
+        "brand":  "ALDI",
+        "price":  2.19,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7db57d51-a00f-47eb-ae9e-735eee1961f7.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_17",
+        "name":  "Specially Selected French Green Beans",
+        "brand":  "Specially Selected",
+        "price":  2.89,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9b0c575a-3392-4b55-95c5-4a03667b8405.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Specially Selected French Green Beans from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_18",
+        "name":  "Sugar Snap Peas",
+        "brand":  "ALDI",
+        "price":  2.49,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5fbaac94-012e-4958-ac26-8a179419810d.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Sugar Snap Peas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_19",
+        "name":  "Fresh Yellow Onions",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8358efdb-de1f-42cd-abb0-60910a55f5ad.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_22",
+        "name":  "Mango, each",
+        "brand":  "ALDI",
+        "price":  0.85,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_03a42665-f62a-487c-ae9d-25eba01e40ff.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Mango, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_1",
+        "name":  "Little Salad Bar Mango Slices",
+        "brand":  "Little Salad Bar",
+        "price":  5.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8abaa22d-9f1f-4c90-a64e-8b45623b5e9f.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_20",
+        "name":  "Organic Romaine Hearts",
+        "brand":  "ALDI",
+        "price":  4.19,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_510e0ab6-a406-45ad-97d1-510a99561077.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Organic Romaine Hearts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_21",
+        "name":  "Garlic",
+        "brand":  "ALDI",
+        "price":  1.49,
+        "unit":  "3 ct",
+        "unitShort":  "3 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a2873ba4-d733-4dd1-b82d-58f9244a98ac.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Garlic from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_23",
+        "name":  "Gala Apples",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_37ad0bef-cccd-4e81-8c48-b95f9a534b0c.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_2",
+        "name":  "Little Salad Bar Spinach",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1cd1dc00-1085-450b-93b0-0a0b77911e9a.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_24",
+        "name":  "Seedless Lemons",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_81cf7cbc-ea98-4211-b23c-2ded50c13bd5.png",
+        "aisle":  "Ambient Produce",
+        "description":  "Seedless Lemons from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_22",
+        "name":  "Beefsteak Tomatoes",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7a913e6-149c-4d6e-836f-00875e28a913.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_23",
+        "name":  "Fresh Sliced White Mushrooms",
+        "brand":  "ALDI",
+        "price":  1.59,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b1775a35-ea39-45da-83ec-0e45acd4ec97.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Fresh Sliced White Mushrooms from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_25",
+        "name":  "Specially Selected Imperial Red Seedless Grapes",
+        "brand":  "Specially Selected",
+        "price":  4.99,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_434cfb84-935b-4855-9344-d01b5a675ae0.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_24",
+        "name":  "Broccoli Crowns",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "$1.89 / lb",
+        "unitShort":  "$1.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0ecedf2d-0cc2-44fc-b218-2ce5259ccae4.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Broccoli Crowns, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_25",
+        "name":  "Snacking Tomatoes on the Vine",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "1 lb container",
+        "unitShort":  "1 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_691368bf-150e-4fbb-8ab6-aa42c60d1114.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_26",
+        "name":  "Seedless Cucumber, ea",
+        "brand":  "ALDI",
+        "price":  0.95,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_937c8e69-bdbe-457a-bcfe-a6931c9e509e.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Seedless Cucumber, ea from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_27",
+        "name":  "Romaine Lettuce Hearts",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "3 ct",
+        "unitShort":  "3 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_740818ce-4057-42fe-adef-0989413548e5.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Romaine Lettuce Hearts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_28",
+        "name":  "Kabocha Squash",
+        "brand":  "ALDI",
+        "price":  1.34,
+        "unit":  "$0.89 / lb",
+        "unitShort":  "$0.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e35158d9-e530-4b06-895a-a0c90b80a79b.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Kabocha Squash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_29",
+        "name":  "Ginger Root",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5fa7cdd9-ffcd-49fc-8114-f517bfb708a5.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Ginger Root from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_30",
+        "name":  "Freshire Farms Green Peppers",
+        "brand":  "ALDI",
+        "price":  2.15,
+        "unit":  "3 ct",
+        "unitShort":  "3 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4bf258e5-0fe5-41f3-bffa-5e4f4085b3d0.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Freshire Farms Green Peppers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_31",
+        "name":  "Gourmet Medley Tomatoes",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_62f5ab88-c23d-4c58-819e-1a6dfa0f5525.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_26",
+        "name":  "Peaches",
+        "brand":  "ALDI",
+        "price":  0.79,
+        "unit":  "$2.39 / lb",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_201d73ae-46bb-44e8-9606-a2375fe7fd48.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Peaches from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_27",
+        "name":  "Fresh Organic Strawberries",
+        "brand":  "ALDI",
+        "price":  4.19,
+        "unit":  "1 lb container",
+        "unitShort":  "1 lb container",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_34e46cbd-cb43-412a-a2ab-5cdff645314a.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Juicy, vibrant red fresh strawberries packed with natural sweetness and Vitamin C. Ideal for fresh snacking, tossing into summer salads, blending into morning smoothies, or layering over yogurt and desserts.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_28",
+        "name":  "Fuji Apples",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9f22d2c7-13a8-443d-982b-27bf87c57982.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_3",
+        "name":  "Everything Chopped Salad",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "11.57 oz",
+        "unitShort":  "11.57 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8f8303c7-fbbd-4914-aa0d-dd3a4112b5c4.png",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_29",
+        "name":  "Organic Gala Apples",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fb4f0071-82d9-4e25-aa18-5c30446effda.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_32",
+        "name":  "White Mushrooms",
+        "brand":  "ALDI",
+        "price":  1.49,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7833b2b3-486b-44c7-9026-a23bdb21fde4.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "White Mushrooms from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_33",
+        "name":  "Tanimura \u0026 Antle Green Leaf Hydroponic Lettuce",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9cd6c98b-0643-41d7-8c4b-937e1d96d20d.png",
+        "aisle":  "Produce Mdu",
+        "description":  "Tanimura \u0026 Antle Green Leaf Hydroponic Lettuce from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_4",
+        "name":  "Little Salad Bar Pineapple Spears",
+        "brand":  "Little Salad Bar",
+        "price":  3.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7af7a424-f55f-42e5-9188-f179171bb54f.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_30",
+        "name":  "Organic Green Grapes",
+        "brand":  "ALDI",
+        "price":  4.89,
+        "unit":  "2 lb bunch",
+        "unitShort":  "2 lb bunch",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7741bd54-d676-47e4-9a40-32d2caad5d67.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_31",
+        "name":  "Organic Blackberries",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ab77e1e8-ac2b-4029-bbbc-de4407759198.jpg",
+        "aisle":  "Produce",
+        "description":  "Organic Blackberries from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_5",
+        "name":  "Little Salad Bar Classic Coleslaw",
+        "brand":  "Little Salad Bar",
+        "price":  1.65,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e514217c-e1d4-4726-bde0-d01b130f3fd6.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_32",
+        "name":  "Organic Avocados",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "4 ct",
+        "unitShort":  "4 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2b8a2126-014e-4ebc-a84e-8c2853c4f130.jpg",
+        "aisle":  "Fruits",
+        "description":  "Rich, creamy fresh avocados loaded with healthy fats and fiber. Essential for fresh guacamole, sliced over toast, or topping salads and tacos.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_33",
+        "name":  "Organic Organic Bananas",
+        "brand":  "ALDI",
+        "price":  0.22,
+        "unit":  "$0.68 / lb",
+        "unitShort":  "$0.68 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b21f6405-754d-4a4b-80c2-a0b99e10eb61.jpeg",
+        "aisle":  "Ambient Produce",
+        "description":  "Bananas are a versatile kitchen staple. Perfect for blending into smoothies, topping cereal, or enjoying as a quick snack. Their natural sweetness and creamy texture make them a favorite for baking desserts or adding to lunchboxes. Stock up on these potassium-rich fruits and taste the difference in every bite.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_34",
+        "name":  "Pink Lady Apples",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1fbf8bd3-fe6a-4ed3-a8d2-f1b1c616a2c8.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_35",
+        "name":  "Organic Red Grapes",
+        "brand":  "ALDI",
+        "price":  4.89,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e3fb784c-6a08-48df-a6e2-72ec5a7a0c88.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_34",
+        "name":  "Bite Size Medley Potatoes",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_117f816f-de34-4c36-a3c1-690a3bdca688.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_6",
+        "name":  "Little Salad Bar Sweet Onion Vinaigrette Sunflower Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f656939f-09b9-42fb-9909-28b4a0d6cf72.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_35",
+        "name":  "Iceberg Lettuce, each",
+        "brand":  "ALDI",
+        "price":  1.89,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5fc53b45-8f3e-4929-b53c-4eb66437cb01.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Iceberg Lettuce, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_36",
+        "name":  "White Onions",
+        "brand":  "ALDI",
+        "price":  2.19,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_61d0dc2d-b961-4f11-aebc-901a49877fc7.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_7",
+        "name":  "Little Salad Bar Sweet Kale Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12.2 oz",
+        "unitShort":  "12.2 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7b50e4bc-7c48-4c5a-ae1d-0be6725eaf92.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_8",
+        "name":  "Simply Nature Organic Non-GMO Chopped Kale",
+        "brand":  "Simply Nature Organic",
+        "price":  3.49,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3e327ad7-0dfd-403c-9e42-fbe475b9ac4e.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_36",
+        "name":  "Organic Raspberries",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b59a373a-b6e1-46f9-892a-74dbdf424453.jpg",
+        "aisle":  "Produce",
+        "description":  "Organic Raspberries from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_9",
+        "name":  "Little Salad Bar Spring Mix",
+        "brand":  "Little Salad Bar",
+        "price":  2.39,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dd894ecd-592c-45a0-be0d-ebb8076c9aef.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_37",
+        "name":  "Parsley, each",
+        "brand":  "ALDI",
+        "price":  0.95,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a51183e3-f267-42f5-a592-5fe46e1e7b0a.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Parsley, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_37",
+        "name":  "Red Delicious Apples",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_63392d0c-d24d-476d-b25e-5e6ae805ada3.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_10",
+        "name":  "Little Salad Bar Watermelon Spears",
+        "brand":  "Little Salad Bar",
+        "price":  3.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56116e1c-5e47-4abd-a277-6dca7e2de66b.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_11",
+        "name":  "Little Salad Bar Garden Salad",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7e7749f7-4193-4845-92c0-dfe8527a5b7a.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_38",
+        "name":  "Granny Smith Apples, Bag",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "3 lb",
+        "unitShort":  "3 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_58fa8076-833c-4f15-b863-96b99b64b666.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_39",
+        "name":  "Honeycrisp Apples",
+        "brand":  "ALDI",
+        "price":  1.42,
+        "unit":  "$1.89 / lb",
+        "unitShort":  "$1.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb1142eb-18dd-4abd-9462-b51330880a2c.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_38",
+        "name":  "Simply Nature Organic Spring Mix",
+        "brand":  "Simply Nature Organic",
+        "price":  4.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7e79dcbe-2f63-4f5f-ba55-117649a86806.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Simply Nature Organic Spring Mix from Simply Nature. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_12",
+        "name":  "Simply Nature Organic Mixed Greens",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bf34634b-307c-4753-9ef3-703b8d9a01da.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_13",
+        "name":  "Simply Nature Organic Arugula and Spinach Mix",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c0a1b94b-29ec-4d03-bf92-779fdca78a01.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_40",
+        "name":  "Apples",
+        "brand":  "ALDI",
+        "price":  1.42,
+        "unit":  "$1.89 / lb",
+        "unitShort":  "$1.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_17a6528f-3e5b-44e8-8ce1-297f3fa78085.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_39",
+        "name":  "Poblano Peppers, Package",
+        "brand":  "ALDI",
+        "price":  1.45,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6f5753a7-bcb1-4dd6-bdd1-90c0235f7aca.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Poblano Peppers, Package from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_14",
+        "name":  "Little Salad Bar Sweet Butter Salad",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8a6b7e88-6fc7-4812-9f9c-5d7ae3e02174.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_40",
+        "name":  "Cabbage",
+        "brand":  "ALDI",
+        "price":  2.25,
+        "unit":  "$0.75 / lb",
+        "unitShort":  "$0.75 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_76a9920d-363f-4b13-9bfd-333bbc03cdbd.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Cabbage, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_15",
+        "name":  "Little Salad Bar Caesar Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.79,
+        "unit":  "10.5 oz",
+        "unitShort":  "10.5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_12a2cf22-074a-44a2-a3f1-d6ea3fd85de3.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_16",
+        "name":  "Maple Bourbon Bacon Salad Kit",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "12.8 oz",
+        "unitShort":  "12.8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_07041b7d-44ee-4063-b73f-e419ed6aa1a4.png",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_41",
+        "name":  "Chayote Squash",
+        "brand":  "ALDI",
+        "price":  0.89,
+        "unit":  "1 ct",
+        "unitShort":  "1 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_82b67645-86c8-4fd4-8915-d4a8cb4b2473.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Chayote Squash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_42",
+        "name":  "Organic Broccoli",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "1 ct",
+        "unitShort":  "1 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e910f71e-1be5-4ccf-9773-a1989257a076.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Organic Broccoli from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_17",
+        "name":  "Little Salad Bar Southwest Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c6d8ce1c-bd71-43ab-a9b9-afffff88663c.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_18",
+        "name":  "Little Salad Bar Santa Fe Style Salad Bowl",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "7.05 oz",
+        "unitShort":  "7.05 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb87c7b8-9db6-4a25-b7ea-0d1257939982.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_19",
+        "name":  "Little Salad Bar Caesar Chop Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "11.15 oz",
+        "unitShort":  "11.15 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bea57336-7a56-4243-9493-6cedda94ed5f.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_44",
+        "name":  "Little Yellows Fresh Potatoes",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_14d37590-162c-43ad-b546-86cb661a30df.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_45",
+        "name":  "Freshire Farms Jalapeno Peppers",
+        "brand":  "ALDI",
+        "price":  0.49,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13b38fc3-75ea-4ee9-98d7-332170e96e33.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Freshire Farms Jalapeno Peppers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_20",
+        "name":  "Little Salad Bar Asian Chopped Salad Kit with Sesame Dressing",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13433ea2-b51f-4dce-af56-3235ceadd6cb.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_21",
+        "name":  "Little Salad Bar Chicken Caesar Salad with Parmesan \u0026 Caesar Dressing",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "6.25 oz",
+        "unitShort":  "6.25 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc331c29-d616-4d3c-8285-333715997766.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_41",
+        "name":  "Organic Gala Apples",
+        "brand":  "ALDI",
+        "price":  2.97,
+        "unit":  "$0.99 / lb",
+        "unitShort":  "$0.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_68031fce-0e06-4e92-8e9c-f1cdb6890433.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_42",
+        "name":  "Cosmic Crisp Apples",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cb2222a3-74d6-4dbd-8566-37cc52ba24ca.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_43",
+        "name":  "Organic Cherub Grape Tomatoes",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1b98858f-c621-4619-8a47-47fbda75d297.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_46",
+        "name":  "Stonemill Thyme",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "0.75 oz",
+        "unitShort":  "0.75 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_54a868b7-1e0b-44b4-9ac4-1797b492be71.jpg",
+        "aisle":  "Processed Foods",
+        "description":  "Stonemill Thyme from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_22",
+        "name":  "Little Salad Bar Cantaloupe Chunks",
+        "brand":  "Little Salad Bar",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_90603464-5b43-4295-b470-efa0f7e560c8.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_47",
+        "name":  "Baking Potatoes",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1f89b23c-673b-4321-99fc-45185d9c30de.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_44",
+        "name":  "Specially Selected Autumn Crisp Grapes",
+        "brand":  "Specially Selected",
+        "price":  4.99,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b47f1fc2-64d9-42a8-aea6-4e19e9229bf9.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, refreshing seedless grapes bursting with natural sweetness. A convenient, healthy snack for kids and adults alike.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_23",
+        "name":  "Simply Nature Organic Baby Spinach",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4a63f3c3-65c4-4d66-a32f-8e9f72a43223.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_48",
+        "name":  "Plantains, each",
+        "brand":  "ALDI",
+        "price":  0.49,
+        "unit":  null,
+        "unitShort":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d34b255a-4875-4dbb-b62e-126aee90627d.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Plantains, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_49",
+        "name":  "Red Potatoes",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_67cd07df-9969-444d-8764-dd0730e5ddb6.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_45",
+        "name":  "Lemons",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6ca251e5-109b-43c2-9bdf-772a7abffdc3.jpg",
+        "aisle":  "Fruits",
+        "description":  "Lemons from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_46",
+        "name":  "Peaches",
+        "brand":  "ALDI",
+        "price":  2.98,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2ca0996d-9c56-4c93-8e09-1c42e95760c9.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Peaches from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_47",
+        "name":  "Key Limes, Bag",
+        "brand":  "ALDI",
+        "price":  2.49,
+        "unit":  "1 ct",
+        "unitShort":  "1 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_80007dbd-da50-4d07-992f-0b7f63033658.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Key Limes, Bag from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_50",
+        "name":  "Organic Celery Hearts",
+        "brand":  "ALDI",
+        "price":  2.59,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_71accbc6-8072-4e16-8b20-fc43d03333cb.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Organic Celery Hearts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_51",
+        "name":  "Tomatoes on the Vine, Loose",
+        "brand":  "ALDI",
+        "price":  2.84,
+        "unit":  "$1.89 / lb",
+        "unitShort":  "$1.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_75068ae6-6ba0-4376-af36-ef1b01b7b608.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_48",
+        "name":  "Jumbo Avocados",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "1 ct",
+        "unitShort":  "1 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4db5d984-bca3-4b45-97ed-772d680de76c.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Rich, creamy fresh avocados loaded with healthy fats and fiber. Essential for fresh guacamole, sliced over toast, or topping salads and tacos.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_52",
+        "name":  "Broccoli Florets",
+        "brand":  "ALDI",
+        "price":  2.29,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea44762d-e1f6-44d5-be1d-127e884a6d7f.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Broccoli Florets from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_53",
+        "name":  "Simply Nature Organic Zucchini",
+        "brand":  "Simply Nature Organic",
+        "price":  3.58,
+        "unit":  "$2.39 / lb",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e99f9723-2d05-438c-8d82-756459abfef1.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Simply Nature Organic Zucchini, per lb from Simply Nature. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_49",
+        "name":  "Personal Seedless Watermelon",
+        "brand":  "ALDI",
+        "price":  4.19,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1cf5ee7f-e173-49fe-a87d-6758f3045aba.jpg",
+        "aisle":  "Fruits",
+        "description":  "Refreshing, delicious Personal Seedless Watermelon from ALDI. Perfect for staying hydrated and quenched throughout the day.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_55",
+        "name":  "Freshire Farms Zucchini, Package",
+        "brand":  "ALDI",
+        "price":  1.94,
+        "unit":  "$1.29 / lb",
+        "unitShort":  "$1.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_30c63008-c781-40f2-86a3-376ce8ea0879.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Freshire Farms Zucchini, Package from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_56",
+        "name":  "Fresh Spaghetti Squash",
+        "brand":  "ALDI",
+        "price":  2.67,
+        "unit":  "$0.89 / lb",
+        "unitShort":  "$0.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_536550d1-0d7f-45e6-8980-1228fb454883.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Fresh Spaghetti Squash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_57",
+        "name":  "Butternut Squash",
+        "brand":  "ALDI",
+        "price":  2.45,
+        "unit":  "$0.89 / lb",
+        "unitShort":  "$0.89 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_077cbe6a-b6d2-4a3a-8daa-5421815d5c9b.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Rich, creamy churned butter from ALDI. Brings rich flavor and velvety texture to baking, cooking, and spreading.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_58",
+        "name":  "Freshire Farms Yellow Squash",
+        "brand":  "ALDI",
+        "price":  1.97,
+        "unit":  "$1.35 / lb",
+        "unitShort":  "$1.35 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_40a2ef36-1a52-46b9-845c-88128de8cc4d.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Freshire Farms Yellow Squash, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_24",
+        "name":  "Little Salad Bar Shredded Lettuce",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_105817b5-b0b0-45a4-aade-b9911550f298.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_59",
+        "name":  "Yellow Potatoes",
+        "brand":  "ALDI",
+        "price":  3.79,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_501e89ef-ec04-45ad-a44f-918e5900cac2.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_50",
+        "name":  "Jumbo Blueberries",
+        "brand":  "ALDI",
+        "price":  4.89,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_26247d86-01ad-4977-9ea1-914258907783.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_51",
+        "name":  "Blueberries",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "11 oz",
+        "unitShort":  "11 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ace7b58c-afbe-4fd8-a796-f362ddae724e.png",
+        "aisle":  "Fruits",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_25",
+        "name":  "Mexican Street Corn Chopped Salad Kit",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "11.62 oz",
+        "unitShort":  "11.62 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a1c57891-f377-4c02-87d7-4d3582968657.png",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_fruit_52",
+        "name":  "Specially Selected Dark Chocolate Dipped Ma, Dipped Oranges",
+        "brand":  "Specially Selected",
+        "price":  4.99,
+        "unit":  "4.23 oz",
+        "unitShort":  "4.23 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Fruit",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6764f2de-b581-49a2-a3af-71cc761e2efd.jpg",
+        "aisle":  "Nuts \u0026 Dried Fruits",
+        "description":  "Juicy, citrusy sweet oranges packed with immune-boosting Vitamin C. Easy to peel and perfect for lunchboxes, fresh morning juice, or healthy snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_60",
+        "name":  "Artisan Lettuce, each",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_23609b06-26e5-48bc-8273-c20a58b54a97.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Artisan Lettuce, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_61",
+        "name":  "Organic Mini Cucumbers",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d171184c-8311-4397-87c5-92140b4f5169.jpeg",
+        "aisle":  "Produce Mdu",
+        "description":  "Organic Mini Cucumbers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_veg_62",
+        "name":  "Baby Peeled Carrots",
+        "brand":  "ALDI",
+        "price":  1.15,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4ba98e87-304d-4bf1-acf0-2c73af2ac833.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Baby Peeled Carrots from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_63",
+        "name":  "Cocktail on Vine Tomatoes",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "10 x 16 oz",
+        "unitShort":  "10 x 16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7930aff-8e67-417c-b7dd-26434efe6a01.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_64",
+        "name":  "Multi-Colored Peppers",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "3 ct",
+        "unitShort":  "3 ct",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fae65d5f-daa9-464e-9173-8de5a78d0bf7.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Multi-Colored Peppers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_26",
+        "name":  "Little Salad Bar Peeled Garlic",
+        "brand":  "Little Salad Bar",
+        "price":  2.99,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_03a39729-222b-43ab-aaf5-7d57acfbad6c.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_27",
+        "name":  "Little Salad Bar Chopped Hearts of Romaine",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a3d5b824-e393-4242-a6f8-b094ba30441e.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_65",
+        "name":  "Cauliflower Crowns, each",
+        "brand":  "ALDI",
+        "price":  2.89,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5927afad-a932-48d5-b8cf-c112969d1002.jpg",
+        "aisle":  "Vegetables",
+        "description":  "Cauliflower Crowns, each from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_66",
+        "name":  "Cut Green Beans",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a9903f6d-f788-41dc-8398-ae63793d2404.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Cut Green Beans from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_67",
+        "name":  "Serrano Peppers",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_600d892b-d298-45ed-bf12-4116f65ae9c8.jpg",
+        "aisle":  "Ambient Produce",
+        "description":  "Serrano Peppers from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_68",
+        "name":  "Tomatillos",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_197ca315-8ed0-4d52-869e-47eddf780aa2.jpeg",
+        "aisle":  "Ambient Produce",
+        "description":  "Tomatillos from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_veg_69",
+        "name":  "Organic Yellow Potatoes",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Fresh Vegetables",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5ee98502-fdcf-476a-acc8-40ff5991a3a7.jpeg",
+        "aisle":  "Vegetables",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+                     "Organic"
+                 ]
+    }
+]

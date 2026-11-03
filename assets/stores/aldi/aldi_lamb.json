@@ -1,0 +1,38 @@
+﻿[
+    {
+        "id":  "aldi_lamb_1",
+        "name":  "Thomas Farms Fresh Australian Lamb Loin Chops",
+        "brand":  "Thomas Farms",
+        "price":  8.99,
+        "unit":  "$8.99 / lb (About 1.25 lb / package)",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Lamb",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13e7bdf9-43fc-412d-8418-42cca61a75d5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Thomas Farms Fresh Australian Lamb Loin Chops. Tender, juicy pasture-raised Australian lamb loin chopsâ€”perfect for pan-searing or grilling.",
+        "tags":  [
+                     "Grass-Fed",
+                     "Australian Lamb"
+                 ]
+    },
+    {
+        "id":  "aldi_lamb_2",
+        "name":  "Thomas Farms Fresh Australian Rack of Lamb",
+        "brand":  "Thomas Farms",
+        "price":  12.99,
+        "unit":  "$12.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Lamb",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13e7bdf9-43fc-412d-8418-42cca61a75d5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Thomas Farms Fresh Australian Rack of Lamb. Tender, frenched rack of lambâ€”ideal for holiday roasting with herbs and garlic.",
+        "tags":  [
+                     "Grass-Fed",
+                     "Gourmet"
+                 ]
+    }
+]

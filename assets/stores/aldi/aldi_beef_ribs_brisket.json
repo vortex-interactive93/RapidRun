@@ -1,0 +1,36 @@
+﻿[
+    {
+        "id":  "aldi_meat_91",
+        "name":  "USDA Choice Black Angus Country Style Ribs",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  8.99,
+        "unit":  "$8.99 / lb (About 1.4 lb / package)",
+        "unitShort":  "$8.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Ribs \u0026 Brisket",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6020b730-f98f-4795-b5f5-a6753d12a13a.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Country Style Ribs, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_109",
+        "name":  "Cattlemen\u0027s Ranch Flat Cut Corned Beef Brisket",
+        "brand":  "ALDI",
+        "price":  21.42,
+        "unit":  "$6.59 / lb (About 3.25 lb / package)",
+        "unitShort":  "$6.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Ribs \u0026 Brisket",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_334f602e-3bc3-45d0-bf46-6fa397f42652.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    }
+]

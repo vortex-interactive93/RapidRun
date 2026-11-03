@@ -1,0 +1,306 @@
+﻿[
+    {
+        "id":  "aldi_fresh_seafood_001",
+        "name":  "Atlantic Salmon Side",
+        "brand":  "Atlantic Salmon Side",
+        "price":  17.58,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/9734be69-7533-4ae0-8535-d92c8720bcc1/Atlantic%20%20Salmon%20Side%20per%20lb",
+        "description":  "Fresh, high-quality seafood from Atlantic Salmon Side. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_002",
+        "name":  "Salmon with Mediterranean Herb",
+        "brand":  "Salmon",
+        "price":  9.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/0d3a5ab4-a40c-41f3-be12-c0c83bf816a4/Salmon%20%20with%20Mediterranean%20Herb",
+        "description":  "Fresh, high-quality seafood from Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_005",
+        "name":  "Cedar Plank Salmon",
+        "brand":  "Cedar Plank Salmon",
+        "price":  9.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/414f4a19-7b62-463c-be50-d72edf20e97f/Cedar%20%20Plank%20Salmon",
+        "description":  "Fresh, high-quality seafood from Cedar Plank Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_006",
+        "name":  "Wild Caught Sockeye Salmon",
+        "brand":  "Wild Caught Sockeye",
+        "price":  12.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/cfd3f2c6-79bb-42fd-9024-abb11607c872/Wild%20%20Caught%20Sockeye%20Salmon",
+        "description":  "Fresh, high-quality seafood from Wild Caught Sockeye. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_007",
+        "name":  "Atlantic Norwegian Salmon",
+        "brand":  "Atlantic Norwegian Salmon",
+        "price":  10.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/aabe5fc1-2ddd-4897-8710-58b8752d33c0/Atlantic%20Norwegian%20Salmon",
+        "description":  "Fresh, high-quality seafood from Atlantic Norwegian Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_008",
+        "name":  "Atlantic Salmon Portions",
+        "brand":  "Atlantic Salmon Portions",
+        "price":  9.19,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/5ec88cf8-6bdb-4ef1-b9cd-0bf8cab8e4b4/Atlantic%20Salmon%20Portions%20per%20lb",
+        "description":  "Fresh, high-quality seafood from Atlantic Salmon Portions. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_009",
+        "name":  "Fresh Stuffed Atlantic Salmon",
+        "brand":  "Stuffed Atlantic Salmon",
+        "price":  9.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/1caaf4cd-9e72-4391-8256-6f99cfd33eb4/Fresh%20%20Stuffed%20Atlantic%20Salmon%2016%20oz",
+        "description":  "Fresh, high-quality seafood from Stuffed Atlantic Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_010",
+        "name":  "Coho Salmon",
+        "brand":  "Coho Salmon",
+        "price":  10.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c8b78384-a4cc-46be-83b2-1fac431ff986/Coho%20Salmon",
+        "description":  "Fresh, high-quality seafood from Coho Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_fresh_seafood_011",
+        "name":  "Lightly Smoked Salmon Portion",
+        "brand":  "Lightly Smoked Salmon",
+        "price":  8.24,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/50accc0b-49a0-4ab4-9ded-2c0f79c086a5/Lightly%20Smoked%20Salmon%20Portion",
+        "description":  "Fresh, high-quality seafood from Lightly Smoked Salmon. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon"
+    },
+    {
+        "id":  "aldi_meat_28",
+        "name":  "Fresh Atlantic Salmon Side",
+        "brand":  "ALDI",
+        "price":  17.38,
+        "unit":  "$8.69 / lb (About 2.0 lb / package)",
+        "unitShort":  "$8.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6646e46b-0595-48d7-ba11-baff2fecfec8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_53",
+        "name":  "Stuffed Atlantic Salmon Portions",
+        "brand":  "ALDI",
+        "price":  9.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0bff7dda-e171-4b68-aa7a-48c7f018fb6c.jpg",
+        "aisle":  "Fresh Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_59",
+        "name":  "Fresh Never Frozen Atlantic Salmon Portion",
+        "brand":  "ALDI",
+        "price":  9,
+        "unit":  "$8.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$8.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_deff8640-0642-45d0-92fc-808d3c2ea4ed.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_110",
+        "name":  "Atlantic Norwegian Salmon Portion",
+        "brand":  "ALDI",
+        "price":  11.3,
+        "unit":  "$11.29 / lb (About 1.0 lb / package)",
+        "unitShort":  "$11.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8c3ba28e-d802-407a-980d-d4fc1f74c10e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_147",
+        "name":  "Lightly Smoked Salmon",
+        "brand":  "ALDI",
+        "price":  8.62,
+        "unit":  "$11.49 / lb (About 0.75 lb / package)",
+        "unitShort":  "$11.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a2f44722-d004-41c4-b5c3-31c132804729.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_157",
+        "name":  "Coho Salmon Portion",
+        "brand":  "ALDI",
+        "price":  11,
+        "unit":  "$10.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$10.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_87f39034-fb6f-4639-938b-d01e1dc2657b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_165",
+        "name":  "Skinless Atlantic Salmon",
+        "brand":  "ALDI",
+        "price":  9.99,
+        "unit":  "$9.99 / lb (About 1.0 lb each)",
+        "unitShort":  "$9.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f3e691dd-98b4-410b-87ea-d2a4bee43df1.jpg",
+        "aisle":  "Fresh Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_10",
+        "name":  "Fremont Fish Market Wild Caught Pink Salmon",
+        "brand":  "ALDI",
+        "price":  11.45,
+        "unit":  "32 oz",
+        "unitShort":  "32 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_af30f108-4566-4b4b-96e5-eedca4ac4b46.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_100",
+        "name":  "Mediterranean Herb Atlantic Salmon Portion",
+        "brand":  "ALDI",
+        "price":  11,
+        "unit":  "$10.99 / lb",
+        "unitShort":  "$10.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eadb5c3f-4f95-4149-adcd-5bf1b3f3f328.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_119",
+        "name":  "Fremont Fish Market Frz Wild Salmon 16oz",
+        "brand":  "ALDI",
+        "price":  8.49,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5fdb5efa-2fa0-47d8-94c7-71f9682c2538.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_238",
+        "name":  "Aldi Salmon Suhi Bake",
+        "brand":  "ALDI",
+        "price":  5.79,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Salmon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9d9f3e50-edfe-492f-bdca-d09ad7483a0d.jpg",
+        "aisle":  "Frozen Ready Meals \u0026 Pizza",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    }
+]

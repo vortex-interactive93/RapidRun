@@ -1,0 +1,954 @@
+﻿[
+    {
+        "id":  "aldi_personal_care_1",
+        "name":  "Lacura Sparkling Lemon Gentle Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0af50f69-9e67-4a6c-a86e-3e121f95a738.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Refreshing, delicious Lacura Sparkling Lemon Gentle Foaming Hand Soap from ALDI. Perfect for staying hydrated and quenched throughout the day.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_2",
+        "name":  "Lacura Make-up Removing Cleansing Towelettes",
+        "brand":  "ALDI",
+        "price":  0.99,
+        "unit":  "25 ct",
+        "unitShort":  "25 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9edf8bb5-e7e2-4d6d-b566-196b04a1e083.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Make-up Removing Cleansing Towelettes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_3",
+        "name":  "Lacura Eucalyptus \u0026 Spearmint Gentle Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_60a28d27-4bc9-4b66-b1fd-5a5bcd245f02.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Eucalyptus \u0026 Spearmint Gentle Foaming Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_4",
+        "name":  "Lacura Champagne Celebration Gentle Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cb69206a-3d79-46c5-98b2-90fb6efc491b.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_5",
+        "name":  "Lacura Soothing Moisture Women\u0027s 3 Blade Razors",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "4 ct",
+        "unitShort":  "4 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea321bb0-f634-4445-838b-cd39a078474b.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Soothing Moisture Women\u0027s 3 Blade Razors from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_6",
+        "name":  "Welby Pain Reliever/Fever Reducer Tablets",
+        "brand":  "ALDI",
+        "price":  1.69,
+        "unit":  "100 ct",
+        "unitShort":  "100 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_21064f33-5f5a-47b4-89de-4073ed874b37.jpg",
+        "aisle":  "Hbc",
+        "description":  "Welby Pain Reliever/Fever Reducer Tablets from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_7",
+        "name":  "Lacura Clear Liquid Hand Soap Refill",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "50 fl oz",
+        "unitShort":  "50 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be8f71fd-8944-4f69-b069-a0645140243c.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Clear Liquid Hand Soap Refill from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_8",
+        "name":  "Welby Extra Strength Pain Reliever and Fever Reducer for Adults",
+        "brand":  "ALDI",
+        "price":  1.69,
+        "unit":  "100 ct",
+        "unitShort":  "100 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c028bb32-7b69-4b15-9b82-51a143f3f2f8.jpg",
+        "aisle":  "Hbc",
+        "description":  "Welby Extra Strength Pain Reliever and Fever Reducer for Adults from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_9",
+        "name":  "Lacura Soothing Aloe Vera Moisturizing Hand Soap",
+        "brand":  "ALDI",
+        "price":  0.97,
+        "unit":  "7.5 fl oz",
+        "unitShort":  "7.5 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cdb6541c-f70f-475d-ba4f-c295af67967b.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Soothing Aloe Vera Moisturizing Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_10",
+        "name":  "Lacura Hydrating Facial Cleanser",
+        "brand":  "ALDI",
+        "price":  5.29,
+        "unit":  "12 fl oz",
+        "unitShort":  "12 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_23df1e9d-89ab-4f78-bfa8-e71a210552b3.jpg",
+        "aisle":  "Health \u0026 Beauty",
+        "description":  "Lacura Hydrating Facial Cleanser from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_11",
+        "name":  "Lacura Moisturizing Cream Beauty Bar, Original Fragrance",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4a95a2b1-b5cb-4273-9adb-47a1d8bf922d.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Moisturizing Cream Beauty Bar, Original Fragrance from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_12",
+        "name":  "Lacura Clear Hand Soap",
+        "brand":  "ALDI",
+        "price":  0.97,
+        "unit":  "7.5 fl oz",
+        "unitShort":  "7.5 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_60e4cc86-1d8e-4a6a-9c65-0fad22acee74.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Clear Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_13",
+        "name":  "Lacura Oatmeal Body Wash",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "18 fl oz",
+        "unitShort":  "18 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_63a7dd99-2b70-4649-b94c-a98f532133aa.jpeg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Oatmeal Body Wash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_14",
+        "name":  "Lacura H2O Cream",
+        "brand":  "ALDI",
+        "price":  3.79,
+        "unit":  "1.7 oz",
+        "unitShort":  "1.7 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a0e71371-2254-495f-98e3-e6d51d41c54d.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura H2O Cream from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_15",
+        "name":  "Lacura Sensitive Men\u0027s 3 Blade Razors",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "4 ct",
+        "unitShort":  "4 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc605b8a-2379-4b5e-993a-b66941fa6474.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Sensitive Men\u0027s 3 Blade Razors from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_16",
+        "name":  "Lacura Day Cream",
+        "brand":  "ALDI",
+        "price":  3.79,
+        "unit":  "1.7 oz",
+        "unitShort":  "1.7 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a9f9758-91d7-4e1d-b3c4-f3a476628691.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Day Cream from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_17",
+        "name":  "Crest Alcohol Free Multi-Protection Clean Mint Oral Rinse",
+        "brand":  "ALDI",
+        "price":  4.97,
+        "unit":  "33.8 fl oz",
+        "unitShort":  "33.8 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bb5cbe7c-dbbd-478d-93cb-fc3d27bf2c44.png",
+        "aisle":  "Hbc",
+        "description":  "Crest Alcohol Free Multi-Protection Clean Mint Oral Rinse from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_18",
+        "name":  "Elevation Creatine, Unflavored",
+        "brand":  "ALDI",
+        "price":  8.99,
+        "unit":  "10.58 oz",
+        "unitShort":  "10.58 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1606e8fb-f1ed-4e07-94e0-d5b2ac27f305.jpg",
+        "aisle":  "Cereals \u0026 Snacks",
+        "description":  "Elevation Creatine, Unflavored from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_19",
+        "name":  "Lacura Sensitive Skin Body Wash",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "20 fl oz",
+        "unitShort":  "20 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6d785341-f596-45ee-95eb-931a0596fe01.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Sensitive Skin Body Wash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_20",
+        "name":  "Ambiano Black Fabric Shaver",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5212cd5e-7f8a-4f1b-9d4a-a8e7571373c8.jpg",
+        "aisle":  "Household Appliances",
+        "description":  "Ambiano Black Fabric Shaver from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_21",
+        "name":  "Ambiano Blue Fabric Shaver",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d3985ffc-8811-434d-b735-b64f2a4f4988.jpg",
+        "aisle":  "Household Appliances",
+        "description":  "Ambiano Blue Fabric Shaver from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_22",
+        "name":  "Lacura Oatmeal Body Lotion",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "18 fl oz",
+        "unitShort":  "18 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2ccc9e87-ae28-4b6f-8d63-48f0e74dc650.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Oatmeal Body Lotion from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_23",
+        "name":  "Lacura Nourishing Deep Moisturizing Body Wash",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "20 fl oz",
+        "unitShort":  "20 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9c19cbc2-6d56-4808-9a16-9c54a9c00bad.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Nourishing Deep Moisturizing Body Wash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_24",
+        "name":  "Olay Olay Bodywash Mixed, Radi Straw Mint",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "22 oz",
+        "unitShort":  "22 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c9c10b9b-7ca3-42f9-a9e7-94eb8850c202.jpg",
+        "aisle":  "Soaps",
+        "description":  "Olay Olay Bodywash Mixed, Radi Straw Mint from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_25",
+        "name":  "Old Spice Pure Sport Deodorant",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e138146b-f2cc-4adb-b051-2b6c4afbbdd6.png",
+        "aisle":  "Hbc",
+        "description":  "Old Spice Pure Sport Deodorant from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_26",
+        "name":  "Elevation Protein Powder, Vanilla",
+        "brand":  "ALDI",
+        "price":  17.99,
+        "unit":  "2 lb",
+        "unitShort":  "2 lb",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3cef00b8-fb20-4c2e-92fc-5a5749886f9b.jpg",
+        "aisle":  "Cereals \u0026 Snacks",
+        "description":  "Elevation Protein Powder, Vanilla from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_27",
+        "name":  "Elevation Protein Powder, Chocolate",
+        "brand":  "ALDI",
+        "price":  17.99,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fde15eab-850a-45ab-8c15-788f2e1d36a6.jpg",
+        "aisle":  "Cereals \u0026 Snacks",
+        "description":  "Indulgent, delicious Elevation Protein Powder, Chocolate from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_28",
+        "name":  "Lacura Midnight Fang Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7ba431de-a29f-4827-bee4-67cd39507c8b.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Midnight Fang Foaming Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_29",
+        "name":  "Elevation Clear Whey Protein, Watermelon",
+        "brand":  "ALDI",
+        "price":  24.99,
+        "unit":  "14.88 oz",
+        "unitShort":  "14.88 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ca97f909-1592-4d87-97fc-7e160ec8c171.jpg",
+        "aisle":  "Cereals \u0026 Snacks",
+        "description":  "Refreshing, delicious Elevation Clear Whey Protein, Watermelon from ALDI. Perfect for staying hydrated and quenched throughout the day.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_30",
+        "name":  "Lacura Night Cream",
+        "brand":  "ALDI",
+        "price":  3.79,
+        "unit":  "1.7 oz",
+        "unitShort":  "1.7 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_39f2af17-11f0-4ac2-90e6-5a6fdef5915c.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Night Cream from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_31",
+        "name":  "Lacura Haunted Harvest Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea6f4aff-65c1-4371-879c-942e749da792.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Haunted Harvest Foaming Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_32",
+        "name":  "Olay Olay Bodywash Mixed, Ult Moist Coco",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "22 fl oz",
+        "unitShort":  "22 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a74f463e-a011-49f2-9efa-7c2bdadbc0cc.png",
+        "aisle":  "Soaps",
+        "description":  "Olay Olay Bodywash Mixed, Ult Moist Coco from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_33",
+        "name":  "Lacura Bewitched Night Foaming Hand Soap",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "8.75 fl oz",
+        "unitShort":  "8.75 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_24a1ff24-3059-4013-804c-415099f1cd62.jpg",
+        "aisle":  "Personal Care",
+        "description":  "Lacura Bewitched Night Foaming Hand Soap from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_34",
+        "name":  "Secret pH Balanced Invisible Solid Shower Fresh Deodorant",
+        "brand":  "ALDI",
+        "price":  4.47,
+        "unit":  "2.6 oz",
+        "unitShort":  "2.6 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_235909b4-739e-48c1-b587-dc3f271db9a5.png",
+        "aisle":  "Hbc",
+        "description":  "Secret pH Balanced Invisible Solid Shower Fresh Deodorant from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_35",
+        "name":  "Lacura Fragrance Free Hypo-Allergenic Moisturizing Beauty Bar",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6ed82b8d-fba3-4fa6-9ffa-9f017cb5c5fa.jpg",
+        "aisle":  "Hbc",
+        "description":  "Lacura Fragrance Free Hypo-Allergenic Moisturizing Beauty Bar from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_36",
+        "name":  "Old Spice High Endurance Pure Sport Anti-Perspirant \u0026 Deodorant",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e513a104-9f3b-43c5-aa17-f49fe66216f2.png",
+        "aisle":  "Hbc",
+        "description":  "Old Spice High Endurance Pure Sport Anti-Perspirant \u0026 Deodorant from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_37",
+        "name":  "Olay Olay Bodywash Mixed, Birchw \u0026 Lavend",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "22 oz",
+        "unitShort":  "22 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_787fb3a1-e75b-4659-8fe1-3a5e48e6e302.jpg",
+        "aisle":  "Soaps",
+        "description":  "Olay Olay Bodywash Mixed, Birchw \u0026 Lavend from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_38",
+        "name":  "Little Journey Gentle Baby Wash \u0026 Shampoo",
+        "brand":  "Little Journey",
+        "price":  3.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ded37e63-e4f2-49be-a360-35c4ba066d71.jpg",
+        "aisle":  "Baby",
+        "description":  "Flavorful, tender pork from Little Journey. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_39",
+        "name":  "Stonemill Herbes de Provence, Hrbs de Prvnce",
+        "brand":  "ALDI",
+        "price":  4.49,
+        "unit":  "2.2 oz",
+        "unitShort":  "2.2 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_670a08d8-ae10-46ea-b1c7-1fd890075721.jpg",
+        "aisle":  "Soaps",
+        "description":  "Stonemill Herbes de Provence, Hrbs de Prvnce from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_40",
+        "name":  "Serra Pumpkin Bopper Halloween Hair Accessory",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_51427e7f-a467-43b9-aded-803e2917f86c.jpg",
+        "aisle":  "Watches \u0026 Jewellery",
+        "description":  "Serra Pumpkin Bopper Halloween Hair Accessory from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_41",
+        "name":  "Olay Olay Bodywash Mixed, Ult Moist Age D",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "22 fl oz",
+        "unitShort":  "22 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_90734012-88e8-442d-ab1d-1320a66d2a25.png",
+        "aisle":  "Personal Care",
+        "description":  "Olay Olay Bodywash Mixed, Ult Moist Age D from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_42",
+        "name":  "Serra Spiderweb Halloween Bow",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a5ace39-8807-4127-944b-8441b744f77d.jpg",
+        "aisle":  "Watches \u0026 Jewellery",
+        "description":  "Serra Spiderweb Halloween Bow from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_43",
+        "name":  "Pantene Daily Moisture Renewal Conditioner",
+        "brand":  "ALDI",
+        "price":  9.97,
+        "unit":  "24.06 fl oz",
+        "unitShort":  "24.06 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2f71a4e1-a639-4c4d-85c6-1b665c3a7b98.png",
+        "aisle":  "Health \u0026 Beauty",
+        "description":  "Pantene Daily Moisture Renewal Conditioner from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_44",
+        "name":  "Serra Witch Halloween Bow",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6abebf6b-a2b2-4bd4-a1ce-5fd97049c8cd.jpg",
+        "aisle":  "Watches \u0026 Jewellery",
+        "description":  "Serra Witch Halloween Bow from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_45",
+        "name":  "Secret pH Balanced Powder Fresh Invisible Solid Deodorant",
+        "brand":  "ALDI",
+        "price":  4.47,
+        "unit":  "2.6 oz",
+        "unitShort":  "2.6 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c774bb02-5dae-43ae-a0d7-a2e10895dc45.png",
+        "aisle":  "Hbc",
+        "description":  "Secret pH Balanced Powder Fresh Invisible Solid Deodorant from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_46",
+        "name":  "Head \u0026 Shoulders Tea Tree Oil 2 in 1 Shampoo \u0026 Conditioner",
+        "brand":  "ALDI",
+        "price":  6.97,
+        "unit":  "12.5 fl oz",
+        "unitShort":  "12.5 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5f162fe8-6bd7-4ee8-b24f-72d884f1317f.jpg",
+        "aisle":  "Hbc",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_47",
+        "name":  "Aussie Aussie Mirac, Conditioner, Miracle moist",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "26.2 fl oz",
+        "unitShort":  "26.2 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a05be13e-0c15-48a3-b71d-ac6ccfb1e1ee.png",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Aussie Aussie Mirac, Conditioner, Miracle moist from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_48",
+        "name":  "Aussie Aussie Miracle M, Shampoo, Miracle moist",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "26.2 fl oz",
+        "unitShort":  "26.2 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_76bc81e0-67e8-4412-86da-f9875097ad84.png",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_49",
+        "name":  "Aussie Aussie CN MM Apricot\u0026Mac.Oil",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "26.2 oz",
+        "unitShort":  "26.2 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_31a6ebec-5856-4ce4-a8e3-9799eb362512.png",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Aussie Aussie CN MM Apricot\u0026Mac.Oil from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_50",
+        "name":  "Welby Children\u0027s Gummy Vitamins - Berry, Orange \u0026 Pineapple Flavors",
+        "brand":  "ALDI",
+        "price":  7.69,
+        "unit":  "190 ct",
+        "unitShort":  "190 ct",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_386ace9a-9e6f-41d3-a8c1-5b4c11c419f4.jpg",
+        "aisle":  "Hbc",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_51",
+        "name":  "Aussie Aussie SH MM Apricot\u0026Mac.Oil",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "26.2 fl oz",
+        "unitShort":  "26.2 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_df0ca7c5-5ba9-4c3a-b98a-0fbfad199860.png",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Aussie Aussie SH MM Apricot\u0026Mac.Oil from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_52",
+        "name":  "Pantene Daily Moisture Renewal Shampoo",
+        "brand":  "ALDI",
+        "price":  9.97,
+        "unit":  "26.55 fl oz",
+        "unitShort":  "26.55 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_69b9800f-c0fe-4c29-a74d-81310a798b17.png",
+        "aisle":  "Health \u0026 Beauty",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_53",
+        "name":  "Head \u0026 Shoulders Classic Clean Shampoo",
+        "brand":  "ALDI",
+        "price":  6.97,
+        "unit":  "12.5 fl oz",
+        "unitShort":  "12.5 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7e549468-6d58-4104-9be0-92323210b4ba.png",
+        "aisle":  "Hbc",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_54",
+        "name":  "Head \u0026 Shoulders 2 in 1 Dry Scalp Care",
+        "brand":  "ALDI",
+        "price":  6.97,
+        "unit":  "12.5 fl oz",
+        "unitShort":  "12.5 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_21aa0049-925a-43a8-a4a9-2b18f4c014d9.png",
+        "aisle":  "Hbc",
+        "description":  "Head \u0026 Shoulders 2 in 1 Dry Scalp Care from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_55",
+        "name":  "Old Spice Cedarwood Scent Shower Fresh Body Wash",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "24 fl oz",
+        "unitShort":  "24 fl oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1a0a8693-d1e8-4585-9823-b40e94e63146.png",
+        "aisle":  "Hbc",
+        "description":  "Old Spice Cedarwood Scent Shower Fresh Body Wash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_personal_care_56",
+        "name":  "Old Spice 24/7 Crisp Orchard Scent Shower Fresh Body Wash",
+        "brand":  "ALDI",
+        "price":  7.97,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Personal Care",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aefc7f59-386d-4904-8b7b-e992b9b37e26.png",
+        "aisle":  "Hbc",
+        "description":  "Old Spice 24/7 Crisp Orchard Scent Shower Fresh Body Wash from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    }
+]

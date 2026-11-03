@@ -1,0 +1,2749 @@
+[
+  {
+    "id": "bbw_028004878",
+    "name": "Champagne Toast PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfc5cc153/hires/028004878.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "champagne toast"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028004912",
+    "name": "Strawberry Pound Cake PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5723eeb5/hires/028004912.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "strawberry pound cake"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet Berry",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Wild Strawberries"
+      ],
+      "heartNotes": [
+        "Golden Shortcake",
+        "Baking Spice"
+      ],
+      "baseNotes": [
+        "Whipped Cream",
+        "Vanilla Sugar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034825",
+    "name": "Strawberry Snowflakes PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4b757d56/hires/028034825.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "strawberry snowflakes"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Winter Berry",
+      "topNotes": [
+        "Juicy Strawberry",
+        "Iced Bergamot"
+      ],
+      "heartNotes": [
+        "Whipped Cream",
+        "Winter Blossom"
+      ],
+      "baseNotes": [
+        "Iced Vanilla",
+        "Soft Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032125",
+    "name": "Champagne Apple & Honey PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw80eac957/hires/028032125.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "champagne apple & honey"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Autumn Apple",
+      "topNotes": [
+        "Pink Lady Apple",
+        "Sparkling Champagne"
+      ],
+      "heartNotes": [
+        "Jasmine Honey",
+        "Autumn Woods"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034813",
+    "name": "Santa's Milk & Cookies PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw92ecde2a/hires/028034813.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "santa's milk & cookies"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013672",
+    "name": "Lavender Vanilla PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6e5e09a5/hires/028013672.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "lavender vanilla"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030021",
+    "name": "Champagne Toast Moisturizing PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd88869f2/hires/028030021.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "champagne toast"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034814",
+    "name": "Bright Christmas Morning PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa26dc47f/hires/028034814.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "bright christmas morning"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030022",
+    "name": "Warm Vanilla Sugar Moisturizing PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe334362e/hires/028030022.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "warm vanilla sugar"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Gourmand",
+      "topNotes": [
+        "Sheer Florals",
+        "Vanilla Orchid"
+      ],
+      "heartNotes": [
+        "Vanilla Absolute",
+        "Basmati Rice"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "White Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013681",
+    "name": "Champagne Toast Hand Sanitizer with Pump",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfc6aca4a/hires/028013681.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "champagne toast"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013673",
+    "name": "Eucalyptus Spearmint PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw79953d06/hires/028013673.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "eucalyptus spearmint"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031110",
+    "name": "Japanese Cherry Blossom PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw129ea672/hires/028031110.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "japanese cherry blossom"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Blushing Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028035033",
+    "name": "Beautiful Day PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf63fedfb/hires/028035033.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "beautiful day"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028009408",
+    "name": "Champagne Toast Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.6,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdf76a1a4/hires/028009408.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "champagne toast"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034823",
+    "name": "Snowy Peach Berry PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc5554c88/hires/028034823.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "snowy peach berry"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034815",
+    "name": "Frozen Lake PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9cdb8401/hires/028034815.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "frozen lake"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034817",
+    "name": "Cranberry & Eucalyptus PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 5.0,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd51457ea/hires/028034817.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "cranberry & eucalyptus"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034827",
+    "name": "Cozy Winter Cottage PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 5.0,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwad53fa53/hires/028034827.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "cozy winter cottage"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032124",
+    "name": "Blackberries & Basil PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw95f41ef7/hires/028032124.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "blackberries & basil"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028966",
+    "name": "Jelly Net Tote PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ee4c489/hires/028028966.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "jelly net tote"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034824",
+    "name": "Winterberry Ice PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.7,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ff60648/hires/028034824.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "winterberry ice"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034816",
+    "name": "Fresh Balsam PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.9,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7e990437/hires/028034816.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "fresh balsam"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Forest",
+      "topNotes": [
+        "Woodland Balsam",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Fir Branches",
+        "Pine Needles"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Earthy Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029490",
+    "name": "Ocean Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.9,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw69fae526/hires/028029490.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028011629",
+    "name": "Strawberry Pound Cake Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.6,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwac6ca54f/hires/028011629.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "strawberry pound cake"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet Berry",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Wild Strawberries"
+      ],
+      "heartNotes": [
+        "Golden Shortcake",
+        "Baking Spice"
+      ],
+      "baseNotes": [
+        "Whipped Cream",
+        "Vanilla Sugar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034826",
+    "name": "Chilled Lemon Frost PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfe742d79/hires/028034826.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "chilled lemon frost"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013680",
+    "name": "Strawberry Pound Cake Hand Sanitizer with Pump",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw105cc13c/hires/028013680.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "strawberry pound cake"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet Berry",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Wild Strawberries"
+      ],
+      "heartNotes": [
+        "Golden Shortcake",
+        "Baking Spice"
+      ],
+      "baseNotes": [
+        "Whipped Cream",
+        "Vanilla Sugar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034681",
+    "name": "Cozy Cat PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 5.0,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw39a9a000/hires/028034681.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "cozy cat"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033026",
+    "name": "Mountain Teakwood PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwab27e30f/hires/028033026.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "mountain teakwood"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032108",
+    "name": "Afternoon Apple Picking Moisturizing PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3f4969d1/hires/028032108.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "afternoon apple picking"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033028",
+    "name": "White Pumpkin PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf39f8e1d/hires/028033028.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "white pumpkin"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030020",
+    "name": "Peach Bellini PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8cf33a40/hires/028030020.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "peach bellini"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034683",
+    "name": "Light-Up Pup Present PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5bde5acb/hires/028034683.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "light-up pup present"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032111",
+    "name": "Spiced Pumpkin Cr\u00e8me Moisturizing PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw336b6ec1/hires/028032111.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "spiced pumpkin cr\u00e8me"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033027",
+    "name": "Whipped Honey & Vanilla PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw638553c5/hires/028033027.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "whipped honey & vanilla"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029411",
+    "name": "Watermelon Whirl PocketSpray Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.8,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdefb5e1a/hires/028029411.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "watermelon whirl"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026104",
+    "name": "Iridescent Glitter PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8471dda4/hires/028026104.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "iridescent glitter"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030019",
+    "name": "Fresh Rainfall Moisturizing PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3f26e8e3/hires/028030019.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "fresh rainfall"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030018",
+    "name": "Eucalyptus Mint PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa5d9cc01/hires/028030018.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "eucalyptus mint"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034685",
+    "name": "Festive Teddy Bear Pocketbac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 4.6,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc4ca2174/hires/028034685.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "festive teddy bear"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028001402",
+    "name": "Diamond Charm Twist-off PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 6.95,
+    "msrp": 6.95,
+    "rating": 4.6,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwda4bb04b/hires/028001402.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "diamond charm twist-off"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033036",
+    "name": "Wild Blackberry Jam PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw103be4f7/hires/028033036.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "wild blackberry jam"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028034687",
+    "name": "Puffer Coat Pocketbac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90f85bd1/hires/028034687.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "puffer coat"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023381",
+    "name": "Fresh Rainfall Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.7,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw70e7fd87/hires/028023381.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "fresh rainfall"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013677",
+    "name": "Eucalyptus Spearmint Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.7,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0f2df63c/hires/028013677.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "eucalyptus spearmint"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033547",
+    "name": "Plum Please PocketSpray Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.8,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbb5b052b/hires/028033547.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "plum please"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013676",
+    "name": "Lavender Vanilla Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.8,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0c9fd909/hires/028013676.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "lavender vanilla"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013683",
+    "name": "Eucalyptus Mint Hand Sanitizer with Pump",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4d2c7e50/hires/028013683.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "eucalyptus mint"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026108",
+    "name": "Pink Glitter PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7be2ae2e/hires/028026108.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "pink glitter"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030204",
+    "name": "Nurse Lanyard PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2d94045d/hires/028030204.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "nurse lanyard"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028003496",
+    "name": "Sunshine & Lemons Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.1,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb7d56f8c/hires/028003496.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "sunshine & lemons"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013682",
+    "name": "Sunshine & Lemons Hand Sanitizer with Pump",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "7.6 fl oz / 225 mL",
+    "unitShort": "7.6 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwba3d7f0d/hires/028013682.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "sunshine & lemons"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029412",
+    "name": "Berry Bliss PocketSpray Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.7,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw250d62d9/hires/028029412.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "berry bliss"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026102",
+    "name": "Solid Black PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2bc00128/hires/028026102.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "solid black"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033546",
+    "name": "Cherry Crush PocketSpray Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.7,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb205edef/hires/028033546.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "cherry crush"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032127",
+    "name": "Fresh Fall Morning PocketBac Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 1.95,
+    "msrp": 1.95,
+    "rating": 4.8,
+    "unit": "1 fl oz / 29 mL",
+    "unitShort": "1 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5ec2bee2/hires/028032127.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "fresh fall morning"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031452",
+    "name": "White Tea & Sage PocketSpray Hand Sanitizer",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.5,
+    "unit": "3 fl oz / 88 mL",
+    "unitShort": "3 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw092ad405/hires/028031452.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "white tea & sage"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028718",
+    "name": "Pink Wristlet Hand Sanitizer Spray Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.9,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw009d9f63/hires/028028718.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "pink wristlet"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030202",
+    "name": "Teacher Multi-Use Keychain PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw066e1488/hires/028030202.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "teacher multi-use keychain"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023791",
+    "name": "Shell Snapcase PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7da9104e/hires/028023791.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "shell snapcase"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026106",
+    "name": "Gold Glitter PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcf872b5a/hires/028026106.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "gold glitter"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028027743",
+    "name": "Light Cream Hand Sanitizer Spray Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 5.95,
+    "msrp": 5.95,
+    "rating": 4.9,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw84968fff/hires/028027743.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "light cream"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031871",
+    "name": "Black Textured Twist Lock with Tassel Spray Sanitizer & Lip Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 4.4,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8b95e02d/hires/028031871.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "black textured twist lock with tassel"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028024629",
+    "name": "Matte Mocha PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 2.25,
+    "msrp": 2.25,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4086b9d0/hires/028024629.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "matte mocha"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031842",
+    "name": "Book Stack Cat PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd24b907c/hires/028031842.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "book stack cat"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028027529",
+    "name": "Light-Up Anglerfish PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.8,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw174f78c6/hires/028027529.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "light-up anglerfish"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028968",
+    "name": "Wristlet with Mirror PocketBac Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb31704f7/hires/028028968.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "wristlet with mirror"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029257",
+    "name": "Pink Wristlet PocketSpray Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "All Hand Sanitizers",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.7,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf82965fa/hires/028029257.jpg?sw=600&q=60&format=auto",
+    "description": "Kills 99.9% of most common germs while nourishing skin with essential oils, aloe, and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "all_hand_sanitizers",
+      "pink wristlet"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  }
+]

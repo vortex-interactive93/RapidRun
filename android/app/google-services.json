@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1068318429748",
+    "project_id": "rapidrun-f13a3",
+    "storage_bucket": "rapidrun-f13a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068318429748:android:a37a4040c6eaa33931b061",
+        "android_client_info": {
+          "package_name": "com.rapidrun.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068318429748-v3hrkur0c9cl6e0kgp82dbsnvbjss2p0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rapidrun.driver",
+            "certificate_hash": "7c8e070d954c8447c958045d43f6de904de66b77"
+          }
+        },
+        {
+          "client_id": "1068318429748-tlv0gtjc3k8kldhlg6s6ggjdn4e135gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwkB_2ZAMAipj7c-A9w5fHJZbZPYSOADM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068318429748-7c6ti50tb2rk99b4ba5d60f9krivc25f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1068318429748-g10mdl1cuelerb2lapfmdj5bkm7td2d0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rapidrunDriver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068318429748:android:9f29236fddf6fbd331b061",
+        "android_client_info": {
+          "package_name": "com.rapidrun.rapidrun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068318429748-3pa0rmiucsdk5lkooiinqjj12vufm66v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rapidrun.rapidrun",
+            "certificate_hash": "7c8e070d954c8447c958045d43f6de904de66b77"
+          }
+        },
+        {
+          "client_id": "1068318429748-tlv0gtjc3k8kldhlg6s6ggjdn4e135gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwkB_2ZAMAipj7c-A9w5fHJZbZPYSOADM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068318429748-7c6ti50tb2rk99b4ba5d60f9krivc25f.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1068318429748-g10mdl1cuelerb2lapfmdj5bkm7td2d0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rapidrunDriver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

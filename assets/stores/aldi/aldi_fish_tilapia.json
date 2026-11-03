@@ -1,0 +1,32 @@
+﻿[
+    {
+        "id":  "aldi_fresh_seafood_004",
+        "name":  "Tilapia Fillets",
+        "brand":  "Tilapia Fillets",
+        "price":  5.09,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/df7b99f2-fc7f-4a18-9488-b11685b2c4ba/Tilapia%20Fillets%20per%20lb",
+        "description":  "Fresh, high-quality seafood from Tilapia Fillets. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Tilapia"
+    },
+    {
+        "id":  "aldi_frozen_foods_57",
+        "name":  "Fremont Fish Market Tilapia Fillets",
+        "brand":  "ALDI",
+        "price":  6.25,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Tilapia",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_53f2ca12-de34-4041-a530-ab0da29ac4d4.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    }
+]

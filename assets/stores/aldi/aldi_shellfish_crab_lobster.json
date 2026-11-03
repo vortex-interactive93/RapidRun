@@ -1,0 +1,53 @@
+﻿[
+    {
+        "id":  "aldi_meat_148",
+        "name":  "Fremont Fish Market Leg Style Imitation Crab Meat",
+        "brand":  "Fremont Fish Market",
+        "price":  3.55,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Crab \u0026 Lobster",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d0e3d31f-7c18-4a60-8bef-e19f0f749fe7.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Fresh, high-quality seafood from Fremont Fish Market. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_149",
+        "name":  "Fremont Fish Market Flake Style Imitation Crab Meat",
+        "brand":  "Fremont Fish Market",
+        "price":  3.55,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Crab \u0026 Lobster",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c59f7482-5be3-4da2-9aa3-1eee02ee565b.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Fresh, high-quality seafood from Fremont Fish Market. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_221",
+        "name":  "Specially Selected Wild Caught Snow Crab Clusters",
+        "brand":  "Specially Selected",
+        "price":  23.99,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Crab \u0026 Lobster",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5205ba34-bc18-4983-9af8-7cbfbd51622b.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Specially Selected Wild Caught Snow Crab Clusters from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    }
+]

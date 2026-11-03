@@ -1,0 +1,113 @@
+﻿[
+    {
+        "id":  "aldi_fresh_sausage_026",
+        "name":  "Turkey Franks",
+        "brand":  "Turkey Franks",
+        "price":  2.75,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/8d347a59-0511-4210-8f6d-bb8d6819fed5/Turkey%20Franks",
+        "description":  "Turkey Franks from Turkey Franks. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs"
+    },
+    {
+        "id":  "aldi_fresh_sausage_028",
+        "name":  "Beef Hot Dogs",
+        "brand":  "Beef Hot Dogs",
+        "price":  5.19,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/5d986167-16f7-4a08-8a87-fe91449aa332/Beef%20%20Hot%20%20Dogs%2012%20oz",
+        "description":  "Premium, tender USDA-inspected beef from Beef Hot Dogs. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "benefits":  null,
+        "unit":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs"
+    },
+    {
+        "id":  "aldi_meat_17",
+        "name":  "Parkview Uncured Beef Franks",
+        "brand":  "Parkview",
+        "price":  4.75,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9ca246f9-9f0e-4261-89a3-d9c3a80381f6.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Parkview. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_41",
+        "name":  "Parkview Classic Hot Dogs",
+        "brand":  "Parkview",
+        "price":  0.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9b54b2f9-e063-4531-bb89-1a693b8b193a.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Savory, expertly seasoned sausages from Parkview. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_58",
+        "name":  "Nathan\u0027s Bun-Length Beef Franks - 8 Pack",
+        "brand":  "ALDI",
+        "price":  5.45,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ce7a825c-2f96-4a11-a800-4405053475f7.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_71",
+        "name":  "Simply Nature Organic Uncured Beef Hot Dogs",
+        "brand":  "Simply Nature Organic",
+        "price":  4.29,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_959d45cf-3775-470c-b47d-b4cbad610029.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_119",
+        "name":  "Parkview USDA Turkey Franks - 8 Count",
+        "brand":  "Parkview",
+        "price":  2.69,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_83ec7106-923e-497d-a995-83a4a21c900f.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview USDA Turkey Franks - 8 Count from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    }
+]

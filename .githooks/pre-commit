@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Pre-commit hook: run partition dry-run + dart tests to guard policy regressions.
+set -euo pipefail
+
+echo '[hook] Running partition dry-run...'
+dart tool/partition_products.dart --dry-run > /dev/null || {
+  echo '[hook] partition dry-run failed';
+  exit 1
+}
+
+echo '[hook] Running tests (filtered to schema + fast set)...'
+# If you want full test run replace with `dart test` or `flutter test`.
+flutter test test/asset_schema_validation_test.dart > /dev/null || {
+  echo '[hook] schema test failed';
+  exit 1
+}
+
+echo '[hook] Running dedupe report (non-blocking)...'
+if command -v dart >/dev/null 2>&1; then
+  if ! dart tool/dedupe_report.dart --summary > hook_dedupe_out.log 2>&1; then
+    echo '[hook] dedupe script error (ignored)'
+  else
+    if grep -q '\[dedupe-summary\]' hook_dedupe_out.log; then
+      echo "[hook] $(grep '\[dedupe-summary\]' hook_dedupe_out.log)"
+    elif grep -q 'No duplicate' hook_dedupe_out.log; then
+      echo '[hook] no duplicate groups'
+    fi
+  fi
+  rm -f hook_dedupe_out.log
+fi
+
+echo '[hook] OK'

@@ -1,0 +1,17 @@
+﻿{
+    "id":  "aldi_meat_20",
+    "name":  "Chicken Wings Family Pack",
+    "brand":  "ALDI",
+    "price":  9.96,
+    "unit":  "$2.49 / lb (About 4.0 lb each)",
+    "unitShort":  "$2.49 / lb",
+    "storeId":  "aldi",
+    "category":  "Meat \u0026 Seafood",
+    "subCategory":  "Chicken Wings",
+    "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e5dd20b8-7156-4673-9573-6090f621d77e.jpg",
+    "aisle":  "Fresh Meat",
+    "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+    "tags":  [
+                 "Family Pack"
+             ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "aldi_dairy_case_001",
+    "name": "Dairy & Eggs - Free Range Large Brown Grade A Eggs, 12 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/6aaa16af-d936-4f3c-83f5-e8c7e4502ba8/Free%20%20Range%20Large%20Brown%20Grade%20A%20Eggs%2012%20count",
+    "description": "  Make your next eggs benedict, French toast, or avocado toast with Goldhen Free Range Large Grade A Brown Eggs from ALDI. These eggs are delicious for a reason. Goldhen chickens are sustainably raised, 100% vegetarian fed, are raised on small family farms, and are Certified Humane Raised & Handled. Know that you're doing your part by picking up a box of 12 free range brown eggs and incorporating them in your next meal. Come on down to ALDI and discover all of our delicious and affordable eggs.",
+    "benefits": null,
+    "price": 4.79,
+    "unit": "12 count",
+    "storeId": "aldi",
+    "category": "Dairy & Eggs",
+    "subCategory": "Dairy Case"
+  },
+  {
+    "id": "aldi_dairy_case_002",
+    "name": "Dairy & Eggs - Grade A Large White Eggs, 1 dozen",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/0da9bf82-a41d-40b1-8935-63b64f0602b3/Grade%20%20A%20Large%20White%20Eggs%201%20dozen",
+    "description": "  Crack a Goldhen Grade A Large Egg this morning for breakfast to create your favorite omelet or scramble. These farm fresh dozen eggs come with six grams of protein per serving and 70 calories. Eggs are a favorite for breakfast, but a staple in baking and cooking alike. Whether it's hard boiled, deviled, poached, fried, or even just the egg yolk, try this dozen out on your next shopping trip!",
+    "benefits": null,
+    "price": 4.35,
+    "unit": null,
+    "storeId": "aldi",
+    "category": "Dairy & Eggs",
+    "subCategory": "Dairy Case"
+  },
+  {
+    "id": "aldi_dairy_case_003",
+    "name": "Dairy & Eggs - Organic Cage Free Brown Eggs, 1 dozen",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/b05daa8b-8445-4951-9e67-f6a924172c11/Organic%20%20Cage%20Free%20Brown%20Eggs%201%20dozen",
+    "description": "  Organic Cage Free Brown Eggs are a protein-filled option for breakfast, lunch or dinner. Eggs can be cooked or boiled in many ways depending on preference. Try adding them to your next meal.",
+    "benefits": null,
+    "price": 4.85,
+    "unit": null,
+    "storeId": "aldi",
+    "category": "Dairy & Eggs",
+    "subCategory": "Dairy Case"
+  },
+  {
+    "id": "aldi_dairy_case_004",
+    "name": "Dairy & Eggs - Liquid Egg Whites, 32 oz",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/f5cdb2df-4295-4bf0-b1bb-82687e6be4ce/Liquid%20%20Egg%20Whites%2032%20oz",
+    "description": "  Whipping up a delicious breakfast is quicker than ever with these Goldhen Liquid Egg Whites! The liquid egg whites are fat free, pasteurized, and cholesterol free. Use yours to make fluffy egg white omelettes, sweet French toast, and moist muffin bites!",
+    "benefits": null,
+    "price": 5.19,
+    "unit": "32 oz",
+    "storeId": "aldi",
+    "category": "Dairy & Eggs",
+    "subCategory": "Dairy Case"
+  },
+  {
+    "id": "aldi_dairy_case_005",
+    "name": "Dairy & Eggs - Pasture Raised Large Brown Eggs Grade A, 12 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c66b7d0b-28ef-4204-940a-d704939f5ae0/Pasture%20Raised%20Large%20Brown%20Eggs%20Grade%20A%2012%20count",
+    "description": "  Make the best choice for your family and the planet with these Goldhen Pasture Raised Large Brown Eggs. Each Grade A egg comes from a sustainably-raised chicken that has been 100% vegetable-fed and raised on small family farms. Choose these certified humane eggs when baking delicious treats or whipping up a fresh omelette.",
+    "benefits": null,
+    "price": 4.85,
+    "unit": "12 count",
+    "storeId": "aldi",
+    "category": "Dairy & Eggs",
+    "subCategory": "Dairy Case"
+  }
+]

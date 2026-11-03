@@ -1,0 +1,220 @@
+﻿[
+    {
+        "id":  "aldi_meat_2",
+        "name":  "Half Pork Loin",
+        "brand":  "ALDI",
+        "price":  8.82,
+        "unit":  "$2.09 / lb (About 4.22 lb / package)",
+        "unitShort":  "$2.09 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13e7bdf9-43fc-412d-8418-42cca61a75d5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_5",
+        "name":  "Pueblo Lindo USDA Pork Chorizo",
+        "brand":  "Pueblo Lindo",
+        "price":  1.29,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aae2e977-d8b5-44e0-8c4b-7fa5dc711d9b.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Flavorful, tender pork from Pueblo Lindo. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_9",
+        "name":  "Roseland Lemon Garlic Pork Center Cut Loin Filet",
+        "brand":  "ALDI",
+        "price":  5.38,
+        "unit":  "$2.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5804aba3-cd32-4695-b3df-8f027ed9ea5d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_12",
+        "name":  "Al Pastor Style Pork",
+        "brand":  "ALDI",
+        "price":  6.58,
+        "unit":  "$3.29 / lb (About 2.0 lb / package)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bacf9395-a379-4a1e-8953-2380da17ce0d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_47",
+        "name":  "90/10 Ground Sirloin",
+        "brand":  "ALDI",
+        "price":  15.73,
+        "unit":  "$6.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d32a0695-5244-4ee0-8884-ad4cdb9902b8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_62",
+        "name":  "Thin Sliced Sirloin Tip Steak",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  7.99,
+        "unit":  "$7.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$7.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_493ba5df-0e46-44ff-bc7a-8a8159e51a3b.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_89",
+        "name":  "Mild Pork Italian Style Meatballs",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9aa2e4de-cb7f-47a5-8f6c-afb73b13c3a1.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_102",
+        "name":  "USDA Choice Black Angus Top Sirloin Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  9.99,
+        "unit":  "$9.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$9.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b97c00f5-3e54-4715-b62c-d53ba42c7d1b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_111",
+        "name":  "Mesquite BBQ Pork Center Cut Loin Filet",
+        "brand":  "ALDI",
+        "price":  5.38,
+        "unit":  "$2.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7968576-fccd-4b07-b111-df30669ab635.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_121",
+        "name":  "USDA Choice Black Angus Petite Sirloin Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  11.69,
+        "unit":  ".99 / lb (About 1.3 lb / pkg est.)",
+        "unitShort":  ".99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9e9f2156-891f-40f7-b4dd-5f1c2c590733.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Elevate your next dinner party with ALDI\u0027s USDA Choice Black Angus Petite Sirloin Steaks. Each thick steak is made with fresh, never frozen black angus beef that\u0027s super juicy, tender and flavorful. Cover it in your favorite spice rub or marinade before grilling for a meal all your friends will love.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_001",
+        "name":  "Mild Pork Italian Style Meatballs",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/02337880-97ed-4787-8bea-08a863b7d02f/Mild%20Pork%20Italian%20Style%20Meatballs%2016%20oz",
+        "description":  "Shop for fresh Pork Italian Meatballs from ALDI. Each package contains 12 pre-shaped meatballs that make it an easy way to elevate your meal. These meatballs can be enjoyed alone, with your favorite sauce, on top of pastas, and even to make a delicious meatball sub. Made with premium cuts of pork, each bite will taste delicious! Discover all of our fresh meat products at affordable prices on your next shopping trip to ALDI.",
+        "benefits":  null,
+        "price":  3.59,
+        "unit":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_004",
+        "name":  "Marinated Pork Loin Filet - Lemon Garlic",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/222a8101-a7bf-4309-a38e-50b530dfc4b1/Marinated%20Pork%20Loin%20Filet%20%20Lemon%20Garlic",
+        "description":  "Instantly elevate your next night in with this Roseland Lemon Garlic Pork Loin Filet! The tender pork filet has been marinated in a delicious lemon garlic sauce to infuse every bite with a bright, citrusy flavor. Enjoy yours with tender roasted potatoes, fresh veggies, and a squeeze of grilled lemon for the perfect dinner!",
+        "benefits":  null,
+        "price":  5.38,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_023",
+        "name":  "Pork Al Pastor",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/a7849141-ef65-487f-a464-a03b28911dc7/Pork%20Al%20Pastor%20per%20lb",
+        "description":  "Bone-In Pork Baby Back Ribs\n\navg. 3.5 lb/package\n\n$12.22",
+        "benefits":  null,
+        "price":  4.49,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_025",
+        "name":  "Marinated Pork Loin Filet - Mesquite BBQ",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/e39bb945-d9cc-4423-b2c5-9b6fdd48bcc1/Marinated%20Pork%20Loin%20Filet%20%20Mesquite%20BBQ",
+        "description":  "Take your usual dinner rotation to the next level with this Roseland Mesquite BBQ Marinated Pork Loin Filet! The tender, flavorful pork filet has been marinated in a rich Mesquite BBQ sauce for a kick of heat in every bite. Team yours with fluffy mashed potatoes and veggies for a delicious and filling dinner!",
+        "benefits":  null,
+        "price":  5.38,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Specialty Cuts"
+    }
+]

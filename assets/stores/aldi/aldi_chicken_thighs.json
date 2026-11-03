@@ -1,0 +1,104 @@
+﻿[
+    {
+        "id":  "aldi_meat_4",
+        "name":  "Kirkwood Chicken Thighs",
+        "brand":  "Kirkwood",
+        "price":  8.02,
+        "unit":  "$2.29 / lb (About 3.5 lb / package)",
+        "unitShort":  "$2.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d8f0333c-1692-4232-8165-eb26ca5301cd.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_83",
+        "name":  "Kirkwood Boneless and Skinless Chicken Thighs",
+        "brand":  "Kirkwood",
+        "price":  6.64,
+        "unit":  "$3.59 / lb (About 1.85 lb / package)",
+        "unitShort":  "$3.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8fdf8cb7-7be5-4a65-8d5c-0211ad168b6c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_94",
+        "name":  "Family Pack Bone-In Skin-On Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  7.98,
+        "unit":  "$1.55 / lb (About 5.15 lb / package)",
+        "unitShort":  "$1.55 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_768bb906-7963-4fc3-968d-4458a7968071.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_115",
+        "name":  "Never Any! Boneless Skinless Chicken Thighs",
+        "brand":  "Never Any!",
+        "price":  5.17,
+        "unit":  "$3.69 / lb (About 1.4 lb / package)",
+        "unitShort":  "$3.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a53b3af-00d5-46cb-b85a-619a994a332f.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_136",
+        "name":  "Family Pack Boneless Skinless Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  8.22,
+        "unit":  "$2.99 / lb (About 2.75 lb each)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2cb6eab7-ffba-4e0c-a011-0ddb8b40ab3c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_137",
+        "name":  "Teriyaki Seasoned Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Thighs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56803ca8-a0fa-4a27-8937-1ad76156248a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    }
+]

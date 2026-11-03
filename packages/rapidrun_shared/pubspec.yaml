@@ -1,0 +1,21 @@
+name: rapidrun_shared
+version: 0.0.1
+publish_to: 'none'
+description: Shared models and primitives for RapidRun consumer + driver apps.
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  collection: ^1.18.0
+  meta: ^1.11.0
+  cloud_firestore: '>=5.0.0 <7.0.0'
+  url_launcher: ^6.2.2
+  http: ^1.2.0
+  google_maps_flutter: '>=2.0.0 <3.0.0'
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.25.0

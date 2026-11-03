@@ -1,0 +1,14 @@
+{
+  "storeId": "walmart",
+  "category": "Snacks",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "conservative",
+    "priceVariancePct": 6,
+    "ignorePackDifferences": false,
+    "stopWords": ["original", "family", "size", "snack", "snacks", "pack", "multi", "lunch"]
+  },
+  "files": [
+    { "file": "crackers.json", "rawFile": "crackers.json", "subCategory": "Crackers" }
+  ]
+}

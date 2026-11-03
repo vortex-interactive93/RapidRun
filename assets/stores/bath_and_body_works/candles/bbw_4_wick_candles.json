@@ -1,0 +1,212 @@
+[
+  {
+    "id": "bbw_028030788",
+    "name": "Santal + Amber 4-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "4-Wick Candle",
+    "price": 32.95,
+    "msrp": 32.95,
+    "rating": 4.3,
+    "unit": "18 oz / 510 g",
+    "unitShort": "18 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw34fe0a7d/hires/028030788.jpg?sw=600&q=60&format=auto",
+    "description": "An opulent, elevated sanctuary of creamy santal, golden amber and cardamom spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "4_wick_candle",
+      "santal + amber"
+    ],
+    "fragranceProfile": {
+      "family": "Creamy Santal & Amber",
+      "topNotes": [
+        "Creamy Santal",
+        "Golden Amber"
+      ],
+      "heartNotes": [
+        "Cardamom Spice",
+        "Iris Blossom"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Velvet Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "4 Lead-Free Wicks",
+      "Soy Wax Blend",
+      "30\u201350 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030790",
+    "name": "Sweet Orange + Agave 4-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "4-Wick Candle",
+    "price": 32.95,
+    "msrp": 32.95,
+    "rating": 4.8,
+    "unit": "18 oz / 510 g",
+    "unitShort": "18 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbc1c5fab/hires/028030790.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, sunlit citrus splash. Made with sweet orange, agave nectar and mandarin zest.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "4_wick_candle",
+      "sweet orange + agave"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Sweet Orange",
+        "Agave Nectar"
+      ],
+      "heartNotes": [
+        "Mandarin Zest",
+        "Lime Leaf"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "4 Lead-Free Wicks",
+      "Soy Wax Blend",
+      "30\u201350 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030787",
+    "name": "Lavender + Jasmine 4-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "4-Wick Candle",
+    "price": 32.95,
+    "msrp": 32.95,
+    "rating": 4.3,
+    "unit": "18 oz / 510 g",
+    "unitShort": "18 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8d1a3d8a/hires/028030787_alt_1.jpg?sw=600&q=60&format=auto",
+    "description": "A serene, calming floral garden. Scented with French lavender, night jasmine and white cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "4_wick_candle",
+      "lavender + jasmine"
+    ],
+    "fragranceProfile": {
+      "family": "Relaxing Floral Herbal",
+      "topNotes": [
+        "French Lavender",
+        "Night Jasmine"
+      ],
+      "heartNotes": [
+        "Spring Blossoms",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "White Cedar",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "4 Lead-Free Wicks",
+      "Soy Wax Blend",
+      "30\u201350 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030791",
+    "name": "Vanilla + Tonka 4-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "4-Wick Candle",
+    "price": 32.95,
+    "msrp": 32.95,
+    "rating": 4.3,
+    "unit": "18 oz / 510 g",
+    "unitShort": "18 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5c2f3dd0/hires/028030791.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, velvety vanilla dream. Made with vanilla bean, creamy tonka bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "4_wick_candle",
+      "vanilla + tonka"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Creamy Tonka"
+      ],
+      "heartNotes": [
+        "Orchid Petals",
+        "Warm Buttercream"
+      ],
+      "baseNotes": [
+        "Golden Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "4 Lead-Free Wicks",
+      "Soy Wax Blend",
+      "30\u201350 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030789",
+    "name": "Sea Salt + Musk 4-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "4-Wick Candle",
+    "price": 32.95,
+    "msrp": 32.95,
+    "rating": 4.1,
+    "unit": "18 oz / 510 g",
+    "unitShort": "18 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw58bd99cf/hires/028030789.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp, breezy, coastal ocean escape. Made with sea salt waters, solar musk and white sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "4_wick_candle",
+      "sea salt + musk"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Musk",
+      "topNotes": [
+        "Sea Salt Waters",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Solar Musk",
+        "Coastal Water Lily"
+      ],
+      "baseNotes": [
+        "White Sandalwood",
+        "Soft Driftwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "4 Lead-Free Wicks",
+      "Soy Wax Blend",
+      "30\u201350 Hour Burn Time"
+    ]
+  }
+]

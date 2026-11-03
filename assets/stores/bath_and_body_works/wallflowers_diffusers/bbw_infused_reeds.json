@@ -1,0 +1,218 @@
+[
+  {
+    "id": "bbw_028031025",
+    "name": "Santal + Amber Fragrance-Infused Liquidless Reeds",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 3.6,
+    "unit": "5 ct",
+    "unitShort": "5 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb70781d1/hires/028031025.jpg?sw=600&q=60&format=auto",
+    "description": "Fragrance-infused liquidless reed sticks that fill any room with continuous, flame-free fragrance for up to 30 days. Designed for use with any Bath & Body Works ceramic reed vessel.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ],
+    "fragranceProfile": {
+      "family": "Creamy Santal & Amber",
+      "topNotes": [
+        "Creamy Santal",
+        "Golden Amber"
+      ],
+      "heartNotes": [
+        "Cardamom Spice",
+        "Iris Blossom"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Velvet Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031021",
+    "name": "Lavender + Jasmine Fragrance-Infused Liquidless Reeds",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 3.6,
+    "unit": "5 ct",
+    "unitShort": "5 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw533eaef2/hires/028031021.jpg?sw=600&q=60&format=auto",
+    "description": "Fragrance-infused liquidless reed sticks that fill any room with continuous, flame-free fragrance for up to 30 days. Designed for use with any Bath & Body Works ceramic reed vessel.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ],
+    "fragranceProfile": {
+      "family": "Relaxing Floral Herbal",
+      "topNotes": [
+        "French Lavender",
+        "Night Jasmine"
+      ],
+      "heartNotes": [
+        "Spring Blossoms",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "White Cedar",
+        "Soft Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031024",
+    "name": "Vanilla + Tonka Fragrance-Infused Liquidless Reeds",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 3.8,
+    "unit": "5 ct",
+    "unitShort": "5 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0854d3bf/hires/028031024_alt_1.jpg?sw=600&q=60&format=auto",
+    "description": "Fragrance-infused liquidless reed sticks that fill any room with continuous, flame-free fragrance for up to 30 days. Designed for use with any Bath & Body Works ceramic reed vessel.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Creamy Tonka"
+      ],
+      "heartNotes": [
+        "Orchid Petals",
+        "Warm Buttercream"
+      ],
+      "baseNotes": [
+        "Golden Amber",
+        "Sugared Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031418",
+    "name": "Light Blue Ceramic Reed Vessel",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 14.95,
+    "msrp": 14.95,
+    "rating": 4.6,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3befff9f/hires/028031418.jpg?sw=600&q=60&format=auto",
+    "description": "Decorative ceramic reed vessel designed to hold and display fragrance-infused liquidless reeds.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ]
+  },
+  {
+    "id": "bbw_028031022",
+    "name": "Sea Salt + Musk Fragrance-Infused Liquidless Reeds",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 3.6,
+    "unit": "5 ct",
+    "unitShort": "5 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa948d9ba/hires/028031022.jpg?sw=600&q=60&format=auto",
+    "description": "Fragrance-infused liquidless reed sticks that fill any room with continuous, flame-free fragrance for up to 30 days. Designed for use with any Bath & Body Works ceramic reed vessel.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Musk",
+      "topNotes": [
+        "Sea Salt Waters",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Solar Musk",
+        "Coastal Water Lily"
+      ],
+      "baseNotes": [
+        "White Sandalwood",
+        "Soft Driftwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031420",
+    "name": "Dark Pink Ceramic Reed Vessel",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Infused Reeds",
+    "price": 14.95,
+    "msrp": 14.95,
+    "rating": 4.5,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6766bd30/hires/028031420.jpg?sw=600&q=60&format=auto",
+    "description": "Decorative ceramic reed vessel designed to hold and display fragrance-infused liquidless reeds.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "infused_reeds",
+      "reed_diffuser"
+    ],
+    "cleanStandards": [
+      "Flame-Free Liquidless Scent",
+      "Up to 30 Days Continuous Fragrance",
+      "Mess-Free Natural Reeds"
+    ]
+  }
+]

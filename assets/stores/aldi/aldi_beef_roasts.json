@@ -1,0 +1,155 @@
+﻿[
+    {
+        "id":  "aldi_meat_13",
+        "name":  "Smithfield Smithfield Pork Butt Roast",
+        "brand":  "ALDI",
+        "price":  1.39,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9402e7a5-967b-4a02-88a9-d580df2b4695.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_19",
+        "name":  "Boneless Half Butt Pork Roast",
+        "brand":  "ALDI",
+        "price":  13.46,
+        "unit":  "$2.99 / lb (About 4.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6b332f00-824f-4fed-a370-3bcd13398a1e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_29",
+        "name":  "Carnitas Seasoned Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  5.98,
+        "unit":  "$2.39 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_541f6742-acfb-4c54-a0b6-8ed97ded5b40.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_101",
+        "name":  "USDA Choice Black Angus Chuck Roast, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 2.4 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a0ff59e8-42e4-4970-8cc0-dc4eaf194e96.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Chuck Roast, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_108",
+        "name":  "BBQ Flavored Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  4.78,
+        "unit":  "$2.39 / lb (About 2.0 lb each)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7689445b-2955-493d-9a2e-a05310c063d0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_161",
+        "name":  "Guajillo Roast",
+        "brand":  "ALDI",
+        "price":  6.49,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d705745c-18a0-46d8-94b4-c91247991528.jpg",
+        "aisle":  "Beef",
+        "description":  "Guajillo Roast from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_162",
+        "name":  "Seasoned Pork Loin Roast, Rosemary",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be537030-b2c0-4ab0-8050-e2b26735b4d0.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_163",
+        "name":  "Aldi USDA Choice Seasoned Beef Chuck Roast for Birria",
+        "brand":  "USDA Choice",
+        "price":  6.49,
+        "unit":  "$6.49 / lb (About 2.75 lb / package)",
+        "unitShort":  "$6.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_68a98ed2-2500-4039-8809-1c4ce977223b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_164",
+        "name":  "Seasoned Pork Loin Roast, Garlic Pepper",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Beef Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_93979ec3-2d8f-4aa1-9c56-a01dcb9df9eb.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    }
+]

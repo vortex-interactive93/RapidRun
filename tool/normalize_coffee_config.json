@@ -1,0 +1,34 @@
+{
+  "storeId": "walmart",
+  "category": "Breakfast & Cereal",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "aggressive",
+    "priceVariancePct": 8,
+    "ignorePackDifferences": true,
+    "stopWords": ["original", "classic", "premium", "medium", "roast", "dark", "light"]
+  },
+  "files": [
+    {
+      "file": "coffee.json",
+      "subCategory": "Coffee",
+      "defaultSubCategory": "Coffee",
+      "classificationRules": [
+        { "subCategory": "Coffee Pods", "match": ["k-?cups?", "pods?", "capsules?", "nespresso"] },
+        { "subCategory": "Whole Bean Coffee", "match": ["whole bean"] },
+        { "subCategory": "Instant Coffee", "match": ["instant"] },
+        { "subCategory": "RTD Coffee", "match": ["cold brew", "iced", "ready to drink", "latte", "frapp", "mocha"] },
+        { "subCategory": "Ground Coffee", "match": ["ground"] }
+      ],
+  "splitPerSubCategory": true,
+      "rawFiles": [
+        "iced-cold-brew.json",
+        "ground-coffee.json",
+        "whole-bean-coffee.json",
+        "instant-coffee.json",
+        "coffee-pods.json",
+        "espresso-pods.json"
+      ]
+    }
+  ]
+}

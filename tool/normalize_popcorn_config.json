@@ -1,0 +1,22 @@
+{
+  "storeId": "walmart",
+  "category": "Snacks",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "conservative",
+    "priceVariancePct": 6,
+    "ignorePackDifferences": false,
+    "stopWords": ["original", "family", "size", "snack", "snacks", "pack", "multi", "movie", "theater", "butter", "flavored"]
+  },
+  "files": [
+    {
+      "file": "popcorn.json",
+      "subCategory": "Popcorn",
+      "rawFiles": [
+        "microwave-popcorn.json",
+        "smartfood-popcorn.json",
+        "popcorn-kernals.json"
+      ]
+    }
+  ]
+}

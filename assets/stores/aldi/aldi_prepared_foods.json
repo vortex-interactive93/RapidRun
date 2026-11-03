@@ -1,0 +1,2195 @@
+﻿[
+    {
+        "id":  "aldi_prepared_foods_1",
+        "name":  "Park Street Deli Sirloin Steak Tips With Gravy",
+        "brand":  "Park Street Deli",
+        "price":  8.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c89cf196-e762-4f1d-a2b6-cad219b3bc1f.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_2",
+        "name":  "Specially Selected Stuffed Green Pepperoncini",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "9.5 oz",
+        "unitShort":  "9.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f62ecd32-3b88-4ce1-8b80-b777e662ff4a.jpg",
+        "aisle":  "Canned Food",
+        "description":  "Specially Selected Stuffed Green Pepperoncini from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_3",
+        "name":  "Artichoke, Spinach \u0026 Cheese Stuffed Baby Bella Mushrooms",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "8.5 oz",
+        "unitShort":  "8.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_db7d4da5-a620-4b27-83fa-9ca3ac901f23.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_4",
+        "name":  "Blue Hill Bay Smoked Salmon Poke Bowl",
+        "brand":  "ALDI",
+        "price":  7.99,
+        "unit":  "8.8 oz",
+        "unitShort":  "8.8 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2e5de3fd-6de8-476f-91f0-9711889604d6.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_5",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Supreme Traditional Crust Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  7.99,
+        "unit":  "53 oz",
+        "unitShort":  "53 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_33d5ee7f-5dbf-49b7-bd69-8a3be731883a.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from Mama Cozzi\u0027s. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_6",
+        "name":  "Park Street Deli Pork Egg Rolls",
+        "brand":  "Park Street Deli",
+        "price":  3.89,
+        "unit":  "13.5 oz",
+        "unitShort":  "13.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_35f58295-0cc0-4dd0-8c5e-36c5ac25d3c7.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_7",
+        "name":  "Park Street Deli Chicken Egg Rolls",
+        "brand":  "Park Street Deli",
+        "price":  3.89,
+        "unit":  "13.5 oz",
+        "unitShort":  "13.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_63eda6e0-62b8-43c2-be59-5bfa8978ffc5.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_8",
+        "name":  "Park Street Deli Macaroni \u0026 Cheese",
+        "brand":  "Park Street Deli",
+        "price":  2.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_de153490-de6e-4c1b-baf8-268be9fd574d.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_9",
+        "name":  "Aldi Rotisserie Style Pulled Chicken",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1611cf9b-a857-4b3c-9435-6267795d9284.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_10",
+        "name":  "Specially Selected Panino Bites, Soppressata",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "4 oz",
+        "unitShort":  "4 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1fff7a03-8138-4c57-bb5f-3a0bdcd61b7c.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Specially Selected Panino Bites, Soppressata from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_11",
+        "name":  "Park Street Deli Fully Cooked Pork Burnt Ends in BBQ Sauce",
+        "brand":  "Park Street Deli",
+        "price":  5.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13244c7c-661a-4bc5-b77f-bcee0ae19150.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_12",
+        "name":  "Happy Farms Party Cheese Tray",
+        "brand":  "Happy Farms",
+        "price":  3.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b6f49342-dfcd-49d6-a25f-93ebdc265bf1.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Happy Farms. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_13",
+        "name":  "Fusia Pad Thai Ramen Takeout Boxes",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "8.11 oz",
+        "unitShort":  "8.11 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_33051457-e02d-4244-9194-a13a8c58169a.jpg",
+        "aisle":  "Soup",
+        "description":  "Fusia Pad Thai Ramen Takeout Boxes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_14",
+        "name":  "Park Street Deli Sliced Beef Brisket",
+        "brand":  "Park Street Deli",
+        "price":  8.29,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8f0420e2-650c-4c84-9cd7-0748eea05200.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_15",
+        "name":  "Bob Evans Original Refrigerated Mashed Potatoes",
+        "brand":  "ALDI",
+        "price":  3.75,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fe8a3813-018d-4910-9a5e-dd69c68f0679.png",
+        "aisle":  "Cooler Mdu",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_16",
+        "name":  "Specially Selected Panino Bites, Smkd Prosciutto",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "4 oz",
+        "unitShort":  "4 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1d538478-924f-41df-9ee4-87a9b4016918.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Specially Selected Panino Bites, Smkd Prosciutto from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_17",
+        "name":  "Aldi Slow Smoked Pulled Pork",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_07ed2e04-b1c1-49d7-8edc-445a3162d01d.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_18",
+        "name":  "Seasoned Mediterranean Style Shawarma Beef Bites",
+        "brand":  "ALDI",
+        "price":  9.36,
+        "unit":  "$7.49 / lb",
+        "unitShort":  "$7.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b9d9b229-2164-44d6-8442-b76fb945f8a2.jpg",
+        "aisle":  "Fresh Meat (without Pork \u0026 Poultry)",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_19",
+        "name":  "Millville Rolled Overnight Oats, Plain Oats",
+        "brand":  "Millville",
+        "price":  2.89,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_403340c0-be6a-47f1-bc03-dd2ad73a4cab.jpg",
+        "aisle":  "Cereals \u0026 Snacks",
+        "description":  "Millville Rolled Overnight Oats, Plain Oats from Millville. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_20",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Calzone Four Cheese",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  2.39,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9836dd0d-4c7d-49ac-af8e-a9c3e3814d7e.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Mama Cozzi\u0027s. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_21",
+        "name":  "Northern Catch Smoked Oysters with Red Chili Pepper",
+        "brand":  "ALDI",
+        "price":  1.69,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bd55880f-3ed1-4777-8ab0-b24df7007676.jpg",
+        "aisle":  "Canned Meat",
+        "description":  "Northern Catch Smoked Oysters with Red Chili Pepper from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_22",
+        "name":  "Panera Bread Chicken Noodle Soup",
+        "brand":  "ALDI",
+        "price":  3.55,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ffff60e4-4d87-4db1-8a52-602f6141e643.png",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_23",
+        "name":  "Panera Bread Broccoli Cheddar Soup",
+        "brand":  "ALDI",
+        "price":  3.55,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_59e21ff4-9e42-4f49-9419-9df860493f8b.png",
+        "aisle":  "Cooler Mdu",
+        "description":  "Freshly baked, soft Panera Bread Broccoli Cheddar Soup from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_24",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Calzone Philly Cheese Steak",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  2.39,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e0a9e0fb-f51c-4ace-acea-4934960e9258.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Premium, tender USDA-inspected beef from Mama Cozzi\u0027s. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_25",
+        "name":  "Park Street Deli Pulled Beef Brisket",
+        "brand":  "Park Street Deli",
+        "price":  8.29,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dcec4432-9b2c-4302-82fc-a5f535a755bd.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_26",
+        "name":  "Rana Chicken Parmesan Lasagna",
+        "brand":  "ALDI",
+        "price":  9.99,
+        "unit":  "25 oz",
+        "unitShort":  "25 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9ff890ca-d7e5-4a4a-9ad3-2732dc3c8638.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_27",
+        "name":  "Park Street Deli Gouda, Sharp Cheddar and Pretzel Snack Selects",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_746b1503-5a6b-485d-9026-6b93927599e5.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, crunchy, and satisfying Park Street Deli Gouda, Sharp Cheddar and Pretzel Snack Selects, 3 count from Park Street Deli. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_28",
+        "name":  "Pulmuone Chicken Pad Thai Meal Kit",
+        "brand":  "ALDI",
+        "price":  9.29,
+        "unit":  "24.07 oz",
+        "unitShort":  "24.07 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_521eed84-6891-4dad-9db8-8f1e4dd8db44.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_29",
+        "name":  "Park Street Deli Tzatziki with Pretzels",
+        "brand":  "Park Street Deli",
+        "price":  1.39,
+        "unit":  "3.5 oz",
+        "unitShort":  "3.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f3e583fd-b524-4341-aa4e-33dcc53af671.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, crunchy, and satisfying Park Street Deli Tzatziki with Pretzels from Park Street Deli. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_30",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Pepperoni \u0026 Mozzarella Flatbread",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  4.89,
+        "unit":  "13.1 oz",
+        "unitShort":  "13.1 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_04a24647-93db-43f6-8420-ea14861bac5f.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Freshly baked, soft Mama Cozzi\u0027s Pizza Kitchen Pepperoni \u0026 Mozzarella Flatbread from Mama Cozzi\u0027s. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_31",
+        "name":  "Lloyd\u0027s Shredded Beef in Original BBQ Sauce",
+        "brand":  "ALDI",
+        "price":  6.29,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be383545-3d4a-490d-b9f5-c05e99fb4723.jpg",
+        "aisle":  "Frozen Meat \u0026 Fish",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_32",
+        "name":  "Tyson Tyson Beef Pot Roast Kit",
+        "brand":  "ALDI",
+        "price":  12.49,
+        "unit":  "44 oz",
+        "unitShort":  "44 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_58990348-c46f-4a71-8c89-90545ab3bd18.png",
+        "aisle":  "Fresh Meat (without Pork \u0026 Poultry)",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_33",
+        "name":  "Park Street Deli Teriyaki Udon with Chicken Meal Kit",
+        "brand":  "Park Street Deli",
+        "price":  7.69,
+        "unit":  "24.1 oz",
+        "unitShort":  "24.1 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cf6e6ce0-5a71-4577-8cc2-c8692b6436da.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_34",
+        "name":  "Park Street Deli BBQ Pulled Pork",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f197349b-f3fe-45f1-9150-bfc903aa4ff6.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_35",
+        "name":  "Park Street Deli Ham \u0026 Cheese Lunch Kit",
+        "brand":  "Park Street Deli",
+        "price":  2.19,
+        "unit":  "2.86 oz",
+        "unitShort":  "2.86 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_70c1015a-8082-48d7-80c2-835fdc6674d6.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_36",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Buffalo Chicken Deli Calzone",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  2.39,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_64243213-9a1d-46b0-b031-f4bec8a2cfd4.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Mama Cozzi\u0027s. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_37",
+        "name":  "Tyson Tyson Pork Roast Kit",
+        "brand":  "ALDI",
+        "price":  8.99,
+        "unit":  "2.75 lb",
+        "unitShort":  "2.75 lb",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5ac58db0-5b89-408c-8e73-d706aed21039.png",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_38",
+        "name":  "Lunch Mate Original Grilled Chicken Strips with Rib Meat",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eeb0a627-2d8e-4595-b6b3-44e5198262b3.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_39",
+        "name":  "Park Street Deli Pork Carnitas",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_df1efcd8-bcdc-4fa4-a37c-44017cb99a60.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_40",
+        "name":  "Buffalo Party Pack Chicken Wings",
+        "brand":  "ALDI",
+        "price":  4.99,
+        "unit":  "40 oz",
+        "unitShort":  "40 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7def5d29-5047-4662-836c-fafd00b3c09a.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_41",
+        "name":  "Little Salad Bar Chicken Caesar Salad with Parmesan \u0026 Caesar Dressing",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "6.25 oz",
+        "unitShort":  "6.25 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc331c29-d616-4d3c-8285-333715997766.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_42",
+        "name":  "Savoritz Cheese Dip \u0026 Cracker Sticks",
+        "brand":  "ALDI",
+        "price":  1.85,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8309fe96-148f-4350-a179-393c00e2b6a4.jpg",
+        "aisle":  "Cracker",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_43",
+        "name":  "Park Street Deli Thai-Inspired Coconut Chicken",
+        "brand":  "Park Street Deli",
+        "price":  6.39,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_22935813-df91-46af-9618-45ee0429a741.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_44",
+        "name":  "Park Street Deli Sharp White Cheddar, Cranberries \u0026 Almonds Snack Selects- 3 Pack",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_48a752ff-85f2-4a97-8c3a-d18dbba74386.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Sharp White Cheddar, Cranberries \u0026 Almonds Snack Selects- 3 Pack from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_45",
+        "name":  "Park Street Deli Cheddar \u0026 Broccoli Quiche",
+        "brand":  "Park Street Deli",
+        "price":  9.49,
+        "unit":  "23 oz",
+        "unitShort":  "23 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e9f21738-ce32-4a2f-a738-b838e413c57c.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Cheddar \u0026 Broccoli Quiche from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_46",
+        "name":  "Specially Selected Margherita Pinsa Flatbread",
+        "brand":  "Specially Selected",
+        "price":  5.99,
+        "unit":  "12.3 oz",
+        "unitShort":  "12.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b4cc2558-f030-4115-96be-2dbc9d2bf99f.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Freshly baked, soft Specially Selected Margherita Pinsa Flatbread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_47",
+        "name":  "Park Street Deli Provolini Antipasti Olives",
+        "brand":  "Park Street Deli",
+        "price":  2.59,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7c1a7e49-06d2-4130-9024-6a7da70d9c25.jpeg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Park Street Deli Provolini Antipasti Olives from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_48",
+        "name":  "Aldi Savory Chicken",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fb63e778-af10-4db0-84c8-1f5fb3c523ae.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_49",
+        "name":  "Aldi Seasoned Chicken Breast Strips",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8232d8a3-9223-4f4b-9e49-155c7e5762a1.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_50",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Calzone Pepperoni",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  2.39,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d17e46db-3483-4412-977c-4747a9e686df.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from Mama Cozzi\u0027s. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_51",
+        "name":  "Park Street Deli Bacon \u0026 GruyÃ¨re Sous-Vide Egg Bites  - 4 Count",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "9.2 oz",
+        "unitShort":  "9.2 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c45dbee7-0d89-4e80-a904-2405095fa46d.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_52",
+        "name":  "Park Street Deli Classic Chicken Salad",
+        "brand":  "Park Street Deli",
+        "price":  4.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0c207319-2ba0-4b38-a63b-147ca65dac30.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_53",
+        "name":  "Park Street Deli Turkey Wrap",
+        "brand":  "Park Street Deli",
+        "price":  3.99,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_889b910c-1e84-44b3-89d4-5527ce07fa66.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Turkey Wrap from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_54",
+        "name":  "Priano Parma Salami and Smoked Provolne Tray",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "2.5 oz",
+        "unitShort":  "2.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c99c6659-03c2-4b47-9440-b6fd751e6d01.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Priano Parma Salami and Smoked Provolne Tray from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_55",
+        "name":  "Park Street Deli Cranberry Almond Chicken Salad",
+        "brand":  "Park Street Deli",
+        "price":  4.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b1bf7f07-7d9c-48c2-80b6-d67f4e13ee48.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_56",
+        "name":  "Park Street Deli Natural Pepper Jack \u0026 Colby Cheese with Mini Round Crackers",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5bed5ba8-22c1-45ac-a38f-6890e74cfa28.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_57",
+        "name":  "Park Street Deli Hawaiian Style Chicken",
+        "brand":  "Park Street Deli",
+        "price":  6.39,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7e826de4-0b2f-41fa-a92d-077420184d90.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_58",
+        "name":  "Park Street Deli Cranberry Almond Chicken Salad Singles",
+        "brand":  "Park Street Deli",
+        "price":  4.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_045c24ee-2640-4c28-ba8d-febc8e1c6d92.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_59",
+        "name":  "Park Street Deli Ham \u0026 Swiss Quiche",
+        "brand":  "Park Street Deli",
+        "price":  9.49,
+        "unit":  "23 oz",
+        "unitShort":  "23 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea645dad-b948-4f71-b7b6-68391ed51608.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Flavorful, tender pork from Park Street Deli. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_60",
+        "name":  "Park Street Deli Uncured Pepperoni, Mozzarella \u0026 Mixed Olives Snack Tray",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aaa0daa6-74c5-4219-86df-a11ecb8cff28.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Uncured Pepperoni, Mozzarella \u0026 Mixed Olives Snack Tray from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_61",
+        "name":  "Aldi Potato Salad with Egg",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "32 oz",
+        "unitShort":  "32 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f253b51a-8076-474a-b9fc-d2bea0e3bd4c.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Hearty, versatile potatoes—a staple for baking, mashing, roasting, or frying into crispy homemade fries.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_62",
+        "name":  "Brekki Cold Brew Coffee Overnight Oats",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "5.3 oz",
+        "unitShort":  "5.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_10add981-6af2-444f-9955-46acd25cb4b8.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, aromatic Brekki Cold Brew Coffee Overnight Oats from ALDI. Delivers smooth, satisfying flavor to kickstart your morning or refresh your afternoon.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_63",
+        "name":  "Lunch Mate Grilled Chicken Breast Strips",
+        "brand":  "ALDI",
+        "price":  2.69,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e8842645-2237-4053-82de-47f90e9788ad.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_64",
+        "name":  "Park Street Deli Chicken Breast Bites with Teriyaki Style Dipping Sauce",
+        "brand":  "Park Street Deli",
+        "price":  2.99,
+        "unit":  "3.99 oz",
+        "unitShort":  "3.99 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1957b98a-c50a-4f24-b876-51617747d257.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_65",
+        "name":  "Park Street Deli Mild Cheddar Cheese and Beef Sausage Bites",
+        "brand":  "Park Street Deli",
+        "price":  3.39,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be86c71a-e547-4a5b-932a-587f852cea3d.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_66",
+        "name":  "R A N A Grilled White Chicken Fettuccine Alfredo Sauce Meal Kit",
+        "brand":  "ALDI",
+        "price":  14.97,
+        "unit":  "39 oz",
+        "unitShort":  "39 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_94d01347-2e3d-4fdd-b36d-daf8ca218d2e.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_67",
+        "name":  "Park Street Deli Chicken Fajitas",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cac9b696-f37e-4697-9deb-353668e3d1ab.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_68",
+        "name":  "Park Street Deli Genoa Salami, Provolone Cheese and Breadsticks",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_74a21c2b-7dbf-49b9-a93c-f5eb194b0494.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_69",
+        "name":  "Park Street Deli Turkey Bites with Colby Jack",
+        "brand":  "Park Street Deli",
+        "price":  3.39,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8d9ae1f7-df4b-4d21-b930-bdd6f5acaeaf.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Turkey Bites with Colby Jack from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_70",
+        "name":  "Lunch Mate Family Size Rotisserie Chicken Breast",
+        "brand":  "ALDI",
+        "price":  5.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_70978838-4bec-4dbd-a13a-516bae98794c.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_71",
+        "name":  "Park Street Deli ApricotDill / Apple Chedd, Apple Cheddar",
+        "brand":  "Park Street Deli",
+        "price":  5.49,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6e5c9f89-eba7-4272-bf3a-be56d7977d98.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_72",
+        "name":  "Park Street Deli Chicken Breast Bites with Buffalo Style Dipping Sauce",
+        "brand":  "Park Street Deli",
+        "price":  2.99,
+        "unit":  "3.99 oz",
+        "unitShort":  "3.99 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea32ff3e-de82-4cb0-b643-62b863cd4ae6.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_73",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen 12\" Veggie Cauliflower Crust Deli Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  8.29,
+        "unit":  "17.6 oz",
+        "unitShort":  "17.6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_64d82343-39c0-48fe-9645-541246a20cd2.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_74",
+        "name":  "Park Street Deli Artichoke Spinach \u0026 Parmesan Cheese Hand Stuffed Chicken Breast",
+        "brand":  "Park Street Deli",
+        "price":  6.39,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b82e450b-c6cd-4879-b658-7b86207bae88.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_75",
+        "name":  "Park Street Deli Chicken Breast Bites with Barbeque Style Dipping Sauce",
+        "brand":  "Park Street Deli",
+        "price":  2.99,
+        "unit":  "3.99 oz",
+        "unitShort":  "3.99 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_583cb3eb-8fac-49df-913e-c2ea4cd4465a.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_76",
+        "name":  "Brekki Vanilla Cinnamon Ready to Eat Oats",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "5.3 oz",
+        "unitShort":  "5.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9e60471d-4f9e-45ee-991b-59920732c2bf.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Brekki Vanilla Cinnamon Ready to Eat Oats from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_77",
+        "name":  "Park Street Deli Italian Wrap",
+        "brand":  "Park Street Deli",
+        "price":  3.99,
+        "unit":  "8.2 oz",
+        "unitShort":  "8.2 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7c12902b-6ecd-46d3-a547-7e6e3401aadd.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Italian Wrap from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_78",
+        "name":  "Park Street Deli Classic Chicken Salad Mini Cups",
+        "brand":  "Park Street Deli",
+        "price":  4.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c324040f-3fd4-4881-8233-a9ae9dd08480.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_79",
+        "name":  "Park Street Deli Cheddar Cheese and Honey Brown Sugar Turkey Sausage Bites",
+        "brand":  "Park Street Deli",
+        "price":  3.39,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6a84fb0f-66d0-4908-9716-cbfb276e30fb.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from Park Street Deli. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_80",
+        "name":  "Priano Genoa Salami and Provolone Cheese Tray",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_03805e21-6318-4511-96cf-fa78e4931994.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_81",
+        "name":  "Park Street Deli Greek Feta Salad",
+        "brand":  "Park Street Deli",
+        "price":  2.59,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6d677fb3-cc4e-420e-bb92-f708eb023357.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_82",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen 12\" Uncured Pepperoni Cauliflower Crust Deli Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  8.29,
+        "unit":  "17 oz",
+        "unitShort":  "17 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d2441559-91d6-4671-bc90-e68af1f4d91e.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from Mama Cozzi\u0027s. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_83",
+        "name":  "Park Street Deli Prosciutto, Provolone Cheese and Breadsticks",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5b99672e-8a69-4850-bb63-c0feace55174.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_84",
+        "name":  "Brekki Dark Chocolate Overnight Oats",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "5.3 oz",
+        "unitShort":  "5.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_293529d1-fbe3-4b3d-b7bb-c050900ab9b9.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Indulgent, delicious Brekki Dark Chocolate Overnight Oats from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_85",
+        "name":  "Emporium Selection Specialty Party Cheese Tray",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "13.7 oz",
+        "unitShort":  "13.7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3a5d55f4-07e9-4fe8-8df0-57df759f9f0f.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_86",
+        "name":  "Kevin\u0027s Natural Foods Cilantro Lime Chicken",
+        "brand":  "ALDI",
+        "price":  9.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1938a4f1-21d6-4561-ad64-a7cda067e829.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_87",
+        "name":  "Park Street Deli Pepper Jack, Raisins \u0026 Honey Roasted Peanuts Snack Selects - 3 Packs",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d5a90f17-6caf-4ba5-a082-fa608891995f.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Park Street Deli Pepper Jack, Raisins \u0026 Honey Roasted Peanuts Snack Selects - 3 Packs from Park Street Deli. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_88",
+        "name":  "Park Street Deli Chickpea Salad",
+        "brand":  "Park Street Deli",
+        "price":  2.39,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a9c1c3b5-ddbe-4a64-8603-5f8d3a0d1847.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_89",
+        "name":  "Priano Hot Genoa Salami and Hot Provolone Cheese Tray",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "2.5 oz",
+        "unitShort":  "2.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_41029296-163a-4317-838f-a79927f975cb.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_90",
+        "name":  "Park Street Deli Strawberry Cream Cheese Snack",
+        "brand":  "Park Street Deli",
+        "price":  1.59,
+        "unit":  "2.25 oz",
+        "unitShort":  "2.25 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_961e6626-4fd8-47a1-a665-826ce9a88918.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Juicy, vibrant red fresh strawberries packed with natural sweetness and Vitamin C. Ideal for fresh snacking, tossing into summer salads, blending into morning smoothies, or layering over yogurt and desserts.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_91",
+        "name":  "Park Street Deli Salami, Provolone \u0026 Dark Chocolate Covered Almonds Charcuterie Snack Tray",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "3 oz",
+        "unitShort":  "3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_367f60ef-efa7-47fd-b23d-8105adf82c47.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Indulgent, delicious Park Street Deli Salami, Provolone \u0026 Dark Chocolate Covered Almonds Charcuterie Snack Tray from Park Street Deli. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_92",
+        "name":  "Park Street Deli BBQ Pulled Chicken",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_101e7dd2-b11e-44c3-afaf-33ba815ca3ae.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_93",
+        "name":  "Park Street Deli Broccoli \u0026 Cheddar Hand Stuffed Chicken Breast",
+        "brand":  "Park Street Deli",
+        "price":  6.39,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_08c93d99-5c83-49e2-b222-7802ac6acf2e.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from Park Street Deli. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_94",
+        "name":  "Park Street Deli Black Bean Salad",
+        "brand":  "Park Street Deli",
+        "price":  2.39,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4bdb84be-02ac-4ced-8574-3a7d3ec506e6.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_95",
+        "name":  "Park Street Deli Egg White \u0026 Roasted Red Pepper Sous-Vide Egg Bites",
+        "brand":  "Park Street Deli",
+        "price":  5.99,
+        "unit":  "9.2 oz",
+        "unitShort":  "9.2 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_af10d98c-b85b-46be-b3bf-29893e9166df.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_96",
+        "name":  "Kevin\u0027s Natural Foods Roasted Garlic Chicken",
+        "brand":  "ALDI",
+        "price":  9.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a5ba812b-8881-4117-a443-5fed22cc149d.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_97",
+        "name":  "Lunchables Nachos with Capri Sun Fruit Punch \u0026 Kit Kat",
+        "brand":  "ALDI",
+        "price":  2.84,
+        "unit":  "10.7 oz",
+        "unitShort":  "10.7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9519ce32-219b-4f8a-ac33-61cefb0b9dba.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Lunchables Nachos with Capri Sun Fruit Punch \u0026 Kit Kat from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_98",
+        "name":  "Lunchables Pepperoni Pizza with Capri Sun Fruit Punch \u0026 Crunch Bar",
+        "brand":  "ALDI",
+        "price":  2.84,
+        "unit":  "4.7 oz",
+        "unitShort":  "4.7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2c6daffe-6fef-4b8d-b05d-997f3b98e956.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from ALDI. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_99",
+        "name":  "Lunchables Ham \u0026 American Cracker Stackers with Capri Sun Fruit Punch \u0026 Chocolate Chip Cookies",
+        "brand":  "ALDI",
+        "price":  2.84,
+        "unit":  "9.1 oz",
+        "unitShort":  "9.1 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_de7f9493-8d82-4ea4-8e33-9e2c10a733b4.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_100",
+        "name":  "Lunchables Turkey \u0026 American Cracker Stacker with Capri Sun Pacific Cooler \u0026 Reese\u0027s Peanut Butter Cup",
+        "brand":  "ALDI",
+        "price":  2.84,
+        "unit":  "8.9 oz",
+        "unitShort":  "8.9 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3549470e-abd3-47a7-b72a-cb37018a5145.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy churned butter from ALDI. Brings rich flavor and velvety texture to baking, cooking, and spreading.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_101",
+        "name":  "Little Salad Bar Santa Fe Style Salad Bowl",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "7.05 oz",
+        "unitShort":  "7.05 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb87c7b8-9db6-4a25-b7ea-0d1257939982.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_102",
+        "name":  "Park Street Deli Stir Fry Noodles with Mongolian-Style Beef Meal Kit",
+        "brand":  "Park Street Deli",
+        "price":  7.69,
+        "unit":  "16.3 oz",
+        "unitShort":  "16.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_04a03ea6-1da1-4e84-9c8b-0f4ff6166f41.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_103",
+        "name":  "Specially Selected Gourmet Mac and Cheese, Tomato Mozz",
+        "brand":  "Specially Selected",
+        "price":  2.19,
+        "unit":  "6.5 oz",
+        "unitShort":  "6.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d1s8987jlndkbs.cloudfront.net/assets/missing-item-4bbe82b8555e4d1c12626fd482cb2409713e8e30835645ff3650ef66a725d03c.png",
+        "aisle":  "Dry Goods \u0026 Pasta",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_104",
+        "name":  "Priano Manicotti",
+        "brand":  "ALDI",
+        "price":  3.59,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb061620-c716-4b53-b6e8-27d818226e4c.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Priano Manicotti from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_105",
+        "name":  "Earthly Grains Garden Vegetable 90 Second Microwavable White Rice",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "8.8 oz",
+        "unitShort":  "8.8 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d3756e3d-417f-4b07-a646-0c0a9836bc56.jpg",
+        "aisle":  "Processed Foods",
+        "description":  "Earthly Grains Garden Vegetable 90 Second Microwavable White Rice from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_106",
+        "name":  "Priano Stuffed Shells",
+        "brand":  "ALDI",
+        "price":  3.59,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_87276225-e220-46d4-b69e-d9124aa702ab.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Priano Stuffed Shells from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_107",
+        "name":  "Bettr Four-Cheese Green Chili Breakfast Bowl",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_680a19c2-8d05-4fb2-9d02-a98f53edff51.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_108",
+        "name":  "Park Street Deli Red Pepper Hummus with Pretzels",
+        "brand":  "Park Street Deli",
+        "price":  1.39,
+        "unit":  "3.5 oz",
+        "unitShort":  "3.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cd7e7cdd-c638-4eff-a1f5-bc5fdb9a5b72.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, crunchy, and satisfying Park Street Deli Red Pepper Hummus with Pretzels from Park Street Deli. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_109",
+        "name":  "Fusia Teriyaki Ramen Takeout Boxes",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "8.11 oz",
+        "unitShort":  "8.11 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4435d395-d5d8-4a6b-acc8-6c9c5711df45.jpg",
+        "aisle":  "Soup",
+        "description":  "Fusia Teriyaki Ramen Takeout Boxes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_110",
+        "name":  "Specially Selected RR Pepper or Jala Chowder, Jala Chowder",
+        "brand":  "Specially Selected",
+        "price":  3.89,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_81ba3bba-d9f2-4dde-b2cb-2367e57c4b7a.jpg",
+        "aisle":  "Canned Goods",
+        "description":  "Specially Selected RR Pepper or Jala Chowder, Jala Chowder from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_111",
+        "name":  "Priano Beef Raviolini",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_130fef99-ccd2-4c06-86b2-d7e512fca5a9.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_112",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Stuffed Crust Pepperoni Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  9.49,
+        "unit":  "44.3 oz",
+        "unitShort":  "44.3 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c964ffb4-faf4-4532-a4ef-3c4383b2dcb4.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from Mama Cozzi\u0027s. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_113",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Pepperoni Traditional Crust Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  6.99,
+        "unit":  "44.5 oz",
+        "unitShort":  "44.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_61874e41-7efc-448b-b3aa-81698e575897.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Crispy crust pizza topped with savory tomato sauce and premium cheeses from Mama Cozzi\u0027s. A convenient, delicious meal ready in minutes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_114",
+        "name":  "Park Street Deli Pretzel Bites Mustard Dip",
+        "brand":  "Park Street Deli",
+        "price":  0,
+        "unit":  "9.25 oz",
+        "unitShort":  "9.25 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_08f9f7ce-5577-437f-9d2a-da636b537a60.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Crisp, crunchy, and satisfying Park Street Deli Pretzel Bites Mustard Dip from Park Street Deli. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_115",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Wood-Fired Sausage Pepperoni Deli Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  7.19,
+        "unit":  "30.23 oz",
+        "unitShort":  "30.23 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_12c7974c-e92d-4ba0-80a1-c6075aed1718.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Savory, expertly seasoned sausages from Mama Cozzi\u0027s. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_116",
+        "name":  "Park Street Deli Sirloin Steak Tips With Mushroom Gravy",
+        "brand":  "Park Street Deli",
+        "price":  8.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_072b5596-34c4-4997-9840-ea4ec1f0180a.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from Park Street Deli. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_117",
+        "name":  "Specially Selected Flavored Goat Cheese Riso, Wild Mushroom",
+        "brand":  "Specially Selected",
+        "price":  2.49,
+        "unit":  "6.5 oz",
+        "unitShort":  "6.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56352673-a3e5-4dbe-8a42-54155b79d4a6.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Rich, creamy cheese from Specially Selected. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_118",
+        "name":  "Proper Good Proper Good Pasta Meal, Meatball Marina",
+        "brand":  "ALDI",
+        "price":  4.98,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_022a0bbd-6cd5-4b83-884b-ee4e3b82157a.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Proper Good Proper Good Pasta Meal, Meatball Marina from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_119",
+        "name":  "Park Street Deli Taboule Salad",
+        "brand":  "Park Street Deli",
+        "price":  2.39,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_18ea4c67-be0d-4d2b-a24d-3916e9688f88.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_120",
+        "name":  "Pulmuone Beef Bulgogi Udon Meal Kit",
+        "brand":  "ALDI",
+        "price":  9.29,
+        "unit":  "24.07 oz",
+        "unitShort":  "24.07 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f7326fb5-4442-4c47-85f4-1a2783e65e26.jpg",
+        "aisle":  "Quick Meals",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_121",
+        "name":  "Specially Selected Flavored Goat Cheese Risot, Pumpkin Sage",
+        "brand":  "Specially Selected",
+        "price":  2.49,
+        "unit":  "6.5 oz",
+        "unitShort":  "6.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9589b456-5566-4361-bf47-30ad263b5345.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Rich, creamy cheese from Specially Selected. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_122",
+        "name":  "Park Street Deli Mild Cheddar Cheese and Cracker Snack Selects",
+        "brand":  "Park Street Deli",
+        "price":  2.49,
+        "unit":  "4.5 oz",
+        "unitShort":  "4.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bd1c8dec-cbd8-47ac-92b2-1006720996f3.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_123",
+        "name":  "Park Street Deli Smoked Turkey \u0026 Cheese Lunch Kit",
+        "brand":  "Park Street Deli",
+        "price":  2.19,
+        "unit":  "2.86 oz",
+        "unitShort":  "2.86 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_03b9fd97-acc4-4173-86f8-08bfdd0aeceb.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_124",
+        "name":  "Aldi Italian Trio - Hot Ham, Pepperoni, Provolone",
+        "brand":  "ALDI",
+        "price":  7.99,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7ad8a4c2-8daf-4a9f-9550-9087b9ff03e6.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_125",
+        "name":  "Park Street Deli ApricotDill / Apple Chedda, Apricot Dill",
+        "brand":  "Park Street Deli",
+        "price":  5.49,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_769f55e2-4637-4dfb-ba34-9d6386ed5807.jpg",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_126",
+        "name":  "Proper Good Proper Good Pasta Meal, Chicken Alfredo",
+        "brand":  "ALDI",
+        "price":  4.98,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8f2a9baf-1fb7-4858-be10-4598004afb79.png",
+        "aisle":  "Prepared Meals \u0026 Sides",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_127",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Chicken Bacon Ranch Flatbread",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  4.89,
+        "unit":  "13.9 oz",
+        "unitShort":  "13.9 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ebbcb115-27d8-4ca9-8dbf-94bd0cb69819.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Grade-A tender fresh chicken from Mama Cozzi\u0027s. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_128",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Five Cheese Traditional Crust Pizza",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  5.99,
+        "unit":  "42.6 oz",
+        "unitShort":  "42.6 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_75375601-a1ce-4634-af4b-a0d347ca5fc5.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Rich, creamy cheese from Mama Cozzi\u0027s. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_prepared_foods_129",
+        "name":  "Park Street Deli Original Hummus with Pretzels",
+        "brand":  "Park Street Deli",
+        "price":  1.39,
+        "unit":  "3.5 oz",
+        "unitShort":  "3.5 oz",
+        "storeId":  "aldi",
+        "category":  "Prepared Foods",
+        "subCategory":  "Prepared Foods",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b8ee6d71-c308-4305-a628-a87246003c86.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, crunchy, and satisfying Park Street Deli Original Hummus with Pretzels from Park Street Deli. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    }
+]

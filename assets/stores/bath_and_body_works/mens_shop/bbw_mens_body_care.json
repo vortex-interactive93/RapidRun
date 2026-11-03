@@ -1,0 +1,1560 @@
+[
+  {
+    "id": "bbw_028025453",
+    "name": "Ocean Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a81e752/hires/028025453.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028025451",
+    "name": "Mahogany Teakwood Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.9,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe1ce4b39/hires/028025451.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028025452",
+    "name": "Noir Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ac1a09b/hires/028025452.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028016713",
+    "name": "Vanilla Noir Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdbe9bf39/hires/028016713.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "vanilla noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032212",
+    "name": "Lasting Legacy Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.9,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd2c7fd61/hires/028032212.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "lasting legacy"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028016495",
+    "name": "Mahogany Teakwood Concentrated Room Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dweb451df4/hires/028016495.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028003597",
+    "name": "Mahogany Teakwood Gentle & Clean Foaming Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.9,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbf6bf015/hires/028003597.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028038245",
+    "name": "Coffee & Whiskey 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwadee7eda/hires/028038245.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "coffee & whiskey"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Rich Spirit",
+      "topNotes": [
+        "Bold Irish Coffee",
+        "Whiskey Barrel"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Roasted Espresso"
+      ],
+      "baseNotes": [
+        "Aged Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023041",
+    "name": "Bourbon Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2edbf3e9/hires/028023041.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "bourbon"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Oak & Spice",
+      "topNotes": [
+        "White Pepper",
+        "Dark Amber"
+      ],
+      "heartNotes": [
+        "Kentucky Bourbon",
+        "Oak Barrel"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028005575",
+    "name": "Mahogany Teakwood Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2dc557ba/hires/028005575.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028025455",
+    "name": "Freshwater Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.9,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ce2c476/hires/028025455.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "freshwater"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Aquatic Citrus",
+      "topNotes": [
+        "Italian Bergamot",
+        "Mountain Spring Water"
+      ],
+      "heartNotes": [
+        "Oakmoss",
+        "Fresh Sage"
+      ],
+      "baseNotes": [
+        "White Cedar",
+        "Soft Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033601",
+    "name": "Lasting Legacy 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf625a339/hires/028033601.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "lasting legacy"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023498",
+    "name": "Mahogany Coconut 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0937c645/hires/028023498.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany coconut"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013432",
+    "name": "Mahogany Teakwood Car Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.3,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6d52e3f1/hires/028013432.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028025454",
+    "name": "After Dark Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwee797196/hires/028025454.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "after dark"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029490",
+    "name": "Ocean Hand Sanitizer Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 3.95,
+    "msrp": 3.95,
+    "rating": 4.9,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw69fae526/hires/028029490.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029788",
+    "name": "Santal Ridge Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd0bb10b4/hires/028029788.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "santal ridge"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033950",
+    "name": "Flannel 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.6,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f06bfa4/hires/028033950.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "flannel"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028936",
+    "name": "Into Orbit Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb279d615/hires/028028936.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "into orbit"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026506",
+    "name": "Ocean Concentrated Room Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9993122c/hires/028026506.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030409",
+    "name": "Football Season Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcbd2e944/hires/028030409.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "football season"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028017672",
+    "name": "Flannel Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw231e9da7/hires/028017672.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "flannel"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023042",
+    "name": "Whiskey Reserve Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw737cff06/hires/028023042.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "whiskey reserve"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Barrel Amber",
+      "topNotes": [
+        "Crisp Apple",
+        "Aged Whiskey"
+      ],
+      "heartNotes": [
+        "Warm Amber",
+        "Smoky Oak"
+      ],
+      "baseNotes": [
+        "Vanilla Spice",
+        "Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028025450",
+    "name": "Graphite Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb0d81f06/hires/028025450.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "graphite"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Citrus",
+      "topNotes": [
+        "Sage Leaf",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Leather Spice",
+        "Fresh Cedar"
+      ],
+      "baseNotes": [
+        "Dark Woods",
+        "Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_025510104",
+    "name": "Mahogany Teakwood Gift Set",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 28.95,
+    "msrp": 28.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb6d71e74/hires/025510104.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028018596",
+    "name": "Ocean Car Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.3,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc27e1880/hires/028018596.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015091",
+    "name": "Ocean Bar Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw608a389d/hires/028015091.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028020469",
+    "name": "After Dark Shea Butter Cleansing Bar",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0271dc83/hires/028020469.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "after dark"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015093",
+    "name": "Mahogany Teakwood Bar Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdcf936a4/hires/028015093.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026580",
+    "name": "Crafted Cognac Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafcbbbde/hires/028026580.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "crafted cognac"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013296",
+    "name": "Coffee & Whiskey Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw15b622e0/hires/028013296.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "coffee & whiskey"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Rich Spirit",
+      "topNotes": [
+        "Bold Irish Coffee",
+        "Whiskey Barrel"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Roasted Espresso"
+      ],
+      "baseNotes": [
+        "Aged Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023575",
+    "name": "Mahogany Coconut Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw326c357d/hires/028023575.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany coconut"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028615",
+    "name": "Mahogany Teakwood Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa59a0cde/hires/028028615.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_026693303",
+    "name": "Mahogany Teakwood Laundry Detergent",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 19.95,
+    "msrp": 19.95,
+    "rating": 4.4,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe2534b41/hires/026693303.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028019837",
+    "name": "Mahogany Coconut Car Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 4.95,
+    "msrp": 4.95,
+    "rating": 4.5,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcfab3207/hires/028019837.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany coconut"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013294",
+    "name": "Mahogany Coconut Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "3.7 oz / 104 g",
+    "unitShort": "3.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwed595cb7/hires/028013294.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "mahogany coconut"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013941",
+    "name": "Noir Shea Butter Cleansing Bar",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1c58e1f4/hires/028013941.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015094",
+    "name": "Graphite Shea Butter Cleansing Bar",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "All men's body care",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "5 oz / 141 g",
+    "unitShort": "5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe752203d/hires/028015094.jpg?sw=600&q=60&format=auto",
+    "description": "Deodorizing Body Spray provides all-over body fragrance and odor protection for lasting freshness throughout the day.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "all_men's_body_care",
+      "graphite"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Citrus",
+      "topNotes": [
+        "Sage Leaf",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Leather Spice",
+        "Fresh Cedar"
+      ],
+      "baseNotes": [
+        "Dark Woods",
+        "Musk"
+      ]
+    }
+  }
+]

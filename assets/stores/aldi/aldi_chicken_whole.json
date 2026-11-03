@@ -1,0 +1,36 @@
+﻿[
+    {
+        "id":  "aldi_meat_3",
+        "name":  "Never Any! Fresh Whole Chicken",
+        "brand":  "Never Any!",
+        "price":  7.95,
+        "unit":  "$1.59 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Whole Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d94f5318-97b0-45d6-8953-6966e988516c.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_87",
+        "name":  "Simply Nature Organic Whole Chicken",
+        "brand":  "Simply Nature Organic",
+        "price":  14.51,
+        "unit":  "$2.79 / lb (About 5.2 lb / package)",
+        "unitShort":  "$2.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Whole Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9630561f-f4be-4149-a9ca-3ad26c8b51d6.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    }
+]

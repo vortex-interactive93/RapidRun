@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2025-08-20T01:29:14.059157Z",
+  "dryRun": true,
+  "stores": {
+    "aldi": {
+      "files": 80,
+      "items": 3259,
+      "newIds": 0,
+      "updatedFiles": 0,
+      "prefix": "aldi_",
+      "topCategories": [
+        {
+          "category": "Pantry Essentials",
+          "count": 544
+        },
+        {
+          "category": "Uncategorized",
+          "count": 541
+        },
+        {
+          "category": "Beverages",
+          "count": 340
+        },
+        {
+          "category": "Snacks",
+          "count": 335
+        },
+        {
+          "category": "Frozen Foods",
+          "count": 333
+        },
+        {
+          "category": "Deli",
+          "count": 217
+        },
+        {
+          "category": "Fresh Meat & Seafood",
+          "count": 159
+        },
+        {
+          "category": "Dairy & Eggs",
+          "count": 145
+        },
+        {
+          "category": "Breakfast & Cereals",
+          "count": 143
+        },
+        {
+          "category": "Fresh Produce",
+          "count": 136
+        }
+      ],
+      "topSubCategories": [
+        {
+          "subCategory": "Cheese Part1",
+          "count": 150
+        },
+        {
+          "subCategory": "Cookies Sweets Part1",
+          "count": 144
+        },
+        {
+          "subCategory": "Chips, Crackers & Popcorn",
+          "count": 140
+        },
+        {
+          "subCategory": "Healthy Food Snacks Part1",
+          "count": 125
+        },
+        {
+          "subCategory": "Canned Foods",
+          "count": 121
+        },
+        {
+          "subCategory": "Juice & Cider",
+          "count": 94
+        },
+        {
+          "subCategory": "Frozen Meat, Poultry & Seafood",
+          "count": 82
+        },
+        {
+          "subCategory": "Frozen Ice Cream & Desserts",
+          "count": 75
+        },
+        {
+          "subCategory": "Bread",
+          "count": 65
+        },
+        {
+          "subCategory": "Snacks Chips Crackers Popcorn Part1",
+          "count": 65
+        }
+      ]
+    }
+  }
+}

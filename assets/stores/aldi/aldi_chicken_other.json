@@ -1,0 +1,291 @@
+﻿[
+    {
+        "id":  "aldi_meat_38",
+        "name":  "Kirkwood Whole Duck",
+        "brand":  "Kirkwood",
+        "price":  19.37,
+        "unit":  "$3.69 / lb (About 5.25 lb / package)",
+        "unitShort":  "$3.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f301cbad-38a9-4236-9778-f8ea3d07afd0.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Kirkwood Whole Duck, per lb from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_40",
+        "name":  "Citrus Seasoned Boneless Skinless Chicken Leg Meat",
+        "brand":  "ALDI",
+        "price":  8.72,
+        "unit":  "$3.49 / lb (About 2.5 lb / package)",
+        "unitShort":  "$3.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_19a4bf0c-eabe-4f5a-b0f8-563384f6f513.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_64",
+        "name":  "Boneless Skinless Chicken Legs",
+        "brand":  "ALDI",
+        "price":  15.96,
+        "unit":  "$3.99 / lb (About 4.0 lb each)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c3ce685d-7fbb-4d6c-a205-c95139d1d9e7.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_95",
+        "name":  "Parkview Turkey Polska Kielbasa",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "13 oz",
+        "unitShort":  "13 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_df2608f0-a060-44f9-82ba-1a225707e962.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview Turkey Polska Kielbasa from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_107",
+        "name":  "Kirkwood Chicken Leg Quarters",
+        "brand":  "Kirkwood",
+        "price":  5.95,
+        "unit":  "$1.19 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.19 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d9f59af5-4725-4b9b-8a91-e937807febec.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_119",
+        "name":  "Parkview USDA Turkey Franks - 8 Count",
+        "brand":  "Parkview",
+        "price":  2.69,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_83ec7106-923e-497d-a995-83a4a21c900f.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview USDA Turkey Franks - 8 Count from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_129",
+        "name":  "Never Any! Apple Maple Chicken Breakfast Sausage",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d672acec-7eb8-4281-900d-4baa7f9d59b9.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_130",
+        "name":  "Southwest Style Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3bacca6d-b5fa-4eae-9b50-62168c993c4c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_138",
+        "name":  "Specially Selected Turkey Sausage Snack Bites",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bfef2fd9-2b2d-4ae7-ac42-b3614c522927.jpg",
+        "aisle":  "Long Life Meats",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_139",
+        "name":  "Parkview Ital or Spin Feta Chicken, Mild Italian",
+        "brand":  "Parkview",
+        "price":  4.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7d9a60b-228f-4d6f-8981-9cc57ea7e5de.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_141",
+        "name":  "Appleton Farms Uncured Turkey Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6b9af2c-5058-462b-b5f2-e7522cb85ebc.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_143",
+        "name":  "Parkview Hot Honey Chicken Sausage",
+        "brand":  "Parkview",
+        "price":  2.19,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5b0e5f7d-76cc-473b-a604-32d700840831.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_144",
+        "name":  "Parkview Nashville Hot Recipe Chicken Sausage",
+        "brand":  "Parkview",
+        "price":  2.19,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f297152c-a78d-4105-9354-7d0367116e93.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_146",
+        "name":  "Parkview Ital or Spin Feta Chicken, Spinach Feta",
+        "brand":  "Parkview",
+        "price":  4.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2f1d1fdb-06b2-489c-b7ba-bdee33bd0cdb.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_153",
+        "name":  "Never Any! Country Style Chicken Breakfast Sausage",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7346032-0b7d-4bc3-8700-606c3e12b3af.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_155",
+        "name":  "Cilantro Lime Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4be4dac6-7e48-48f6-a107-08b31b5b3e98.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_159",
+        "name":  "Sun-Dried Tomato \u0026 Basil Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Other Chicken",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_496b9852-ccf6-4a25-83b0-be9d99c69408.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    }
+]

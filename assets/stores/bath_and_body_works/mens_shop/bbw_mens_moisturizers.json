@@ -1,0 +1,453 @@
+[
+  {
+    "id": "bbw_028032624",
+    "name": "Mahogany Teakwood Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4f7ab716/hires/028032624.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032210",
+    "name": "Lasting Legacy Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw846562c1/hires/028032210.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "lasting legacy"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028016711",
+    "name": "Vanilla Noir Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw602a34e9/hires/028016711.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "vanilla noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026582",
+    "name": "Bourbon Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw242c43e8/hires/028026582.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "bourbon"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Oak & Spice",
+      "topNotes": [
+        "White Pepper",
+        "Dark Amber"
+      ],
+      "heartNotes": [
+        "Kentucky Bourbon",
+        "Oak Barrel"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028032628",
+    "name": "After Dark Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6103127b/hires/028032628.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "after dark"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015101",
+    "name": "Mahogany Teakwood Travel Size Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 oz / 70 g",
+    "unitShort": "2.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2aec0cc2/hires/028015101.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015099",
+    "name": "Ocean Travel Size Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 oz / 70 g",
+    "unitShort": "2.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce30d9e4/hires/028015099.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028934",
+    "name": "Into Orbit Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwadb9a8dd/hires/028028934.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "into orbit"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028743",
+    "name": "Santal Ridge Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7d8d83d9/hires/028028743.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "santal ridge"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029408",
+    "name": "Football Season Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90e75980/hires/028029408.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "football season"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026583",
+    "name": "Crafted Cognac Ultimate Hydration Body Cream",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Moisturizers",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 oz / 226 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbc9284ea/hires/028026583.jpg?sw=600&q=60&format=auto",
+    "description": "Ultimate Hydration Body Cream with rich shea butter and hyaluronic acid provides 24-hour moisture for smooth, nourished skin.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "moisturizers",
+      "crafted cognac"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  }
+]

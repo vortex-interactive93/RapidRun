@@ -1,0 +1,20 @@
+{
+  "storeId": "walmart",
+  "category": "Breakfast & Cereal",
+  "files": [
+    {
+      "file": "juices.json",
+      "subCategory": "Juices",
+      "rawFiles": [
+        "apple-juice.json",
+        "orange-juice.json",
+        "grape-juice.json",
+        "pineapple-juice.json",
+        "cranberry-juice.json",
+        "fruit-punch.json",
+        "apple-cider.json",
+        "sparkling-juice.json"
+      ]
+    }
+  ]
+}

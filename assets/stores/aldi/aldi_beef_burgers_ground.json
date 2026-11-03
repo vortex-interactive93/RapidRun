@@ -1,0 +1,240 @@
+﻿[
+    {
+        "id":  "aldi_meat_26",
+        "name":  "93/7 Lean Ground Beef",
+        "brand":  "ALDI",
+        "price":  7.39,
+        "unit":  "$7.39 / lb (About 1.0 lb / package)",
+        "unitShort":  "$7.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d7e792e6-5200-4d69-89c4-f429b6a1a467.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_32",
+        "name":  "73% Lean 27% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  18.95,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a1e10d78-8e0c-42c7-821a-eaf59ca70b7e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_36",
+        "name":  "80% Lean 20% Fat Ground Beef Patties - 4 Count",
+        "brand":  "ALDI",
+        "price":  7.3,
+        "unit":  "$5.49 / lb (About 1.33 lb / package)",
+        "unitShort":  "$5.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a996e9c-7a36-4652-8fda-a5404b2d942e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_47",
+        "name":  "90/10 Ground Sirloin",
+        "brand":  "ALDI",
+        "price":  15.73,
+        "unit":  "$6.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d32a0695-5244-4ee0-8884-ad4cdb9902b8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_54",
+        "name":  "85/15 Ground Beef",
+        "brand":  "ALDI",
+        "price":  5.99,
+        "unit":  "$5.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$5.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_67d68d6b-444a-4d61-8373-8369b6dd400d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_66",
+        "name":  "Fresh 80% Lean 20% Fat Ground Beef Roll",
+        "brand":  "ALDI",
+        "price":  23.95,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_872e8a9e-c51d-4061-9815-4adb24b12c21.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_67",
+        "name":  "Extra Lean Ground Beef 96% Lean 4% Fat",
+        "brand":  "ALDI",
+        "price":  7.79,
+        "unit":  "$7.79 / lb (About 1.0 lb / package)",
+        "unitShort":  "$7.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_deb5451e-8a90-48ce-859f-dc5bcd416156.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_69",
+        "name":  "85% Lean 15% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  6.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_578c7695-8612-44ed-948e-c966e955cccf.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_80",
+        "name":  "Simply Nature Organic Grass Fed 85% Lean Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  5.99,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c902f1cd-da74-4076-8b63-0bed5a60c7a0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_99",
+        "name":  "80% Lean 20% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  5.29,
+        "unit":  "$5.29 / lb (About 2.25 lb / package)",
+        "unitShort":  "$5.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5030a2f4-ac74-4b37-9c93-a9c15fddcf38.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_105",
+        "name":  "80/20 Ground Beef Patties",
+        "brand":  "ALDI",
+        "price":  12,
+        "unit":  "2.5 lb",
+        "unitShort":  "2.5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8d1c062b-b7ba-4243-a3af-3d8fefbaa038.jpg",
+        "aisle":  "Fresh Meat (without Pork \u0026 Poultry)",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_113",
+        "name":  "Simply Nature Organic 100% Grass Fed Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  7.29,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bb28e32d-d4b9-4c4f-969c-a185986f60f2.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_118",
+        "name":  "73% Lean 27% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  4.29,
+        "unit":  "$4.29 / lb (About 5.0 lb / package)",
+        "unitShort":  "$4.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3955b855-4fca-4f73-8edf-1a271c19b71b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_135",
+        "name":  "Simply Nature FP 93% Organic GF Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  23.96,
+        "unit":  "4 lb",
+        "unitShort":  "4 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Burgers \u0026 Ground Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_45bd832d-115b-4571-b0ee-b9e6e89c684f.jpg",
+        "aisle":  "Meat \u0026 Seafood",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    }
+]

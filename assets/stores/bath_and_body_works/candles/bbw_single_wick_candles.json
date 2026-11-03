@@ -1,0 +1,1514 @@
+[
+  {
+    "id": "bbw_028017847",
+    "name": "Champagne Toast Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw89f58649/hires/028017847.jpg?sw=600&q=60&format=auto",
+    "description": "A festive, bubbly celebration. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "champagne toast"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005575",
+    "name": "Mahogany Teakwood Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2dc557ba/hires/028005575.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, bold, woodsy classic. Scented with rich mahogany, black teakwood, dark oak and frosted cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "mahogany teakwood"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028026596",
+    "name": "Clean House Vibes Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5aec87a7/hires/028026596.jpg?sw=600&q=60&format=auto",
+    "description": "The uplifting feeling of a freshly cleaned home. Made with crisp air, eucalyptus, and clean cotton.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "clean house vibes"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Fresh Linen",
+      "topNotes": [
+        "Crisp Fresh Air",
+        "Eucalyptus Leaf"
+      ],
+      "heartNotes": [
+        "Clean Cotton",
+        "White Lily"
+      ],
+      "baseNotes": [
+        "Soft Musk",
+        "Sheer Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033960",
+    "name": "'Tis the Season Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw624e267f/hires/028033960.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic holiday favorite. Scented with rich red apple, sweet cinnamon and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "'tis the season"
+    ],
+    "fragranceProfile": {
+      "family": "Spiced Holiday Apple",
+      "topNotes": [
+        "Rich Red Apple",
+        "Sweet Cinnamon"
+      ],
+      "heartNotes": [
+        "Cedarwood",
+        "Ground Clove"
+      ],
+      "baseNotes": [
+        "Spiced Plum",
+        "Holiday Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033961",
+    "name": "Fresh Balsam Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ef6b0db/hires/028033961.jpg?sw=600&q=60&format=auto",
+    "description": "The fresh, invigorating scent of a evergreen forest. Made with woodland balsam, crisp eucalyptus and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "fresh balsam"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Forest",
+      "topNotes": [
+        "Woodland Balsam",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Fir Branches",
+        "Pine Needles"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Earthy Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034430",
+    "name": "The Perfect Christmas Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc204fb80/hires/028034430.jpg?sw=600&q=60&format=auto",
+    "description": "Everything you love about the holidays in one candle. Scented with fresh cut pine, cinnamon sugar and toasted marshmallow.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "the perfect christmas"
+    ],
+    "fragranceProfile": {
+      "family": "Festive Holiday Tradition",
+      "topNotes": [
+        "Fresh Cut Pine",
+        "Cinnamon Sugar"
+      ],
+      "heartNotes": [
+        "Toasted Marshmallow",
+        "Spiced Clove"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Holiday Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034427",
+    "name": "Hot Cocoa & Cream Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ab2bf08/hires/028034427.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, creamy mug of hot chocolate on a chilly day. Made with decadent milk chocolate, steamed milk and marshmallows.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "hot cocoa & cream"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Chocolate",
+      "topNotes": [
+        "Decadent Milk Chocolate",
+        "Steamed Milk"
+      ],
+      "heartNotes": [
+        "Mini Marshmallows",
+        "Cocoa Powder"
+      ],
+      "baseNotes": [
+        "Rich Vanilla",
+        "Toasted Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005572",
+    "name": "Cinnamon Spiced Vanilla Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8efd54f4/hires/028005572.jpg?sw=600&q=60&format=auto",
+    "description": "Fresh ground cinnamon and warm vanilla with sugar crystals.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "cinnamon spiced vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Cinnamon Spice",
+      "topNotes": [
+        "Fresh Ground Cinnamon",
+        "Sugar Crystal"
+      ],
+      "heartNotes": [
+        "Warm Vanilla",
+        "Buttercream"
+      ],
+      "baseNotes": [
+        "Spiced Clove",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033554",
+    "name": "Cinnamon Caramel Swirl Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw542bac69/hires/028033554.jpg?sw=600&q=60&format=auto",
+    "description": "Rich, gooey caramel swirling with warm cinnamon sugar and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "cinnamon caramel swirl"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Gourmand",
+      "topNotes": [
+        "Gooey Caramel",
+        "Cinnamon Sugar"
+      ],
+      "heartNotes": [
+        "Grated Nutmeg",
+        "Butter Crust"
+      ],
+      "baseNotes": [
+        "Vanilla Bean",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033556",
+    "name": "Marshmallow Fireside Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw87863365/hires/028033556.jpg?sw=600&q=60&format=auto",
+    "description": "Cozying up by a crackling campfire. Scented with toasted marshmallow, smoldering woods and roasted vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "marshmallow fireside"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Smoky Gourmand",
+      "topNotes": [
+        "Toasted Marshmallow",
+        "Smoky Cacao"
+      ],
+      "heartNotes": [
+        "Fireside Smolder",
+        "Roasted Vanilla"
+      ],
+      "baseNotes": [
+        "Crystal Amber",
+        "Warm Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028022703",
+    "name": "Japanese Cherry Blossom Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw73de74ad/hires/028022703.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "japanese cherry blossom"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Blushing Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023993",
+    "name": "Fresh Rainfall & Linen Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd7cb2a8f/hires/028023993.jpg?sw=600&q=60&format=auto",
+    "description": "A revitalizing spring rain shower on sun-dried linen. Scented with fresh raindrops and clean linen.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "fresh rainfall & linen"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Fresh Aquatic",
+      "topNotes": [
+        "Fresh Raindrops",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Clean Linen",
+        "Water Lily"
+      ],
+      "baseNotes": [
+        "Soft Driftwood",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023577",
+    "name": "Raspberries & Whipped Vanilla Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2d95e255/hires/028023577.jpg?sw=600&q=60&format=auto",
+    "description": "Sweet, sun-ripened raspberries smothered in fluffy whipped vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "raspberries & whipped vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Berry Gourmand",
+      "topNotes": [
+        "Pink Raspberries",
+        "Strawberry Nectar"
+      ],
+      "heartNotes": [
+        "Whipped Vanilla",
+        "Plum Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028031530",
+    "name": "Vanilla Bean Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa6216e4e/hires/028031530.jpg?sw=600&q=60&format=auto",
+    "description": "A pure, sweet, comforting vanilla indulgence. Made with vanilla bean, sweet cream and toasted sugar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "vanilla bean"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Sweet Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Sweet Cream"
+      ],
+      "heartNotes": [
+        "Toasted Sugar",
+        "Buttercream"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Vanilla Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005573",
+    "name": "Mahogany Vanilla Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5598df0d/hires/028005573.jpg?sw=600&q=60&format=auto",
+    "description": "A smooth, warm, woodsy vanilla blend. Scented with rich mahogany, warm vanilla and black teakwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "mahogany vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Woody Vanilla",
+      "topNotes": [
+        "Rich Mahogany",
+        "Warm Vanilla"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Golden Amber"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Soft Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033555",
+    "name": "Leaves Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe6ecbc1b/hires/028033555.jpg?sw=600&q=60&format=auto",
+    "description": "The quintessential scent of autumn crisp air. Scented with crisp red apple, golden nectar and warm clove spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "leaves"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Autumn Spice",
+      "topNotes": [
+        "Crisp Red Apple",
+        "Golden Nectar"
+      ],
+      "heartNotes": [
+        "Warm Clove Spice",
+        "Autumn Cinnamon"
+      ],
+      "baseNotes": [
+        "Spiced Clove",
+        "Sheer Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028037332",
+    "name": "Cranberry & Pomegranate Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6d81832d/hires/028037332.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, tart, sparkling berry celebration. Scented with tart cranberry, ruby pomegranate and red apple.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "cranberry & pomegranate"
+    ],
+    "fragranceProfile": {
+      "family": "Tart Fruity Berry",
+      "topNotes": [
+        "Tart Cranberry",
+        "Ruby Pomegranate"
+      ],
+      "heartNotes": [
+        "Red Apple",
+        "Spiced Plum"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033558",
+    "name": "Tree Farm Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw58d1fbdb/hires/028033558.jpg?sw=600&q=60&format=auto",
+    "description": "A festive afternoon spent picking the perfect Christmas tree. Scented with crisp pine needle, warm cedar and spiced apple.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "tree farm"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Cedar",
+      "topNotes": [
+        "Crisp Pine Needle",
+        "Warm Cedar"
+      ],
+      "heartNotes": [
+        "Spiced Apple",
+        "Fir Balsam"
+      ],
+      "baseNotes": [
+        "Woodland Moss",
+        "Sheer Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005569",
+    "name": "Lavender Vanilla Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1dbf4afe/hires/028005569.jpg?sw=600&q=60&format=auto",
+    "description": "A soothing, relaxing evening blend. Made with natural lavender oil and vanilla absolute.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "lavender vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Relaxing",
+      "topNotes": [
+        "French Lavender",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Vanilla Absolute",
+        "Jasmine Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Soft Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034119",
+    "name": "Simmer & Spice Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw87b1f2e5/hires/028034119.jpg?sw=600&q=60&format=auto",
+    "description": "A stovetop potpourri simmering on autumn afternoons. Scented with spiced cinnamon, orange zest and clove.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "simmer & spice"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Hearth Spice",
+      "topNotes": [
+        "Spiced Cinnamon",
+        "Orange Zest"
+      ],
+      "heartNotes": [
+        "Clove Bud",
+        "Star Anise"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028018131",
+    "name": "Eucalyptus Spearmint Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw49dc6dc7/hires/028018131.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, stress-relieving herbal blend. Made with natural eucalyptus and spearmint essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "eucalyptus spearmint"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028025806",
+    "name": "Kitchen Lemon Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4f18d38f/hires/028025806.jpg?sw=600&q=60&format=auto",
+    "description": "Bright, uplifting, freshly squeezed kitchen lemons with a hint of mint.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "kitchen lemon"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Zesty Fresh Lemon",
+        "Sparkling Citrus"
+      ],
+      "heartNotes": [
+        "Spearmint Leaf",
+        "Italian Bergamot"
+      ],
+      "baseNotes": [
+        "Clean Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023578",
+    "name": "Sweet Orange & Agave Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf2b48e3c/hires/028023578.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, sunlit citrus splash. Made with sweet orange, agave nectar and mandarin zest.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "sweet orange & agave"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Sweet Orange",
+        "Agave Nectar"
+      ],
+      "heartNotes": [
+        "Mandarin Zest",
+        "Lime Leaf"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034428",
+    "name": "Santa's Milk & Cookies Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc8b313ea/hires/028034428.jpg?sw=600&q=60&format=auto",
+    "description": "Leaving out treats on Christmas Eve. Scented with warm sugar cookies, steamed milk and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "santa's milk & cookies"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Holiday Bakery",
+      "topNotes": [
+        "Warm Sugar Cookies",
+        "Steamed Milk"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Toasted Pecan"
+      ],
+      "baseNotes": [
+        "Brown Sugar",
+        "Cinnamon Dust"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005561",
+    "name": "Cactus Blossom Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7805bb8c/hires/028005561.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, bright, desert island escape. Scented with desert cactus flower, fresh sparkling citrus, and coconut water.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "cactus blossom"
+    ],
+    "fragranceProfile": {
+      "family": "Desert Floral Citrus",
+      "topNotes": [
+        "Desert Cactus Flower",
+        "Fresh Sparkling Citrus"
+      ],
+      "heartNotes": [
+        "Coconut Water",
+        "Fresh Blossom"
+      ],
+      "baseNotes": [
+        "Vanilla Amber",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023575",
+    "name": "Mahogany Coconut Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw326c357d/hires/028023575.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, tropical woodsy paradise. Scented with rich mahogany, creamy coconut and English oak.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "mahogany coconut"
+    ],
+    "fragranceProfile": {
+      "family": "Tropical Woodsy Amber",
+      "topNotes": [
+        "Rich Mahogany",
+        "Creamy Coconut"
+      ],
+      "heartNotes": [
+        "Toasted Coconut",
+        "Lavender"
+      ],
+      "baseNotes": [
+        "English Oak",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005566",
+    "name": "White Tea & Sage Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3f00d10/hires/028005566.jpg?sw=600&q=60&format=auto",
+    "description": "A peaceful, soothing herbal sanctuary. Scented with sparkling bergamot, white tea leaf and fresh sage.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "white tea & sage"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Herbal",
+      "topNotes": [
+        "Sparkling Bergamot",
+        "White Tea Leaf"
+      ],
+      "heartNotes": [
+        "Fresh Sage",
+        "Violet Leaf"
+      ],
+      "baseNotes": [
+        "Clean Woods",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028037330",
+    "name": "Balsam & Firewood Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.4,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dweec7dee9/hires/028037330.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy evening by the hearth in a log cabin. Scented with fir balsam, smoky firewood and cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "balsam & firewood"
+    ],
+    "fragranceProfile": {
+      "family": "Woody Hearth & Pine",
+      "topNotes": [
+        "Fir Balsam",
+        "Smoky Firewood"
+      ],
+      "heartNotes": [
+        "Pine Needle",
+        "Cedar Bark"
+      ],
+      "baseNotes": [
+        "Earthy Amber",
+        "Charcoal Smolder"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028005567",
+    "name": "Sun Drenched Linen Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw78a78690/hires/028005567.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Sun Drenched Linen Single Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "sun drenched linen"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034429",
+    "name": "Wrapped in Velvet Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ec62e68/hires/028034429.jpg?sw=600&q=60&format=auto",
+    "description": "Luxe, opulent, velvet warmth. Scented with velvet rose, dark plum and red amber.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "wrapped in velvet"
+    ],
+    "fragranceProfile": {
+      "family": "Luxe Velvet Amber",
+      "topNotes": [
+        "Velvet Rose",
+        "Dark Plum"
+      ],
+      "heartNotes": [
+        "Red Amber",
+        "Cashmere Wood"
+      ],
+      "baseNotes": [
+        "Rich Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023574",
+    "name": "Fiji White Sands Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw85ab3131/hires/028023574.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, breezy, sun-drenched tropical beach. Scented with sunkissed sugarcane, fresh papaya, and white nectarine.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "fiji white sands"
+    ],
+    "fragranceProfile": {
+      "family": "Tropical Island Citrus",
+      "topNotes": [
+        "Sunkissed Sugarcane",
+        "Fresh Papaya"
+      ],
+      "heartNotes": [
+        "White Nectarine",
+        "Island Blossom"
+      ],
+      "baseNotes": [
+        "Vanilla Sandalwood",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023576",
+    "name": "Pistachio Milk & Honey Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 16.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7c2a3445/hires/028023576.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Pistachio Milk & Honey Single Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "pistachio milk & honey"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030777",
+    "name": "Lavender + Jasmine Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw726cd4cc/hires/028030777.jpg?sw=600&q=60&format=auto",
+    "description": "A serene, calming floral garden. Scented with French lavender, night jasmine and white cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "lavender + jasmine"
+    ],
+    "fragranceProfile": {
+      "family": "Relaxing Floral Herbal",
+      "topNotes": [
+        "French Lavender",
+        "Night Jasmine"
+      ],
+      "heartNotes": [
+        "Spring Blossoms",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "White Cedar",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030778",
+    "name": "Santal + Amber Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 4.3,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw93eee682/hires/028030778.jpg?sw=600&q=60&format=auto",
+    "description": "An opulent, elevated sanctuary of creamy santal, golden amber and cardamom spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "santal + amber"
+    ],
+    "fragranceProfile": {
+      "family": "Creamy Santal & Amber",
+      "topNotes": [
+        "Creamy Santal",
+        "Golden Amber"
+      ],
+      "heartNotes": [
+        "Cardamom Spice",
+        "Iris Blossom"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Velvet Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030780",
+    "name": "Sweet Orange + Agave Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 4.8,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4aac9588/hires/028030780.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, sunlit citrus splash. Made with sweet orange, agave nectar and mandarin zest.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "sweet orange + agave"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Sweet Orange",
+        "Agave Nectar"
+      ],
+      "heartNotes": [
+        "Mandarin Zest",
+        "Lime Leaf"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030781",
+    "name": "Vanilla + Tonka Single Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "Single Wick Candle",
+    "price": 18.95,
+    "msrp": 18.95,
+    "rating": 4.6,
+    "unit": "8 oz / 227 g",
+    "unitShort": "8 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0636c2b8/hires/028030781.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, velvety vanilla dream. Made with vanilla bean, creamy tonka bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "single_wick_candle",
+      "vanilla + tonka"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Creamy Tonka"
+      ],
+      "heartNotes": [
+        "Orchid Petals",
+        "Warm Buttercream"
+      ],
+      "baseNotes": [
+        "Golden Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wick",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "id": "bbw_028013178",
+    "name": "Mahogany Teakwood Mini Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "0.5 fl oz / 15 mL",
+    "unitShort": "0.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw291f9292/hires/028013178.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028015850",
+    "name": "Noir Mini Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "0.5 fl oz / 15 mL",
+    "unitShort": "0.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90df868e/hires/028015850.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013176",
+    "name": "Ocean Mini Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 17.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "0.5 fl oz / 15 mL",
+    "unitShort": "0.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw855b83de/hires/028013176.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013947",
+    "name": "Noir Travel Size Cologne Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3312940/hires/028013947.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013146",
+    "name": "Ocean Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 49.95,
+    "msrp": 49.95,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2e9a1fc4/hires/028013146.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028023104",
+    "name": "Bourbon Travel Size Cologne Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw20d2138a/hires/028023104.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "bourbon"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Oak & Spice",
+      "topNotes": [
+        "White Pepper",
+        "Dark Amber"
+      ],
+      "heartNotes": [
+        "Kentucky Bourbon",
+        "Oak Barrel"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013150",
+    "name": "Noir Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 49.95,
+    "msrp": 49.95,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw570aad38/hires/028013150.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026575",
+    "name": "Crafted Cognac Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 64.95,
+    "msrp": 64.95,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce4cf243/hires/028026575.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "crafted cognac"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028938",
+    "name": "Into Orbit Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 59.95,
+    "msrp": 59.95,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfa0f5393/hires/028028938.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "into orbit"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029789",
+    "name": "Santal Ridge Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Men's fragrance",
+    "price": 59.95,
+    "msrp": 59.95,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw59fc42d3/hires/028029789.jpg?sw=600&q=60&format=auto",
+    "description": "Masterfully crafted Men's Cologne formulated with a high concentration of essential fragrance oils for a long-lasting scent signature.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "men's_fragrance",
+      "santal ridge"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  }
+]

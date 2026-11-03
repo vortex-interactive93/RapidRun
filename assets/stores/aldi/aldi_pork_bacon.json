@@ -1,0 +1,240 @@
+﻿[
+    {
+        "id":  "aldi_meat_68",
+        "name":  "Appleton Farms Lower Sodium Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_122433c6-b39e-40ef-9f00-06dbf7ced3b1.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_77",
+        "name":  "Appleton Farms Gourmet Thick Sliced Applewood Smoked Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_769c3385-dd7c-468e-82db-d84afcfaa6c5.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_78",
+        "name":  "Appleton Farms Hickory Smoked Gourmet Thick Sliced Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e69ee282-d387-4667-9049-529422e1bbba.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_81",
+        "name":  "Appleton Farms Black Forest Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f3d8bc8d-32ea-443d-8be8-dd2a8b8873df.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_82",
+        "name":  "Appleton Farms Premium Sliced Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_feda2365-4553-4ad8-9603-6889572556ad.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_84",
+        "name":  "Appleton Farms Center Cut Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.69,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_29c574e4-08e9-4a40-8804-f4bf20f69ffb.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_96",
+        "name":  "Appleton Farms Fully Cooked Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.65,
+        "unit":  "2.1 oz",
+        "unitShort":  "2.1 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2510c5ee-51c8-4101-8d63-b6c677de252c.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_97",
+        "name":  "Appleton Farms Thick Cut Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0a8ee305-c983-4fd4-986f-24c7fbe939ca.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_126",
+        "name":  "Appleton Farms Thick Cut Maple Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8562cef4-c251-4c68-9d5c-0235631b49a5.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_127",
+        "name":  "Appleton Farms Thick Cut Peppered Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_daffb27f-ef53-4d99-985c-a6008085a2e4.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_132",
+        "name":  "Appleton Farms Canadian Bacon",
+        "brand":  "Appleton Farms",
+        "price":  2.79,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_800c0cde-0b0e-4584-9145-8eb50f97f3d8.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_141",
+        "name":  "Appleton Farms Uncured Turkey Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6b9af2c-5058-462b-b5f2-e7522cb85ebc.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_152",
+        "name":  "Appleton Farms Hickory Smoked Uncured Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.79,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a29f75a1-08e9-4b61-94d1-f0bc9dc0d6be.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_154",
+        "name":  "Cattlemen\u0027s Ranch USDA Choice Applewood Bacon Wrapped Top Sirloin",
+        "brand":  "USDA Choice",
+        "price":  7.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Bacon",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea9ea338-9c2a-4b96-a926-c8273d038fb0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    }
+]

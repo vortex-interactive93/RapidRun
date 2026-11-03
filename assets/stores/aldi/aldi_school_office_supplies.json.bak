@@ -1,0 +1,50 @@
+[
+  {
+    "id": "aldi_household_basics_001",
+    "name": "AA Alkaline Batteries, 8 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/fddf8a5f-4e7b-4922-9e33-a985908f4580/AA%20%20Alkaline%20Batteries%208%20count",
+    "description": "AA\n8 pack",
+    "benefits": null,
+    "price": 3.29,
+    "unit": "8 count",
+    "storeId": "aldi",
+    "category": "Household Essentials",
+    "subCategory": "Household Basics"
+  },
+  {
+    "id": "aldi_household_basics_002",
+    "name": "AAA Alkaline Batteries, 8 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c53c5758-e920-4cd9-bc52-4978035971c3/AAA%20%20Alkaline%20Batteries%208%20count",
+    "description": "ACTIV ENERGY\n\nAA Alkaline Batteries, 8 count\n\n8 pk\n\n$3.29",
+    "benefits": null,
+    "price": 3.29,
+    "unit": "8 count",
+    "storeId": "aldi",
+    "category": "Household Essentials",
+    "subCategory": "Household Basics"
+  },
+  {
+    "id": "aldi_household_basics_003",
+    "name": "Dry Erase Board or Calendar Gold Dry Erase Board",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/ef879e3f-5589-4429-bf41-ac8faa453d21/Dry%20Erase%20Board%20or%20Calendar%20Gold%20Dry%20Erase%20Board",
+    "description": "Description coming soon!",
+    "benefits": null,
+    "price": 9.99,
+    "unit": null,
+    "storeId": "aldi",
+    "category": "Household Essentials",
+    "subCategory": "Household Basics"
+  },
+  {
+    "id": "aldi_household_basics_004",
+    "name": "Dry Erase Board or Calendar Silver Dry Erase Board",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/4aea83ab-ee63-464f-957f-4a8fbbaec541/Dry%20Erase%20Board%20or%20Calendar%20Silver%20Dry%20Erase%20Board",
+    "description": "Description coming soon!",
+    "benefits": null,
+    "price": 9.99,
+    "unit": null,
+    "storeId": "aldi",
+    "category": "Household Essentials",
+    "subCategory": "Household Basics"
+  }
+]

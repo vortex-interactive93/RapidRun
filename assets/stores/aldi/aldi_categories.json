@@ -1,0 +1,280 @@
+﻿[
+    {
+        "categoryName":  "Fresh Produce",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Produce",
+                                                      "filePath":  "assets/stores/aldi/aldi_fresh_produce.json"
+                                                  },
+                                                  {
+                                                      "name":  "Fresh Fruit",
+                                                      "filePath":  "assets/stores/aldi/aldi_fresh_fruit.json"
+                                                  },
+                                                  {
+                                                      "name":  "Fresh Vegetables",
+                                                      "filePath":  "assets/stores/aldi/aldi_fresh_vegetables.json"
+                                                  },
+                                                  {
+                                                      "name":  "Salad Kits",
+                                                      "filePath":  "assets/stores/aldi/aldi_fresh_salad_kits.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Fresh Produce"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Fresh Meat \u0026 Seafood",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Fresh Meat \u0026 Seafood",
+                                                      "filePath":  "assets/stores/aldi/aldi_fresh_meat_seafood.json"
+                                                  },
+                                                  {
+                                                      "name":  "Beef",
+                                                      "filePath":  "assets/stores/aldi/aldi_beef_steaks.json"
+                                                  },
+                                                  {
+                                                      "name":  "Chicken \u0026 Poultry",
+                                                      "filePath":  "assets/stores/aldi/aldi_chicken_breasts.json"
+                                                  },
+                                                  {
+                                                      "name":  "Pork",
+                                                      "filePath":  "assets/stores/aldi/aldi_pork_chops.json"
+                                                  },
+                                                  {
+                                                      "name":  "Turkey",
+                                                      "filePath":  "assets/stores/aldi/aldi_turkey_ground.json"
+                                                  },
+                                                  {
+                                                      "name":  "Hot Dogs \u0026 Sausages",
+                                                      "filePath":  "assets/stores/aldi/aldi_sausages.json"
+                                                  },
+                                                  {
+                                                      "name":  "Fish \u0026 Seafood",
+                                                      "filePath":  "assets/stores/aldi/aldi_fish_salmon.json"
+                                                  },
+                                                  {
+                                                      "name":  "Plant-Based Meat",
+                                                      "filePath":  "assets/stores/aldi/aldi_plant_beef_alt.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Fresh Meat \u0026 Seafood"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Dairy \u0026 Eggs",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Dairy \u0026 Eggs",
+                                                      "filePath":  "assets/stores/aldi/aldi_dairy_eggs.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Dairy \u0026 Eggs"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Snacks \u0026 Candy",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Snacks \u0026 Candy",
+                                                      "filePath":  "assets/stores/aldi/aldi_snacks_candy.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Snacks \u0026 Candy"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Beverages",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Beverages",
+                                                      "filePath":  "assets/stores/aldi/aldi_beverages.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Beverages"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Bakery \u0026 Bread",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Bakery \u0026 Bread",
+                                                      "filePath":  "assets/stores/aldi/aldi_bakery_bread.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Bakery \u0026 Bread"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Frozen Foods",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Frozen Foods",
+                                                      "filePath":  "assets/stores/aldi/aldi_frozen_foods.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Frozen Foods"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Pantry Essentials",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Pantry Essentials",
+                                                      "filePath":  "assets/stores/aldi/aldi_pantry_essentials.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Pantry Essentials"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Baking Essentials",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Baking Essentials",
+                                                      "filePath":  "assets/stores/aldi/aldi_baking_essentials.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Baking Essentials"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Breakfast \u0026 Cereals",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Breakfast \u0026 Cereals",
+                                                      "filePath":  "assets/stores/aldi/aldi_breakfast_cereals.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Breakfast \u0026 Cereals"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Deli",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Deli Items",
+                                                      "filePath":  "assets/stores/aldi/aldi_deli.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Deli"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Prepared Foods",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Prepared Foods",
+                                                      "filePath":  "assets/stores/aldi/aldi_prepared_foods.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Prepared Foods"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Household Essentials",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Household Essentials",
+                                                      "filePath":  "assets/stores/aldi/aldi_household_essentials.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Household Essentials"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Personal Care",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Personal Care",
+                                                      "filePath":  "assets/stores/aldi/aldi_personal_care.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Personal Care"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Pet Supplies",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Pet Supplies",
+                                                      "filePath":  "assets/stores/aldi/aldi_pet_supplies.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Pet Supplies"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Baby Items",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Baby Items",
+                                                      "filePath":  "assets/stores/aldi/aldi_baby_items.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Baby Items"
+                         }
+                     ]
+    },
+    {
+        "categoryName":  "Alcohol",
+        "sections":  [
+                         {
+                             "productTypes":  [
+                                                  {
+                                                      "name":  "All Beer \u0026 Wine",
+                                                      "filePath":  "assets/stores/aldi/aldi_alcohol.json"
+                                                  }
+                                              ],
+                             "sectionName":  "Alcohol"
+                         }
+                     ]
+    }
+]

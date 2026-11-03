@@ -1,0 +1,241 @@
+﻿[
+    {
+        "id":  "aldi_meat_14",
+        "name":  "Kirkwood Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  8.82,
+        "unit":  "$3.29 / lb (About 2.68 lb / package)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e5fbe7fa-c740-422c-8007-218254450483.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_18",
+        "name":  "Boneless Skinless Chicken Breasts Family Pack",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "$1.99 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d2a89978-895b-42cc-8dd6-bd93edb3d246.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_21",
+        "name":  "Citrus Seasoned Chicken Breast Pieces",
+        "brand":  "ALDI",
+        "price":  7.98,
+        "unit":  "$3.99 / lb (About 2.0 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4a757364-78e7-4a49-b3f9-cdece051f9d0.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_23",
+        "name":  "Never Any! Chicken Breast Tenderloins",
+        "brand":  "Never Any!",
+        "price":  4.99,
+        "unit":  "$4.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c5907d7b-3f28-45e7-b486-94ec899a08dc.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_61",
+        "name":  "Never Any! Chicken Breasts",
+        "brand":  "Never Any!",
+        "price":  7.86,
+        "unit":  "$4.49 / lb (About 1.75 lb / package)",
+        "unitShort":  "$4.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f475a3e2-f261-481a-89bd-69510ddd24b5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_79",
+        "name":  "Simply Nature Organic Chicken Breasts",
+        "brand":  "Simply Nature Organic",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9013fe93-d5b1-4847-8210-9925e4702d5a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_85",
+        "name":  "Kirkwood Boneless Skinless Chicken Breast Tenderloins",
+        "brand":  "Kirkwood",
+        "price":  7.18,
+        "unit":  "$3.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7aec88ce-3f71-4e56-a42d-5688bde39c59.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_90",
+        "name":  "Simply Nature Organic Thin-Sliced Chicken Breast Fillets",
+        "brand":  "Simply Nature Organic",
+        "price":  8.11,
+        "unit":  "$6.49 / lb (About 1.25 lb / package)",
+        "unitShort":  "$6.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7d5d512b-01a0-4258-bf3e-46c07feb4c39.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_103",
+        "name":  "Kirkwood Split Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  5.37,
+        "unit":  "$1.99 / lb (About 2.7 lb / package)",
+        "unitShort":  "$1.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f63a6866-639a-462e-86ed-bc21d5f5a92d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_120",
+        "name":  "Kirkwood Boneless Skinless Thin Sliced Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  5.59,
+        "unit":  "$3.99 / lb (About 1.4 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f6714f61-85de-4b84-a9bb-62bcc906c406.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_122",
+        "name":  "Simply Nature USDA Organic Free Range Chicken Breast Strips",
+        "brand":  "Simply Nature Organic",
+        "price":  9.11,
+        "unit":  "$7.29 / lb (About 1.25 lb / package)",
+        "unitShort":  "$7.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d5afeb1e-4637-4df3-a74e-8446d6ca06f1.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_142",
+        "name":  "Never Any! Family Pack USDA Chicken Breasts",
+        "brand":  "Never Any!",
+        "price":  10.93,
+        "unit":  "$3.99 / lb (About 2.74 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0458ed76-2071-47f2-8829-dcfa5a3e1ce5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free",
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_150",
+        "name":  "Tyson Fresh Chicken Breast",
+        "brand":  "ALDI",
+        "price":  1.79,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a47af13b-12db-4a23-87a5-d751d443201d.jpg",
+        "aisle":  "Poultry",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_156",
+        "name":  "Perdue USDA No Antibiotics Ever Thin Sliced Chicken Breast",
+        "brand":  "Perdue",
+        "price":  5.41,
+        "unit":  "$4.79 / lb (About 1.13 lb / package)",
+        "unitShort":  "$4.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Breasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56bc4745-1987-4b6e-85dc-add0d24555ad.png",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Perdue. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    }
+]

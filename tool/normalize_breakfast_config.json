@@ -1,0 +1,20 @@
+{
+  "storeId": "walmart",
+  "category": "Breakfast & Cereal",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "conservative",
+    "priceVariancePct": 5,
+    "ignorePackDifferences": false,
+    "stopWords": ["original", "family size", "classic", "value pack"]
+  },
+  "files": [
+    { "file": "pancake-waffle-mix.json", "rawFile": "pancake-and-waffle.json", "subCategory": "Pancake & waffle mix" },
+    { "file": "syrup.json", "rawFile": "syrups.json", "subCategory": "Syrup" },
+    { "file": "cereal.json", "subCategory": "Cereal", "excludeNamePatterns": ["Granola Bites", "Granola", "Granola Cereal"] },
+    { "file": "granola.json", "subCategory": "Granola" },
+    { "file": "on-the-go-breakfast.json", "subCategory": "On-the-go breakfast", "excludeNamePatterns": ["Strawberries", "Blueberries", "Raspberries", "Blackberries"] }
+  ,{ "file": "jams-jelly.json", "subCategory": "Jams & jelly", "rawFile": "jams-jelly.json" }
+  ,{ "file": "oatmeal-grits.json", "subCategory": "Oatmeal & grits", "rawFile": "oatmeal-grits.json" }
+  ]
+}

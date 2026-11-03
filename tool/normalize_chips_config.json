@@ -1,0 +1,26 @@
+{
+  "storeId": "walmart",
+  "category": "Chips",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "aggressive",
+    "priceVariancePct": 7,
+    "ignorePackDifferences": true,
+    "stopWords": [
+      "original", "party", "family", "size", "classic", "flavor", "snack", "chips", "brand", "style"
+    ]
+  },
+  "files": [
+    { "file": "great-value-chips.json", "subCategory": "Great Value chips" },
+    { "file": "doritos.json", "rawFile": "doritos-chips.json", "subCategory": "Doritos" },
+    { "file": "lays-potato-chips.json", "rawFile": "lays-chips.json", "subCategory": "Lay's potato chips" },
+    { "file": "tostitos.json", "rawFile": "-tostitos-chips.json", "subCategory": "Tostitos" },
+    { "file": "cheetos.json", "rawFile": "cheetos-chips.json", "subCategory": "Cheetos" },
+    { "file": "fritos.json", "rawFile": "fritos-chips.json", "subCategory": "Fritos" },
+    { "file": "pringles.json", "rawFile": "pringles-chips.json", "subCategory": "Pringles" },
+    { "file": "ruffles.json", "rawFile": "ruffles-chips.json", "subCategory": "Ruffles" },
+    { "file": "funyuns.json", "rawFile": "funyuns-chips.json", "subCategory": "Funyuns" },
+    { "file": "sun-chips.json", "rawFile": "sunchips-chips.json", "subCategory": "Sun Chips" },
+    { "file": "santitas-tortilla-chips.json", "rawFile": "santitas-chips.json", "subCategory": "Santitas tortilla chips" }
+  ]
+}

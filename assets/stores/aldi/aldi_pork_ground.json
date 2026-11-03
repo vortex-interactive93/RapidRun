@@ -1,0 +1,31 @@
+﻿[
+    {
+        "id":  "aldi_meat_42",
+        "name":  "Never Any! USDA Antibiotic-Free 80% Lean 20% Fat Ground Pork",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Ground Pork \u0026 Burgers",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6bb3a591-4b96-4944-8857-7416a2931a43.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from Never Any!. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_003",
+        "name":  "Antibiotic Free 80% Lean Ground Pork",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/877130b1-37a2-4f90-93e2-5d1b3899de12/Antibiotic%20Free%2080%25%20Lean%20Ground%20Pork%2016%20oz",
+        "description":  "This Never Any! Antibiotic Free 80/20 Ground Pork is as delicious as it is versatile. The 80% lean, 20% fat ground pork can be used to make meatballs, pasta sauces, or juicy burgers. Switch up your dinner rotation by crumbling the ABF ground pork onto a fresh homemade pizza.",
+        "benefits":  null,
+        "price":  3.29,
+        "unit":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Ground Pork \u0026 Burgers"
+    }
+]

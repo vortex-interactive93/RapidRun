@@ -1,0 +1,25 @@
+{
+  "storeId": "walmart",
+  "category": "Bake Center",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "conservative",
+    "priceVariancePct": 6,
+    "ignorePackDifferences": false,
+    "stopWords": ["original", "classic", "value", "premium"]
+  },
+  "files": [
+    { "file": "cake-mixes.json", "subCategory": "Cake mixes" },
+    { "file": "brownie-mixes.json", "subCategory": "Brownie mixes" },
+    { "file": "cookie-mixes.json", "subCategory": "Cookie mixes" },
+    { "file": "muffin-mixes.json", "subCategory": "Muffin mixes" },
+    { "file": "frosting.json", "subCategory": "Frosting" },
+    { "file": "sprinkles.json", "subCategory": "Sprinkles" },
+    { "file": "baking-chips.json", "subCategory": "Baking chips" },
+    { "file": "baking-nuts.json", "subCategory": "Baking nuts" },
+    { "file": "baking-spices.json", "subCategory": "Baking spices" },
+    { "file": "canned-milks.json", "subCategory": "Canned milks" },
+    { "file": "extracts.json", "subCategory": "Extracts" },
+    { "file": "food-coloring.json", "subCategory": "Food coloring" }
+  ]
+}

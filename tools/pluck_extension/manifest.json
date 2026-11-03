@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Pluck - RapidRun Catalog Engine",
+  "version": "2.0.0",
+  "description": "High-fidelity in-store retail catalog harvester for RapidRun Firestore architecture.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "*://*.bathandbodyworks.com/*",
+    "*://*.aldi.us/*",
+    "https://firestore.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bathandbodyworks.com/*",
+        "*://*.aldi.us/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Open Pluck Side Panel",
+    "default_icon": "icon.png"
+  }
+}

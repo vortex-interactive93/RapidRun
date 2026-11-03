@@ -1,0 +1,3592 @@
+[
+  {
+    "id": "bbw_028029081",
+    "name": "Midnight Addiction Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8bcc5191/hires/028029081.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, seductive, intoxicating fragrance. Formulated with high fragrance concentration of black plum, midnight orchid and sheer amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Amber Plum",
+      "topNotes": [
+        "Black Plum",
+        "Dark Cherry"
+      ],
+      "heartNotes": [
+        "Midnight Orchid",
+        "Night Jasmine"
+      ],
+      "baseNotes": [
+        "Sheer Amber",
+        "Vanilla Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029077",
+    "name": "Amber Era Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.3,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw70b9cf85/hires/028029077.jpg?sw=600&q=60&format=auto",
+    "description": "An opulent, radiant amber scent. A warm blend of rich amber, golden sandalwood and warm vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Woody Amber",
+      "topNotes": [
+        "Golden Amber",
+        "Bergamot Zest"
+      ],
+      "heartNotes": [
+        "Rich Sandalwood",
+        "Cashmere Wood"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Velvet Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029080",
+    "name": "Viva Vanilla Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.3,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw18c7c070/hires/028029080.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, irresistible vanilla dream. Formulated with rich vanilla, creamy tonka bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Golden Plum"
+      ],
+      "heartNotes": [
+        "Creamy Tonka",
+        "Orchid Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028024958",
+    "name": "Touch of Gold Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5cabe8ec/hires/028024958.jpg?sw=600&q=60&format=auto",
+    "description": "A luminous, gilded touch of luxury. Scented with golden honey, sparkling bergamot and soft cashmere musk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Gilded Floral Amber",
+      "topNotes": [
+        "Sparkling Bergamot",
+        "Golden Quince"
+      ],
+      "heartNotes": [
+        "Golden Honey",
+        "Solar Floral"
+      ],
+      "baseNotes": [
+        "Soft Cashmere Musk",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029079",
+    "name": "Worth Wanting Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.4,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2a77d512/hires/028029079.jpg?sw=600&q=60&format=auto",
+    "description": "An intoxicating, glamorous floral wood scent. Notes of wild berries, velvet rose and cashmere wood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Velvet Rose & Wood",
+      "topNotes": [
+        "Wild Berries",
+        "Pink Pepper"
+      ],
+      "heartNotes": [
+        "Velvet Rose",
+        "Damask Petals"
+      ],
+      "baseNotes": [
+        "Cashmere Wood",
+        "Rich Patchouli"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028033806",
+    "name": "Platinum Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa1b22e36/hires/028033806.jpg?sw=600&q=60&format=auto",
+    "description": "A polished, brilliant, modern fragrance. Scented with sparkling bergamot, silver amber and fresh cypress.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Crisp Woody Bergamot",
+      "topNotes": [
+        "Sparkling Bergamot",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Fresh Cypress",
+        "Silver Cedar"
+      ],
+      "baseNotes": [
+        "Silver Amber",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028909",
+    "name": "In the Stars Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2cc925b8/hires/028028909.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sparkling, out-of-this-world fragrance. Made with starflower, sandalwood musk, sugared tangelo and radiant amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Sparkle & Sandalwood",
+      "topNotes": [
+        "Sugared Tangelo",
+        "Starflower"
+      ],
+      "heartNotes": [
+        "Sandalwood Musk",
+        "White Borage"
+      ],
+      "baseNotes": [
+        "Agarwood",
+        "Amber",
+        "Radiant Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029076",
+    "name": "Orchid Effect Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw16ab6821/hires/028029076.jpg?sw=600&q=60&format=auto",
+    "description": "A lush, mysterious bloom. Formulated with wild orchid, midnight plum and sheer musk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Lush Wild Floral",
+      "topNotes": [
+        "Wild Orchid",
+        "Mandarin Zest"
+      ],
+      "heartNotes": [
+        "Midnight Plum",
+        "Night Violet"
+      ],
+      "baseNotes": [
+        "Sheer Musk",
+        "Velvet Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028031284",
+    "name": "Midnight Rouge Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf2e54882/hires/028031284.jpg?sw=600&q=60&format=auto",
+    "description": "A bold, seductive crimson floral scent. Scented with dark rose, crimson plum and velvet amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Seductive Dark Floral",
+      "topNotes": [
+        "Dark Rose",
+        "Crimson Plum"
+      ],
+      "heartNotes": [
+        "Velvet Amber",
+        "Red Peony"
+      ],
+      "baseNotes": [
+        "Smoky Vanilla",
+        "Rich Leather"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028032522",
+    "name": "Warm Vanilla Sugar Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwac9c556f/hires/028032522.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy, enveloping, sweet comfort. Scented with sheer florals, vanilla absolute, basmati rice and warm vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Gourmand",
+      "topNotes": [
+        "Sheer Florals",
+        "Vanilla Orchid"
+      ],
+      "heartNotes": [
+        "Vanilla Absolute",
+        "Basmati Rice",
+        "Sweet Jasmine"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "White Sandalwood",
+        "Brown Sugar",
+        "Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028034904",
+    "name": "Champagne Toast Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw016b4567/hires/028034904.jpg?sw=600&q=60&format=auto",
+    "description": "A fruity, sweet, sparkling celebration. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029078",
+    "name": "Trace Of Blue Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdaa5f51c/hires/028029078.jpg?sw=600&q=60&format=auto",
+    "description": "A serene, fresh aquatic breeze. Formulated with blue bergamot, sea salt water lily and sheer driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Cool Fresh Aquatic",
+      "topNotes": [
+        "Blue Bergamot",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Sea Salt Water Lily",
+        "Lotus Flower"
+      ],
+      "baseNotes": [
+        "Sheer Driftwood",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028908",
+    "name": "Butterfly Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbc0e4dfe/hires/028028908.jpg?sw=600&q=60&format=auto",
+    "description": "An inspiring, flight-of-fancy fragrance. Scented with raspberry nectar, iris petals and airy vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Floral",
+      "topNotes": [
+        "Raspberry Nectar",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Iris Petals",
+        "Pink Lotus"
+      ],
+      "baseNotes": [
+        "Airy Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028030610",
+    "name": "Into the Night Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwffb34fdb/hires/028030610.jpg?sw=600&q=60&format=auto",
+    "description": "An alluring, timeless, dark mystery. A captivating blend of dark berries, midnight jasmine and rich amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Amber Floral & Musk",
+      "topNotes": [
+        "Raspberry Noir",
+        "Midnight Blackberries"
+      ],
+      "heartNotes": [
+        "Velvety Rose Petals",
+        "Night-Blooming Jasmine"
+      ],
+      "baseNotes": [
+        "Amber Crystals",
+        "Mocha Musk",
+        "Rich Patchouli"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029082",
+    "name": "Pink Obsessed Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw01cd1013/hires/028029082.jpg?sw=600&q=60&format=auto",
+    "description": "An enchanting, radiant fragrance. Scented with high fragrance concentration notes of Pink Obsessed Fine Fragrance Mist.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fragrance & Amber",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Silk Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028024557",
+    "name": "Gingham Gorgeous Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc77e9d05/hires/028024557.jpg?sw=600&q=60&format=auto",
+    "description": "Our most gorgeous, floral Gingham yet. A happiest celebration of pink strawberries, peach nectar and peony petals.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Floral",
+      "topNotes": [
+        "Pink Strawberries",
+        "Sun-Kissed Peach"
+      ],
+      "heartNotes": [
+        "Peach Nectar",
+        "Peony Petals"
+      ],
+      "baseNotes": [
+        "White Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029560",
+    "name": "Very Violet Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw19e54e20/hires/028029560.jpg?sw=600&q=60&format=auto",
+    "description": "A charming, sweet violet dream. Scented with sugared violet, sheer iris and soft vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Powdery Sweet Floral",
+      "topNotes": [
+        "Sugared Violet",
+        "Fresh Violet Leaf"
+      ],
+      "heartNotes": [
+        "Sheer Iris",
+        "Candied Petals"
+      ],
+      "baseNotes": [
+        "Soft Vanilla",
+        "White Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028032521",
+    "name": "Japanese Cherry Blossom Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4782802b/hires/028032521.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple",
+        "Ume Plum"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Butterfly Lily",
+        "Kyoto Rose",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Imperial Amber",
+        "Silk Musk",
+        "Cinnamon Incense",
+        "Himalayan Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028015114",
+    "name": "At the Beach Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7aec10de/hires/028015114.jpg?sw=600&q=60&format=auto",
+    "description": "A refreshing, sun-soaked day at the shore. Scented with frangipani blossoms, toasted coconut and bergamot waters.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic & Coconut",
+      "topNotes": [
+        "Bergamot Waters",
+        "Sea Salt"
+      ],
+      "heartNotes": [
+        "Frangipani Blossoms",
+        "Toasted Coconut"
+      ],
+      "baseNotes": [
+        "Sunkissed Sand",
+        "Soft Driftwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028024314",
+    "name": "Strawberry Pound Cake Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw78b5c77f/hires/028024314.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, airy, freshly baked treat. Scented with fresh strawberries, golden shortcake and whipped cream.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Wild Strawberries"
+      ],
+      "heartNotes": [
+        "Golden Shortcake",
+        "Baking Spice"
+      ],
+      "baseNotes": [
+        "Whipped Cream",
+        "Vanilla Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028005120",
+    "name": "A Thousand Wishes Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.73,
+    "msrp": 18.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb1ab8db1/hires/028005120.jpg?sw=600&q=60&format=auto",
+    "description": "Warm, sparkling, sweet fragrance. A festive blend of pink prosecco, sparkling quince, crystal peonies, gilded amber and amaretto cr\u00e8me.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Floral & Amber",
+      "topNotes": [
+        "Pink Prosecco",
+        "Starfruit",
+        "Golden Quince"
+      ],
+      "heartNotes": [
+        "Crystal Peonies",
+        "Purple Freesia"
+      ],
+      "baseNotes": [
+        "Amaretto Cr\u00e8me",
+        "Warm Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025547",
+    "name": "Forever Cherry Blossom Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa61de3f0/hires/028025547.jpg?sw=600&q=60&format=auto",
+    "description": "A timeless romantic floral garden. Scented with cherry blossom, blushing peony and creamy sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Romantic Floral",
+      "topNotes": [
+        "Cherry Blossom",
+        "White Peach"
+      ],
+      "heartNotes": [
+        "Blushing Peony",
+        "Jasmine Petals"
+      ],
+      "baseNotes": [
+        "Soft Musk",
+        "Creamy Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029707",
+    "name": "Ghoul Friend Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8efe1462/hires/028029707.jpg?sw=600&q=60&format=auto",
+    "description": "A fun, bright, spooky sweet treat. Scented with dark strawberries, ghostly peony and chilled citrus.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Spooky Sweet",
+      "topNotes": [
+        "Dark Strawberries",
+        "Chilled Citrus"
+      ],
+      "heartNotes": [
+        "Ghostly Peony",
+        "Night Jasmine"
+      ],
+      "baseNotes": [
+        "Sugared Wood",
+        "Berry Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029709",
+    "name": "Vampire Blood Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4dcdd87b/hires/028029709.jpg?sw=600&q=60&format=auto",
+    "description": "An eerie, sweet, fruity indulgence. Scented with red berries, night-blooming jasmine and plum.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Fruity Plum",
+      "topNotes": [
+        "Red Berries",
+        "Blood Orange"
+      ],
+      "heartNotes": [
+        "Night-Blooming Jasmine",
+        "Midnight Plum"
+      ],
+      "baseNotes": [
+        "Rich Plum Wood",
+        "Dark Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029568",
+    "name": "Very Violet Diamond Shimmer Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Diamond Shimmer Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.9,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe7d5297d/hires/028029568.jpg?sw=600&q=60&format=auto",
+    "description": "A charming, sweet violet dream. Scented with sugared violet, sheer iris and soft vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "diamond shimmer mist"
+    ],
+    "fragranceProfile": {
+      "family": "Powdery Sweet Floral",
+      "topNotes": [
+        "Sugared Violet",
+        "Fresh Violet Leaf"
+      ],
+      "heartNotes": [
+        "Sheer Iris",
+        "Candied Petals"
+      ],
+      "baseNotes": [
+        "Soft Vanilla",
+        "White Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028017446",
+    "name": "Milk Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10552f42/hires/028017446.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy, comforting, warm hug. Scented with warm milk, oat extract and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Comforting Creamy Gourmand",
+      "topNotes": [
+        "Warm Milk",
+        "Steamed Oat"
+      ],
+      "heartNotes": [
+        "Oat Extract",
+        "Almond Milk"
+      ],
+      "baseNotes": [
+        "Vanilla Bean",
+        "Soft Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028023468",
+    "name": "Butterfly Diamond Shimmer Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Diamond Shimmer Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw437c9c81/hires/028023468.jpg?sw=600&q=60&format=auto",
+    "description": "An inspiring, flight-of-fancy fragrance. Scented with raspberry nectar, iris petals and airy vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "diamond shimmer mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Floral",
+      "topNotes": [
+        "Raspberry Nectar",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Iris Petals",
+        "Pink Lotus"
+      ],
+      "baseNotes": [
+        "Airy Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028003805",
+    "name": "Coconut Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwde52dd11/hires/028003805.jpg?sw=600&q=60&format=auto",
+    "description": "A breezy, tropical island escape. Scented with toasted coconut, coconut water and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Tropical Sweet Coconut",
+      "topNotes": [
+        "Toasted Coconut",
+        "Coconut Water"
+      ],
+      "heartNotes": [
+        "Coconut Cream",
+        "Solar Floral"
+      ],
+      "baseNotes": [
+        "Vanilla Bean",
+        "Sunkissed Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025453",
+    "name": "Ocean Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a81e752/hires/028025453.jpg?sw=600&q=60&format=auto",
+    "description": "An invigorating dive into blue waters. Scented with blue cypress, coastal vetiver and ocean driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Aquatic",
+      "topNotes": [
+        "Blue Cypress",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Coastal Vetiver",
+        "Sea Salt Water"
+      ],
+      "baseNotes": [
+        "Ocean Driftwood",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025452",
+    "name": "Noir Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ac1a09b/hires/028025452.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, mysterious, handsome scent. Scented with black cardamom, smoky vanilla and dark cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Woody Spice",
+      "topNotes": [
+        "Black Cardamom",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Smoky Vanilla",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Musk",
+        "Dark Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028032212",
+    "name": "Lasting Legacy Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd2c7fd61/hires/028032212.jpg?sw=600&q=60&format=auto",
+    "description": "A timeless, honorable, distinguished fragrance. Scented with fresh bergamot, bourbon vetiver and dark leather.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Elegant Wood",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Spiced Cardamom"
+      ],
+      "heartNotes": [
+        "Bourbon Vetiver",
+        "Cedarwood"
+      ],
+      "baseNotes": [
+        "Rich Amber",
+        "Dark Leather"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028950",
+    "name": "Almond Croissant Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.6,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd0f34e52/hires/028028950.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, flaky, golden morning pastry. Scented with warm croissant, almond extract and powdered sugar.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Gourmand",
+      "topNotes": [
+        "Warm Croissant",
+        "Butter Crust"
+      ],
+      "heartNotes": [
+        "Almond Extract",
+        "Toasted Pecan"
+      ],
+      "baseNotes": [
+        "Powdered Sugar",
+        "Vanilla Bean"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025451",
+    "name": "Mahogany Teakwood Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.9,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe1ce4b39/hires/028025451.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, bold, woodsy classic. Scented with rich mahogany, black teakwood and dark oak.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029418",
+    "name": "Pink Matcha Latte Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.6,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe27163ab/hires/028029418.jpg?sw=600&q=60&format=auto",
+    "description": "A trendy, creamy, sweet tea treat. Scented with pink dragonfruit, matcha tea and creamy oat milk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Tea Gourmand",
+      "topNotes": [
+        "Pink Dragonfruit",
+        "Matcha Tea Leaf"
+      ],
+      "heartNotes": [
+        "Creamy Oat Milk",
+        "Green Tea Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028003803",
+    "name": "Rain Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw42534d66/hires/028003803.jpg?sw=600&q=60&format=auto",
+    "description": "A clean, revitalizing spring rain shower. Scented with fresh raindrops, clear water lily and soft driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Fresh Aquatic",
+      "topNotes": [
+        "Fresh Raindrops",
+        "Crisp Dew"
+      ],
+      "heartNotes": [
+        "Clear Water Lily",
+        "Lotus Blossom"
+      ],
+      "baseNotes": [
+        "Soft Driftwood",
+        "Sheer Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028024136",
+    "name": "Butterfly Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwae8fa573/hires/028024136.jpg?sw=600&q=60&format=auto",
+    "description": "An inspiring, flight-of-fancy fragrance. Scented with raspberry nectar, iris petals and airy vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Floral",
+      "topNotes": [
+        "Raspberry Nectar",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Iris Petals",
+        "Pink Lotus"
+      ],
+      "baseNotes": [
+        "Airy Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028586",
+    "name": "Sweet Cinnamon Pumpkin Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw085a0af2/hires/028028586.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, warm fall celebration. Scented with heirloom pumpkin, autumn cinnamon, nutmeg and molasses.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Fall Gourmand",
+      "topNotes": [
+        "Heirloom Pumpkin",
+        "Fresh Ginger"
+      ],
+      "heartNotes": [
+        "Autumn Cinnamon",
+        "Ground Nutmeg"
+      ],
+      "baseNotes": [
+        "Molasses",
+        "Warm Vanilla",
+        "Spiced Clove"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029120",
+    "name": "Caramel Vanilla Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Fine Fragrance Mist",
+    "price": 4.48,
+    "msrp": 17.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwed9e363e/hires/028029120.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, gooey, golden sweet indulgence. Scented with salted caramel, vanilla bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Sweet Gourmand",
+      "topNotes": [
+        "Salted Caramel",
+        "Butterscotch"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Sweet Cream"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Toasted Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028032222",
+    "name": "Midnight Rouge Travel Size Fine Fragrance Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Travel Size Fine Fragrance Mist",
+    "price": 9.95,
+    "msrp": null,
+    "rating": 4.4,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfa551efa/hires/028032222.jpg?sw=600&q=60&format=auto",
+    "description": "A bold, seductive crimson floral scent. Scented with dark rose, crimson plum and velvet amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "travel size fine fragrance mist"
+    ],
+    "fragranceProfile": {
+      "family": "Seductive Dark Floral",
+      "topNotes": [
+        "Dark Rose",
+        "Crimson Plum"
+      ],
+      "heartNotes": [
+        "Velvet Amber",
+        "Red Peony"
+      ],
+      "baseNotes": [
+        "Smoky Vanilla",
+        "Rich Leather"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028016713",
+    "name": "Vanilla Noir Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdbe9bf39/hires/028016713.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, mysterious, handsome scent. Scented with black cardamom, smoky vanilla and dark cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Woody Spice",
+      "topNotes": [
+        "Black Cardamom",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Smoky Vanilla",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Musk",
+        "Dark Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028021004",
+    "name": "Japanese Cherry Blossom Diamond Shimmer Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Diamond Shimmer Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc62e7525/hires/028021004.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "diamond shimmer mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple",
+        "Ume Plum"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Butterfly Lily",
+        "Kyoto Rose",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Imperial Amber",
+        "Silk Musk",
+        "Cinnamon Incense",
+        "Himalayan Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028030618",
+    "name": "Into the Night Diamond Shimmer Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Diamond Shimmer Mist",
+    "price": 5.95,
+    "msrp": 17.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc495b7b7/hires/028030618.jpg?sw=600&q=60&format=auto",
+    "description": "An alluring, timeless, dark mystery. A captivating blend of dark berries, midnight jasmine and rich amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "diamond shimmer mist"
+    ],
+    "fragranceProfile": {
+      "family": "Amber Floral & Musk",
+      "topNotes": [
+        "Raspberry Noir",
+        "Midnight Blackberries"
+      ],
+      "heartNotes": [
+        "Velvety Rose Petals",
+        "Night-Blooming Jasmine"
+      ],
+      "baseNotes": [
+        "Amber Crystals",
+        "Mocha Musk",
+        "Rich Patchouli"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028019412",
+    "name": "Champagne Toast Diamond Shimmer Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Diamond Shimmer Mist",
+    "price": 5.95,
+    "msrp": 18.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc3003abc/hires/028019412.jpg?sw=600&q=60&format=auto",
+    "description": "A fruity, sweet, sparkling celebration. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "diamond shimmer mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028033845",
+    "name": "Pink Obsessed Mini Eau De Parfum Rollerball",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau De Parfum Rollerball",
+    "price": 13.95,
+    "msrp": null,
+    "rating": 4.5,
+    "unit": "0.23 fl oz / 7 mL",
+    "unitShort": "0.23 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3f85ffbc/hires/028033845.jpg?sw=600&q=60&format=auto",
+    "description": "An enchanting, radiant fragrance. Scented with high fragrance concentration notes of Pink Obsessed Mini Eau De Parfum Rollerball.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum rollerball"
+    ],
+    "fragranceProfile": {
+      "family": "Fragrance & Amber",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Silk Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025454",
+    "name": "After Dark Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwee797196/hires/028025454.jpg?sw=600&q=60&format=auto",
+    "description": "A sleek, captivating, midnight scent. Scented with spiced bergamot, midnight amber and dark tonka.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Seductive Night Wood",
+      "topNotes": [
+        "Spiced Bergamot",
+        "Black Plum"
+      ],
+      "heartNotes": [
+        "Midnight Amber",
+        "Smoky Lavender"
+      ],
+      "baseNotes": [
+        "Rich Leather",
+        "Dark Tonka"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028023041",
+    "name": "Bourbon Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2edbf3e9/hires/028023041.jpg?sw=600&q=60&format=auto",
+    "description": "A smooth, warm, barrel-aged blend. Scented with white pepper, dark amber and Kentucky bourbon.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Woody Amber",
+      "topNotes": [
+        "White Pepper",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Dark Amber",
+        "Barrel Oak"
+      ],
+      "baseNotes": [
+        "Kentucky Bourbon",
+        "Rich Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028936",
+    "name": "Into Orbit Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb279d615/hires/028028936.jpg?sw=600&q=60&format=auto",
+    "description": "A futuristic, exhilarating, crisp space exploration scent. Scented with cosmic bergamot, ozone water and clean cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Cosmic Fresh Ozone",
+      "topNotes": [
+        "Cosmic Bergamot",
+        "Ozone Water"
+      ],
+      "heartNotes": [
+        "Silver Mint",
+        "Blue Lavender"
+      ],
+      "baseNotes": [
+        "Deep Space Musk",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029788",
+    "name": "Santal Ridge Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd0bb10b4/hires/028029788.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, creamy, mountain ridge sanctuary. Scented with creamy santal, crisp bergamot and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Creamy Sandalwood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Cardamom Spice"
+      ],
+      "heartNotes": [
+        "Creamy Santal",
+        "Iris Blossom"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029254",
+    "name": "Cherry Crush Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 17.95,
+    "msrp": null,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw21d4d778/hires/028029254.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, playful, bold cherry pop. Scented with bing cherry, sweet plum and sugared musk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Cherry Gourmand",
+      "topNotes": [
+        "Bing Cherry",
+        "Black Cherry"
+      ],
+      "heartNotes": [
+        "Sweet Plum",
+        "Cherry Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Vanilla Bean"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028030409",
+    "name": "Football Season Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcbd2e944/hires/028030409.jpg?sw=600&q=60&format=auto",
+    "description": "An energetic, game-day autumn spirit. Scented with crisp fall air, fresh turf and warm leather.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Leather",
+      "topNotes": [
+        "Crisp Fall Air",
+        "Zesty Citrus"
+      ],
+      "heartNotes": [
+        "Fresh Turf",
+        "Green Leaf"
+      ],
+      "baseNotes": [
+        "Warm Leather",
+        "Rich Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028031070",
+    "name": "Sandalwood Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9c48d498/hires/028031070.jpg?sw=600&q=60&format=auto",
+    "description": "A grounding, calming, natural woodsy retreat. Formulated with Australian sandalwood and warm cedar essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Earthy Wood",
+      "topNotes": [
+        "Australian Sandalwood",
+        "Cardamom"
+      ],
+      "heartNotes": [
+        "Cedar Leaf",
+        "Earthy Vetiver"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025450",
+    "name": "Graphite Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb0d81f06/hires/028025450.jpg?sw=600&q=60&format=auto",
+    "description": "A bold, modern, adventurous blend. Scented with sage leaf, leather woods and crisp bergamot.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Bold Herbal Wood",
+      "topNotes": [
+        "Sage Leaf",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Leather Woods",
+        "Geranium"
+      ],
+      "baseNotes": [
+        "Dense Cedar",
+        "Vetiver"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028016325",
+    "name": "Lavender Vanilla Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 15.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw022503b1/hires/028016325.jpg?sw=600&q=60&format=auto",
+    "description": "A relaxing, soothing, tranquil evening ritual. Scented with natural lavender oil and vanilla absolute.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Relaxing Floral",
+      "topNotes": [
+        "Lavender Oil",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "French Lavender",
+        "Jasmine Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Absolute",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028023042",
+    "name": "Whiskey Reserve Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw737cff06/hires/028023042.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, refined, single-malt spirit scent. Scented with crisp apple, single malt whiskey and white oak.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Rich Spirit",
+      "topNotes": [
+        "Crisp Apple",
+        "Bergamot Zest"
+      ],
+      "heartNotes": [
+        "Single Malt Whiskey",
+        "Spiced Clove"
+      ],
+      "baseNotes": [
+        "White Oak",
+        "Golden Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028018935",
+    "name": "Touch of Gold Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 14.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw06c0f0a8/hires/028018935.jpg?sw=600&q=60&format=auto",
+    "description": "A luminous, gilded touch of luxury. Scented with golden honey, sparkling bergamot and soft cashmere musk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Gilded Floral Amber",
+      "topNotes": [
+        "Sparkling Bergamot",
+        "Golden Quince"
+      ],
+      "heartNotes": [
+        "Golden Honey",
+        "Solar Floral"
+      ],
+      "baseNotes": [
+        "Soft Cashmere Musk",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029379",
+    "name": "Sleep: Black Chamomile Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw031c2977/hires/028029379.jpg?sw=600&q=60&format=auto",
+    "description": "A peaceful, sleep-inducing evening blend. Formulated with black chamomile and bergamot essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Night Chamomile",
+      "topNotes": [
+        "Black Chamomile Oil",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Bergamot Oil",
+        "Night Jasmine"
+      ],
+      "baseNotes": [
+        "Sheer Cedar",
+        "Soft Vanilla"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029378",
+    "name": "Stress Relief: Eucalyptus + Tea Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw42ab6fa3/hires/028029378.jpg?sw=600&q=60&format=auto",
+    "description": "A clearing, uplifting, stress-relieving sanctuary. Scented with eucalyptus oil and spearmint oil.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Eucalyptus Tea",
+      "topNotes": [
+        "Eucalyptus Oil",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Spearmint Oil",
+        "Tea Leaf Extract"
+      ],
+      "baseNotes": [
+        "Soft Woods",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028033843",
+    "name": "Midnight Addiction Mini Eau De Parfum Rollerball",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau De Parfum Rollerball",
+    "price": 13.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "0.23 fl oz / 7 mL",
+    "unitShort": "0.23 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw286a7c23/hires/028033843.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, seductive, intoxicating fragrance. Formulated with high fragrance concentration of black plum, midnight orchid and sheer amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum rollerball"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Amber Plum",
+      "topNotes": [
+        "Black Plum",
+        "Dark Cherry"
+      ],
+      "heartNotes": [
+        "Midnight Orchid",
+        "Night Jasmine"
+      ],
+      "baseNotes": [
+        "Sheer Amber",
+        "Vanilla Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025207",
+    "name": "Orange Ginger Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc4872ba5/hires/028025207.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, vibrant, mood-boosting citrus blend. Scented with natural orange oil and ginger oil.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Energy Citrus",
+      "topNotes": [
+        "Sweet Orange Oil",
+        "Mandarin Zest"
+      ],
+      "heartNotes": [
+        "Ginger Root Oil",
+        "Fresh Spice"
+      ],
+      "baseNotes": [
+        "Soft Woods",
+        "Golden Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028032208",
+    "name": "Midnight Rouge Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 13.95,
+    "msrp": null,
+    "rating": 4.4,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw670f824b/hires/028032208.jpg?sw=600&q=60&format=auto",
+    "description": "A bold, seductive crimson floral scent. Scented with dark rose, crimson plum and velvet amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Seductive Dark Floral",
+      "topNotes": [
+        "Dark Rose",
+        "Crimson Plum"
+      ],
+      "heartNotes": [
+        "Velvet Amber",
+        "Red Peony"
+      ],
+      "baseNotes": [
+        "Smoky Vanilla",
+        "Rich Leather"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028980",
+    "name": "Plum Please Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 17.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwda515a6c/hires/028028980.jpg?sw=600&q=60&format=auto",
+    "description": "A juicy, decadent, sugar-dusted plum scent. Scented with juicy plum, sugar plum and velvet amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Fruity Gourmand",
+      "topNotes": [
+        "Juicy Plum",
+        "Black Cherry"
+      ],
+      "heartNotes": [
+        "Sugar Plum",
+        "Orchid Petals"
+      ],
+      "baseNotes": [
+        "Velvet Amber",
+        "Vanilla Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028033847",
+    "name": "Viva Vanilla Mini Eau De Parfum Rollerball",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau De Parfum Rollerball",
+    "price": 13.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "0.23 fl oz / 7 mL",
+    "unitShort": "0.23 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw190e1f89/hires/028033847.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, irresistible vanilla dream. Formulated with rich vanilla, creamy tonka bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum rollerball"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Golden Plum"
+      ],
+      "heartNotes": [
+        "Creamy Tonka",
+        "Orchid Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028026535",
+    "name": "Watermelon Whirl Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 17.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2aae138e/hires/028026535.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp, refreshing, sun-drenched summer treat. Scented with fresh watermelon, sugared lemon and soft musk.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Juicy Fresh Watermelon",
+      "topNotes": [
+        "Fresh Watermelon",
+        "Sugared Lemon"
+      ],
+      "heartNotes": [
+        "Cucumber Water",
+        "Pink Poppy"
+      ],
+      "baseNotes": [
+        "Soft Musk",
+        "Sugared Vanilla"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029572",
+    "name": "Very Violet Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb469a51b/hires/028029572.jpg?sw=600&q=60&format=auto",
+    "description": "A charming, sweet violet dream. Scented with sugared violet, sheer iris and soft vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Powdery Sweet Floral",
+      "topNotes": [
+        "Sugared Violet",
+        "Fresh Violet Leaf"
+      ],
+      "heartNotes": [
+        "Sheer Iris",
+        "Candied Petals"
+      ],
+      "baseNotes": [
+        "Soft Vanilla",
+        "White Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028026580",
+    "name": "Crafted Cognac Deodorizing Body Spray",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Deodorizing Body Spray",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwafcbbbde/hires/028026580.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, sophisticated, barrel-crafted spirit scent. Scented with aged cognac, warm amber and dark oak.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "deodorizing body spray"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Aged Gourmand",
+      "topNotes": [
+        "Aged Cognac",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Warm Amber",
+        "Cinnamon Bark"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Smoky Vanilla"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028031071",
+    "name": "Vetiver Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 16.95,
+    "rating": 4.6,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa272b0db/hires/028031071.jpg?sw=600&q=60&format=auto",
+    "description": "An earthy, grounding, natural root blend. Formulated with Haitian vetiver and crisp bergamot.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Woody Earth",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Haitian Vetiver"
+      ],
+      "heartNotes": [
+        "Vetiver Root",
+        "Cedar Leaf"
+      ],
+      "baseNotes": [
+        "Smoky Wood",
+        "Earthy Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028017816",
+    "name": "In the Stars Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 14.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1a13fdf0/hires/028017816.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sparkling, out-of-this-world fragrance. Made with starflower, sandalwood musk, sugared tangelo and radiant amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Sparkle & Sandalwood",
+      "topNotes": [
+        "Sugared Tangelo",
+        "Starflower"
+      ],
+      "heartNotes": [
+        "Sandalwood Musk",
+        "White Borage"
+      ],
+      "baseNotes": [
+        "Agarwood",
+        "Amber",
+        "Radiant Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028023557",
+    "name": "Covered In Roses Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 14.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe19803dd/hires/028023557.jpg?sw=600&q=60&format=auto",
+    "description": "A lush, lavish, petal-drenched rose garden. Scented with ruby red rose, sugared berries and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Lush Red Floral",
+      "topNotes": [
+        "Ruby Red Rose",
+        "Sugared Berries"
+      ],
+      "heartNotes": [
+        "Damask Rose Petals",
+        "Pink Peony"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Velvet Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028026536",
+    "name": "Berry Bliss Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 17.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw814b0630/hires/028026536.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, joyful, berry-filled celebration. Scented with wild blackberry, sweet raspberry and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Juicy Berry Gourmand",
+      "topNotes": [
+        "Wild Blackberry",
+        "Sweet Raspberry"
+      ],
+      "heartNotes": [
+        "Blackcurrant",
+        "Rose Water"
+      ],
+      "baseNotes": [
+        "Vanilla Bean",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028016324",
+    "name": "Eucalyptus Spearmint Essential Oil Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Essential Oil Mist",
+    "price": 5.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc694fcb1/hires/028016324.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, restorative herbal blend. Formulated with eucalyptus and spearmint essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "essential oil mist"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Eucalyptus Mint",
+      "topNotes": [
+        "Eucalyptus Oil",
+        "Spearmint Oil"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Musk",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028026534",
+    "name": "Tangerine Twirl Perfume Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Perfume Mist",
+    "price": 17.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw53f0c767/hires/028026534.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, dancing, sunlit citrus scent. Scented with juicy tangerine, citrus zest and soft amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "perfume mist"
+    ],
+    "fragranceProfile": {
+      "family": "Sparkling Citrus Floral",
+      "topNotes": [
+        "Juicy Tangerine",
+        "Citrus Zest"
+      ],
+      "heartNotes": [
+        "Orange Blossom",
+        "Peach Nectar"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028011412",
+    "name": "Sweetest Song Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 14.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw18542b74/hires/028011412.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, melodious, enchanting floral bouquet. Scented with pink peony, sweet raspberry and cashmere wood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Delicate Sweet Floral",
+      "topNotes": [
+        "Pink Peony",
+        "Sweet Raspberry"
+      ],
+      "heartNotes": [
+        "Apple Blossom",
+        "Lily of the Valley"
+      ],
+      "baseNotes": [
+        "Cashmere Wood",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028031267",
+    "name": "Into the Night Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa9c01bbf/hires/028031267.jpg?sw=600&q=60&format=auto",
+    "description": "An alluring, timeless, dark mystery. A captivating blend of dark berries, midnight jasmine and rich amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Amber Floral & Musk",
+      "topNotes": [
+        "Raspberry Noir",
+        "Midnight Blackberries"
+      ],
+      "heartNotes": [
+        "Velvety Rose Petals",
+        "Night-Blooming Jasmine"
+      ],
+      "baseNotes": [
+        "Amber Crystals",
+        "Mocha Musk",
+        "Rich Patchouli"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028025250",
+    "name": "Gingham Gorgeous Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw06d746ca/hires/028025250.jpg?sw=600&q=60&format=auto",
+    "description": "Our most gorgeous, floral Gingham yet. A happiest celebration of pink strawberries, peach nectar and peony petals.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Floral",
+      "topNotes": [
+        "Pink Strawberries",
+        "Sun-Kissed Peach"
+      ],
+      "heartNotes": [
+        "Peach Nectar",
+        "Peony Petals"
+      ],
+      "baseNotes": [
+        "White Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028019414",
+    "name": "Champagne Toast Mini Eau de Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Mini Eau de Parfum",
+    "price": 14.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw77fef48d/hires/028019414.jpg?sw=600&q=60&format=auto",
+    "description": "A fruity, sweet, sparkling celebration. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "mini eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029574",
+    "name": "Very Violet Eau De Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Eau De Parfum",
+    "price": 64.95,
+    "msrp": null,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe4a0db51/hires/028029574.jpg?sw=600&q=60&format=auto",
+    "description": "A charming, sweet violet dream. Scented with sugared violet, sheer iris and soft vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Powdery Sweet Floral",
+      "topNotes": [
+        "Sugared Violet",
+        "Fresh Violet Leaf"
+      ],
+      "heartNotes": [
+        "Sheer Iris",
+        "Candied Petals"
+      ],
+      "baseNotes": [
+        "Soft Vanilla",
+        "White Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028023104",
+    "name": "Bourbon Travel Size Cologne Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Travel Size Cologne Mist",
+    "price": 9.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw20d2138a/hires/028023104.jpg?sw=600&q=60&format=auto",
+    "description": "A smooth, warm, barrel-aged blend. Scented with white pepper, dark amber and Kentucky bourbon.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "travel size cologne mist"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Woody Amber",
+      "topNotes": [
+        "White Pepper",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Dark Amber",
+        "Barrel Oak"
+      ],
+      "baseNotes": [
+        "Kentucky Bourbon",
+        "Rich Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028017818",
+    "name": "In the Stars Eau De Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Eau De Parfum",
+    "price": 59.95,
+    "msrp": null,
+    "rating": 4.3,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw452a7f1b/hires/028017818.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sparkling, out-of-this-world fragrance. Made with starflower, sandalwood musk, sugared tangelo and radiant amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Sparkle & Sandalwood",
+      "topNotes": [
+        "Sugared Tangelo",
+        "Starflower"
+      ],
+      "heartNotes": [
+        "Sandalwood Musk",
+        "White Borage"
+      ],
+      "baseNotes": [
+        "Agarwood",
+        "Amber",
+        "Radiant Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013947",
+    "name": "Noir Travel Size Cologne Mist",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Travel Size Cologne Mist",
+    "price": 9.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3312940/hires/028013947.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, mysterious, handsome scent. Scented with black cardamom, smoky vanilla and dark cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "travel size cologne mist"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Woody Spice",
+      "topNotes": [
+        "Black Cardamom",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Smoky Vanilla",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Musk",
+        "Dark Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028021012",
+    "name": "Japanese Cherry Blossom Eau De Parfum",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Eau De Parfum",
+    "price": 59.95,
+    "msrp": null,
+    "rating": 4.6,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc666e5d6/hires/028021012.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "eau de parfum"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple",
+        "Ume Plum"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Butterfly Lily",
+        "Kyoto Rose",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Imperial Amber",
+        "Silk Musk",
+        "Cinnamon Incense",
+        "Himalayan Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013160",
+    "name": "Noir Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Antiperspirant Deodorant",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90918a8a/hires/028013160.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, mysterious, handsome scent. Scented with black cardamom, smoky vanilla and dark cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "antiperspirant deodorant"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Woody Spice",
+      "topNotes": [
+        "Black Cardamom",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Smoky Vanilla",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Musk",
+        "Dark Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028028938",
+    "name": "Into Orbit Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 59.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfa0f5393/hires/028028938.jpg?sw=600&q=60&format=auto",
+    "description": "A futuristic, exhilarating, crisp space exploration scent. Scented with cosmic bergamot, ozone water and clean cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Cosmic Fresh Ozone",
+      "topNotes": [
+        "Cosmic Bergamot",
+        "Ozone Water"
+      ],
+      "heartNotes": [
+        "Silver Mint",
+        "Blue Lavender"
+      ],
+      "baseNotes": [
+        "Deep Space Musk",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028026575",
+    "name": "Crafted Cognac Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 64.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce4cf243/hires/028026575.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, sophisticated, barrel-crafted spirit scent. Scented with aged cognac, warm amber and dark oak.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Aged Gourmand",
+      "topNotes": [
+        "Aged Cognac",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Warm Amber",
+        "Cinnamon Bark"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Smoky Vanilla"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013146",
+    "name": "Ocean Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 49.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2e9a1fc4/hires/028013146.jpg?sw=600&q=60&format=auto",
+    "description": "An invigorating dive into blue waters. Scented with blue cypress, coastal vetiver and ocean driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Aquatic",
+      "topNotes": [
+        "Blue Cypress",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Coastal Vetiver",
+        "Sea Salt Water"
+      ],
+      "baseNotes": [
+        "Ocean Driftwood",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013150",
+    "name": "Noir Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 49.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw570aad38/hires/028013150.jpg?sw=600&q=60&format=auto",
+    "description": "A dark, mysterious, handsome scent. Scented with black cardamom, smoky vanilla and dark cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Woody Spice",
+      "topNotes": [
+        "Black Cardamom",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Smoky Vanilla",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Musk",
+        "Dark Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028029789",
+    "name": "Santal Ridge Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 59.95,
+    "msrp": null,
+    "rating": 4.5,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw59fc42d3/hires/028029789.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, creamy, mountain ridge sanctuary. Scented with creamy santal, crisp bergamot and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Creamy Sandalwood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Cardamom Spice"
+      ],
+      "heartNotes": [
+        "Creamy Santal",
+        "Iris Blossom"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013156",
+    "name": "Ocean Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Antiperspirant Deodorant",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.8,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw408edb23/hires/028013156.jpg?sw=600&q=60&format=auto",
+    "description": "An invigorating dive into blue waters. Scented with blue cypress, coastal vetiver and ocean driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "antiperspirant deodorant"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Aquatic",
+      "topNotes": [
+        "Blue Cypress",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Coastal Vetiver",
+        "Sea Salt Water"
+      ],
+      "baseNotes": [
+        "Ocean Driftwood",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028013159",
+    "name": "Graphite Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Antiperspirant Deodorant",
+    "price": 12.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc891b46e/hires/028013159.jpg?sw=600&q=60&format=auto",
+    "description": "A bold, modern, adventurous blend. Scented with sage leaf, leather woods and crisp bergamot.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "antiperspirant deodorant"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Bold Herbal Wood",
+      "topNotes": [
+        "Sage Leaf",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Leather Woods",
+        "Geranium"
+      ],
+      "baseNotes": [
+        "Dense Cedar",
+        "Vetiver"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  },
+  {
+    "id": "bbw_028030413",
+    "name": "Football Season Cologne",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Cologne",
+    "price": 59.95,
+    "msrp": null,
+    "rating": 4.7,
+    "unit": "3.4 fl oz / 100 mL",
+    "unitShort": "3.4 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw45586808/hires/028030413.jpg?sw=600&q=60&format=auto",
+    "description": "An energetic, game-day autumn spirit. Scented with crisp fall air, fresh turf and warm leather.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "fragrance",
+      "cologne"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Leather",
+      "topNotes": [
+        "Crisp Fall Air",
+        "Zesty Citrus"
+      ],
+      "heartNotes": [
+        "Fresh Turf",
+        "Green Leaf"
+      ],
+      "baseNotes": [
+        "Warm Leather",
+        "Rich Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free"
+    ]
+  }
+]

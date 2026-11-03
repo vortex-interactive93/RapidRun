@@ -1,0 +1,667 @@
+[
+  {
+    "id": "bbw_026667303",
+    "name": "My Favorite Night Balm Lip Balm",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Balm",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.5 oz / 14 g",
+    "unitShort": "0.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw17143e60/hires/026667303.jpg?sw=600&q=60&format=auto",
+    "description": "Deeply conditioning, ultra-moisturizing lip balm with shea butter and jojoba oil to restore dry lips overnight.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip balm"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Night Care",
+      "topNotes": [
+        "Vanilla Mint",
+        "Sweet Almond"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580708",
+    "name": "Vanilla 2X Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe941ae5a/hires/026580708.jpg?sw=600&q=60&format=auto",
+    "description": "High-shine, double-vanilla lip gloss infused with peppermint oil for an invigorating, shiny finish.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Vanilla Gourmand",
+      "topNotes": [
+        "Double Vanilla Bean",
+        "Sweet Cream"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026672885",
+    "name": "Whipped Vanilla Lip Butter",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Butter",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.5,
+    "unit": "0.5 oz / 14 g",
+    "unitShort": "0.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc7f41559/hires/026672885.jpg?sw=600&q=60&format=auto",
+    "description": "Rich, cushiony lip butter that melts into lips to deliver continuous moisture and a delicious vanilla scent.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip butter"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Gourmand",
+      "topNotes": [
+        "Whipped Vanilla",
+        "Buttercream"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580709",
+    "name": "Mentha Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0bf36e18/hires/026580709.jpg?sw=600&q=60&format=auto",
+    "description": "100% natural peppermint flavor lip gloss that cools, freshens breath, and gives a glossy shine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Refreshing Peppermint",
+      "topNotes": [
+        "Peppermint Oil",
+        "Cool Menthol"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028030828",
+    "name": "Vampire Blood Lip Oil",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Oil",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.4,
+    "unit": "0.34 fl oz / 10 mL",
+    "unitShort": "0.34 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8828ff61/hires/028030828.jpg?sw=600&q=60&format=auto",
+    "description": "A sheer, berry-tinted hydrating lip oil with a sweet fruity scent that leaves lips feeling soft and glossy.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip oil"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Fruity Berry",
+      "topNotes": [
+        "Red Berries",
+        "Night Plum"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028031270",
+    "name": "Bare Blush Peptide Lip Advanced",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Peptide Lip Advanced",
+    "price": 14.95,
+    "msrp": 14.95,
+    "rating": 4.5,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5c785f82/hires/028031270.jpg?sw=600&q=60&format=auto",
+    "description": "Advanced peptide-infused lip treatment designed to plump, smooth, and restore youthful softness with a subtle nude blush.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "peptide lip advanced"
+    ],
+    "fragranceProfile": {
+      "family": "Peptide Lip Treatment",
+      "topNotes": [
+        "Sheer Rose",
+        "Peptide Complex"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580711",
+    "name": "Shimmer Tint Pink Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa1b9edca/hires/026580711.jpg?sw=600&q=60&format=auto",
+    "description": "Sparkling pink lip gloss with light-reflecting shimmer that provides a lush, glossy sheen.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Shimmer Floral Pink",
+      "topNotes": [
+        "Pink Peony",
+        "Sweet Strawberry"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028031152",
+    "name": "Strawberry Pound Cake Glossy Lip Balm",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Glossy Lip Balm",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.5 oz / 14 g",
+    "unitShort": "0.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3d807def/hires/028031152.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, glossy lip balm scented with fresh strawberries and golden shortcake.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "glossy lip balm"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet Berry",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Whipped Cream"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580710",
+    "name": "Bare Mint Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw11a23d4b/hires/026580710.jpg?sw=600&q=60&format=auto",
+    "description": "Cooling, high-shine lip gloss with natural mint extract for a fresh, crisp lip feel.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Cooling Mint Shine",
+      "topNotes": [
+        "Spearmint Leaf",
+        "Sweet Sugar"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028031269",
+    "name": "Black Cherry Peptide Lip Advanced",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Peptide Lip Advanced",
+    "price": 14.95,
+    "msrp": 14.95,
+    "rating": 4.7,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdf045316/hires/028031269.jpg?sw=600&q=60&format=auto",
+    "description": "Nourishing peptide lip treatment with a rich black cherry tint to plump and deeply moisturize.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "peptide lip advanced"
+    ],
+    "fragranceProfile": {
+      "family": "Deep Fruity Cherry",
+      "topNotes": [
+        "Black Cherry",
+        "Dark Plum"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580713",
+    "name": "Magenta Mint Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw19e3491f/hires/026580713.jpg?sw=600&q=60&format=auto",
+    "description": "Vibrant berry-tinted lip gloss infused with cooling peppermint for a bold, glossy look.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Vibrant Berry Mint",
+      "topNotes": [
+        "Magenta Berries",
+        "Crisp Peppermint"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028016552",
+    "name": "Champagne Toast Lip Oil",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Oil",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.5,
+    "unit": "0.34 fl oz / 10 mL",
+    "unitShort": "0.34 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3c97655a/hires/028016552.jpg?sw=600&q=60&format=auto",
+    "description": "Fruity, sparkling lip oil with coconut oil and vitamin E for a lightweight, non-sticky shine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip oil"
+    ],
+    "fragranceProfile": {
+      "family": "Sparkling Citrus Berry",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028031271",
+    "name": "Pink Satin Peptide Lip Advanced",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Peptide Lip Advanced",
+    "price": 14.95,
+    "msrp": 14.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfb283b77/hires/028031271.jpg?sw=600&q=60&format=auto",
+    "description": "Luxe peptide lip treatment with a silky pink sheen that visibly smooths and plumps dry lips.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "peptide lip advanced"
+    ],
+    "fragranceProfile": {
+      "family": "Satin Pink Peptide",
+      "topNotes": [
+        "Satin Pink Petals",
+        "Peptide Complex"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028034083",
+    "name": "Wine Not Lip Oil",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Oil",
+    "price": 9.95,
+    "msrp": 9.95,
+    "rating": 5.0,
+    "unit": "0.34 fl oz / 10 mL",
+    "unitShort": "0.34 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw420bc76b/hires/028034083.jpg?sw=600&q=60&format=auto",
+    "description": "Deeply nourishing wine-tinted lip oil that hydrates and leaves a gorgeous berry shine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip oil"
+    ],
+    "fragranceProfile": {
+      "family": "Deep Wine Berry",
+      "topNotes": [
+        "Rich Blackberry",
+        "Aged Plum"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026580712",
+    "name": "Pink Mint Lip Gloss",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Gloss",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0cfea437/hires/026580712.jpg?sw=600&q=60&format=auto",
+    "description": "Playful pink lip gloss with a refreshing minty burst and glossy sheen.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip gloss"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Pink Peppermint",
+      "topNotes": [
+        "Pink Sugar",
+        "Fresh Mint"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026664331",
+    "name": "Wine Not Nourishing Lip Tint",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Nourishing Lip Tint",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.5,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4128d126/hires/026664331.jpg?sw=600&q=60&format=auto",
+    "description": "Deeply nourishing wine-tinted lip oil that hydrates and leaves a gorgeous berry shine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "nourishing lip tint"
+    ],
+    "fragranceProfile": {
+      "family": "Deep Wine Berry",
+      "topNotes": [
+        "Rich Blackberry",
+        "Aged Plum"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_026664328",
+    "name": "Barely There Nourishing Lip Tint",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Nourishing Lip Tint",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.2,
+    "unit": "0.47 fl oz / 14 mL",
+    "unitShort": "0.47 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9a13d198/hires/026664328.jpg?sw=600&q=60&format=auto",
+    "description": "Nourishing lip tint that enhances natural lip color with weightless moisture.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "nourishing lip tint"
+    ],
+    "fragranceProfile": {
+      "family": "Nude Lip Nourishment",
+      "topNotes": [
+        "Nude Coconut",
+        "Sheer Honey"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028016546",
+    "name": "Rosy Cheeks Lip Oil",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Oil",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.5,
+    "unit": "0.34 fl oz / 10 mL",
+    "unitShort": "0.34 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw27937e6e/hires/028016546.jpg?sw=600&q=60&format=auto",
+    "description": "Lush, rose-tinted lip oil that conditions and gives lips a healthy, glowing sheen.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip oil"
+    ],
+    "fragranceProfile": {
+      "family": "Lush Rose Petal",
+      "topNotes": [
+        "Ruby Red Rose",
+        "Sweet Raspberry"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028016544",
+    "name": "Honey Glaze Lip Oil",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Lip Oil",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.5,
+    "unit": "0.34 fl oz / 10 mL",
+    "unitShort": "0.34 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw17cfe846/hires/028016544.jpg?sw=600&q=60&format=auto",
+    "description": "Golden, honey-infused lip oil that coats lips in luxurious moisture and high shine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "lip_care",
+      "lip oil"
+    ],
+    "fragranceProfile": {
+      "family": "Golden Honey Nectar",
+      "topNotes": [
+        "Golden Honey",
+        "Warm Vanilla"
+      ],
+      "heartNotes": [],
+      "baseNotes": []
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "Dermatologist Tested"
+    ]
+  }
+]

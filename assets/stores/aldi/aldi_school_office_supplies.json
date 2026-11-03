@@ -1,0 +1,54 @@
+﻿[
+    {
+        "id":  "aldi_school_office_supplies_001",
+        "name":  "AA Alkaline Batteries",
+        "brand":  "AA Alkaline Batteries",
+        "price":  3.29,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/fddf8a5f-4e7b-4922-9e33-a985908f4580/AA%20%20Alkaline%20Batteries%208%20count",
+        "description":  "AA Alkaline Batteries, 8 count from AA Alkaline Batteries. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "8 count",
+        "storeId":  "aldi",
+        "category":  "Household Essentials",
+        "subCategory":  "School \u0026 Office Supplies"
+    },
+    {
+        "id":  "aldi_school_office_supplies_002",
+        "name":  "AAA Alkaline Batteries",
+        "brand":  "AAA Alkaline Batteries",
+        "price":  3.29,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c53c5758-e920-4cd9-bc52-4978035971c3/AAA%20%20Alkaline%20Batteries%208%20count",
+        "description":  "AAA Alkaline Batteries, 8 count from AAA Alkaline Batteries. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "8 count",
+        "storeId":  "aldi",
+        "category":  "Household Essentials",
+        "subCategory":  "School \u0026 Office Supplies"
+    },
+    {
+        "id":  "aldi_school_office_supplies_003",
+        "name":  "Dry Erase Board or Calendar Gold Dry Erase Board",
+        "brand":  "Dry Erase Board",
+        "price":  9.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/ef879e3f-5589-4429-bf41-ac8faa453d21/Dry%20Erase%20Board%20or%20Calendar%20Gold%20Dry%20Erase%20Board",
+        "description":  "Dry Erase Board or Calendar Gold Dry Erase Board from Dry Erase Board. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Household Essentials",
+        "subCategory":  "School \u0026 Office Supplies"
+    },
+    {
+        "id":  "aldi_school_office_supplies_004",
+        "name":  "Dry Erase Board or Calendar Silver Dry Erase Board",
+        "brand":  "Dry Erase Board",
+        "price":  9.99,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/4aea83ab-ee63-464f-957f-4a8fbbaec541/Dry%20Erase%20Board%20or%20Calendar%20Silver%20Dry%20Erase%20Board",
+        "description":  "Dry Erase Board or Calendar Silver Dry Erase Board from Dry Erase Board. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Household Essentials",
+        "subCategory":  "School \u0026 Office Supplies"
+    }
+]

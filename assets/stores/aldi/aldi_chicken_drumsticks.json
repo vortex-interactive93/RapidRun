@@ -1,0 +1,53 @@
+﻿[
+    {
+        "id":  "aldi_meat_7",
+        "name":  "Family Pack Chicken Drumsticks",
+        "brand":  "ALDI",
+        "price":  4.9,
+        "unit":  "$1.09 / lb (About 4.5 lb / package)",
+        "unitShort":  "$1.09 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Drumsticks",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_930ec418-a42e-440a-8a71-fa5e92da89c5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_31",
+        "name":  "Kirkwood Chicken Drumsticks",
+        "brand":  "Kirkwood",
+        "price":  6.23,
+        "unit":  "$1.79 / lb (About 3.48 lb / package)",
+        "unitShort":  "$1.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Drumsticks",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_70854730-83e1-4670-bb59-ee15c42b7230.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_151",
+        "name":  "Perdue NAE FP Chicken Drumsticks",
+        "brand":  "Perdue",
+        "price":  0.89,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Chicken Drumsticks",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_30bc6504-1d45-4ac9-8cef-ce81ae9f2402.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Grade-A tender fresh chicken from Perdue. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    }
+]

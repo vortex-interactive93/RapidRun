@@ -1,0 +1,670 @@
+[
+  {
+    "id": "bbw_028005920",
+    "name": "A Thousand Wishes Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd5b3ef40/hires/028005920.jpg?sw=600&q=60&format=auto",
+    "description": "Warm, sparkling, sweet fragrance in a travel-friendly size. Infused with shea butter, coconut oil and vitamin E.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Floral & Amber",
+      "topNotes": [
+        "Pink Prosecco",
+        "Starfruit",
+        "Golden Quince"
+      ],
+      "heartNotes": [
+        "Crystal Peonies",
+        "Purple Freesia"
+      ],
+      "baseNotes": [
+        "Amaretto Cr\u00e8me",
+        "Warm Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028016954",
+    "name": "Champagne Toast Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw50f5c653/hires/028016954.jpg?sw=600&q=60&format=auto",
+    "description": "A fruity, sweet, sparkling celebration on the go. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028028944",
+    "name": "Into the Night Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw9e5a81c3/hires/028028944.jpg?sw=600&q=60&format=auto",
+    "description": "An alluring, timeless, dark mystery. A captivating blend of dark berries, midnight jasmine and rich amber.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Amber Floral & Musk",
+      "topNotes": [
+        "Raspberry Noir",
+        "Midnight Blackberries"
+      ],
+      "heartNotes": [
+        "Velvety Rose Petals",
+        "Night-Blooming Jasmine"
+      ],
+      "baseNotes": [
+        "Amber Crystals",
+        "Mocha Musk",
+        "Rich Patchouli"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028020504",
+    "name": "Japanese Cherry Blossom Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.9,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbbf27870/hires/028020504.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple",
+        "Ume Plum"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Butterfly Lily",
+        "Kyoto Rose"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Imperial Amber",
+        "Silk Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028032840",
+    "name": "Platinum Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw550b3254/hires/028032840.jpg?sw=600&q=60&format=auto",
+    "description": "A polished, brilliant, modern fragrance. Scented with sparkling bergamot, silver amber and fresh cypress.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Crisp Woody Bergamot",
+      "topNotes": [
+        "Sparkling Bergamot",
+        "Crisp Apple"
+      ],
+      "heartNotes": [
+        "Fresh Cypress",
+        "Silver Cedar"
+      ],
+      "baseNotes": [
+        "Silver Amber",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028015405",
+    "name": "Ocean Travel Size Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "2.5 fl oz / 75 mL",
+    "unitShort": "2.5 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw57eaf576/hires/028015405.jpg?sw=600&q=60&format=auto",
+    "description": "An invigorating dive into blue waters. Scented with blue cypress, coastal vetiver and ocean driftwood.",
+    "tags": [
+      "bath_and_body_works",
+      "body_care",
+      "minis",
+      "travel",
+      "travel size body wash"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Aquatic",
+      "topNotes": [
+        "Blue Cypress",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Coastal Vetiver",
+        "Sea Salt Water"
+      ],
+      "baseNotes": [
+        "Ocean Driftwood",
+        "Clean Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Paraben-Free",
+      "Phthalate-Free",
+      "TSA Approved / Travel Friendly"
+    ]
+  },
+  {
+    "id": "bbw_028013138",
+    "name": "Mahogany Teakwood 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.9,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5b5fd874/hires/028013138.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013136",
+    "name": "Ocean 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw430c4b93/hires/028013136.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028033011",
+    "name": "Lasting Legacy 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.9,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2b81de26/hires/028033011.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "lasting legacy"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028016715",
+    "name": "Vanilla Noir 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.9,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcab272fc/hires/028016715.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "vanilla noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028020459",
+    "name": "After Dark 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw876dbef2/hires/028020459.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "after dark"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026016",
+    "name": "Bourbon 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwcba1b2e7/hires/028026016.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "bourbon"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Oak & Spice",
+      "topNotes": [
+        "White Pepper",
+        "Dark Amber"
+      ],
+      "heartNotes": [
+        "Kentucky Bourbon",
+        "Oak Barrel"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Sandalwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029052",
+    "name": "Santal Ridge 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw842e4e08/hires/028029052.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "santal ridge"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028030307",
+    "name": "Football Season 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw71cb4323/hires/028030307.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "football season"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028932",
+    "name": "Into Orbit 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw07f089f5/hires/028028932.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "into orbit"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028026578",
+    "name": "Crafted Cognac 3-in-1 Hair, Face & Body Wash",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Body Care",
+    "subCategory": "Body Wash & Shower Gel",
+    "price": 15.95,
+    "msrp": 15.95,
+    "rating": 4.8,
+    "unit": "10 fl oz / 295 mL",
+    "unitShort": "10 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw350fa603/hires/028026578.jpg?sw=600&q=60&format=auto",
+    "description": "3-in-1 Hair, Face & Body Wash with nourishing aloe and vitamin E leaves skin and hair clean, soft, and invigorated.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "body_wash",
+      "crafted cognac"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Masculine Wood",
+      "topNotes": [
+        "Crisp Bergamot",
+        "Fresh Sage"
+      ],
+      "heartNotes": [
+        "Blue Cypress",
+        "Spiced Cardamom"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Rich Cedar"
+      ]
+    }
+  }
+]

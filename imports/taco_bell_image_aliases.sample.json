@@ -1,0 +1,12 @@
+{
+  "crunchy_taco_supreme": "taco_bell_crunchy_taco_best",
+  "soft_taco_supreme": "taco_bell_soft_taco_best",
+  "burrito_supreme": [
+    "taco_bell_burrito_supreme_best",
+    "taco_bell_burrito_supreme_cravings"
+  ],
+  "cinnabon_delights_2_pack": "taco_bell_cinnabon_delights_best",
+  "cinnabon_delights_12_pack": "taco_bell_cinnabon_delights_best",
+  "nacho_cheese_doritos_locos_tacos": "taco_bell_doritos_locos_taco_best",
+  "nacho_cheese_doritos_locos_tacos_supreme": "taco_bell_doritos_locos_taco_best"
+}

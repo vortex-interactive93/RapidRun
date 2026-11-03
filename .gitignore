@@ -1,0 +1,76 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+*.db
+*.sqlite
+*.apk
+*.so
+*.dill
+*.dex
+*.aar
+*.jar
+*.bin
+*.ser
+*.vsidx
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio / VS Code
+.vs/
+*/.vs/
+.vscode/
+
+# Flutter / Dart
+.dart_tool/
+*/.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+*/build/
+ephemeral/
+*/ephemeral/
+
+# Android
+.gradle/
+*/.gradle/
+**/android/.gradle/
+android/app/debug/
+android/app/release/
+android/.gradle/
+rapidrun_driver/android/.gradle/
+android/local.properties
+rapidrun_driver/android/local.properties
+android/captures/
+*.keystore
+!android/app/debug.keystore
+
+# iOS / macOS
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+Pods/
+
+# Artifacts, Exports & Scratch files
+.artifacts/scratch/
+tool/exports/
+tool/_*.json

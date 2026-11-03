@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rapidrun.app/schemas/product.schema.json",
+  "title": "Product",
+  "type": "object",
+  "required": ["name", "price", "id", "storeId", "category", "subCategory"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "price": {"type": ["number"], "minimum": 0},
+    "imageUrl": {"type": ["string", "null"], "pattern": "^https?://"},
+  "id": {"type": "string", "pattern": "^[a-z0-9_-]+$"},
+    "description": {"type": ["string", "null"]},
+    "benefits": {"type": ["string", "null"]},
+    "unit": {"type": ["string", "null"], "maxLength": 60},
+    "storeId": {"type": "string"},
+    "category": {"type": "string"},
+    "subCategory": {"type": "string"}
+  }
+}

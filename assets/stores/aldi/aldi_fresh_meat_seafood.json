@@ -1,0 +1,2808 @@
+﻿[
+    {
+        "id":  "aldi_meat_1",
+        "name":  "San Luis Chorizo",
+        "brand":  "San Luis",
+        "price":  2.65,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2f29121c-a971-463f-98d1-a7c20576bf36.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Savory, expertly seasoned sausages from San Luis. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_2",
+        "name":  "Half Pork Loin",
+        "brand":  "ALDI",
+        "price":  8.82,
+        "unit":  "$2.09 / lb (About 4.22 lb / package)",
+        "unitShort":  "$2.09 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13e7bdf9-43fc-412d-8418-42cca61a75d5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_3",
+        "name":  "Never Any! Fresh Whole Chicken",
+        "brand":  "Never Any!",
+        "price":  7.95,
+        "unit":  "$1.59 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d94f5318-97b0-45d6-8953-6966e988516c.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_4",
+        "name":  "Kirkwood Chicken Thighs",
+        "brand":  "Kirkwood",
+        "price":  8.02,
+        "unit":  "$2.29 / lb (About 3.5 lb / package)",
+        "unitShort":  "$2.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d8f0333c-1692-4232-8165-eb26ca5301cd.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_5",
+        "name":  "Pueblo Lindo USDA Pork Chorizo",
+        "brand":  "Pueblo Lindo",
+        "price":  1.29,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aae2e977-d8b5-44e0-8c4b-7fa5dc711d9b.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Flavorful, tender pork from Pueblo Lindo. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_6",
+        "name":  "Parkview Cocktail Sausages",
+        "brand":  "Parkview",
+        "price":  2.99,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c02998b1-a8f3-4713-b45c-56f3b917f322.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from Parkview. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_7",
+        "name":  "Family Pack Chicken Drumsticks",
+        "brand":  "ALDI",
+        "price":  4.9,
+        "unit":  "$1.09 / lb (About 4.5 lb / package)",
+        "unitShort":  "$1.09 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_930ec418-a42e-440a-8a71-fa5e92da89c5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_8",
+        "name":  "Parkview USDA Cheddar Brats",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3276f525-8275-4d0c-9d72-04f3c4501908.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Parkview USDA Cheddar Brats from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_9",
+        "name":  "Roseland Lemon Garlic Pork Center Cut Loin Filet",
+        "brand":  "ALDI",
+        "price":  5.38,
+        "unit":  "$2.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5804aba3-cd32-4695-b3df-8f027ed9ea5d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_10",
+        "name":  "Parkview USDA Beef Smoked Sausage",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e803e447-c94b-46f4-9bc4-0f03173f99cc.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Parkview. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_11",
+        "name":  "Seasoned Diced Beef for Tacos",
+        "brand":  "ALDI",
+        "price":  9.98,
+        "unit":  "$4.99 / lb (About 2.0 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ab914324-8f69-4811-988b-593bc5257797.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_12",
+        "name":  "Al Pastor Style Pork",
+        "brand":  "ALDI",
+        "price":  6.58,
+        "unit":  "$3.29 / lb (About 2.0 lb / package)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bacf9395-a379-4a1e-8953-2380da17ce0d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_13",
+        "name":  "Smithfield Smithfield Pork Butt Roast",
+        "brand":  "ALDI",
+        "price":  1.39,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9402e7a5-967b-4a02-88a9-d580df2b4695.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_14",
+        "name":  "Kirkwood Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  8.82,
+        "unit":  "$3.29 / lb (About 2.68 lb / package)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e5fbe7fa-c740-422c-8007-218254450483.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_15",
+        "name":  "Parkview Polska Kielbasa",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4b688968-2dc4-4d4a-b6a3-35e4e2ca6689.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview Polska Kielbasa from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_16",
+        "name":  "Thin Sliced Bottom Round Steak",
+        "brand":  "ALDI",
+        "price":  14.98,
+        "unit":  "$7.49 / lb (About 2.0 lb / package)",
+        "unitShort":  "$7.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dfa87c6d-9c50-4e9f-98c3-6bf7f1d56240.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_17",
+        "name":  "Parkview Uncured Beef Franks",
+        "brand":  "Parkview",
+        "price":  4.75,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9ca246f9-9f0e-4261-89a3-d9c3a80381f6.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Parkview. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_18",
+        "name":  "Boneless Skinless Chicken Breasts Family Pack",
+        "brand":  "ALDI",
+        "price":  1.99,
+        "unit":  "$1.99 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d2a89978-895b-42cc-8dd6-bd93edb3d246.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_19",
+        "name":  "Boneless Half Butt Pork Roast",
+        "brand":  "ALDI",
+        "price":  13.46,
+        "unit":  "$2.99 / lb (About 4.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6b332f00-824f-4fed-a370-3bcd13398a1e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_20",
+        "name":  "Chicken Wings Family Pack",
+        "brand":  "ALDI",
+        "price":  9.96,
+        "unit":  "$2.49 / lb (About 4.0 lb each)",
+        "unitShort":  "$2.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e5dd20b8-7156-4673-9573-6090f621d77e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_21",
+        "name":  "Citrus Seasoned Chicken Breast Pieces",
+        "brand":  "ALDI",
+        "price":  7.98,
+        "unit":  "$3.99 / lb (About 2.0 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4a757364-78e7-4a49-b3f9-cdece051f9d0.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_22",
+        "name":  "Kirkwood USDA Fresh Ground Turkey",
+        "brand":  "Kirkwood",
+        "price":  4.89,
+        "unit":  "19.2 oz",
+        "unitShort":  "19.2 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9d177bea-f122-4849-98c9-1e0028ce991d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Kirkwood USDA Fresh Ground Turkey from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_23",
+        "name":  "Never Any! Chicken Breast Tenderloins",
+        "brand":  "Never Any!",
+        "price":  4.99,
+        "unit":  "$4.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c5907d7b-3f28-45e7-b486-94ec899a08dc.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_24",
+        "name":  "Perdue Lean Ground Chicken",
+        "brand":  "Perdue",
+        "price":  3.69,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9a9bec5f-a7cc-40b9-a37a-741a22a1eeb4.png",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Perdue. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_25",
+        "name":  "Thin-Sliced Beef Ribeye Steak",
+        "brand":  "ALDI",
+        "price":  19.23,
+        "unit":  "$10.99 / lb (About 1.75 lb each)",
+        "unitShort":  "$10.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f09c6220-c989-44a9-8ffd-7c23f3b0c3ab.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_26",
+        "name":  "93/7 Lean Ground Beef",
+        "brand":  "ALDI",
+        "price":  7.39,
+        "unit":  "$7.39 / lb (About 1.0 lb / package)",
+        "unitShort":  "$7.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d7e792e6-5200-4d69-89c4-f429b6a1a467.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_27",
+        "name":  "Earth Grown USDA Organic Vegan Extra Firm Tofu",
+        "brand":  "Simply Nature Organic",
+        "price":  1.49,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Plant-Based Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8942fe07-f14a-4f1e-8750-8e1cb9de3a66.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Earth Grown USDA Organic Vegan Extra Firm Tofu from Earth Grown. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_28",
+        "name":  "Fresh Atlantic Salmon Side",
+        "brand":  "ALDI",
+        "price":  17.38,
+        "unit":  "$8.69 / lb (About 2.0 lb / package)",
+        "unitShort":  "$8.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6646e46b-0595-48d7-ba11-baff2fecfec8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_29",
+        "name":  "Carnitas Seasoned Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  5.98,
+        "unit":  "$2.39 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_541f6742-acfb-4c54-a0b6-8ed97ded5b40.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_30",
+        "name":  "USDA Choice Black Angus Ribeye Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  17.16,
+        "unit":  "$14.79 / lb (About 1.16 lb / package)",
+        "unitShort":  "$14.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f64ebaff-d789-4d78-bbc7-503e3c00cda6.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_31",
+        "name":  "Kirkwood Chicken Drumsticks",
+        "brand":  "Kirkwood",
+        "price":  6.23,
+        "unit":  "$1.79 / lb (About 3.48 lb / package)",
+        "unitShort":  "$1.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_70854730-83e1-4670-bb59-ee15c42b7230.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_32",
+        "name":  "73% Lean 27% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  18.95,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a1e10d78-8e0c-42c7-821a-eaf59ca70b7e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_33",
+        "name":  "Jumbo Raw Peeled, Deveined \u0026 Tail-Off Raw Shrimp",
+        "brand":  "ALDI",
+        "price":  7.12,
+        "unit":  "$9.49 / lb (About 0.75 lb / package)",
+        "unitShort":  "$9.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fe5789c8-a5f3-4f0a-b44c-18f8d16d6069.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_34",
+        "name":  "Roseland USDA Premium Boneless Teriyaki Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d35a6322-82b0-4383-8660-381bc3987cd2.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_35",
+        "name":  "Mild Italian Sausage",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "19 oz",
+        "unitShort":  "19 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_66febbd6-fd19-4536-acba-9108b7f51109.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_36",
+        "name":  "80% Lean 20% Fat Ground Beef Patties - 4 Count",
+        "brand":  "ALDI",
+        "price":  7.3,
+        "unit":  "$5.49 / lb (About 1.33 lb / package)",
+        "unitShort":  "$5.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a996e9c-7a36-4652-8fda-a5404b2d942e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_37",
+        "name":  "Premium Bone-In Butt Pork Shoulder Steak",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "$2.99 / lb (About 2.73 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f64b1c07-d84a-4a7d-afa5-8d93d6cb10fb.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_38",
+        "name":  "Kirkwood Whole Duck",
+        "brand":  "Kirkwood",
+        "price":  19.37,
+        "unit":  "$3.69 / lb (About 5.25 lb / package)",
+        "unitShort":  "$3.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f301cbad-38a9-4236-9778-f8ea3d07afd0.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Kirkwood Whole Duck, per lb from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_39",
+        "name":  "USDA Choice Black Angus Cubed Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  7.49,
+        "unit":  "$7.49 / lb (About 1.4 lb / package)",
+        "unitShort":  "$7.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5a99bcf8-d289-460d-a42d-ccda97b4a028.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_40",
+        "name":  "Citrus Seasoned Boneless Skinless Chicken Leg Meat",
+        "brand":  "ALDI",
+        "price":  8.72,
+        "unit":  "$3.49 / lb (About 2.5 lb / package)",
+        "unitShort":  "$3.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_19a4bf0c-eabe-4f5a-b0f8-563384f6f513.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_41",
+        "name":  "Parkview Classic Hot Dogs",
+        "brand":  "Parkview",
+        "price":  0.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9b54b2f9-e063-4531-bb89-1a693b8b193a.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Savory, expertly seasoned sausages from Parkview. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_42",
+        "name":  "Never Any! USDA Antibiotic-Free 80% Lean 20% Fat Ground Pork",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6bb3a591-4b96-4944-8857-7416a2931a43.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from Never Any!. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_43",
+        "name":  "Thin Sliced Marinated Flap Steak",
+        "brand":  "ALDI",
+        "price":  18.98,
+        "unit":  "$9.49 / lb (About 2.0 lb each)",
+        "unitShort":  "$9.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2497b819-1bdd-4d7f-91ae-7a483c949bcd.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_44",
+        "name":  "Original Bratwurst",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "19 oz",
+        "unitShort":  "19 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7dc64e58-7046-4227-81ea-d10835e7df23.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_45",
+        "name":  "Carne Ranchera",
+        "brand":  "ALDI",
+        "price":  29.23,
+        "unit":  "$12.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$12.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Meat",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5d5421c2-01e8-4946-8565-597294d31dc6.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Carne Ranchera from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_46",
+        "name":  "Beer Bratwurst",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "19 oz",
+        "unitShort":  "19 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ae2c94fb-2df6-4bb8-a297-e88488eeafd8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_47",
+        "name":  "90/10 Ground Sirloin",
+        "brand":  "ALDI",
+        "price":  15.73,
+        "unit":  "$6.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d32a0695-5244-4ee0-8884-ad4cdb9902b8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_48",
+        "name":  "Breakfast Best Maple Flavored Sausage Patties - 18 Count",
+        "brand":  "ALDI",
+        "price":  8.49,
+        "unit":  "32 oz",
+        "unitShort":  "32 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d2ae7ba8-acb3-46e9-a4e4-ac6569badee4.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_49",
+        "name":  "Hot Italian Sausage Links",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "19 oz",
+        "unitShort":  "19 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f7b6f826-8f28-4714-9d76-baecd8a7282c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_50",
+        "name":  "Eckrich Skinless Smoked Sausage",
+        "brand":  "ALDI",
+        "price":  6.95,
+        "unit":  "42 oz",
+        "unitShort":  "42 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c53af6ec-7ae3-4183-a8b0-687442a6981f.png",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_51",
+        "name":  "Premium Baby Back Pork Ribs",
+        "brand":  "ALDI",
+        "price":  11.52,
+        "unit":  "$3.29 / lb (About 3.5 lb each)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7b7c53b4-1428-4edb-a848-c9576f572348.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_52",
+        "name":  "Holmes Smokehouse JalapeÃ±o Pecan Smoked Sausage",
+        "brand":  "Holmes",
+        "price":  4.75,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a61a50f2-e33a-4ee6-ad1a-57b094d95022.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from Holmes. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_53",
+        "name":  "Stuffed Atlantic Salmon Portions",
+        "brand":  "ALDI",
+        "price":  9.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0bff7dda-e171-4b68-aa7a-48c7f018fb6c.jpg",
+        "aisle":  "Fresh Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_54",
+        "name":  "85/15 Ground Beef",
+        "brand":  "ALDI",
+        "price":  5.99,
+        "unit":  "$5.99 / lb (About 2.25 lb / package)",
+        "unitShort":  "$5.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_67d68d6b-444a-4d61-8373-8369b6dd400d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_55",
+        "name":  "Holmes Smokehouse Original Pecan Smoked Sausage",
+        "brand":  "Holmes",
+        "price":  4.75,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0c657470-fb85-412d-8e9f-cfdccb1ce221.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from Holmes. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_56",
+        "name":  "Thin Sliced Center Cut Boneless Pork Chops",
+        "brand":  "ALDI",
+        "price":  4.29,
+        "unit":  "$4.29 / lb (About 1.39 lb each)",
+        "unitShort":  "$4.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_211efe8f-4e0c-4f94-a104-03e3b9d596b7.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_57",
+        "name":  "Center Cut Pork Chops",
+        "brand":  "ALDI",
+        "price":  2.96,
+        "unit":  "$3.29 / lb (About 0.9 lb / package)",
+        "unitShort":  "$3.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ce6570ce-5aa0-4081-a1b9-4ffc91da5153.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_58",
+        "name":  "Nathan\u0027s Bun-Length Beef Franks - 8 Pack",
+        "brand":  "ALDI",
+        "price":  5.45,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ce7a825c-2f96-4a11-a800-4405053475f7.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_59",
+        "name":  "Fresh Never Frozen Atlantic Salmon Portion",
+        "brand":  "ALDI",
+        "price":  9,
+        "unit":  "$8.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$8.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_deff8640-0642-45d0-92fc-808d3c2ea4ed.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_60",
+        "name":  "Original Breakfast Sausage Patties",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c352cf30-6a85-4ca1-928f-bd32daf347a4.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_61",
+        "name":  "Never Any! Chicken Breasts",
+        "brand":  "Never Any!",
+        "price":  7.86,
+        "unit":  "$4.49 / lb (About 1.75 lb / package)",
+        "unitShort":  "$4.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f475a3e2-f261-481a-89bd-69510ddd24b5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_62",
+        "name":  "Thin Sliced Sirloin Tip Steak",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  7.99,
+        "unit":  "$7.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$7.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_493ba5df-0e46-44ff-bc7a-8a8159e51a3b.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_63",
+        "name":  "Holmes Smokehouse Pecan Smoked Andouille Sausage",
+        "brand":  "Holmes",
+        "price":  4.75,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a23654f9-3729-471e-aa66-2b08540cecc9.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Savory, expertly seasoned sausages from Holmes. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_64",
+        "name":  "Boneless Skinless Chicken Legs",
+        "brand":  "ALDI",
+        "price":  15.96,
+        "unit":  "$3.99 / lb (About 4.0 lb each)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c3ce685d-7fbb-4d6c-a205-c95139d1d9e7.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_65",
+        "name":  "Maple Breakfast Sausage Links",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_30593d70-f69d-4524-8ecc-b9e5b9d70145.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_66",
+        "name":  "Fresh 80% Lean 20% Fat Ground Beef Roll",
+        "brand":  "ALDI",
+        "price":  23.95,
+        "unit":  "5 lb",
+        "unitShort":  "5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_872e8a9e-c51d-4061-9815-4adb24b12c21.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_67",
+        "name":  "Extra Lean Ground Beef 96% Lean 4% Fat",
+        "brand":  "ALDI",
+        "price":  7.79,
+        "unit":  "$7.79 / lb (About 1.0 lb / package)",
+        "unitShort":  "$7.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_deb5451e-8a90-48ce-859f-dc5bcd416156.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_68",
+        "name":  "Appleton Farms Lower Sodium Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_122433c6-b39e-40ef-9f00-06dbf7ced3b1.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_69",
+        "name":  "85% Lean 15% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  6.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_578c7695-8612-44ed-948e-c966e955cccf.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_70",
+        "name":  "Premium Boneless Center Cut Pork Chops",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "$3.99 / lb (About 1.13 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_42ecc4cf-07a8-4841-920c-1379bc41740a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_71",
+        "name":  "Simply Nature Organic Uncured Beef Hot Dogs",
+        "brand":  "Simply Nature Organic",
+        "price":  4.29,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_959d45cf-3775-470c-b47d-b4cbad610029.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_72",
+        "name":  "USDA Choice Black Angus Top Round Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  7.49,
+        "unit":  "$7.49 / lb (About 0.9 lb / package)",
+        "unitShort":  "$7.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a04a614e-97d8-47ff-982e-335ab447660e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_73",
+        "name":  "Thin Sliced Bone-In Assorted Pork Chops",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "$2.99 / lb (About 3.2 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea82296b-d36a-4ae8-957c-90f4d459b473.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_74",
+        "name":  "USDA Choice Black Angus Eye of Round Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  7.49,
+        "unit":  "$7.49 / lb (About 1.0 lb / package)",
+        "unitShort":  "$7.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7f4d859-93db-4948-9095-be8a7ba8b37e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_75",
+        "name":  "Assorted Pork Chops",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "$2.79 / lb (About 2.7 lb / package)",
+        "unitShort":  "$2.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_057f5c0d-643d-4138-ad38-a0c29b0755f5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_76",
+        "name":  "USDA Choice Black Angus Stew Meat",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_17c93584-4a4a-4a29-bd77-96be6793e475.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Stew Meat, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_77",
+        "name":  "Appleton Farms Gourmet Thick Sliced Applewood Smoked Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_769c3385-dd7c-468e-82db-d84afcfaa6c5.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_78",
+        "name":  "Appleton Farms Hickory Smoked Gourmet Thick Sliced Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e69ee282-d387-4667-9049-529422e1bbba.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_79",
+        "name":  "Simply Nature Organic Chicken Breasts",
+        "brand":  "Simply Nature Organic",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9013fe93-d5b1-4847-8210-9925e4702d5a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_80",
+        "name":  "Simply Nature Organic Grass Fed 85% Lean Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  5.99,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c902f1cd-da74-4076-8b63-0bed5a60c7a0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_81",
+        "name":  "Appleton Farms Black Forest Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f3d8bc8d-32ea-443d-8be8-dd2a8b8873df.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_82",
+        "name":  "Appleton Farms Premium Sliced Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_feda2365-4553-4ad8-9603-6889572556ad.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_83",
+        "name":  "Kirkwood Boneless and Skinless Chicken Thighs",
+        "brand":  "Kirkwood",
+        "price":  6.64,
+        "unit":  "$3.59 / lb (About 1.85 lb / package)",
+        "unitShort":  "$3.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8fdf8cb7-7be5-4a65-8d5c-0211ad168b6c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_84",
+        "name":  "Appleton Farms Center Cut Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.69,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_29c574e4-08e9-4a40-8804-f4bf20f69ffb.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_85",
+        "name":  "Kirkwood Boneless Skinless Chicken Breast Tenderloins",
+        "brand":  "Kirkwood",
+        "price":  7.18,
+        "unit":  "$3.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7aec88ce-3f71-4e56-a42d-5688bde39c59.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_86",
+        "name":  "Ground Mild Italian Sausage",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cce141dd-fe41-49c2-98b1-620888f017ce.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_87",
+        "name":  "Simply Nature Organic Whole Chicken",
+        "brand":  "Simply Nature Organic",
+        "price":  14.51,
+        "unit":  "$2.79 / lb (About 5.2 lb / package)",
+        "unitShort":  "$2.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9630561f-f4be-4149-a9ca-3ad26c8b51d6.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_88",
+        "name":  "Country Style Pork Ribs",
+        "brand":  "ALDI",
+        "price":  5.39,
+        "unit":  "$3.99 / lb (About 1.35 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c496cb6c-9e8f-4a36-9072-0c55e5388f6e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_89",
+        "name":  "Mild Pork Italian Style Meatballs",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9aa2e4de-cb7f-47a5-8f6c-afb73b13c3a1.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_90",
+        "name":  "Simply Nature Organic Thin-Sliced Chicken Breast Fillets",
+        "brand":  "Simply Nature Organic",
+        "price":  8.11,
+        "unit":  "$6.49 / lb (About 1.25 lb / package)",
+        "unitShort":  "$6.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7d5d512b-01a0-4258-bf3e-46c07feb4c39.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_91",
+        "name":  "USDA Choice Black Angus Country Style Ribs",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  8.99,
+        "unit":  "$8.99 / lb (About 1.4 lb / package)",
+        "unitShort":  "$8.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6020b730-f98f-4795-b5f5-a6753d12a13a.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Country Style Ribs, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_92",
+        "name":  "Original Breakfast Sausage Links",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_92abe0f3-39c3-448e-b583-8aaa96dee456.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_93",
+        "name":  "Premium Boneless Pork Tenderloins - 2 Pack",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "$3.49 / lb (About 2.64 lb / package)",
+        "unitShort":  "$3.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9dca02c2-90ec-4b82-80e4-407ed21e104b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_94",
+        "name":  "Family Pack Bone-In Skin-On Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  7.98,
+        "unit":  "$1.55 / lb (About 5.15 lb / package)",
+        "unitShort":  "$1.55 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_768bb906-7963-4fc3-968d-4458a7968071.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_95",
+        "name":  "Parkview Turkey Polska Kielbasa",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "13 oz",
+        "unitShort":  "13 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_df2608f0-a060-44f9-82ba-1a225707e962.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview Turkey Polska Kielbasa from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_96",
+        "name":  "Appleton Farms Fully Cooked Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.65,
+        "unit":  "2.1 oz",
+        "unitShort":  "2.1 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2510c5ee-51c8-4101-8d63-b6c677de252c.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_97",
+        "name":  "Appleton Farms Thick Cut Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0a8ee305-c983-4fd4-986f-24c7fbe939ca.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_98",
+        "name":  "USDA Choice Black Angus Strip Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  11.03,
+        "unit":  "$13.79 / lb (About 0.8 lb / package)",
+        "unitShort":  "$13.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d04cff68-f826-4625-9241-aca393afb1eb.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_99",
+        "name":  "80% Lean 20% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  5.29,
+        "unit":  "$5.29 / lb (About 2.25 lb / package)",
+        "unitShort":  "$5.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5030a2f4-ac74-4b37-9c93-a9c15fddcf38.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_100",
+        "name":  "Beef Shaved Steak",
+        "brand":  "ALDI",
+        "price":  6.45,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e86cfb4e-439b-414c-97de-d3567ec704a1.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_101",
+        "name":  "USDA Choice Black Angus Chuck Roast, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 2.4 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a0ff59e8-42e4-4970-8cc0-dc4eaf194e96.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Chuck Roast, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_102",
+        "name":  "USDA Choice Black Angus Top Sirloin Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  9.99,
+        "unit":  "$9.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$9.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b97c00f5-3e54-4715-b62c-d53ba42c7d1b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_103",
+        "name":  "Kirkwood Split Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  5.37,
+        "unit":  "$1.99 / lb (About 2.7 lb / package)",
+        "unitShort":  "$1.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f63a6866-639a-462e-86ed-bc21d5f5a92d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_104",
+        "name":  "Original Bratwurst Party Pack, 12 Links",
+        "brand":  "ALDI",
+        "price":  6.79,
+        "unit":  "45.6 oz",
+        "unitShort":  "45.6 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_495130a4-02ad-496e-8eff-679016ec4030.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_105",
+        "name":  "80/20 Ground Beef Patties",
+        "brand":  "ALDI",
+        "price":  12,
+        "unit":  "2.5 lb",
+        "unitShort":  "2.5 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8d1c062b-b7ba-4243-a3af-3d8fefbaa038.jpg",
+        "aisle":  "Fresh Meat (without Pork \u0026 Poultry)",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_106",
+        "name":  "Peppercorn Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1dea022e-931f-4d1d-ba31-d8d7e56c3677.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_107",
+        "name":  "Kirkwood Chicken Leg Quarters",
+        "brand":  "Kirkwood",
+        "price":  5.95,
+        "unit":  "$1.19 / lb (About 5.0 lb / package)",
+        "unitShort":  "$1.19 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d9f59af5-4725-4b9b-8a91-e937807febec.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_108",
+        "name":  "BBQ Flavored Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  4.78,
+        "unit":  "$2.39 / lb (About 2.0 lb each)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7689445b-2955-493d-9a2e-a05310c063d0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_109",
+        "name":  "Cattlemen\u0027s Ranch Flat Cut Corned Beef Brisket",
+        "brand":  "ALDI",
+        "price":  21.42,
+        "unit":  "$6.59 / lb (About 3.25 lb / package)",
+        "unitShort":  "$6.59 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_334f602e-3bc3-45d0-bf46-6fa397f42652.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_110",
+        "name":  "Atlantic Norwegian Salmon Portion",
+        "brand":  "ALDI",
+        "price":  11.3,
+        "unit":  "$11.29 / lb (About 1.0 lb / package)",
+        "unitShort":  "$11.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8c3ba28e-d802-407a-980d-d4fc1f74c10e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_111",
+        "name":  "Mesquite BBQ Pork Center Cut Loin Filet",
+        "brand":  "ALDI",
+        "price":  5.38,
+        "unit":  "$2.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7968576-fccd-4b07-b111-df30669ab635.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_112",
+        "name":  "Smithfield Smithfield St. Louis Pork Ribs",
+        "brand":  "ALDI",
+        "price":  9.96,
+        "unit":  "$2.49 / lb (About 4.0 lb / package)",
+        "unitShort":  "$2.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_051929b2-6ccf-490a-a955-7433aa03a617.jpg",
+        "aisle":  "Meat \u0026 Seafood",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_113",
+        "name":  "Simply Nature Organic 100% Grass Fed Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  7.29,
+        "unit":  "1 lb",
+        "unitShort":  "1 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bb28e32d-d4b9-4c4f-969c-a185986f60f2.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_114",
+        "name":  "Flank Steak for Marinating",
+        "brand":  "ALDI",
+        "price":  20.9,
+        "unit":  "$9.29 / lb (About 2.25 lb / package)",
+        "unitShort":  "$9.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bb9793cb-67ef-4e58-a16a-73ea30242f6a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_115",
+        "name":  "Never Any! Boneless Skinless Chicken Thighs",
+        "brand":  "Never Any!",
+        "price":  5.17,
+        "unit":  "$3.69 / lb (About 1.4 lb / package)",
+        "unitShort":  "$3.69 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a53b3af-00d5-46cb-b85a-619a994a332f.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_116",
+        "name":  "Kirkwood 99% Fat Free Fresh Ground Turkey Breast",
+        "brand":  "Kirkwood",
+        "price":  5.49,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8d2bea6b-4536-4adc-a32c-05d368cd518a.jpg",
+        "aisle":  "Fresh Poultry",
+        "description":  "Kirkwood 99% Fat Free Fresh Ground Turkey Breast from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_117",
+        "name":  "Italian Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e500b7aa-5087-4bd9-a337-9b5b5a7e80ab.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_118",
+        "name":  "73% Lean 27% Fat Ground Beef",
+        "brand":  "ALDI",
+        "price":  4.29,
+        "unit":  "$4.29 / lb (About 5.0 lb / package)",
+        "unitShort":  "$4.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3955b855-4fca-4f73-8edf-1a271c19b71b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_119",
+        "name":  "Parkview USDA Turkey Franks - 8 Count",
+        "brand":  "Parkview",
+        "price":  2.69,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_83ec7106-923e-497d-a995-83a4a21c900f.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Parkview USDA Turkey Franks - 8 Count from Parkview. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_120",
+        "name":  "Kirkwood Boneless Skinless Thin Sliced Chicken Breasts",
+        "brand":  "Kirkwood",
+        "price":  5.59,
+        "unit":  "$3.99 / lb (About 1.4 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f6714f61-85de-4b84-a9bb-62bcc906c406.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_121",
+        "name":  "USDA Choice Black Angus Petite Sirloin Steak, per lb",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  11.69,
+        "unit":  ".99 / lb (About 1.3 lb / pkg est.)",
+        "unitShort":  ".99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9e9f2156-891f-40f7-b4dd-5f1c2c590733.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Elevate your next dinner party with ALDI\u0027s USDA Choice Black Angus Petite Sirloin Steaks. Each thick steak is made with fresh, never frozen black angus beef that\u0027s super juicy, tender and flavorful. Cover it in your favorite spice rub or marinade before grilling for a meal all your friends will love.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_122",
+        "name":  "Simply Nature USDA Organic Free Range Chicken Breast Strips",
+        "brand":  "Simply Nature Organic",
+        "price":  9.11,
+        "unit":  "$7.29 / lb (About 1.25 lb / package)",
+        "unitShort":  "$7.29 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d5afeb1e-4637-4df3-a74e-8446d6ca06f1.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Simply Nature. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_123",
+        "name":  "USDA Choice Black Angus Skirt Steak",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  9.99,
+        "unit":  "$9.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$9.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc5d3adb-04c5-4650-a5e8-6a750b3c8ce8.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_124",
+        "name":  "Fresh Never Frozen Steelhead Trout Portion",
+        "brand":  "ALDI",
+        "price":  10.5,
+        "unit":  "$10.49 / lb (About 1.0 lb / package)",
+        "unitShort":  "$10.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Meat",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a805e21b-d825-4c69-a2c6-a05398c3cc60.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh Never Frozen Steelhead Trout Portion, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_125",
+        "name":  "Beef for Carne Picada",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 1.47 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_52959acb-b9ef-4bfb-85e0-ae317f958565.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_126",
+        "name":  "Appleton Farms Thick Cut Maple Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8562cef4-c251-4c68-9d5c-0235631b49a5.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_127",
+        "name":  "Appleton Farms Thick Cut Peppered Bacon",
+        "brand":  "Appleton Farms",
+        "price":  6.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_daffb27f-ef53-4d99-985c-a6008085a2e4.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_128",
+        "name":  "Simms Original Summer Sausage",
+        "brand":  "Simms",
+        "price":  3.99,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c599ed75-3c43-4d02-abae-be628f959518.jpg",
+        "aisle":  "Long Life Meats",
+        "description":  "Savory, expertly seasoned sausages from Simms. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_129",
+        "name":  "Never Any! Apple Maple Chicken Breakfast Sausage",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d672acec-7eb8-4281-900d-4baa7f9d59b9.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_130",
+        "name":  "Southwest Style Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3bacca6d-b5fa-4eae-9b50-62168c993c4c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_131",
+        "name":  "Kirkwood USDA Fresh Ground Turkey 85% Lean 15% Fat",
+        "brand":  "Kirkwood",
+        "price":  9.95,
+        "unit":  "48 oz",
+        "unitShort":  "48 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_289e71cb-4aa2-46e3-ad23-a03f156005a7.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Kirkwood USDA Fresh Ground Turkey 85% Lean 15% Fat from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_132",
+        "name":  "Appleton Farms Canadian Bacon",
+        "brand":  "Appleton Farms",
+        "price":  2.79,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_800c0cde-0b0e-4584-9145-8eb50f97f3d8.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_133",
+        "name":  "Earth Grown Taco Filling",
+        "brand":  "Earth Grown",
+        "price":  2.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Plant-Based Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e607f356-049c-4537-8f47-2e4254b7342a.jpg",
+        "aisle":  "Prepared",
+        "description":  "Earth Grown Taco Filling from Earth Grown. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_134",
+        "name":  "Family Pack Ground Chicken",
+        "brand":  "ALDI",
+        "price":  7.99,
+        "unit":  "48 oz",
+        "unitShort":  "48 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d1s8987jlndkbs.cloudfront.net/assets/missing-item-4bbe82b8555e4d1c12626fd482cb2409713e8e30835645ff3650ef66a725d03c.png",
+        "aisle":  "Poultry",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_135",
+        "name":  "Simply Nature FP 93% Organic GF Ground Beef",
+        "brand":  "Simply Nature Organic",
+        "price":  23.96,
+        "unit":  "4 lb",
+        "unitShort":  "4 lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_45bd832d-115b-4571-b0ee-b9e6e89c684f.jpg",
+        "aisle":  "Meat \u0026 Seafood",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_136",
+        "name":  "Family Pack Boneless Skinless Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  8.22,
+        "unit":  "$2.99 / lb (About 2.75 lb each)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2cb6eab7-ffba-4e0c-a011-0ddb8b40ab3c.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_137",
+        "name":  "Teriyaki Seasoned Chicken Thighs",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56803ca8-a0fa-4a27-8937-1ad76156248a.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_138",
+        "name":  "Specially Selected Turkey Sausage Snack Bites",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bfef2fd9-2b2d-4ae7-ac42-b3614c522927.jpg",
+        "aisle":  "Long Life Meats",
+        "description":  "Savory, expertly seasoned sausages from ALDI. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_139",
+        "name":  "Parkview Ital or Spin Feta Chicken, Mild Italian",
+        "brand":  "Parkview",
+        "price":  4.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a7d9a60b-228f-4d6f-8981-9cc57ea7e5de.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_140",
+        "name":  "Simms Garlic Summer Sausage",
+        "brand":  "Simms",
+        "price":  3.99,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3be652dd-fce1-4c63-9330-75ee51254e08.jpg",
+        "aisle":  "Long Life Meats",
+        "description":  "Savory, expertly seasoned sausages from Simms. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_141",
+        "name":  "Appleton Farms Uncured Turkey Bacon",
+        "brand":  "Appleton Farms",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6b9af2c-5058-462b-b5f2-e7522cb85ebc.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_142",
+        "name":  "Never Any! Family Pack USDA Chicken Breasts",
+        "brand":  "Never Any!",
+        "price":  10.93,
+        "unit":  "$3.99 / lb (About 2.74 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0458ed76-2071-47f2-8829-dcfa5a3e1ce5.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free",
+                     "Family Pack"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_143",
+        "name":  "Parkview Hot Honey Chicken Sausage",
+        "brand":  "Parkview",
+        "price":  2.19,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5b0e5f7d-76cc-473b-a604-32d700840831.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_144",
+        "name":  "Parkview Nashville Hot Recipe Chicken Sausage",
+        "brand":  "Parkview",
+        "price":  2.19,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f297152c-a78d-4105-9354-7d0367116e93.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Parkview. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_145",
+        "name":  "Parkview Tomato Basil or Garlic Chi, Tomato Basil",
+        "brand":  "Parkview",
+        "price":  4.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Sausage \u0026 Hot Dogs",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6cb68c94-3846-4199-9358-bf630ae20be7.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_146",
+        "name":  "Parkview Ital or Spin Feta Chicken, Spinach Feta",
+        "brand":  "Parkview",
+        "price":  4.99,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2f1d1fdb-06b2-489c-b7ba-bdee33bd0cdb.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_147",
+        "name":  "Lightly Smoked Salmon",
+        "brand":  "ALDI",
+        "price":  8.62,
+        "unit":  "$11.49 / lb (About 0.75 lb / package)",
+        "unitShort":  "$11.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a2f44722-d004-41c4-b5c3-31c132804729.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_148",
+        "name":  "Fremont Fish Market Leg Style Imitation Crab Meat",
+        "brand":  "Fremont Fish Market",
+        "price":  3.55,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d0e3d31f-7c18-4a60-8bef-e19f0f749fe7.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Fresh, high-quality seafood from Fremont Fish Market. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_149",
+        "name":  "Fremont Fish Market Flake Style Imitation Crab Meat",
+        "brand":  "Fremont Fish Market",
+        "price":  3.55,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c59f7482-5be3-4da2-9aa3-1eee02ee565b.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Fresh, high-quality seafood from Fremont Fish Market. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_150",
+        "name":  "Tyson Fresh Chicken Breast",
+        "brand":  "ALDI",
+        "price":  1.79,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a47af13b-12db-4a23-87a5-d751d443201d.jpg",
+        "aisle":  "Poultry",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_151",
+        "name":  "Perdue NAE FP Chicken Drumsticks",
+        "brand":  "Perdue",
+        "price":  0.89,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_30bc6504-1d45-4ac9-8cef-ce81ae9f2402.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Grade-A tender fresh chicken from Perdue. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_152",
+        "name":  "Appleton Farms Hickory Smoked Uncured Bacon",
+        "brand":  "Appleton Farms",
+        "price":  4.79,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Pork",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a29f75a1-08e9-4b61-94d1-f0bc9dc0d6be.jpg",
+        "aisle":  "Chilled Processed Meat",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_153",
+        "name":  "Never Any! Country Style Chicken Breakfast Sausage",
+        "brand":  "Never Any!",
+        "price":  3.29,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7346032-0b7d-4bc3-8700-606c3e12b3af.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_154",
+        "name":  "Cattlemen\u0027s Ranch USDA Choice Applewood Bacon Wrapped Top Sirloin",
+        "brand":  "USDA Choice",
+        "price":  7.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ea9ea338-9c2a-4b96-a926-c8273d038fb0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_155",
+        "name":  "Cilantro Lime Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4be4dac6-7e48-48f6-a107-08b31b5b3e98.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from ALDI. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_156",
+        "name":  "Perdue USDA No Antibiotics Ever Thin Sliced Chicken Breast",
+        "brand":  "Perdue",
+        "price":  5.41,
+        "unit":  "$4.79 / lb (About 1.13 lb / package)",
+        "unitShort":  "$4.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56bc4745-1987-4b6e-85dc-add0d24555ad.png",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Perdue. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_157",
+        "name":  "Coho Salmon Portion",
+        "brand":  "ALDI",
+        "price":  11,
+        "unit":  "$10.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$10.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_87f39034-fb6f-4639-938b-d01e1dc2657b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_158",
+        "name":  "USDA Grass Fed Ribeye Steak",
+        "brand":  "USDA Grass-Fed",
+        "price":  15.33,
+        "unit":  "$12.99 / lb (About 1.18 lb / package)",
+        "unitShort":  "$12.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_55b71507-1361-4a89-b8d0-4110d0884fe2.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_159",
+        "name":  "Sun-Dried Tomato \u0026 Basil Seasoned Chicken",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$4.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Poultry",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_496b9852-ccf6-4a25-83b0-be9d99c69408.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_160",
+        "name":  "Boneless New York Strip Steak",
+        "brand":  "USDA Grass-Fed",
+        "price":  18.7,
+        "unit":  "$11.99 / lb (About 1.56 lb / package)",
+        "unitShort":  "$11.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_053eb1e1-3a42-478c-8867-0543304dadbd.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_161",
+        "name":  "Guajillo Roast",
+        "brand":  "ALDI",
+        "price":  6.49,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d705745c-18a0-46d8-94b4-c91247991528.jpg",
+        "aisle":  "Beef",
+        "description":  "Guajillo Roast from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_162",
+        "name":  "Seasoned Pork Loin Roast, Rosemary",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be537030-b2c0-4ab0-8050-e2b26735b4d0.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_163",
+        "name":  "Aldi USDA Choice Seasoned Beef Chuck Roast for Birria",
+        "brand":  "USDA Choice",
+        "price":  6.49,
+        "unit":  "$6.49 / lb (About 2.75 lb / package)",
+        "unitShort":  "$6.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_68a98ed2-2500-4039-8809-1c4ce977223b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_164",
+        "name":  "Seasoned Pork Loin Roast, Garlic Pepper",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Beef",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_93979ec3-2d8f-4aa1-9c56-a01dcb9df9eb.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_165",
+        "name":  "Skinless Atlantic Salmon",
+        "brand":  "ALDI",
+        "price":  9.99,
+        "unit":  "$9.99 / lb (About 1.0 lb each)",
+        "unitShort":  "$9.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Fresh Seafood",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f3e691dd-98b4-410b-87ea-d2a4bee43df1.jpg",
+        "aisle":  "Fresh Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    }
+]

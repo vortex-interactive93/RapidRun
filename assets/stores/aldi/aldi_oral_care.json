@@ -1,0 +1,54 @@
+﻿[
+    {
+        "id":  "aldi_oral_care_001",
+        "name":  "Whitening + Scope Toothpaste",
+        "brand":  "Whitening Scope Toothpaste",
+        "price":  4.35,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/1381c115-1ca5-40f3-ba24-5196050bc887/Whitening%20%20%20Scope%20Toothpaste%205.4%20oz",
+        "description":  "Whitening + Scope Toothpaste, 5.4 oz from Whitening Scope Toothpaste. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "5.4 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Oral Care"
+    },
+    {
+        "id":  "aldi_oral_care_002",
+        "name":  "Whitening Deep Clean Toothpaste",
+        "brand":  "Whitening",
+        "price":  4.35,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/b0a0192b-756f-4e03-8b14-c39538c69c6d/Whitening%20%20Deep%20Clean%20Toothpaste%205.4%20oz",
+        "description":  "Whitening Deep Clean Toothpaste, 5.4 oz from Whitening. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "5.4 oz",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Oral Care"
+    },
+    {
+        "id":  "aldi_oral_care_003",
+        "name":  "Premium Medium Toothbrushes",
+        "brand":  "Premium Medium Toothbrushes",
+        "price":  2.15,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/9bee6790-15aa-459f-a7e1-1d2a209fb58a/Premium%20Medium%20Toothbrushes%202%20count",
+        "description":  "Premium Medium Toothbrushes, 2 count from Premium Medium Toothbrushes. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "2 count",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Oral Care"
+    },
+    {
+        "id":  "aldi_oral_care_004",
+        "name":  "Premium Soft Toothbrushes",
+        "brand":  "Premium",
+        "price":  2.15,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/967a9bf6-9e47-4943-9a01-45333f24ead1/Premium%20Soft%20Toothbrushes%202%20count",
+        "description":  "Premium Soft Toothbrushes, 2 count from Premium. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  "2 count",
+        "storeId":  "aldi",
+        "category":  "Personal Care",
+        "subCategory":  "Oral Care"
+    }
+]

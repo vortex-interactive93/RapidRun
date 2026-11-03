@@ -1,0 +1,54 @@
+﻿[
+    {
+        "id":  "aldi_snacks_chips_crackers_popcorn_151",
+        "name":  "Pretzel Rods",
+        "brand":  "Clancy\u0027s",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/6eb0d031-f326-4836-a920-23b22cd65e03/Pretzel%20Rods%2012%20oz",
+        "description":  "Crisp, crunchy, and satisfying Pretzel Rods, 12 oz from Clancy\u0027s. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "benefits":  null,
+        "price":  2.55,
+        "unit":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Snacks",
+        "subCategory":  "Chips, Crackers \u0026 Popcorn"
+    },
+    {
+        "id":  "aldi_snacks_chips_crackers_popcorn_152",
+        "name":  "Waffle Pretzels",
+        "brand":  "Clancy\u0027s",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/deb00cb4-89eb-4b92-9c13-615d0e9babf8/Waffle%20Pretzels%2016%20oz",
+        "description":  "Crisp, crunchy, and satisfying Waffle Pretzels, 16 oz from Clancy\u0027s. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "benefits":  null,
+        "price":  2.55,
+        "unit":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Snacks",
+        "subCategory":  "Chips, Crackers \u0026 Popcorn"
+    },
+    {
+        "id":  "aldi_snacks_chips_crackers_popcorn_153",
+        "name":  "Pesto \u0026 Mozzarella Flavored Crackers",
+        "brand":  "Cheez-It",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/3bcc88fa-954a-4599-a02d-ba752f720f69/Pesto%20%20Mozzarella%20Flavored%20Crackers%2012.4%20oz",
+        "description":  "Crisp, crunchy, and satisfying Pesto \u0026 Mozzarella Flavored Crackers, 12.4 oz from Cheez-It. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "benefits":  null,
+        "price":  3.69,
+        "unit":  "12.4 oz",
+        "storeId":  "aldi",
+        "category":  "Snacks",
+        "subCategory":  "Chips, Crackers \u0026 Popcorn"
+    },
+    {
+        "id":  "aldi_snacks_chips_crackers_popcorn_154",
+        "name":  "Smoked Cheddar Flavored Crackers",
+        "brand":  "Cheez-It",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/3728afc4-a390-4869-a18b-9c077c2dc27e/Smoked%20Cheddar%20Flavored%20Crackers%2012.4%20oz",
+        "description":  "Crisp, crunchy, and satisfying Smoked Cheddar Flavored Crackers, 12.4 oz from Cheez-It. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "benefits":  null,
+        "price":  3.69,
+        "unit":  "12.4 oz",
+        "storeId":  "aldi",
+        "category":  "Snacks",
+        "subCategory":  "Chips, Crackers \u0026 Popcorn"
+    }
+]

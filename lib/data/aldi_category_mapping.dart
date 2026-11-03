@@ -1,0 +1,107 @@
+// Central mapping of Aldi home screen categories to the list of asset JSON files
+// that should be aggregated and displayed when a user taps that category.
+// Only list files that actually exist under assets/stores/aldi/
+
+const Map<String, List<String>> aldiCategoryAssets = {
+  'Fresh Produce': [
+    'assets/stores/aldi/aldi_fresh_fruit.json',
+    'assets/stores/aldi/aldi_fresh_vegetables.json',
+    'assets/stores/aldi/aldi_fresh_salad_kits.json',
+  ],
+  'Snacks': [
+    'assets/stores/aldi/aldi_chips_crackers_popcorn.json',
+    'assets/stores/aldi/aldi_cookies_sweets.json',
+    'assets/stores/aldi/aldi_nuts_dried_fruit.json',
+    'assets/stores/aldi/aldi_trail_mix.json',
+    'assets/stores/aldi/aldi_protein_granola_snack_bars.json',
+    'assets/stores/aldi/aldi_jerky_dried_meat.json',
+    'assets/stores/aldi/aldi_healthy_food_snacks.json',
+    'assets/stores/aldi/aldi_snacks_chips_crackers_popcorn.json',
+    'assets/stores/aldi/aldi_snacks_cookies_sweets.json',
+    'assets/stores/aldi/aldi_snacks_trail_mix.json',
+    'assets/stores/aldi/aldi_snacks_healthy_food_snacks.json',
+  ],
+  'Dairy & Eggs': [
+    'assets/stores/aldi/aldi_eggs.json',
+    'assets/stores/aldi/aldi_butter.json',
+    'assets/stores/aldi/aldi_cheese.json',
+    'assets/stores/aldi/aldi_milk_milk_substitutes.json',
+    'assets/stores/aldi/aldi_yogurt_sour_cream.json',
+    'assets/stores/aldi/aldi_coffee_creamer.json',
+  ],
+  'Pantry Essentials': [
+    'assets/stores/aldi/aldi_canned_foods.json',
+    'assets/stores/aldi/aldi_baking_supplies_ingredients.json',
+    'assets/stores/aldi/aldi_pasta_rice_grains.json',
+    'assets/stores/aldi/aldi_oils_vinegars.json',
+    'assets/stores/aldi/aldi_spices.json',
+    'assets/stores/aldi/aldi_sauces_salsa.json',
+    'assets/stores/aldi/aldi_condiments_dressings.json',
+    'assets/stores/aldi/aldi_jelly_honey_nut_butters.json',
+    'assets/stores/aldi/aldi_soups_broth.json',
+    'assets/stores/aldi/aldi_boxed_meals_side_dishes.json',
+    'assets/stores/aldi/aldi_prepared_meals_sides.json',
+  ],
+  'Household Essentials': [
+    'assets/stores/aldi/aldi_candles_air_fresheners.json',
+    'assets/stores/aldi/aldi_dishwashing_cleaning_supplies.json',
+    'assets/stores/aldi/aldi_laundry.json',
+    'assets/stores/aldi/aldi_paper_plastic_products.json',
+  ],
+  'Personal Care': [
+    'assets/stores/aldi/aldi_body_skin_care.json',
+    'assets/stores/aldi/aldi_hair_care.json',
+    'assets/stores/aldi/aldi_oral_care.json',
+    'assets/stores/aldi/aldi_health_wellness.json',
+  ],
+  'Beverages': [
+    'assets/stores/aldi/aldi_juice_cider.json',
+    'assets/stores/aldi/aldi_water.json',
+    'assets/stores/aldi/aldi_soda_pop.json',
+    'assets/stores/aldi/aldi_sports_drinks.json',
+    'assets/stores/aldi/aldi_tea.json',
+    'assets/stores/aldi/aldi_coffee.json',
+    'assets/stores/aldi/aldi_protein_shakes.json',
+    'assets/stores/aldi/aldi_drink_mixes.json',
+  ],
+  'Deli': [
+    'assets/stores/aldi/aldi_deli_meat.json',
+    'assets/stores/aldi/aldi_lunch_meat.json',
+    'assets/stores/aldi/aldi_dips_hummus.json',
+  ],
+  'Breakfast & Cereals': [
+    'assets/stores/aldi/aldi_cereal_oatmeal.json',
+    'assets/stores/aldi/aldi_breakfast_biscuits_toaster_pastries.json',
+  ],
+  'Baby Items': [
+    'assets/stores/aldi/aldi_baby_food_snacks.json',
+    'assets/stores/aldi/aldi_diapers_wipes_wash.json',
+  ],
+  'Fresh Meat & Seafood': [
+    'assets/stores/aldi/aldi_fresh_beef.json',
+    'assets/stores/aldi/aldi_fresh_pork.json',
+    'assets/stores/aldi/aldi_fresh_poultry.json',
+    'assets/stores/aldi/aldi_fresh_sausage.json',
+    'assets/stores/aldi/aldi_fresh_seafood.json',
+  ],
+  'Frozen Foods': [
+    'assets/stores/aldi/aldi_frozen_appetizers_snacks.json',
+    'assets/stores/aldi/aldi_frozen_breakfast.json',
+    'assets/stores/aldi/aldi_frozen_fruit.json',
+    'assets/stores/aldi/aldi_frozen_ice_cream_desserts.json',
+    'assets/stores/aldi/aldi_frozen_meals_sides.json',
+    'assets/stores/aldi/aldi_frozen_meat_poultry_seafood.json',
+    'assets/stores/aldi/aldi_frozen_pizza.json',
+    'assets/stores/aldi/aldi_frozen_vegetables.json',
+  ],
+  'Bakery & Bread': [
+    'assets/stores/aldi/aldi_bread.json',
+    'assets/stores/aldi/aldi_bakery_desserts.json',
+    'assets/stores/aldi/aldi_take_bake.json',
+    'assets/stores/aldi/aldi_tortillas_flatbread.json',
+  ],
+  'Pet Supplies': [
+    'assets/stores/aldi/aldi_cat_food_treats.json',
+    'assets/stores/aldi/aldi_dog_food_treats.json',
+  ],
+};

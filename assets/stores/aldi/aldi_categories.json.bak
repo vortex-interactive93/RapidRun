@@ -1,0 +1,604 @@
+[
+    {
+        "categoryName": "Fresh Produce",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Produce Types",
+                "productTypes": [
+                    {
+                        "name": "Fresh Fruit",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_fruit.json"
+                    },
+                    {
+                        "name": "Fresh Vegetables",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_vegetables.json"
+                    },
+                    {
+                        "name": "Salad Kits",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_salad_kits.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Snacks",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Snack Types",
+                "productTypes": [
+                    {
+                        "name": "Chips, Crackers & Popcorn",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_chips_crackers_popcorn.json"
+                    },
+                    {
+                        "name": "Cookies & Sweets",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_cookies_sweets.json"
+                    },
+                    {
+                        "name": "Nuts & Dried Fruit",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_nuts_dried_fruit.json"
+                    },
+                    {
+                        "name": "Trail Mix",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_trail_mix.json"
+                    },
+                    {
+                        "name": "Jerky & Dried Meat",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_jerky_dried_meat.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Dairy & Eggs",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Dairy Case",
+                "productTypes": [
+                    {
+                        "name": "Milk & Milk Substitutes",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_milk_milk_substitutes.json"
+                    },
+                    {
+                        "name": "Eggs",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_eggs.json"
+                    },
+                    {
+                        "name": "Cheese",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_cheese.json"
+                    },
+                    {
+                        "name": "Butter",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_butter.json"
+                    },
+                    {
+                        "name": "Yogurt & Sour Cream",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_yogurt_sour_cream.json"
+                    },
+                    {
+                        "name": "Coffee Creamer",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_coffee_creamer.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Pantry Essentials",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Pantry Staples",
+                "productTypes": [
+                    {
+                        "name": "Canned Foods",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_canned_foods.json"
+                    },
+                    {
+                        "name": "Oils & Vinegars",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_oils_vinegars.json"
+                    },
+                    {
+                        "name": "Baking Supplies & Ingredients",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_baking_supplies_ingredients.json"
+                    },
+                    {
+                        "name": "Condiments & Dressings",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_condiments_dressings.json"
+                    },
+                    {
+                        "name": "Sauces & Salsa",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_sauces_salsa.json"
+                    },
+                    {
+                        "name": "Jelly, Honey & Nut Butters",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_jelly_honey_nut_butters.json"
+                    },
+                    {
+                        "name": "Spices",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_spices.json"
+                    },
+                    {
+                        "name": "Pasta, Rice & Grains",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_pasta_rice_grains.json"
+                    },
+                    {
+                        "name": "Boxed Meals & Side Dishes",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_boxed_meals_side_dishes.json"
+                    },
+                    {
+                        "name": "Soups & Broth",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_soups_broth.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Household Essentials",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Household Basics",
+                "productTypes": [
+                    {
+                        "name": "Paper & Plastic Products",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_paper_plastic_products.json"
+                    },
+                    {
+                        "name": "Dishwashing & Cleaning Supplies",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_dishwashing_cleaning_supplies.json"
+                    },
+                    {
+                        "name": "Candles & Air Fresheners",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_candles_air_fresheners.json"
+                    },
+                    {
+                        "name": "Laundry",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_laundry.json"
+                    },
+                    {
+                        "name": "School & Office Supplies",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_school_office_supplies.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Personal Care",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Personal Care Items",
+                "productTypes": [
+                    {
+                        "name": "Health & Wellness",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_health_wellness.json"
+                    },
+                    {
+                        "name": "Body & Skin Care",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_body_skin_care.json"
+                    },
+                    {
+                        "name": "Hair Care",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_hair_care.json"
+                    },
+                    {
+                        "name": "Oral Care",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_oral_care.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Healthy Living",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Healthy Food & Snacks",
+                "productTypes": [
+                    {
+                        "name": "Healthy Food & Snacks",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_healthy_food_snacks.json"
+                    },
+                    {
+                        "name": "Fresh Produce",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_produce.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Beverages",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Beverage Types",
+                "productTypes": [
+                    {
+                        "name": "Water",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_water.json"
+                    },
+                    {
+                        "name": "Coffee",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_coffee.json"
+                    },
+                    {
+                        "name": "Juice & Cider",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_juice_cider.json"
+                    },
+                    {
+                        "name": "Sports Drinks",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_sports_drinks.json"
+                    },
+                    {
+                        "name": "Soda & Pop",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_soda_pop.json"
+                    },
+                    {
+                        "name": "Drink Mixes",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_drink_mixes.json"
+                    },
+                    {
+                        "name": "Tea",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_tea.json"
+                    },
+                    {
+                        "name": "Protein Shakes",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_protein_shakes.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Deli",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Deli Counter",
+                "productTypes": [
+                    {
+                        "name": "Deli Meat",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_deli_meat.json"
+                    },
+                    {
+                        "name": "Lunch Meat",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_lunch_meat.json"
+                    },
+                    {
+                        "name": "Dips & Hummus",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_dips_hummus.json"
+                    },
+                    {
+                        "name": "Prepared Meals & Sides",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_prepared_meals_sides.json"
+                    },
+                    {
+                        "name": "Take & Bake",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_take_bake.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Breakfast & Cereals",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Morning Essentials",
+                "productTypes": [
+                    {
+                        "name": "Cereal & Oatmeal",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_cereal_oatmeal.json"
+                    },
+                    {
+                        "name": "Protein, Granola & Snack Bars",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_protein_granola_snack_bars.json"
+                    },
+                    {
+                        "name": "Breakfast Biscuits & Toaster Pastries",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_breakfast_biscuits_toaster_pastries.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Baby Items",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Baby Essentials",
+                "productTypes": [
+                    {
+                        "name": "Diapers, Wipes & Wash",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_diapers_wipes_wash.json"
+                    },
+                    {
+                        "name": "Baby Food & Snacks",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_baby_food_snacks.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Fresh Meat & Seafood",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Meat & Seafood",
+                "productTypes": [
+                    {
+                        "name": "Fresh Beef",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_beef.json"
+                    },
+                    {
+                        "name": "Fresh Poultry",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_poultry.json"
+                    },
+                    {
+                        "name": "Fresh Pork",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_pork.json"
+                    },
+                    {
+                        "name": "Fresh Sausage",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_sausage.json"
+                    },
+                    {
+                        "name": "Fresh Seafood",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_seafood.json"
+                    },
+                    {
+                        "name": "Other Meat & Plant-Based Proteins",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_other_meat_plant_based_proteins.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Frozen Foods",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Freezer Aisles",
+                "productTypes": [
+                    {
+                        "name": "Frozen Appetizers & Snacks",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_appetizers_snacks.json"
+                    },
+                    {
+                        "name": "Frozen Breakfast",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_breakfast.json"
+                    },
+                    {
+                        "name": "Frozen Fruit",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_fruit.json"
+                    },
+                    {
+                        "name": "Frozen Ice Cream & Desserts",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_ice_cream_desserts.json"
+                    },
+                    {
+                        "name": "Frozen Meals & Sides",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_meals_sides.json"
+                    },
+                    {
+                        "name": "Frozen Meat, Poultry & Seafood",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_meat_poultry_seafood.json"
+                    },
+                    {
+                        "name": "Frozen Pizza",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_pizza.json"
+                    },
+                    {
+                        "name": "Frozen Vegetables",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_frozen_vegetables.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Bakery & Bread",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Baked Goods",
+                "productTypes": [
+                    {
+                        "name": "Bread",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_bread.json"
+                    },
+                    {
+                        "name": "Tortillas & Flatbread",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_tortillas_flatbread.json"
+                    },
+                    {
+                        "name": "Bakery Desserts",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_bakery_desserts.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Pets Supplies",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Food & Treats",
+                "productTypes": [
+                    {
+                        "name": "Dog Food & Treats",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_dog_food_treats.json"
+                    },
+                    {
+                        "name": "Cat Food & Treats",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_cat_food_treats.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "BBQ & Picnic",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "BBQ & Picnic Essentials",
+                "productTypes": [
+                    {
+                        "name": "All Fresh Meat and Seafood",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_fresh_meat_seafood.json"
+                    },
+                    {
+                        "name": "Grilled Meat and Seafood Favorites",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_grilled_meat_seafood.json"
+                    },
+                    {
+                        "name": "Cookout Essentials",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_cookout_essentials.json"
+                    },
+                    {
+                        "name": "BBQ & Picnic Supplies",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_bbq_picnic_supplies.json"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "categoryName": "Alcohol",
+        "iconCodePoint": null,
+        "sections": [
+            {
+                "sectionName": "Alcohol Types",
+                "productTypes": [
+                    {
+                        "name": "Red Wine",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_red_wine.json"
+                    },
+                    {
+                        "name": "White Wine",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_white_wine.json"
+                    },
+                    {
+                        "name": "Rosé Wine",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_rose_wine.json"
+                    },
+                    {
+                        "name": "Specialty Wine",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_specialty_wine.json"
+                    },
+                    {
+                        "name": "Beer",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_beer.json"
+                    },
+                    {
+                        "name": "Sparkling Wine",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_sparkling_wine.json"
+                    },
+                    {
+                        "name": "Hard Beverages",
+                        "iconCodePoint": null,
+                        "filePath": "assets/stores/aldi/aldi_hard_beverages.json"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,2994 @@
+﻿[
+    {
+        "id":  "aldi_bakery_bread_1",
+        "name":  "Bake Shop Triple Chocolate Creme Cake",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e422834b-e82f-42b6-9490-6cd6d1c2a863.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Triple Chocolate Creme Cake from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_2",
+        "name":  "Specially Selected Take \u0026 Bake French Baguette",
+        "brand":  "Specially Selected",
+        "price":  0,
+        "unit":  "9.5 oz",
+        "unitShort":  "9.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_67ba8ab0-765c-4e96-84ab-6a79112c40e4.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Take \u0026 Bake French Baguette from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_3",
+        "name":  "Specially Selected Caramel Apple Blossoms",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_16c20dde-5a81-4693-80ed-3270a470a516.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_4",
+        "name":  "L\u0027oven Fresh White Bread, 20 oz ver 3",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.35,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_963f05e3-9eac-4d87-b2bd-05127163b7f0.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh White Bread, 20 oz ver 3 from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_5",
+        "name":  "L\u0027oven Fresh Hawaiian Sweet Rolls - 12 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.45,
+        "unit":  "12 ct",
+        "unitShort":  "12 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_54ce3a7e-3254-4eeb-ad84-6f4153780587.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Hawaiian Sweet Rolls - 12 Count from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_6",
+        "name":  "Aldi Chocolate Almond Bark",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5158eabb-86f0-48ea-ae3d-4874fffff564.jpg",
+        "aisle":  "Bakery Items",
+        "description":  "Indulgent, delicious Aldi Chocolate Almond Bark from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_7",
+        "name":  "Specially Selected Caramel Belgium Desserts",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "4.2 oz",
+        "unitShort":  "4.2 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8644cecd-1bdf-4ca6-b4e3-f8fe0eb71eaa.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Specially Selected Caramel Belgium Desserts, 2 pack from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_8",
+        "name":  "Specially Selected Apple Berry Blossoms",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e713b3cc-748c-4667-ae24-1d9e1b3aef18.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_9",
+        "name":  "L\u0027oven Fresh Pumpkin Spice Bagels - 6 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_02434aec-8913-4e2a-a3ee-a15990d83318.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Pumpkin Spice Bagels - 6 Count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_10",
+        "name":  "Bake Shop Apple Cider Donuts - 6 Count",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f2c499fe-0a1a-479e-847b-4cbe56323972.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_11",
+        "name":  "L\u0027oven Fresh Hamburger Buns, 11 oz.",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.45,
+        "unit":  "11 oz",
+        "unitShort":  "11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7bcc18c2-1e61-40a3-8952-4e1425ec637f.jpg",
+        "aisle":  "Bread",
+        "description":  "Flavorful, tender pork from L\u0027oven Fresh. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_12",
+        "name":  "Bake Shop Cinnamon Rolls - 8 Count",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "22 oz",
+        "unitShort":  "22 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d18ff301-059b-4148-8122-bc441b84f824.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Bake Shop Cinnamon Rolls - 8 Count from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_13",
+        "name":  "L\u0027oven Fresh Harvest Bagels - 6 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5124b9fc-0632-4bfb-9588-2215edbe0309.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Harvest Bagels - 6 Count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_14",
+        "name":  "Specially Selected Brioche Hot Dog Buns",
+        "brand":  "Specially Selected",
+        "price":  3.39,
+        "unit":  "9.52 oz",
+        "unitShort":  "9.52 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_153230cc-f65a-415c-ba4d-529e9a8a0d45.jpg",
+        "aisle":  "Bread",
+        "description":  "Savory, expertly seasoned sausages from Specially Selected. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_15",
+        "name":  "Bake Shop Strawberry Cheese Danish",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "1 each",
+        "unitShort":  "1 each",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d4baaccd-dba3-4f68-a7d5-7a71b5d1f0a2.jpg",
+        "aisle":  "Bread",
+        "description":  "Juicy, vibrant red fresh strawberries packed with natural sweetness and Vitamin C. Ideal for fresh snacking, tossing into summer salads, blending into morning smoothies, or layering over yogurt and desserts.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_16",
+        "name":  "Pueblo Lindo Flour Tortillas - 10 Count",
+        "brand":  "ALDI",
+        "price":  1.79,
+        "unit":  "17.5 oz",
+        "unitShort":  "17.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f4e7a9fd-f9ea-4c84-ae7d-6c16fc8187e9.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo Flour Tortillas - 10 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_17",
+        "name":  "L\u0027oven Fresh Plain English Muffins",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.59,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f216d78f-72f2-44d3-ab74-90a0466b46d7.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Plain English Muffins, 6 count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_18",
+        "name":  "Pueblo Lindo Casera Amarillas Tostadas",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "12.8 oz",
+        "unitShort":  "12.8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3aa59c35-ec84-4628-b087-7bf5980de75a.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo Casera Amarillas Tostadas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_19",
+        "name":  "Bake Shop Large Croissants",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "6 ct",
+        "unitShort":  "6 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5f5a7d4e-f9ae-40f8-8805-7e1439472ff5.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Large Croissants from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_20",
+        "name":  "Baker\u0027s Treat Honey Buns - 6 Pack",
+        "brand":  "ALDI",
+        "price":  2.39,
+        "unit":  "10.5 oz",
+        "unitShort":  "10.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f761d846-f8d3-411f-b453-7755d2d3c9fe.jpg",
+        "aisle":  "Lunch",
+        "description":  "Freshly baked, soft Baker\u0027s Treat Honey Buns - 6 Pack from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_21",
+        "name":  "L\u0027oven Fresh White Pita Bread - 5 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.59,
+        "unit":  "11 oz",
+        "unitShort":  "11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c29ead59-f595-476d-9bcc-6f43d53da93f.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh White Pita Bread - 5 Count from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_22",
+        "name":  "Specially Selected Sliced Sourdough Round",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a231db9b-0421-4016-975e-dd659b472360.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Sliced Sourdough Round from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_23",
+        "name":  "Bake Shop Blueberry Muffins - 4 Count",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "14.1 oz",
+        "unitShort":  "14.1 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0fce346c-b46d-42a0-89a9-b61607bc0736.jpg",
+        "aisle":  "Bread",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_24",
+        "name":  "Benton\u0027s Chocolatey Coconut Macaroons - 6 Count",
+        "brand":  "Benton\u0027s",
+        "price":  2.49,
+        "unit":  "7.8 oz",
+        "unitShort":  "7.8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f6cccd6a-987e-4e26-b03d-00860e50b4a1.jpg",
+        "aisle":  "Cookie",
+        "description":  "Indulgent, delicious Benton\u0027s Chocolatey Coconut Macaroons - 6 Count from Benton\u0027s. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_25",
+        "name":  "L\u0027oven Fresh Plain Protein Wrap",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.19,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c8e64356-d726-4d55-bc82-3505ee030551.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Plain Protein Wrap from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_26",
+        "name":  "Bake Shop Pumpkn or Snickrddle Ckie, Pumpkin",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_23093a0d-a572-44bb-be1b-1dd87ae5c5fc.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Bake Shop Pumpkn or Snickrddle Ckie, Pumpkin from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_27",
+        "name":  "Belmont Deep Dish Pie Crusts - 2 Pack",
+        "brand":  "ALDI",
+        "price":  2.49,
+        "unit":  "2 ct",
+        "unitShort":  "2 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ff121322-fc0b-4d52-a5cc-7ec134f784a2.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Belmont Deep Dish Pie Crusts - 2 Pack from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_28",
+        "name":  "Bake Shop Raspberry Danish",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_929c8ed5-4f18-4a21-addb-98409a131cb3.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Raspberry Danish from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_29",
+        "name":  "Bake Shop Banana Nut Muffins - 4 Count",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "4 ct",
+        "unitShort":  "4 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b43ece21-9172-4966-b8f6-42aa7f8c1197.jpg",
+        "aisle":  "Bread",
+        "description":  "Bananas are a versatile kitchen staple. Perfect for blending into smoothies, topping cereal, or enjoying as a quick snack. Their natural sweetness and creamy texture make them a favorite for baking desserts or adding to lunchboxes. Stock up on these potassium-rich fruits and taste the difference in every bite.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_30",
+        "name":  "Bake Shop Cheese Danish",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9e48ca38-7987-4fd8-9f43-d2d0c66876d3.jpg",
+        "aisle":  "Bread",
+        "description":  "Rich, creamy cheese from ALDI. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_31",
+        "name":  "Bake Shop Chocolate Chip Mini Muffins",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a41287b2-8cce-4649-9030-551ea87b1862.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Bake Shop Chocolate Chip Mini Muffins from ALDI. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_32",
+        "name":  "L\u0027oven Fresh Hot Dog Buns, 11 oz.",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.45,
+        "unit":  "11 oz",
+        "unitShort":  "11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_23cf5713-3f1c-4639-9493-25094bfb84f9.jpg",
+        "aisle":  "Bread",
+        "description":  "Savory, expertly seasoned sausages from L\u0027oven Fresh. Packed with rich, smoky flavor—perfect for grilling, breakfast skillets, or quick weeknight meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_33",
+        "name":  "L\u0027oven Fresh Spinach Herb Wraps",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.35,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_15aff895-7c45-4070-99e8-4aefdb6fa08b.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_34",
+        "name":  "Bake Shop Blueberry Mini Muffins",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0d1223da-7d1b-4b9a-93de-b0f92a8cce4e.jpg",
+        "aisle":  "Bread",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_35",
+        "name":  "L\u0027oven Fresh Whole Grains 12 Grain Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  0,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b999353e-0613-4cce-8cc0-455ccc554132.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Whole Grains 12 Grain Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_36",
+        "name":  "Bake Shop Mini Croissants",
+        "brand":  "ALDI",
+        "price":  2.79,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8cdf26b5-4b83-4502-b6ef-5b739cbfb83c.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Mini Croissants from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_37",
+        "name":  "Ole Crunchy Corn Tostadas",
+        "brand":  "ALDI",
+        "price":  2.77,
+        "unit":  "12.4 oz",
+        "unitShort":  "12.4 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9acc4fbd-11cb-4386-9319-608495a44190.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Ole Crunchy Corn Tostadas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_38",
+        "name":  "L\u0027oven Fresh Everything Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2a06b86b-1693-47dd-9c60-0c865141bf2a.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Everything Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_39",
+        "name":  "Priano Italian Style Cookies 200g, Amarena",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "7.05 oz",
+        "unitShort":  "7.05 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3cada2a5-dd10-48d3-901c-9185c3c203d6.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Indulgent, delicious Priano Italian Style Cookies 200g, Amarena from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_40",
+        "name":  "Bake Shop Chocolate Chip Muffins",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "14.1 oz",
+        "unitShort":  "14.1 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e67a478c-14eb-4fde-b94e-230c4c033ba6.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Bake Shop Chocolate Chip Muffins, 4 count from ALDI. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_41",
+        "name":  "Specially Selected Garlic Naan Flatbread - 4 Count",
+        "brand":  "Specially Selected",
+        "price":  4.89,
+        "unit":  "17.6 oz",
+        "unitShort":  "17.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_da1d0859-de35-4b71-aa76-4d221423b3ff.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Garlic Naan Flatbread - 4 Count from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_42",
+        "name":  "La Banderita Flour Tortillas Family Pack - 20 Tortillas",
+        "brand":  "ALDI",
+        "price":  3.37,
+        "unit":  "20 ct",
+        "unitShort":  "20 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0d48a33f-a0d0-4b55-bf10-be9b0d2fe9ff.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita Flour Tortillas Family Pack - 20 Tortillas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_43",
+        "name":  "Specially Selected Sourdough  Square Loaf",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fb43c32c-1665-4a22-a674-658d23821626.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft Specially Selected Sourdough  Square Loaf, 24 oz from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_44",
+        "name":  "Pueblo Lindo Large Burrito Flour Tortillas - 8 Count",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_11854fcf-a3b0-4ec5-8687-85a3d14378da.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo Large Burrito Flour Tortillas - 8 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_45",
+        "name":  "Bake Shop Lemon Sliced Loaf Cake - 8 Count",
+        "brand":  "ALDI",
+        "price":  3.75,
+        "unit":  "12.1 oz",
+        "unitShort":  "12.1 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3619ba6d-a5e6-4ca2-8d82-24098d765bdf.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Lemon Sliced Loaf Cake - 8 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_46",
+        "name":  "Specially Selected Artisan Flatbread",
+        "brand":  "Specially Selected",
+        "price":  3.55,
+        "unit":  "14.1 oz",
+        "unitShort":  "14.1 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1ebc3523-a7da-4d67-9bd5-41e6faa66e26.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Artisan Flatbread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_47",
+        "name":  "Bake Shop Kitchen Sink Cookies",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ba887583-970d-4249-b888-e2567937d47d.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Kitchen Sink Cookies from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_48",
+        "name":  "Specially Selected Original Naan Bread",
+        "brand":  "Specially Selected",
+        "price":  4.89,
+        "unit":  "17.6 oz",
+        "unitShort":  "17.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_daebae34-4090-41ed-9ee7-462b118efc4c.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Original Naan Bread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_49",
+        "name":  "Casa Mamita Crunchy Hard Taco Shells",
+        "brand":  "ALDI",
+        "price":  1.49,
+        "unit":  "4.6 oz",
+        "unitShort":  "4.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d1115101-491b-40d6-9895-dd1eceee8db9.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Casa Mamita Crunchy Hard Taco Shells from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_50",
+        "name":  "Pueblo Lindo Small Fajita Flour Tortillas - 20 Count",
+        "brand":  "ALDI",
+        "price":  1.85,
+        "unit":  "23 oz",
+        "unitShort":  "23 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_30c4ed77-e3ed-490f-8438-8570d83854ab.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo Small Fajita Flour Tortillas - 20 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_51",
+        "name":  "L\u0027oven Fresh Honey Wheat Bread, 20 oz ver 1",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.75,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fcb34aaf-7dc0-40f5-80d4-1f102609317b.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Honey Wheat Bread, 20 oz ver 1 from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_52",
+        "name":  "Specially Selected Brioche Bagels - 5 Count",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "17.5 oz",
+        "unitShort":  "17.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5f01ae2b-5c5b-4271-ab2b-7916af774b9e.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Brioche Bagels - 5 Count from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_53",
+        "name":  "Pueblo Lindo White Corn Tortillas - 30 Count",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "25 oz",
+        "unitShort":  "25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3f020a67-8eea-411e-9e86-e4ee0491c97d.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo White Corn Tortillas - 30 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_54",
+        "name":  "Specially Selected Brioche Rolls - 12 Pack",
+        "brand":  "Specially Selected",
+        "price":  4.19,
+        "unit":  "16.9 oz",
+        "unitShort":  "16.9 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1ca13a6b-848a-46b6-b755-9084dcc40bb0.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Brioche Rolls - 12 Pack from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_55",
+        "name":  "L\u0027oven Fresh Cinnamon Raisin Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_efd21aa3-d860-41de-8908-8a7888bccfdc.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Cinnamon Raisin Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_56",
+        "name":  "Bake Shop Chocolate Chunk Cookies - 10 Count",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5009fe67-f761-4de7-9d36-85a755dec466.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Chocolate Chunk Cookies - 10 Count from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_57",
+        "name":  "L\u0027oven Fresh 40 Calorie Wheat Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0627ab97-55d6-4aa9-9bd5-292a3afa2f8e.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh 40 Calorie Wheat Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_58",
+        "name":  "L\u0027oven Fresh Plain Mini Bagels - 12 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.49,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2edd9605-2eaa-44e2-832f-bdbaebeafe28.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Plain Mini Bagels - 12 Count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_59",
+        "name":  "L\u0027oven Fresh Blueberry Bagels - 6 Pack",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_79b1c5dc-2465-4c86-897a-f73897c9e3bc.jpg",
+        "aisle":  "Bread",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_60",
+        "name":  "L\u0027oven Fresh Plain Pre-Sliced Bagels - 6 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_31e0a5c7-85ac-499c-a211-afe1f9246629.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Plain Pre-Sliced Bagels - 6 Count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_61",
+        "name":  "La Banderita Yellow Corn Tortillas",
+        "brand":  "ALDI",
+        "price":  2.44,
+        "unit":  "30 ct",
+        "unitShort":  "30 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2e56a4d8-4f5f-4398-b055-c2c632a99c06.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita Yellow Corn Tortillas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_62",
+        "name":  "L\u0027oven Fresh Whole Wheat with Flax \u0026 Oat Bran Pita Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.59,
+        "unit":  "11 oz",
+        "unitShort":  "11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7ee727f7-ac03-432b-b746-24f1749decf1.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Whole Wheat with Flax \u0026 Oat Bran Pita Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_63",
+        "name":  "L\u0027oven Fresh Split Top Wheat Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.45,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_562d22ea-4e2b-4e25-97fc-927a12ea3442.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Split Top Wheat Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_64",
+        "name":  "La Banderita White Corn Tortillas",
+        "brand":  "ALDI",
+        "price":  3.97,
+        "unit":  "66.3 oz",
+        "unitShort":  "66.3 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc3793c3-38a1-4fbb-9c39-b673412cf820.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita White Corn Tortillas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_65",
+        "name":  "L\u0027oven Fresh Artisanal Hamburger Buns",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bfdb8232-198d-4e58-b02b-4e3fc3a7b62e.jpg",
+        "aisle":  "Bread",
+        "description":  "Flavorful, tender pork from L\u0027oven Fresh. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_66",
+        "name":  "L\u0027oven Fresh Sun-Dried Tomato Wraps",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.35,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a9714124-b6c1-466a-82d4-ef8577642f4c.jpg",
+        "aisle":  "Bread",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_67",
+        "name":  "Bake Shop Oatmeal Cranberry Cookies - 10 Count",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f6702d8e-c869-4a57-8761-62c533953b8b.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Oatmeal Cranberry Cookies - 10 Count from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_68",
+        "name":  "Specially Selected Italian Bread Loaf",
+        "brand":  "Specially Selected",
+        "price":  3.15,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ac7b89ef-13dd-40fa-b204-2671fd71de35.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Italian Bread Loaf from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_69",
+        "name":  "Simply Nature Organic Graintastic Thin-Sliced Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  3.15,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_24349276-4238-4482-a923-55947ba89437.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Organic Graintastic Thin-Sliced Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_70",
+        "name":  "Specially Selected Ciabatta Sandwich Rolls",
+        "brand":  "Specially Selected",
+        "price":  3.59,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a06c9069-8b59-4167-9fe1-b3e04f3bbc3a.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Ciabatta Sandwich Rolls from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_71",
+        "name":  "La Banderita Soft Taco Flour Tortillas - 10 Tortillas",
+        "brand":  "ALDI",
+        "price":  2.73,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_20740959-02dd-4b94-bac8-d40734c875d1.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita Soft Taco Flour Tortillas - 10 Tortillas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_72",
+        "name":  "Specially Selected Vanilla Cream Brioche",
+        "brand":  "Specially Selected",
+        "price":  4.95,
+        "unit":  "14.11 oz",
+        "unitShort":  "14.11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_52cb84b5-688c-4c08-bbdf-c3c9cc9cee92.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Vanilla Cream Brioche from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_73",
+        "name":  "La Banderita Soft Taco Flour Tortillas - 24 Pack",
+        "brand":  "ALDI",
+        "price":  3.58,
+        "unit":  "24 ct",
+        "unitShort":  "24 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_866fa32a-1b7b-407a-ba65-19cf993dd5fa.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita Soft Taco Flour Tortillas - 24 Pack from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_74",
+        "name":  "Specially Selected Chocolate Chip Brioche",
+        "brand":  "Specially Selected",
+        "price":  4.95,
+        "unit":  "14.11 oz",
+        "unitShort":  "14.11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c290278d-e50d-4206-ac33-5cda6e31ec8b.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Specially Selected Chocolate Chip Brioche from Specially Selected. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_75",
+        "name":  "L\u0027oven Fresh Cinnamon Raisin Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.45,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b8f0d9c3-7f38-4bb7-8a72-9b2db8751c82.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Cinnamon Raisin Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_76",
+        "name":  "L\u0027oven Fresh Everything Bagel Skinnys - 8 Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "13 oz",
+        "unitShort":  "13 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7d1d4b31-92cc-477e-8cc3-347137fa0a10.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Everything Bagel Skinnys - 8 Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_77",
+        "name":  "Ole Xtreme Wellness High Fiber Low Carb Tortilla Wraps - 8 Tortilla Wraps",
+        "brand":  "ALDI",
+        "price":  4.57,
+        "unit":  "8 ct",
+        "unitShort":  "8 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fb22d29e-a88d-47ad-a13d-099ba9fc0539.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Ole Xtreme Wellness High Fiber Low Carb Tortilla Wraps - 8 Tortilla Wraps from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_78",
+        "name":  "L\u0027oven Fresh 100%  Whole Wheat Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.85,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a658e7f1-69cf-46dc-b5a5-e4de38ed0e05.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh 100%  Whole Wheat Bread, 20 oz from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_79",
+        "name":  "L\u0027oven Fresh Plain Bagel Skinnys - 8 Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "13 oz",
+        "unitShort":  "13 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_28ee46c6-cc43-4980-9120-6319ea704404.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Plain Bagel Skinnys - 8 Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_80",
+        "name":  "La Banderita White Corn Tortillas - 30 Count",
+        "brand":  "ALDI",
+        "price":  2.44,
+        "unit":  "24.9 oz",
+        "unitShort":  "24.9 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_947941ad-4989-4f6b-87d6-44a1932e6223.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita White Corn Tortillas - 30 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_81",
+        "name":  "L\u0027oven Fresh Parmesan Romano Garlic Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f0bce896-0b63-4003-9e4d-a41f23c9b94f.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Parmesan Romano Garlic Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_82",
+        "name":  "Specially Selected Mini Naan Bread",
+        "brand":  "Specially Selected",
+        "price":  4.49,
+        "unit":  "12.7 oz",
+        "unitShort":  "12.7 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bc921c53-8949-4ba5-a546-a7657a8ca963.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Mini Naan Bread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_83",
+        "name":  "Specially Selected Everything Brioche Bun",
+        "brand":  "Specially Selected",
+        "price":  3.29,
+        "unit":  "8.82 oz",
+        "unitShort":  "8.82 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6722cae-5ff7-4758-a7cc-d783a01fecb3.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Specially Selected Everything Brioche Bun from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_84",
+        "name":  "Specially Selected Sliced Brioche Loaf with Chocolate Chips",
+        "brand":  "Specially Selected",
+        "price":  4.95,
+        "unit":  "17.6 oz",
+        "unitShort":  "17.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d42dd1e0-eb04-4b81-9d5b-3c00997a2041.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Specially Selected Sliced Brioche Loaf with Chocolate Chips from Specially Selected. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_85",
+        "name":  "Simply Nature Organic Seedtastic Thin-Sliced Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  3.15,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9f281916-84de-41cc-a3fb-f247581e66a5.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Organic Seedtastic Thin-Sliced Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_86",
+        "name":  "Specially Selected Mini Chocolate Chip Brioche Swirl",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "10.58 oz",
+        "unitShort":  "10.58 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_950711a0-dd5e-4efc-9162-538c1f34887c.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Specially Selected Mini Chocolate Chip Brioche Swirl from Specially Selected. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_87",
+        "name":  "L\u0027oven Fresh Garlic Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_49e9f510-9c23-4af7-97e8-d114f36e58ee.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Garlic Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_88",
+        "name":  "Specially Selected Mini Vanilla Brioche Swirls",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "10.58 oz",
+        "unitShort":  "10.58 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_173d9a44-cb2a-472d-a443-8e15cd179ef0.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Mini Vanilla Brioche Swirls from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_89",
+        "name":  "Pueblo Lindo Yellow Corn Tortillas - 30 Count",
+        "brand":  "ALDI",
+        "price":  1.95,
+        "unit":  "25 oz",
+        "unitShort":  "25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_93dcc1b7-ae5e-477a-bbf4-d55540e65800.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Pueblo Lindo Yellow Corn Tortillas - 30 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_90",
+        "name":  "Specially Selected Sesame Seed Brioche Buns - 6 Count",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "10.58 oz",
+        "unitShort":  "10.58 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_af52a5f8-8932-4d8e-a315-60e72a1f2d89.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Sesame Seed Brioche Buns - 6 Count from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_91",
+        "name":  "L\u0027oven Fresh Hawaiian Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6e7a66c2-0803-4787-84ea-3c80086cf644.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Hawaiian Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_92",
+        "name":  "Simply Nature Organic Seedtastic Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  4.19,
+        "unit":  "27 oz",
+        "unitShort":  "27 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2048cf41-4e6f-41ba-a32d-31bc6fca0553.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Organic Seedtastic Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_93",
+        "name":  "Livegfree Gluten Free Wide Pan Whole Grain Bread",
+        "brand":  "ALDI",
+        "price":  6.79,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0d18aa13-ecb9-4efd-9a46-eec1ee666278.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Livegfree Gluten Free Wide Pan Whole Grain Bread from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gluten-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_94",
+        "name":  "Specially Selected Brioche Buns - 6 Count",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "6 ct",
+        "unitShort":  "6 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_01d90fc2-e4bc-46a3-a6b6-70422557a006.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Brioche Buns - 6 Count from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_95",
+        "name":  "Specially Selected Sliced Brioche Loaf",
+        "brand":  "Specially Selected",
+        "price":  4.95,
+        "unit":  "17.6 oz",
+        "unitShort":  "17.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b34e3187-698b-447c-8169-79177b6f1d94.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Sliced Brioche Loaf from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_96",
+        "name":  "L\u0027oven Fresh Artisanal Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.29,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d20bafa1-c638-4ed5-8f0b-e368bc1e5869.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Artisanal Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_97",
+        "name":  "L\u0027oven Fresh Sandwich White Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.35,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c65288dc-e0a0-4873-8011-26ac239c8db8.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Sandwich White Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_98",
+        "name":  "liveGfree Wide Pan Gluten Free White Bread",
+        "brand":  "ALDI",
+        "price":  6.79,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e3120706-fe59-4d8c-8cac-7d4063ede08c.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft liveGfree Wide Pan Gluten Free White Bread from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gluten-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_99",
+        "name":  "Simply Nature Low Sodium Sprouted 7 Grain Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  3.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c50e321e-f627-46d6-bc70-c02f2c234af7.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Low Sodium Sprouted 7 Grain Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_100",
+        "name":  "Simply Nature Sprouted 7 Grain Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  3.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_521fb3c7-9bc6-4a0a-b8ee-8ef36b865bdb.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Sprouted 7 Grain Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_101",
+        "name":  "Specially Selected Sliced Pumpkin Spice Brioche",
+        "brand":  "Specially Selected",
+        "price":  4.59,
+        "unit":  "14.11 oz",
+        "unitShort":  "14.11 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b0ecd6be-dfd1-44bc-aefb-fa90b9247250.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Specially Selected Sliced Pumpkin Spice Brioche from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_102",
+        "name":  "Egglife Original Egg Wrap",
+        "brand":  "ALDI",
+        "price":  5.19,
+        "unit":  "6 ct",
+        "unitShort":  "6 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3cfc1495-fc72-49cd-aeaf-66e7a4602ee4.png",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_103",
+        "name":  "Specially Selected Chocolate Belgium Desserts",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "4.2 oz",
+        "unitShort":  "4.2 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_169c563d-57cf-49a6-a9f0-fecf71ddd1a1.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Indulgent, delicious Specially Selected Chocolate Belgium Desserts, 2 pack from Specially Selected. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_104",
+        "name":  "Dave\u0027s Killer Bread Organic Thin-Sliced Good Seed Bread",
+        "brand":  "ALDI",
+        "price":  5.78,
+        "unit":  "20.5 oz",
+        "unitShort":  "20.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0365803c-40ad-4072-b485-731e95668e0c.png",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Dave\u0027s Killer Bread Organic Thin-Sliced Good Seed Bread from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_105",
+        "name":  "Simply Nature Organic Graintastic Bread",
+        "brand":  "Simply Nature Organic",
+        "price":  4.19,
+        "unit":  "27 oz",
+        "unitShort":  "27 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b40d1e2d-fb92-4553-ab9d-be6debf5e7ac.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Simply Nature Organic Graintastic Bread from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_106",
+        "name":  "L\u0027oven Fresh Cinnamon Raisin Mini Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.49,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3fa27ecb-6718-4667-a70c-8306482caef2.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Cinnamon Raisin Mini Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_107",
+        "name":  "Nature\u0027s Own Honey Wheat Bread",
+        "brand":  "ALDI",
+        "price":  3.37,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_60e6bcc0-cd13-4981-ba22-281f89852854.png",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Nature\u0027s Own Honey Wheat Bread from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_108",
+        "name":  "Dave\u0027s Killer Bread Organic Thin-Sliced 21 Whole Grains and Seeds Bread",
+        "brand":  "ALDI",
+        "price":  5.78,
+        "unit":  "20.5 oz",
+        "unitShort":  "20.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b7a0dd3b-9d3a-4e45-bd0d-765db6d0e7d1.png",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Dave\u0027s Killer Bread Organic Thin-Sliced 21 Whole Grains and Seeds Bread from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_109",
+        "name":  "Specially Selected Everything Sourdough, Everything",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3f725be6-3a5b-4641-908c-a8979e82755b.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Everything Sourdough, Everything from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_110",
+        "name":  "Bake Shop Frosted Sugar Cookies - 10 Count",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "13.5 oz",
+        "unitShort":  "13.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f4e2843e-76a4-4abb-89fd-d76c6e0eafa3.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Frosted Sugar Cookies - 10 Count from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_111",
+        "name":  "King\u0027s Hawaiian Original Sweet Rolls",
+        "brand":  "ALDI",
+        "price":  4.72,
+        "unit":  "12 ct",
+        "unitShort":  "12 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7cb40d85-47cc-448f-847e-2842802e4b1b.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft King\u0027s Hawaiian Original Sweet Rolls from ALDI. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_112",
+        "name":  "Nature\u0027s Own Butterbread",
+        "brand":  "ALDI",
+        "price":  3.76,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_86b2fc02-ec4e-407c-a098-0723d402d2f5.png",
+        "aisle":  "Bread",
+        "description":  "Rich, creamy churned butter from ALDI. Brings rich flavor and velvety texture to baking, cooking, and spreading.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_113",
+        "name":  "Specially Selected Jalapeno Cheddar Sourdough",
+        "brand":  "Specially Selected",
+        "price":  0,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_365c5c98-b319-41e6-afc3-61e7493ef16e.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Jalapeno Cheddar Sourdough from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_114",
+        "name":  "Specially Selected Bistro Multigrain Bread",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "21 oz",
+        "unitShort":  "21 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a1311f67-f8af-490e-b91d-55e249b5ac2d.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Bistro Multigrain Bread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_115",
+        "name":  "Baker\u0027s Treat Confetti Cake Mini Muffins - 5 Packs",
+        "brand":  "ALDI",
+        "price":  2.75,
+        "unit":  "8.25 oz",
+        "unitShort":  "8.25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1ece9e9a-f3e1-4628-9129-c0f02ff30816.jpeg",
+        "aisle":  "Lunch",
+        "description":  "Baker\u0027s Treat Confetti Cake Mini Muffins - 5 Packs from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_116",
+        "name":  "L\u0027oven Fresh Everything Protein Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "15.5 oz",
+        "unitShort":  "15.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1bd739b7-0a41-4c95-bc8e-2193dbfb8dcf.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Everything Protein Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_117",
+        "name":  "L\u0027oven Fresh Plain Protein Bagels",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.99,
+        "unit":  "15.5 oz",
+        "unitShort":  "15.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f9ab9f16-937c-4dff-aa82-df22b5cdb2b4.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Plain Protein Bagels from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_118",
+        "name":  "Simply Nature Organic Multigrain Bread Sourdough",
+        "brand":  "Simply Nature Organic",
+        "price":  4.49,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9a6ca64a-22da-4075-a79c-048d35955e79.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft Simply Nature Organic Multigrain Bread Sourdough from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_119",
+        "name":  "Specially Selected Bistro Original Bread",
+        "brand":  "Specially Selected",
+        "price":  3.99,
+        "unit":  "21 oz",
+        "unitShort":  "21 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c6891629-e198-473e-bd46-a32128a10844.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft Specially Selected Bistro Original Bread from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_120",
+        "name":  "L\u0027oven Fresh Protein Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.99,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c6f424d1-c307-418d-9771-56947ec4cc03.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Protein Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_121",
+        "name":  "L\u0027oven Fresh Zero Net Carb Tortilla Wraps",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.49,
+        "unit":  "11.3 oz",
+        "unitShort":  "11.3 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1072887c-833b-49c3-882e-04ec4d27b22f.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Zero Net Carb Tortilla Wraps from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_122",
+        "name":  "Specially Selected Italian Loaf",
+        "brand":  "Specially Selected",
+        "price":  3.79,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_87532044-cced-4a20-9271-b4f52dccbd2e.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Italian Loaf from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_123",
+        "name":  "Millville Fiber Now 70 Calorie Cinnamon Coffee Cake Flavored Bars",
+        "brand":  "Millville",
+        "price":  1.99,
+        "unit":  "5.29 oz",
+        "unitShort":  "5.29 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6418412-fca7-4cd6-b2ba-cea78f8dc2e0.jpg",
+        "aisle":  "Breakfast",
+        "description":  "Rich, aromatic Millville Fiber Now 70 Calorie Cinnamon Coffee Cake Flavored Bars, 6 count from Millville. Delivers smooth, satisfying flavor to kickstart your morning or refresh your afternoon.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_124",
+        "name":  "L\u0027oven Fresh Blueberry Breakfast Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  4.29,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_93dec494-dcab-44fa-9d86-79a2dae5ef9b.jpg",
+        "aisle":  "Bread",
+        "description":  "Plump, sweet fresh blueberries loaded with antioxidants and nutrients. Perfect for snacking by the handful, baking into muffins, or topping pancakes and cereal.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_125",
+        "name":  "L\u0027oven Fresh Deli Rolls",
+        "brand":  "L\u0027oven Fresh",
+        "price":  2.49,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5033f5ef-e327-437f-ab03-14f7e9308050.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Deli Rolls from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_126",
+        "name":  "L\u0027oven Fresh Texas Toast",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.79,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d613f987-a90d-4694-b44d-0b0553dd63b8.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Texas Toast from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_127",
+        "name":  "Bake Shop Bake Shop Apple Fritters",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_11419d41-9677-435b-8ffa-24029297b531.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_128",
+        "name":  "Casa Mamita Crunchy Taco Dinner Kit - 12 Shells",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "8.6 oz",
+        "unitShort":  "8.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_53c4a497-4724-41a5-8ad4-cf3b1b98962d.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Casa Mamita Crunchy Taco Dinner Kit - 12 Shells from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_129",
+        "name":  "Bake Shop Chocolate Frosted Mini Donuts",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f5b7950e-7e64-42a7-9837-66ca7181b748.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Chocolate Frosted Mini Donuts from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_130",
+        "name":  "L\u0027oven Fresh Marbled Cinnamon Breakfast Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  4.29,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6e47b32-41d0-4e5d-81f0-6dfd276b136f.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Marbled Cinnamon Breakfast Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_131",
+        "name":  "Simply Nature Organic Rustic Italian Boule",
+        "brand":  "Simply Nature Organic",
+        "price":  3.99,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4e90021b-108d-4bca-9df7-667218974c61.jpg",
+        "aisle":  "Bread",
+        "description":  "Simply Nature Organic Rustic Italian Boule from Simply Nature. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_132",
+        "name":  "Bake House Creations Birthday Cake Cake Pops",
+        "brand":  "ALDI",
+        "price":  4.99,
+        "unit":  "5.4 oz",
+        "unitShort":  "5.4 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e13db2ac-65a1-4d22-bb26-157f5cd4adb3.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Bake House Creations Birthday Cake Cake Pops from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_133",
+        "name":  "Bake Shop Mini Iced Chocolate \u0026 Vanilla Donuts - 12 Count",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9f60d5e3-18ef-41d5-be35-71d589a15fb5.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Mini Iced Chocolate \u0026 Vanilla Donuts - 12 Count from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_134",
+        "name":  "Bake Shop Chocolate Chip \u0026 Double Chocolate Chewy Duo Cookies - 10 Count",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "12.5 oz",
+        "unitShort":  "12.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6f2a294-c00f-4246-8738-6329cb113639.jpg",
+        "aisle":  "Bread",
+        "description":  "Crisp, crunchy, and satisfying Bake Shop Chocolate Chip \u0026 Double Chocolate Chewy Duo Cookies - 10 Count from ALDI. Perfectly seasoned for movie nights, party platters, or quick snacking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_135",
+        "name":  "Specially Selected Garlic Mini Naan - 8 Count",
+        "brand":  "Specially Selected",
+        "price":  4.49,
+        "unit":  "12.7 oz",
+        "unitShort":  "12.7 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_203c27eb-03ee-456a-bedd-7b74c06e23ef.jpg",
+        "aisle":  "Bread",
+        "description":  "Specially Selected Garlic Mini Naan - 8 Count from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_136",
+        "name":  "Bake Shop Powdered Mini Donuts",
+        "brand":  "ALDI",
+        "price":  3.39,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_84c63e96-7bae-48aa-a5a5-ebca009203ab.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Powdered Mini Donuts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_137",
+        "name":  "La Banderita Extra Large Flour Tortillas - 8 Count",
+        "brand":  "ALDI",
+        "price":  3.38,
+        "unit":  "8 ct",
+        "unitShort":  "8 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d65f1ef2-7695-47a2-a6fa-927b613594ff.jpg",
+        "aisle":  "Hispanic",
+        "description":  "La Banderita Extra Large Flour Tortillas - 8 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_138",
+        "name":  "Simply Nature Organic Classic White Sourdough",
+        "brand":  "Simply Nature Organic",
+        "price":  4.49,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_59e26170-e742-461c-b49c-566cb4da735c.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft Simply Nature Organic Classic White Sourdough from Simply Nature. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_139",
+        "name":  "Specially Selected Asiago Cheese Ciabatta Rolls-  6 Count",
+        "brand":  "Specially Selected",
+        "price":  3.69,
+        "unit":  "18 oz",
+        "unitShort":  "18 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_226e4686-c81e-463b-b84a-ecc053e23972.jpg",
+        "aisle":  "Bread",
+        "description":  "Rich, creamy cheese from Specially Selected. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_140",
+        "name":  "Casa Mamita Soft Taco Dinner Kit - 10 Tortillas",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "17.8 oz",
+        "unitShort":  "17.8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_84432484-95b1-414c-ba4b-61edcb5c0fb2.jpg",
+        "aisle":  "Hispanic",
+        "description":  "Casa Mamita Soft Taco Dinner Kit - 10 Tortillas from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_141",
+        "name":  "Specially Selected All Butter Croissants - 6 Count",
+        "brand":  "Specially Selected",
+        "price":  3.49,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b169f9fd-f6b2-462d-9e68-67f4f0787762.jpg",
+        "aisle":  "Bread",
+        "description":  "Rich, creamy churned butter from Specially Selected. Brings rich flavor and velvety texture to baking, cooking, and spreading.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_142",
+        "name":  "L\u0027oven Fresh Maple French Toast Bagels - 6 Count",
+        "brand":  "L\u0027oven Fresh",
+        "price":  1.99,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c0ed4ef5-3279-40a2-ad41-3563af5a31f6.jpg",
+        "aisle":  "Bread",
+        "description":  "L\u0027oven Fresh Maple French Toast Bagels - 6 Count from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_143",
+        "name":  "Bake Shop Chocolate Hazelnut Filled Crepes",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "6.78 oz",
+        "unitShort":  "6.78 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2e2be62a-468c-4d40-b9c4-1b5954b28792.jpg",
+        "aisle":  "Bread",
+        "description":  "Indulgent, delicious Bake Shop Chocolate Hazelnut Filled Crepes from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_144",
+        "name":  "Aldi Choc Covered Pie Bites, Chocolate",
+        "brand":  "ALDI",
+        "price":  5.49,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_486f7afd-4d1a-464a-a8c2-62ec9c161cfb.jpg",
+        "aisle":  "Frozen Desserts",
+        "description":  "Indulgent, delicious Aldi Choc Covered Pie Bites, Chocolate from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_145",
+        "name":  "Bake Shop Halloween Sugar Cookie",
+        "brand":  "ALDI",
+        "price":  3.99,
+        "unit":  "11.8 oz",
+        "unitShort":  "11.8 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d031be39-e291-45c7-898a-4a1aa4185e25.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Indulgent, delicious Bake Shop Halloween Sugar Cookie from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_146",
+        "name":  "Bake Shop Harvest Frosted Sugar Cookies",
+        "brand":  "ALDI",
+        "price":  3.95,
+        "unit":  "13.5 oz",
+        "unitShort":  "13.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_36de96c6-e40f-4e62-8b33-829dd126b26c.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Indulgent, delicious Bake Shop Harvest Frosted Sugar Cookies from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_147",
+        "name":  "Baker\u0027s Treat Apple Cinnamon Mini Muffins - 5 Packs",
+        "brand":  "ALDI",
+        "price":  2.75,
+        "unit":  "8.25 oz",
+        "unitShort":  "8.25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7a6a2197-ba0a-47b2-b2cd-eb1d033290c1.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_148",
+        "name":  "Benton\u0027s Pumpkin Spice Mini Biscotti",
+        "brand":  "Benton\u0027s",
+        "price":  3.99,
+        "unit":  "7 oz",
+        "unitShort":  "7 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1950bb95-b3e6-4bde-9c54-41dcfd74347f.jpg",
+        "aisle":  "Biscuits",
+        "description":  "Benton\u0027s Pumpkin Spice Mini Biscotti from Benton\u0027s. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_149",
+        "name":  "Bake Shop Pumpkin Cookie Sandwiches",
+        "brand":  "ALDI",
+        "price":  4.99,
+        "unit":  "15.5 oz",
+        "unitShort":  "15.5 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_584f1c21-1f5a-43c2-8afe-c0097a96a419.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Indulgent, delicious Bake Shop Pumpkin Cookie Sandwiches from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_150",
+        "name":  "Baker\u0027s Treat Pumpkin Spice Mini Muffins - 5 Packs",
+        "brand":  "ALDI",
+        "price":  2.75,
+        "unit":  "8.25 oz",
+        "unitShort":  "8.25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b6ceea50-6038-48a0-ae53-f05496bf192f.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Baker\u0027s Treat Pumpkin Spice Mini Muffins - 5 Packs from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_151",
+        "name":  "Specially Selected Lemon Mascarpone Strudel",
+        "brand":  "Specially Selected",
+        "price":  4.29,
+        "unit":  "21.2 oz",
+        "unitShort":  "21.2 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8bdf410c-03b1-4cf2-b4b1-267b49a0b327.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Specially Selected Lemon Mascarpone Strudel from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_152",
+        "name":  "L\u0027oven Fresh Keto Friendly Bread, White",
+        "brand":  "L\u0027oven Fresh",
+        "price":  4.49,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2b014e21-aee5-41aa-9bd6-9228386a3c5c.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Keto Friendly Bread, White from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_153",
+        "name":  "L\u0027oven Fresh Keto Friendly White Bread",
+        "brand":  "L\u0027oven Fresh",
+        "price":  4.49,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f131fe97-c7b1-48c7-9303-43c0c9380a54.jpg",
+        "aisle":  "Bread",
+        "description":  "Freshly baked, soft L\u0027oven Fresh Keto Friendly White Bread from L\u0027oven Fresh. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_154",
+        "name":  "Specially Selected Assorted Baklava",
+        "brand":  "Specially Selected",
+        "price":  6.45,
+        "unit":  "14.1 oz",
+        "unitShort":  "14.1 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9a72165a-df6c-4c22-8611-69993de59813.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Specially Selected Assorted Baklava from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_155",
+        "name":  "Aldi Choc Covered Pie Bites, Caramel",
+        "brand":  "ALDI",
+        "price":  5.49,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1016c87b-9436-406c-9a07-f16926e50973.jpg",
+        "aisle":  "Frozen Desserts",
+        "description":  "Aldi Choc Covered Pie Bites, Caramel from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_156",
+        "name":  "Priano Cantuccini 300g, Almond",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "10.58 oz",
+        "unitShort":  "10.58 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ed3f7d46-296c-4be0-b068-602a3af1dcb3.jpg",
+        "aisle":  "Bakery Desserts",
+        "description":  "Priano Cantuccini 300g, Almond from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_157",
+        "name":  "Bake Shop Pumpkin Spice Cake Donuts",
+        "brand":  "ALDI",
+        "price":  3.29,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7acca8bf-78d6-427b-bff1-55a825536b61.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Bake Shop Pumpkin Spice Cake Donuts from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_158",
+        "name":  "Choceur Pumpkin Pie Caramel Clusters",
+        "brand":  "Choceur",
+        "price":  3.29,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_144741f0-33a1-4fe4-8f15-45c955595e01.jpg",
+        "aisle":  "Chocolates",
+        "description":  "Choceur Pumpkin Pie Caramel Clusters from Choceur. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_159",
+        "name":  "Sara Lee Sweet Moments Cobbler Cu, Apple Cinnamon",
+        "brand":  "ALDI",
+        "price":  4.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5a3553f6-0ac0-491c-9055-ec1032b3672e.jpg",
+        "aisle":  "Frozen Desserts",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_160",
+        "name":  "Sara Lee Sweet Moments Cobbler Cu, Slt Crml Peach",
+        "brand":  "ALDI",
+        "price":  4.49,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb971d65-8b8c-40e9-ad4d-c4fb87a94d94.jpg",
+        "aisle":  "Frozen Desserts",
+        "description":  "Indulgent, delicious Sara Lee Sweet Moments Cobbler Cu, Slt Crml Peach from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_161",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Cheesy Breadsticks",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  4.69,
+        "unit":  "18.75 oz",
+        "unitShort":  "18.75 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9511ace5-fd15-40c3-b646-cf55f6ec8da3.jpg",
+        "aisle":  "Chilled Prepared Food",
+        "description":  "Freshly baked, soft Mama Cozzi\u0027s Pizza Kitchen Cheesy Breadsticks from Mama Cozzi\u0027s. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_162",
+        "name":  "Mama Cozzi\u0027s Pizza Kitchen Chocolate Chunk Pizza Cookie",
+        "brand":  "Mama Cozzi\u0027s",
+        "price":  3.99,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_280489bd-0bc9-4fc5-9304-7b957e1598d6.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Indulgent, delicious Mama Cozzi\u0027s Pizza Kitchen Chocolate Chunk Pizza Cookie from Mama Cozzi\u0027s. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_163",
+        "name":  "EggLife Roasted Garlic \u0026 Herb Egg White Wrap",
+        "brand":  "ALDI",
+        "price":  5.19,
+        "unit":  "6 ct",
+        "unitShort":  "6 ct",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ae723bc4-a746-4bac-ab24-ea0a95d041b8.png",
+        "aisle":  "Cooler Mdu",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_164",
+        "name":  "Bake House Creations Chocolate Cake Pops",
+        "brand":  "ALDI",
+        "price":  4.99,
+        "unit":  "5.4 oz",
+        "unitShort":  "5.4 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4612aceb-fcad-4d21-bf56-7ac287ccb537.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Indulgent, delicious Bake House Creations Chocolate Cake Pops from ALDI. Crafted with sweet, rich flavor to satisfy your dessert cravings.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_165",
+        "name":  "Bake Shop Assorted Donut Holes",
+        "brand":  "ALDI",
+        "price":  2.59,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3022bead-17b8-44d4-b01a-e1691d6080f5.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop Assorted Donut Holes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_166",
+        "name":  "Bake Shop Halloween Mini Cupcakes",
+        "brand":  "ALDI",
+        "price":  3.89,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f8618bc5-9abf-478b-b2df-c5f9d3b24526.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Bake Shop Halloween Mini Cupcakes from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_167",
+        "name":  "Specially Selected Apple Mascarpone Strudel",
+        "brand":  "Specially Selected",
+        "price":  4.29,
+        "unit":  "21.2 oz",
+        "unitShort":  "21.2 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_2dadb5dd-5414-4979-9b08-6728134aa32c.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_168",
+        "name":  "Specially Selected Super Sourdough Half Loaf",
+        "brand":  "Specially Selected",
+        "price":  2.25,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c7250137-9e0c-4dc3-94e3-28ef3de29bf8.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Freshly baked, soft Specially Selected Super Sourdough Half Loaf from Specially Selected. Made with wholesome ingredients—perfect for everyday sandwiches, toast, or dinner pairings.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_169",
+        "name":  "L\u0027oven Fresh Carb Wise Flour Tortilla Wraps",
+        "brand":  "L\u0027oven Fresh",
+        "price":  3.39,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1d45f9e1-773c-49e4-9f58-b2e0d65fedda.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "L\u0027oven Fresh Carb Wise Flour Tortilla Wraps from L\u0027oven Fresh. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_170",
+        "name":  "Specially Selected Mini Cream Puffs",
+        "brand":  "Specially Selected",
+        "price":  4.69,
+        "unit":  "17.64 oz",
+        "unitShort":  "17.64 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cfb82796-6d67-4879-b5d2-e48f14e7bdae.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Specially Selected Mini Cream Puffs from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_171",
+        "name":  "Specially Selected Mini Eclairs",
+        "brand":  "Specially Selected",
+        "price":  4.69,
+        "unit":  "15.03 oz",
+        "unitShort":  "15.03 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9da4677c-d3af-4e62-825a-4a083af81d47.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Specially Selected Mini Eclairs from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_172",
+        "name":  "Bake Shop Cinnamon Danish",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_57ebcc30-d175-4702-8ba9-d81e89f7ab0d.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Bake Shop Cinnamon Danish from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_173",
+        "name":  "Bake Shop Pumpkin Danish",
+        "brand":  "ALDI",
+        "price":  3.69,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_da3189a5-604c-44fa-aebb-17503b33f619.jpg",
+        "aisle":  "Bakery \u0026 Cakes",
+        "description":  "Bake Shop Pumpkin Danish from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_174",
+        "name":  "Aldi Tiramisu Dessert Bar - 2 Count",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "7.6 oz",
+        "unitShort":  "7.6 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3c4dc4a2-2ddb-4ec6-aec9-e358458d4072.jpg",
+        "aisle":  "Ice Cream \u0026 Desserts",
+        "description":  "Aldi Tiramisu Dessert Bar - 2 Count from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_175",
+        "name":  "Bake Shop 7 Up Lemon Lime Cake",
+        "brand":  "ALDI",
+        "price":  0,
+        "unit":  "20 oz",
+        "unitShort":  "20 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_5f61aa83-4076-4666-b11e-ea3bea832078.jpg",
+        "aisle":  "Bread",
+        "description":  "Bake Shop 7 Up Lemon Lime Cake from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_bakery_bread_176",
+        "name":  "Park Street Deli Pretzel Bites Cheese Dip",
+        "brand":  "Park Street Deli",
+        "price":  0,
+        "unit":  "9.25 oz",
+        "unitShort":  "9.25 oz",
+        "storeId":  "aldi",
+        "category":  "Bakery \u0026 Bread",
+        "subCategory":  "Bakery \u0026 Bread",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ed813e07-675d-447d-a46e-b8caab748ad2.jpg",
+        "aisle":  "Chilled Accompaniments",
+        "description":  "Rich, creamy cheese from Park Street Deli. Smooth, melty, and delicious—ideal for sandwiches, pizzas, tacos, or snacking.",
+        "tags":  [
+
+                 ]
+    }
+]

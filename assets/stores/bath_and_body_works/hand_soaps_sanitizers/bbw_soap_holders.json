@@ -1,0 +1,54 @@
+[
+  {
+    "id": "bbw_028033149",
+    "name": "Light-Up Festive Dog Soap Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Soap Holders & Dispensers",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 5.0,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1213258f/hires/028033149.jpg?sw=600&q=60&format=auto",
+    "description": "Decorative soap holder sleeve designed to fit standard Bath & Body Works foaming and gel hand soap bottles.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "soap_holders_&_dispensers",
+      "light-up festive dog"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ]
+  },
+  {
+    "id": "bbw_028033147",
+    "name": "Light-Up Holiday Village Soap Holder",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Soap Holders & Dispensers",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.5,
+    "unit": "1 ct",
+    "unitShort": "1 ct",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw33c49ba5/hires/028033147.jpg?sw=600&q=60&format=auto",
+    "description": "Decorative soap holder sleeve designed to fit standard Bath & Body Works foaming and gel hand soap bottles.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "soap_holders_&_dispensers",
+      "light-up holiday village"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ]
+  }
+]

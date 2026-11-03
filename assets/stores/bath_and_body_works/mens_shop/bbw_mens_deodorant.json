@@ -1,0 +1,125 @@
+[
+  {
+    "id": "bbw_028013156",
+    "name": "Ocean Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Deodorant",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.8,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw408edb23/hires/028013156.jpg?sw=600&q=60&format=auto",
+    "description": "Antiperspirant Deodorant stick provides 24-hour sweat and odor protection to keep you feeling dry, fresh, and confident.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "deodorant",
+      "ocean"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Wood",
+      "topNotes": [
+        "Blue Cypress",
+        "Fresh Vetiver"
+      ],
+      "heartNotes": [
+        "Coastal Air",
+        "Salty Waves"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Oakmoss"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013160",
+    "name": "Noir Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Deodorant",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.7,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90918a8a/hires/028013160.jpg?sw=600&q=60&format=auto",
+    "description": "Antiperspirant Deodorant stick provides 24-hour sweat and odor protection to keep you feeling dry, fresh, and confident.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "deodorant",
+      "noir"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bold Amber & Vanilla",
+      "topNotes": [
+        "Black Cardamom",
+        "Smoky Vanilla"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Rich Amber"
+      ],
+      "baseNotes": [
+        "Dark Musk",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028013159",
+    "name": "Graphite Antiperspirant Deodorant",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Men's Shop",
+    "subCategory": "Deodorant",
+    "price": 12.95,
+    "msrp": 12.95,
+    "rating": 4.7,
+    "unit": "2.7 oz / 76 g",
+    "unitShort": "2.7 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc891b46e/hires/028013159.jpg?sw=600&q=60&format=auto",
+    "description": "Antiperspirant Deodorant stick provides 24-hour sweat and odor protection to keep you feeling dry, fresh, and confident.",
+    "tags": [
+      "bath_and_body_works",
+      "mens_shop",
+      "deodorant",
+      "graphite"
+    ],
+    "cleanStandards": [
+      "Formulated For Men",
+      "Natural Essential Oils",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Woody Citrus",
+      "topNotes": [
+        "Sage Leaf",
+        "Crisp Bergamot"
+      ],
+      "heartNotes": [
+        "Leather Spice",
+        "Fresh Cedar"
+      ],
+      "baseNotes": [
+        "Dark Woods",
+        "Musk"
+      ]
+    }
+  }
+]

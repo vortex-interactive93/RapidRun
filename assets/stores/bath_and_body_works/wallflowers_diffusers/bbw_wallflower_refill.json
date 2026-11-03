@@ -1,0 +1,1888 @@
+[
+  {
+    "id": "bbw_028008664",
+    "name": "Laundry Day Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw236a5863/hires/028008664.jpg?sw=600&q=60&format=auto",
+    "description": "Continuous, effortless room-filling scent of fresh laundry drying in crisp air. Formulated with natural essential oils for up to 30 days of fragrance.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "laundry day"
+    ],
+    "fragranceProfile": {
+      "family": "Crisp Clean Linen",
+      "topNotes": [
+        "Fresh Wash",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Eucalyptus Leaf",
+        "Soft Lavender"
+      ],
+      "baseNotes": [
+        "Clean Musk",
+        "White Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008675",
+    "name": "Champagne Toast Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2fabe571/hires/028008675.jpg?sw=600&q=60&format=auto",
+    "description": "A festive, bubbly celebration. Continuous room-filling scent of vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "champagne toast"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007123",
+    "name": "Sweater Weather Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwffa3ff31/hires/028007123_alt_2.jpg?sw=600&q=60&format=auto",
+    "description": "A fresh, crisp autumn walk in the woods. Scented with fresh sage, crisp eucalyptus, and autumn apple.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sweater weather"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Crisp Autumn",
+      "topNotes": [
+        "Fresh Sage",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Autumn Apple",
+        "Juniper Berry"
+      ],
+      "baseNotes": [
+        "Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013285",
+    "name": "Clean House Vibes Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf8714821/hires/028013285.jpg?sw=600&q=60&format=auto",
+    "description": "The uplifting feeling of a freshly cleaned home. Made with crisp air, eucalyptus, and clean cotton.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "clean house vibes"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Fresh Linen",
+      "topNotes": [
+        "Crisp Fresh Air",
+        "Eucalyptus Leaf"
+      ],
+      "heartNotes": [
+        "Clean Cotton",
+        "White Lily"
+      ],
+      "baseNotes": [
+        "Soft Musk",
+        "Sheer Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008680",
+    "name": "Champagne Apple & Honey Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw258521fc/hires/028008680.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp, sweet, autumn orchard celebration. Scented with pink lady apple, sparkling champagne and jasmine honey.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "champagne apple & honey"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Autumn Apple",
+      "topNotes": [
+        "Pink Lady Apple",
+        "Sparkling Champagne"
+      ],
+      "heartNotes": [
+        "Jasmine Honey",
+        "Autumn Woods"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007703",
+    "name": "Fresh Balsam Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc087aaa3/hires/028007703.jpg?sw=600&q=60&format=auto",
+    "description": "The fresh, invigorating scent of a evergreen forest. Made with woodland balsam, crisp eucalyptus and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "fresh balsam"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Forest",
+      "topNotes": [
+        "Woodland Balsam",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Fir Branches",
+        "Pine Needles"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Earthy Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028032005",
+    "name": "Ray Of Sunshine Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5740cf1b/hires/028032005.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, radiant splash of sunshine. Scented with sunlit lemon, solar blossom and golden amber.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "ray of sunshine"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Solar Citrus",
+      "topNotes": [
+        "Sunlit Lemon",
+        "Golden Amber"
+      ],
+      "heartNotes": [
+        "Solar Blossom",
+        "Coconut Water"
+      ],
+      "baseNotes": [
+        "Soft Driftwood",
+        "Warm Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034451",
+    "name": "'Tis the Season Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe2402f2d/hires/028034451.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of 'Tis the Season Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "'tis the season"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028016436",
+    "name": "Poolside Cabana Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5b9b54b0/hires/028016436.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Poolside Cabana Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "poolside cabana"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028030696",
+    "name": "Vampire Blood Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw370c1f60/hires/028030696.jpg?sw=600&q=60&format=auto",
+    "description": "An eerie, sweet, fruity indulgence. Scented with red berries, night-blooming jasmine and plum.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "vampire blood"
+    ],
+    "fragranceProfile": {
+      "family": "Dark Fruity Berry",
+      "topNotes": [
+        "Red Berries",
+        "Blood Orange"
+      ],
+      "heartNotes": [
+        "Night-Blooming Jasmine",
+        "Midnight Plum"
+      ],
+      "baseNotes": [
+        "Rich Plum Wood",
+        "Dark Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028032604",
+    "name": "Fancy Apple Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83772be5/hires/028032604.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp, juicy, orchard-fresh apple delight. Scented with honeycrisp apple and sparkling cider.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "fancy apple"
+    ],
+    "fragranceProfile": {
+      "family": "Crisp Orchard Apple",
+      "topNotes": [
+        "Honeycrisp Apple",
+        "Sparkling Cider"
+      ],
+      "heartNotes": [
+        "Red Pear",
+        "Autumn Blossom"
+      ],
+      "baseNotes": [
+        "Sheer Woods",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007956",
+    "name": "Pumpkin Pecan Waffles Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw451a7499/hires/028007956.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sweet, maple-drenched morning waffle breakfast. Made with maple syrup, golden waffles, and pumpkin spice.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "pumpkin pecan waffles"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Gourmand",
+      "topNotes": [
+        "Maple Syrup",
+        "Golden Waffles"
+      ],
+      "heartNotes": [
+        "Pumpkin Spice",
+        "Toasted Pecans"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013292",
+    "name": "Apple Cinnamon Spice Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3c421580/hires/028013292.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Apple Cinnamon Spice Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "apple cinnamon spice"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013866",
+    "name": "Whipped Honey & Vanilla Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw582758d3/hires/028013866.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Whipped Honey & Vanilla Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "whipped honey & vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028028738",
+    "name": "Pink Citrus Spritz Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfc211f33/hires/028028738.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Pink Citrus Spritz Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "pink citrus spritz"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008671",
+    "name": "White Tea & Sage Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7886b642/hires/028008671.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of White Tea & Sage Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "white tea & sage"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008739",
+    "name": "Frosted Cranberry Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4b02eceb/hires/028008739.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Frosted Cranberry Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "frosted cranberry"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007128",
+    "name": "Sweet Cinnamon Pumpkin Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc4edb8a2/hires/028007128.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Sweet Cinnamon Pumpkin Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sweet cinnamon pumpkin"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028033339",
+    "name": "Cuddled Up & Cozy Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe773e9ba/hires/028033339.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Cuddled Up & Cozy Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "cuddled up & cozy"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008669",
+    "name": "Japanese Cherry Blossom Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw37ed04b1/hires/028008669.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, graceful blend of Japanese cherry blossom, Asian pear, fresh mimosa petals, white jasmine and blushing sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "japanese cherry blossom"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Floral",
+      "topNotes": [
+        "Asian Pear",
+        "Fuji Apple"
+      ],
+      "heartNotes": [
+        "Japanese Cherry Blossom",
+        "Mimosa Petals"
+      ],
+      "baseNotes": [
+        "Vanilla Rice",
+        "Blushing Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007959",
+    "name": "In the Stars Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7e129e84/hires/028007959.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of In the Stars Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "in the stars"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013283",
+    "name": "Eucalyptus Rain Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw17ae7f6c/hires/028013283.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Eucalyptus Rain Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "eucalyptus rain"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007960",
+    "name": "Lavender Vanilla Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb93cec75/hires/028007960.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Lavender Vanilla Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "lavender vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034450",
+    "name": "Sugared Snickerdoodle Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw09e53e9e/hires/028034450.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Sugared Snickerdoodle Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sugared snickerdoodle"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028017672",
+    "name": "Flannel Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw231e9da7/hires/028017672.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Flannel Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "flannel"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007962",
+    "name": "Mahogany Vanilla Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb9e0c651/hires/028007962.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Mahogany Vanilla Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "mahogany vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013296",
+    "name": "Coffee & Whiskey Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw15b622e0/hires/028013296.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Coffee & Whiskey Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "coffee & whiskey"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013287",
+    "name": "Raspberries & Whipped Vanilla Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0dc3b39c/hires/028013287.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Raspberries & Whipped Vanilla Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "raspberries & whipped vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034452",
+    "name": "Winter Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw264d74a6/hires/028034452.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Winter Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "winter"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028017586",
+    "name": "Eucalyptus Spearmint Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf89d1758/hires/028017586.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, stress-relieving herbal sanctuary. Made with natural eucalyptus and spearmint essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "eucalyptus spearmint"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028007964",
+    "name": "Book Loft Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1e204b10/hires/028007964.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Book Loft Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "book loft"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028022026",
+    "name": "Harvest Gathering Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7eec99f7/hires/028022026.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Harvest Gathering Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "harvest gathering"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028013294",
+    "name": "Mahogany Coconut Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwed595cb7/hires/028013294.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Mahogany Coconut Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "mahogany coconut"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034449",
+    "name": "Spiced Apple Toddy Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw581e6091/hires/028034449.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Spiced Apple Toddy Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "spiced apple toddy"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028037008",
+    "name": "Pistachio Milk & Honey Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd034e6ec/hires/028037008.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Pistachio Milk & Honey Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "pistachio milk & honey"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034447",
+    "name": "Merry Berry Martini Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfe921b15/hires/028034447.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Merry Berry Martini Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "merry berry martini"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028036730",
+    "name": "Cranberry & Eucalyptus Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.5,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5cb44a25/hires/028036730.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Cranberry & Eucalyptus Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "cranberry & eucalyptus"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008676",
+    "name": "Limoncello Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw42b43070/hires/028008676.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Limoncello Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "limoncello"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028008665",
+    "name": "Sun Drenched Linen Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw761ea6cd/hires/028008665.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Sun Drenched Linen Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sun drenched linen"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028025332",
+    "name": "Lullaby Linen Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0ea05005/hires/028025332.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Lullaby Linen Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "lullaby linen"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028026906",
+    "name": "Nana's Clothesline Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5b178339/hires/028026906.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Nana's Clothesline Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "nana's clothesline"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028034453",
+    "name": "Chilled Lemon Frost Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.4,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1e62d568/hires/028034453.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Chilled Lemon Frost Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "chilled lemon frost"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028032602",
+    "name": "Milk & Musk Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw57a20762/hires/028032602.jpg?sw=600&q=60&format=auto",
+    "description": "Effortless, continuous room-filling fragrance for up to 30 days. Made with natural essential oils. Scented with notes of Milk & Musk Wallflowers Fragrance Refill.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "milk & musk"
+    ],
+    "fragranceProfile": {
+      "family": "Continuous Room Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028033775",
+    "name": "Sea Salt + Musk Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw335ca982/hires/028033775.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp, breezy, coastal ocean escape. Made with sea salt waters, solar musk and white sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sea salt + musk"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Aquatic Musk",
+      "topNotes": [
+        "Sea Salt Waters",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Solar Musk",
+        "Coastal Water Lily"
+      ],
+      "baseNotes": [
+        "White Sandalwood",
+        "Soft Driftwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028033777",
+    "name": "Vanilla + Tonka Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.3,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw34947e11/hires/028033777.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, velvety vanilla dream. Made with vanilla bean, creamy tonka bean and warm amber.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "vanilla + tonka"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Gourmand",
+      "topNotes": [
+        "Vanilla Bean",
+        "Creamy Tonka"
+      ],
+      "heartNotes": [
+        "Orchid Petals",
+        "Warm Buttercream"
+      ],
+      "baseNotes": [
+        "Golden Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  },
+  {
+    "id": "bbw_028033776",
+    "name": "Sweet Orange + Agave Wallflowers Fragrance Refill",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Wallflowers & Diffusers",
+    "subCategory": "Wallflowers Fragrance Refills",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "0.8 fl oz / 24 mL",
+    "unitShort": "0.8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw584818ed/hires/028033776.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, sunlit citrus splash. Made with sweet orange, agave nectar and mandarin zest.",
+    "tags": [
+      "bath_and_body_works",
+      "wallflowers_diffusers",
+      "wallflowers_refill",
+      "sweet orange + agave"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Sweet Orange",
+        "Agave Nectar"
+      ],
+      "heartNotes": [
+        "Mandarin Zest",
+        "Lime Leaf"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Up to 30 Days Continuous Scent",
+      "Safety Tested Plug-In Bulb"
+    ]
+  }
+]

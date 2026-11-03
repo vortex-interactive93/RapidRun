@@ -1,0 +1,110 @@
+[
+  {
+    "categoryName": "Body Care",
+    "iconCodePoint": 57779,
+    "sections": [
+      {
+        "sectionName": "Body Sprays & Mists",
+        "productFile": "assets/stores/bath_and_body_works/body_care/fragrance/bbw_body_sprays_mists.json"
+      },
+      {
+        "sectionName": "Perfume & Cologne",
+        "productFile": "assets/stores/bath_and_body_works/body_care/fragrance/bbw_perfume_cologne.json"
+      },
+      {
+        "sectionName": "Body Creams & Butters",
+        "productFile": "assets/stores/bath_and_body_works/body_care/moisturizers/bbw_body_cream_butter.json"
+      },
+      {
+        "sectionName": "Body Lotion",
+        "productFile": "assets/stores/bath_and_body_works/body_care/moisturizers/bbw_body_lotion.json"
+      },
+      {
+        "sectionName": "Body Wash",
+        "productFile": "assets/stores/bath_and_body_works/body_care/bath_shower/bbw_body_wash.json"
+      },
+      {
+        "sectionName": "Hair Care",
+        "productFile": "assets/stores/bath_and_body_works/body_care/bath_shower/bbw_hair_care.json"
+      },
+      {
+        "sectionName": "Body Scrub",
+        "productFile": "assets/stores/bath_and_body_works/body_care/bath_shower/bbw_body_scrub.json"
+      },
+      {
+        "sectionName": "Lip Care",
+        "productFile": "assets/stores/bath_and_body_works/body_care/skin_care/bbw_lip_care.json"
+      },
+      {
+        "sectionName": "Sun Care",
+        "productFile": "assets/stores/bath_and_body_works/body_care/skin_care/bbw_sun_care.json"
+      },
+      {
+        "sectionName": "Face Care",
+        "productFile": "assets/stores/bath_and_body_works/body_care/skin_care/bbw_face_care.json"
+      }
+    ]
+  },
+  {
+    "categoryName": "Candles",
+    "iconCodePoint": 58310,
+    "sections": [
+      {
+        "sectionName": "3-Wick Candles",
+        "productFile": "assets/stores/bath_and_body_works/candles/bbw_3_wick_candles.json"
+      },
+      {
+        "sectionName": "Single Wick Candles",
+        "productFile": "assets/stores/bath_and_body_works/candles/bbw_single_wick_candles.json"
+      },
+      {
+        "sectionName": "Candle Holders & Accessories",
+        "productFile": "assets/stores/bath_and_body_works/candles/bbw_candle_accessories.json"
+      }
+    ]
+  },
+  {
+    "categoryName": "Wallflowers & Diffusers",
+    "iconCodePoint": 58311,
+    "sections": [
+      {
+        "sectionName": "Wallflower Fragrance Refills",
+        "productFile": "assets/stores/bath_and_body_works/wallflowers_diffusers/bbw_wallflower_refill.json"
+      },
+      {
+        "sectionName": "Wallflower Plugs",
+        "productFile": "assets/stores/bath_and_body_works/wallflowers_diffusers/bbw_wallflower_plugs.json"
+        
+      }
+    ]
+  },
+  {
+    "categoryName": "Diffusers & Room Sprays",
+    "iconCodePoint": 58312,
+    "sections": [
+      {
+        "sectionName": "Room Sprays & Mists",
+        "productFile": "assets/stores/bath_and_body_works/wallflowers_diffusers/bbw_room_sprays_mists.json"
+      },
+      {
+        "sectionName": "Car Fragrance",
+        "productFile": "assets/stores/bath_and_body_works/wallflowers_diffusers/bbw_car_fragrance.json"
+      }
+    ]
+  },
+  {
+    "categoryName": "Laundry Care",
+    "iconCodePoint": 58311,
+    "sections": [
+      {
+        "sectionName": "Laundry Detergent",
+        "productFile": "assets/stores/bath_and_body_works/laundry/bbw_laundry_detergent.json"
+      },
+      {
+        "sectionName": "Fragrance Boosters",
+        "productFile": "assets/stores/bath_and_body_works/laundry/bbw_laundry__fragrance_boosters.json"
+
+      }
+    ]
+  }
+]

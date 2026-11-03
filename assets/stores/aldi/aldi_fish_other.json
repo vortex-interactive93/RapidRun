@@ -1,0 +1,168 @@
+﻿[
+    {
+        "id":  "aldi_fresh_seafood_003",
+        "name":  "Steelhead Trout",
+        "brand":  "Steelhead Trout",
+        "price":  10.49,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c604e332-8456-4682-bcc9-1896e345d591/Steelhead%20%20%20Trout",
+        "description":  "Steelhead Trout from Steelhead Trout. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish"
+    },
+    {
+        "id":  "aldi_meat_124",
+        "name":  "Fresh Never Frozen Steelhead Trout Portion",
+        "brand":  "ALDI",
+        "price":  10.5,
+        "unit":  "$10.49 / lb (About 1.0 lb / package)",
+        "unitShort":  "$10.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a805e21b-d825-4c69-a2c6-a05398c3cc60.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Fresh Never Frozen Steelhead Trout Portion, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_21",
+        "name":  "Fremont Fish Market Beer Battered Fish Fillets",
+        "brand":  "ALDI",
+        "price":  5.99,
+        "unit":  "18.2 oz",
+        "unitShort":  "18.2 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e949defa-7724-4d64-b92e-41756d941456.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_24",
+        "name":  "Boudreaux\u0027s Crawfish Tail Meat",
+        "brand":  "ALDI",
+        "price":  7.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6306ea5f-7698-4cbb-afbc-609e9d9774e2.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_40",
+        "name":  "Fremont Fish Market Beer Battered Cod Fillets",
+        "brand":  "ALDI",
+        "price":  4.79,
+        "unit":  "13.1 oz",
+        "unitShort":  "13.1 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_068b904a-6e03-44d0-8966-8c94bffbd477.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_69",
+        "name":  "Fremont Fish Market Crunchy Fish Fillets",
+        "brand":  "ALDI",
+        "price":  5.25,
+        "unit":  "19 oz",
+        "unitShort":  "19 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9fc87f75-6761-42de-a794-f802fa029d8f.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_103",
+        "name":  "Fremont Fish Market Wild Caught Breaded Fish Sticks",
+        "brand":  "ALDI",
+        "price":  5.25,
+        "unit":  "24 oz",
+        "unitShort":  "24 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_0f67f4d2-be91-43eb-b751-d510d02f3ab1.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_104",
+        "name":  "Fremont Fish Market Wild Caught Alaskan Cod",
+        "brand":  "ALDI",
+        "price":  18.99,
+        "unit":  "32 oz",
+        "unitShort":  "32 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8e206e6e-0a11-4976-99e7-15bcc0fd8ed9.jpg",
+        "aisle":  "Frozen Meat \u0026 Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_112",
+        "name":  "Fremont Fish Market Wild Caught Flounder",
+        "brand":  "ALDI",
+        "price":  7.15,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d740d533-bb13-46d9-940c-12e0b450d084.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_129",
+        "name":  "Fremont Fish Market Seafood Mix",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Other Fish",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c428033e-dd55-4b8c-9f41-43da0ef4fcd5.jpg",
+        "aisle":  "Frozen Meat \u0026 Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    }
+]

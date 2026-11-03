@@ -1,0 +1,307 @@
+﻿[
+    {
+        "id":  "aldi_meat_13",
+        "name":  "Smithfield Smithfield Pork Butt Roast",
+        "brand":  "ALDI",
+        "price":  1.39,
+        "unit":  "per lb",
+        "unitShort":  "per lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9402e7a5-967b-4a02-88a9-d580df2b4695.jpg",
+        "aisle":  "ALDI Finds (Limited Time)",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_19",
+        "name":  "Boneless Half Butt Pork Roast",
+        "brand":  "ALDI",
+        "price":  13.46,
+        "unit":  "$2.99 / lb (About 4.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6b332f00-824f-4fed-a370-3bcd13398a1e.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_23",
+        "name":  "Never Any! Chicken Breast Tenderloins",
+        "brand":  "Never Any!",
+        "price":  4.99,
+        "unit":  "$4.99 / lb (About 1.0 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c5907d7b-3f28-45e7-b486-94ec899a08dc.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Never Any!. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+                     "Antibiotic-Free"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_29",
+        "name":  "Carnitas Seasoned Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  5.98,
+        "unit":  "$2.39 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_541f6742-acfb-4c54-a0b6-8ed97ded5b40.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_34",
+        "name":  "Roseland USDA Premium Boneless Teriyaki Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d35a6322-82b0-4383-8660-381bc3987cd2.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_37",
+        "name":  "Premium Bone-In Butt Pork Shoulder Steak",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "$2.99 / lb (About 2.73 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f64b1c07-d84a-4a7d-afa5-8d93d6cb10fb.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_85",
+        "name":  "Kirkwood Boneless Skinless Chicken Breast Tenderloins",
+        "brand":  "Kirkwood",
+        "price":  7.18,
+        "unit":  "$3.99 / lb (About 1.8 lb / package)",
+        "unitShort":  "$3.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7aec88ce-3f71-4e56-a42d-5688bde39c59.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Grade-A tender fresh chicken from Kirkwood. High in protein, low in fat, and highly versatile—perfect for grilling, baking, pan-searing, or meal prepping for the week.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_93",
+        "name":  "Premium Boneless Pork Tenderloins - 2 Pack",
+        "brand":  "ALDI",
+        "price":  3.49,
+        "unit":  "$3.49 / lb (About 2.64 lb / package)",
+        "unitShort":  "$3.49 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9dca02c2-90ec-4b82-80e4-407ed21e104b.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_106",
+        "name":  "Peppercorn Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1dea022e-931f-4d1d-ba31-d8d7e56c3677.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_108",
+        "name":  "BBQ Flavored Boneless Pork Shoulder Roast",
+        "brand":  "ALDI",
+        "price":  4.78,
+        "unit":  "$2.39 / lb (About 2.0 lb each)",
+        "unitShort":  "$2.39 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7689445b-2955-493d-9a2e-a05310c063d0.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_117",
+        "name":  "Italian Pork Tenderloin",
+        "brand":  "ALDI",
+        "price":  4.74,
+        "unit":  "$3.79 / lb (About 1.25 lb / package)",
+        "unitShort":  "$3.79 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e500b7aa-5087-4bd9-a337-9b5b5a7e80ab.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_162",
+        "name":  "Seasoned Pork Loin Roast, Rosemary",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_be537030-b2c0-4ab0-8050-e2b26735b4d0.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_164",
+        "name":  "Seasoned Pork Loin Roast, Garlic Pepper",
+        "brand":  "ALDI",
+        "price":  7.48,
+        "unit":  "$2.99 / lb (About 2.5 lb / package)",
+        "unitShort":  "$2.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_93979ec3-2d8f-4aa1-9c56-a01dcb9df9eb.jpg",
+        "aisle":  "Fresh Pork",
+        "description":  "Flavorful, tender pork from ALDI. Perfectly seasoned and cut for roasting, grilling, or crisping up for breakfast.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_008",
+        "name":  "Premium Bone-In Pork Shoulder Steak",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/b6b5934d-99cf-4b44-ad17-fcb206831fe3/Premium%20BoneIn%20Pork%20Shoulder%20Steak",
+        "description":  "Description coming soon!",
+        "benefits":  null,
+        "price":  9.8,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_009",
+        "name":  "BBQ Seasoned Boneless Pork Shoulder Roast",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/ed63f9ae-d5fc-4de9-96fa-c68f89f3b7b7/BBQ%20%20Seasoned%20%20Boneless%20Pork%20Shoulder%20Roast",
+        "description":  "No backyard barbecue is complete without this BBQ Seasoned Boneless Pork Shoulder Roast from ALDI! The fresh, never frozen pork has been applewood smoked and rubbed with a bold seasoning blend to add a hint of smoky flavor to every bite. Toss yours on the grill with your favorite veggies for a hearty and filling dinner!",
+        "benefits":  null,
+        "price":  5.98,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_012",
+        "name":  "Teriyaki Marinated Pork Tenderloin",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/152e2272-596e-43db-af68-b087b6cd4704/Teriyaki%20Marinated%20Pork%20Tenderloin",
+        "description":  "Get ready for a burst of flavor with this Roseland Teriyaki Marinated Pork Tenderloin! The fresh, never frozen pork has been marinated in a bold teriyaki sauce for a delicious bite every time. Pair yours with steamed veggies and fluffy rice for the perfect dinner!",
+        "benefits":  null,
+        "price":  4.74,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_013",
+        "name":  "Peppercorn Marinated Pork Tenderloin",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/0513ae47-3afa-4522-bb12-976cda0d67b4/Peppercorn%20Marinated%20Pork%20Tenderloin",
+        "description":  "Take the guesswork out of tonight\u0027s dinner with this Roseland Peppercorn Marinated Pork Tenderloin. The fresh, never frozen pork tenderloin is tender, meaty, and marinated with whole peppercorns for a kick of heat in every bite. Toss yours on the grill or roast it in your oven for a hearty and filling meal!",
+        "benefits":  null,
+        "price":  4.74,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_016",
+        "name":  "Premium Boneless Half Loin Pork Roast",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/0d193404-f90b-4135-a7aa-e6c0da9fb4c1/Premium%20%20Boneless%20%20Half%20Loin%20Pork%20Roast",
+        "description":  "This juicy and tender Boneless Half Pork Loin from ALDI is the perfect main course for a delicious family dinner at home. The fresh, never frozen pork is USDA-inspected and has been hand-trimmed for maximum flavor. Roast it in the oven with your favorite veggies for a hearty, comforting meal everyone will love.",
+        "benefits":  null,
+        "price":  6.8,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_020",
+        "name":  "Italian Marinated Pork Tenderloin",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/3b1b0d49-d3b0-4222-afc4-9f27a40c8a0a/Italian%20Marinated%20Pork%20Tenderloin",
+        "description":  "Make tonight\u0027s dinner a breeze with this Roseland Italian Marinated Pork Tenderloin! The fresh, never frozen pork is rubbed with a classic Italian spice mix for a rich, flavorful bite every time. Pair yours with creamy pasta and a warm roll for a hearty and tasty meal!",
+        "benefits":  null,
+        "price":  4.74,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    },
+    {
+        "id":  "aldi_meat_\u0026_seafood_022",
+        "name":  "Premium Boneless Pork Tenderloins",
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/232/3c14259f-e4c0-4ce8-abd9-d3e2c0a8c160/Premium%20%20Boneless%20Pork%20Tenderloins%202%20pack",
+        "description":  "Shop for fresh Boneless Pork Tenderloin from ALDI. Our two-pack pork tenderloin are fresh and full of flavor. Enjoy with your favorite seasonings or try dipping in honey or garlic sauce. Serve with your favorite side dish for a well-rounded and delicious meal. However you choose to prepare, you won\u0027t be disappointed. Discover our large selection of quality meats at affordable prices when you shop at an ALDI near you.",
+        "benefits":  null,
+        "price":  8.95,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Pork Roasts"
+    }
+]

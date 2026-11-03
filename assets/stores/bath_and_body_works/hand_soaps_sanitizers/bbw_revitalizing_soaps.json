@@ -1,0 +1,330 @@
+[
+  {
+    "id": "bbw_028029902",
+    "name": "Champagne Toast Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw783c370a/hires/028029902.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "champagne toast"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028615",
+    "name": "Mahogany Teakwood Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa59a0cde/hires/028028615.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "mahogany teakwood"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028612",
+    "name": "Brown Sugar & Coconut Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbb75505c/hires/028028612.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "brown sugar & coconut"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028616",
+    "name": "Sea Salt Crush Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.6,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf7d66bc0/hires/028028616.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "sea salt crush"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028611",
+    "name": "Sun-Washed Citrus Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8a74d46e/hires/028028611.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "sun-washed citrus"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029690",
+    "name": "Apricot Glow Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.8,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwae763853/hires/028029690.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "apricot glow"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028028614",
+    "name": "Eucalyptus & Bergamot Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.7,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3026d50a/hires/028028614.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "eucalyptus & bergamot"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028029691",
+    "name": "Triple-Berry Burst Revitalizing Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Revitalizing Hand Soaps",
+    "price": 8.95,
+    "msrp": 8.95,
+    "rating": 4.6,
+    "unit": "8.75 fl oz / 258 mL",
+    "unitShort": "8.75 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfa3ae178/hires/028029691.jpg?sw=600&q=60&format=auto",
+    "description": "Revitalizing Hand Soap with gentle exfoliating micro-beads and essential oils to leave hands smooth and renewed.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "revitalizing_hand_soaps",
+      "triple-berry burst"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  }
+]

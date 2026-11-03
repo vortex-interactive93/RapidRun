@@ -1,0 +1,30 @@
+{
+  "knownBrands": [
+    "Bath & Body Works",
+    "Great Value",
+    "Equate",
+    "Market Pantry",
+    "Simply Nature"
+  ],
+  "genericStopWords": [
+    "value",
+    "pack",
+    "multi"
+  ],
+  "keywordCategoryMap": {
+    "candle": {"category": "Home Fragrance", "subCategory": "Candles"},
+    "lotion": {"category": "Personal Care", "subCategory": "Body Lotion"},
+    "wash": {"category": "Personal Care", "subCategory": "Body Wash"},
+    "shampoo": {"category": "Personal Care", "subCategory": "Hair Care"},
+    "coffee": {"category": "Beverages", "subCategory": "Coffee"},
+    "cereal": {"category": "Breakfast & Cereals", "subCategory": "Cereal"},
+    "granola": {"category": "Breakfast & Cereals", "subCategory": "Granola"},
+    "soda": {"category": "Beverages", "subCategory": "Soda"},
+    "detergent": {"category": "Household", "subCategory": "Laundry Detergent"},
+    "toothpaste": {"category": "Personal Care", "subCategory": "Oral Care"},
+    "chips": {"category": "Snacks", "subCategory": "Chips"},
+    "cracker": {"category": "Snacks", "subCategory": "Crackers"},
+    "popcorn": {"category": "Snacks", "subCategory": "Popcorn"},
+    "yogurt": {"category": "Dairy & Eggs", "subCategory": "Yogurt"}
+  }
+}

@@ -1,0 +1,14 @@
+<svg width="860" height="200" viewBox="0 0 860 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFC94D"/><stop offset="1" stop-color="#E6A52F"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0,10) scale(0.35)">
+    <path d="M120 180h210c22 0 40 18 40 40H160c-13 0-24 11-24 24s11 24 24 24h190c0 22-18 40-40 40H140c-33 0-60-27-60-60 0-39 31-68 40-68z" fill="url(#gold)"/>
+    <path d="M140 140h170c31 0 56 25 56 56H176c-18 0-32 14-32 32s14 32 32 32h180c0 31-25 56-56 56H156c-44 0-80-36-80-80 0-50 41-96 64-96z" fill="url(#gold)" opacity=".55"/>
+    <path d="M268 112l-54 118h66l-36 158 92-186h-70l32-90h-30z" fill="url(#gold)"/>
+  </g>
+  <text x="300" y="130" font-family="Roboto, 'Segoe UI', Arial" font-size="110" font-weight="700" fill="#FFFFFF" letter-spacing="2">RAPID</text>
+  <text x="640" y="130" font-family="Roboto, 'Segoe UI', Arial" font-size="110" font-weight="700" fill="url(#gold)" letter-spacing="2">RUN</text>
+</svg>

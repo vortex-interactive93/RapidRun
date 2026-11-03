@@ -1,0 +1,53 @@
+﻿[
+    {
+        "id":  "aldi_meat_22",
+        "name":  "Kirkwood USDA Fresh Ground Turkey",
+        "brand":  "Kirkwood",
+        "price":  4.89,
+        "unit":  "19.2 oz",
+        "unitShort":  "19.2 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Ground Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9d177bea-f122-4849-98c9-1e0028ce991d.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Kirkwood USDA Fresh Ground Turkey from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_116",
+        "name":  "Kirkwood 99% Fat Free Fresh Ground Turkey Breast",
+        "brand":  "Kirkwood",
+        "price":  5.49,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Ground Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8d2bea6b-4536-4adc-a32c-05d368cd518a.jpg",
+        "aisle":  "Fresh Poultry",
+        "description":  "Kirkwood 99% Fat Free Fresh Ground Turkey Breast from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_131",
+        "name":  "Kirkwood USDA Fresh Ground Turkey 85% Lean 15% Fat",
+        "brand":  "Kirkwood",
+        "price":  9.95,
+        "unit":  "48 oz",
+        "unitShort":  "48 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Ground Turkey",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_289e71cb-4aa2-46e3-ad23-a03f156005a7.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Kirkwood USDA Fresh Ground Turkey 85% Lean 15% Fat from Kirkwood. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    }
+]

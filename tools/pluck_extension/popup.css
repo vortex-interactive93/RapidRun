@@ -1,0 +1,267 @@
+:root {
+  --bg-primary: #0C0C0E;
+  --bg-card: #14171E;
+  --gold: #E5A93C;
+  --green: #00E676;
+  --text-muted: #8E8E93;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: #FFFFFF;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.panel-header {
+  padding: 16px 14px 12px;
+  background: #10131A;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.brand-tag {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.status-indicator.live {
+  background: rgba(0, 230, 118, 0.15);
+  color: var(--green);
+  font-size: 8.5px;
+  font-weight: 900;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+.panel-header h2 {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  margin-top: 2px;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.action-grid {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.primary-btn, .action-btn {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 12.5px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.1s ease, filter 0.15s ease;
+}
+
+.primary-btn {
+  background: var(--gold);
+  color: #000000;
+}
+
+.action-btn.gold {
+  background: var(--bg-card);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.action-btn.green {
+  background: var(--green);
+  color: #000000;
+}
+
+.primary-btn:active, .action-btn:active {
+  transform: scale(0.98);
+}
+
+.status-box {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 4px 14px;
+}
+
+.status-box.success {
+  color: var(--green);
+}
+
+.status-box.error {
+  color: #FF5252;
+}
+
+.progress-box {
+  margin: 0 14px 10px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--gold);
+  transition: width 0.2s ease;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.inspector-deck {
+  flex: 1;
+  padding: 10px 14px 20px;
+}
+
+.deck-header {
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sync-tag {
+  color: var(--text-muted);
+  font-size: 9.5px;
+}
+
+.inspector-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-row {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item-row:hover {
+  border-color: rgba(229, 169, 60, 0.4);
+}
+
+.item-row-top {
+  display: flex;
+  gap: 10px;
+}
+
+.item-thumb {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-title {
+  font-size: 11.5px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #FFFFFF;
+}
+
+.item-pricing {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.sale-price {
+  color: var(--gold);
+  font-size: 12.5px;
+  font-weight: 900;
+}
+
+.reg-price {
+  color: var(--text-muted);
+  font-size: 10px;
+  text-decoration: line-through;
+}
+
+.notes-preview {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  margin-top: 6px;
+  scrollbar-width: none;
+}
+
+.notes-preview::-webkit-scrollbar {
+  display: none;
+}
+
+.note-chip {
+  background: #1B1E26;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8.5px;
+  font-weight: 600;
+  padding: 2px 5px;
+  border-radius: 4px;
+  white-space: nowrap;
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "bbw_028029701",
+    "name": "Cinnamon Spiced Vanilla Cleansing Gel Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Gel Soaps",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa53d3e90/hires/028029701.jpg?sw=600&q=60&format=auto",
+    "description": "Cleansing Gel Hand Soap formulated with natural essential oils and soothing vitamin E for a deep, refreshing clean.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "gel_soaps",
+      "cinnamon spiced vanilla"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031409",
+    "name": "Pumpkin Apple Cleansing Gel Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Gel Soaps",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.5,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw16b141ec/hires/028031409.jpg?sw=600&q=60&format=auto",
+    "description": "Cleansing Gel Hand Soap formulated with natural essential oils and soothing vitamin E for a deep, refreshing clean.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "gel_soaps",
+      "pumpkin apple"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031404",
+    "name": "White Tea & Sage Cleansing Gel Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Gel Soaps",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.8,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdadcf4e3/hires/028031404.jpg?sw=600&q=60&format=auto",
+    "description": "Cleansing Gel Hand Soap formulated with natural essential oils and soothing vitamin E for a deep, refreshing clean.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "gel_soaps",
+      "white tea & sage"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031402",
+    "name": "Kitchen Lemon Cleansing Gel Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Gel Soaps",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.7,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe45ff4f0/hires/028031402.jpg?sw=600&q=60&format=auto",
+    "description": "Cleansing Gel Hand Soap formulated with natural essential oils and soothing vitamin E for a deep, refreshing clean.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "gel_soaps",
+      "kitchen lemon"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Zesty Fresh Lemon",
+        "Sparkling Citrus"
+      ],
+      "heartNotes": [
+        "Spearmint Leaf",
+        "Italian Bergamot"
+      ],
+      "baseNotes": [
+        "Clean Woods",
+        "Soft Musk"
+      ]
+    }
+  },
+  {
+    "id": "bbw_028031403",
+    "name": "Lakeside Morning Cleansing Gel Hand Soap",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Hand Soaps & Sanitizers",
+    "subCategory": "Gel Soaps",
+    "price": 7.95,
+    "msrp": 7.95,
+    "rating": 4.6,
+    "unit": "8 fl oz / 236 mL",
+    "unitShort": "8 fl oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb0b81c86/hires/028031403.jpg?sw=600&q=60&format=auto",
+    "description": "Cleansing Gel Hand Soap formulated with natural essential oils and soothing vitamin E for a deep, refreshing clean.",
+    "tags": [
+      "bath_and_body_works",
+      "hand_soaps_sanitizers",
+      "gel_soaps",
+      "lakeside morning"
+    ],
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Triclosan Free Formula",
+      "Dermatologist Tested"
+    ],
+    "fragranceProfile": {
+      "family": "Nourishing Fresh Scent",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    }
+  }
+]

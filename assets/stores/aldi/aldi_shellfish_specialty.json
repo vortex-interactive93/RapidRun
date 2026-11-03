@@ -1,0 +1,87 @@
+﻿[
+    {
+        "id":  "aldi_frozen_foods_24",
+        "name":  "Boudreaux\u0027s Crawfish Tail Meat",
+        "brand":  "ALDI",
+        "price":  7.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Specialty Items",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_6306ea5f-7698-4cbb-afbc-609e9d9774e2.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_124",
+        "name":  "Specially Selected Mussels in Garlic Butter Sauce",
+        "brand":  "Specially Selected",
+        "price":  2.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Specialty Items",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_50872ec6-0ca2-4025-af4c-c9f03f22ab82.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Rich, creamy churned butter from Specially Selected. Brings rich flavor and velvety texture to baking, cooking, and spreading.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_128",
+        "name":  "Specially Selected Mussels in Natural Juices",
+        "brand":  "Specially Selected",
+        "price":  2.59,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Specialty Items",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_cf1217e5-a8ae-45fb-b4ee-0a8d937dc180.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Refreshing, delicious Specially Selected Mussels in Natural Juices from Specially Selected. Perfect for staying hydrated and quenched throughout the day.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_129",
+        "name":  "Fremont Fish Market Seafood Mix",
+        "brand":  "ALDI",
+        "price":  6.99,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Specialty Items",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c428033e-dd55-4b8c-9f41-43da0ef4fcd5.jpg",
+        "aisle":  "Frozen Meat \u0026 Fish",
+        "description":  "Fresh, high-quality seafood from ALDI. Delivers rich Omega-3 fatty acids and delicate flavor—ideal for pan-searing, baking, or grilling.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_164",
+        "name":  "Specially Selected Mussels in Tomato Garlic Sauce",
+        "brand":  "Specially Selected",
+        "price":  2.59,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Specialty Items",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_fd0c74ac-33ea-4c2d-ab43-ffc8cd95a3dd.jpg",
+        "aisle":  "Freezer Doors",
+        "description":  "Farm-fresh, ripe tomatoes rich in lycopene and flavor. Perfect for fresh caprese salads, slicing onto burgers, or cooking into homemade pasta sauces.",
+        "tags":  [
+                     "Gourmet"
+                 ]
+    }
+]

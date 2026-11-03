@@ -1,0 +1,122 @@
+[
+  {
+    "id": "aldi_baby_essentials_001",
+    "name": "Club Pack Diapers Size 3, 100 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/579789de-88c6-41ac-870b-a0535e8842cd/Club%20Pack%20Diapers%20Size%203%20100%20count",
+    "description": "LITTLE JOURNEY\n\nClub Pack Diapers Size 4, 82 count\n\n82 ct\n\n$13.55",
+    "benefits": null,
+    "price": 15.25,
+    "unit": "100 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_002",
+    "name": "Training Pants Boys 3T/4T",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c1e4e055-b0bf-412b-b1ea-3f44097f2668/Training%20Pants%20Boys%203T4T",
+    "description": "LITTLE JOURNEY\n\nBoys Training Pants - 4T/5T, 19 count\n\n19 ct\n\n$7.15",
+    "benefits": null,
+    "price": 7.15,
+    "unit": null,
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_003",
+    "name": "Sensitive Baby Wipes, 192 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/38692cc8-79da-426d-9317-72456ba44079/Sensitive%20Baby%20Wipes%20192%20count",
+    "description": "Pick up a value pack of Little Journey Sensitive Baby Wipes for your little one. Our value set comes with 3 packs of wipes at 64 wipes each for a total of 192 baby wipes, so you won't have to worry about running out so soon. Little Journey Sensitive Baby wipes are fragrance free, hypoallergenic, gentle enough for newborns, and are made of 99% water and plant-based ingredients. Learn why these wipes have the Good Housekeeping seal today!",
+    "benefits": null,
+    "price": 4.95,
+    "unit": "192 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_004",
+    "name": "Club Pack Diapers Size 5, 72 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/4cf2da5f-4647-485f-99af-aad757e960f7/Club%20Pack%20Diapers%20Size%205%2072%20count",
+    "description": "LITTLE JOURNEY\n\nClub Pack Diapers Size 4, 82 count\n\n82 ct\n\n$13.55",
+    "benefits": null,
+    "price": 14.29,
+    "unit": "72 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_005",
+    "name": "Baby Wipes Bundle, 216 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/ada3961d-7b9d-4183-884f-1caee2b81971/Baby%20Wipes%20Bundle%20216%20count",
+    "description": "Little Journey Quilted Baby Wipes Bundle comes with three fragrance-free wipe packs, for a total of 216 wipes. Each baby wipe contains three layers for ultimate comfort for your little one. Discover all baby products for affordable prices when you shop at ALDI.",
+    "benefits": null,
+    "price": 5.19,
+    "unit": "216 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_006",
+    "name": "Club Pack Diapers Size 6, 60 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/95fcfbb8-458a-4f2b-8447-e0f624625b57/Club%20Pack%20Diapers%20Size%206%2060%20count",
+    "description": "LITTLE JOURNEY\n\nClub Pack Diapers Size 5, 72 count\n\n72 ct\n\n$14.29",
+    "benefits": null,
+    "price": 14.29,
+    "unit": "60 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_007",
+    "name": "Club Pack Diapers Size 4, 82 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/b68d7d1d-ed90-4f39-b810-4076b271a830/Club%20Pack%20Diapers%20Size%204%2082%20count",
+    "description": "LITTLE JOURNEY\n\nClub Pack Diapers Size 5, 72 count\n\n72 ct\n\n$14.29",
+    "benefits": null,
+    "price": 13.55,
+    "unit": "82 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_008",
+    "name": "Girls Training Pants - 4T/5T, 19 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/f5e79f36-2063-4fdd-a66b-4448014793bd/Girls%20Training%20Pants%20%204T5T%2019%20count",
+    "description": "LITTLE JOUNEY\n\nGirls Training Pants - 3T/4T, 22 count\n\n22 ct\n\n$7.15",
+    "benefits": null,
+    "price": 7.15,
+    "unit": "19 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_009",
+    "name": "Girls Training Pants - 3T/4T, 22 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/69d14db2-01eb-40ea-8523-57cbe0cb2d26/Girls%20Training%20Pants%20%203T4T%2022%20count",
+    "description": "Description coming soon!",
+    "benefits": null,
+    "price": 7.15,
+    "unit": "22 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  },
+  {
+    "id": "aldi_baby_essentials_010",
+    "name": "Boys Training Pants - 4T/5T, 19 count",
+    "imageUrl": "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/37ac807e-7e83-41f2-b663-341ce2d9d1f4/Boys%20Training%20Pants%20%204T5T%2019%20count",
+    "description": "LITTLE JOURNEY\n\nTraining Pants Boys 3T/4T\n\n22 ct\n\n$7.15",
+    "benefits": null,
+    "price": 7.15,
+    "unit": "19 count",
+    "storeId": "aldi",
+    "category": "Baby Items",
+    "subCategory": "Baby Essentials"
+  }
+]

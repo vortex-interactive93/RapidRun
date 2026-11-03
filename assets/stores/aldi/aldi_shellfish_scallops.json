@@ -1,0 +1,17 @@
+﻿{
+    "id":  "aldi_frozen_foods_123",
+    "name":  "Specially Selected Jumbo Scallops",
+    "brand":  "Specially Selected",
+    "price":  15.49,
+    "unit":  "12 oz",
+    "unitShort":  "12 oz",
+    "storeId":  "aldi",
+    "category":  "Fresh Meat \u0026 Seafood",
+    "subCategory":  "Scallops",
+    "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_50cd9872-9e7c-401d-a009-cd330ea9029f.jpg",
+    "aisle":  "Freezer Doors",
+    "description":  "Specially Selected Jumbo Scallops from Specially Selected. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+    "tags":  [
+                 "Gourmet"
+             ]
+}

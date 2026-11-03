@@ -1,0 +1,121 @@
+﻿[
+    {
+        "id":  "aldi_meat_10",
+        "name":  "Parkview USDA Beef Smoked Sausage",
+        "brand":  "Parkview",
+        "price":  2.79,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e803e447-c94b-46f4-9bc4-0f03173f99cc.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Parkview. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_11",
+        "name":  "Seasoned Diced Beef for Tacos",
+        "brand":  "ALDI",
+        "price":  9.98,
+        "unit":  "$4.99 / lb (About 2.0 lb / package)",
+        "unitShort":  "$4.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ab914324-8f69-4811-988b-593bc5257797.jpg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_17",
+        "name":  "Parkview Uncured Beef Franks",
+        "brand":  "Parkview",
+        "price":  4.75,
+        "unit":  "15 oz",
+        "unitShort":  "15 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_9ca246f9-9f0e-4261-89a3-d9c3a80381f6.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Parkview. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_58",
+        "name":  "Nathan\u0027s Bun-Length Beef Franks - 8 Pack",
+        "brand":  "ALDI",
+        "price":  5.45,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_ce7a825c-2f96-4a11-a800-4405053475f7.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_71",
+        "name":  "Simply Nature Organic Uncured Beef Hot Dogs",
+        "brand":  "Simply Nature Organic",
+        "price":  4.29,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_959d45cf-3775-470c-b47d-b4cbad610029.jpg",
+        "aisle":  "Cooler Doors",
+        "description":  "Premium, tender USDA-inspected beef from Simply Nature. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_meat_76",
+        "name":  "USDA Choice Black Angus Stew Meat",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 1.5 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_17c93584-4a4a-4a29-bd77-96be6793e475.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "USDA Choice Black Angus Stew Meat, per lb from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_meat_125",
+        "name":  "Beef for Carne Picada",
+        "brand":  "USDA Choice • Black Angus",
+        "price":  6.99,
+        "unit":  "$6.99 / lb (About 1.47 lb / package)",
+        "unitShort":  "$6.99 / lb",
+        "storeId":  "aldi",
+        "category":  "Meat \u0026 Seafood",
+        "subCategory":  "Specialty Cuts",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_52959acb-b9ef-4bfb-85e0-ae317f958565.jpeg",
+        "aisle":  "Fresh Meat",
+        "description":  "Premium, tender USDA-inspected beef from ALDI. Delivers rich, savory flavor whether grilled to perfection, seared in a skillet, or cooked into classic meals.",
+        "tags":  [
+
+                 ]
+    }
+]

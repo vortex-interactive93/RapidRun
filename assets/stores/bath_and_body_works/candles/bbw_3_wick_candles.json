@@ -1,0 +1,2733 @@
+[
+  {
+    "id": "bbw_028030716",
+    "name": "Neapolitan Ice Cream 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb8f180ab/hires/028030716.jpg?sw=600&q=60&format=auto",
+    "description": "A delicious classic ice cream parlor dream. Made with natural essential oils of chocolate, strawberry, and sweet vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "neapolitan ice cream"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Ice Cream",
+      "topNotes": [
+        "Rich Chocolate",
+        "Fresh Strawberry"
+      ],
+      "heartNotes": [
+        "Sweet Vanilla Bean",
+        "Whipped Cream"
+      ],
+      "baseNotes": [
+        "Waffle Cone",
+        "Sugared Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029681",
+    "name": "Maple Pumpkin 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe58abc22/hires/028029681.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sweet autumn kitchen treat. Scented with rich maple syrup, fresh pumpkin, and warm cinnamon.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "maple pumpkin"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Fall Gourmand",
+      "topNotes": [
+        "Sweet Maple Syrup",
+        "Fresh Pumpkin"
+      ],
+      "heartNotes": [
+        "Warm Cinnamon",
+        "Brown Sugar"
+      ],
+      "baseNotes": [
+        "Toasted Pecan",
+        "Vanilla Spice"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029548",
+    "name": "Champagne Toast 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb7b165c0/hires/028029548.jpg?sw=600&q=60&format=auto",
+    "description": "A festive, bubbly celebration. Scented with vintage champagne, sparkling berries and juicy tangerine.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "champagne toast"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Citrus",
+      "topNotes": [
+        "Vintage Champagne",
+        "Sparkling Berries"
+      ],
+      "heartNotes": [
+        "Juicy Tangerine",
+        "Nectarine Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Musk",
+        "Soft Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034405",
+    "name": "Leaves 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1bbd152c/hires/028034405.jpg?sw=600&q=60&format=auto",
+    "description": "The quintessential scent of autumn crisp air. Scented with crisp red apple, golden nectar and warm clove spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "leaves"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Autumn Spice",
+      "topNotes": [
+        "Crisp Red Apple",
+        "Golden Nectar"
+      ],
+      "heartNotes": [
+        "Warm Clove Spice",
+        "Autumn Cinnamon"
+      ],
+      "baseNotes": [
+        "Spiced Clove",
+        "Sheer Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029554",
+    "name": "Mahogany Teakwood Intense 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1cf8ac0f/hires/028029554.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, bold, woodsy classic. Scented with rich mahogany, black teakwood, dark oak and frosted cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "mahogany teakwood intense"
+    ],
+    "fragranceProfile": {
+      "family": "Rich Bold Wood",
+      "topNotes": [
+        "Rich Mahogany",
+        "Lavender Herb"
+      ],
+      "heartNotes": [
+        "Black Teakwood",
+        "Geranium Leaf"
+      ],
+      "baseNotes": [
+        "Dark Oak",
+        "Frosted Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033925",
+    "name": "Sweater Weather 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1e01c22d/hires/028033925.jpg?sw=600&q=60&format=auto",
+    "description": "A fresh, crisp autumn walk in the woods. Scented with fresh sage, crisp eucalyptus, and autumn apple.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "sweater weather"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Crisp Autumn",
+      "topNotes": [
+        "Fresh Sage",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Autumn Apple",
+        "Juniper Berry"
+      ],
+      "baseNotes": [
+        "Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030051",
+    "name": "Into the Night 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe4ca8e26/hires/028030051.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Into the Night 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "into the night"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033930",
+    "name": "Snowflakes & Cashmere 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb763e405/hires/028033930.jpg?sw=600&q=60&format=auto",
+    "description": "Wrapping yourself in a soft cashmere blanket. Scented with vanilla cashmere, frosted amber and iced clementine.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "snowflakes & cashmere"
+    ],
+    "fragranceProfile": {
+      "family": "Cozy Vanilla Amber",
+      "topNotes": [
+        "Vanilla Cashmere",
+        "Iced Clementine"
+      ],
+      "heartNotes": [
+        "Frosted Amber",
+        "Winter White Jasmine"
+      ],
+      "baseNotes": [
+        "Caramel Woods",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029556",
+    "name": "Strawberry Pound Cake 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw482f2c0b/hires/028029556.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, airy, freshly baked treat. Scented with fresh strawberries, golden shortcake and whipped cream.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "strawberry pound cake"
+    ],
+    "fragranceProfile": {
+      "family": "Gourmand Sweet Berry",
+      "topNotes": [
+        "Fresh Strawberries",
+        "Wild Berries"
+      ],
+      "heartNotes": [
+        "Golden Shortcake",
+        "Baking Spice"
+      ],
+      "baseNotes": [
+        "Whipped Cream",
+        "Vanilla Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033213",
+    "name": "Pumpkin Pecan Waffles 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1c28b8c9/hires/028033213.jpg?sw=600&q=60&format=auto",
+    "description": "A warm, sweet, maple-drenched morning waffle breakfast. Made with maple syrup, golden waffles, and pumpkin spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pumpkin pecan waffles"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Gourmand",
+      "topNotes": [
+        "Maple Syrup",
+        "Golden Waffles"
+      ],
+      "heartNotes": [
+        "Pumpkin Spice",
+        "Toasted Pecans"
+      ],
+      "baseNotes": [
+        "Warm Vanilla",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033923",
+    "name": "Fresh Balsam 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw433202ea/hires/028033923.jpg?sw=600&q=60&format=auto",
+    "description": "The fresh, invigorating scent of a evergreen forest. Made with woodland balsam, crisp eucalyptus and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "fresh balsam"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Forest",
+      "topNotes": [
+        "Woodland Balsam",
+        "Crisp Eucalyptus"
+      ],
+      "heartNotes": [
+        "Fir Branches",
+        "Pine Needles"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Earthy Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034604",
+    "name": "Marshmallow Fireside 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwaba76023/hires/028034604.jpg?sw=600&q=60&format=auto",
+    "description": "Cozying up by a crackling campfire. Scented with toasted marshmallow, smoldering woods and roasted vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "marshmallow fireside"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Smoky Gourmand",
+      "topNotes": [
+        "Toasted Marshmallow",
+        "Smoky Cacao"
+      ],
+      "heartNotes": [
+        "Fireside Smolder",
+        "Roasted Vanilla"
+      ],
+      "baseNotes": [
+        "Crystal Amber",
+        "Warm Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033943",
+    "name": "'Tis the Season 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw102514fb/hires/028033943.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic holiday favorite. Scented with rich red apple, sweet cinnamon and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "'tis the season"
+    ],
+    "fragranceProfile": {
+      "family": "Spiced Holiday Apple",
+      "topNotes": [
+        "Rich Red Apple",
+        "Sweet Cinnamon"
+      ],
+      "heartNotes": [
+        "Cedarwood",
+        "Ground Clove"
+      ],
+      "baseNotes": [
+        "Spiced Plum",
+        "Holiday Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033929",
+    "name": "The Perfect Christmas 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw121bffd9/hires/028033929.jpg?sw=600&q=60&format=auto",
+    "description": "Everything you love about the holidays in one candle. Scented with fresh cut pine, cinnamon sugar and toasted marshmallow.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "the perfect christmas"
+    ],
+    "fragranceProfile": {
+      "family": "Festive Holiday Tradition",
+      "topNotes": [
+        "Fresh Cut Pine",
+        "Cinnamon Sugar"
+      ],
+      "heartNotes": [
+        "Toasted Marshmallow",
+        "Spiced Clove"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Holiday Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034417",
+    "name": "Platinum 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb456c152/hires/028034417.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Platinum 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "platinum"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034605",
+    "name": "Holiday 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.3,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3b27aef6/hires/028034605.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Holiday 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "holiday"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033236",
+    "name": "Sweet Cinnamon Pumpkin 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5c35a0c0/hires/028033236.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic, warm fall celebration. Scented with heirloom pumpkin, autumn cinnamon, nutmeg and molasses.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "sweet cinnamon pumpkin"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Fall Gourmand",
+      "topNotes": [
+        "Heirloom Pumpkin",
+        "Fresh Ginger"
+      ],
+      "heartNotes": [
+        "Autumn Cinnamon",
+        "Ground Nutmeg"
+      ],
+      "baseNotes": [
+        "Molasses",
+        "Warm Vanilla",
+        "Spiced Clove"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033944",
+    "name": "Sugared Snickerdoodle 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw383349a3/hires/028033944.jpg?sw=600&q=60&format=auto",
+    "description": "Freshly baked snickerdoodle cookies warm from the oven. Scented with warm cinnamon, sugared cookie and vanilla spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "sugared snickerdoodle"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Bakery Cinnamon",
+      "topNotes": [
+        "Warm Cinnamon",
+        "Sugared Cookie"
+      ],
+      "heartNotes": [
+        "Vanilla Spice",
+        "Butter Crust"
+      ],
+      "baseNotes": [
+        "Toasted Sugar",
+        "Nutmeg"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033215",
+    "name": "Whipped Honey & Vanilla 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw84280c03/hires/028033215.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Whipped Honey & Vanilla 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "whipped honey & vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033949",
+    "name": "Santa's Milk & Cookies 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw08e8ab4c/hires/028033949.jpg?sw=600&q=60&format=auto",
+    "description": "Leaving out treats on Christmas Eve. Scented with warm sugar cookies, steamed milk and vanilla bean.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "santa's milk & cookies"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Holiday Bakery",
+      "topNotes": [
+        "Warm Sugar Cookies",
+        "Steamed Milk"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Toasted Pecan"
+      ],
+      "baseNotes": [
+        "Brown Sugar",
+        "Cinnamon Dust"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028016790",
+    "name": "Eucalyptus Spearmint 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa6588580/hires/028016790.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, stress-relieving herbal blend. Made with natural eucalyptus and spearmint essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "eucalyptus spearmint"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Peppermint Leaf"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033924",
+    "name": "Strawberry Snowflakes 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa6b59d1c/hires/028033924.jpg?sw=600&q=60&format=auto",
+    "description": "A sweet, frosted winter berry dream. Scented with juicy strawberry, whipped cream and iced vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "strawberry snowflakes"
+    ],
+    "fragranceProfile": {
+      "family": "Sweet Winter Berry",
+      "topNotes": [
+        "Juicy Strawberry",
+        "Iced Bergamot"
+      ],
+      "heartNotes": [
+        "Whipped Cream",
+        "Winter Blossom"
+      ],
+      "baseNotes": [
+        "Iced Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030027",
+    "name": "Football Season 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.4,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb48bfa57/hires/028030027.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Football Season 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "football season"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023501",
+    "name": "Raspberries & Whipped Vanilla 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw69c40972/hires/028023501.jpg?sw=600&q=60&format=auto",
+    "description": "Sweet, sun-ripened raspberries smothered in fluffy whipped vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "raspberries & whipped vanilla"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Berry Gourmand",
+      "topNotes": [
+        "Pink Raspberries",
+        "Strawberry Nectar"
+      ],
+      "heartNotes": [
+        "Whipped Vanilla",
+        "Plum Blossom"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030055",
+    "name": "Moonlit Goddess 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw18571cff/hires/028030055.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Moonlit Goddess 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "moonlit goddess"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028032455",
+    "name": "Crispy Cookie Edges 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.4,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw428c196c/hires/028032455.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Crispy Cookie Edges 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "crispy cookie edges"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028013566",
+    "name": "Lavender Bergamot 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw12eeb85e/hires/028013566.jpg?sw=600&q=60&format=auto",
+    "description": "A soothing, relaxing herbal sanctuary. Made with natural French lavender and crisp bergamot essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "lavender bergamot"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Herbal",
+      "topNotes": [
+        "Crisp Bergamot",
+        "French Lavender"
+      ],
+      "heartNotes": [
+        "Clary Sage",
+        "Blue Violet"
+      ],
+      "baseNotes": [
+        "Sheer Amber",
+        "Soft Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029931",
+    "name": "White Pumpkin 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc88e3d7c/hires/028029931.jpg?sw=600&q=60&format=auto",
+    "description": "A refined, warm autumn celebration. Scented with gilded pumpkin, sweet autumn spice and ground cinnamon.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "white pumpkin"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Fall Spice",
+      "topNotes": [
+        "Gilded Pumpkin",
+        "Sweet Autumn Spice"
+      ],
+      "heartNotes": [
+        "Ground Cinnamon",
+        "Nutmeg"
+      ],
+      "baseNotes": [
+        "Warm Caramel",
+        "Vanilla Wood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033599",
+    "name": "Midnight Rouge 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw63f2cedd/hires/028033599.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Midnight Rouge 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "midnight rouge"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033212",
+    "name": "Pumpkin Apple 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw61d370e5/hires/028033212.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp autumn afternoon at the orchard. Scented with red delicious apple, fresh pumpkin and cinnamon stick.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pumpkin apple"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Orchard Fall",
+      "topNotes": [
+        "Red Delicious Apple",
+        "Fresh Pumpkin"
+      ],
+      "heartNotes": [
+        "Cinnamon Stick",
+        "Clove Bud"
+      ],
+      "baseNotes": [
+        "Warm Nutmeg",
+        "Golden Nectar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034602",
+    "name": "Under The Christmas Tree 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdce0eb50/hires/028034602.jpg?sw=600&q=60&format=auto",
+    "description": "Unwrapping presents on Christmas morning. Scented with fresh cut pine, juniper berry and vanilla buttercream.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "under the christmas tree"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Vanilla",
+      "topNotes": [
+        "Fresh Cut Pine",
+        "Eucalyptus"
+      ],
+      "heartNotes": [
+        "Juniper Berry",
+        "Spiced Clove"
+      ],
+      "baseNotes": [
+        "Vanilla Buttercream",
+        "Warm Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028025403",
+    "name": "Sweet Orange & Agave 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbd8b8459/hires/028025403.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, sunlit citrus splash. Made with sweet orange, agave nectar and mandarin zest.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "sweet orange & agave"
+    ],
+    "fragranceProfile": {
+      "family": "Bright Zesty Citrus",
+      "topNotes": [
+        "Sweet Orange",
+        "Agave Nectar"
+      ],
+      "heartNotes": [
+        "Mandarin Zest",
+        "Lime Leaf"
+      ],
+      "baseNotes": [
+        "Soft Amber",
+        "Sugared Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033948",
+    "name": "Hot Cocoa & Cream 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8e33cfa5/hires/028033948.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, creamy mug of hot chocolate on a chilly day. Made with decadent milk chocolate, steamed milk and marshmallows.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "hot cocoa & cream"
+    ],
+    "fragranceProfile": {
+      "family": "Decadent Chocolate",
+      "topNotes": [
+        "Decadent Milk Chocolate",
+        "Steamed Milk"
+      ],
+      "heartNotes": [
+        "Mini Marshmallows",
+        "Cocoa Powder"
+      ],
+      "baseNotes": [
+        "Rich Vanilla",
+        "Toasted Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028032902",
+    "name": "Rose Water & Ivy 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw951030ad/hires/028032902.jpg?sw=600&q=60&format=auto",
+    "description": "A fresh, blooming garden walk. Made with soft rose petals, rain-kissed ivy and spring blossoms.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "rose water & ivy"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Green Floral",
+      "topNotes": [
+        "Soft Rose Petals",
+        "Rain-Kissed Ivy"
+      ],
+      "heartNotes": [
+        "Spring Blossom",
+        "White Lily"
+      ],
+      "baseNotes": [
+        "Soft Musk",
+        "Sheer Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029546",
+    "name": "Black Cherry Merlot 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3637285b/hires/028029546.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, sophisticated fruity blend. Scented with dark cherry, black raspberry and sumptuous merlot.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "black cherry merlot"
+    ],
+    "fragranceProfile": {
+      "family": "Fruity Rich Merlot",
+      "topNotes": [
+        "Dark Cherry",
+        "Black Raspberry"
+      ],
+      "heartNotes": [
+        "Sumptuous Merlot",
+        "Red Plum"
+      ],
+      "baseNotes": [
+        "Vanilla Wood",
+        "Sugared Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028038245",
+    "name": "Coffee & Whiskey 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwadee7eda/hires/028038245.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, smooth blend of bold Irish coffee, barrel-aged whiskey and warm vanilla.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "coffee & whiskey"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Rich Spirit",
+      "topNotes": [
+        "Bold Irish Coffee",
+        "Whiskey Barrel"
+      ],
+      "heartNotes": [
+        "Vanilla Bean",
+        "Roasted Espresso"
+      ],
+      "baseNotes": [
+        "Aged Amber",
+        "Rich Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029559",
+    "name": "White Gardenia 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw781b2733/hires/028029559.jpg?sw=600&q=60&format=auto",
+    "description": "An elegant bouquet of fresh white blooms. Made with classic white gardenia, sweet apple blossom and white tuberose.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "white gardenia"
+    ],
+    "fragranceProfile": {
+      "family": "Lush White Floral",
+      "topNotes": [
+        "Classic White Gardenia",
+        "Sweet Apple Blossom"
+      ],
+      "heartNotes": [
+        "White Tuberose",
+        "Jasmine Petals"
+      ],
+      "baseNotes": [
+        "Soft Wood",
+        "Clean Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033926",
+    "name": "Eucalyptus Snowfall 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc720c248/hires/028033926.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Eucalyptus Snowfall 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "eucalyptus snowfall"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029557",
+    "name": "Sun-Drenched Linen 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8a7b8ab8/hires/028029557.jpg?sw=600&q=60&format=auto",
+    "description": "Freshly washed laundry drying in the warm sun. Made with cool cotton, crisp apple and sun-drenched linen.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "sun-drenched linen"
+    ],
+    "fragranceProfile": {
+      "family": "Clean Crisp Laundry",
+      "topNotes": [
+        "Cool Cotton",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Crisp Apple",
+        "Soft Chamomile"
+      ],
+      "baseNotes": [
+        "Clean Linen Musk",
+        "White Cedar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028026421",
+    "name": "Laundry Day 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd8cd9f05/hires/028026421.jpg?sw=600&q=60&format=auto",
+    "description": "The crisp, comforting scent of fresh laundry drying. Scented with fresh wash, crisp air and eucalyptus leaf.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "laundry day"
+    ],
+    "fragranceProfile": {
+      "family": "Crisp Clean Linen",
+      "topNotes": [
+        "Fresh Wash",
+        "Crisp Air"
+      ],
+      "heartNotes": [
+        "Eucalyptus Leaf",
+        "Soft Lavender"
+      ],
+      "baseNotes": [
+        "Clean Musk",
+        "White Sandalwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033928",
+    "name": "Spiced Apple Toddy 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb97da876/hires/028033928.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy, warming mug of spiced apple brandy, cinnamon stick, tart cranberry and clove.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "spiced apple toddy"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Spiced Fruit",
+      "topNotes": [
+        "Warm Apple Brandy",
+        "Spiced Plum"
+      ],
+      "heartNotes": [
+        "Cinnamon Stick",
+        "Ground Clove"
+      ],
+      "baseNotes": [
+        "Tart Cranberry",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033238",
+    "name": "White Pumpkin 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw90ebb77a/hires/028033238.jpg?sw=600&q=60&format=auto",
+    "description": "A refined, warm autumn celebration. Scented with gilded pumpkin, sweet autumn spice and ground cinnamon.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "white pumpkin"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Fall Spice",
+      "topNotes": [
+        "Gilded Pumpkin",
+        "Sweet Autumn Spice"
+      ],
+      "heartNotes": [
+        "Ground Cinnamon",
+        "Nutmeg"
+      ],
+      "baseNotes": [
+        "Warm Caramel",
+        "Vanilla Wood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029550",
+    "name": "Eucalyptus Mint 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4f72cb4c/hires/028029550.jpg?sw=600&q=60&format=auto",
+    "description": "An energizing, refreshing spa sanctuary. Made with natural eucalyptus and spearmint essential oils.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "eucalyptus mint"
+    ],
+    "fragranceProfile": {
+      "family": "Aromatherapy Fresh Mint",
+      "topNotes": [
+        "Fresh Eucalyptus",
+        "Crisp Spearmint"
+      ],
+      "heartNotes": [
+        "Lemon Zest",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Clean Cedar",
+        "Soft Woods"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028029926",
+    "name": "Pumpkin Apple 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwe9bff4e2/hires/028029926.jpg?sw=600&q=60&format=auto",
+    "description": "A crisp autumn afternoon at the orchard. Scented with red delicious apple, fresh pumpkin and cinnamon stick.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pumpkin apple"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Orchard Fall",
+      "topNotes": [
+        "Red Delicious Apple",
+        "Fresh Pumpkin"
+      ],
+      "heartNotes": [
+        "Cinnamon Stick",
+        "Clove Bud"
+      ],
+      "baseNotes": [
+        "Warm Nutmeg",
+        "Golden Nectar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023498",
+    "name": "Mahogany Coconut 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw0937c645/hires/028023498.jpg?sw=600&q=60&format=auto",
+    "description": "A rich, tropical woodsy paradise. Scented with rich mahogany, creamy coconut and English oak.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "mahogany coconut"
+    ],
+    "fragranceProfile": {
+      "family": "Tropical Woodsy Amber",
+      "topNotes": [
+        "Rich Mahogany",
+        "Creamy Coconut"
+      ],
+      "heartNotes": [
+        "Toasted Coconut",
+        "Lavender"
+      ],
+      "baseNotes": [
+        "English Oak",
+        "Warm Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023500",
+    "name": "Pistachio Milk & Honey 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3abb29ba/hires/028023500.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Pistachio Milk & Honey 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pistachio milk & honey"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033232",
+    "name": "Cinnamon Pinecone 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb58628c2/hires/028033232.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Cinnamon Pinecone 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "cinnamon pinecone"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033931",
+    "name": "Cinnamon Sugared Pecans 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw363d36a4/hires/028033931.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Cinnamon Sugared Pecans 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "cinnamon sugared pecans"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033601",
+    "name": "Lasting Legacy 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf625a339/hires/028033601.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Lasting Legacy 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "lasting legacy"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033927",
+    "name": "'Tis the Season 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw39b6cb93/hires/028033927.jpg?sw=600&q=60&format=auto",
+    "description": "An iconic holiday favorite. Scented with rich red apple, sweet cinnamon and cedarwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "'tis the season"
+    ],
+    "fragranceProfile": {
+      "family": "Spiced Holiday Apple",
+      "topNotes": [
+        "Rich Red Apple",
+        "Sweet Cinnamon"
+      ],
+      "heartNotes": [
+        "Cedarwood",
+        "Ground Clove"
+      ],
+      "baseNotes": [
+        "Spiced Plum",
+        "Holiday Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028038246",
+    "name": "Cranberry & Pomegranate 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw84dcc595/hires/028038246.jpg?sw=600&q=60&format=auto",
+    "description": "A bright, tart, sparkling berry celebration. Scented with tart cranberry, ruby pomegranate and red apple.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "cranberry & pomegranate"
+    ],
+    "fragranceProfile": {
+      "family": "Tart Fruity Berry",
+      "topNotes": [
+        "Tart Cranberry",
+        "Ruby Pomegranate"
+      ],
+      "heartNotes": [
+        "Red Apple",
+        "Spiced Plum"
+      ],
+      "baseNotes": [
+        "Sugared Amber",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034607",
+    "name": "Bright Christmas Morning 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd7951c75/hires/028034607.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Bright Christmas Morning 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "bright christmas morning"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033214",
+    "name": "Pumpkin Snickerdoodle 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw18d5b704/hires/028033214.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Pumpkin Snickerdoodle 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pumpkin snickerdoodle"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028023500",
+    "name": "Pistachio Milk & Honey 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw3abb29ba/hires/028023500.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Pistachio Milk & Honey 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pistachio milk & honey"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033950",
+    "name": "Flannel 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f06bfa4/hires/028033950.jpg?sw=600&q=60&format=auto",
+    "description": "Wrapping up in your favorite warm flannel shirt. Scented with fresh bergamot, heirloom mahogany and soft musk.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "flannel"
+    ],
+    "fragranceProfile": {
+      "family": "Cozy Fresh Spice",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Heirloom Mahogany"
+      ],
+      "heartNotes": [
+        "Soft Musk",
+        "Warm Clove"
+      ],
+      "baseNotes": [
+        "Cedarwood",
+        "Clean Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033932",
+    "name": "Tree Farm 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.8,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc2be180a/hires/028033932.jpg?sw=600&q=60&format=auto",
+    "description": "A festive afternoon spent picking the perfect Christmas tree. Scented with crisp pine needle, warm cedar and spiced apple.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "tree farm"
+    ],
+    "fragranceProfile": {
+      "family": "Fresh Pine & Cedar",
+      "topNotes": [
+        "Crisp Pine Needle",
+        "Warm Cedar"
+      ],
+      "heartNotes": [
+        "Spiced Apple",
+        "Fir Balsam"
+      ],
+      "baseNotes": [
+        "Woodland Moss",
+        "Sheer Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030025",
+    "name": "Leaves 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwce9d510f/hires/028030025.jpg?sw=600&q=60&format=auto",
+    "description": "The quintessential scent of autumn crisp air. Scented with crisp red apple, golden nectar and warm clove spice.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "leaves"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Autumn Spice",
+      "topNotes": [
+        "Crisp Red Apple",
+        "Golden Nectar"
+      ],
+      "heartNotes": [
+        "Warm Clove Spice",
+        "Autumn Cinnamon"
+      ],
+      "baseNotes": [
+        "Spiced Clove",
+        "Sheer Amber"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034407",
+    "name": "Vanilla Birch 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83fa93f6/hires/028034407.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy, warm woodsy vanilla scent. Scented with white birch, warm vanilla and rich sandalwood.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "vanilla birch"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Woody Vanilla",
+      "topNotes": [
+        "White Birch Bark",
+        "Warm Vanilla"
+      ],
+      "heartNotes": [
+        "Sandalwood",
+        "Clary Sage"
+      ],
+      "baseNotes": [
+        "Rich Amber",
+        "Sheer Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034603",
+    "name": "Frozen Lake 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw179ae519/hires/028034603.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Frozen Lake 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "frozen lake"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028034608",
+    "name": "Simmer & Spice 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.5,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf522fb5f/hires/028034608.jpg?sw=600&q=60&format=auto",
+    "description": "A stovetop potpourri simmering on autumn afternoons. Scented with spiced cinnamon, orange zest and clove.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "simmer & spice"
+    ],
+    "fragranceProfile": {
+      "family": "Warm Hearth Spice",
+      "topNotes": [
+        "Spiced Cinnamon",
+        "Orange Zest"
+      ],
+      "heartNotes": [
+        "Clove Bud",
+        "Star Anise"
+      ],
+      "baseNotes": [
+        "Warm Cedar",
+        "Brown Sugar"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028038244",
+    "name": "Balsam & Firewood 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.4,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5099b510/hires/028038244.jpg?sw=600&q=60&format=auto",
+    "description": "A cozy evening by the hearth in a log cabin. Scented with fir balsam, smoky firewood and cedar.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "balsam & firewood"
+    ],
+    "fragranceProfile": {
+      "family": "Woody Hearth & Pine",
+      "topNotes": [
+        "Fir Balsam",
+        "Smoky Firewood"
+      ],
+      "heartNotes": [
+        "Pine Needle",
+        "Cedar Bark"
+      ],
+      "baseNotes": [
+        "Earthy Amber",
+        "Charcoal Smolder"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033235",
+    "name": "Cozy Wool Sweater 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7b53afc8/hires/028033235.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Cozy Wool Sweater 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "cozy wool sweater"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033947",
+    "name": "Wrapped in Velvet 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1396937b/hires/028033947.jpg?sw=600&q=60&format=auto",
+    "description": "Luxe, opulent, velvet warmth. Scented with velvet rose, dark plum and red amber.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "wrapped in velvet"
+    ],
+    "fragranceProfile": {
+      "family": "Luxe Velvet Amber",
+      "topNotes": [
+        "Velvet Rose",
+        "Dark Plum"
+      ],
+      "heartNotes": [
+        "Red Amber",
+        "Cashmere Wood"
+      ],
+      "baseNotes": [
+        "Rich Vanilla",
+        "Soft Musk"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028030028",
+    "name": "Cider Lane 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 24.95,
+    "msrp": 24.95,
+    "rating": 4.6,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw236b8330/hires/028030028.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Cider Lane 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "cider lane"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  },
+  {
+    "id": "bbw_028033209",
+    "name": "Pumpkin Harvest 3-Wick Candle",
+    "brand": "Bath & Body Works",
+    "store": "bath_and_body_works",
+    "category": "Candles",
+    "subCategory": "3-Wick Candle",
+    "price": 22.95,
+    "msrp": 22.95,
+    "rating": 4.7,
+    "unit": "14.5 oz / 411 g",
+    "unitShort": "14.5 oz",
+    "imageUrl": "https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1b08ad76/hires/028033209.jpg?sw=600&q=60&format=auto",
+    "description": "Made with natural essential oils and our proprietary soy wax blend for room-filling fragrance. Notes of Pumpkin Harvest 3-Wick Candle.",
+    "tags": [
+      "bath_and_body_works",
+      "candles",
+      "3_wick_candle",
+      "pumpkin harvest"
+    ],
+    "fragranceProfile": {
+      "family": "Room-Filling Fragrance",
+      "topNotes": [
+        "Fresh Bergamot",
+        "Wild Plum"
+      ],
+      "heartNotes": [
+        "Soft Jasmine",
+        "Rose Petals"
+      ],
+      "baseNotes": [
+        "Warm Amber",
+        "Cedarwood"
+      ]
+    },
+    "cleanStandards": [
+      "Natural Essential Oils",
+      "Lead-Free Wicks",
+      "Soy Wax Blend",
+      "25\u201345 Hour Burn Time"
+    ]
+  }
+]

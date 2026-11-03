@@ -1,0 +1,461 @@
+﻿[
+    {
+        "id":  "aldi_salad_1",
+        "name":  "Little Salad Bar Mango Slices",
+        "brand":  "Little Salad Bar",
+        "price":  5.29,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8abaa22d-9f1f-4c90-a64e-8b45623b5e9f.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_2",
+        "name":  "Little Salad Bar Spinach",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_1cd1dc00-1085-450b-93b0-0a0b77911e9a.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_3",
+        "name":  "Everything Chopped Salad",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "11.57 oz",
+        "unitShort":  "11.57 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8f8303c7-fbbd-4914-aa0d-dd3a4112b5c4.png",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_4",
+        "name":  "Little Salad Bar Pineapple Spears",
+        "brand":  "Little Salad Bar",
+        "price":  3.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7af7a424-f55f-42e5-9188-f179171bb54f.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_5",
+        "name":  "Little Salad Bar Classic Coleslaw",
+        "brand":  "Little Salad Bar",
+        "price":  1.65,
+        "unit":  "14 oz",
+        "unitShort":  "14 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e514217c-e1d4-4726-bde0-d01b130f3fd6.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_6",
+        "name":  "Little Salad Bar Sweet Onion Vinaigrette Sunflower Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_f656939f-09b9-42fb-9909-28b4a0d6cf72.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Flavorful, aromatic fresh onions—the foundational ingredient for savory soups, stews, sautés, and grilled dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_7",
+        "name":  "Little Salad Bar Sweet Kale Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12.2 oz",
+        "unitShort":  "12.2 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7b50e4bc-7c48-4c5a-ae1d-0be6725eaf92.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_8",
+        "name":  "Simply Nature Organic Non-GMO Chopped Kale",
+        "brand":  "Simply Nature Organic",
+        "price":  3.49,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_3e327ad7-0dfd-403c-9e42-fbe475b9ac4e.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_9",
+        "name":  "Little Salad Bar Spring Mix",
+        "brand":  "Little Salad Bar",
+        "price":  2.39,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dd894ecd-592c-45a0-be0d-ebb8076c9aef.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_10",
+        "name":  "Little Salad Bar Watermelon Spears",
+        "brand":  "Little Salad Bar",
+        "price":  3.89,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_56116e1c-5e47-4abd-a277-6dca7e2de66b.jpg",
+        "aisle":  "Fruits",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_11",
+        "name":  "Little Salad Bar Garden Salad",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_7e7749f7-4193-4845-92c0-dfe8527a5b7a.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_12",
+        "name":  "Simply Nature Organic Mixed Greens",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bf34634b-307c-4753-9ef3-703b8d9a01da.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_13",
+        "name":  "Simply Nature Organic Arugula and Spinach Mix",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c0a1b94b-29ec-4d03-bf92-779fdca78a01.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_14",
+        "name":  "Little Salad Bar Sweet Butter Salad",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_8a6b7e88-6fc7-4812-9f9c-5d7ae3e02174.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_15",
+        "name":  "Little Salad Bar Caesar Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.79,
+        "unit":  "10.5 oz",
+        "unitShort":  "10.5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_12a2cf22-074a-44a2-a3f1-d6ea3fd85de3.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_16",
+        "name":  "Maple Bourbon Bacon Salad Kit",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "12.8 oz",
+        "unitShort":  "12.8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_07041b7d-44ee-4063-b73f-e419ed6aa1a4.png",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_17",
+        "name":  "Little Salad Bar Southwest Chopped Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_c6d8ce1c-bd71-43ab-a9b9-afffff88663c.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_18",
+        "name":  "Little Salad Bar Santa Fe Style Salad Bowl",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "7.05 oz",
+        "unitShort":  "7.05 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_eb87c7b8-9db6-4a25-b7ea-0d1257939982.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_19",
+        "name":  "Little Salad Bar Caesar Chop Salad Kit",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "11.15 oz",
+        "unitShort":  "11.15 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_bea57336-7a56-4243-9493-6cedda94ed5f.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_20",
+        "name":  "Little Salad Bar Asian Chopped Salad Kit with Sesame Dressing",
+        "brand":  "Little Salad Bar",
+        "price":  2.95,
+        "unit":  "12 oz",
+        "unitShort":  "12 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_13433ea2-b51f-4dce-af56-3235ceadd6cb.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_21",
+        "name":  "Little Salad Bar Chicken Caesar Salad with Parmesan \u0026 Caesar Dressing",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "6.25 oz",
+        "unitShort":  "6.25 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_dc331c29-d616-4d3c-8285-333715997766.jpg",
+        "aisle":  "Cooler Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_22",
+        "name":  "Little Salad Bar Cantaloupe Chunks",
+        "brand":  "Little Salad Bar",
+        "price":  3.95,
+        "unit":  "16 oz",
+        "unitShort":  "16 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_90603464-5b43-4295-b470-efa0f7e560c8.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_23",
+        "name":  "Simply Nature Organic Baby Spinach",
+        "brand":  "Simply Nature Organic",
+        "price":  2.79,
+        "unit":  "5 oz",
+        "unitShort":  "5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4a63f3c3-65c4-4d66-a32f-8e9f72a43223.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+                     "Organic"
+                 ]
+    },
+    {
+        "id":  "aldi_salad_24",
+        "name":  "Little Salad Bar Shredded Lettuce",
+        "brand":  "Little Salad Bar",
+        "price":  1.89,
+        "unit":  "8 oz",
+        "unitShort":  "8 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_105817b5-b0b0-45a4-aade-b9911550f298.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_25",
+        "name":  "Mexican Street Corn Chopped Salad Kit",
+        "brand":  "ALDI",
+        "price":  2.95,
+        "unit":  "11.62 oz",
+        "unitShort":  "11.62 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a1c57891-f377-4c02-87d7-4d3582968657.png",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_26",
+        "name":  "Little Salad Bar Peeled Garlic",
+        "brand":  "Little Salad Bar",
+        "price":  2.99,
+        "unit":  "6 oz",
+        "unitShort":  "6 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_03a39729-222b-43ab-aaf5-7d57acfbad6c.jpg",
+        "aisle":  "Produce Mdu",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_salad_27",
+        "name":  "Little Salad Bar Chopped Hearts of Romaine",
+        "brand":  "Little Salad Bar",
+        "price":  2.89,
+        "unit":  "9 oz",
+        "unitShort":  "9 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Produce",
+        "subCategory":  "Salad Kits",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_a3d5b824-e393-4242-a6f8-b094ba30441e.jpg",
+        "aisle":  "Salads",
+        "description":  "Crisp, pre-washed fresh greens ready to serve. Perfect for nutritious meal salads, green smoothies, or side dishes.",
+        "tags":  [
+
+                 ]
+    }
+]

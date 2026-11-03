@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2025-08-20T01:35:16.306356Z",
+  "dryRun": true,
+  "stores": {
+    "walmart": {
+      "files": 225,
+      "items": 34070,
+      "newIds": 0,
+      "updatedFiles": 0,
+      "prefix": "walmart_",
+      "missingBrand": 16,
+      "missingUnit": 2843,
+      "missingPrice": 9,
+      "negativePrice": 0,
+      "invalidImageUrl": 0,
+      "duplicatesRemoved": 0,
+      "uncategorizedInitial": 9492,
+      "uncategorizedAfter": 8440,
+      "brandNormalized": 0,
+      "topCategories": [
+        {
+          "category": "Grocery",
+          "count": 21335
+        },
+        {
+          "category": "Uncategorized",
+          "count": 8440
+        },
+        {
+          "category": "Personal Care",
+          "count": 3249
+        },
+        {
+          "category": "Snacks",
+          "count": 628
+        },
+        {
+          "category": "Beverages",
+          "count": 268
+        },
+        {
+          "category": "Dairy & Eggs",
+          "count": 141
+        },
+        {
+          "category": "Breakfast & Cereals",
+          "count": 9
+        }
+      ],
+      "topSubCategories": [
+        {
+          "subCategory": "Canned goods",
+          "count": 991
+        },
+        {
+          "subCategory": "Condiments",
+          "count": 987
+        },
+        {
+          "subCategory": "All Candy",
+          "count": 980
+        },
+        {
+          "subCategory": "Herbs Spices And Seasonings",
+          "count": 961
+        },
+        {
+          "subCategory": "Deodorants",
+          "count": 959
+        },
+        {
+          "subCategory": "Easy meals",
+          "count": 900
+        },
+        {
+          "subCategory": "Crackers",
+          "count": 800
+        },
+        {
+          "subCategory": "On-the-go breakfast",
+          "count": 780
+        },
+        {
+          "subCategory": "All Beverages",
+          "count": 742
+        },
+        {
+          "subCategory": "Body Lotions & Butters",
+          "count": 712
+        }
+      ],
+      "elapsedMs": 1098,
+      "itemsPerSec": 31029.143897996357
+    }
+  }
+}

@@ -1,0 +1,17 @@
+﻿{
+    "id":  "aldi_meat_141",
+    "name":  "Appleton Farms Uncured Turkey Bacon",
+    "brand":  "Appleton Farms",
+    "price":  3.49,
+    "unit":  "10 oz",
+    "unitShort":  "10 oz",
+    "storeId":  "aldi",
+    "category":  "Fresh Meat \u0026 Seafood",
+    "subCategory":  "Turkey Bacon",
+    "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_d6b9af2c-5058-462b-b5f2-e7522cb85ebc.jpg",
+    "aisle":  "Cooler Doors",
+    "description":  "Crisp, sweet fresh apples brimming with natural flavor and fiber. Excellent for healthy midday snacking, slicing with peanut butter, or baking into pies.",
+    "tags":  [
+
+             ]
+}

@@ -1,0 +1,21 @@
+{
+  "storeId": "walmart",
+  "category": "Cookies",
+  "advancedDedupe": {
+    "enabled": true,
+    "mode": "conservative",
+    "priceVariancePct": 6,
+    "ignorePackDifferences": false,
+    "stopWords": ["original", "family", "size", "classic", "value", "pack"]
+  },
+  "files": [
+    { "file": "cookie-variety-packs.json", "rawFile": "variety-pack-cookies.json", "subCategory": "Cookie variety packs" },
+    { "file": "great-value-cookies.json", "subCategory": "Great Value cookies" },
+    { "file": "chips-ahoy.json", "rawFile": "chips-ahoy-cookies.json", "subCategory": "Chips Ahoy!" },
+    { "file": "teddy-grahams.json", "rawFile": "teddy-grahams-cookies.json", "subCategory": "Teddy Grahams" },
+    { "file": "circus-animal-cookies.json", "subCategory": "Circus Animal cookies" },
+    { "file": "fig-newtons.json", "rawFile": "fig-newton-cookies.json", "subCategory": "Fig Newtons" },
+    { "file": "bettergoods-cookies.json", "subCategory": "bettergoods" },
+    { "file": "pepperidge-farms-cookies.json", "rawFile": "pepperidge-farm-cookies.json", "subCategory": "Pepperidge Farms cookies" }
+  ]
+}

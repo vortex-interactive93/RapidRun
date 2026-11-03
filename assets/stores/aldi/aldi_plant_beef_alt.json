@@ -1,0 +1,70 @@
+﻿[
+    {
+        "id":  "aldi_meat_133",
+        "name":  "Earth Grown Taco Filling",
+        "brand":  "Earth Grown",
+        "price":  2.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Beef Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_e607f356-049c-4537-8f47-2e4254b7342a.jpg",
+        "aisle":  "Prepared",
+        "description":  "Earth Grown Taco Filling from Earth Grown. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_208",
+        "name":  "Earth Grown Pad Thai",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Beef Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_22558094-1d96-4f93-80f9-aa35a88118ca.jpg",
+        "aisle":  "Prepared",
+        "description":  "Earth Grown Pad Thai from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_frozen_foods_209",
+        "name":  "Earth Grown Plant Based Southwest Burrito Bowl",
+        "brand":  "ALDI",
+        "price":  2.99,
+        "unit":  "10 oz",
+        "unitShort":  "10 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Beef Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_aac4e763-d753-41f1-ae7f-b3881483c4a0.jpg",
+        "aisle":  "Prepared",
+        "description":  "Earth Grown Plant Based Southwest Burrito Bowl from ALDI. Premium quality, great value item available at ALDI. Perfect for your household groceries and daily cooking needs.",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "id":  "aldi_pantry_essentials_471",
+        "name":  "Reggano Plant-Based Rotini Pasta",
+        "brand":  "ALDI",
+        "price":  2.19,
+        "unit":  "14.5 oz",
+        "unitShort":  "14.5 oz",
+        "storeId":  "aldi",
+        "category":  "Fresh Meat \u0026 Seafood",
+        "subCategory":  "Beef Alternatives",
+        "imageUrl":  "https://www.instacart.com/image-server/197x197/filters:fill(FFFFFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_b1515241-ef19-4a1e-964c-0d5f2d212b1f.jpg",
+        "aisle":  "Processed Foods",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "tags":  [
+
+                 ]
+    }
+]

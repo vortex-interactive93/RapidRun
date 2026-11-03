@@ -1,0 +1,23 @@
+{
+  "partitionThresholdItems": 150,
+  "partitionThresholdBytes": 150000,
+  "walmartDeliAllowedSubCategories": [
+    "Soups",
+    "Hot case",
+    "Salad bowls & trays",
+    "Pasta",
+    "Pizza",
+    "Lunch meats",
+    "Sliced deli meats & cheeses",
+    "Gourmet meats & cheeses",
+    "Dips & spreads",
+    "Sandwiches & wraps",
+    "Party trays",
+    "Prepared meals & sides",
+    "Rotisserie & Hot Case",
+    "Quick breakfasts",
+    "Prepared Asian food",
+    "The Charcuterie Shop",
+    "Lunch kits"
+  ]
+}

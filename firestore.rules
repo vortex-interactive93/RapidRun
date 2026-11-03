@@ -1,0 +1,52 @@
+// File: firestore.rules
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // 1. PUBLIC CATALOG & PRODUCTS
+    match /products/{productId} {
+      allow read, write: if true;
+    }
+
+    // 2. STORES & DEMAND ZONES
+    match /stores/{storeId} {
+      allow read, write: if true;
+    }
+
+    match /zones/{zoneId} {
+      allow read, write: if true;
+    }
+
+    // 3. USERS & CUSTOMERS (Fixes Write failed at users/anonymous_shopper)
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    match /customers/{customerId} {
+      allow read, write: if true;
+      match /{allSubcollections=**} {
+        allow read, write: if true;
+      }
+    }
+
+    // 4. DRIVERS & LEDGERS
+    match /drivers/{driverId} {
+      allow read, write: if true;
+      match /{allSubcollections=**} {
+        allow read, write: if true;
+      }
+    }
+
+    // 5. LIVE ORDERS & DISPATCH (Fixes Query(orders) PERMISSION_DENIED!)
+    match /orders/{orderId} {
+      allow read, write: if true;
+      match /{allSubcollections=**} {
+        allow read, write: if true;
+      }
+    }
+  }
+}

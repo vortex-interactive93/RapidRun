@@ -1,0 +1,67 @@
+﻿[
+    {
+        "id":  "aldi_eggs_001",
+        "name":  "Dairy \u0026 Eggs - Free Range Large Brown Grade A Eggs",
+        "brand":  "Dairy Eggs Free",
+        "price":  4.79,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/6aaa16af-d936-4f3c-83f5-e8c7e4502ba8/Free%20%20Range%20Large%20Brown%20Grade%20A%20Eggs%2012%20count",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "benefits":  null,
+        "unit":  "12 count",
+        "storeId":  "aldi",
+        "category":  "Dairy \u0026 Eggs",
+        "subCategory":  "Eggs"
+    },
+    {
+        "id":  "aldi_eggs_002",
+        "name":  "Dairy \u0026 Eggs - Grade A Large White Eggs, 1 dozen",
+        "brand":  "Dairy Eggs Grade",
+        "price":  4.35,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/0da9bf82-a41d-40b1-8935-63b64f0602b3/Grade%20%20A%20Large%20White%20Eggs%201%20dozen",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Dairy \u0026 Eggs",
+        "subCategory":  "Eggs"
+    },
+    {
+        "id":  "aldi_eggs_003",
+        "name":  "Dairy \u0026 Eggs - Organic Cage Free Brown Eggs, 1 dozen",
+        "brand":  "Dairy Eggs Organic",
+        "price":  4.85,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/b05daa8b-8445-4951-9e67-f6a924172c11/Organic%20%20Cage%20Free%20Brown%20Eggs%201%20dozen",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "benefits":  null,
+        "unit":  null,
+        "storeId":  "aldi",
+        "category":  "Dairy \u0026 Eggs",
+        "subCategory":  "Eggs"
+    },
+    {
+        "id":  "aldi_eggs_004",
+        "name":  "Dairy \u0026 Eggs - Liquid Egg Whites",
+        "brand":  "Dairy Eggs Liquid",
+        "price":  5.19,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/f5cdb2df-4295-4bf0-b1bb-82687e6be4ce/Liquid%20%20Egg%20Whites%2032%20oz",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "benefits":  null,
+        "unit":  "32 oz",
+        "storeId":  "aldi",
+        "category":  "Dairy \u0026 Eggs",
+        "subCategory":  "Eggs"
+    },
+    {
+        "id":  "aldi_eggs_005",
+        "name":  "Dairy \u0026 Eggs - Pasture Raised Large Brown Eggs Grade A",
+        "brand":  "Dairy Eggs Pasture",
+        "price":  4.85,
+        "imageUrl":  "https://dm.cms.aldi.cx/is/image/prod1amer/product/jpg/scaleWidth/1296/c66b7d0b-28ef-4204-940a-d704939f5ae0/Pasture%20Raised%20Large%20Brown%20Eggs%20Grade%20A%2012%20count",
+        "description":  "Grade-A fresh eggs packed with natural protein and essential nutrients. A wholesome morning favorite for scrambling, frying, or baking.",
+        "benefits":  null,
+        "unit":  "12 count",
+        "storeId":  "aldi",
+        "category":  "Dairy \u0026 Eggs",
+        "subCategory":  "Eggs"
+    }
+]

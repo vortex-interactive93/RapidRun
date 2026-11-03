@@ -1,0 +1,22 @@
+{
+  "storeId": "walmart",
+  "category": "Pantry",
+  "files": [
+    { "file": "pickles.json", "subCategory": "Pickles" },
+    { "file": "ramen.json", "subCategory": "Ramen" },
+    { "file": "ranch.json", "subCategory": "Ranch" },
+    { "file": "rice-grains-and-dried-beans.json", "subCategory": "Rice, grains & dried beans" },
+    { "file": "salad-dressing.json", "subCategory": "Salad dressing" },
+    { "file": "soup.json", "subCategory": "Soup" },
+    { "file": "taco-shells-and-tortillas.json", "subCategory": "Taco shells & tortillas" },
+    { "file": "value-packs.json", "subCategory": "Value packs" },
+    { "file": "canned-goods.json", "subCategory": "Canned goods" },
+    { "file": "canned-vegetables.json", "subCategory": "Canned vegetables" },
+    { "file": "condiments.json", "subCategory": "Condiments" },
+    { "file": "cooking-oils-and-vinegars.json", "subCategory": "Cooking oils & vinegars" },
+    { "file": "easy-meals.json", "subCategory": "Easy meals" },
+    { "file": "herbs-spices-and-seasonings.json", "subCategory": "Herbs, spices & seasonings" }
+  ,{ "file": "pasta-sauce.json", "subCategory": "Pasta sauce" }
+  ,{ "file": "peanutbutter-and-spreads.json", "subCategory": "Peanut butter & spreads" }
+  ]
+}
