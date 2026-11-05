@@ -23,6 +23,7 @@ class ProductDetailSheet extends StatefulWidget {
 
 class _ProductDetailSheetState extends State<ProductDetailSheet> {
   int _quantity = 1;
+  bool _isAdded = false;
 
   List<String> _getCleanNotes(List<String> rawNotes, String overview) {
     final List<String> cleaned = [];
@@ -65,7 +66,7 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
     final List<String> baseNotes = fp?.baseNotes ?? [];
     final bool hasPyramid = topNotes.isNotEmpty || heartNotes.isNotEmpty || baseNotes.isNotEmpty;
 
-    // Contextual hardware type detection (using word boundaries to prevent 'body care' matching 'car')
+    // Contextual hardware type detection
     final bool isCarAccessory = RegExp(r'\bcar\b', caseSensitive: false).hasMatch(lowerName) ||
         RegExp(r'\bcar\b', caseSensitive: false).hasMatch(lowerType);
     final bool isPlugAccessory = RegExp(r'\bplug\b', caseSensitive: false).hasMatch(lowerName) ||
@@ -484,19 +485,23 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                           ),
                           const SizedBox(width: 12),
                           Expanded(
-                            child: SizedBox(
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 250),
                               height: 52,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: gold,
-                                  foregroundColor: Colors.black,
+                                  backgroundColor: _isAdded ? const Color(0xFF2E7D32) : gold,
+                                  foregroundColor: _isAdded ? Colors.white : Colors.black,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(14),
                                   ),
                                   elevation: 0,
                                 ),
-                                onPressed: () {
+                                onPressed: () async {
+                                  if (_isAdded) return;
                                   HapticFeedback.heavyImpact();
+                                  setState(() => _isAdded = true);
+
                                   cartState.addItem(
                                     CartItem(
                                       id: p.id,
@@ -510,15 +515,38 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                                     ),
                                   );
                                   widget.onAddToCart(p);
+
+                                  await Future.delayed(const Duration(milliseconds: 400));
                                   if (context.mounted) Navigator.pop(context);
                                 },
-                                child: Text(
-                                  'ADD TO BAG • \$${(curPrice * _quantity).toStringAsFixed(2)}',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.w900,
-                                    fontSize: 13,
-                                    letterSpacing: 0.5,
-                                  ),
+                                child: AnimatedSwitcher(
+                                  duration: const Duration(milliseconds: 200),
+                                  child: _isAdded
+                                      ? const Row(
+                                          key: ValueKey('added'),
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.check_circle_rounded, color: Colors.white, size: 18),
+                                            SizedBox(width: 8),
+                                            Text(
+                                              'ADDED TO BAG ✓',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w900,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      : Text(
+                                          'ADD TO BAG • \$${(curPrice * _quantity).toStringAsFixed(2)}',
+                                          key: const ValueKey('add'),
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.w900,
+                                            fontSize: 13,
+                                            letterSpacing: 0.5,
+                                          ),
+                                        ),
                                 ),
                               ),
                             ),

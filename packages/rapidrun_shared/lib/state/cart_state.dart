@@ -28,6 +28,10 @@ class CartState extends ChangeNotifier {
 
   bool get isEmpty => _items.isEmpty;
 
+  int quantityFor(String productId) {
+    return _items[productId]?.quantity ?? 0;
+  }
+
   CartState() {
     _hydrateFromLocalStorage();
   }

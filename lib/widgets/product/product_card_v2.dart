@@ -307,64 +307,94 @@ class _ProductDetailsBlock extends StatelessWidget {
   }
 }
 
-class _QuickAddCartPill extends StatefulWidget {
+class _QuickAddCartPill extends StatelessWidget {
   final Product product;
   const _QuickAddCartPill({required this.product});
 
   @override
-  State<_QuickAddCartPill> createState() => _QuickAddCartPillState();
-}
-
-class _QuickAddCartPillState extends State<_QuickAddCartPill>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _scaleController;
-  late final Animation<double> _scaleAnimation;
-
-  @override
-  void initState() {
-    super.initState();
-    _scaleController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 140),
-    );
-    _scaleAnimation = Tween<double>(begin: 1.0, end: 0.85).animate(
-      CurvedAnimation(parent: _scaleController, curve: Curves.easeInOut),
-    );
-  }
-
-  @override
-  void dispose() {
-    _scaleController.dispose();
-    super.dispose();
-  }
-
-  Future<void> _onAdd() async {
-    HapticFeedback.lightImpact();
-    await _scaleController.forward();
-    await _scaleController.reverse();
-    await CartService.instance.addProduct(widget.product, 1);
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return ScaleTransition(
-      scale: _scaleAnimation,
-      child: Material(
-        color: const Color(0xFFE6B450),
-        borderRadius: BorderRadius.circular(8),
-        child: InkWell(
-          onTap: _onAdd,
-          borderRadius: BorderRadius.circular(8),
-          child: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-            child: Icon(
-              Icons.add_shopping_cart_rounded,
-              color: Colors.black,
-              size: 15,
+    return ListenableBuilder(
+      listenable: cartState,
+      builder: (context, _) {
+        final qty = cartState.quantityFor(product.id);
+
+        if (qty == 0) {
+          return GestureDetector(
+            onTap: () async {
+              HapticFeedback.lightImpact();
+              await CartService.instance.addProduct(product, 1);
+            },
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+              decoration: BoxDecoration(
+                color: const Color(0xFFE6B450),
+                borderRadius: BorderRadius.circular(8),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFE6B450).withValues(alpha: 0.3),
+                    blurRadius: 6,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: const Icon(
+                Icons.add_rounded,
+                color: Colors.black,
+                size: 16,
+              ),
+            ),
+          );
+        }
+
+        return Container(
+          height: 32,
+          padding: const EdgeInsets.symmetric(horizontal: 4),
+          decoration: BoxDecoration(
+            color: const Color(0xFF161922),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: const Color(0xFFE6B450).withValues(alpha: 0.6),
+              width: 1.2,
             ),
           ),
-        ),
-      ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              GestureDetector(
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  CartService.instance.setQuantity(product.id, qty - 1);
+                },
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 4),
+                  child: Icon(Icons.remove, color: Colors.white70, size: 14),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Text(
+                  '$qty',
+                  style: const TextStyle(
+                    color: Color(0xFFE6B450),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 12.5,
+                  ),
+                ),
+              ),
+              GestureDetector(
+                onTap: () async {
+                  HapticFeedback.lightImpact();
+                  await CartService.instance.addProduct(product, 1);
+                },
+                child: const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 4),
+                  child: Icon(Icons.add, color: Color(0xFFE6B450), size: 14),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

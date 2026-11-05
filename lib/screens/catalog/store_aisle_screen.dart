@@ -519,20 +519,85 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
                       ),
                   ],
                 ),
-                GestureDetector(
-                  onTap: () async {
-                    HapticFeedback.mediumImpact();
-                    await CartService.instance.addProduct(p, 1);
-                    if (widget.onAddToCart != null) widget.onAddToCart!(p);
+                ListenableBuilder(
+                  listenable: cartState,
+                  builder: (context, _) {
+                    final qty = cartState.quantityFor(p.id);
+
+                    if (qty == 0) {
+                      return GestureDetector(
+                        onTap: () async {
+                          HapticFeedback.lightImpact();
+                          await CartService.instance.addProduct(p, 1);
+                          if (widget.onAddToCart != null) widget.onAddToCart!(p);
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: gold,
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [
+                              BoxShadow(
+                                color: gold.withValues(alpha: 0.3),
+                                blurRadius: 6,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(Icons.add_rounded, color: Colors.black, size: 16),
+                        ),
+                      );
+                    }
+
+                    return Container(
+                      height: 32,
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF161922),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: gold.withValues(alpha: 0.6),
+                          width: 1.2,
+                        ),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              HapticFeedback.selectionClick();
+                              CartService.instance.setQuantity(p.id, qty - 1);
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 4),
+                              child: Icon(Icons.remove, color: Colors.white70, size: 14),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                            child: Text(
+                              '$qty',
+                              style: const TextStyle(
+                                color: gold,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 12.5,
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () async {
+                              HapticFeedback.lightImpact();
+                              await CartService.instance.addProduct(p, 1);
+                            },
+                            child: const Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 4),
+                              child: Icon(Icons.add, color: gold, size: 14),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
                   },
-                  child: Container(
-                    padding: const EdgeInsets.all(6),
-                    decoration: BoxDecoration(
-                      color: gold,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Icon(Icons.add, color: Colors.black, size: 16),
-                  ),
                 ),
               ],
             ),
