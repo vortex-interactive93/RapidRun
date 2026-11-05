@@ -164,14 +164,39 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                           ],
                         ),
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                           decoration: BoxDecoration(
-                            color: const Color(0xFF162A1D),
-                            borderRadius: BorderRadius.circular(6),
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFF2B2012), Color(0xFF140F08)],
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: gold,
+                              width: 1.0,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: gold.withValues(alpha: 0.25),
+                                blurRadius: 8,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
                           ),
-                          child: Text(
-                            customerState.tierName.toUpperCase(),
-                            style: const TextStyle(color: Color(0xFF4ADE80), fontSize: 9.5, fontWeight: FontWeight.bold),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(Icons.workspace_premium_rounded, color: gold, size: 12),
+                              const SizedBox(width: 4),
+                              Text(
+                                customerState.tierName.toUpperCase(),
+                                style: const TextStyle(
+                                  color: gold,
+                                  fontSize: 9.5,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.8,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
