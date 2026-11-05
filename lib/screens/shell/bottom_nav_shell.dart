@@ -3,13 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
-import '../../services/favorites_cart_service.dart';
 import '../../navigation/app_navigator.dart';
 import '../home/home_page.dart';
 import '../orders/order_history_screen.dart';
 import '../shopping/cart_screen.dart';
 import '../profile/profile_screen.dart';
-import '../../widgets/mini_cart_bar.dart';
 import '../../widgets/navigation/smart_floating_cart_hud.dart';
 
 /// Root shell with persistent bottom navigation similar to retail apps.

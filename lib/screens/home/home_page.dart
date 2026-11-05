@@ -8,7 +8,6 @@ import '../../services/firebase_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../algorithms/collaborative_filtering.dart';
 import '../../models/product.dart';
 import '../../services/recent_items_service.dart';
 import '../../widgets/product/product_card_v2.dart';
@@ -30,9 +29,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  late final RecommendationEngine _recEngine;
-  late final String _demoUserId;
-  List<Product> _recommendations = const [];
   final RecentItemsService _recentItemsService = RecentItemsService();
   List<Product> _recentProducts = const [];
   StreamSubscription<User?>? _authSub;
@@ -44,14 +40,10 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    final cf = buildSeededCF();
-    _recEngine = RecommendationEngine(cf);
-    _demoUserId = 'u1';
     ConfigService.instance.ensureListening();
     CartService.instance.addListener(_onCartStateChanged);
     _cfgSub = ConfigService.instance.stream.listen((_) {
       if (!mounted) return;
-      _loadRecommendations();
       setState(() {});
     });
     _restorePrefs().then((_) => _bootstrap());
@@ -85,7 +77,6 @@ class _HomePageState extends State<HomePage> {
   Future<void> _bootstrap() async {
     await _recentItemsService.init();
     _refreshRecentProducts();
-    await _loadRecommendations();
     await _loadAddress();
   }
 
@@ -122,43 +113,6 @@ class _HomePageState extends State<HomePage> {
         .toList();
   }
 
-  Future<void> _loadRecommendations() async {
-    await Future.delayed(const Duration(milliseconds: 120));
-    if (!mounted) return;
-    setState(() {
-      final cfg = ConfigService.instance.current;
-      final allowedStores = <String>{
-        ...cfg.shoppingFeaturedNames.map((s) => s.toLowerCase()),
-        ...cfg.takeoutFeaturedIds.map(
-          (id) => id.replaceAll('_', ' ').toLowerCase(),
-        ),
-      };
-      var recs = _recEngine.recommendProducts(_demoUserId, topN: 12);
-      if (_filterStore != 'all' && !allowedStores.contains(_filterStore)) {
-        _filterStore = 'all';
-      }
-      if (_filterStore != 'all') {
-        recs = recs
-            .where((p) => (p.store ?? '').toLowerCase() == _filterStore)
-            .toList();
-      }
-      recs = recs
-          .where((p) => allowedStores.contains((p.store ?? '').toLowerCase()))
-          .toList();
-      recs.sort((a, b) {
-        if (_sortMode == 'name') {
-          return a.name.compareTo(b.name);
-        }
-        final ar = a.rating ?? 0;
-        final br = b.rating ?? 0;
-        final r = br.compareTo(ar);
-        if (r != 0) return r;
-        return a.name.compareTo(b.name);
-      });
-      _recommendations = recs.take(6).toList();
-    });
-  }
-
   Future<void> _onProductTapped(Product p) async {
     await _recentItemsService.add(p.id);
     setState(() => _refreshRecentProducts());
@@ -191,45 +145,42 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
           ),
           Expanded(
-            child: RefreshIndicator(
-              onRefresh: () async => _loadRecommendations(),
-              child: SingleChildScrollView(
-                physics: const AlwaysScrollableScrollPhysics(),
-                padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: ServiceGrid(
-                        onNavigate: (route) =>
-                            Navigator.pushNamed(context, route),
-                      ),
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: ServiceGrid(
+                      onNavigate: (route) =>
+                          Navigator.pushNamed(context, route),
                     ),
-                    const SizedBox(height: 16),
-                    _dualFlagshipSection(),
-                    const SizedBox(height: 24),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: _recommendationSection(),
-                    ),
-                    const SizedBox(height: 24),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: _favoritesRail(),
-                    ),
-                    const SizedBox(height: 24),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: _recentlyViewedSection(),
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 16),
-                      child: IndependentRetailerDisclaimer(),
-                    ),
-                    const SizedBox(height: 100),
-                  ],
-                ),
+                  ),
+                  const SizedBox(height: 16),
+                  _dualFlagshipSection(),
+                  const SizedBox(height: 24),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: _recommendationSection(),
+                  ),
+                  const SizedBox(height: 24),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: _favoritesRail(),
+                  ),
+                  const SizedBox(height: 24),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: _recentlyViewedSection(),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: IndependentRetailerDisclaimer(),
+                  ),
+                  const SizedBox(height: 100),
+                ],
               ),
             ),
           ),
@@ -308,7 +259,7 @@ class _HomePageState extends State<HomePage> {
       {
         'id': 'aldi_strawberries_16oz',
         'name': 'Fresh Strawberries',
-        'store': 'ALDI',
+        'store': 'ALDI Market',
         'price': 2.49,
         'size': '1 lb pkg',
         'imageUrl': 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=500&auto=format&fit=crop&q=80',
@@ -324,18 +275,19 @@ class _HomePageState extends State<HomePage> {
         ),
         const SizedBox(height: 12),
         SizedBox(
-          height: 215,
+          height: 220,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
             itemCount: recommendedProducts.length,
             separatorBuilder: (_, __) => const SizedBox(width: 12),
             itemBuilder: (context, index) {
               final product = recommendedProducts[index];
               return Container(
-                width: 154,
-                padding: const EdgeInsets.all(12),
+                width: 155,
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF14171E),
+                  color: const Color(0xFF13161F),
                   borderRadius: BorderRadius.circular(18),
                   border: Border.all(color: Colors.white.withValues(alpha: 0.06)),
                 ),
@@ -343,31 +295,40 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      height: 94,
+                      height: 100,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: const Color(0xFF191D28),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
-                        child: Image.network(
-                          product['imageUrl'] as String,
-                          fit: BoxFit.contain,
-                          errorBuilder: (_, __, ___) => const Icon(Icons.shopping_bag_outlined, color: Colors.black26),
+                        child: Padding(
+                          padding: const EdgeInsets.all(6.0),
+                          child: Image.network(
+                            product['imageUrl'] as String,
+                            fit: BoxFit.contain,
+                            errorBuilder: (_, __, ___) => const Icon(Icons.shopping_bag_outlined, color: Colors.white24),
+                          ),
                         ),
                       ),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      product['name'] as String,
-                      style: const TextStyle(color: Colors.white, fontSize: 12.5, fontWeight: FontWeight.bold),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                      (product['store'] as String).toUpperCase(),
+                      style: const TextStyle(
+                        color: Color(0xFFE5A93C),
+                        fontSize: 8,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 0.8,
+                      ),
                     ),
+                    const SizedBox(height: 2),
                     Text(
-                      product['size'] as String,
-                      style: const TextStyle(color: Colors.white38, fontSize: 10.5),
+                      product['name'] as String,
+                      style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.bold, height: 1.2),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
                     ),
                     const Spacer(),
                     Row(
@@ -375,7 +336,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Text(
                           '\$${(product['price'] as double).toStringAsFixed(2)}',
-                          style: const TextStyle(color: gold, fontSize: 14, fontWeight: FontWeight.w900),
+                          style: const TextStyle(color: gold, fontSize: 13.5, fontWeight: FontWeight.w900),
                         ),
                         InkWell(
                           onTap: () async {
