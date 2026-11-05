@@ -223,18 +223,25 @@ class CartService extends ChangeNotifier {
           orElse: () => null,
         );
 
+    final rawStore = (resolved?.store ?? '').toLowerCase();
+    final isAldi = rawStore.contains('aldi') || productId.startsWith('aldi_');
+    final storeId = isAldi ? 'store_aldi_fort_worth' : 'store_bbw_westover';
+    final storeName = isAldi ? 'ALDI Market' : 'Bath & Body Works';
+
+    final effectivePrice = (resolved?.price ?? 16.95) > 0.0 ? (resolved?.price ?? 16.95) : 16.95;
+
     final item = CartItem(
       id: productId,
-      storeId: resolved?.store ?? cartState.activeStoreId ?? 'store_bbw_westover',
-      storeName: resolved?.brand ?? cartState.activeStoreName ?? 'Bath & Body Works',
+      storeId: storeId,
+      storeName: storeName,
       title: resolved?.name ?? (productMetadata != null ? productMetadata.name : 'Item $productId'),
-      price: resolved?.price ?? 16.95,
-      subtitle: resolved?.unitShort ?? resolved?.unit ?? 'Regular',
+      price: effectivePrice,
+      subtitle: resolved?.unitShort ?? resolved?.unit ?? 'Standard',
       imageUrl: resolved?.imageUrl ?? '',
       quantity: quantity,
     );
 
-    cartState.addItem(item, forceClearExisting: false);
+    cartState.addItem(item, forceClearExisting: true);
   }
 
   Future<void> addProduct(Product product, int quantity) async {
