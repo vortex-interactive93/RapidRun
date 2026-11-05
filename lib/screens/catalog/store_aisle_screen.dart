@@ -8,6 +8,7 @@ import '../../models/product.dart';
 import '../../services/favorites_cart_service.dart';
 import '../../services/data_seeder_service.dart';
 import '../../utils/catalog_filter_engine.dart';
+import '../../widgets/navigation/app_bar_cart_badge.dart';
 import 'widgets/catalog_filter_bar.dart';
 import 'product_detail_sheet.dart';
 
@@ -189,6 +190,7 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
           ],
         ),
         actions: [
+          const AppBarCartBadge(),
           PopupMenuButton<SortOption>(
             icon: const Icon(Icons.sort, color: gold, size: 20),
             color: const Color(0xFF161922),
