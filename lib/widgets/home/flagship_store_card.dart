@@ -75,8 +75,8 @@ class _FlagshipStoreCardState extends State<FlagshipStoreCard>
           widget.onTap();
         },
         child: Container(
-          height: 200,
-          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          height: 195,
+          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
             gradient: LinearGradient(
@@ -121,7 +121,18 @@ class _FlagshipStoreCardState extends State<FlagshipStoreCard>
                   ),
                 ),
 
-                // 2. Foreground Details
+                // 2. Translucent Watermark Graphic Accent
+                Positioned(
+                  right: 18,
+                  bottom: -10,
+                  child: Icon(
+                    isBBW ? Icons.spa_rounded : Icons.shopping_cart_rounded,
+                    size: 130,
+                    color: Colors.white.withValues(alpha: 0.035),
+                  ),
+                ),
+
+                // 3. Foreground Details
                 Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
@@ -207,8 +218,8 @@ class _FlagshipStoreCardState extends State<FlagshipStoreCard>
                                 const SizedBox(height: 4),
                                 Text(
                                   isBBW
-                                      ? 'Aromatherapy, 3-Wick Candles, & Luxury Care'
-                                      : 'Pantry Staples, Fresh Produce, & ALDI Finds',
+                                      ? 'Fine Fragrance, 3-Wick Candles & Hand Soaps'
+                                      : 'Produce, Fresh Meat, Organic & ALDI Finds',
                                   style: TextStyle(
                                     color: Colors.white.withValues(alpha: 0.65),
                                     fontSize: 12,

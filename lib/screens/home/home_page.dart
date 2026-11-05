@@ -17,7 +17,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../services/config_service.dart';
 import '../../widgets/catalog/independent_retailer_disclaimer.dart';
 import '../../widgets/home/flagship_store_card.dart';
-import '../../widgets/navigation/floating_cart_hud.dart';
 import '../../services/favorites_cart_service.dart';
 import '../shopping_delivery/aldi_store_screen.dart';
 import '../catalog/bbw_store_screen.dart';
@@ -175,77 +174,64 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final cart = CartService.instance;
-
     return Scaffold(
       key: _scaffoldKey,
       backgroundColor: const Color(0xFF0F1115),
-      body: Stack(
+      body: Column(
         children: [
-          Column(
-            children: [
-              HomeHeader(
-                onCartTap: () => Navigator.pushNamed(context, '/cart'),
-                onSearchTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const GlobalSearchScreen()),
-                ),
-                address: _deliveryAddress,
-                onAddressTap: () =>
-                    showEditAddressSheet(context).then((_) => _loadAddress()),
-                padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
-              ),
-              Expanded(
-                child: RefreshIndicator(
-                  onRefresh: () async => _loadRecommendations(),
-                  child: SingleChildScrollView(
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: ServiceGrid(
-                            onNavigate: (route) =>
-                                Navigator.pushNamed(context, route),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        _dualFlagshipSection(),
-                        const SizedBox(height: 24),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: _recommendationSection(),
-                        ),
-                        const SizedBox(height: 24),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: _favoritesRail(),
-                        ),
-                        const SizedBox(height: 24),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: _recentlyViewedSection(),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          child: IndependentRetailerDisclaimer(),
-                        ),
-                        const SizedBox(height: 100),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          HomeHeader(
+            onCartTap: () => Navigator.pushNamed(context, '/cart'),
+            onSearchTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const GlobalSearchScreen()),
+            ),
+            address: _deliveryAddress,
+            onAddressTap: () =>
+                showEditAddressSheet(context).then((_) => _loadAddress()),
+            padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
           ),
-
-          // Floating Glass Cart HUD
-          FloatingCartHUD(
-            itemCount: cart.totalItems,
-            subtotal: cart.subtotal,
-            onCheckout: () => Navigator.pushNamed(context, '/cart'),
+          Expanded(
+            child: RefreshIndicator(
+              onRefresh: () async => _loadRecommendations(),
+              child: SingleChildScrollView(
+                physics: const AlwaysScrollableScrollPhysics(),
+                padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: ServiceGrid(
+                        onNavigate: (route) =>
+                            Navigator.pushNamed(context, route),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    _dualFlagshipSection(),
+                    const SizedBox(height: 24),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: _recommendationSection(),
+                    ),
+                    const SizedBox(height: 24),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: _favoritesRail(),
+                    ),
+                    const SizedBox(height: 24),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: _recentlyViewedSection(),
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: IndependentRetailerDisclaimer(),
+                    ),
+                    const SizedBox(height: 100),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),

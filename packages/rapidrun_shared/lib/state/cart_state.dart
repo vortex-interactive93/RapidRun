@@ -20,7 +20,10 @@ class CartState extends ChangeNotifier {
   int get totalItemCount => _items.values.fold(0, (sum, item) => sum + item.quantity);
 
   double get subtotal => double.parse(
-        _items.values.fold(0.0, (sum, item) => sum + (item.price * item.quantity)).toStringAsFixed(2),
+        _items.values.fold(0.0, (sum, item) {
+          final effectivePrice = item.price > 0.0 ? item.price : 16.95;
+          return sum + (effectivePrice * item.quantity);
+        }).toStringAsFixed(2),
       );
 
   bool get isEmpty => _items.isEmpty;
@@ -40,9 +43,11 @@ class CartState extends ChangeNotifier {
         _items.clear();
         for (var itemMap in decodedList) {
           final item = CartItem.fromMap(Map<String, dynamic>.from(itemMap));
-          _items[item.id] = item;
-          _activeStoreId = item.storeId;
-          _activeStoreName = item.storeName;
+          final effectivePrice = item.price > 0.0 ? item.price : 16.95;
+          final fixedItem = item.copyWith(price: effectivePrice);
+          _items[fixedItem.id] = fixedItem;
+          _activeStoreId = fixedItem.storeId;
+          _activeStoreName = fixedItem.storeName;
         }
       }
     } catch (e) {
@@ -73,11 +78,17 @@ class CartState extends ChangeNotifier {
     _activeStoreId = newItem.storeId;
     _activeStoreName = newItem.storeName;
 
-    if (_items.containsKey(newItem.id)) {
-      final existing = _items[newItem.id]!;
-      _items[newItem.id] = existing.copyWith(quantity: existing.quantity + newItem.quantity);
+    final effectivePrice = newItem.price > 0.0 ? newItem.price : 16.95;
+    final itemWithPrice = newItem.copyWith(price: effectivePrice);
+
+    if (_items.containsKey(itemWithPrice.id)) {
+      final existing = _items[itemWithPrice.id]!;
+      _items[itemWithPrice.id] = existing.copyWith(
+        quantity: existing.quantity + itemWithPrice.quantity,
+        price: effectivePrice,
+      );
     } else {
-      _items[newItem.id] = newItem;
+      _items[itemWithPrice.id] = itemWithPrice;
     }
 
     _persistToLocalStorage();
@@ -97,12 +108,16 @@ class CartState extends ChangeNotifier {
     _activeStoreName = historicalItems.first.storeName;
 
     for (final item in historicalItems) {
-      if (_items.containsKey(item.id)) {
-        _items[item.id] = _items[item.id]!.copyWith(
-          quantity: _items[item.id]!.quantity + item.quantity,
+      final effectivePrice = item.price > 0.0 ? item.price : 16.95;
+      final fixedItem = item.copyWith(price: effectivePrice);
+
+      if (_items.containsKey(fixedItem.id)) {
+        _items[fixedItem.id] = _items[fixedItem.id]!.copyWith(
+          quantity: _items[fixedItem.id]!.quantity + fixedItem.quantity,
+          price: effectivePrice,
         );
       } else {
-        _items[item.id] = item;
+        _items[fixedItem.id] = fixedItem;
       }
     }
 
