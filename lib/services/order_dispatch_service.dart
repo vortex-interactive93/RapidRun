@@ -11,8 +11,11 @@ class OrderDispatchService {
 
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  Future<String> submitTestOrder({
+  Future<String> submitLiveOrder({
+    required List<Map<String, dynamic>> items,
     String customerAddress = '9009 White Settlement Rd, White Settlement, TX 76108',
+    String customerName = 'Thomas (Customer)',
+    String customerId = 'cust_live_01',
     String storeName = 'Bath & Body Works',
     String storeAddress = 'Westover Village, Fort Worth, TX',
     double customerTip = 5.00,
@@ -21,20 +24,41 @@ class OrderDispatchService {
     final uniqueTimestamp = DateTime.now().millisecondsSinceEpoch;
     final orderId = 'ORD-${uniqueTimestamp.toString().substring(5)}';
 
-    // Verified rooftop coordinates from Google Maps
+    // Verified Fort Worth / Westover store coordinates
     const double targetLat = 32.759602;
     const double targetLng = -97.471416;
-
     const double storeLat = 32.7485;
     const double storeLng = -97.4261;
 
-    const double subtotal = 23.80;
+    double subtotal = 0.0;
+    int totalItems = 0;
+    final List<Map<String, dynamic>> itemsPayload = [];
+
+    for (final raw in items) {
+      final price = (raw['price'] ?? 16.95).toDouble();
+      final qty = (raw['quantity'] ?? raw['qty'] ?? 1) as int;
+      subtotal += (price * qty);
+      totalItems += qty;
+
+      itemsPayload.add({
+        'id': raw['id'] ?? 'bbw_item',
+        'name': raw['name'] ?? 'Bath & Body Works Item',
+        'quantity': qty,
+        'price': price,
+        'imageUrl': raw['imageUrl'] ?? '',
+        'size': raw['size'] ?? raw['unit'] ?? 'Standard',
+        'aisle': 'Main Store Aisle',
+      });
+    }
+
+    if (subtotal == 0.0) subtotal = 16.95;
+    if (totalItems == 0) totalItems = 1;
+
     const double totalMiles = 3.8;
-    const int itemCount = 3;
 
     final payoutBreakdown = DispatchPricingEngine.calculateDriverPayout(
       estimatedDistanceMiles: totalMiles,
-      totalItemCount: itemCount,
+      totalItemCount: totalItems,
       basketSubtotal: subtotal,
       activeSurgeBonus: activeSurgeBonus,
       customerTip: customerTip,
@@ -47,8 +71,8 @@ class OrderDispatchService {
 
     final order = DispatchOrder(
       id: orderId,
-      customerId: 'cust_sandbox_99',
-      customerName: 'Thomas (Customer)',
+      customerId: customerId,
+      customerName: customerName,
       customerAddress: customerAddress,
       customerLat: targetLat,
       customerLng: targetLng,
@@ -62,37 +86,44 @@ class OrderDispatchService {
       customerTip: customerTip,
       deliveryFee: deliveryFee,
       totalMiles: totalMiles,
-      itemCount: itemCount,
-      items: const [
-        {
-          'id': 'bbw_028005120',
-          'name': 'A Thousand Wishes Fine Fragrance Mist',
-          'quantity': 2,
-          'price': 4.73,
-          'aisle': 'Fragrance Wall • Bay 3',
-          'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1ef511b8/crop/028005120_crop.jpg?sw=500&sh=600&sm=fit',
-          'size': '8 fl oz / 236 mL',
-        },
-        {
-          'id': 'bbw_028028909',
-          'name': 'In the Stars Fine Fragrance Mist',
-          'quantity': 1,
-          'price': 5.95,
-          'aisle': 'Fragrance Wall • Bay 1',
-          'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw063e5270/crop/028028909_crop.jpg?sw=500&sh=600&sm=fit',
-          'size': '8 fl oz / 236 mL',
-        },
-      ],
+      itemCount: totalItems,
+      items: itemsPayload,
       status: OrderStatus.pendingDispatch,
       createdAt: DateTime.now(),
       isHeavy: false,
-      estimatedWeightLbs: 2.8,
+      estimatedWeightLbs: (totalItems * 0.8),
     );
 
-    debugPrint('🚀 [CustomerApp] Dispatched dynamic payout order: $orderId (\$${payoutBreakdown.totalPayout})');
+    debugPrint('🚀 [CustomerApp] Dispatched live order $orderId with ${itemsPayload.length} cart SKUs (\$${payoutBreakdown.totalPayout} payout)');
     final map = order.toMap();
     map['payoutBreakdown'] = payoutBreakdown.toMap();
     await _firestore.collection('orders').doc(orderId).set(map);
     return orderId;
+  }
+
+  Future<String> submitTestOrder({
+    String customerAddress = '9009 White Settlement Rd, White Settlement, TX 76108',
+    String storeName = 'Bath & Body Works',
+    String storeAddress = 'Westover Village, Fort Worth, TX',
+    double customerTip = 5.00,
+    double activeSurgeBonus = 2.50,
+  }) async {
+    return submitLiveOrder(
+      items: [
+        {
+          'id': 'bbw_028034046',
+          'name': 'A Thousand Wishes Body Wash',
+          'quantity': 2,
+          'price': 16.95,
+          'size': '10 fl oz / 295 ml',
+          'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf68ba573/hires/028034046.jpg?sw=480&q=75&format=auto',
+        },
+      ],
+      customerAddress: customerAddress,
+      storeName: storeName,
+      storeAddress: storeAddress,
+      customerTip: customerTip,
+      activeSurgeBonus: activeSurgeBonus,
+    );
   }
 }

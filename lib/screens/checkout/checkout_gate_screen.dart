@@ -10,6 +10,7 @@ import '../../services/product_catalog_service.dart';
 import '../../services/address_book_service.dart';
 import '../../services/payment_methods_service.dart';
 import '../../services/orders_service.dart';
+import '../../services/order_dispatch_service.dart';
 import '../../services/analytics_service.dart';
 import '../../analytics/event_names.dart';
 import '../../models/order.dart';
@@ -494,6 +495,36 @@ class _OrderReviewScreenState extends State<_OrderReviewScreen> {
         address: _selectedAddress!,
         payment: _selectedPayment!,
       );
+
+      // Dispatch live order to Cloud Firestore for driver app pickup!
+      try {
+        final cartEntries = CartService.instance.items.entries.toList();
+        final catalog = ProductCatalogService.instance;
+        final liveItems = cartEntries.map((e) {
+          final prod = catalog.get(e.key);
+          return {
+            'id': prod?.id ?? e.key,
+            'name': prod?.name ?? 'Bath & Body Works Item',
+            'quantity': e.value,
+            'price': prod?.price ?? 16.95,
+            'imageUrl': prod?.imageUrl ?? '',
+            'unit': prod?.unitShort ?? prod?.unit ?? 'Standard',
+          };
+        }).toList();
+
+        await OrderDispatchService.instance.submitLiveOrder(
+          items: liveItems,
+          customerAddress: [
+            _selectedAddress!.line1,
+            if (_selectedAddress!.line2?.isNotEmpty == true) _selectedAddress!.line2,
+            '${_selectedAddress!.city}, ${_selectedAddress!.state} ${_selectedAddress!.postalCode}',
+          ].whereType<String>().join(', '),
+          customerName: _selectedAddress!.fullName,
+        );
+      } catch (dispatchErr) {
+        debugPrint('[CheckoutGate] Real-time dispatch warning: $dispatchErr');
+      }
+
       AnalyticsService.instance.log(
         AppEvent.orderPlaceSuccess,
         props: {

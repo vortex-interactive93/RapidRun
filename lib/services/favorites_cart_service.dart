@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart' show setEquals;
@@ -11,8 +10,6 @@ import '../core/logger.dart';
 import 'merge_utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
-import '../analytics/event_names.dart';
-import 'analytics_service.dart';
 
 /// Favorites service with Firestore sync (per authenticated user).
 class FavoritesService extends ChangeNotifier {
@@ -216,6 +213,9 @@ class CartService extends ChangeNotifier {
 
   Future<void> add(String productId, int quantity, {Product? productMetadata}) async {
     if (quantity <= 0) return;
+    if (productMetadata == null && ProductCatalogService.instance.get(productId) == null) {
+      await ProductCatalogService.instance.ensureLoaded();
+    }
     final Product? resolved = productMetadata ??
         ProductCatalogService.instance.get(productId) ??
         ProductRepository.sampleProducts.cast<Product?>().firstWhere(
@@ -227,8 +227,8 @@ class CartService extends ChangeNotifier {
       id: productId,
       storeId: resolved?.store ?? cartState.activeStoreId ?? 'store_bbw_westover',
       storeName: resolved?.brand ?? cartState.activeStoreName ?? 'Bath & Body Works',
-      title: resolved?.name ?? (resolved != null ? resolved.name : 'Item $productId'),
-      price: resolved?.price ?? 0.0,
+      title: resolved?.name ?? (productMetadata != null ? productMetadata.name : 'Item $productId'),
+      price: resolved?.price ?? 16.95,
       subtitle: resolved?.unitShort ?? resolved?.unit ?? 'Regular',
       imageUrl: resolved?.imageUrl ?? '',
       quantity: quantity,

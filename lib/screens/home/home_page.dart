@@ -1,6 +1,7 @@
+// File: lib/screens/home/home_page.dart
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-// import '../../widgets/reactive_cart_badge.dart'; // removed with new header
 import 'widgets/home_header.dart';
 import '../search/global_search_screen.dart';
 import '../../services/firebase_service.dart';
@@ -10,18 +11,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../algorithms/collaborative_filtering.dart';
 import '../../models/product.dart';
 import '../../services/recent_items_service.dart';
-// ProductChip legacy import removed during migration to ProductCardV2.
 import '../../widgets/product/product_card_v2.dart';
 import 'widgets/service_grid.dart';
-import '../../widgets/shimmer_box.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../../theme/tokens.dart';
 import '../../services/config_service.dart';
 import '../../widgets/catalog/independent_retailer_disclaimer.dart';
-import '../../widgets/home/featured_store_card.dart';
-import '../store/unified_store_catalog_screen.dart';
-import '../catalog/store_aisle_screen.dart';
-import '../catalog/bbw_store_hub_screen.dart';
+import '../../widgets/home/flagship_store_card.dart';
+import '../../widgets/navigation/floating_cart_hud.dart';
+import '../../services/favorites_cart_service.dart';
+import '../shopping_delivery/aldi_store_screen.dart';
 import '../catalog/bbw_store_screen.dart';
 
 class HomePage extends StatefulWidget {
@@ -40,11 +38,9 @@ class _HomePageState extends State<HomePage> {
   List<Product> _recentProducts = const [];
   StreamSubscription<User?>? _authSub;
   StreamSubscription<AppRemoteConfig>? _cfgSub;
-  String _sortMode = 'rating'; // rating | name
+  String _sortMode = 'rating';
   String _filterStore = 'all';
-  String? _deliveryAddress; // loaded from user profile
-
-  // Single visual style (classic dark + gold)
+  String? _deliveryAddress;
 
   @override
   void initState() {
@@ -52,20 +48,18 @@ class _HomePageState extends State<HomePage> {
     final cf = buildSeededCF();
     _recEngine = RecommendationEngine(cf);
     _demoUserId = 'u1';
-    // Start listening for remote config updates (dynamic store gating).
     ConfigService.instance.ensureListening();
+    CartService.instance.addListener(_onCartStateChanged);
     _cfgSub = ConfigService.instance.stream.listen((_) {
       if (!mounted) return;
       _loadRecommendations();
-      setState(() {}); // rebuild header filters when config changes
+      setState(() {});
     });
     _restorePrefs().then((_) => _bootstrap());
-    // Listen to auth changes so UI reflects sign-in / sign-out immediately.
     _authSub = FirebaseService.userStream.listen((user) async {
       if (!mounted) return;
       setState(() {});
       if (user != null) {
-        // Check completion flag.
         try {
           final snap = await FirebaseFirestore.instance
               .collection('users')
@@ -85,6 +79,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void _onCartStateChanged() {
+    if (mounted) setState(() {});
+  }
+
   Future<void> _bootstrap() async {
     await _recentItemsService.init();
     _refreshRecentProducts();
@@ -94,7 +92,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _loadAddress() async {
     final u = FirebaseService.user;
-    if (u == null) return; // guest
+    if (u == null) return;
     try {
       final snap = await FirebaseFirestore.instance
           .collection('users')
@@ -117,14 +115,6 @@ class _HomePageState extends State<HomePage> {
     } catch (_) {}
   }
 
-  Future<void> _persistPrefs() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('rec_sort_mode_v1', _sortMode);
-      await prefs.setString('rec_filter_store_v1', _filterStore);
-    } catch (_) {}
-  }
-
   void _refreshRecentProducts() {
     final all = {for (final p in ProductRepository.sampleProducts) p.id: p};
     _recentProducts = _recentItemsService.ids
@@ -140,13 +130,11 @@ class _HomePageState extends State<HomePage> {
       final cfg = ConfigService.instance.current;
       final allowedStores = <String>{
         ...cfg.shoppingFeaturedNames.map((s) => s.toLowerCase()),
-        // Map takeout ids to a display-like name best-effort: taco_bell -> taco bell
         ...cfg.takeoutFeaturedIds.map(
           (id) => id.replaceAll('_', ' ').toLowerCase(),
         ),
       };
       var recs = _recEngine.recommendProducts(_demoUserId, topN: 12);
-      // Clamp filter if it becomes disallowed by remote config
       if (_filterStore != 'all' && !allowedStores.contains(_filterStore)) {
         _filterStore = 'all';
       }
@@ -155,7 +143,6 @@ class _HomePageState extends State<HomePage> {
             .where((p) => (p.store ?? '').toLowerCase() == _filterStore)
             .toList();
       }
-      // Also remove any recs from disallowed stores to keep the view consistent
       recs = recs
           .where((p) => allowedStores.contains((p.store ?? '').toLowerCase()))
           .toList();
@@ -163,11 +150,10 @@ class _HomePageState extends State<HomePage> {
         if (_sortMode == 'name') {
           return a.name.compareTo(b.name);
         }
-        // default rating desc
         final ar = a.rating ?? 0;
         final br = b.rating ?? 0;
         final r = br.compareTo(ar);
-        if (r != 0) return r; // then name asc
+        if (r != 0) return r;
         return a.name.compareTo(b.name);
       });
       _recommendations = recs.take(6).toList();
@@ -177,14 +163,11 @@ class _HomePageState extends State<HomePage> {
   Future<void> _onProductTapped(Product p) async {
     await _recentItemsService.add(p.id);
     setState(() => _refreshRecentProducts());
-    if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      appSnackBar('Opened ${p.name} (demo)', icon: Icons.info_outline),
-    );
   }
 
   @override
   void dispose() {
+    CartService.instance.removeListener(_onCartStateChanged);
     _authSub?.cancel();
     _cfgSub?.cancel();
     super.dispose();
@@ -192,139 +175,149 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // final user = FirebaseService.user; // no longer used directly; header handles auth greeting
-    // cart instance no longer needed here after mini cart removal
+    final cart = CartService.instance;
+
     return Scaffold(
       key: _scaffoldKey,
-      backgroundColor: const Color(0xFF1f1f1f),
-      body: Column(
+      backgroundColor: const Color(0xFF0F1115),
+      body: Stack(
         children: [
-          HomeHeader(
-            onCartTap: () => Navigator.pushNamed(context, '/cart'),
-            onSearchTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const GlobalSearchScreen()),
-            ),
-            address: _deliveryAddress,
-            onAddressTap: () =>
-                showEditAddressSheet(context).then((_) => _loadAddress()),
-            // Reduced bottom padding to pull content closer
-            padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
-          ),
-          Expanded(
-            child: RefreshIndicator(
-              onRefresh: () async => _loadRecommendations(),
-              child: SingleChildScrollView(
-                physics: const AlwaysScrollableScrollPhysics(),
-                // Reduced top padding to bring service cards closer to header
-                // Top padding reduced further (8 -> 0) to move cards up
-                padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    // WelcomeCard removed per design update (space reclaimed)
-                    ServiceGrid(
-                      onNavigate: (route) =>
-                          Navigator.pushNamed(context, route),
+          Column(
+            children: [
+              HomeHeader(
+                onCartTap: () => Navigator.pushNamed(context, '/cart'),
+                onSearchTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const GlobalSearchScreen()),
+                ),
+                address: _deliveryAddress,
+                onAddressTap: () =>
+                    showEditAddressSheet(context).then((_) => _loadAddress()),
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 6),
+              ),
+              Expanded(
+                child: RefreshIndicator(
+                  onRefresh: () async => _loadRecommendations(),
+                  child: SingleChildScrollView(
+                    physics: const AlwaysScrollableScrollPhysics(),
+                    padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: ServiceGrid(
+                            onNavigate: (route) =>
+                                Navigator.pushNamed(context, route),
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        _dualFlagshipSection(),
+                        const SizedBox(height: 24),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: _recommendationSection(),
+                        ),
+                        const SizedBox(height: 24),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: _favoritesRail(),
+                        ),
+                        const SizedBox(height: 24),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: _recentlyViewedSection(),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          child: IndependentRetailerDisclaimer(),
+                        ),
+                        const SizedBox(height: 100),
+                      ],
                     ),
-                    const SizedBox(height: 24),
-                    _featuredStoresSection(),
-                    const SizedBox(height: 24),
-                    _recommendationSection(),
-                    const SizedBox(height: 32),
-                    _favoritesRail(),
-                    const SizedBox(height: 32),
-                    _recentlyViewedSection(),
-                    const IndependentRetailerDisclaimer(),
-                    const SizedBox(height: 120),
-                  ],
+                  ),
                 ),
               ),
-            ),
+            ],
+          ),
+
+          // Floating Glass Cart HUD
+          FloatingCartHUD(
+            itemCount: cart.totalItems,
+            subtotal: cart.subtotal,
+            onCheckout: () => Navigator.pushNamed(context, '/cart'),
           ),
         ],
       ),
     );
   }
 
-  Widget _featuredStoresSection() {
+  Widget _dualFlagshipSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text(
-          'Featured Concierge Partners',
-          style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
-        ),
-        const SizedBox(height: 12),
-        SizedBox(
-          height: 190,
-          child: ListView(
-            scrollDirection: Axis.horizontal,
-            children: [
-              FeaturedStoreCard(
-                storeName: 'Bath & Body Works',
-                category: 'Fragrance & Body Care',
-                deliveryEta: '⚡ 20–30 min',
-                imageUrl: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=500&q=80',
-                rating: 4.9,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => const BbwStoreScreen(),
-                    ),
-                  );
-                },
-              ),
-              FeaturedStoreCard(
-                storeName: 'ALDI Grocery & Fresh',
-                category: 'Pantry & Produce',
-                deliveryEta: '⚡ 25–35 min',
-                imageUrl: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=500&q=80',
-                rating: 4.8,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => const UnifiedStoreCatalogScreen(storeName: 'ALDI Grocery & Fresh'),
-                    ),
-                  );
-                },
-              ),
-              FeaturedStoreCard(
-                storeName: 'Walmart Supercenter',
-                category: 'Everyday Essentials',
-                deliveryEta: '⚡ 30–40 min',
-                imageUrl: 'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=500&q=80',
-                rating: 4.7,
-                onTap: () {},
-              ),
-            ],
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
+            'Flagship Destinations',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.w900,
+              letterSpacing: -0.2,
+            ),
           ),
+        ),
+        const SizedBox(height: 8),
+
+        // 1. Bath & Body Works Flagship Card
+        FlagshipStoreCard(
+          type: FlagshipType.bathAndBodyWorks,
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => const BbwStoreScreen(),
+              ),
+            );
+          },
+        ),
+
+        // 2. ALDI Market Flagship Card
+        FlagshipStoreCard(
+          type: FlagshipType.aldi,
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => const AldiStoreScreen(),
+              ),
+            );
+          },
         ),
       ],
     );
   }
 
   Widget _recommendationSection() {
-    const gold = Color(0xFFE6B450);
+    const gold = Color(0xFFE5A93C);
 
     final recommendedProducts = [
       {
-        'id': 'bbw_028005120',
-        'name': 'A Thousand Wishes Mist',
+        'id': 'bbw_028034046',
+        'name': 'A Thousand Wishes Body Wash',
         'store': 'Bath & Body Works',
-        'price': 4.73,
-        'size': '8 fl oz',
-        'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1ef511b8/crop/028005120_crop.jpg?sw=500&sh=600&sm=fit',
+        'price': 16.95,
+        'size': '10 fl oz',
+        'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf68ba573/hires/028034046.jpg?sw=480&q=75&format=auto',
       },
       {
-        'id': 'bbw_028028909',
-        'name': 'In the Stars Mist',
+        'id': 'bbw_028011404',
+        'name': 'Sweetest Song Body Cream',
         'store': 'Bath & Body Works',
-        'price': 5.95,
-        'size': '8 fl oz',
-        'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw063e5270/crop/028028909_crop.jpg?sw=500&sh=600&sm=fit',
+        'price': 18.95,
+        'size': '8 oz',
+        'imageUrl': 'https://www.bathandbodyworks.com/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc03c50ab/hires/028011404.jpg?sw=480&q=75&format=auto',
       },
       {
         'id': 'aldi_strawberries_16oz',
@@ -356,7 +349,7 @@ class _HomePageState extends State<HomePage> {
                 width: 154,
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF171A21),
+                  color: const Color(0xFF14171E),
                   borderRadius: BorderRadius.circular(18),
                   border: Border.all(color: Colors.white.withValues(alpha: 0.06)),
                 ),
@@ -399,15 +392,17 @@ class _HomePageState extends State<HomePage> {
                           style: const TextStyle(color: gold, fontSize: 14, fontWeight: FontWeight.w900),
                         ),
                         InkWell(
-                          onTap: () {
+                          onTap: () async {
                             HapticFeedback.lightImpact();
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text('Added ${product['name']} to cart'),
-                                duration: const Duration(seconds: 1),
-                                backgroundColor: const Color(0xFF1E2129),
-                              ),
+                            final p = Product(
+                              id: product['id'] as String,
+                              name: product['name'] as String,
+                              price: product['price'] as double,
+                              imageUrl: product['imageUrl'] as String,
+                              unit: product['size'] as String,
+                              unitShort: product['size'] as String,
                             );
+                            await CartService.instance.addProduct(p, 1);
                           },
                           borderRadius: BorderRadius.circular(8),
                           child: Container(
@@ -429,8 +424,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _favoritesRail() {
-    // Placeholder favorites list pulling from recent items for now. In the
-    // future, wire to FavoritesService (not shown here). If empty, collapse.
     final favs = _recentProducts.take(10).toList();
     if (favs.isEmpty) return const SizedBox.shrink();
     return Column(
@@ -469,90 +462,6 @@ class _HomePageState extends State<HomePage> {
               );
             },
           ),
-        ),
-      ],
-    );
-  }
-
-  Widget _recommendationHeader() {
-    final cfg = ConfigService.instance.current;
-    final allowed = <String>{
-      ...cfg.shoppingFeaturedNames.map((s) => s.toLowerCase()),
-      ...cfg.takeoutFeaturedIds.map(
-        (id) => id.replaceAll('_', ' ').toLowerCase(),
-      ),
-    };
-    final stores = [
-      'all',
-      ...{
-        for (final p in ProductRepository.sampleProducts)
-          (p.store ?? '').toLowerCase(),
-      }.where((s) => s.isNotEmpty && allowed.contains(s)),
-    ];
-    return Row(
-      children: [
-        Expanded(
-          child: Text(
-            'Recommended For You',
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
-          ),
-        ),
-        DropdownButtonHideUnderline(
-          child: DropdownButton<String>(
-            value: _filterStore,
-            dropdownColor: const Color(0xFF2a2a2a),
-            items: stores
-                .map(
-                  (s) => DropdownMenuItem(
-                    value: s,
-                    child: Text(
-                      s == 'all' ? 'All Stores' : s,
-                      style: const TextStyle(fontSize: 12),
-                    ),
-                  ),
-                )
-                .toList(),
-            onChanged: (v) {
-              if (v == null) return;
-              setState(() {
-                _filterStore = v;
-                _persistPrefs();
-              });
-              _loadRecommendations();
-            },
-          ),
-        ),
-        const SizedBox(width: 4),
-        DropdownButtonHideUnderline(
-          child: DropdownButton<String>(
-            value: _sortMode,
-            dropdownColor: const Color(0xFF2a2a2a),
-            items: const [
-              DropdownMenuItem(
-                value: 'rating',
-                child: Text('Rating', style: TextStyle(fontSize: 12)),
-              ),
-              DropdownMenuItem(
-                value: 'name',
-                child: Text('Name', style: TextStyle(fontSize: 12)),
-              ),
-            ],
-            onChanged: (v) {
-              if (v == null) return;
-              setState(() {
-                _sortMode = v;
-                _persistPrefs();
-              });
-              _loadRecommendations();
-            },
-          ),
-        ),
-        IconButton(
-          icon: const Icon(Icons.refresh),
-          tooltip: 'Refresh',
-          onPressed: _loadRecommendations,
         ),
       ],
     );
@@ -609,5 +518,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-// Legacy _UserAvatar widget removed (now handled inside modular header components when needed)

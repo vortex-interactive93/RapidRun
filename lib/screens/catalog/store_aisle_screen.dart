@@ -522,7 +522,7 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
                 GestureDetector(
                   onTap: () async {
                     HapticFeedback.mediumImpact();
-                    await CartService.instance.add(p.id, 1);
+                    await CartService.instance.addProduct(p, 1);
                     if (widget.onAddToCart != null) widget.onAddToCart!(p);
                   },
                   child: Container(

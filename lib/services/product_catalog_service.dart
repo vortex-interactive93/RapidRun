@@ -217,7 +217,7 @@ class ProductCatalogService {
         /* ignore template load errors */
       }
       final productFiles = manifest.keys.where((p) {
-        if (!p.startsWith('assets/stores/')) return false;
+        if (!p.startsWith('assets/stores/') && !p.startsWith('assets/data/')) return false;
         if (!p.endsWith('.json')) return false;
         if (p.contains('_categories')) return false;
         if (p.endsWith('.json.bak')) return false; // ignore backups

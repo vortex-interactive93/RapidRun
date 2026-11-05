@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../models/product.dart';
 
 class ProductDetailSheet extends StatefulWidget {
@@ -496,10 +497,20 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                                 ),
                                 onPressed: () {
                                   HapticFeedback.heavyImpact();
-                                  for (int i = 0; i < _quantity; i++) {
-                                    widget.onAddToCart(p);
-                                  }
-                                  Navigator.pop(context);
+                                  cartState.addItem(
+                                    CartItem(
+                                      id: p.id,
+                                      storeId: 'store_bbw_westover',
+                                      storeName: 'Bath & Body Works',
+                                      title: p.name,
+                                      price: (p.price ?? p.salePrice ?? 16.95).toDouble(),
+                                      subtitle: p.unitShort ?? p.unit ?? 'Standard',
+                                      imageUrl: p.imageUrl ?? '',
+                                      quantity: _quantity,
+                                    ),
+                                  );
+                                  widget.onAddToCart(p);
+                                  if (context.mounted) Navigator.pop(context);
                                 },
                                 child: Text(
                                   'ADD TO BAG • \$${(curPrice * _quantity).toStringAsFixed(2)}',

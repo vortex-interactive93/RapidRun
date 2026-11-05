@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:rapidrun_shared/rapidrun_shared.dart';
 
 class ProductDetailSheet extends StatefulWidget {
   final Map<String, dynamic> product;
@@ -513,9 +514,27 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                       minimumSize: const Size.fromHeight(48),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
-                    onPressed: () {
+                    onPressed: () async {
                       HapticFeedback.mediumImpact();
-                      Navigator.pop(context);
+                      final id = (item['id'] ?? item['sku'] ?? '').toString();
+                      final pName = (item['name'] ?? 'Product').toString();
+                      final pPrice = (item['price'] ?? item['salePrice'] ?? 16.95).toDouble();
+                      final pImage = (item['imageUrl'] ?? '').toString();
+                      final pUnit = (item['unitShort'] ?? item['unit'] ?? 'Standard').toString();
+
+                      cartState.addItem(
+                        CartItem(
+                          id: id,
+                          storeId: 'store_bbw_westover',
+                          storeName: 'Bath & Body Works',
+                          title: pName,
+                          price: pPrice,
+                          subtitle: pUnit,
+                          imageUrl: pImage,
+                          quantity: _quantity,
+                        ),
+                      );
+                      if (context.mounted) Navigator.pop(context);
                     },
                     child: Text(
                       'ADD TO BAG • \$${(price * _quantity).toStringAsFixed(2)}',
