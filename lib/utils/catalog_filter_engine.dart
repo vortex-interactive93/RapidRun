@@ -26,10 +26,10 @@ class CatalogFilterEngine {
     } else if (lower.contains('body sprays & mists') || lower.contains('mist') || lower.contains('spray')) {
       return [
         'All',
-        'Fine Fragrance Mist',
+        'Body Spray & Mist',
         'Diamond Shimmer Mist',
-        'Deodorizing Body Spray',
-        'Essential Oil Mist',
+        'Fine Fragrance Mist',
+        'Travel Size Fine Fragrance Mist',
       ];
     } else if (lower.contains('candle')) {
       return ['All', '3-Wick', 'Single Wick', '4-Wick', 'Holders & Accessories'];
@@ -38,12 +38,12 @@ class CatalogFilterEngine {
     } else if (lower.contains('fragrance')) {
       return [
         'All',
+        'Body Spray & Mist',
+        'Diamond Shimmer Mist',
         'Fine Fragrance Mist',
+        'Travel Size Fine Fragrance Mist',
         'Eau de Parfum',
         'Cologne',
-        'Eau de Toilette & Parfum',
-        'Mini Eau De Parfum Rollerball',
-        'Solid Perfume',
       ];
     } else if (lower.contains('soap') || lower.contains('sanitizer')) {
       return ['All', 'Foaming Soaps', 'PocketBacs', 'Sanitizer Sprays', 'Holders & Clips', 'Soap Refills'];
@@ -122,6 +122,16 @@ class CatalogFilterEngine {
       case 'Solid Perfume':
         return name.contains('solid') || type.contains('solid');
 
+      // --- Body Sprays & Mists Official Web Filters ---
+      case 'Body Spray & Mist':
+        return type.contains('body spray') || type.contains('mist') || name.contains('body spray') || name.contains('mist');
+      case 'Diamond Shimmer Mist':
+        return name.contains('shimmer') || type.contains('shimmer');
+      case 'Fine Fragrance Mist':
+        return (type.contains('fine fragrance mist') || name.contains('fine fragrance mist') || name.contains('fragrance mist')) && !name.contains('travel') && !name.contains('mini');
+      case 'Travel Size Fine Fragrance Mist':
+        return (name.contains('travel') || name.contains('mini') || type.contains('travel')) && (name.contains('mist') || type.contains('mist'));
+
       // --- Candles ---
       case '3-Wick':
         return name.contains('3-wick') || name.contains('3 wick') || type.contains('3-wick');
@@ -152,19 +162,6 @@ class CatalogFilterEngine {
       case 'Mini & Travel Size':
       case 'Travel Size Body Cream':
         return name.contains('travel') || name.contains('mini') || name.contains('rollerball') || unit.contains('1 oz') || unit.contains('2.5 oz') || unit.contains('0.23 oz') || unit.contains('3 oz');
-
-      // --- Fragrance & Mists ---
-      case 'Fine Fragrance Mist':
-        return name.contains('fine fragrance mist') || name.contains('perfume mist') || type.contains('fine fragrance mist');
-      case 'Diamond Shimmer Mist':
-        return name.contains('shimmer') || type.contains('shimmer');
-      case 'Deodorizing Body Spray':
-      case 'Body Sprays':
-        return name.contains('body spray') || name.contains('deodorizing') || type.contains('body spray');
-      case 'Essential Oil Mist':
-        return name.contains('essential oil') || type.contains('essential oil');
-      case 'Travel & Rollerballs':
-        return name.contains('mini') || name.contains('rollerball') || name.contains('travel');
 
       // --- Hand Soaps & Sanitizers ---
       case 'Foaming Soaps':
