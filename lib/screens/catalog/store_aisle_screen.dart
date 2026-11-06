@@ -10,6 +10,7 @@ import '../../services/data_seeder_service.dart';
 import '../../utils/catalog_filter_engine.dart';
 import '../../widgets/navigation/app_bar_cart_badge.dart';
 import 'widgets/catalog_filter_bar.dart';
+import 'widgets/subcategory_hub_carousel.dart';
 import 'product_detail_sheet.dart';
 
 class StoreAisleScreen extends StatefulWidget {
@@ -37,6 +38,7 @@ class StoreAisleScreen extends StatefulWidget {
 class _StoreAisleScreenState extends State<StoreAisleScreen> {
   late String _selectedFilter;
   late List<String> _availableChips;
+  String? _selectedSubcategory;
   String _searchQuery = '';
   SortOption _sortOption = SortOption.featured;
   final TextEditingController _searchController = TextEditingController();
@@ -50,7 +52,11 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
   @override
   void initState() {
     super.initState();
-    _availableChips = CatalogFilterEngine.getFilterChipsForDepartment(activeAisleDepartment);
+    _selectedSubcategory = widget.subCategory.isNotEmpty ? widget.subCategory : null;
+    _availableChips = CatalogFilterEngine.getFilterChips(
+      department: activeAisleDepartment,
+      subcategory: _selectedSubcategory,
+    );
     if (_availableChips.contains(widget.initialCategory)) {
       _selectedFilter = widget.initialCategory;
     } else {
@@ -67,7 +73,11 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
         oldWidget.category != widget.category ||
         oldWidget.subCategory != widget.subCategory) {
       setState(() {
-        _availableChips = CatalogFilterEngine.getFilterChipsForDepartment(activeAisleDepartment);
+        _selectedSubcategory = widget.subCategory.isNotEmpty ? widget.subCategory : null;
+        _availableChips = CatalogFilterEngine.getFilterChips(
+          department: activeAisleDepartment,
+          subcategory: _selectedSubcategory,
+        );
         _selectedFilter = 'All';
       });
     }
@@ -267,7 +277,23 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
             ),
           ),
 
-          // 2. Animated Predicate Filter Chips
+          // 2. Visual Tier-2 Subcategory Hub Carousel
+          SubcategoryHubCarousel(
+            activeDepartment: activeAisleDepartment,
+            activeSubcategory: _selectedSubcategory,
+            onSubcategoryChanged: (newSub) {
+              setState(() {
+                _selectedSubcategory = newSub;
+                _availableChips = CatalogFilterEngine.getFilterChips(
+                  department: activeAisleDepartment,
+                  subcategory: newSub,
+                );
+                _selectedFilter = 'All';
+              });
+            },
+          ),
+
+          // 3. Animated Tier-3 Context-Aware Format Chips
           CatalogFilterBar(
             chips: _availableChips,
             selectedChip: _selectedFilter,

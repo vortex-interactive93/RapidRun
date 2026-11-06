@@ -15,37 +15,46 @@ class CatalogFilterEngine {
     return RegExp(r'\b' + RegExp.escape(word) + r'\b', caseSensitive: false).hasMatch(text);
   }
 
-  /// Returns the available subcategory chip labels for any given primary department
-  static List<String> getFilterChipsForDepartment(String department) {
-    final lower = department.toLowerCase();
+  /// Returns the exact filter chips for the active context.
+  /// Handles both parent departments and active subcategories.
+  static List<String> getFilterChips({
+    required String department,
+    String? subcategory,
+  }) {
+    final sub = (subcategory ?? '').toLowerCase();
+    final dept = department.toLowerCase();
 
-    // 1. Candles (candles.json)
-    if (lower.contains('candle')) {
-      return [
-        'All',
-        '3-Wick Candles',
-        'Single Wick Candles',
-        '4-Wick Candles',
-        'Candle Holders & Accessories',
-      ];
+    // 1. SPECIFIC SUBCATEGORY VIEWS (When inside a nested hub)
+    if (sub.contains('lip') || dept == 'lip care') {
+      return ['All', 'Lip Gloss', 'Lip Balm', 'Lip Oil', 'Lip Mask', 'Lip Tint'];
     }
 
-    // 2. Wallflowers & Diffusers (wallflowers_diffusers.json)
-    if (lower.contains('wallflower') ||
-        lower.contains('diffuser') ||
-        lower.contains('home fragrance')) {
-      return [
-        'All',
-        'Wallflowers Refills',
-        'Plugs & Nightlights',
-        'Room Sprays & Mists',
-        'Car Fragrance',
-        'Liquidless Reeds',
-      ];
+    if (sub.contains('moisturizer') || dept == 'all moisturizers' || dept == 'body moisturizers') {
+      return ['All', 'Body Cream', 'Body Lotion', 'Body Butter', 'Hand Cream', 'Massage Oil'];
     }
 
-    // 3. Hand Soaps & Sanitizers (hand_soaps_sanitizers.json)
-    if (lower.contains('soap') || lower.contains('sanitizer')) {
+    if (sub.contains('bath') || sub.contains('shower') || dept == 'bath & shower') {
+      return ['All', 'Body Wash', 'Body Scrubs', 'Cleansing Bars', 'Shower Steamers'];
+    }
+
+    if (sub.contains('travel') || sub.contains('mini') || dept == 'mini & travel size') {
+      return ['All', 'Travel Mists', 'Travel Creams', 'Travel Body Wash', 'Hand Creams'];
+    }
+
+    if (sub.contains('perfume') || sub.contains('cologne') || dept == 'perfume & cologne') {
+      return ['All', 'Eau de Parfum', 'Cologne', 'Mini EDP', 'Mini Cologne', 'Solid Perfume'];
+    }
+
+    if (sub.contains('mist') || sub.contains('spray') || dept == 'body sprays & mists') {
+      return ['All', 'Fine Fragrance Mist', 'Diamond Shimmer Mist', 'Essential Oil Mist', 'Deodorizing Spray'];
+    }
+
+    // 2. PARENT DEPARTMENT VIEWS
+    if (dept.contains('candle')) {
+      return ['All', '3-Wick Candles', 'Single Wick Candles', '4-Wick Candles', 'Holders & Accessories'];
+    }
+
+    if (dept.contains('soap') || dept.contains('sanitizer')) {
       return [
         'All',
         'Foaming Soaps',
@@ -57,8 +66,18 @@ class CatalogFilterEngine {
       ];
     }
 
-    // 4. The Men's Shop (men_s_shop.json)
-    if (lower.contains('men')) {
+    if (dept.contains('wallflower') || dept.contains('diffuser') || dept.contains('home fragrance')) {
+      return [
+        'All',
+        'Wallflowers Refills',
+        'Plugs & Nightlights',
+        'Room Sprays & Mists',
+        'Car Fragrance',
+        'Liquidless Reeds',
+      ];
+    }
+
+    if (dept.contains('men')) {
       return [
         'All',
         '3-in-1 Wash & Bar Soap',
@@ -70,77 +89,43 @@ class CatalogFilterEngine {
       ];
     }
 
-    // 5. Home Care (home_care.json)
-    if (lower.contains('home care')) {
-      return [
-        'All',
-        'Laundry Detergent',
-        'Fragrance Boosters',
-        'Soaps & Room Accents',
-      ];
+    if (dept.contains('home care')) {
+      return ['All', 'Laundry Detergent', 'Fragrance Boosters', 'Soaps & Accents'];
     }
 
-    // 6. Fragrance (all_fragrance.json)
-    if (lower.contains('perfume') || lower.contains('cologne')) {
+    if (dept.contains('fragrance')) {
       return [
         'All',
-        'Cologne',
+        'Fine Fragrance Mist',
         'Eau de Parfum',
-        'Eau de Toilette & Parfum',
-        'Mini Eau De Parfum Rollerball',
-        'Solid Perfume',
-      ];
-    }
-    if (lower.contains('body sprays & mists') || lower.contains('mist') || lower.contains('spray')) {
-      return [
-        'All',
-        'Body Spray & Mist',
-        'Diamond Shimmer Mist',
-        'Fine Fragrance Mist',
-        'Travel Size Fine Fragrance Mist',
-      ];
-    }
-    if (lower.contains('fragrance')) {
-      return [
-        'All',
-        'Fine Fragrance Mist',
-        'Eau de Parfum & Perfume',
         'Cologne',
-        'Body Sprays & Deodorant',
+        'Body Sprays',
         'Travel & Rollerballs',
       ];
     }
 
-    // 7. Body Care (body_care.json)
-    if (lower.contains('moisturizer') || lower.contains('lotion') || lower.contains('cream')) {
-      return [
-        'All',
-        'Body Butter & Balm',
-        'Body Cream',
-        'Body Lotion',
-        'Body Oil',
-        'Hand Cream',
-        'Lip Care',
-        'Smooth & Soothe Body Cream',
-        'Travel Size Body Cream',
-      ];
-    }
-
+    // Default: Top-level Body Care Department
     return [
       'All',
-      'Bath & Shower',
       'Body Moisturizers',
-      'Body Scrubs',
+      'Bath & Shower',
       'Lip Care',
+      'Body Scrubs',
       'Fine Fragrance Mist',
       'Travel Size',
     ];
+  }
+
+  /// Backward-compatibility alias
+  static List<String> getFilterChipsForDepartment(String department) {
+    return getFilterChips(department: department);
   }
 
   /// Master filter pipeline: Combines Subcategory Pill, Search Query, and Sort Order
   static List<Product> filterProducts({
     required List<Product> products,
     required String activeDepartment,
+    String? activeSubcategory,
     required String selectedChip,
     String searchQuery = '',
     SortOption sortOption = SortOption.featured,
@@ -185,7 +170,6 @@ class CatalogFilterEngine {
         break;
       case SortOption.featured:
       default:
-        // Preserves master catalog curation order
         break;
     }
 
@@ -205,9 +189,25 @@ class CatalogFilterEngine {
     final name = p.name.toLowerCase();
     final type = (p.productType ?? p.subCategory ?? '').toLowerCase();
     final unit = (p.unitShort ?? p.unit ?? '').toLowerCase();
+    final url = (p.productUrl ?? '').toLowerCase();
 
     switch (chip) {
-      // --- All Moisturizers Official Web Filters ---
+      // --- Lip Care Contextual Format Chips ---
+      case 'Lip Gloss':
+        return name.contains('lip gloss') || url.contains('-lip-gloss-');
+      case 'Lip Balm':
+        return name.contains('lip balm') || name.contains('night balm') || url.contains('-lip-balm-');
+      case 'Lip Oil':
+        return name.contains('lip oil') || url.contains('-lip-oil-');
+      case 'Lip Mask':
+        return name.contains('lip mask') || url.contains('-lip-mask-');
+      case 'Lip Tint':
+        return name.contains('lip tint') || name.contains('peptide lip') || url.contains('-lip-tint-');
+      case 'Lip Care':
+        return _hasWord(name, 'lip') || _hasWord(type, 'lip') || name.contains('balm');
+
+      // --- Body Moisturizers Contextual Format Chips ---
+      case 'Body Butter':
       case 'Body Butter & Balm':
       case 'Body Butter & Scrubs':
         return (_hasWord(name, 'butter') || _hasWord(name, 'balm') || _hasWord(type, 'butter') || _hasWord(type, 'balm')) &&
@@ -223,18 +223,16 @@ class CatalogFilterEngine {
       case 'Body Lotion':
         return (_hasWord(name, 'lotion') || _hasWord(type, 'lotion')) && !name.contains('mist') && !name.contains('spray');
       case 'Body Oil':
+      case 'Massage Oil':
         return (_hasWord(name, 'oil') || _hasWord(type, 'oil')) && !name.contains('mist') && !name.contains('spray');
       case 'Hand Cream':
         return _hasWord(name, 'hand') || _hasWord(type, 'hand');
-      case 'Lip Care':
-      case 'Lip Gloss':
-        return _hasWord(name, 'lip') || _hasWord(type, 'lip');
       case 'Smooth & Soothe Body Cream':
         return _hasWord(name, 'smooth') || _hasWord(name, 'soothe') || _hasWord(type, 'smooth');
       case 'Travel Size Body Cream':
         return (_hasWord(name, 'travel') || _hasWord(name, 'mini')) && (_hasWord(name, 'cream') || _hasWord(name, 'lotion'));
 
-      // --- Perfume & Cologne Official Web Filters ---
+      // --- Perfume & Cologne Contextual Format Chips ---
       case 'Cologne':
       case 'Colognes':
         return _hasWord(name, 'cologne') || _hasWord(type, 'cologne');
@@ -243,21 +241,25 @@ class CatalogFilterEngine {
         return (_hasWord(name, 'parfum') || _hasWord(type, 'parfum')) && !_hasWord(name, 'rollerball') && !_hasWord(name, 'mini');
       case 'Eau de Toilette & Parfum':
         return _hasWord(name, 'toilette') || _hasWord(type, 'toilette') || _hasWord(name, 'parfum') || _hasWord(type, 'parfum');
+      case 'Mini EDP':
       case 'Mini Eau De Parfum Rollerball':
         return _hasWord(name, 'rollerball') || _hasWord(name, 'mini') || _hasWord(type, 'rollerball');
       case 'Solid Perfume':
         return _hasWord(name, 'solid') || _hasWord(type, 'solid');
 
-      // --- Body Sprays & Mists Official Web Filters ---
+      // --- Body Sprays & Mists Contextual Format Chips ---
       case 'Body Spray & Mist':
       case 'Body Sprays & Deodorant':
         return _hasWord(name, 'spray') || _hasWord(name, 'mist') || _hasWord(type, 'spray') || _hasWord(type, 'mist');
       case 'Diamond Shimmer Mist':
         return _hasWord(name, 'shimmer') || _hasWord(type, 'shimmer');
       case 'Fine Fragrance Mist':
+      case 'Fragrance Mists':
         return (_hasWord(name, 'mist') || _hasWord(type, 'mist')) && !_hasWord(name, 'travel') && !_hasWord(name, 'mini');
       case 'Travel Size Fine Fragrance Mist':
         return (_hasWord(name, 'travel') || _hasWord(name, 'mini')) && (_hasWord(name, 'mist') || _hasWord(type, 'mist'));
+      case 'Essential Oil Mist':
+        return name.contains('essential oil');
 
       // --- Candles ---
       case '3-Wick':
@@ -269,6 +271,7 @@ class CatalogFilterEngine {
       case '4-Wick':
       case '4-Wick Candles':
         return _hasWord(name, '4-wick') || name.contains('4 wick');
+      case 'Holders & Pedestals':
       case 'Holders & Accessories':
       case 'Candle Holders & Accessories':
         return _hasWord(type, 'accessories') || _hasWord(name, 'holder') || _hasWord(name, 'pedestal') || _hasWord(name, 'sleeve');
@@ -283,7 +286,14 @@ class CatalogFilterEngine {
         return _hasWord(name, 'lotion') || _hasWord(name, 'cream') || _hasWord(name, 'butter');
       case 'Body Scrubs':
         return _hasWord(name, 'scrub');
+      case 'Cleansing Bars':
+        return name.contains('cleansing bar') || name.contains('bar soap');
+      case 'Shower Steamers':
+        return name.contains('steamers');
       case 'Travel Size':
+      case 'Travel Mists':
+      case 'Travel Creams':
+      case 'Travel Body Wash':
       case 'Travel & Rollerballs':
       case 'Mini & Travel Size':
         return _hasWord(name, 'travel') || _hasWord(name, 'mini') || unit.contains('1 oz') || unit.contains('2.5 oz') || unit.contains('3 oz');
@@ -333,6 +343,7 @@ class CatalogFilterEngine {
         return name.contains('3-in-1') || name.contains('bar soap');
       case 'Body Spray & Deodorant':
         return name.contains('body spray') || _hasWord(name, 'deodorant');
+      case 'Home & Car Fragrance':
       case 'Car & Home Fragrance':
         return name.contains('candle') || name.contains('wallflower') || name.contains('car fragrance') || name.contains('room spray');
       case "Men's Gift Sets":
@@ -343,6 +354,7 @@ class CatalogFilterEngine {
         return _hasWord(name, 'detergent');
       case 'Fragrance Boosters':
         return _hasWord(name, 'booster');
+      case 'Soaps & Accents':
       case 'Soaps & Room Accents':
         return name.contains('hand soap') || name.contains('room spray') || name.contains('single wick');
 
