@@ -335,6 +335,16 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
                     break;
                 }
 
+                // Deduplicate items to guarantee zero duplicate cards
+                final Map<String, Product> uniqueItems = {};
+                for (final p in filtered) {
+                  final key = '${p.name.toLowerCase()}_${(p.unitShort ?? p.unit ?? '').toLowerCase()}';
+                  if (!uniqueItems.containsKey(key) && !uniqueItems.containsKey(p.id)) {
+                    uniqueItems[key] = p;
+                  }
+                }
+                filtered = uniqueItems.values.toList();
+
                 if (filtered.isEmpty) {
                   return const Center(
                     child: Text('No matching in-store items found.', style: TextStyle(color: Colors.white54)),
