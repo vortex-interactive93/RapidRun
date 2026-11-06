@@ -15,13 +15,36 @@ class CatalogFilterEngine {
     final lower = department.toLowerCase();
 
     if (lower.contains('perfume') || lower.contains('cologne')) {
-      return ['All', 'Cologne', 'Eau de Parfum', 'Eau de Toilette & Parfum', 'Mini Eau De Parfum Rollerball', 'Solid Perfume'];
+      return [
+        'All',
+        'Cologne',
+        'Eau de Parfum',
+        'Eau de Toilette & Parfum',
+        'Mini Eau De Parfum Rollerball',
+        'Solid Perfume',
+      ];
+    } else if (lower.contains('body sprays & mists') || lower.contains('mist') || lower.contains('spray')) {
+      return [
+        'All',
+        'Fine Fragrance Mist',
+        'Diamond Shimmer Mist',
+        'Deodorizing Body Spray',
+        'Essential Oil Mist',
+      ];
     } else if (lower.contains('candle')) {
       return ['All', '3-Wick', 'Single Wick', '4-Wick', 'Holders & Accessories'];
     } else if (lower.contains('body care') || lower.contains('moisturizer') || lower.contains('bath')) {
       return ['All', 'Body Wash', 'Lotions & Creams', 'Body Butter & Scrubs', 'Lip Care', 'Travel Size'];
-    } else if (lower.contains('fragrance') || lower.contains('mist') || lower.contains('spray')) {
-      return ['All', 'Fine Fragrance Mist', 'Eau de Parfum', 'Cologne', 'Body Sprays', 'Travel & Rollerballs'];
+    } else if (lower.contains('fragrance')) {
+      return [
+        'All',
+        'Fine Fragrance Mist',
+        'Eau de Parfum',
+        'Cologne',
+        'Eau de Toilette & Parfum',
+        'Mini Eau De Parfum Rollerball',
+        'Solid Perfume',
+      ];
     } else if (lower.contains('soap') || lower.contains('sanitizer')) {
       return ['All', 'Foaming Soaps', 'PocketBacs', 'Sanitizer Sprays', 'Holders & Clips', 'Soap Refills'];
     } else if (lower.contains('wallflower') || lower.contains('diffuser')) {
@@ -130,12 +153,16 @@ class CatalogFilterEngine {
       case 'Travel Size Body Cream':
         return name.contains('travel') || name.contains('mini') || name.contains('rollerball') || unit.contains('1 oz') || unit.contains('2.5 oz') || unit.contains('0.23 oz') || unit.contains('3 oz');
 
-      // --- Fragrance ---
+      // --- Fragrance & Mists ---
       case 'Fine Fragrance Mist':
-      case 'Body Sprays & Mists':
-        return name.contains('mist') || name.contains('spray') || type.contains('mist');
+        return name.contains('fine fragrance mist') || name.contains('perfume mist') || type.contains('fine fragrance mist');
+      case 'Diamond Shimmer Mist':
+        return name.contains('shimmer') || type.contains('shimmer');
+      case 'Deodorizing Body Spray':
       case 'Body Sprays':
-        return name.contains('body spray') || name.contains('deodorizing');
+        return name.contains('body spray') || name.contains('deodorizing') || type.contains('body spray');
+      case 'Essential Oil Mist':
+        return name.contains('essential oil') || type.contains('essential oil');
       case 'Travel & Rollerballs':
         return name.contains('mini') || name.contains('rollerball') || name.contains('travel');
 
