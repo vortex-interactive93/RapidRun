@@ -74,15 +74,27 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
   }
 
   bool _matchesDepartment(String dept, Product p, String pType) {
-    if (dept == 'All' || dept == 'All Body Care' || dept == 'All Fragrances' || dept == 'All Products') {
+    final lowerDept = dept.toLowerCase();
+
+    // 1. Broad Department All-Match Rules
+    if (lowerDept == 'all' ||
+        lowerDept == 'all body care' ||
+        lowerDept == 'all fragrances' ||
+        lowerDept == 'all candles' ||
+        lowerDept == 'all hand soaps' ||
+        lowerDept == 'all hand sanitizers' ||
+        lowerDept == 'wallflowers' ||
+        lowerDept == "the men's shop" ||
+        lowerDept == 'laundry care' ||
+        lowerDept == 'all products') {
       return true;
     }
 
-    final lowerDept = dept.toLowerCase();
     final lowerName = p.name.toLowerCase();
     final lowerType = pType.toLowerCase();
     final lowerSub = (p.subCategory ?? '').toLowerCase();
 
+    // 2. Specific Subcategory Matching
     if (lowerDept.contains('moisturizer')) {
       return lowerName.contains('lotion') ||
           lowerName.contains('cream') ||

@@ -54,7 +54,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     }
 
     return (cat == 'fragrance' || sub == 'fragrance' || title == 'fragrance') ||
-        files.any((f) => f.contains('body_care/fragrance/fragrance.json'));
+        files.any((f) => f.contains('all_fragrance.json') || f.contains('body_sprays_mists.json') || f.contains('perfume_cologne.json'));
   }
 
   bool get _isMoisturizersCategory {
@@ -63,7 +63,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     final files = (widget.fileOverrides ?? []).map((f) => f.toLowerCase()).toList();
     return sub.contains('moisturizers') ||
         title.contains('moisturizers') ||
-        files.any((f) => f.contains('moisturizers.json'));
+        files.any((f) => f.contains('all_moisturizers.json'));
   }
 
   bool get _isBathShowerCategory {
@@ -73,7 +73,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     return sub.contains('bath & shower') ||
         sub.contains('bath_shower') ||
         title.contains('bath & shower') ||
-        files.any((f) => f.contains('bbw_body_wash.json') || f.contains('bbw_body_scrub.json'));
+        files.any((f) => f.contains('bath_shower.json'));
   }
 
   bool get _isMinisCategory {
@@ -84,7 +84,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
         sub.contains('travel') ||
         title.contains('mini') ||
         title.contains('travel') ||
-        files.any((f) => f.contains('travel_minis.json'));
+        files.any((f) => f.contains('mini_travel_size.json'));
   }
 
   bool get _isCandlesCategory {
@@ -104,7 +104,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
         sub.contains('room mist') ||
         title.contains('room spray') ||
         title.contains('room mist') ||
-        files.any((f) => f.contains('bbw_room_sprays_mists.json'));
+        files.any((f) => f.contains('room_sprays_mists.json'));
   }
 
   bool get _isCarFragranceCategory {
@@ -115,7 +115,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
         sub.contains('car air freshener') ||
         title.contains('car fragrance') ||
         title.contains('car air freshener') ||
-        files.any((f) => f.contains('bbw_car_fragrance.json'));
+        files.any((f) => f.contains('car_fragrance_fresheners.json'));
   }
 
   bool get _isAllMensBodyCareCategory {
@@ -124,8 +124,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
     final files = (widget.fileOverrides ?? []).map((f) => f.toLowerCase()).toList();
     return sub.contains("all men's body care") ||
         title.contains("all men's body care") ||
-        (files.any((f) => f.contains('bbw_mens_body_care.json')) &&
-            files.any((f) => f.contains('bbw_mens_fragrance.json')));
+        files.any((f) => f.contains('mens_shop.json'));
   }
 
   List<String> get _aisles {
