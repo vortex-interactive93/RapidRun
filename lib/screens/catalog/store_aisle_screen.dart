@@ -97,14 +97,11 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
 
     // 2. Specific Subcategory Matching
     if (lowerDept.contains('moisturizer')) {
-      return lowerName.contains('lotion') ||
-          lowerName.contains('cream') ||
-          lowerName.contains('butter') ||
-          lowerName.contains('balm') ||
-          lowerName.contains('oil') ||
-          lowerType.contains('lotion') ||
-          lowerType.contains('cream') ||
-          lowerType.contains('moisturizer');
+      final isMistOrSpray = lowerName.contains('mist') || lowerName.contains('spray') || lowerType.contains('mist') || lowerType.contains('spray');
+      if (isMistOrSpray) return false;
+
+      return RegExp(r'\blotion\b|\bcream\b|\bbutter\b|\bbalm\b|\boil\b', caseSensitive: false).hasMatch(lowerName) ||
+          RegExp(r'\blotion\b|\bcream\b|\bmoisturizer\b', caseSensitive: false).hasMatch(lowerType);
     }
 
     if (lowerDept.contains('bath') || lowerDept.contains('shower')) {
