@@ -14,11 +14,13 @@ class CatalogFilterEngine {
   static List<String> getFilterChipsForDepartment(String department) {
     final lower = department.toLowerCase();
 
-    if (lower.contains('candle')) {
+    if (lower.contains('perfume') || lower.contains('cologne')) {
+      return ['All', 'Cologne', 'Eau de Parfum', 'Eau de Toilette & Parfum', 'Mini Eau De Parfum Rollerball', 'Solid Perfume'];
+    } else if (lower.contains('candle')) {
       return ['All', '3-Wick', 'Single Wick', '4-Wick', 'Holders & Accessories'];
     } else if (lower.contains('body care') || lower.contains('moisturizer') || lower.contains('bath')) {
       return ['All', 'Body Wash', 'Lotions & Creams', 'Body Butter & Scrubs', 'Lip Care', 'Travel Size'];
-    } else if (lower.contains('fragrance')) {
+    } else if (lower.contains('fragrance') || lower.contains('mist') || lower.contains('spray')) {
       return ['All', 'Fine Fragrance Mist', 'Eau de Parfum', 'Cologne', 'Body Sprays', 'Travel & Rollerballs'];
     } else if (lower.contains('soap') || lower.contains('sanitizer')) {
       return ['All', 'Foaming Soaps', 'PocketBacs', 'Sanitizer Sprays', 'Holders & Clips', 'Soap Refills'];
@@ -85,6 +87,18 @@ class CatalogFilterEngine {
     final unit = (p.unitShort ?? p.unit ?? '').toLowerCase();
 
     switch (chip) {
+      // --- Perfume & Cologne Official Web Filters ---
+      case 'Cologne':
+        return type.contains('cologne') || name.contains('cologne');
+      case 'Eau de Parfum':
+        return type.contains('eau de parfum') || name.contains('eau de parfum') || (name.contains('parfum') && !name.contains('rollerball') && !name.contains('mini'));
+      case 'Eau de Toilette & Parfum':
+        return type.contains('toilette') || name.contains('toilette') || type.contains('parfum') || name.contains('parfum');
+      case 'Mini Eau De Parfum Rollerball':
+        return name.contains('rollerball') || name.contains('mini') || type.contains('rollerball') || type.contains('mini');
+      case 'Solid Perfume':
+        return name.contains('solid') || type.contains('solid');
+
       // --- Candles ---
       case '3-Wick':
         return name.contains('3-wick') || name.contains('3 wick') || type.contains('3-wick');
@@ -120,11 +134,6 @@ class CatalogFilterEngine {
       case 'Fine Fragrance Mist':
       case 'Body Sprays & Mists':
         return name.contains('mist') || name.contains('spray') || type.contains('mist');
-      case 'Eau de Parfum':
-        return type.contains('eau de parfum') || name.contains('eau de parfum') || name.contains('parfum');
-      case 'Cologne':
-      case 'Perfume & Cologne':
-        return type.contains('cologne') || name.contains('cologne') || type.contains('perfume') || name.contains('perfume');
       case 'Body Sprays':
         return name.contains('body spray') || name.contains('deodorizing');
       case 'Travel & Rollerballs':
