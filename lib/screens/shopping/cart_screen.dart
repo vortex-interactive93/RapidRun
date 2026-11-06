@@ -241,6 +241,8 @@ class _CartScreenState extends State<CartScreen> {
                                   'name': i.name,
                                   'quantity': i.quantity,
                                   'price': i.price,
+                                  'imageUrl': i.imageUrl,
+                                  'size': i.size,
                                   'aisle': 'Fragrance Wall • Bay 1',
                                 };
                               }).toList();

@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart' hide OrderStatus;
 import '../models/dispatch_order.dart';
+import 'product_catalog_service.dart';
 
 class OrderDispatchService {
   OrderDispatchService._();
@@ -37,15 +38,23 @@ class OrderDispatchService {
     for (final raw in items) {
       final price = (raw['price'] ?? 16.95).toDouble();
       final qty = (raw['quantity'] ?? raw['qty'] ?? 1) as int;
+      final rawId = (raw['id'] ?? 'bbw_item').toString();
       subtotal += (price * qty);
       totalItems += qty;
 
+      String imgUrl = (raw['imageUrl'] ?? '').toString();
+      if (imgUrl.isEmpty) {
+        final prod = ProductCatalogService.instance.get(rawId) ??
+            ProductCatalogService.instance.get(rawId.startsWith('bbw_') ? rawId.substring(4) : 'bbw_$rawId');
+        imgUrl = prod?.imageUrl ?? '';
+      }
+
       itemsPayload.add({
-        'id': raw['id'] ?? 'bbw_item',
+        'id': rawId,
         'name': raw['name'] ?? 'Bath & Body Works Item',
         'quantity': qty,
         'price': price,
-        'imageUrl': raw['imageUrl'] ?? '',
+        'imageUrl': imgUrl,
         'size': raw['size'] ?? raw['unit'] ?? 'Standard',
         'aisle': 'Main Store Aisle',
       });
