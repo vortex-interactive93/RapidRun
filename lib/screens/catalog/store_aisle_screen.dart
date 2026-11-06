@@ -80,6 +80,7 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
     if (lowerDept == 'all' ||
         lowerDept == 'all body care' ||
         lowerDept == 'all fragrances' ||
+        lowerDept == 'fragrance' ||
         lowerDept == 'all candles' ||
         lowerDept == 'all hand soaps' ||
         lowerDept == 'all hand sanitizers' ||

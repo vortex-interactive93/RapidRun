@@ -65,10 +65,10 @@ class BbwStoreScreen extends StatelessWidget {
             ),
             const SizedBox(height: 18),
 
-            // 1. ACTIVE: ALL FRAGRANCES (UNLOCKED & LIVE)
+            // 1. ACTIVE: FRAGRANCE (UNLOCKED & LIVE)
             _buildCategoryCard(
               context,
-              title: 'All Fragrances',
+              title: 'Fragrance',
               subtitle: 'Fine Fragrance Mists, Perfumes, Colognes & Rollerballs',
               badgeText: '139 IN-STORE SKUS',
               badgeColor: gold,
