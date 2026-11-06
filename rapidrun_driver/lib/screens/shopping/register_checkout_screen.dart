@@ -253,6 +253,8 @@ class _RegisterCheckoutScreenState extends State<RegisterCheckoutScreen>
 
       if (!mounted) return;
 
+      ScaffoldMessenger.of(context).clearSnackBars();
+
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(
           builder: (_) => ActiveDeliveryScreen(

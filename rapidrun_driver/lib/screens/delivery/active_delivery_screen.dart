@@ -447,26 +447,50 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                         Expanded(
                           child: SizedBox(
                             height: 52,
-                            child: OutlinedButton.icon(
+                            child: OutlinedButton(
                               style: OutlinedButton.styleFrom(
                                 side: BorderSide(
-                                  color: _dropoffPhotoTaken ? Colors.greenAccent : gold,
+                                  color: _dropoffPhotoTaken ? const Color(0xFF4ADE80) : gold,
                                   width: 1.5,
                                 ),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                               ),
                               onPressed: _simulatePhotoCapture,
-                              icon: Icon(
-                                _dropoffPhotoTaken ? Icons.check_circle_rounded : Icons.camera_alt_outlined,
-                                color: _dropoffPhotoTaken ? Colors.greenAccent : gold,
-                              ),
-                              label: Text(
-                                _dropoffPhotoTaken ? 'Photo Taken' : 'Snap Photo',
-                                style: TextStyle(
-                                  color: _dropoffPhotoTaken ? Colors.greenAccent : Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 13,
-                                ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  if (_dropoffPhotoTaken) ...[
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(6),
+                                      child: Image.network(
+                                        'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=100&q=80',
+                                        width: 28,
+                                        height: 28,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    const Text(
+                                      'Verified',
+                                      style: TextStyle(
+                                        color: Color(0xFF4ADE80),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.5,
+                                      ),
+                                    ),
+                                  ] else ...[
+                                    const Icon(Icons.camera_alt_outlined, color: gold, size: 18),
+                                    const SizedBox(width: 6),
+                                    const Text(
+                                      'Snap Photo',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 12.5,
+                                      ),
+                                    ),
+                                  ],
+                                ],
                               ),
                             ),
                           ),
