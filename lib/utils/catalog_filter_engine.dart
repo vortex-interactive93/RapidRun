@@ -130,7 +130,9 @@ class CatalogFilterEngine {
 
   /// Strict word-boundary predicate tester (100% foolproof against substring collisions)
   static bool matchesSubcategoryPredicate(Product p, String chip) {
-    if (chip == 'All') return true;
+    if (chip == 'All' || chip == 'All Body Care' || chip == 'All Fragrances' || chip == 'All Candles' || chip == 'All Hand Soaps') return true;
+
+    if (p.tags.contains(chip)) return true;
 
     final name = p.name.toLowerCase();
     final type = (p.productType ?? p.subCategory ?? '').toLowerCase();

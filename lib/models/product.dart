@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import '../utils/bbw_product_classifier.dart';
 
 @immutable
 class FragranceProfile {
@@ -148,6 +149,10 @@ class Product {
         ? rawNotes.map((e) => e.toString()).toList()
         : const [];
 
+    final List<String> rawTags = (map['tags'] as List?)?.map((e) => e.toString()).toList() ?? const [];
+    final List<String> computedTags = BbwProductClassifier.classifyProduct(map);
+    final Set<String> combinedTags = {...rawTags, ...computedTags};
+
     return Product(
       id: map['id']?.toString() ?? '',
       name: (map['name'] ?? '').toString(),
@@ -167,7 +172,7 @@ class Product {
       fragranceOverview: (map['fragranceOverview'] ?? map['overview'])?.toString(),
       fragranceNotes: notes,
       rating: map['rating'] is num ? (map['rating'] as num).toDouble() : 4.8,
-      tags: (map['tags'] as List?)?.map((e) => e.toString()).toList() ?? const [],
+      tags: combinedTags.toList(),
       imageAsset: map['imageAsset']?.toString(),
       imageUrl: map['imageUrl']?.toString(),
       description: map['description']?.toString(),
