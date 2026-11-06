@@ -49,12 +49,31 @@ class _BottomNavShellState extends State<BottomNavShell> {
     ),
   ];
 
+  @override
+  void initState() {
+    super.initState();
+    navigationState.addListener(_onNavStateChanged);
+  }
+
+  @override
+  void dispose() {
+    navigationState.removeListener(_onNavStateChanged);
+    super.dispose();
+  }
+
+  void _onNavStateChanged() {
+    if (_index != navigationState.currentTabIndex && mounted) {
+      setState(() => _index = navigationState.currentTabIndex);
+    }
+  }
+
   void _onDestinationSelected(int i) {
     if (_index == i && i == 0) {
       AppNavigator.popToRoot(context);
       return;
     }
     HapticFeedback.selectionClick();
+    navigationState.switchTab(i);
     setState(() => _index = i);
   }
 
@@ -77,8 +96,8 @@ class _BottomNavShellState extends State<BottomNavShell> {
           ),
           SmartFloatingCartHud(
             currentTabIndex: _index,
-            onViewCartPressed: () => setState(() => _index = 2),
-            onCheckoutPressed: () => setState(() => _index = 2),
+            onViewCartPressed: () => _onDestinationSelected(2),
+            onCheckoutPressed: () => _onDestinationSelected(2),
           ),
         ],
       ),

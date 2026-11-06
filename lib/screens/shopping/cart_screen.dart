@@ -51,7 +51,11 @@ class _CartScreenState extends State<CartScreen> {
           body: isEmpty
               ? LuxuryEmptyCartView(
                   onExploreTapped: () {
-                    navigationState.switchTab(0);
+                    HapticFeedback.mediumImpact();
+                    if (Navigator.of(context).canPop()) {
+                      Navigator.of(context).popUntil((route) => route.isFirst);
+                    }
+                    navigationState.resetToHome();
                   },
                 )
               : ListView.separated(
