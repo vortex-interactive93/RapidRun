@@ -289,10 +289,10 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
             left: 0,
             right: 0,
             child: Container(
-              padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+              padding: const EdgeInsets.fromLTRB(16, 10, 16, 14),
               decoration: BoxDecoration(
                 color: cardSurface,
-                borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+                borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
                 border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
                 boxShadow: [
                   BoxShadow(
@@ -308,7 +308,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 children: [
                   Center(
                     child: Container(
-                      width: 40,
+                      width: 36,
                       height: 4,
                       decoration: BoxDecoration(
                         color: Colors.white24,
@@ -316,7 +316,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: 10),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -332,7 +332,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                                     widget.customerName,
                                     style: const TextStyle(
                                       color: Colors.white,
-                                      fontSize: 18,
+                                      fontSize: 17,
                                       fontWeight: FontWeight.w800,
                                     ),
                                     overflow: TextOverflow.ellipsis,
@@ -359,7 +359,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                             const SizedBox(height: 2),
                             Text(
                               widget.customerAddress,
-                              style: const TextStyle(color: Colors.white54, fontSize: 12.5),
+                              style: const TextStyle(color: Colors.white54, fontSize: 12),
                               overflow: TextOverflow.ellipsis,
                             ),
                           ],
@@ -372,23 +372,23 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                               backgroundColor: const Color(0xFF2A2A2A),
                               foregroundColor: gold,
                             ),
-                            icon: const Icon(Icons.phone_rounded, size: 20),
+                            icon: const Icon(Icons.phone_rounded, size: 18),
                             onPressed: _callCustomer,
                           ),
-                          const SizedBox(width: 8),
+                          const SizedBox(width: 6),
                           IconButton.filled(
                             style: IconButton.styleFrom(
                               backgroundColor: const Color(0xFF2A2A2A),
                               foregroundColor: gold,
                             ),
-                            icon: const Icon(Icons.chat_bubble_outline_rounded, size: 20),
+                            icon: const Icon(Icons.chat_bubble_outline_rounded, size: 18),
                             onPressed: _smsCustomer,
                           ),
                         ],
                       ),
                     ],
                   ),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: 10),
 
                   StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
                     stream: FirebaseFirestore.instance.collection('orders').doc(widget.orderId).snapshots(),
@@ -396,7 +396,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                       final liveNotes = snapshot.data?.data()?['deliveryNotes'] ?? widget.deliveryNotes;
 
                       return Container(
-                        padding: const EdgeInsets.all(12),
+                        padding: const EdgeInsets.all(10),
                         decoration: BoxDecoration(
                           color: const Color(0xFF141414),
                           borderRadius: BorderRadius.circular(12),
@@ -405,12 +405,14 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Icon(Icons.doorbell_outlined, color: Color(0xFFE6B450), size: 18),
-                            const SizedBox(width: 10),
+                            const Icon(Icons.doorbell_outlined, color: Color(0xFFE6B450), size: 16),
+                            const SizedBox(width: 8),
                             Expanded(
                               child: Text(
                                 liveNotes,
-                                style: const TextStyle(color: Colors.white70, fontSize: 12, height: 1.3),
+                                style: const TextStyle(color: Colors.white70, fontSize: 11.5, height: 1.25),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
                               ),
                             ),
                           ],
@@ -418,11 +420,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                       );
                     },
                   ),
-                  const SizedBox(height: 18),
+                  const SizedBox(height: 12),
 
                   if (!_arrivedAtCustomer) ...[
                     SizedBox(
-                      height: 52,
+                      height: 48,
                       child: ElevatedButton.icon(
                         style: ElevatedButton.styleFrom(
                           backgroundColor: gold,
@@ -434,10 +436,10 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                           HapticFeedback.heavyImpact();
                           setState(() => _arrivedAtCustomer = true);
                         },
-                        icon: const Icon(Icons.location_on_rounded, color: Colors.black),
+                        icon: const Icon(Icons.location_on_rounded, color: Colors.black, size: 18),
                         label: const Text(
                           'ARRIVED AT CUSTOMER',
-                          style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14, letterSpacing: 0.5),
+                          style: TextStyle(fontWeight: FontWeight.w900, fontSize: 13.5, letterSpacing: 0.5),
                         ),
                       ),
                     ),
@@ -446,47 +448,55 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                       children: [
                         Expanded(
                           child: SizedBox(
-                            height: 52,
+                            height: 48,
                             child: OutlinedButton(
                               style: OutlinedButton.styleFrom(
                                 side: BorderSide(
                                   color: _dropoffPhotoTaken ? const Color(0xFF4ADE80) : gold,
                                   width: 1.5,
                                 ),
+                                padding: const EdgeInsets.symmetric(horizontal: 4),
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                               ),
                               onPressed: _simulatePhotoCapture,
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
+                                mainAxisSize: MainAxisSize.min,
                                 children: [
                                   if (_dropoffPhotoTaken) ...[
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(6),
                                       child: Image.network(
                                         'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=100&q=80',
-                                        width: 28,
-                                        height: 28,
+                                        width: 24,
+                                        height: 24,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
-                                    const SizedBox(width: 8),
-                                    const Text(
-                                      'Verified',
-                                      style: TextStyle(
-                                        color: Color(0xFF4ADE80),
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 12.5,
+                                    const SizedBox(width: 6),
+                                    const Flexible(
+                                      child: Text(
+                                        'Verified',
+                                        style: TextStyle(
+                                          color: Color(0xFF4ADE80),
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12,
+                                        ),
+                                        overflow: TextOverflow.ellipsis,
                                       ),
                                     ),
                                   ] else ...[
-                                    const Icon(Icons.camera_alt_outlined, color: gold, size: 18),
-                                    const SizedBox(width: 6),
-                                    const Text(
-                                      'Snap Photo',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 12.5,
+                                    const Icon(Icons.camera_alt_outlined, color: gold, size: 16),
+                                    const SizedBox(width: 4),
+                                    const Flexible(
+                                      child: Text(
+                                        'Snap Photo',
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 12,
+                                        ),
+                                        overflow: TextOverflow.ellipsis,
                                       ),
                                     ),
                                   ],
@@ -495,11 +505,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        const SizedBox(width: 10),
                         Expanded(
                           flex: 2,
                           child: SizedBox(
-                            height: 52,
+                            height: 48,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: gold,
@@ -520,7 +530,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                                       'COMPLETE RUN',
                                       style: TextStyle(
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 14,
+                                        fontSize: 13.5,
                                         letterSpacing: 0.5,
                                       ),
                                     ),
