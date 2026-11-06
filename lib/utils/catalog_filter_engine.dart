@@ -14,7 +14,19 @@ class CatalogFilterEngine {
   static List<String> getFilterChipsForDepartment(String department) {
     final lower = department.toLowerCase();
 
-    if (lower.contains('perfume') || lower.contains('cologne')) {
+    if (lower.contains('moisturizer') || lower.contains('lotion') || lower.contains('cream')) {
+      return [
+        'All',
+        'Body Butter & Balm',
+        'Body Cream',
+        'Body Lotion',
+        'Body Oil',
+        'Hand Cream',
+        'Lip Care',
+        'Smooth & Soothe Body Cream',
+        'Travel Size Body Cream',
+      ];
+    } else if (lower.contains('perfume') || lower.contains('cologne')) {
       return [
         'All',
         'Cologne',
@@ -33,8 +45,8 @@ class CatalogFilterEngine {
       ];
     } else if (lower.contains('candle')) {
       return ['All', '3-Wick', 'Single Wick', '4-Wick', 'Holders & Accessories'];
-    } else if (lower.contains('body care') || lower.contains('moisturizer') || lower.contains('bath')) {
-      return ['All', 'Body Wash', 'Lotions & Creams', 'Body Butter & Scrubs', 'Lip Care', 'Travel Size'];
+    } else if (lower.contains('body care') || lower.contains('bath')) {
+      return ['All', 'Body Wash', 'Body Cream', 'Body Lotion', 'Body Butter & Balm', 'Lip Care', 'Travel Size'];
     } else if (lower.contains('fragrance')) {
       return [
         'All',
@@ -110,6 +122,26 @@ class CatalogFilterEngine {
     final unit = (p.unitShort ?? p.unit ?? '').toLowerCase();
 
     switch (chip) {
+      // --- All Moisturizers Official Web Filters ---
+      case 'Body Butter & Balm':
+      case 'Body Butter & Scrubs':
+        return name.contains('butter') || name.contains('balm') || type.contains('butter') || type.contains('balm');
+      case 'Body Cream':
+        return (type.contains('body cream') || name.contains('body cream') || name.contains('cream')) && !name.contains('hand') && !name.contains('travel') && !name.contains('smooth');
+      case 'Body Lotion':
+        return type.contains('lotion') || name.contains('lotion');
+      case 'Body Oil':
+        return type.contains('oil') || name.contains('oil') || name.contains('body oil');
+      case 'Hand Cream':
+        return name.contains('hand cream') || type.contains('hand cream') || name.contains('hand');
+      case 'Lip Care':
+      case 'Lip Gloss':
+        return name.contains('lip') || type.contains('lip');
+      case 'Smooth & Soothe Body Cream':
+        return name.contains('smooth') || name.contains('soothe') || type.contains('smooth');
+      case 'Travel Size Body Cream':
+        return (name.contains('travel') || name.contains('mini')) && (name.contains('cream') || name.contains('lotion'));
+
       // --- Perfume & Cologne Official Web Filters ---
       case 'Cologne':
         return type.contains('cologne') || name.contains('cologne');
@@ -148,19 +180,9 @@ class CatalogFilterEngine {
       case 'Body Wash & Shower Gel':
         return name.contains('body wash') || name.contains('shower gel') || name.contains('shower soap') || name.contains('foam bath') || type.contains('wash');
       case 'Lotions & Creams':
-      case 'Body Cream':
-      case 'Body Lotion':
         return name.contains('lotion') || name.contains('cream') || type.contains('lotion') || type.contains('cream');
-      case 'Body Butter & Scrubs':
-      case 'Body Butter & Balm':
-      case 'Body Scrub':
-        return name.contains('butter') || name.contains('scrub') || name.contains('balm') || name.contains('exfoliat');
-      case 'Lip Care':
-      case 'Lip Gloss':
-        return name.contains('lip');
       case 'Travel Size':
       case 'Mini & Travel Size':
-      case 'Travel Size Body Cream':
         return name.contains('travel') || name.contains('mini') || name.contains('rollerball') || unit.contains('1 oz') || unit.contains('2.5 oz') || unit.contains('0.23 oz') || unit.contains('3 oz');
 
       // --- Hand Soaps & Sanitizers ---
