@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:rapidrun/screens/catalog/bbw_fragrance_hub_screen.dart';
 import 'package:rapidrun/screens/catalog/bbw_body_care_hub_screen.dart';
 import 'package:rapidrun/screens/catalog/store_aisle_screen.dart';
+import '../storefronts/bbw_aura_storefront.dart';
+import '../../services/product_catalog_service.dart';
 
 class BbwStoreScreen extends StatelessWidget {
   const BbwStoreScreen({super.key});
@@ -64,6 +66,35 @@ class BbwStoreScreen extends StatelessWidget {
               style: TextStyle(color: Colors.white54, fontSize: 13),
             ),
             const SizedBox(height: 18),
+
+            // HERO: SCENT AURA DISCOVERY
+            _buildCategoryCard(
+              context,
+              title: 'Discover Scent Auras',
+              subtitle: 'Warm & Cozy, Fresh Woods, Fruity Sparkle & Floral Escape',
+              badgeText: 'INSTANT SENSORY DISCOVERY',
+              badgeColor: const Color(0xFF3B82F6),
+              icon: Icons.auto_awesome_rounded,
+              isActive: true,
+              onTap: () async {
+                HapticFeedback.lightImpact();
+                await ProductCatalogService.instance.ensureLoaded();
+                final allBBW = ProductCatalogService.instance
+                    .all()
+                    .where((p) => (p.store ?? '').toLowerCase().contains('bath') || (p.brand ?? '').toLowerCase().contains('bath'))
+                    .toList();
+
+                if (context.mounted) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => BBWAuraStorefront(allProducts: allBBW),
+                    ),
+                  );
+                }
+              },
+            ),
+            const SizedBox(height: 12),
 
             // 1. ACTIVE: FRAGRANCE (UNLOCKED & LIVE)
             _buildCategoryCard(
