@@ -342,37 +342,23 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
                   );
                 }
 
-                // Apply Department, Predicate Subcategory Filter, Search Query & Sort
-                List<Product> filtered = rawProducts.where((p) {
+                // 1. Department-level scoping
+                final scopedProducts = rawProducts.where((p) {
                   final rawJson = snapshot.data!.docs
                       .firstWhere((d) => d.id == p.id)
                       .data() as Map<String, dynamic>;
                   final pType = (rawJson['productType'] ?? p.subCategory ?? '').toString();
-
-                  final matchesDept = _matchesDepartment(activeAisleDepartment, p, pType);
-                  final matchesPill = CatalogFilterEngine.matchesSubcategoryPredicate(p, _selectedFilter);
-                  final matchesSearch = _searchQuery.isEmpty ||
-                      p.name.toLowerCase().contains(_searchQuery) ||
-                      p.fragranceNotes.any((n) => n.toLowerCase().contains(_searchQuery));
-
-                  return matchesDept && matchesPill && matchesSearch;
+                  return _matchesDepartment(activeAisleDepartment, p, pType);
                 }).toList();
 
-                // Sort Options Engine
-                switch (_sortOption) {
-                  case SortOption.priceLowToHigh:
-                    filtered.sort((a, b) => (a.price ?? 0.0).compareTo(b.price ?? 0.0));
-                    break;
-                  case SortOption.priceHighToLow:
-                    filtered.sort((a, b) => (b.price ?? 0.0).compareTo(a.price ?? 0.0));
-                    break;
-                  case SortOption.onSaleOnly:
-                    filtered = filtered.where((p) => p.hasSpecial || (p.promoBadge ?? '').isNotEmpty).toList();
-                    break;
-                  case SortOption.featured:
-                  default:
-                    break;
-                }
+                // 2. Master Taxonomy Filter & Sort Engine
+                List<Product> filtered = CatalogFilterEngine.filterAndSort(
+                  products: scopedProducts,
+                  activeChip: _selectedFilter,
+                  departmentName: _selectedSubcategory ?? activeAisleDepartment,
+                  searchQuery: _searchQuery,
+                  sort: _sortOption,
+                );
 
                 // Deduplicate items to guarantee zero duplicate cards
                 final Map<String, Product> uniqueItems = {};
