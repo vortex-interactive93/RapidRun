@@ -378,10 +378,11 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
   }
 
   /// 2. Horizontal Boutique Room Cards (1 Card = 1 JSON File)
+  /// FIXED: Increased height to 108 and tightened internal spacing to eliminate 2.0px bottom overflow
   Widget _buildBoutiqueRoomSelector() {
     return SliverToBoxAdapter(
       child: SizedBox(
-        height: 96,
+        height: 108,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(),
@@ -398,15 +399,16 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
                 setState(() {
                   _selectedBoutiqueIndex = index;
                   _selectedScentNote = 'All Scents';
+                  _onlyPromoDeals = false; // Reset promo filter when entering a new room
                 });
                 _loadActiveBoutique();
               },
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 250),
                 curve: Curves.fastOutSlowIn,
-                width: 155,
+                width: 160,
                 margin: const EdgeInsets.only(right: 12),
-                padding: const EdgeInsets.all(12),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                 decoration: BoxDecoration(
                   gradient: isSelected
                       ? LinearGradient(
@@ -443,12 +445,12 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
                         Icon(
                           room.icon,
                           color: isSelected ? Colors.white : room.gradientColors[0],
-                          size: 22,
+                          size: 20,
                         ),
                         if (isSelected)
                           Container(
-                            width: 8,
-                            height: 8,
+                            width: 7,
+                            height: 7,
                             decoration: const BoxDecoration(
                               color: Colors.white,
                               shape: BoxShape.circle,
@@ -457,6 +459,7 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
                       ],
                     ),
                     Column(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -466,9 +469,11 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 13,
+                            height: 1.15,
                             fontWeight: isSelected ? FontWeight.w800 : FontWeight.w600,
                           ),
                         ),
+                        const SizedBox(height: 2),
                         Text(
                           room.subtitle,
                           maxLines: 1,
@@ -476,6 +481,7 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
                           style: TextStyle(
                             color: isSelected ? Colors.white70 : Colors.white38,
                             fontSize: 10,
+                            height: 1.1,
                           ),
                         ),
                       ],
@@ -602,8 +608,8 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
       sliver: SliverGrid(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 12,
-          crossAxisSpacing: 12,
+          mainAxisSpacing: 14,
+          crossAxisSpacing: 14,
           childAspectRatio: 0.52,
         ),
         delegate: SliverChildBuilderDelegate(
@@ -669,6 +675,11 @@ class _BbwSensoryProductCard extends StatelessWidget {
     required this.accentColor,
   });
 
+  /// Cleans scraper artifacts like "note: sweet peppermint" -> "sweet peppermint"
+  static String _cleanNote(String raw) {
+    return raw.replaceFirst(RegExp(r'^note:\s*', caseSensitive: false), '').trim();
+  }
+
   @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE5A93C);
@@ -676,7 +687,11 @@ class _BbwSensoryProductCard extends StatelessWidget {
     final regPrice = (product.msrp ?? (product.regularPrice ?? curPrice)).toDouble();
     final hasPromo = (product.promoBadge ?? '').isNotEmpty;
     final hasDiscount = regPrice > curPrice && curPrice > 0;
-    final topNotes = product.fragranceNotes.take(2).toList();
+    final topNotes = product.fragranceNotes
+        .map(_cleanNote)
+        .where((n) => n.isNotEmpty)
+        .take(2)
+        .toList();
 
     return GestureDetector(
       onTap: () {
