@@ -602,9 +602,9 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
       sliver: SliverGrid(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 14,
-          crossAxisSpacing: 14,
-          childAspectRatio: 0.58,
+          mainAxisSpacing: 12,
+          crossAxisSpacing: 12,
+          childAspectRatio: 0.52,
         ),
         delegate: SliverChildBuilderDelegate(
           (context, index) {
@@ -704,7 +704,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
           children: [
             // Product Image + Floating Promo Badge
             Expanded(
-              flex: 5,
+              flex: 10,
               child: Stack(
                 children: [
                   Container(
@@ -713,7 +713,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.vertical(top: Radius.circular(17)),
                     ),
-                    padding: const EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(8),
                     child: Image.network(
                       product.imageUrl ?? '',
                       fit: BoxFit.contain,
@@ -724,13 +724,13 @@ class _BbwSensoryProductCard extends StatelessWidget {
                   ),
                   if (hasPromo || hasDiscount)
                     Positioned(
-                      top: 8,
-                      left: 8,
+                      top: 6,
+                      left: 6,
                       child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
                         decoration: BoxDecoration(
                           color: const Color(0xFFE11D48),
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(6),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black.withValues(alpha: 0.25),
@@ -742,7 +742,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                           hasPromo ? product.promoBadge! : 'SALE',
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 9,
+                            fontSize: 8.5,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 0.4,
                           ),
@@ -755,9 +755,9 @@ class _BbwSensoryProductCard extends StatelessWidget {
 
             // Product Metadata + Sensory Fragrance Note Pills
             Expanded(
-              flex: 5,
+              flex: 12,
               child: Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(8),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -771,30 +771,32 @@ class _BbwSensoryProductCard extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 12.5,
+                            fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            height: 1.2,
+                            height: 1.18,
                           ),
                         ),
-                        const SizedBox(height: 3),
+                        const SizedBox(height: 2),
                         Text(
                           product.unitShort ?? 'Standard',
                           style: TextStyle(
                             color: Colors.white.withValues(alpha: 0.45),
-                            fontSize: 10.5,
+                            fontSize: 10,
                           ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        const SizedBox(height: 6),
-                        if (topNotes.isNotEmpty)
+                        if (topNotes.isNotEmpty) ...[
+                          const SizedBox(height: 4),
                           Wrap(
                             spacing: 4,
                             runSpacing: 4,
                             children: topNotes.map((note) {
                               return Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                                padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                                 decoration: BoxDecoration(
                                   color: accentColor.withValues(alpha: 0.18),
-                                  borderRadius: BorderRadius.circular(6),
+                                  borderRadius: BorderRadius.circular(5),
                                 ),
                                 child: Text(
                                   note,
@@ -802,19 +804,21 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
                                     color: Colors.white.withValues(alpha: 0.85),
-                                    fontSize: 9,
+                                    fontSize: 8.5,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               );
                             }).toList(),
                           ),
+                        ],
                       ],
                     ),
 
                     // Price & Quick Add Button
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -824,7 +828,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                 '\$${regPrice.toStringAsFixed(2)}',
                                 style: const TextStyle(
                                   color: Colors.white38,
-                                  fontSize: 10,
+                                  fontSize: 9.5,
                                   decoration: TextDecoration.lineThrough,
                                 ),
                               ),
@@ -832,7 +836,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                               '\$${curPrice.toStringAsFixed(2)}',
                               style: const TextStyle(
                                 color: Colors.white,
-                                fontSize: 15,
+                                fontSize: 14.5,
                                 fontWeight: FontWeight.w900,
                               ),
                             ),
@@ -851,7 +855,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                   await CartService.instance.addProduct(product, 1);
                                 },
                                 child: Container(
-                                  padding: const EdgeInsets.all(6),
+                                  padding: const EdgeInsets.all(5),
                                   decoration: BoxDecoration(
                                     color: accentColor,
                                     borderRadius: BorderRadius.circular(8),
@@ -863,14 +867,14 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                       ),
                                     ],
                                   ),
-                                  child: const Icon(Icons.add_rounded, color: Colors.white, size: 18),
+                                  child: const Icon(Icons.add_rounded, color: Colors.white, size: 16),
                                 ),
                               );
                             }
 
                             return Container(
-                              height: 32,
-                              padding: const EdgeInsets.symmetric(horizontal: 4),
+                              height: 30,
+                              padding: const EdgeInsets.symmetric(horizontal: 3),
                               decoration: BoxDecoration(
                                 color: const Color(0xFF161922),
                                 borderRadius: BorderRadius.circular(8),
@@ -888,18 +892,18 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                       CartService.instance.setQuantity(product.id, qty - 1);
                                     },
                                     child: const Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 4),
-                                      child: Icon(Icons.remove, color: Colors.white70, size: 14),
+                                      padding: EdgeInsets.symmetric(horizontal: 3),
+                                      child: Icon(Icons.remove, color: Colors.white70, size: 13),
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                    padding: const EdgeInsets.symmetric(horizontal: 3),
                                     child: Text(
                                       '$qty',
                                       style: const TextStyle(
                                         color: gold,
                                         fontWeight: FontWeight.w900,
-                                        fontSize: 12.5,
+                                        fontSize: 12,
                                       ),
                                     ),
                                   ),
@@ -909,8 +913,8 @@ class _BbwSensoryProductCard extends StatelessWidget {
                                       await CartService.instance.addProduct(product, 1);
                                     },
                                     child: const Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 4),
-                                      child: Icon(Icons.add, color: gold, size: 14),
+                                      padding: EdgeInsets.symmetric(horizontal: 3),
+                                      child: Icon(Icons.add, color: gold, size: 13),
                                     ),
                                   ),
                                 ],
