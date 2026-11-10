@@ -325,18 +325,25 @@ class CatalogFilterEngine {
       // --- Wallflowers & Diffusers ---
       case 'Wallflowers Refills':
       case 'Wallflowers Fragrance Refills':
-        return name.contains('wallflowers fragrance refill') || _hasWord(name, 'refill');
+      case 'Refills':
+        return (name.contains('wallflowers fragrance refill') || _hasWord(name, 'refill')) &&
+            !name.contains('soap') && !name.contains('lip') && !name.contains('wash');
       case 'Plugs & Nightlights':
       case 'Wallflowers Plugs':
-        return _hasWord(name, 'plug') || _hasWord(name, 'nightlight');
+      case 'Plugs':
+        return (_hasWord(name, 'plug') || _hasWord(name, 'nightlight')) &&
+            !name.contains('lip') && !name.contains('wash');
       case 'Room Sprays':
       case 'Room Sprays & Mists':
-        return name.contains('room spray') || name.contains('room mist');
+        return (name.contains('room spray') || name.contains('room mist') || name.contains('concentrated room spray')) &&
+            !name.contains('fine fragrance mist') && !name.contains('body spray') && !name.contains('shimmer');
       case 'Car Fragrance':
       case 'Car Fragrance & Fresheners':
-        return name.contains('car fragrance') || name.contains('visor clip') || name.contains('vent clip');
+        return (name.contains('car fragrance') || name.contains('visor clip') || name.contains('vent clip')) &&
+            !name.contains('lip');
       case 'Liquidless Reeds':
-        return name.contains('reeds') || name.contains('vessel');
+      case 'Reeds & Diffusers':
+        return (name.contains('reeds') || name.contains('vessel')) && !name.contains('lip');
 
       // --- Men's Shop ---
       case '3-in-1 Wash & Bar Soap':

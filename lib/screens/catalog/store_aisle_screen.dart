@@ -144,6 +144,22 @@ class _StoreAisleScreenState extends State<StoreAisleScreen> {
       return lowerName.contains('mist') || lowerName.contains('spray') || lowerType.contains('mist') || lowerType.contains('spray');
     }
 
+    if (lowerDept.contains('wallflower') || lowerDept.contains('diffuser') || lowerDept.contains('plug') || lowerDept.contains('refill') || lowerDept.contains('room spray') || lowerDept.contains('car fragrance')) {
+      if (lowerName.contains('lip') || lowerName.contains('wash') || lowerName.contains('fine fragrance mist') || lowerName.contains('lotion') || lowerName.contains('cream')) {
+        return false;
+      }
+      return lowerName.contains('wallflower') ||
+          lowerName.contains('plug') ||
+          lowerName.contains('refill') ||
+          lowerName.contains('nightlight') ||
+          lowerName.contains('room spray') ||
+          lowerName.contains('room mist') ||
+          lowerName.contains('car fragrance') ||
+          lowerName.contains('reeds') ||
+          lowerType.contains('wallflower') ||
+          lowerType.contains('diffuser');
+    }
+
     if (lowerDept.contains('perfume') || lowerDept.contains('cologne')) {
       return lowerName.contains('perfume') ||
           lowerName.contains('cologne') ||

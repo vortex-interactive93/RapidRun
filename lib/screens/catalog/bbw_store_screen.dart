@@ -87,8 +87,13 @@ class BbwStoreScreen extends StatelessWidget {
                 if (context.mounted) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (_) => BBWAuraStorefront(allProducts: allBBW),
+                    PageRouteBuilder(
+                      opaque: true,
+                      pageBuilder: (context, animation, secondaryAnimation) => BBWAuraStorefront(allProducts: allBBW),
+                      transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                        return FadeTransition(opacity: animation, child: child);
+                      },
+                      transitionDuration: const Duration(milliseconds: 220),
                     ),
                   );
                 }
