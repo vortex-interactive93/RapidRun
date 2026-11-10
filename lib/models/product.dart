@@ -128,14 +128,23 @@ class Product {
   });
 
   factory Product.fromJson(Map<String, dynamic> map) {
-    final double curPrice = map['price'] is num
+    final String rawPromo = (map['promoBadge'] ?? map['promo'] ?? '').toString().trim();
+    final bool hasExplicitPromo = rawPromo.isNotEmpty;
+
+    double curPrice = map['price'] is num
         ? (map['price'] as num).toDouble()
         : (map['salePrice'] is num ? (map['salePrice'] as num).toDouble() : 0.0);
-    final double listPrice = map['regularPrice'] is num
+    double listPrice = map['regularPrice'] is num
         ? (map['regularPrice'] as num).toDouble()
         : (map['msrp'] is num ? (map['msrp'] as num).toDouble() : curPrice);
 
-    final String rawPromo = (map['promoBadge'] ?? map['promo'] ?? '').toString().trim();
+    if (listPrice <= 0) listPrice = curPrice;
+
+    // If there is no explicit promo badge or active special flag, use the regular retail price!
+    if (!hasExplicitPromo && listPrice > 0) {
+      curPrice = listPrice;
+    }
+
     final String rawUnit = (map['unit'] ?? '').toString().trim();
 
     String shortUnit = (map['unitShort'] ?? '').toString().trim();

@@ -686,7 +686,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
     final curPrice = (product.price ?? (product.salePrice ?? 16.95)).toDouble();
     final regPrice = (product.msrp ?? (product.regularPrice ?? curPrice)).toDouble();
     final hasPromo = (product.promoBadge ?? '').isNotEmpty;
-    final hasDiscount = regPrice > curPrice && curPrice > 0;
+    final hasDiscount = hasPromo && regPrice > curPrice && curPrice > 0;
     final topNotes = product.fragranceNotes
         .map(_cleanNote)
         .where((n) => n.isNotEmpty)

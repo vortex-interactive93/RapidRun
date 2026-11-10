@@ -83,7 +83,7 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
 
     final curPrice = (p.price ?? (p.salePrice ?? 0.0)).toDouble();
     final regPrice = (p.msrp ?? (p.regularPrice ?? curPrice)).toDouble();
-    final hasRealDiscount = (regPrice - curPrice) > 0.05;
+    final hasRealDiscount = (p.promoBadge ?? '').isNotEmpty && (regPrice - curPrice) > 0.05;
     final overview = (p.fragranceOverview ?? '').trim();
     final cleanNotes = _getCleanNotes(p.fragranceNotes, overview);
 
