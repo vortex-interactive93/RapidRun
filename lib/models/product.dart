@@ -128,21 +128,25 @@ class Product {
   });
 
   factory Product.fromJson(Map<String, dynamic> map) {
-    final String rawPromo = (map['promoBadge'] ?? map['promo'] ?? '').toString().trim();
-    final bool hasExplicitPromo = rawPromo.isNotEmpty;
+    String rawPromo = (map['promoBadge'] ?? map['promo'] ?? '').toString().trim();
 
-    double curPrice = map['price'] is num
+    final double curPriceVal = map['price'] is num
         ? (map['price'] as num).toDouble()
         : (map['salePrice'] is num ? (map['salePrice'] as num).toDouble() : 0.0);
-    double listPrice = map['regularPrice'] is num
+    final double listPriceVal = map['regularPrice'] is num
         ? (map['regularPrice'] as num).toDouble()
-        : (map['msrp'] is num ? (map['msrp'] as num).toDouble() : curPrice);
+        : (map['msrp'] is num ? (map['msrp'] as num).toDouble() : curPriceVal);
 
-    if (listPrice <= 0) listPrice = curPrice;
+    double curPrice = curPriceVal > 0 ? curPriceVal : (listPriceVal > 0 ? listPriceVal : 16.95);
+    double listPrice = listPriceVal > 0 ? listPriceVal : curPrice;
 
-    // If there is no explicit promo badge or active special flag, use the regular retail price!
-    if (!hasExplicitPromo && listPrice > 0) {
-      curPrice = listPrice;
+    // Dynamic promo badge resolution: Preserve explicit promos or generate deal tags for real discounts
+    if (rawPromo.isEmpty && listPrice > curPrice && curPrice > 0) {
+      if (map['category'] == 'Candles' && curPrice == 10.0) {
+        rawPromo = 'SPECIAL: \$10 SINGLE WICK';
+      } else {
+        rawPromo = 'SPECIAL OFFER';
+      }
     }
 
     final String rawUnit = (map['unit'] ?? '').toString().trim();
