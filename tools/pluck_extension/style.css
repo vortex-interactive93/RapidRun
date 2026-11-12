@@ -16,7 +16,7 @@
   padding: 16px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
   color: #ffffff;
-  width: 280px;
+  width: 285px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,11 +107,6 @@
   filter: brightness(1.08);
 }
 
-.pluck-primary-btn:active,
-.pluck-secondary-btn:active {
-  transform: scale(0.97);
-}
-
 .pluck-secondary-btn {
   background: #1E222D;
   color: #ffffff;
@@ -123,8 +118,30 @@
   cursor: pointer;
 }
 
+.pluck-enrich-btn {
+  background: linear-gradient(135deg, #2563EB, #7C3AED);
+  color: #ffffff;
+  border: none;
+  padding: 9px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.pluck-enrich-btn:hover {
+  filter: brightness(1.1);
+}
+
+.pluck-primary-btn:active,
+.pluck-secondary-btn:active,
+.pluck-enrich-btn:active {
+  transform: scale(0.97);
+}
+
 #pluck-status {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.72);
   text-align: center;
 }
