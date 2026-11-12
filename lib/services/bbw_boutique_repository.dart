@@ -1,5 +1,6 @@
 // File: lib/services/bbw_boutique_repository.dart
 
+import 'dart:async';
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
@@ -114,8 +115,10 @@ class BbwBoutiqueRepository {
     if (forceReload) resetCache();
     if (_isLoaded) return;
 
-    // First, purge stale BBW documents from Cloud Firestore
-    await purgeAllBbwFromFirestore();
+    // Purge stale BBW documents in background so local JSON loading completes instantly (<50ms)!
+    unawaited(purgeAllBbwFromFirestore().catchError((e) {
+      debugPrint('⚠️ [BBW Purge] Background Firestore cleanup notice: $e');
+    }));
 
     final Map<String, Product> dedupedBySku = {};
     int filesLoadedCount = 0;
