@@ -217,6 +217,7 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
   int _selectedBoutiqueIndex = 0;
   String _selectedScentNote = 'All Scents';
   bool _onlyPromoDeals = false;
+  String _selectedSort = 'Featured';
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
 
@@ -266,7 +267,7 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
     final room = _boutiques[_selectedBoutiqueIndex];
     final rawList = _roomProductsCache[room.id] ?? [];
 
-    return rawList.where((product) {
+    final list = rawList.where((product) {
       // 1. Live Search bar check (Name + Fragrance Overview + Notes)
       if (_searchQuery.isNotEmpty) {
         final q = _searchQuery.toLowerCase();
@@ -294,6 +295,14 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
 
       return true;
     }).toList();
+
+    if (_selectedSort == 'Price: Low to High') {
+      list.sort((a, b) => (a.price ?? 0.0).compareTo(b.price ?? 0.0));
+    } else if (_selectedSort == 'Top Rated') {
+      list.sort((a, b) => (b.rating ?? 0.0).compareTo(a.rating ?? 0.0));
+    }
+
+    return list;
   }
 
   @override
@@ -916,56 +925,116 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
             ),
           ),
 
-          // Item Count & Special Offers Filter
+          // Item Count & Control Chips (Sort + Special Offers)
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '$count Products Available',
+                  '$count Products',
                   style: const TextStyle(
                     color: Colors.white60,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    HapticFeedback.lightImpact();
-                    setState(() => _onlyPromoDeals = !_onlyPromoDeals);
-                  },
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: _onlyPromoDeals
-                          ? const Color(0xFFE11D48).withValues(alpha: 0.2)
-                          : const Color(0xFF161922),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
-                      ),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.local_offer_rounded,
-                          size: 14,
-                          color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          'Special Offers Only',
-                          style: TextStyle(
-                            color: _onlyPromoDeals ? Colors.white : Colors.white70,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
+                Row(
+                  children: [
+                    // Sort Chip
+                    GestureDetector(
+                      onTap: () {
+                        HapticFeedback.lightImpact();
+                        setState(() {
+                          if (_selectedSort == 'Featured') {
+                            _selectedSort = 'Price: Low to High';
+                          } else if (_selectedSort == 'Price: Low to High') {
+                            _selectedSort = 'Top Rated';
+                          } else {
+                            _selectedSort = 'Featured';
+                          }
+                        });
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: _selectedSort != 'Featured'
+                              ? const Color(0xFFEAA134).withValues(alpha: 0.2)
+                              : const Color(0xFF161922),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: _selectedSort != 'Featured'
+                                ? const Color(0xFFEAA134)
+                                : Colors.white12,
                           ),
                         ),
-                      ],
+                        child: Row(
+                          children: [
+                            Icon(
+                              _selectedSort == 'Price: Low to High'
+                                  ? Icons.arrow_upward_rounded
+                                  : (_selectedSort == 'Top Rated'
+                                      ? Icons.star_rounded
+                                      : Icons.swap_vert_rounded),
+                              size: 13,
+                              color: _selectedSort != 'Featured'
+                                  ? const Color(0xFFEAA134)
+                                  : Colors.white54,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              _selectedSort,
+                              style: TextStyle(
+                                color: _selectedSort != 'Featured' ? Colors.white : Colors.white70,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 8),
+                    // Special Offers Chip
+                    GestureDetector(
+                      onTap: () {
+                        HapticFeedback.lightImpact();
+                        setState(() => _onlyPromoDeals = !_onlyPromoDeals);
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: _onlyPromoDeals
+                              ? const Color(0xFFE11D48).withValues(alpha: 0.2)
+                              : const Color(0xFF161922),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.local_offer_rounded,
+                              size: 13,
+                              color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              'Special Offers',
+                              style: TextStyle(
+                                color: _onlyPromoDeals ? Colors.white : Colors.white70,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
