@@ -35,70 +35,101 @@
     return `${clean}.json`;
   }
 
-  // --- 2. BULLETPROOF MULTI-TIER FRAGRANCE PARSER ---
-  function parseFragranceBlock(doc) {
+  function splitNotesString(rawNotes) {
+    return rawNotes
+      .replace(/^(?:fragrance\s+)?notes\s*:\s*/i, '')
+      .replace(/\.+$/, '')
+      .split(/,\s*|\s*•\s*/)
+      .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
+      .filter((n) => n.length > 1 && n.length < 60);
+  }
+
+  // --- 2. 3-LAYER FRAGRANCE EXTRACTOR (DOM + SIBLING SCAN + RAW NEXT.JS HTML) ---
+  function extractFragranceFromPdp(doc, rawHtml = '') {
     let overview = '';
     let notes = [];
 
-    // Target fragrance/scent containers
-    const containers = Array.from(doc.querySelectorAll(
-      '[id*="fragrance"], [class*="fragrance"], [id*="scent"], [class*="scent"], [data-component*="fragrance"], .pdp-details, .wick-accordion'
-    ));
+    // LAYER 1: Semantic Fragrance Accordion & DevTools Emotion Container
+    const accordionContainer =
+      doc.querySelector('[id*="content:fragrance"] .emotion-16zqzjt') ||
+      doc.querySelector('[id*="content:fragrance"]') ||
+      doc.querySelector('[id*="item:fragrance"]') ||
+      doc.querySelector('.emotion-16zqzjt');
 
-    const textNodes = [];
-    containers.forEach(c => {
-      c.querySelectorAll('p, div, li, span').forEach(el => {
-        const txt = el.textContent.replace(/\s+/g, ' ').trim();
-        if (txt.length > 3 && !textNodes.includes(txt)) textNodes.push(txt);
-      });
-    });
+    if (accordionContainer) {
+      const paragraphs = Array.from(accordionContainer.querySelectorAll('p'))
+        .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
+        .filter((t) => t.length > 0);
 
-    if (textNodes.length === 0) {
-      doc.querySelectorAll('p, li').forEach(el => {
-        const txt = el.textContent.replace(/\s+/g, ' ').trim();
-        if (txt.length > 3 && !textNodes.includes(txt)) textNodes.push(txt);
-      });
-    }
-
-    for (const text of textNodes) {
-      if (/^(?:fragrance\s+|scent\s+)?notes\s*:/i.test(text) || /what\s+it\s+smells\s+like\s*:/i.test(text)) {
-        const cleaned = text
-          .replace(/^(?:fragrance\s+|scent\s+)?notes\s*:\s*/i, '')
-          .replace(/^what\s+it\s+smells\s+like\s*:\s*/i, '')
-          .replace(/\.+$/, '')
-          .trim();
-
-        if (cleaned.length > 0) {
-          notes = cleaned
-            .split(/,\s*|\s*•\s*|\s*and\s+|\s*;\s*/)
-            .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
-            .filter((n) => n.length > 0 && n.length < 50);
-        }
-      } else if (!overview && (/^(?:what\s+it\s+does|fragrance\s+description)\s*:/i.test(text) || text.length > 25)) {
-        if (!text.toLowerCase().includes('ingredients') && !text.toLowerCase().includes('usage') && !text.toLowerCase().includes('shipping')) {
-          overview = text.replace(/^(?:what\s+it\s+does|fragrance\s+description)\s*:\s*/i, '').trim();
+      for (const text of paragraphs) {
+        if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
+          notes = splitNotesString(text);
+        } else if (!overview && text.length > 10 && !/^(what it smells like|why you'll love it)/i.test(text)) {
+          overview = text;
         }
       }
     }
 
-    // JSON-LD Fallback (<script type="application/ld+json">)
+    // LAYER 2: Full-Document Paragraph Scan (Immune to Accordion ID / Emotion Class Changes)
     if (notes.length === 0) {
-      const scripts = doc.querySelectorAll('script[type="application/ld+json"]');
-      scripts.forEach(s => {
-        try {
-          const json = JSON.parse(s.textContent);
-          const desc = json.description || json.disambiguatingDescription || '';
-          if (desc && /notes\s*:/i.test(desc)) {
-            const match = desc.match(/notes\s*:\s*([^.]+)/i);
-            if (match) {
-              notes = match[1].split(/,\s*/).map(n => n.trim()).filter(n => n.length > 0);
+      const allParagraphs = Array.from(doc.querySelectorAll('p, div, li'));
+      for (const el of allParagraphs) {
+        if (el.children.length > 2) continue;
+        const text = el.textContent.replace(/\s+/g, ' ').trim();
+        if (/^(?:fragrance\s+)?notes\s*:\s*.+/i.test(text) && text.length < 350) {
+          notes = splitNotesString(text);
+
+          if (!overview && el.previousElementSibling) {
+            const prevText = el.previousElementSibling.textContent.replace(/\s+/g, ' ').trim();
+            if (prevText.length > 12 && prevText.length < 500) {
+              overview = prevText;
             }
           }
-        } catch (_) {}
-      });
+          if (notes.length > 0) break;
+        }
+      }
+    }
+
+    // LAYER 3: Raw HTML / Next.js RSC Flight Payload Fallback
+    if (notes.length === 0 && rawHtml) {
+      const normalizedHtml = rawHtml
+        .replace(/\\"/g, '"')
+        .replace(/\\u0026/g, '&')
+        .replace(/'/g, "'")
+        .replace(/"/g, '"');
+
+      const notesMatch = normalizedHtml.match(/(?:Fragrance\s+)?Notes\s*:\s*([^<>"\\]{4,280})/i);
+      if (notesMatch && notesMatch[1]) {
+        notes = splitNotesString(notesMatch[1]);
+      }
+
+      if (!overview && notesMatch && notesMatch.index > 30) {
+        const precedingChunk = normalizedHtml.slice(Math.max(0, notesMatch.index - 450), notesMatch.index);
+        const pMatches = [...precedingChunk.matchAll(/>([^<>]{18,380})</g)];
+        if (pMatches.length > 0) {
+          const candidate = pMatches[pMatches.length - 1][1].replace(/\s+/g, ' ').trim();
+          if (!/^(fragrance|benefits|ingredients|how to use)/i.test(candidate)) {
+            overview = candidate;
+          }
+        }
+      }
     }
 
     return { overview, notes };
+  }
+
+  function isUnscentedHardware(name) {
+    const lower = (name || '').toLowerCase();
+    return (
+      lower.includes('holder') ||
+      lower.includes('pedestal') ||
+      lower.includes('fragrance plug') ||
+      lower.includes('duo plug') ||
+      lower.includes('reed vessel') ||
+      lower.includes('wristlet') ||
+      lower.includes('lanyard') ||
+      lower.includes('snapcase')
+    );
   }
 
   const initialTitle = getPageCategoryName();
@@ -112,7 +143,7 @@
       <div id="pluck-hud-header">
         <div class="pluck-title-row">
           <span class="pluck-icon">⚡</span>
-          <span class="pluck-title">Pluck 2.4</span>
+          <span class="pluck-title">Pluck 2.5</span>
         </div>
         <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
       </div>
@@ -140,7 +171,7 @@
     filenameInput.value = slugifyToFilename(title);
 
     if (window.location.pathname.includes('/p/')) {
-      const parsed = parseFragranceBlock(document);
+      const parsed = extractFragranceFromPdp(document, document.documentElement.innerHTML);
       statusEl.innerText = parsed.notes.length > 0
         ? `🌸 PDP Ready: ${parsed.notes.length} notes found`
         : `📄 PDP Detected: "${title}"`;
@@ -162,7 +193,7 @@
 
     const urlMatch = window.location.href.match(/-([0-9]{8,10})(?:\.html|\?|$)/);
     const pid = urlMatch ? urlMatch[1] : Date.now().toString();
-    const { overview, notes } = parseFragranceBlock(document);
+    const { overview, notes } = extractFragranceFromPdp(document, document.documentElement.innerHTML);
 
     const bodyText = document.body.innerText;
     const prices = [...bodyText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) => parseFloat(m[1]));
@@ -208,7 +239,7 @@
 
     if (window.location.pathname.includes('/p/')) {
       const single = extractSinglePdp();
-      return { products: single || [], filename: `${slugifyToFilename(getPageCategoryName())}` };
+      return { products: single || [], filename: slugifyToFilename(getPageCategoryName()) };
     }
 
     const products = [];
@@ -239,7 +270,7 @@
 
         let productUrl = linkEl ? linkEl.href : '';
         if (productUrl.startsWith('/')) {
-          productUrl = 'https://www.bathandbodyworks.com' + productUrl;
+          productUrl = window.location.origin + productUrl;
         }
 
         let pid = card.getAttribute('data-pid') || '';
@@ -325,7 +356,7 @@
           promoBadge: promoBadge,
           hasSpecial: hasSpecial,
           imageUrl: imageUrl,
-          productUrl: productUrl || `https://www.bathandbodyworks.com/p/${pid}`,
+          productUrl: productUrl || `${window.location.origin}/p/${pid}`,
           unit: 'Standard',
           unitShort: 'Item',
           fragranceNotes: [],
@@ -344,11 +375,33 @@
     return { products, filename };
   }
 
-  // --- 6. SAME-ORIGIN BATCH NOTE ENRICHER ---
+  // --- 6. SAME-ORIGIN BATCH NOTE ENRICHER WITH RETRY & DIAGNOSTICS ---
   document.getElementById('pluck-enrich-btn').addEventListener('click', () => {
     fileInput.value = '';
     fileInput.click();
   });
+
+  async function fetchPdpWithRetry(rawUrl) {
+    const parsedUrl = new URL(rawUrl, window.location.origin);
+    const sameOriginUrl = window.location.origin + parsedUrl.pathname + parsedUrl.search;
+
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        const resp = await fetch(sameOriginUrl, {
+          credentials: 'include',
+          headers: { Accept: 'text/html,application/xhtml+xml' }
+        });
+        if (resp.ok) {
+          return await resp.text();
+        }
+        console.warn(`[Pluck] HTTP ${resp.status} for ${sameOriginUrl} (attempt ${attempt})`);
+      } catch (err) {
+        console.warn(`[Pluck] Fetch error for ${sameOriginUrl} (attempt ${attempt}):`, err);
+      }
+      await new Promise((r) => setTimeout(r, 900 * attempt));
+    }
+    return null;
+  }
 
   fileInput.addEventListener('change', async (e) => {
     const file = e.target.files[0];
@@ -364,32 +417,45 @@
 
       const parser = new DOMParser();
       let enrichedCount = 0;
+      let skippedHardware = 0;
+      const stillMissing = [];
 
       for (let i = 0; i < items.length; i++) {
         const item = items[i];
-        const needsNotes = !item.fragranceNotes || item.fragranceNotes.length === 0;
-        const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
-
-        if ((!needsNotes && !needsOverview) || !item.productUrl) continue;
-
-        statusEl.innerText = `✨ Enriching ${i + 1}/${items.length}: ${item.name.slice(0, 22)}...`;
-
-        try {
-          const resp = await fetch(item.productUrl, { credentials: 'include' });
-          if (resp.ok) {
-            const html = await resp.text();
-            const doc = parser.parseFromString(html, 'text/html');
-            const { overview, notes } = parseFragranceBlock(doc);
-
-            if (overview) item.fragranceOverview = overview;
-            if (notes.length > 0) item.fragranceNotes = notes;
-            if (overview || notes.length > 0) enrichedCount++;
-          }
-        } catch (fetchErr) {
-          console.warn('PDP enrich skip:', item.productUrl, fetchErr);
+        if (isUnscentedHardware(item.name)) {
+          skippedHardware++;
+          continue;
         }
 
-        await new Promise((r) => setTimeout(r, 350));
+        const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
+        const needsNotes = !item.fragranceNotes || item.fragranceNotes.length <= 1;
+
+        if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
+
+        statusEl.innerText = `✨ (${i + 1}/${items.length}) ${item.name.slice(0, 22)}...`;
+
+        const html = await fetchPdpWithRetry(item.productUrl);
+        if (html) {
+          const doc = parser.parseFromString(html, 'text/html');
+          const { overview, notes } = extractFragranceFromPdp(doc, html);
+
+          if (overview) item.fragranceOverview = overview;
+          if (notes.length > 0) item.fragranceNotes = notes;
+
+          if (overview || notes.length > 0) {
+            enrichedCount++;
+          } else {
+            stillMissing.push(item.name);
+          }
+        } else {
+          stillMissing.push(`${item.name} (fetch failed)`);
+        }
+
+        await new Promise((r) => setTimeout(r, 550));
+      }
+
+      if (stillMissing.length > 0) {
+        console.log('⚠️ [Pluck] Items without fragrance block on PDP:', stillMissing);
       }
 
       const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
@@ -402,13 +468,13 @@
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
 
-      statusEl.innerText = `✅ Enriched ${enrichedCount} items in ${file.name}!`;
+      statusEl.innerText = `✅ Enriched ${enrichedCount} items! (${skippedHardware} holders skipped)`;
     } catch (err) {
       statusEl.innerText = '❌ Failed to parse JSON file';
     }
   });
 
-  // --- DOWNLOAD ACTION ---
+  // --- DOWNLOAD & CLIPBOARD ACTIONS ---
   document.getElementById('pluck-extract-btn').addEventListener('click', () => {
     statusEl.innerText = 'Extracting...';
     const { products, filename } = extractProducts();
@@ -431,7 +497,6 @@
     statusEl.innerText = `✅ Plucked ${products.length} items to ${filename}!`;
   });
 
-  // --- CLIPBOARD ACTION ---
   document.getElementById('pluck-copy-btn').addEventListener('click', async () => {
     statusEl.innerText = 'Copying...';
     const { products, filename } = extractProducts();
