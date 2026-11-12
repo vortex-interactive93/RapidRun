@@ -1,13 +1,28 @@
 // File: lib/screens/catalog/bbw_store_screen.dart
 
-import 'dart:convert';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../models/product.dart';
 import '../../services/favorites_cart_service.dart';
+import '../../services/bbw_boutique_repository.dart';
 import 'product_detail_sheet.dart';
 import '../../widgets/navigation/app_bar_cart_badge.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
+
+class SignatureScent {
+  final String name;
+  final String subtitle;
+  final List<Color> gradient;
+  final IconData icon;
+
+  const SignatureScent({
+    required this.name,
+    required this.subtitle,
+    required this.gradient,
+    required this.icon,
+  });
+}
 
 /// Represents a hermetically sealed Boutique Room backed directly by a specific JSON asset.
 class BbwBoutiqueRoom {
@@ -114,6 +129,21 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
       gradientColors: [Color(0xFF3B82F6), Color(0xFF1E3A8A)],
     ),
     BbwBoutiqueRoom(
+      id: 'minis',
+      title: 'Minis & Travel',
+      subtitle: '\$5.95 Steals & Travel Size',
+      icon: Icons.luggage_rounded,
+      candidateAssetPaths: [
+        'assets/data/mini_and_travel_size.json',
+        'assets/data/mini_travel_size.json',
+        'assets/data/mini_travel_size_4.json',
+        'assets/data/mini_travel_size_5.json',
+        'assets/data/mini_travel_size.json',
+        'assets/data/mini_travel_size_3.json',
+      ],
+      gradientColors: [Color(0xFFF43F5E), Color(0xFF881337)],
+    ),
+    BbwBoutiqueRoom(
       id: 'home_care',
       title: 'Home & Laundry',
       subtitle: 'Detergent & Scent Boosters',
@@ -139,9 +169,55 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
     'Coconut',
   ];
 
+  static const List<SignatureScent> _signatureScents = [
+    SignatureScent(
+      name: 'A Thousand Wishes',
+      subtitle: 'Pink Prosecco & Amaretto',
+      gradient: [Color(0xFFE11D48), Color(0xFF881337)],
+      icon: Icons.auto_awesome_rounded,
+    ),
+    SignatureScent(
+      name: 'Mahogany Teakwood',
+      subtitle: 'Rich Mahogany & Lavender',
+      gradient: [Color(0xFF78350F), Color(0xFF451A03)],
+      icon: Icons.forest_rounded,
+    ),
+    SignatureScent(
+      name: 'Champagne Toast',
+      subtitle: 'Sparkling Berries & Tangerine',
+      gradient: [Color(0xFFF59E0B), Color(0xFF92400E)],
+      icon: Icons.local_bar_rounded,
+    ),
+    SignatureScent(
+      name: 'Snowflakes & Cashmere',
+      subtitle: 'Vanilla Cashmere & Clementine',
+      gradient: [Color(0xFFD97706), Color(0xFF78350F)],
+      icon: Icons.ac_unit_rounded,
+    ),
+    SignatureScent(
+      name: 'Into the Night',
+      subtitle: 'Dark Berries & Amber',
+      gradient: [Color(0xFF6B21A8), Color(0xFF3B0764)],
+      icon: Icons.nights_stay_rounded,
+    ),
+    SignatureScent(
+      name: 'Ocean',
+      subtitle: 'Blue Cypress & Vetiver',
+      gradient: [Color(0xFF0284C7), Color(0xFF0C4A6E)],
+      icon: Icons.waves_rounded,
+    ),
+    SignatureScent(
+      name: 'Vanilla Bean Noel',
+      subtitle: 'Fresh Vanilla & Sugar Cookie',
+      gradient: [Color(0xFF059669), Color(0xFF064E3B)],
+      icon: Icons.cookie_rounded,
+    ),
+  ];
+
   int _selectedBoutiqueIndex = 0;
   String _selectedScentNote = 'All Scents';
   bool _onlyPromoDeals = false;
+  bool _onlyInStoreReady = false;
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
 
@@ -165,8 +241,8 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
     super.dispose();
   }
 
-  /// Loads the exact JSON file for the selected Boutique Room.
-  /// Zero cross-category mixing.
+  /// Loads deduplicated, canonical products for the selected Boutique Room.
+  /// Zero cross-category mixing!
   Future<void> _loadActiveBoutique() async {
     final room = _boutiques[_selectedBoutiqueIndex];
     if (_roomProductsCache.containsKey(room.id) && _roomProductsCache[room.id]!.isNotEmpty) {
@@ -176,26 +252,8 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
 
     if (mounted) setState(() => _isLoading = true);
 
-    List<Product> loaded = [];
-    for (final path in room.candidateAssetPaths) {
-      try {
-        final rawJson = await rootBundle.loadString(path);
-        final List<dynamic> decoded = json.decode(rawJson);
-        final seenIds = <String>{};
-
-        for (final item in decoded) {
-          if (item is Map<String, dynamic>) {
-            final product = Product.fromJson(item);
-            if (product.id.isNotEmpty && seenIds.add(product.id)) {
-              loaded.add(product);
-            }
-          }
-        }
-        if (loaded.isNotEmpty) break;
-      } catch (e) {
-        debugPrint('⚠️ [Boutique] Note: Asset path $path skipped: $e');
-      }
-    }
+    await BbwBoutiqueRepository.instance.ensureInitialized();
+    final loaded = BbwBoutiqueRepository.instance.getProductsForRoom(room.id);
 
     if (mounted) {
       setState(() {
@@ -235,6 +293,11 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
         if (!hasPromo && !isDiscounted) return false;
       }
 
+      // 4. In-Store Ready Toggle check
+      if (_onlyInStoreReady) {
+        if (product.isOnlineExclusive == true) return false;
+      }
+
       return true;
     }).toList();
   }
@@ -247,24 +310,228 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
     return Scaffold(
       // 100% Opaque Dark Canvas — prevents any route pop ghosting!
       backgroundColor: const Color(0xFF0B0D12),
-      body: CustomScrollView(
-        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-        slivers: [
-          _buildDynamicHeader(activeRoom),
-          _buildBoutiqueRoomSelector(),
-          _buildScentAndDealControls(activeRoom, products.length),
-          if (_isLoading)
-            const SliverFillRemaining(
-              child: Center(
-                child: CircularProgressIndicator(color: Color(0xFFEAA134)),
-              ),
-            )
-          else if (products.isEmpty)
-            _buildEmptyResetState()
-          else
-            _buildProductSliverGrid(products, activeRoom),
+      body: Stack(
+        children: [
+          CustomScrollView(
+            physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+            slivers: [
+              _buildDynamicHeader(activeRoom),
+              _buildBoutiqueRoomSelector(),
+              _buildSignatureScentStrip(),
+              _buildScentAndDealControls(activeRoom, products.length),
+              if (_isLoading)
+                const SliverFillRemaining(
+                  child: Center(
+                    child: CircularProgressIndicator(color: Color(0xFFEAA134)),
+                  ),
+                )
+              else if (products.isEmpty)
+                _buildEmptyResetState()
+              else
+                _buildProductSliverGrid(products, activeRoom),
+            ],
+          ),
+          _buildFloatingMiniCartDock(),
         ],
       ),
+    );
+  }
+
+  /// Interactive Frosted-Glass Floating Mini-Cart Dock with Mix & Match Deal Engine
+  Widget _buildFloatingMiniCartDock() {
+    return ListenableBuilder(
+      listenable: cartState,
+      builder: (context, _) {
+        final totalCount = cartState.totalItemCount;
+        final subtotal = cartState.subtotal;
+        final hasItems = totalCount > 0;
+
+        // Calculate Mix & Match deal logic
+        String? dealIncentive;
+        final buy2Get1Items = cartState.items.where((item) {
+          final badge = item.promoBadge ?? '';
+          return badge.toLowerCase().contains('buy 2') || badge.toLowerCase().contains('get 1 free');
+        });
+
+        if (buy2Get1Items.isNotEmpty) {
+          final promoQty = buy2Get1Items.fold(0, (sum, i) => sum + i.quantity);
+          final remainder = promoQty % 3;
+          if (remainder == 2) {
+            dealIncentive = 'Buy 2, Get 1 FREE: Add 1 more item to unlock FREE item!';
+          } else if (remainder == 1) {
+            dealIncentive = 'Buy 2, Get 1 FREE: Add 2 more items to unlock deal!';
+          } else if (promoQty > 0 && remainder == 0) {
+            dealIncentive = '🎉 Mix & Match Deal Unlocked! (3 items = 1 FREE)';
+          }
+        } else if (cartState.items.any((i) => (i.promoBadge ?? '').isNotEmpty)) {
+          dealIncentive = '🔥 Special offer items in your cart!';
+        }
+
+        return AnimatedPositioned(
+          duration: const Duration(milliseconds: 350),
+          curve: Curves.easeOutBack,
+          left: 16,
+          right: 16,
+          bottom: hasItems ? 20 : -120,
+          child: AnimatedOpacity(
+            duration: const Duration(milliseconds: 250),
+            opacity: hasItems ? 1.0 : 0.0,
+            child: RepaintBoundary(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(22),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+                  child: Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF161922).withValues(alpha: 0.88),
+                      borderRadius: BorderRadius.circular(22),
+                      border: Border.all(
+                        color: const Color(0xFFEAA134).withValues(alpha: 0.45),
+                        width: 1.5,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.6),
+                          blurRadius: 20,
+                          offset: const Offset(0, 8),
+                        ),
+                        BoxShadow(
+                          color: const Color(0xFFEAA134).withValues(alpha: 0.15),
+                          blurRadius: 15,
+                          spreadRadius: -2,
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        if (dealIncentive != null) ...[
+                          Container(
+                            width: double.infinity,
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                            margin: const EdgeInsets.only(bottom: 8),
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [Color(0xFFE11D48), Color(0xFF9F1239)],
+                              ),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: Row(
+                              children: [
+                                const Icon(Icons.stars_rounded, color: Colors.white, size: 14),
+                                const SizedBox(width: 6),
+                                Expanded(
+                                  child: Text(
+                                    dealIncentive,
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 10.5,
+                                      fontWeight: FontWeight.w800,
+                                      letterSpacing: 0.2,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                        Row(
+                          children: [
+                            // Count Chip
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: const Color(0xFFEAA134),
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              child: Text(
+                                '$totalCount ${totalCount == 1 ? "ITEM" : "ITEMS"}',
+                                style: const TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.5,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 12),
+                            // Subtotal
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  const Text(
+                                    'SUBTOTAL',
+                                    style: TextStyle(
+                                      color: Colors.white38,
+                                      fontSize: 9,
+                                      fontWeight: FontWeight.w800,
+                                      letterSpacing: 0.8,
+                                    ),
+                                  ),
+                                  Text(
+                                    '\$${subtotal.toStringAsFixed(2)}',
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 17,
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            // View Cart Button
+                            GestureDetector(
+                              onTap: () {
+                                HapticFeedback.mediumImpact();
+                                Navigator.pushNamed(context, '/cart');
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                                decoration: BoxDecoration(
+                                  gradient: const LinearGradient(
+                                    colors: [Color(0xFFEAA134), Color(0xFFD97706)],
+                                  ),
+                                  borderRadius: BorderRadius.circular(14),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: const Color(0xFFEAA134).withValues(alpha: 0.4),
+                                      blurRadius: 8,
+                                      offset: const Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
+                                child: const Row(
+                                  children: [
+                                    Text(
+                                      'View Cart',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                    SizedBox(width: 6),
+                                    Icon(Icons.arrow_forward_rounded, color: Colors.black, size: 16),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -496,7 +763,120 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
     );
   }
 
-  /// 3. Scent Spotlight Bar + 1-Tap Promo Toggle
+  /// 2.5 Shop by Signature Scent Strip
+  Widget _buildSignatureScentStrip() {
+    return SliverToBoxAdapter(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.fromLTRB(16, 12, 16, 6),
+            child: Row(
+              children: [
+                Icon(Icons.auto_awesome_rounded, color: Color(0xFFEAA134), size: 14),
+                SizedBox(width: 6),
+                Text(
+                  'SHOP BY SIGNATURE SCENT',
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 74,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              itemCount: _signatureScents.length,
+              itemBuilder: (context, index) {
+                final scent = _signatureScents[index];
+
+                return GestureDetector(
+                  onTap: () {
+                    HapticFeedback.mediumImpact();
+                    _openScentRoutineBottomSheet(context, scent);
+                  },
+                  child: Container(
+                    width: 155,
+                    margin: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: scent.gradient,
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: Colors.white.withValues(alpha: 0.2)),
+                      boxShadow: [
+                        BoxShadow(
+                          color: scent.gradient[0].withValues(alpha: 0.3),
+                          blurRadius: 8,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(scent.icon, color: Colors.white, size: 14),
+                            const SizedBox(width: 4),
+                            Expanded(
+                              child: Text(
+                                scent.name,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 11.5,
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          scent.subtitle,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            color: Colors.white.withValues(alpha: 0.8),
+                            fontSize: 9.5,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _openScentRoutineBottomSheet(BuildContext context, SignatureScent scent) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (ctx) => _ScentRoutineBottomSheet(scent: scent),
+    );
+  }
+
+  /// 3. Scent Spotlight Bar + 1-Tap Filters
   Widget _buildScentAndDealControls(BbwBoutiqueRoom activeRoom, int count) {
     return SliverToBoxAdapter(
       child: Column(
@@ -542,56 +922,98 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
             ),
           ),
 
-          // Item Count & Mix-and-Match Deal Filter
+          // Item Count & Filters (In-Store Ready + Special Offers)
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '$count Products Available',
+                  '$count Products',
                   style: const TextStyle(
                     color: Colors.white60,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    HapticFeedback.lightImpact();
-                    setState(() => _onlyPromoDeals = !_onlyPromoDeals);
-                  },
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
-                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                    decoration: BoxDecoration(
-                      color: _onlyPromoDeals
-                          ? const Color(0xFFE11D48).withValues(alpha: 0.2)
-                          : const Color(0xFF161922),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(
-                        color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
-                      ),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.local_offer_rounded,
-                          size: 14,
-                          color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
-                        ),
-                        const SizedBox(width: 6),
-                        Text(
-                          'Special Offers Only',
-                          style: TextStyle(
-                            color: _onlyPromoDeals ? Colors.white : Colors.white70,
-                            fontSize: 11,
-                            fontWeight: FontWeight.w700,
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        HapticFeedback.lightImpact();
+                        setState(() => _onlyInStoreReady = !_onlyInStoreReady);
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: _onlyInStoreReady
+                              ? const Color(0xFF10B981).withValues(alpha: 0.2)
+                              : const Color(0xFF161922),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: _onlyInStoreReady ? const Color(0xFF10B981) : Colors.white12,
                           ),
                         ),
-                      ],
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.flash_on_rounded,
+                              size: 13,
+                              color: _onlyInStoreReady ? const Color(0xFF34D399) : Colors.white54,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              'In-Store Ready',
+                              style: TextStyle(
+                                color: _onlyInStoreReady ? Colors.white : Colors.white70,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 8),
+                    GestureDetector(
+                      onTap: () {
+                        HapticFeedback.lightImpact();
+                        setState(() => _onlyPromoDeals = !_onlyPromoDeals);
+                      },
+                      child: AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: _onlyPromoDeals
+                              ? const Color(0xFFE11D48).withValues(alpha: 0.2)
+                              : const Color(0xFF161922),
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.local_offer_rounded,
+                              size: 13,
+                              color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
+                            ),
+                            const SizedBox(width: 4),
+                            Text(
+                              'Special Offers',
+                              style: TextStyle(
+                                color: _onlyPromoDeals ? Colors.white : Colors.white70,
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -693,6 +1115,17 @@ class _BbwSensoryProductCard extends StatelessWidget {
         .take(2)
         .toList();
 
+    // Normalize unit display for Travel Size and Hand Cream
+    String displayUnit = product.unitShort ?? 'Standard';
+    final lowerName = product.name.toLowerCase();
+    if (lowerName.contains('travel size') || lowerName.contains('mini')) {
+      displayUnit = '2.5 oz';
+    } else if (lowerName.contains('hand cream')) {
+      displayUnit = '1 oz';
+    } else if (lowerName.contains('hand mask')) {
+      displayUnit = '1 Pair';
+    }
+
     return GestureDetector(
       onTap: () {
         HapticFeedback.lightImpact();
@@ -793,7 +1226,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          product.unitShort ?? 'Standard',
+                          displayUnit,
                           style: TextStyle(
                             color: Colors.white.withValues(alpha: 0.45),
                             fontSize: 10,
@@ -863,77 +1296,95 @@ class _BbwSensoryProductCard extends StatelessWidget {
                           builder: (context, _) {
                             final qty = cartState.quantityFor(product.id);
 
-                            if (qty == 0) {
-                              return GestureDetector(
-                                onTap: () async {
-                                  HapticFeedback.lightImpact();
-                                  await CartService.instance.addProduct(product, 1);
-                                },
-                                child: Container(
-                                  padding: const EdgeInsets.all(5),
-                                  decoration: BoxDecoration(
-                                    color: accentColor,
-                                    borderRadius: BorderRadius.circular(8),
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: accentColor.withValues(alpha: 0.3),
-                                        blurRadius: 6,
-                                        offset: const Offset(0, 2),
+                            return AnimatedSwitcher(
+                              duration: const Duration(milliseconds: 200),
+                              transitionBuilder: (child, anim) => ScaleTransition(scale: anim, child: child),
+                              child: qty == 0
+                                  ? GestureDetector(
+                                      key: const ValueKey('add_btn'),
+                                      onTap: () async {
+                                        HapticFeedback.lightImpact();
+                                        await CartService.instance.addProduct(product, 1);
+                                      },
+                                      child: Container(
+                                        padding: const EdgeInsets.all(6),
+                                        decoration: BoxDecoration(
+                                          color: accentColor,
+                                          borderRadius: BorderRadius.circular(10),
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: accentColor.withValues(alpha: 0.35),
+                                              blurRadius: 8,
+                                              offset: const Offset(0, 2),
+                                            ),
+                                          ],
+                                        ),
+                                        child: const Icon(Icons.add_rounded, color: Colors.white, size: 16),
                                       ),
-                                    ],
-                                  ),
-                                  child: const Icon(Icons.add_rounded, color: Colors.white, size: 16),
-                                ),
-                              );
-                            }
-
-                            return Container(
-                              height: 30,
-                              padding: const EdgeInsets.symmetric(horizontal: 3),
-                              decoration: BoxDecoration(
-                                color: const Color(0xFF161922),
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(
-                                  color: gold.withValues(alpha: 0.6),
-                                  width: 1.2,
-                                ),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () {
-                                      HapticFeedback.selectionClick();
-                                      CartService.instance.setQuantity(product.id, qty - 1);
-                                    },
-                                    child: const Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 3),
-                                      child: Icon(Icons.remove, color: Colors.white70, size: 13),
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 3),
-                                    child: Text(
-                                      '$qty',
-                                      style: const TextStyle(
-                                        color: gold,
-                                        fontWeight: FontWeight.w900,
-                                        fontSize: 12,
+                                    )
+                                  : Container(
+                                      key: const ValueKey('stepper_btn'),
+                                      height: 32,
+                                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                                      decoration: BoxDecoration(
+                                        color: const Color(0xFF10121A),
+                                        borderRadius: BorderRadius.circular(10),
+                                        border: Border.all(
+                                          color: gold.withValues(alpha: 0.8),
+                                          width: 1.5,
+                                        ),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: gold.withValues(alpha: 0.25),
+                                            blurRadius: 8,
+                                          ),
+                                        ],
+                                      ),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          GestureDetector(
+                                            onTap: () {
+                                              HapticFeedback.selectionClick();
+                                              CartService.instance.setQuantity(product.id, qty - 1);
+                                            },
+                                            child: Container(
+                                              padding: const EdgeInsets.all(4),
+                                              decoration: BoxDecoration(
+                                                color: Colors.white.withValues(alpha: 0.08),
+                                                borderRadius: BorderRadius.circular(6),
+                                              ),
+                                              child: const Icon(Icons.remove, color: Colors.white, size: 12),
+                                            ),
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(horizontal: 6),
+                                            child: Text(
+                                              '$qty',
+                                              style: const TextStyle(
+                                                color: gold,
+                                                fontWeight: FontWeight.w900,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () async {
+                                              HapticFeedback.lightImpact();
+                                              await CartService.instance.addProduct(product, 1);
+                                            },
+                                            child: Container(
+                                              padding: const EdgeInsets.all(4),
+                                              decoration: BoxDecoration(
+                                                color: gold.withValues(alpha: 0.2),
+                                                borderRadius: BorderRadius.circular(6),
+                                              ),
+                                              child: const Icon(Icons.add, color: gold, size: 12),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () async {
-                                      HapticFeedback.lightImpact();
-                                      await CartService.instance.addProduct(product, 1);
-                                    },
-                                    child: const Padding(
-                                      padding: EdgeInsets.symmetric(horizontal: 3),
-                                      child: Icon(Icons.add, color: gold, size: 13),
-                                    ),
-                                  ),
-                                ],
-                              ),
                             );
                           },
                         ),
@@ -946,6 +1397,154 @@ class _BbwSensoryProductCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Modal Bottom Sheet displaying all product formats (Candle, Mist, Lotion, Soap, Car Scent)
+/// for a signature scent family so shoppers can build a complete routine bundle in seconds.
+class _ScentRoutineBottomSheet extends StatelessWidget {
+  final SignatureScent scent;
+
+  const _ScentRoutineBottomSheet({
+    required this.scent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final matchingProducts = BbwBoutiqueRepository.instance.getScentCollection(scent.name);
+
+    return DraggableScrollableSheet(
+      initialChildSize: 0.82,
+      minChildSize: 0.5,
+      maxChildSize: 0.95,
+      builder: (context, scrollController) {
+        return Container(
+          decoration: const BoxDecoration(
+            color: Color(0xFF0B0D12),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+            border: Border(top: BorderSide(color: Colors.white24, width: 1.5)),
+          ),
+          child: Column(
+            children: [
+              // Handle Bar
+              Container(
+                margin: const EdgeInsets.only(top: 10, bottom: 8),
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: Colors.white24,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+
+              // Header
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(16),
+                margin: const EdgeInsets.symmetric(horizontal: 16),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: scent.gradient,
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.circular(18),
+                  boxShadow: [
+                    BoxShadow(
+                      color: scent.gradient[0].withValues(alpha: 0.4),
+                      blurRadius: 12,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(scent.icon, color: Colors.white, size: 20),
+                            const SizedBox(width: 8),
+                            Text(
+                              scent.name,
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 18,
+                                fontWeight: FontWeight.w900,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.black38,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Text(
+                            '${matchingProducts.length} Formats',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Complete the Routine: Candle, Mist, Lotion, Soap & Car Scent',
+                      style: TextStyle(
+                        color: Colors.white.withValues(alpha: 0.85),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              const SizedBox(height: 12),
+
+              // Product Grid
+              Expanded(
+                child: matchingProducts.isEmpty
+                    ? const Center(
+                        child: Text(
+                          'No products found for this scent collection',
+                          style: TextStyle(color: Colors.white54, fontSize: 13),
+                        ),
+                      )
+                    : GridView.builder(
+                        controller: scrollController,
+                        physics: const BouncingScrollPhysics(),
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12,
+                          childAspectRatio: 0.52,
+                        ),
+                        itemCount: matchingProducts.length,
+                        itemBuilder: (context, index) {
+                          final item = matchingProducts[index];
+                          return RepaintBoundary(
+                            child: _BbwSensoryProductCard(
+                              product: item,
+                              accentColor: scent.gradient[0],
+                            ),
+                          );
+                        },
+                      ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

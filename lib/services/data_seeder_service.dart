@@ -19,6 +19,7 @@ class DataSeederService {
 
     try {
       final catalogFiles = [
+        // Legacy base files (loaded first so newer scraped files overwrite them)
         'assets/data/candles.json',
         'assets/data/body_care.json',
         'assets/data/hand_soaps_sanitizers.json',
@@ -26,6 +27,20 @@ class DataSeederService {
         'assets/data/mens_shop.json',
         'assets/data/home_care.json',
         'assets/data/all_fragrance.json',
+        // Newly plucked live files (loaded last so live prices always overwrite)
+        'assets/data/candles_2.json',
+        'assets/data/candles_3.json',
+        'assets/data/body_care_2.json',
+        'assets/data/body_care_3.json',
+        'assets/data/all_fragrance_3.json',
+        'assets/data/all_fragrance_4.json',
+        'assets/data/mini_and_travel_size.json',
+        'assets/data/hand_soaps_sanitizers_2.json',
+        'assets/data/hand_soaps_sanitizers_3.json',
+        'assets/data/wallflowers_diffusers_2.json',
+        'assets/data/wallflowers_diffusers_3.json',
+        'assets/data/home_care_2.json',
+        'assets/data/home_care_3.json',
       ];
 
       for (final filePath in catalogFiles) {
@@ -130,6 +145,13 @@ class DataSeederService {
                 'heart': cleanTiers['heart']!.toSet().toList(),
                 'base': cleanTiers['base']!.toSet().toList(),
               };
+            }
+
+            if (masterRegistry.containsKey(docId)) {
+              final existing = masterRegistry[docId]!;
+              final List<String> existingNotes = (existing['fragranceNotes'] as List?)?.cast<String>() ?? [];
+              final List<String> bestNotes = cleanNotes.length >= existingNotes.length ? cleanNotes : existingNotes;
+              docData['fragranceNotes'] = bestNotes;
             }
 
             masterRegistry[docId] = docData;

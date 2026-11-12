@@ -239,6 +239,7 @@ class CartService extends ChangeNotifier {
       subtitle: resolved?.unitShort ?? resolved?.unit ?? 'Standard',
       imageUrl: resolved?.imageUrl ?? '',
       quantity: quantity,
+      promoBadge: resolved?.promoBadge ?? productMetadata?.promoBadge,
     );
 
     cartState.addItem(item, forceClearExisting: true);

@@ -142,11 +142,7 @@ class Product {
 
     // Dynamic promo badge resolution: Preserve explicit promos or generate deal tags for real discounts
     if (rawPromo.isEmpty && listPrice > curPrice && curPrice > 0) {
-      if (map['category'] == 'Candles' && curPrice == 10.0) {
-        rawPromo = 'SPECIAL: \$10 SINGLE WICK';
-      } else {
-        rawPromo = 'SPECIAL OFFER';
-      }
+      rawPromo = 'SPECIAL OFFER';
     }
 
     final String rawUnit = (map['unit'] ?? '').toString().trim();

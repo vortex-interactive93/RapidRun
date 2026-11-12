@@ -1,0 +1,130 @@
+/* File: tools/pluck_extension/style.css */
+
+#pluck-hud-root {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999999;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#pluck-hud {
+  background: rgba(11, 13, 18, 0.96);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#pluck-hud-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pluck-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pluck-icon {
+  font-size: 18px;
+}
+
+.pluck-title {
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #EAA134;
+}
+
+#pluck-refresh-btn {
+  background: #1E222D;
+  color: #EAA134;
+  border: 1px solid rgba(234, 161, 52, 0.4);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+#pluck-refresh-btn:hover {
+  background: rgba(234, 161, 52, 0.15);
+}
+
+.pluck-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pluck-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+#pluck-filename-input {
+  background: #161922;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #EAA134;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+#pluck-filename-input:focus {
+  border-color: #EAA134;
+}
+
+.pluck-primary-btn {
+  background: #EAA134;
+  color: #000000;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.pluck-primary-btn:hover {
+  filter: brightness(1.08);
+}
+
+.pluck-primary-btn:active,
+.pluck-secondary-btn:active {
+  transform: scale(0.97);
+}
+
+.pluck-secondary-btn {
+  background: #1E222D;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#pluck-status {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+}

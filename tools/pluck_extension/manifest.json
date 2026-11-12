@@ -1,36 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Pluck - RapidRun Catalog Engine",
-  "version": "2.0.0",
-  "description": "High-fidelity in-store retail catalog harvester for RapidRun Firestore architecture.",
+  "name": "Pluck - RapidRun BBW Exporter",
+  "version": "2.3.0",
+  "description": "Direct, refreshed catalog extraction from Bath & Body Works for RapidRun.",
   "permissions": [
-    "activeTab",
-    "scripting",
-    "sidePanel"
+    "activeTab"
   ],
-  "host_permissions": [
-    "*://*.bathandbodyworks.com/*",
-    "*://*.aldi.us/*",
-    "https://firestore.googleapis.com/*"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "side_panel": {
-    "default_path": "popup.html"
-  },
   "content_scripts": [
     {
-      "matches": [
-        "*://*.bathandbodyworks.com/*",
-        "*://*.aldi.us/*"
-      ],
+      "matches": ["*://*.bathandbodyworks.com/*"],
       "js": ["content.js"],
-      "run_at": "document_idle"
+      "css": ["style.css"]
     }
-  ],
-  "action": {
-    "default_title": "Open Pluck Side Panel",
-    "default_icon": "icon.png"
-  }
+  ]
 }

@@ -12,6 +12,7 @@ class CartItem {
   final double price;
   final String imageUrl;
   final int quantity;
+  final String? promoBadge;
 
   const CartItem({
     required this.id,
@@ -25,6 +26,7 @@ class CartItem {
     required this.price,
     this.imageUrl = '',
     this.quantity = 1,
+    this.promoBadge,
   })  : storeName = storeName ?? brand ?? 'Bath & Body Works',
         title = title ?? name ?? 'Item',
         subtitle = subtitle ?? size;
@@ -42,6 +44,7 @@ class CartItem {
     String? storeId,
     String? storeName,
     String? imageUrl,
+    String? promoBadge,
   }) {
     return CartItem(
       id: id,
@@ -52,6 +55,7 @@ class CartItem {
       price: price ?? this.price,
       imageUrl: imageUrl ?? this.imageUrl,
       quantity: quantity ?? this.quantity,
+      promoBadge: promoBadge ?? this.promoBadge,
     );
   }
 
@@ -64,6 +68,7 @@ class CartItem {
     'price': price,
     'imageUrl': imageUrl,
     'quantity': quantity,
+    'promoBadge': promoBadge,
     // Alias fields for backward compatibility
     'name': title,
     'brand': storeName,
@@ -79,5 +84,6 @@ class CartItem {
     price: (map['price'] as num?)?.toDouble() ?? 0.0,
     imageUrl: (map['imageUrl'] ?? '').toString(),
     quantity: (map['quantity'] ?? map['qty'] ?? 1) as int,
+    promoBadge: map['promoBadge']?.toString(),
   );
 }
