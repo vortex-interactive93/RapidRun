@@ -217,7 +217,6 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
   int _selectedBoutiqueIndex = 0;
   String _selectedScentNote = 'All Scents';
   bool _onlyPromoDeals = false;
-  bool _onlyInStoreReady = false;
   String _searchQuery = '';
   final TextEditingController _searchController = TextEditingController();
 
@@ -291,11 +290,6 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
         final hasPromo = (product.promoBadge ?? '').isNotEmpty;
         final isDiscounted = (product.regularPrice ?? (product.price ?? 0.0)) > (product.price ?? 0.0);
         if (!hasPromo && !isDiscounted) return false;
-      }
-
-      // 4. In-Store Ready Toggle check
-      if (_onlyInStoreReady) {
-        if (product.isOnlineExclusive == true) return false;
       }
 
       return true;
@@ -922,98 +916,56 @@ class _BbwStoreScreenState extends State<BbwStoreScreen> {
             ),
           ),
 
-          // Item Count & Filters (In-Store Ready + Special Offers)
+          // Item Count & Special Offers Filter
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '$count Products',
+                  '$count Products Available',
                   style: const TextStyle(
                     color: Colors.white60,
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Row(
-                  children: [
-                    GestureDetector(
-                      onTap: () {
-                        HapticFeedback.lightImpact();
-                        setState(() => _onlyInStoreReady = !_onlyInStoreReady);
-                      },
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        decoration: BoxDecoration(
-                          color: _onlyInStoreReady
-                              ? const Color(0xFF10B981).withValues(alpha: 0.2)
-                              : const Color(0xFF161922),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: _onlyInStoreReady ? const Color(0xFF10B981) : Colors.white12,
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.flash_on_rounded,
-                              size: 13,
-                              color: _onlyInStoreReady ? const Color(0xFF34D399) : Colors.white54,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              'In-Store Ready',
-                              style: TextStyle(
-                                color: _onlyInStoreReady ? Colors.white : Colors.white70,
-                                fontSize: 11,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ],
-                        ),
+                GestureDetector(
+                  onTap: () {
+                    HapticFeedback.lightImpact();
+                    setState(() => _onlyPromoDeals = !_onlyPromoDeals);
+                  },
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: _onlyPromoDeals
+                          ? const Color(0xFFE11D48).withValues(alpha: 0.2)
+                          : const Color(0xFF161922),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
                       ),
                     ),
-                    const SizedBox(width: 8),
-                    GestureDetector(
-                      onTap: () {
-                        HapticFeedback.lightImpact();
-                        setState(() => _onlyPromoDeals = !_onlyPromoDeals);
-                      },
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        decoration: BoxDecoration(
-                          color: _onlyPromoDeals
-                              ? const Color(0xFFE11D48).withValues(alpha: 0.2)
-                              : const Color(0xFF161922),
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: _onlyPromoDeals ? const Color(0xFFE11D48) : Colors.white12,
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.local_offer_rounded,
+                          size: 14,
+                          color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          'Special Offers Only',
+                          style: TextStyle(
+                            color: _onlyPromoDeals ? Colors.white : Colors.white70,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
-                        child: Row(
-                          children: [
-                            Icon(
-                              Icons.local_offer_rounded,
-                              size: 13,
-                              color: _onlyPromoDeals ? const Color(0xFFFB7185) : Colors.white54,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              'Special Offers',
-                              style: TextStyle(
-                                color: _onlyPromoDeals ? Colors.white : Colors.white70,
-                                fontSize: 11,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ],
             ),
