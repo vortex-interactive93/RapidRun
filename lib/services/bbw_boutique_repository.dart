@@ -1,6 +1,7 @@
 // File: lib/services/bbw_boutique_repository.dart
 
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import '../models/product.dart';
@@ -12,42 +13,15 @@ class BbwBoutiqueRepository {
   /// Ordered from oldest/fallback to newest scraped files.
   /// Later files in this list ALWAYS overwrite older prices for the same SKU.
   static const List<String> _allAssetFiles = [
-    // Legacy / base filenames (loaded first so newer scrapes overwrite them)
+    // Canonical 8 filenames
     'assets/data/candles.json',
     'assets/data/body_care.json',
     'assets/data/all_fragrance.json',
+    'assets/data/mini_and_travel_size.json',
     'assets/data/hand_soaps_sanitizers.json',
     'assets/data/wallflowers_diffusers.json',
     'assets/data/mens_shop.json',
     'assets/data/home_care.json',
-    // Latest scraped files (loaded last so their live prices always win)
-    'assets/data/candles_2.json',
-    'assets/data/candles_3.json',
-    'assets/data/body_care_2.json',
-    'assets/data/body_care_3.json',
-    'assets/data/all_fragrance_3.json',
-    'assets/data/all_fragrance_4.json',
-    'assets/data/mini_and_travel_size.json',
-    'assets/data/hand_soaps_sanitizers_2.json',
-    'assets/data/hand_soaps_sanitizers_3.json',
-    'assets/data/wallflowers_diffusers_2.json',
-    'assets/data/wallflowers_diffusers_3.json',
-    'assets/data/home_care_2.json',
-    'assets/data/home_care_3.json',
-    'assets/data/3_wick_candles.json',
-    'assets/data/single_wick_candles.json',
-    'assets/data/all_candles.json',
-    'assets/data/all_moisturizers.json',
-    'assets/data/bath_shower.json',
-    'assets/data/Body_Sprays_Mists.json',
-    'assets/data/Perfume_Cologne.json',
-    'assets/data/mini_travel_size.json',
-    'assets/data/all_hand_soaps.json',
-    'assets/data/all_hand_sanitizers.json',
-    'assets/data/all_wallflowers.json',
-    'assets/data/room_sprays_mists.json',
-    'assets/data/laundry_care.json',
-    'assets/data/bbw_instore_catalog.json',
   ];
 
   static const List<String> _mensCoreScents = [
@@ -90,11 +64,58 @@ class BbwBoutiqueRepository {
     }
   }
 
+  /// Deletes all Bath & Body Works documents from Firestore so stale prices
+  /// never resurrect from cloud cache.
+  Future<void> purgeAllBbwFromFirestore() async {
+    try {
+      final firestore = FirebaseFirestore.instance;
+      final byStore = await firestore
+          .collection('products')
+          .where('store', isEqualTo: 'Bath & Body Works')
+          .get();
+
+      final byStoreId = await firestore
+          .collection('products')
+          .where('storeId', isEqualTo: 'Bath & Body Works')
+          .get();
+
+      final allDocs = <String, DocumentReference>{};
+      for (final doc in byStore.docs) {
+        allDocs[doc.id] = doc.reference;
+      }
+      for (final doc in byStoreId.docs) {
+        allDocs[doc.id] = doc.reference;
+      }
+
+      if (allDocs.isEmpty) {
+        debugPrint('🧹 [BBW Purge] Firestore is already 100% clean (0 BBW docs).');
+        return;
+      }
+
+      final refs = allDocs.values.toList();
+      for (var i = 0; i < refs.length; i += 450) {
+        final batch = firestore.batch();
+        final chunk = refs.sublist(i, i + 450 > refs.length ? refs.length : i + 450);
+        for (final ref in chunk) {
+          batch.delete(ref);
+        }
+        await batch.commit();
+      }
+
+      debugPrint('🔥 [BBW Purge] Successfully deleted ${refs.length} stale BBW documents from Firestore.');
+    } catch (e) {
+      debugPrint('⚠️ [BBW Purge] Firestore cleanup error: $e');
+    }
+  }
+
   /// Loads, deduplicates by SKU, sanitizes HTML entities, normalizes units,
   /// and routes every product to its true canonical Boutique Room.
   Future<void> ensureInitialized({bool forceReload = false}) async {
     if (forceReload) resetCache();
     if (_isLoaded) return;
+
+    // First, purge stale BBW documents from Cloud Firestore
+    await purgeAllBbwFromFirestore();
 
     final Map<String, Product> dedupedBySku = {};
     int filesLoadedCount = 0;
@@ -119,8 +140,6 @@ class BbwBoutiqueRepository {
           if (existing == null) {
             dedupedBySku[key] = product;
           } else {
-            // Always prefer the newer file's live price, while preserving
-            // richer fragrance notes if the older entry had them.
             final bestNotes = product.fragranceNotes.length >= existing.fragranceNotes.length
                 ? product.fragranceNotes
                 : existing.fragranceNotes;
@@ -133,10 +152,7 @@ class BbwBoutiqueRepository {
         }
         debugPrint('✅ [BBW Repo] Loaded ${decoded.length} items from $path');
       } catch (e) {
-        // Only log if it's not a missing optional numbered variant
-        if (!path.contains('_2.') && !path.contains('_3.') && !path.contains('_4.')) {
-          debugPrint('⚠️ [BBW Repo] Asset not found in bundle: $path');
-        }
+        debugPrint('⚠️ [BBW Repo] Asset not found in bundle: $path');
       }
     }
 
