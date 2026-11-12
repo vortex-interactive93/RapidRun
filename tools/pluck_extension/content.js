@@ -35,38 +35,67 @@
     return `${clean}.json`;
   }
 
-  // --- 2. PARSE FRAGRANCE ACCORDION FROM DOCUMENT OR HTML STRING ---
+  // --- 2. BULLETPROOF MULTI-TIER FRAGRANCE PARSER ---
   function parseFragranceBlock(doc) {
-    // Target permanent semantic ID suffix + the exact Emotion class from DevTools
-    const container =
-      doc.querySelector('[id$="::content:fragrance"] .emotion-16zqzjt') ||
-      doc.querySelector('[id$="::content:fragrance"]') ||
-      doc.querySelector('.emotion-16zqzjt');
-
-    if (!container) return { overview: '', notes: [] };
-
-    const paragraphs = Array.from(container.querySelectorAll('p'))
-      .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
-      .filter((t) => t.length > 0);
-
     let overview = '';
     let notes = [];
 
-    for (const text of paragraphs) {
-      if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
-        // Strip "Notes: " or "Fragrance notes: " and trailing periods
+    // Target fragrance/scent containers
+    const containers = Array.from(doc.querySelectorAll(
+      '[id*="fragrance"], [class*="fragrance"], [id*="scent"], [class*="scent"], [data-component*="fragrance"], .pdp-details, .wick-accordion'
+    ));
+
+    const textNodes = [];
+    containers.forEach(c => {
+      c.querySelectorAll('p, div, li, span').forEach(el => {
+        const txt = el.textContent.replace(/\s+/g, ' ').trim();
+        if (txt.length > 3 && !textNodes.includes(txt)) textNodes.push(txt);
+      });
+    });
+
+    if (textNodes.length === 0) {
+      doc.querySelectorAll('p, li').forEach(el => {
+        const txt = el.textContent.replace(/\s+/g, ' ').trim();
+        if (txt.length > 3 && !textNodes.includes(txt)) textNodes.push(txt);
+      });
+    }
+
+    for (const text of textNodes) {
+      if (/^(?:fragrance\s+|scent\s+)?notes\s*:/i.test(text) || /what\s+it\s+smells\s+like\s*:/i.test(text)) {
         const cleaned = text
-          .replace(/^(?:fragrance\s+)?notes\s*:\s*/i, '')
+          .replace(/^(?:fragrance\s+|scent\s+)?notes\s*:\s*/i, '')
+          .replace(/^what\s+it\s+smells\s+like\s*:\s*/i, '')
           .replace(/\.+$/, '')
           .trim();
 
-        notes = cleaned
-          .split(/,\s*|\s*•\s*/)
-          .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
-          .filter((n) => n.length > 0);
-      } else if (!overview) {
-        overview = text;
+        if (cleaned.length > 0) {
+          notes = cleaned
+            .split(/,\s*|\s*•\s*|\s*and\s+|\s*;\s*/)
+            .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
+            .filter((n) => n.length > 0 && n.length < 50);
+        }
+      } else if (!overview && (/^(?:what\s+it\s+does|fragrance\s+description)\s*:/i.test(text) || text.length > 25)) {
+        if (!text.toLowerCase().includes('ingredients') && !text.toLowerCase().includes('usage') && !text.toLowerCase().includes('shipping')) {
+          overview = text.replace(/^(?:what\s+it\s+does|fragrance\s+description)\s*:\s*/i, '').trim();
+        }
       }
+    }
+
+    // JSON-LD Fallback (<script type="application/ld+json">)
+    if (notes.length === 0) {
+      const scripts = doc.querySelectorAll('script[type="application/ld+json"]');
+      scripts.forEach(s => {
+        try {
+          const json = JSON.parse(s.textContent);
+          const desc = json.description || json.disambiguatingDescription || '';
+          if (desc && /notes\s*:/i.test(desc)) {
+            const match = desc.match(/notes\s*:\s*([^.]+)/i);
+            if (match) {
+              notes = match[1].split(/,\s*/).map(n => n.trim()).filter(n => n.length > 0);
+            }
+          }
+        } catch (_) {}
+      });
     }
 
     return { overview, notes };
@@ -177,7 +206,6 @@
   function extractProducts() {
     const filename = (filenameInput.value || 'catalog.json').trim();
 
-    // If user is on an individual /p/ product page, extract that product directly
     if (window.location.pathname.includes('/p/')) {
       const single = extractSinglePdp();
       return { products: single || [], filename: `${slugifyToFilename(getPageCategoryName())}` };
@@ -361,11 +389,9 @@
           console.warn('PDP enrich skip:', item.productUrl, fetchErr);
         }
 
-        // Gentle 350ms pause so Akamai treats it like normal human tab browsing
         await new Promise((r) => setTimeout(r, 350));
       }
 
-      // Download the enriched JSON file
       const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');

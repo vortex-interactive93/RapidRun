@@ -294,8 +294,145 @@ class BbwBoutiqueRepository {
       map['unitShort'] = '0.23 oz';
     }
 
+    // Olfactory Vault Fallback Enrichment for items missing scent notes
+    final List<dynamic> existingNotes = (map['fragranceNotes'] as List?) ?? [];
+    if (existingNotes.isEmpty) {
+      for (final entry in _scentVault.entries) {
+        if (nameLower.contains(entry.key)) {
+          map['fragranceNotes'] = entry.value['notes'];
+          if ((map['fragranceOverview'] ?? '').toString().trim().isEmpty) {
+            map['fragranceOverview'] = entry.value['overview'];
+          }
+          final tiers = entry.value['tiers'] as Map<String, dynamic>?;
+          if (tiers != null) {
+            map['fragranceTiers'] = tiers;
+            map['fragranceProfile'] = {
+              'family': 'Fragrance',
+              'topNotes': tiers['top'] ?? [],
+              'heartNotes': tiers['heart'] ?? [],
+              'baseNotes': tiers['base'] ?? [],
+            };
+          }
+          break;
+        }
+      }
+    }
+
     return map;
   }
+
+  static const Map<String, Map<String, dynamic>> _scentVault = {
+    'lakeside morning': {
+      'notes': ['crisp autumn air', 'white driftwood', 'green apple'],
+      'overview': 'As cool, fresh and rejuvenating as an early morning by the lake.',
+      'tiers': {'top': ['green apple'], 'heart': ['crisp autumn air'], 'base': ['white driftwood']}
+    },
+    'snowflakes & cashmere': {
+      'notes': ['vanilla cashmere cream', 'caramel woods', 'frosted clementine'],
+      'overview': 'Creamy, warm vanilla blends with refreshing citrus notes for an oh-so-snuggly scent.',
+      'tiers': {'top': ['frosted clementine'], 'heart': ['vanilla cashmere cream'], 'base': ['caramel woods']}
+    },
+    'fresh balsam': {
+      'notes': ['woodland balsam', 'crisp eucalyptus', 'fir branches', 'cedarwood'],
+      'overview': 'As cool, fresh and rejuvenating as an early November walk through the woods.',
+      'tiers': {'top': ['crisp eucalyptus'], 'heart': ['fir branches'], 'base': ['woodland balsam', 'cedarwood']}
+    },
+    'mahogany teakwood': {
+      'notes': ['juniper berry', 'bergamot', 'red berries', 'cypress leaves', 'fresh lavender', 'creamy sandalwood', 'driftwood', 'rich mahogany wood', 'black teakwood'],
+      'overview': 'Warm, distinctive and enduring. Deep mahogany and solid black teakwood with a dash of lavender.',
+      'tiers': {'top': ['juniper berry', 'bergamot'], 'heart': ['fresh lavender'], 'base': ['rich mahogany wood', 'black teakwood']}
+    },
+    'champagne toast': {
+      'notes': ['Kir royale', 'vintage Champagne', 'sparkling tangerine', 'juicy passionfruit', 'dark plum', 'white nectarine', 'black currant', 'warm woods', 'sugared musk', 'vanilla extract'],
+      'overview': 'With the effervescence of Champagne, ripe berries and sweet tangerine.',
+      'tiers': {'top': ['Kir royale', 'vintage Champagne'], 'heart': ['sparkling tangerine'], 'base': ['sugared musk']}
+    },
+    'a thousand wishes': {
+      'notes': ['pink prosecco', 'starfruit', 'golden quince', 'crystal peonies', 'purple freesia', 'gilded amber', 'amaretto crème', 'sugared sandalwood', 'velvet musk'],
+      'overview': 'Enter a world of endless possibilities. Shimmering prosecco, swirling fruit, florals and creamy amaretto.',
+      'tiers': {'top': ['pink prosecco', 'starfruit'], 'heart': ['crystal peonies'], 'base': ['gilded amber', 'sugared sandalwood']}
+    },
+    'warm vanilla sugar': {
+      'notes': ['sheer muguet', 'coconut milk', 'white orchid', 'jasmine', 'vanilla absolute', 'warm musk', 'sugar crystals', 'sandalwood'],
+      'overview': 'Addictive by nature. Refined by design. A balance of gourmand comfort and all-day wearable elegance.',
+      'tiers': {'top': ['sheer muguet'], 'heart': ['coconut milk'], 'base': ['vanilla absolute', 'warm musk']}
+    },
+    'vanilla bean noel': {
+      'notes': ['vanilla', 'sweet buttery accord', 'caramel', 'benzoin', 'hint of chocolate', 'soft musk', 'sugar cookie'],
+      'overview': 'Sweet, creamy and every bit as irresistible as you remember.',
+      'tiers': {'top': ['vanilla', 'sweet buttery accord'], 'heart': ['caramel'], 'base': ['soft musk', 'sugar cookie']}
+    },
+    'japanese cherry blossom': {
+      'notes': ['crisp pear', 'apple', 'ume plum', 'Japanese cherry blossom', 'white jasmine', 'butterfly lily', 'Kyoto rose', 'mimosa petals', 'rice milk', 'amber', 'silk musk', 'creamy sandalwood'],
+      'overview': 'Feminine, floral, elegant and timelessly appealing.',
+      'tiers': {'top': ['crisp pear'], 'heart': ['Japanese cherry blossom'], 'base': ['creamy sandalwood']}
+    },
+    'into the night': {
+      'notes': ['pink pomelo', 'dewberry', 'black raspberry sugar', 'Turkish rose petals', 'jasmine sambac', 'patchouli', 'vanilla bean', 'mocha', 'amber', 'musk'],
+      'overview': 'Glamorous with a modern, feminine signature. A woody amber chypre.',
+      'tiers': {'top': ['pink pomelo'], 'heart': ['Turkish rose petals'], 'base': ['amber', 'musk']}
+    },
+    'in the stars': {
+      'notes': ['sugared tangelo', 'pink currant', 'starflower', 'apricot blossom', 'jasmine absolute', 'sandalwood', 'white musk', 'white agarwood', 'amber', 'moss'],
+      'overview': 'A fusion of sparkling highs and sophisticated depths.',
+      'tiers': {'top': ['sugared tangelo'], 'heart': ['starflower'], 'base': ['sandalwood', 'white musk']}
+    },
+    'ocean': {
+      'notes': ['bergamot', 'yuzu', 'artemisia', 'elemi', 'watermelon', 'lavandin', 'nutmeg', 'cypress', 'iris', 'cedarwood', 'patchouli', 'vetiver', 'olibanum'],
+      'overview': 'Refreshing, vital and confident. Watery marine notes and woods.',
+      'tiers': {'top': ['bergamot'], 'heart': ['cypress'], 'base': ['cedarwood', 'patchouli']}
+    },
+    'bourbon': {
+      'notes': ['white pepper', 'dark amber', 'Kentucky oak'],
+      'overview': 'Bold, smooth and classic barrel-aged bourbon.',
+      'tiers': {'top': ['white pepper'], 'heart': ['dark amber'], 'base': ['Kentucky oak']}
+    },
+    'noir': {
+      'notes': ['black cardamom', 'smoky vanilla', 'warm musk'],
+      'overview': 'Dark, mysterious and endlessly warm.',
+      'tiers': {'top': ['black cardamom'], 'heart': ['smoky vanilla'], 'base': ['warm musk']}
+    },
+    'graphite': {
+      'notes': ['sage', 'bergamot spice', 'leather woods'],
+      'overview': 'Fresh earthy greens meet warm citrus pepper and a rugged timber finish.',
+      'tiers': {'top': ['bergamot spice'], 'heart': ['sage'], 'base': ['leather woods']}
+    },
+    'santal ridge': {
+      'notes': ['bergamot zest', 'crisp aromatics', 'fresh fig leaf', 'Anjou pear', 'sheer iris', 'blue jasmine', 'wild moss', 'silver amber', 'rich sandalwood'],
+      'overview': 'An untamed exploration of citrus, woods and moss.',
+      'tiers': {'top': ['bergamot zest'], 'heart': ['sheer iris'], 'base': ['rich sandalwood']}
+    },
+    'twisted peppermint': {
+      'notes': ['sweet peppermint', 'raspberry', 'sheer jasmine', 'candy floss', 'mint', 'musk'],
+      'overview': 'A peppermint-striped holiday treat wrapped in frosty freshness.',
+      'tiers': {'top': ['sweet peppermint'], 'heart': ['raspberry'], 'base': ['mint', 'musk']}
+    },
+    'winter candy apple': {
+      'notes': ['juicy Granny Smith apple', 'sweet orange', 'candied red berries', 'delicate lily of the valley', 'sugared cinnamon bark', 'soft iris', 'golden cedarwood', 'frosted musk', 'oakmoss'],
+      'overview': 'Cheerful, fruity and as bright as the season itself.',
+      'tiers': {'top': ['juicy Granny Smith apple'], 'heart': ['delicate lily of the valley'], 'base': ['golden cedarwood']}
+    },
+    'strawberry pound cake': {
+      'notes': ['fresh strawberries', 'golden shortcake', 'whipped cream'],
+      'overview': 'Sweet, light and creamy, it is that classic dessert you just cannot get enough of.',
+      'tiers': {'top': ['fresh strawberries'], 'heart': ['golden shortcake'], 'base': ['whipped cream']}
+    },
+    'sweet pea': {
+      'notes': ['sweet pea', 'watery pear', 'sheer freesia', 'luscious raspberry', 'soft musk'],
+      'overview': 'Bright, cheerful, and playfully sweet.',
+      'tiers': {'top': ['watery pear'], 'heart': ['sweet pea'], 'base': ['soft musk']}
+    },
+    'black cherry merlot': {
+      'notes': ['dark cherry', 'black raspberry', 'sumptuous merlot'],
+      'overview': 'Rich, fruity, and elegantly decadent.',
+      'tiers': {'top': ['dark cherry'], 'heart': ['black raspberry'], 'base': ['sumptuous merlot']}
+    },
+    'eucalyptus spearmint': {
+      'notes': ['eucalyptus oil', 'spearmint oil'],
+      'overview': 'Clears the mind and uplifts the spirits.',
+      'tiers': {'top': ['eucalyptus oil'], 'heart': ['spearmint oil'], 'base': ['eucalyptus oil']}
+    },
+  };
 
   String _resolveCanonicalRoom(Product product) {
     final name = product.name.toLowerCase();
