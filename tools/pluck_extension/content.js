@@ -14,6 +14,7 @@
   function readRenderedFragranceDom() {
     let overview = '';
     let notes = [];
+    const tiers = { top: [], heart: [], base: [] };
 
     const container =
       document.querySelector('[id*="content:fragrance"] .emotion-16zqzjt') ||
@@ -29,13 +30,28 @@
       for (const text of paragraphs) {
         if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
           notes = splitNotesString(text);
-        } else if (!overview && text.length > 10 && !/^(what it smells like|why you'll love it|fragrance)/i.test(text)) {
+        } else if (/^top\s*:/i.test(text)) {
+          tiers.top = splitNotesString(text.replace(/^top\s*:\s*/i, ''));
+        } else if (/^heart\s*:/i.test(text)) {
+          tiers.heart = splitNotesString(text.replace(/^heart\s*:\s*/i, ''));
+        } else if (/^base\s*:/i.test(text)) {
+          tiers.base = splitNotesString(text.replace(/^base\s*:\s*/i, ''));
+        } else if (
+          !overview &&
+          text.length > 10 &&
+          !/^(what it smells like|why you'll love it|fragrance)/i.test(text)
+        ) {
           overview = text;
         }
       }
     }
 
-    // Fallback: scan any rendered <p> starting with "Notes:" or "Fragrance notes:"
+    // Combine Top + Heart + Base into fragranceNotes when a 3-tier pyramid is present
+    if (notes.length === 0 && (tiers.top.length > 0 || tiers.heart.length > 0 || tiers.base.length > 0)) {
+      notes = [...tiers.top, ...tiers.heart, ...tiers.base];
+    }
+
+    // Fallback: only scan outside the accordion if nothing was found inside it
     if (notes.length === 0) {
       const allPs = Array.from(document.querySelectorAll('p'));
       for (const p of allPs) {
@@ -51,7 +67,7 @@
       }
     }
 
-    return { overview, notes };
+    return { overview, notes, tiers };
   }
 
   // Respond when background.js asks this tab for its hydrated fragrance notes
@@ -380,6 +396,9 @@
         if (res) {
           if (res.overview) item.fragranceOverview = res.overview;
           if (res.notes && res.notes.length > 0) item.fragranceNotes = res.notes;
+          if (res.tiers && (res.tiers.top?.length || res.tiers.heart?.length || res.tiers.base?.length)) {
+            item.fragranceTiers = res.tiers;
+          }
           if (res.overview || (res.notes && res.notes.length > 0)) {
             enrichedCount++;
           }
