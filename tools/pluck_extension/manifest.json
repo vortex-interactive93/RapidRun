@@ -1,14 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Pluck - RapidRun BBW Exporter",
-  "version": "2.3.0",
-  "description": "Direct, refreshed catalog extraction from Bath & Body Works for RapidRun.",
+  "name": "Pluck 3.0 - RapidRun BBW Exporter",
+  "version": "3.0.0",
+  "description": "Extracts & hydrates full Bath & Body Works catalogs for RapidRun.",
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
-      "matches": ["*://*.bathandbodyworks.com/*"],
+      "matches": [
+        "*://*.bathandbodyworks.com/*"
+      ],
       "js": ["content.js"],
       "css": ["style.css"]
     }

@@ -1,24 +1,80 @@
 // File: tools/pluck_extension/content.js
 
 (function () {
+  // --- LIVE PDP DOM PARSER (Used both on active PDP and background hydration tabs) ---
+  function splitNotesString(rawNotes) {
+    return rawNotes
+      .replace(/^(?:fragrance\s+)?notes\s*:\s*/i, '')
+      .replace(/\.+$/, '')
+      .split(/,\s*|\s*•\s*/)
+      .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
+      .filter((n) => n.length > 1 && n.length < 60);
+  }
+
+  function readRenderedFragranceDom() {
+    let overview = '';
+    let notes = [];
+
+    const container =
+      document.querySelector('[id*="content:fragrance"] .emotion-16zqzjt') ||
+      document.querySelector('[id*="content:fragrance"]') ||
+      document.querySelector('[id*="item:fragrance"]') ||
+      document.querySelector('.emotion-16zqzjt');
+
+    if (container) {
+      const paragraphs = Array.from(container.querySelectorAll('p'))
+        .map((p) => p.innerText.replace(/\s+/g, ' ').trim())
+        .filter((t) => t.length > 0);
+
+      for (const text of paragraphs) {
+        if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
+          notes = splitNotesString(text);
+        } else if (!overview && text.length > 10 && !/^(what it smells like|why you'll love it|fragrance)/i.test(text)) {
+          overview = text;
+        }
+      }
+    }
+
+    // Fallback: scan any rendered <p> starting with "Notes:" or "Fragrance notes:"
+    if (notes.length === 0) {
+      const allPs = Array.from(document.querySelectorAll('p'));
+      for (const p of allPs) {
+        const text = p.innerText.replace(/\s+/g, ' ').trim();
+        if (/^(?:fragrance\s+)?notes\s*:\s*.+/i.test(text)) {
+          notes = splitNotesString(text);
+          if (!overview && p.previousElementSibling) {
+            const prev = p.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
+            if (prev.length > 12) overview = prev;
+          }
+          break;
+        }
+      }
+    }
+
+    return { overview, notes };
+  }
+
+  // Respond when background.js asks this tab for its hydrated fragrance notes
+  chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    if (msg.type === 'READ_LIVE_PDP_NOTES') {
+      sendResponse(readRenderedFragranceDom());
+    }
+  });
+
   if (document.getElementById('pluck-hud-root')) return;
 
-  // --- 1. DYNAMIC CATEGORY TITLE & SLUG ENGINE ---
   function getPageCategoryName() {
     const headingEl = document.querySelector(
       'h1[data-dan-display="product-list--heading"], h1.wick-heading, .wick-heading, h1'
     );
-    if (headingEl && headingEl.innerText.trim().length > 0) {
-      return headingEl.innerText.trim();
-    }
-    return '';
+    return headingEl ? headingEl.innerText.trim() : '';
   }
 
   function slugifyToFilename(rawTitle) {
     if (!rawTitle) return 'bbw_catalog.json';
-
     const clean = rawTitle
       .toLowerCase()
+      .replace(/&amp;/g, 'and')
       .replace(/&/g, 'and')
       .replace(/['"]/g, '')
       .replace(/[^a-z0-9]+/g, '_')
@@ -31,91 +87,7 @@
     if (clean.includes('men')) return 'mens_shop.json';
     if (clean.includes('home') || clean.includes('laundry')) return 'home_care.json';
     if (clean.includes('body')) return 'body_care.json';
-
     return `${clean}.json`;
-  }
-
-  function splitNotesString(rawNotes) {
-    return rawNotes
-      .replace(/^(?:fragrance\s+)?notes\s*:\s*/i, '')
-      .replace(/\.+$/, '')
-      .split(/,\s*|\s*•\s*/)
-      .map((n) => n.replace(/^note:\s*/i, '').replace(/\.+$/, '').trim())
-      .filter((n) => n.length > 1 && n.length < 60);
-  }
-
-  // --- 2. 3-LAYER FRAGRANCE EXTRACTOR (DOM + SIBLING SCAN + RAW NEXT.JS HTML) ---
-  function extractFragranceFromPdp(doc, rawHtml = '') {
-    let overview = '';
-    let notes = [];
-
-    // LAYER 1: Semantic Fragrance Accordion & DevTools Emotion Container
-    const accordionContainer =
-      doc.querySelector('[id*="content:fragrance"] .emotion-16zqzjt') ||
-      doc.querySelector('[id*="content:fragrance"]') ||
-      doc.querySelector('[id*="item:fragrance"]') ||
-      doc.querySelector('.emotion-16zqzjt');
-
-    if (accordionContainer) {
-      const paragraphs = Array.from(accordionContainer.querySelectorAll('p'))
-        .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
-        .filter((t) => t.length > 0);
-
-      for (const text of paragraphs) {
-        if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
-          notes = splitNotesString(text);
-        } else if (!overview && text.length > 10 && !/^(what it smells like|why you'll love it)/i.test(text)) {
-          overview = text;
-        }
-      }
-    }
-
-    // LAYER 2: Full-Document Paragraph Scan (Immune to Accordion ID / Emotion Class Changes)
-    if (notes.length === 0) {
-      const allParagraphs = Array.from(doc.querySelectorAll('p, div, li'));
-      for (const el of allParagraphs) {
-        if (el.children.length > 2) continue;
-        const text = el.textContent.replace(/\s+/g, ' ').trim();
-        if (/^(?:fragrance\s+)?notes\s*:\s*.+/i.test(text) && text.length < 350) {
-          notes = splitNotesString(text);
-
-          if (!overview && el.previousElementSibling) {
-            const prevText = el.previousElementSibling.textContent.replace(/\s+/g, ' ').trim();
-            if (prevText.length > 12 && prevText.length < 500) {
-              overview = prevText;
-            }
-          }
-          if (notes.length > 0) break;
-        }
-      }
-    }
-
-    // LAYER 3: Raw HTML / Next.js RSC Flight Payload Fallback
-    if (notes.length === 0 && rawHtml) {
-      const normalizedHtml = rawHtml
-        .replace(/\\"/g, '"')
-        .replace(/\\u0026/g, '&')
-        .replace(/'/g, "'")
-        .replace(/"/g, '"');
-
-      const notesMatch = normalizedHtml.match(/(?:Fragrance\s+)?Notes\s*:\s*([^<>"\\]{4,280})/i);
-      if (notesMatch && notesMatch[1]) {
-        notes = splitNotesString(notesMatch[1]);
-      }
-
-      if (!overview && notesMatch && notesMatch.index > 30) {
-        const precedingChunk = normalizedHtml.slice(Math.max(0, notesMatch.index - 450), notesMatch.index);
-        const pMatches = [...precedingChunk.matchAll(/>([^<>]{18,380})</g)];
-        if (pMatches.length > 0) {
-          const candidate = pMatches[pMatches.length - 1][1].replace(/\s+/g, ' ').trim();
-          if (!/^(fragrance|benefits|ingredients|how to use)/i.test(candidate)) {
-            overview = candidate;
-          }
-        }
-      }
-    }
-
-    return { overview, notes };
   }
 
   function isUnscentedHardware(name) {
@@ -133,9 +105,6 @@
   }
 
   const initialTitle = getPageCategoryName();
-  const initialFilename = slugifyToFilename(initialTitle);
-
-  // --- 3. INJECT STREAMLINED HUD ---
   const hud = document.createElement('div');
   hud.id = 'pluck-hud-root';
   hud.innerHTML = `
@@ -143,14 +112,14 @@
       <div id="pluck-hud-header">
         <div class="pluck-title-row">
           <span class="pluck-icon">⚡</span>
-          <span class="pluck-title">Pluck 2.5</span>
+          <span class="pluck-title">Pluck 3.0</span>
         </div>
         <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
       </div>
 
       <div class="pluck-field-group">
         <label for="pluck-filename-input" class="pluck-label">Output Filename:</label>
-        <input type="text" id="pluck-filename-input" value="${initialFilename}" spellcheck="false" />
+        <input type="text" id="pluck-filename-input" value="${slugifyToFilename(initialTitle)}" spellcheck="false" />
       </div>
 
       <button id="pluck-extract-btn" class="pluck-primary-btn">⚡ Extract & Download JSON</button>
@@ -171,7 +140,7 @@
     filenameInput.value = slugifyToFilename(title);
 
     if (window.location.pathname.includes('/p/')) {
-      const parsed = extractFragranceFromPdp(document, document.documentElement.innerHTML);
+      const parsed = readRenderedFragranceDom();
       statusEl.innerText = parsed.notes.length > 0
         ? `🌸 PDP Ready: ${parsed.notes.length} notes found`
         : `📄 PDP Detected: "${title}"`;
@@ -186,14 +155,13 @@
   document.getElementById('pluck-refresh-btn').addEventListener('click', rescanPage);
   window.addEventListener('popstate', rescanPage);
 
-  // --- 4. SINGLE PRODUCT PAGE (PDP) EXTRACTOR ---
   function extractSinglePdp() {
     const title = getPageCategoryName();
     if (!title) return null;
 
     const urlMatch = window.location.href.match(/-([0-9]{8,10})(?:\.html|\?|$)/);
     const pid = urlMatch ? urlMatch[1] : Date.now().toString();
-    const { overview, notes } = extractFragranceFromPdp(document, document.documentElement.innerHTML);
+    const { overview, notes } = readRenderedFragranceDom();
 
     const bodyText = document.body.innerText;
     const prices = [...bodyText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) => parseFloat(m[1]));
@@ -233,10 +201,8 @@
     }];
   }
 
-  // --- 5. CATEGORY GRID EXTRACTOR ---
   function extractProducts() {
     const filename = (filenameInput.value || 'catalog.json').trim();
-
     if (window.location.pathname.includes('/p/')) {
       const single = extractSinglePdp();
       return { products: single || [], filename: slugifyToFilename(getPageCategoryName()) };
@@ -265,13 +231,10 @@
       try {
         const linkEl = card.querySelector('a[href*="/p/"]') || card.querySelector('a.link, a[class*="name"]');
         const imgEl = card.querySelector('img[src*="/hires/"], img[data-src*="/hires/"], img[src*="/dw/image/"], img');
-
         if (!linkEl && !imgEl) return;
 
         let productUrl = linkEl ? linkEl.href : '';
-        if (productUrl.startsWith('/')) {
-          productUrl = window.location.origin + productUrl;
-        }
+        if (productUrl.startsWith('/')) productUrl = window.location.origin + productUrl;
 
         let pid = card.getAttribute('data-pid') || '';
         if (!pid && productUrl) {
@@ -375,33 +338,11 @@
     return { products, filename };
   }
 
-  // --- 6. SAME-ORIGIN BATCH NOTE ENRICHER WITH RETRY & DIAGNOSTICS ---
+  // --- BACKGROUND-TAB HYDRATION ENRICHER ---
   document.getElementById('pluck-enrich-btn').addEventListener('click', () => {
     fileInput.value = '';
     fileInput.click();
   });
-
-  async function fetchPdpWithRetry(rawUrl) {
-    const parsedUrl = new URL(rawUrl, window.location.origin);
-    const sameOriginUrl = window.location.origin + parsedUrl.pathname + parsedUrl.search;
-
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        const resp = await fetch(sameOriginUrl, {
-          credentials: 'include',
-          headers: { Accept: 'text/html,application/xhtml+xml' }
-        });
-        if (resp.ok) {
-          return await resp.text();
-        }
-        console.warn(`[Pluck] HTTP ${resp.status} for ${sameOriginUrl} (attempt ${attempt})`);
-      } catch (err) {
-        console.warn(`[Pluck] Fetch error for ${sameOriginUrl} (attempt ${attempt}):`, err);
-      }
-      await new Promise((r) => setTimeout(r, 900 * attempt));
-    }
-    return null;
-  }
 
   fileInput.addEventListener('change', async (e) => {
     const file = e.target.files[0];
@@ -415,10 +356,8 @@
         return;
       }
 
-      const parser = new DOMParser();
       let enrichedCount = 0;
       let skippedHardware = 0;
-      const stillMissing = [];
 
       for (let i = 0; i < items.length; i++) {
         const item = items[i];
@@ -429,33 +368,22 @@
 
         const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
         const needsNotes = !item.fragranceNotes || item.fragranceNotes.length <= 1;
-
         if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
 
-        statusEl.innerText = `✨ (${i + 1}/${items.length}) ${item.name.slice(0, 22)}...`;
+        statusEl.innerText = `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 20)}...`;
 
-        const html = await fetchPdpWithRetry(item.productUrl);
-        if (html) {
-          const doc = parser.parseFromString(html, 'text/html');
-          const { overview, notes } = extractFragranceFromPdp(doc, html);
+        const res = await chrome.runtime.sendMessage({
+          type: 'HYDRATE_PDP',
+          url: item.productUrl
+        });
 
-          if (overview) item.fragranceOverview = overview;
-          if (notes.length > 0) item.fragranceNotes = notes;
-
-          if (overview || notes.length > 0) {
+        if (res) {
+          if (res.overview) item.fragranceOverview = res.overview;
+          if (res.notes && res.notes.length > 0) item.fragranceNotes = res.notes;
+          if (res.overview || (res.notes && res.notes.length > 0)) {
             enrichedCount++;
-          } else {
-            stillMissing.push(item.name);
           }
-        } else {
-          stillMissing.push(`${item.name} (fetch failed)`);
         }
-
-        await new Promise((r) => setTimeout(r, 550));
-      }
-
-      if (stillMissing.length > 0) {
-        console.log('⚠️ [Pluck] Items without fragrance block on PDP:', stillMissing);
       }
 
       const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
@@ -474,7 +402,6 @@
     }
   });
 
-  // --- DOWNLOAD & CLIPBOARD ACTIONS ---
   document.getElementById('pluck-extract-btn').addEventListener('click', () => {
     statusEl.innerText = 'Extracting...';
     const { products, filename } = extractProducts();
