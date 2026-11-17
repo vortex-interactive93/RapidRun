@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Pluck Harvester 2.8</title>
+  <title>Pluck - RapidRun BBW Exporter</title>
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
@@ -11,35 +11,25 @@
     <span class="brand-tag">RAPIDRUN CORE</span>
     <span class="status-indicator live">LIVE DOM</span>
   </div>
-  <h2>Pluck Harvester 2.8</h2>
-  <p class="subtitle">Autonomous Storytelling & Catalog Ingestion Engine</p>
+  <h2>⚡ Pluck Exporter 3.1</h2>
+  <p class="subtitle">Boutique Room Catalog Harvester & PDP Enricher</p>
 </div>
 
 <div class="action-grid">
-  <button id="pluckAisleBtn" class="primary-btn">⚡ QUICK PLUCK (GRID)</button>
-  <button id="deepCrawlBtn" class="action-btn gold" style="display: none;">💎 DEEP HARVEST ALL</button>
-  <button id="exportBtn" class="action-btn green" style="display: none;">📄 DOWNLOAD JSON</button>
-</div>
+  <div class="field-group">
+    <label for="filenameInput" class="field-label">TARGET ROOM FILENAME:</label>
+    <input type="text" id="filenameInput" value="catalog.json" spellcheck="false" />
+  </div>
 
-<div id="progressBox" class="progress-box" style="display: none;">
-  <div class="progress-bar-bg">
-    <div id="progressFill" class="progress-bar-fill"></div>
-  </div>
-  <div class="progress-labels">
-    <span id="progressText">Harvesting...</span>
-    <span id="progressPercent">0%</span>
-  </div>
+  <button id="pluckAutoScrollBtn" class="primary-btn">🧲 AUTO-SCROLL & PLUCK ALL</button>
+  <button id="pluckQuickBtn" class="action-btn gold">⚡ QUICK PLUCK (VISIBLE)</button>
+  <button id="copyJsonBtn" class="action-btn purple">📋 COPY TO CLIPBOARD</button>
+  <button id="downloadJsonBtn" class="action-btn green">📄 DOWNLOAD JSON</button>
+  <button id="enrichNotesBtn" class="action-btn blue">✨ ENRICH MISSING NOTES</button>
+  <input type="file" id="fileInput" accept=".json" style="display:none;" />
 </div>
 
 <div id="status" class="status-box">Ready to harvest store catalog.</div>
-
-<div id="inspectorDeck" class="inspector-deck" style="display: none;">
-  <div class="deck-header">
-    <span id="inspectorCount">0 IN-STORE SKUS</span>
-    <span class="sync-tag">DOM VERIFIED</span>
-  </div>
-  <div id="inspectorList" class="inspector-list"></div>
-</div>
 
 <script src="popup.js"></script>
 </body>

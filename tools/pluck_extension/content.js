@@ -12,7 +12,7 @@
 
   function findFragranceRegion() {
     const direct = document.querySelector(
-      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"]'
+      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"], [id*="item:fragrance"]'
     );
     if (direct) return direct;
 
@@ -34,7 +34,8 @@
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container = findFragranceRegion();
+    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
+
     if (container) {
       const paragraphs = Array.from(container.querySelectorAll('p'))
         .map((p) => p.innerText.replace(/\s+/g, ' ').trim())
@@ -63,16 +64,26 @@
       notes = [...tiers.top, ...tiers.heart, ...tiers.base];
     }
 
+    if (notes.length === 0 || !overview) {
+      const allElements = Array.from(document.querySelectorAll('h2, h3, h4, p, div'));
+      for (const el of allElements) {
+        const txt = el.innerText.trim();
+        if (/^what it smells like/i.test(txt)) {
+          if (!overview && el.nextElementSibling) {
+            overview = el.nextElementSibling.innerText.trim();
+          }
+        } else if (notes.length === 0 && /^(?:fragrance\s+)?notes\s*:\s*.+/i.test(txt)) {
+          notes = splitNotesString(txt);
+          if (!overview && el.previousElementSibling) {
+            const prev = el.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
+            if (prev.length > 12) overview = prev;
+          }
+        }
+      }
+    }
+
     return { overview, notes, tiers };
   }
-
-  chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-    if (msg.type === 'READ_LIVE_PDP_NOTES') {
-      sendResponse(readRenderedFragranceDom());
-    }
-  });
-
-  if (document.getElementById('pluck-hud-root')) return;
 
   function getPageCategoryName() {
     const headingEl = document.querySelector(
@@ -85,7 +96,6 @@
     if (!rawTitle) return 'bbw_catalog.json';
     const clean = rawTitle
       .toLowerCase()
-      .replace(/&/g, 'and')
       .replace(/&/g, 'and')
       .replace(/['"]/g, '')
       .replace(/[^a-z0-9]+/g, '_')
@@ -115,50 +125,6 @@
     );
   }
 
-  const initialTitle = getPageCategoryName();
-  const hud = document.createElement('div');
-  hud.id = 'pluck-hud-root';
-  hud.innerHTML = `
-    <div id="pluck-hud">
-      <div id="pluck-hud-header">
-        <div class="pluck-title-row">
-          <span class="pluck-icon">⚡</span>
-          <span class="pluck-title">Pluck 3.1</span>
-        </div>
-        <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
-      </div>
-
-      <div class="pluck-field-group">
-        <label for="pluck-filename-input" class="pluck-label">Output Filename:</label>
-        <input type="text" id="pluck-filename-input" value="${slugifyToFilename(initialTitle)}" spellcheck="false" />
-      </div>
-
-      <button id="pluck-autoscroll-btn" class="pluck-primary-btn">🧲 Auto-Scroll & Pluck All</button>
-      <button id="pluck-extract-btn" class="pluck-secondary-btn">⚡ Pluck Current View Only</button>
-      <button id="pluck-enrich-btn" class="pluck-enrich-btn">✨ Enrich Missing Notes from JSON</button>
-      <input type="file" id="pluck-file-input" accept=".json" style="display:none;" />
-      <div id="pluck-status">Ready to pluck</div>
-    </div>
-  `;
-  document.body.appendChild(hud);
-
-  const filenameInput = document.getElementById('pluck-filename-input');
-  const statusEl = document.getElementById('pluck-status');
-  const fileInput = document.getElementById('pluck-file-input');
-  let isAutoScrolling = false;
-
-  function rescanPage() {
-    const title = getPageCategoryName();
-    filenameInput.value = slugifyToFilename(title);
-    const cards = document.querySelectorAll('.product-tile, .product, .grid-tile, [data-component*="product"]');
-    const count = Array.from(cards).filter((el) => !el.matches('button, a, input, select')).length;
-    statusEl.innerText = `🔄 View: "${title || 'Catalog'}" (${count} visible)`;
-  }
-
-  document.getElementById('pluck-refresh-btn').addEventListener('click', rescanPage);
-  window.addEventListener('popstate', rescanPage);
-
-  // --- HARVEST CURRENTLY MOUNTED CARDS INTO A PERSISTENT MAP ---
   function harvestVisibleCards(productMap) {
     const cardSelectors = ['.product-tile', '.product', '.grid-tile', '[data-component*="product"]', 'article'];
     let candidateCards = [];
@@ -297,136 +263,164 @@
     URL.revokeObjectURL(url);
   }
 
-  // --- AUTO-SCROLL & ACCUMULATE ALL PRODUCTS (BEATS VIRTUAL SCROLLING) ---
-  document.getElementById('pluck-autoscroll-btn').addEventListener('click', async () => {
-    if (isAutoScrolling) {
-      isAutoScrolling = false;
-      return;
+  // --- RUNTIME MESSAGE LISTENERS (Communicates with popup.js & background.js) ---
+  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (request.type === 'READ_LIVE_PDP_NOTES') {
+      sendResponse(readRenderedFragranceDom());
+      return true;
     }
 
-    isAutoScrolling = true;
-    const btn = document.getElementById('pluck-autoscroll-btn');
-    btn.innerText = '🛑 Stop & Save Collected';
+    if (request.action === 'GET_PAGE_INFO') {
+      const cat = getPageCategoryName();
+      const filename = slugifyToFilename(cat);
+      const tempMap = new Map();
+      harvestVisibleCards(tempMap);
+      sendResponse({ categoryName: cat, filename: filename, count: tempMap.size });
+      return true;
+    }
 
-    const filename = (filenameInput.value || 'catalog.json').trim();
-    const collected = new Map();
-
-    // Start from the very top so row 1 is never missed
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    await new Promise((r) => setTimeout(r, 400));
-    harvestVisibleCards(collected);
-
-    let unchangedCycles = 0;
-    while (isAutoScrolling && unchangedCycles < 4) {
-      const prevSize = collected.size;
-
-      // Click "Load More" / "Show More" if BBW renders a pagination button
-      const loadMoreBtn = Array.from(document.querySelectorAll('button, a')).find((el) =>
-        /^(load more|show more|view more)/i.test(el.innerText.trim())
-      );
-      if (loadMoreBtn) {
-        loadMoreBtn.click();
-        await new Promise((r) => setTimeout(r, 1100));
-      }
-
-      // Scroll down in overlapping viewport steps so React never skips a row
-      window.scrollBy({ top: Math.floor(window.innerHeight * 0.75), behavior: 'smooth' });
-      await new Promise((r) => setTimeout(r, 550));
+    if (request.action === 'PLUCK_QUICK') {
+      const filename = request.filename || slugifyToFilename(getPageCategoryName());
+      const collected = new Map();
       harvestVisibleCards(collected);
+      const products = Array.from(collected.values());
 
-      statusEl.innerText = `🧲 Sweeping... ${collected.size} unique products captured`;
-
-      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 40;
-      if (collected.size === prevSize && atBottom) {
-        unchangedCycles++;
+      if (products.length > 0) {
+        downloadJsonFile(products, filename);
+        sendResponse({ success: true, count: products.length, filename: filename });
       } else {
-        unchangedCycles = 0;
+        sendResponse({ success: false, message: 'No visible products found.' });
       }
+      return true;
     }
 
-    isAutoScrolling = false;
-    btn.innerText = '🧲 Auto-Scroll & Pluck All';
+    if (request.action === 'PLUCK_AUTOSCROLL') {
+      (async () => {
+        const filename = request.filename || slugifyToFilename(getPageCategoryName());
+        const collected = new Map();
 
-    const allProducts = Array.from(collected.values());
-    if (allProducts.length === 0) {
-      statusEl.innerText = '❌ 0 products found.';
-      return;
-    }
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        await new Promise((r) => setTimeout(r, 400));
+        harvestVisibleCards(collected);
 
-    downloadJsonFile(allProducts, filename);
-    statusEl.innerText = `✅ Captured all ${allProducts.length} products to ${filename}!`;
-  });
+        let unchangedCycles = 0;
+        let isAutoScrolling = true;
 
-  // --- INSTANT CURRENT VIEW PLUCK ---
-  document.getElementById('pluck-extract-btn').addEventListener('click', () => {
-    const filename = (filenameInput.value || 'catalog.json').trim();
-    const collected = new Map();
-    harvestVisibleCards(collected);
-    const products = Array.from(collected.values());
+        while (isAutoScrolling && unchangedCycles < 4) {
+          const prevSize = collected.size;
 
-    if (products.length === 0) {
-      statusEl.innerText = '❌ 0 products found.';
-      return;
-    }
-    downloadJsonFile(products, filename);
-    statusEl.innerText = `✅ Plucked ${products.length} visible items to ${filename}!`;
-  });
+          const loadMoreBtn = Array.from(document.querySelectorAll('button, a')).find((el) =>
+            /^(load more|show more|view more)/i.test(el.innerText.trim())
+          );
+          if (loadMoreBtn) {
+            loadMoreBtn.click();
+            await new Promise((r) => setTimeout(r, 1100));
+          }
 
-  // --- BACKGROUND-TAB HYDRATION ENRICHER ---
-  document.getElementById('pluck-enrich-btn').addEventListener('click', () => {
-    fileInput.value = '';
-    fileInput.click();
-  });
+          window.scrollBy({ top: Math.floor(window.innerHeight * 0.75), behavior: 'smooth' });
+          await new Promise((r) => setTimeout(r, 550));
+          harvestVisibleCards(collected);
 
-  fileInput.addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+          chrome.runtime.sendMessage({
+            type: 'STATUS_UPDATE',
+            text: `🧲 Sweeping... ${collected.size} unique products captured`
+          });
 
-    try {
-      const rawText = await file.text();
-      const items = JSON.parse(rawText);
-      if (!Array.isArray(items)) {
-        statusEl.innerText = '❌ Invalid JSON array file';
-        return;
-      }
-
-      let enrichedCount = 0;
-      let skippedHardware = 0;
-
-      for (let i = 0; i < items.length; i++) {
-        const item = items[i];
-        if (isUnscentedHardware(item.name)) {
-          skippedHardware++;
-          continue;
+          const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 40;
+          if (collected.size === prevSize && atBottom) {
+            unchangedCycles++;
+          } else {
+            unchangedCycles = 0;
+          }
         }
 
-        const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
-        const needsNotes = !item.fragranceNotes || item.fragranceNotes.length === 0;
-        if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
+        const allProducts = Array.from(collected.values());
+        if (allProducts.length > 0) {
+          downloadJsonFile(allProducts, filename);
+          sendResponse({ success: true, count: allProducts.length, filename: filename });
+        } else {
+          sendResponse({ success: false, message: 'No products captured.' });
+        }
+      })();
+      return true;
+    }
 
-        statusEl.innerText = `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 20)}...`;
+    if (request.action === 'COPY_JSON') {
+      const collected = new Map();
+      harvestVisibleCards(collected);
+      const products = Array.from(collected.values());
 
-        const res = await chrome.runtime.sendMessage({
-          type: 'HYDRATE_PDP',
-          url: item.productUrl
+      if (products.length > 0) {
+        navigator.clipboard.writeText(JSON.stringify(products, null, 2))
+          .then(() => sendResponse({ success: true, count: products.length }))
+          .catch(() => sendResponse({ success: false, message: 'Clipboard error' }));
+      } else {
+        sendResponse({ success: false, message: 'No products found.' });
+      }
+      return true;
+    }
+
+    if (request.action === 'DOWNLOAD_JSON') {
+      const filename = request.filename || slugifyToFilename(getPageCategoryName());
+      const collected = new Map();
+      harvestVisibleCards(collected);
+      const products = Array.from(collected.values());
+
+      if (products.length > 0) {
+        downloadJsonFile(products, filename);
+        sendResponse({ success: true, count: products.length, filename: filename });
+      } else {
+        sendResponse({ success: false, message: 'No products found.' });
+      }
+      return true;
+    }
+
+    if (request.action === 'ENRICH_NOTES') {
+      (async () => {
+        const items = request.items || [];
+        let enrichedCount = 0;
+        let skippedHardware = 0;
+
+        for (let i = 0; i < items.length; i++) {
+          const item = items[i];
+          if (isUnscentedHardware(item.name)) {
+            skippedHardware++;
+            continue;
+          }
+
+          const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
+          const needsNotes = !item.fragranceNotes || item.fragranceNotes.length <= 1;
+          if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
+
+          chrome.runtime.sendMessage({
+            type: 'STATUS_UPDATE',
+            text: `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 18)}...`
+          });
+
+          const res = await chrome.runtime.sendMessage({
+            type: 'HYDRATE_PDP',
+            url: item.productUrl
+          });
+
+          if (res) {
+            if (res.overview) item.fragranceOverview = res.overview;
+            if (res.notes && res.notes.length > 0) item.fragranceNotes = res.notes;
+            if (res.tiers && (res.tiers.top?.length || res.tiers.heart?.length || res.tiers.base?.length)) {
+              item.fragranceTiers = res.tiers;
+            }
+            if (res.overview || (res.notes && res.notes.length > 0)) {
+              enrichedCount++;
+            }
+          }
+        }
+
+        downloadJsonFile(items, request.fileName || 'enriched_catalog.json');
+        chrome.runtime.sendMessage({
+          type: 'STATUS_UPDATE',
+          text: `✅ Enriched ${enrichedCount} items! (${skippedHardware} holders skipped)`
         });
-
-        if (res) {
-          if (res.overview) item.fragranceOverview = res.overview;
-          if (res.notes && res.notes.length > 0) item.fragranceNotes = res.notes;
-          if (res.tiers && (res.tiers.top?.length || res.tiers.heart?.length || res.tiers.base?.length)) {
-            item.fragranceTiers = res.tiers;
-          }
-          if (res.overview || (res.notes && res.notes.length > 0)) {
-            enrichedCount++;
-          }
-        }
-      }
-
-      downloadJsonFile(items, file.name);
-      statusEl.innerText = `✅ Enriched ${enrichedCount} items! (${skippedHardware} holders skipped)`;
-    } catch (err) {
-      statusEl.innerText = '❌ Failed to parse JSON file';
+      })();
+      return true;
     }
   });
 })();
