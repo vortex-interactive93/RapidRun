@@ -387,6 +387,16 @@ class BbwBoutiqueRepository {
       'overview': 'Bold, smooth and classic barrel-aged bourbon.',
       'tiers': {'top': ['white pepper'], 'heart': ['dark amber'], 'base': ['Kentucky oak']}
     },
+    'platinum': {
+      'notes': ['lush pear', 'Sicilian bergamot', 'jasmine sambac absolute', 'muguet', 'white tea', 'vetiver', 'amber', 'vanilla', 'whipped musk', 'patchouli'],
+      'overview': 'Brightly nuanced. Brilliantly grounded. A luxe, warm, floral signature for confidence that catches the light.',
+      'tiers': {'top': ['lush pear', 'Sicilian bergamot'], 'heart': ['jasmine sambac absolute', 'muguet', 'white tea'], 'base': ['vetiver', 'amber', 'vanilla', 'whipped musk', 'patchouli']}
+    },
+    'a thousand wishes granted': {
+      'notes': ['wild raspberry', 'fresh bergamot', 'redcurrant', 'jasmine sambac', 'osmanthus', 'peonies', 'marshmallow', 'musk', 'amber', 'tonka creme', 'vanilla bean extract', 'vetiver'],
+      'overview': 'A dream fulfilled. Juicy raspberry and sparkling citrus meet delicate florals.',
+      'tiers': {'top': ['wild raspberry', 'fresh bergamot', 'redcurrant'], 'heart': ['jasmine sambac', 'osmanthus', 'peonies'], 'base': ['marshmallow', 'musk', 'amber', 'tonka creme', 'vanilla bean extract', 'vetiver']}
+    },
     'noir': {
       'notes': ['black cardamom', 'smoky vanilla', 'warm musk'],
       'overview': 'Dark, mysterious and endlessly warm.',
