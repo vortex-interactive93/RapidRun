@@ -1,7 +1,6 @@
 // File: tools/pluck_extension/content.js
 
 (function () {
-  // --- LIVE PDP DOM PARSER (Used both on active PDP and background hydration tabs) ---
   function splitNotesString(rawNotes) {
     return rawNotes
       .replace(/^(?:fragrance\s+)?notes\s*:\s*/i, '')
@@ -12,13 +11,11 @@
   }
 
   function findFragranceRegion() {
-    // 1. Direct ARIA region / accordion content match (immune to Emotion CSS hashes)
     const direct = document.querySelector(
-      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"], [id*="item:fragrance"]'
+      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"]'
     );
     if (direct) return direct;
 
-    // 2. Find any accordion button labeled "Fragrance" and follow its aria-controls target
     const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
     const fragBtn = buttons.find((b) => b.innerText.trim().toLowerCase() === 'fragrance');
     if (fragBtn) {
@@ -29,7 +26,6 @@
       }
       if (fragBtn.parentElement) return fragBtn.parentElement;
     }
-
     return null;
   }
 
@@ -38,8 +34,7 @@
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
-
+    const container = findFragranceRegion();
     if (container) {
       const paragraphs = Array.from(container.querySelectorAll('p'))
         .map((p) => p.innerText.replace(/\s+/g, ' ').trim())
@@ -64,34 +59,13 @@
       }
     }
 
-    // Combine Top + Heart + Base into flat fragranceNotes when a 3-tier pyramid is present
     if (notes.length === 0 && (tiers.top.length > 0 || tiers.heart.length > 0 || tiers.base.length > 0)) {
       notes = [...tiers.top, ...tiers.heart, ...tiers.base];
-    }
-
-    // Fallback: Check "What it smells like" headings or paragraphs
-    if (notes.length === 0 || !overview) {
-      const allElements = Array.from(document.querySelectorAll('h2, h3, h4, p, div'));
-      for (const el of allElements) {
-        const txt = el.innerText.trim();
-        if (/^what it smells like/i.test(txt)) {
-          if (!overview && el.nextElementSibling) {
-            overview = el.nextElementSibling.innerText.trim();
-          }
-        } else if (notes.length === 0 && /^(?:fragrance\s+)?notes\s*:\s*.+/i.test(txt)) {
-          notes = splitNotesString(txt);
-          if (!overview && el.previousElementSibling) {
-            const prev = el.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
-            if (prev.length > 12) overview = prev;
-          }
-        }
-      }
     }
 
     return { overview, notes, tiers };
   }
 
-  // Respond when background.js asks this tab for its hydrated fragrance notes
   chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     if (msg.type === 'READ_LIVE_PDP_NOTES') {
       sendResponse(readRenderedFragranceDom());
@@ -111,7 +85,7 @@
     if (!rawTitle) return 'bbw_catalog.json';
     const clean = rawTitle
       .toLowerCase()
-      .replace(/&amp;/g, 'and')
+      .replace(/&/g, 'and')
       .replace(/&/g, 'and')
       .replace(/['"]/g, '')
       .replace(/[^a-z0-9]+/g, '_')
@@ -149,7 +123,7 @@
       <div id="pluck-hud-header">
         <div class="pluck-title-row">
           <span class="pluck-icon">⚡</span>
-          <span class="pluck-title">Pluck 3.0</span>
+          <span class="pluck-title">Pluck 3.1</span>
         </div>
         <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
       </div>
@@ -159,8 +133,8 @@
         <input type="text" id="pluck-filename-input" value="${slugifyToFilename(initialTitle)}" spellcheck="false" />
       </div>
 
-      <button id="pluck-extract-btn" class="pluck-primary-btn">⚡ Extract & Download JSON</button>
-      <button id="pluck-copy-btn" class="pluck-secondary-btn">📋 Copy to Clipboard</button>
+      <button id="pluck-autoscroll-btn" class="pluck-primary-btn">🧲 Auto-Scroll & Pluck All</button>
+      <button id="pluck-extract-btn" class="pluck-secondary-btn">⚡ Pluck Current View Only</button>
       <button id="pluck-enrich-btn" class="pluck-enrich-btn">✨ Enrich Missing Notes from JSON</button>
       <input type="file" id="pluck-file-input" accept=".json" style="display:none;" />
       <div id="pluck-status">Ready to pluck</div>
@@ -171,82 +145,21 @@
   const filenameInput = document.getElementById('pluck-filename-input');
   const statusEl = document.getElementById('pluck-status');
   const fileInput = document.getElementById('pluck-file-input');
+  let isAutoScrolling = false;
 
   function rescanPage() {
     const title = getPageCategoryName();
     filenameInput.value = slugifyToFilename(title);
-
-    if (window.location.pathname.includes('/p/')) {
-      const parsed = readRenderedFragranceDom();
-      statusEl.innerText = parsed.notes.length > 0
-        ? `🌸 PDP Ready: ${parsed.notes.length} notes found`
-        : `📄 PDP Detected: "${title}"`;
-      return;
-    }
-
     const cards = document.querySelectorAll('.product-tile, .product, .grid-tile, [data-component*="product"]');
     const count = Array.from(cards).filter((el) => !el.matches('button, a, input, select')).length;
-    statusEl.innerText = `🔄 Detected: "${title || 'Catalog'}" (${count} items)`;
+    statusEl.innerText = `🔄 View: "${title || 'Catalog'}" (${count} visible)`;
   }
 
   document.getElementById('pluck-refresh-btn').addEventListener('click', rescanPage);
   window.addEventListener('popstate', rescanPage);
 
-  function extractSinglePdp() {
-    const title = getPageCategoryName();
-    if (!title) return null;
-
-    const urlMatch = window.location.href.match(/-([0-9]{8,10})(?:\.html|\?|$)/);
-    const pid = urlMatch ? urlMatch[1] : Date.now().toString();
-    const { overview, notes } = readRenderedFragranceDom();
-
-    const bodyText = document.body.innerText;
-    const prices = [...bodyText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) => parseFloat(m[1]));
-    const salePrice = prices.length > 0 ? Math.min(...prices) : 0.0;
-    const regularPrice = prices.length > 1 ? Math.max(...prices) : salePrice;
-
-    const imgEl = document.querySelector('img[src*="/hires/"], img[src*="/dw/image/"]');
-    let imageUrl = imgEl ? (imgEl.getAttribute('src') || '') : '';
-    if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
-
-    return [{
-      id: `bbw_${pid}`,
-      sku: pid,
-      name: title,
-      brand: 'Bath & Body Works',
-      store: 'Bath & Body Works',
-      category: 'Fragrance',
-      department: 'All Fragrance',
-      productType: 'All Fragrance',
-      subCategory: 'All Fragrance',
-      price: salePrice,
-      regularPrice: regularPrice,
-      salePrice: salePrice,
-      promoBadge: '',
-      hasSpecial: salePrice < regularPrice,
-      imageUrl: imageUrl,
-      productUrl: window.location.href.split('?')[0],
-      unit: 'Standard',
-      unitShort: 'Item',
-      fragranceNotes: notes,
-      fragranceOverview: overview,
-      fragranceTiers: { top: [], heart: [], base: [] },
-      inStock: true,
-      isOnlineExclusive: false,
-      rating: 4.8,
-      ratingCount: 140
-    }];
-  }
-
-  function extractProducts() {
-    const filename = (filenameInput.value || 'catalog.json').trim();
-    if (window.location.pathname.includes('/p/')) {
-      const single = extractSinglePdp();
-      return { products: single || [], filename: slugifyToFilename(getPageCategoryName()) };
-    }
-
-    const products = [];
-    const seenIds = new Set();
+  // --- HARVEST CURRENTLY MOUNTED CARDS INTO A PERSISTENT MAP ---
+  function harvestVisibleCards(productMap) {
     const cardSelectors = ['.product-tile', '.product', '.grid-tile', '[data-component*="product"]', 'article'];
     let candidateCards = [];
 
@@ -282,8 +195,7 @@
           const btn = card.querySelector('[data-pid]');
           if (btn) pid = btn.getAttribute('data-pid') || '';
         }
-        if (!pid || seenIds.has(pid)) return;
-        seenIds.add(pid);
+        if (!pid) return;
 
         let name = '';
         if (imgEl) {
@@ -340,7 +252,7 @@
         }
         const hasSpecial = promoBadge.length > 0 || salePrice < regularPrice;
 
-        products.push({
+        productMap.set(pid, {
           id: pid.startsWith('bbw_') ? pid : 'bbw_' + pid,
           sku: pid.replace(/[^0-9]/g, '') || pid,
           name: name,
@@ -371,9 +283,94 @@
         console.warn('Card parse skipped:', err);
       }
     });
-
-    return { products, filename };
   }
+
+  function downloadJsonFile(products, filename) {
+    const blob = new Blob([JSON.stringify(products, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  // --- AUTO-SCROLL & ACCUMULATE ALL PRODUCTS (BEATS VIRTUAL SCROLLING) ---
+  document.getElementById('pluck-autoscroll-btn').addEventListener('click', async () => {
+    if (isAutoScrolling) {
+      isAutoScrolling = false;
+      return;
+    }
+
+    isAutoScrolling = true;
+    const btn = document.getElementById('pluck-autoscroll-btn');
+    btn.innerText = '🛑 Stop & Save Collected';
+
+    const filename = (filenameInput.value || 'catalog.json').trim();
+    const collected = new Map();
+
+    // Start from the very top so row 1 is never missed
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    await new Promise((r) => setTimeout(r, 400));
+    harvestVisibleCards(collected);
+
+    let unchangedCycles = 0;
+    while (isAutoScrolling && unchangedCycles < 4) {
+      const prevSize = collected.size;
+
+      // Click "Load More" / "Show More" if BBW renders a pagination button
+      const loadMoreBtn = Array.from(document.querySelectorAll('button, a')).find((el) =>
+        /^(load more|show more|view more)/i.test(el.innerText.trim())
+      );
+      if (loadMoreBtn) {
+        loadMoreBtn.click();
+        await new Promise((r) => setTimeout(r, 1100));
+      }
+
+      // Scroll down in overlapping viewport steps so React never skips a row
+      window.scrollBy({ top: Math.floor(window.innerHeight * 0.75), behavior: 'smooth' });
+      await new Promise((r) => setTimeout(r, 550));
+      harvestVisibleCards(collected);
+
+      statusEl.innerText = `🧲 Sweeping... ${collected.size} unique products captured`;
+
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 40;
+      if (collected.size === prevSize && atBottom) {
+        unchangedCycles++;
+      } else {
+        unchangedCycles = 0;
+      }
+    }
+
+    isAutoScrolling = false;
+    btn.innerText = '🧲 Auto-Scroll & Pluck All';
+
+    const allProducts = Array.from(collected.values());
+    if (allProducts.length === 0) {
+      statusEl.innerText = '❌ 0 products found.';
+      return;
+    }
+
+    downloadJsonFile(allProducts, filename);
+    statusEl.innerText = `✅ Captured all ${allProducts.length} products to ${filename}!`;
+  });
+
+  // --- INSTANT CURRENT VIEW PLUCK ---
+  document.getElementById('pluck-extract-btn').addEventListener('click', () => {
+    const filename = (filenameInput.value || 'catalog.json').trim();
+    const collected = new Map();
+    harvestVisibleCards(collected);
+    const products = Array.from(collected.values());
+
+    if (products.length === 0) {
+      statusEl.innerText = '❌ 0 products found.';
+      return;
+    }
+    downloadJsonFile(products, filename);
+    statusEl.innerText = `✅ Plucked ${products.length} visible items to ${filename}!`;
+  });
 
   // --- BACKGROUND-TAB HYDRATION ENRICHER ---
   document.getElementById('pluck-enrich-btn').addEventListener('click', () => {
@@ -404,7 +401,7 @@
         }
 
         const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
-        const needsNotes = !item.fragranceNotes || item.fragranceNotes.length <= 1;
+        const needsNotes = !item.fragranceNotes || item.fragranceNotes.length === 0;
         if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
 
         statusEl.innerText = `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 20)}...`;
@@ -426,58 +423,10 @@
         }
       }
 
-      const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = file.name;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-
+      downloadJsonFile(items, file.name);
       statusEl.innerText = `✅ Enriched ${enrichedCount} items! (${skippedHardware} holders skipped)`;
     } catch (err) {
       statusEl.innerText = '❌ Failed to parse JSON file';
-    }
-  });
-
-  document.getElementById('pluck-extract-btn').addEventListener('click', () => {
-    statusEl.innerText = 'Extracting...';
-    const { products, filename } = extractProducts();
-
-    if (products.length === 0) {
-      statusEl.innerText = '❌ 0 products found. Scroll down first!';
-      return;
-    }
-
-    const blob = new Blob([JSON.stringify(products, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    statusEl.innerText = `✅ Plucked ${products.length} items to ${filename}!`;
-  });
-
-  document.getElementById('pluck-copy-btn').addEventListener('click', async () => {
-    statusEl.innerText = 'Copying...';
-    const { products, filename } = extractProducts();
-
-    if (products.length === 0) {
-      statusEl.innerText = '❌ 0 products found. Scroll down first!';
-      return;
-    }
-
-    try {
-      await navigator.clipboard.writeText(JSON.stringify(products, null, 2));
-      statusEl.innerText = `📋 Copied ${products.length} items (${filename})!`;
-    } catch (err) {
-      statusEl.innerText = '❌ Clipboard copy failed. Use Download instead.';
     }
   });
 })();
