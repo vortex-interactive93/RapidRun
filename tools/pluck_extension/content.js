@@ -11,16 +11,34 @@
       .filter((n) => n.length > 1 && n.length < 60);
   }
 
+  function findFragranceRegion() {
+    // 1. Direct ARIA region / accordion content match (immune to Emotion CSS hashes)
+    const direct = document.querySelector(
+      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"], [id*="item:fragrance"]'
+    );
+    if (direct) return direct;
+
+    // 2. Find any accordion button labeled "Fragrance" and follow its aria-controls target
+    const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
+    const fragBtn = buttons.find((b) => b.innerText.trim().toLowerCase() === 'fragrance');
+    if (fragBtn) {
+      const controlsId = fragBtn.getAttribute('aria-controls');
+      if (controlsId) {
+        const controlled = document.getElementById(controlsId);
+        if (controlled) return controlled;
+      }
+      if (fragBtn.parentElement) return fragBtn.parentElement;
+    }
+
+    return null;
+  }
+
   function readRenderedFragranceDom() {
     let overview = '';
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container =
-      document.querySelector('[id*="content:fragrance"] .emotion-16zqzjt') ||
-      document.querySelector('[id*="content:fragrance"]') ||
-      document.querySelector('[id*="item:fragrance"]') ||
-      document.querySelector('.emotion-16zqzjt');
+    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
 
     if (container) {
       const paragraphs = Array.from(container.querySelectorAll('p'))
@@ -46,23 +64,26 @@
       }
     }
 
-    // Combine Top + Heart + Base into fragranceNotes when a 3-tier pyramid is present
+    // Combine Top + Heart + Base into flat fragranceNotes when a 3-tier pyramid is present
     if (notes.length === 0 && (tiers.top.length > 0 || tiers.heart.length > 0 || tiers.base.length > 0)) {
       notes = [...tiers.top, ...tiers.heart, ...tiers.base];
     }
 
-    // Fallback: only scan outside the accordion if nothing was found inside it
-    if (notes.length === 0) {
-      const allPs = Array.from(document.querySelectorAll('p'));
-      for (const p of allPs) {
-        const text = p.innerText.replace(/\s+/g, ' ').trim();
-        if (/^(?:fragrance\s+)?notes\s*:\s*.+/i.test(text)) {
-          notes = splitNotesString(text);
-          if (!overview && p.previousElementSibling) {
-            const prev = p.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
+    // Fallback: Check "What it smells like" headings or paragraphs
+    if (notes.length === 0 || !overview) {
+      const allElements = Array.from(document.querySelectorAll('h2, h3, h4, p, div'));
+      for (const el of allElements) {
+        const txt = el.innerText.trim();
+        if (/^what it smells like/i.test(txt)) {
+          if (!overview && el.nextElementSibling) {
+            overview = el.nextElementSibling.innerText.trim();
+          }
+        } else if (notes.length === 0 && /^(?:fragrance\s+)?notes\s*:\s*.+/i.test(txt)) {
+          notes = splitNotesString(txt);
+          if (!overview && el.previousElementSibling) {
+            const prev = el.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
             if (prev.length > 12) overview = prev;
           }
-          break;
         }
       }
     }
