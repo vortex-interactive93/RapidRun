@@ -26,7 +26,6 @@ class DataSeederService {
         'assets/data/mens_shop.json',
         'assets/data/home_care.json',
         'assets/data/all_fragrance.json',
-        'assets/data/mini_and_travel_size.json',
       ];
 
       for (final filePath in catalogFiles) {

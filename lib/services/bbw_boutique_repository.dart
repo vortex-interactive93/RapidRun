@@ -14,11 +14,10 @@ class BbwBoutiqueRepository {
   /// Ordered from oldest/fallback to newest scraped files.
   /// Later files in this list ALWAYS overwrite older prices for the same SKU.
   static const List<String> _allAssetFiles = [
-    // Canonical 8 filenames
+    // Canonical 7 filenames
     'assets/data/candles.json',
     'assets/data/body_care.json',
     'assets/data/all_fragrance.json',
-    'assets/data/mini_and_travel_size.json',
     'assets/data/hand_soaps_sanitizers.json',
     'assets/data/wallflowers_diffusers.json',
     'assets/data/mens_shop.json',
