@@ -5,7 +5,19 @@ chrome.sidePanel
   .catch((error) => console.error(error));
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-  if (msg.type !== 'HYDRATE_PDP' || !msg.url) return false;
+  if (!msg || msg.type !== 'HYDRATE_PDP' || !msg.url) {
+    return false;
+  }
+
+  let responded = false;
+  const safeRespond = (payload) => {
+    if (!responded) {
+      responded = true;
+      try {
+        sendResponse(payload);
+      } catch (_) {}
+    }
+  };
 
   (async () => {
     let tabId = null;
@@ -30,9 +42,9 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       await new Promise((r) => setTimeout(r, 1400));
 
       const result = await chrome.tabs.sendMessage(tabId, { type: 'READ_LIVE_PDP_NOTES' });
-      sendResponse(result || { overview: '', notes: [] });
+      safeRespond(result || { overview: '', notes: [], tiers: { top: [], heart: [], base: [] } });
     } catch (err) {
-      sendResponse({ overview: '', notes: [], error: String(err) });
+      safeRespond({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] }, error: String(err) });
     } finally {
       if (tabId !== null) {
         try {
@@ -42,5 +54,5 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     }
   })();
 
-  return true;
+  return true; // Keeps channel open safely until safeRespond() fires
 });

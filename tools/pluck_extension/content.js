@@ -265,9 +265,15 @@
 
   // --- RUNTIME MESSAGE LISTENERS (Communicates with popup.js & background.js) ---
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    if (!request) return false;
+
     if (request.type === 'READ_LIVE_PDP_NOTES') {
-      sendResponse(readRenderedFragranceDom());
-      return true;
+      try {
+        sendResponse(readRenderedFragranceDom());
+      } catch (_) {
+        sendResponse({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] } });
+      }
+      return false; // Synchronous response — closes channel cleanly with zero dangling promises
     }
 
     if (request.action === 'GET_PAGE_INFO') {
