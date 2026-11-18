@@ -5,9 +5,12 @@ chrome.sidePanel
   .catch((error) => console.error(error));
 
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
-  if (!msg || msg.type !== 'HYDRATE_PDP' || !msg.url) {
+  if (!msg || (msg.type !== 'HYDRATE_PDP' && msg.type !== 'HYDRATE_ALDI_PDP') || !msg.url) {
     return false;
   }
+
+  const targetCommand =
+    msg.type === 'HYDRATE_ALDI_PDP' ? 'READ_LIVE_ALDI_PDP' : 'READ_LIVE_PDP_NOTES';
 
   let responded = false;
   const safeRespond = (payload) => {
@@ -39,11 +42,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         }, 8000);
       });
 
-      // Ask content.js to poll until wick-skeleton hydrates into Fragrance notes
-      const result = await chrome.tabs.sendMessage(tabId, { type: 'READ_LIVE_PDP_NOTES' });
-      safeRespond(result || { overview: '', notes: [], tiers: { top: [], heart: [], base: [] } });
+      const result = await chrome.tabs.sendMessage(tabId, { type: targetCommand });
+      safeRespond(result || {});
     } catch (err) {
-      safeRespond({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] }, error: String(err) });
+      safeRespond({ error: String(err) });
     } finally {
       if (tabId !== null) {
         try {

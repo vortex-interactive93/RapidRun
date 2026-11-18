@@ -90,7 +90,7 @@
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
+    const container = findFragranceRegion();
     if (container) {
       const paragraphs = Array.from(container.querySelectorAll('p'))
         .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
@@ -144,7 +144,59 @@
   }
 
   // =========================================================================
-  // 2. STORE MODE & CATEGORY TITLE ENGINE
+  // 2. ALDI PDP HYDRATION ENGINE ([id$="-Details"], [id$="-Ingredients"], Size)
+  // =========================================================================
+  function readRenderedAldiPdp() {
+    const detailsEl = document.querySelector('[id$="-Details"]');
+    let description = '';
+    if (detailsEl) {
+      const paras = Array.from(detailsEl.querySelectorAll('p'))
+        .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
+        .filter((t) => t.length > 0);
+      description = paras.join(' ');
+    }
+
+    const ingEl = document.querySelector('[id$="-Ingredients"]');
+    let ingredients = '';
+    if (ingEl) {
+      const paras = Array.from(ingEl.querySelectorAll('p'))
+        .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
+        .filter(
+          (t) =>
+            t.length > 0 &&
+            !/please refer to the physical product label/i.test(t) &&
+            !/product weight may vary/i.test(t)
+        );
+      ingredients = paras.join(' ');
+    }
+
+    let unit = '';
+    const h1 = document.querySelector('h1');
+    const headerScope = h1 ? h1.parentElement?.parentElement || document.body : document.body;
+    const headerText = headerScope.textContent.replace(/\s+/g, ' ');
+    const unitMatch = headerText.match(
+      /\b(About\s+\d+(?:\.\d+)?\s*(?:lb|lbs|oz)\s*\/\s*package|\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack)|per\s+lb)\b/i
+    );
+    if (unitMatch) {
+      unit = unitMatch[1].trim();
+    }
+
+    return { description, ingredients, unit };
+  }
+
+  async function waitForHydratedAldiPdp() {
+    for (let attempt = 0; attempt < 18; attempt++) {
+      const data = readRenderedAldiPdp();
+      if (data.description.length > 0 || data.ingredients.length > 0 || data.unit.length > 0) {
+        if (data.description.length > 0) return data;
+      }
+      await new Promise((r) => setTimeout(r, 250));
+    }
+    return readRenderedAldiPdp();
+  }
+
+  // =========================================================================
+  // 3. STORE MODE & CATEGORY TITLE ENGINE
   // =========================================================================
   function detectStoreKey() {
     const host = window.location.hostname.toLowerCase();
@@ -191,15 +243,90 @@
   }
 
   // =========================================================================
-  // 3. ALDI (INSTACART STOREFRONT PRO) CARD HARVESTER
+  // 4. ALDI (INSTACART STOREFRONT PRO) CARD HARVESTER & IMAGE REPAIR
   // =========================================================================
+  const ALDI_KNOWN_BRANDS = [
+    'Appleton Farms',
+    'Simply Nature',
+    'Never Any!',
+    'Fremont Fish Market',
+    'Earth Grown',
+    "Cattlemen's Ranch",
+    'Specially Selected',
+    'Breakfast Best',
+    'Pueblo Lindo',
+    'Holmes Smokehouse',
+    'Plainville Farms',
+    'Kirkwood',
+    'Parkview',
+    'Simms',
+    'Tyson',
+    'Perdue',
+    'Smithfield',
+    "Nathan's",
+    'Eckrich',
+    'Friendly Farms',
+    'Happy Farms',
+    'Millville',
+    'Clancy’s',
+    "Clancy's",
+    'Bake Shop',
+    "L'oven Fresh",
+    'Season’s Choice',
+    "Season's Choice",
+    'Burman’s',
+    "Burman's",
+    'Stonemill',
+    'Priano',
+    'Casa Mamita',
+    'Chef’s Cupboard',
+    "Chef's Cupboard",
+    'elevation',
+    'PurAqua',
+    'Barissimo',
+    'Benton’s',
+    "Benton's",
+    'Choceur',
+    'Moser Roth',
+    'Southern Grove',
+  ];
+
+  function extractAldiBrand(productName) {
+    const lower = productName.toLowerCase();
+    for (const brand of ALDI_KNOWN_BRANDS) {
+      if (lower.startsWith(brand.toLowerCase())) {
+        return brand;
+      }
+    }
+    return 'ALDI';
+  }
+
+  function cleanAldiImageUrl(imgEl) {
+    if (!imgEl) return '';
+    let raw = imgEl.currentSrc || imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || '';
+    if (!raw || raw.startsWith('data:')) {
+      const srcset = imgEl.getAttribute('srcset') || '';
+      if (srcset) {
+        const candidates = srcset
+          .split(/,\s+(?=https?:)/i)
+          .map((s) => s.trim().split(/\s+/)[0])
+          .filter(Boolean);
+        raw = candidates[candidates.length - 1] || '';
+      }
+    }
+    const cloudfrontMatch = raw.match(/(d2lnr5mha7bycj\.cloudfront\.net\/[^\s"'?]+)/i);
+    if (cloudfrontMatch) {
+      return `https://${cloudfrontMatch[1]}`;
+    }
+    if (raw.startsWith('//')) return 'https:' + raw;
+    return raw;
+  }
+
   function buildDeterministicAldiId(imgUrl, name, unit) {
-    // 1. Prefer the unique Cloudfront UUID in the image URL (e.g., large_12242429-639e-40ef-9400-8ba8f9b7e21d)
     const uuidMatch = imgUrl ? imgUrl.match(/large_([a-z0-9-]{8,40})\./i) : null;
     if (uuidMatch && uuidMatch[1]) {
       return uuidMatch[1];
     }
-    // 2. Fallback: clean deterministic slug from name + unit
     return `${name}_${unit}`
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '_')
@@ -208,8 +335,6 @@
 
   function harvestAldiCards(productMap) {
     const categoryName = getPageCategoryName() || 'Groceries';
-
-    // Target the exact Instacart/ALDI card button verified in DevTools
     let candidateCards = Array.from(document.querySelectorAll('[data-item-card-button="true"]'));
 
     if (candidateCards.length === 0) {
@@ -222,30 +347,22 @@
       try {
         const card = btnCard.closest('li, [role="group"]') || btnCard;
 
-        // 1. Extract Product Name from heading
         const headingEl = card.querySelector('h2, h3, [role="heading"]');
         const name = headingEl ? headingEl.textContent.replace(/\s+/g, ' ').trim() : '';
         if (!name || name.length < 2) return;
 
-        // 2. Extract Image URL (prefer crisp 386x386 / 514x514 from srcset or src)
         const imgEl = card.querySelector('img');
-        let imageUrl = '';
-        if (imgEl) {
-          const srcset = imgEl.getAttribute('srcset') || '';
-          if (srcset) {
-            const parts = srcset
-              .split(',')
-              .map((s) => s.trim().split(' ')[0])
-              .filter(Boolean);
-            imageUrl = parts[parts.length - 1] || '';
-          }
-          if (!imageUrl) {
-            imageUrl = imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || '';
-          }
-          if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
+        const imageUrl = cleanAldiImageUrl(imgEl);
+
+        const linkEl = card.querySelector('a[href*="/products/"]');
+        let productUrl = linkEl ? linkEl.getAttribute('href') || '' : '';
+        if (productUrl.startsWith('/')) {
+          productUrl = window.location.origin + productUrl;
+        }
+        if (!productUrl) {
+          productUrl = window.location.href.split('?')[0];
         }
 
-        // 3. Extract Exact Current & Original Prices (ignores per-lb unit rate like "$6.49 / lb")
         const fullText = btnCard.textContent.replace(/\s+/g, ' ');
         const currentMatch = fullText.match(/Current price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
         const originalMatch = fullText.match(/Original price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
@@ -257,7 +374,6 @@
           salePrice = parseFloat(currentMatch[1]);
           regularPrice = originalMatch ? parseFloat(originalMatch[1]) : salePrice;
         } else {
-          // Fallback: strip "$X.XX / lb" before reading standalone prices
           const textWithoutPerLb = fullText.replace(/\$[0-9]+(?:\.[0-9]{2})?\s*\/\s*(?:lb|oz|ct|ea)/gi, '');
           const pricesFound = [...textWithoutPerLb.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
             parseFloat(m[1])
@@ -271,13 +387,11 @@
           }
         }
 
-        // 4. Extract Package Size / Weight ("16 oz", "About 3.5 lb / package", "12 oz")
         const unitMatch = fullText.match(
           /\b(About\s+\d+(?:\.\d+)?\s*(?:lb|lbs|oz)\s*\/\s*package|\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack)|per\s+lb)\b/i
         );
         const unit = unitMatch ? unitMatch[1].trim() : 'Each';
 
-        // 5. Extract In-Store Aisle / Department ("Cooler Doors", "Fresh Meat", etc.)
         const leafTexts = Array.from(btnCard.querySelectorAll('span, div, p'))
           .filter((el) => el.children.length === 0)
           .map((el) => el.textContent.replace(/\s+/g, ' ').trim())
@@ -291,7 +405,6 @@
           );
         const aisleLocation = leafTexts.length > 0 ? leafTexts[leafTexts.length - 1] : categoryName;
 
-        // 6. Stock & Promo Status
         const inStock = !/out of stock|sold out/i.test(fullText);
         let promoBadge = '';
         if (salePrice < regularPrice) promoBadge = 'Price Drop';
@@ -299,12 +412,13 @@
         else if (/weekly special/i.test(fullText)) promoBadge = 'Weekly Special';
 
         const rawId = buildDeterministicAldiId(imageUrl, name, unit);
+        const brand = extractAldiBrand(name);
 
         productMap.set(rawId, {
           id: `aldi_${rawId}`,
           sku: rawId,
           name: name,
-          brand: 'ALDI',
+          brand: brand,
           store: 'ALDI',
           category: categoryName,
           department: categoryName,
@@ -317,9 +431,11 @@
           promoBadge: promoBadge,
           hasSpecial: promoBadge.length > 0 || salePrice < regularPrice,
           imageUrl: imageUrl,
-          productUrl: window.location.href.split('?')[0],
+          productUrl: productUrl.split('?')[0],
           unit: unit,
           unitShort: unit,
+          description: '',
+          ingredients: '',
           inStock: inStock,
           isOnlineExclusive: false,
           rating: 4.7,
@@ -332,7 +448,7 @@
   }
 
   // =========================================================================
-  // 4. BATH & BODY WORKS CARD HARVESTER
+  // 5. BATH & BODY WORKS CARD HARVESTER
   // =========================================================================
   function harvestBbwCards(productMap) {
     const cardSelectors = [
@@ -481,7 +597,7 @@
   }
 
   // =========================================================================
-  // 5. RUNTIME MESSAGE LISTENERS (Communicates with popup.js & background.js)
+  // 6. RUNTIME MESSAGE LISTENERS (Communicates with popup.js & background.js)
   // =========================================================================
   chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (!request) return false;
@@ -497,6 +613,13 @@
             promoInfo: { hasDealBlock: false, promoBadge: '' },
           })
         );
+      return true;
+    }
+
+    if (request.type === 'READ_LIVE_ALDI_PDP') {
+      waitForHydratedAldiPdp()
+        .then((data) => sendResponse(data))
+        .catch(() => sendResponse({ description: '', ingredients: '', unit: '' }));
       return true;
     }
 
@@ -613,9 +736,95 @@
     if (request.action === 'ENRICH_NOTES') {
       (async () => {
         const items = request.items || [];
+        const mode = getActiveStoreMode(request.storeMode);
         let enrichedCount = 0;
         let skippedHardware = 0;
 
+        // --- ALDI ENRICHMENT WORKFLOW ---
+        if (mode === 'aldi') {
+          for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+
+            // Repair Cloudfront image URLs
+            if (item.imageUrl && item.imageUrl.includes('d2lnr5mha7bycj.cloudfront.net')) {
+              const m = item.imageUrl.match(/(d2lnr5mha7bycj\.cloudfront\.net\/[^\s"'?]+)/i);
+              if (m) item.imageUrl = `https://${m[1]}`;
+            }
+
+            // Extract true ALDI brand
+            if (!item.brand || item.brand === 'ALDI') {
+              item.brand = extractAldiBrand(item.name);
+            }
+
+            const needsDetails = !item.description || item.description.trim().length === 0;
+            const needsUnit = !item.unit || item.unit === 'Each';
+            if (!needsDetails && !needsUnit) continue;
+
+            chrome.runtime.sendMessage({
+              type: 'STATUS_UPDATE',
+              text: `✨ ALDI (${i + 1}/${items.length}) ${item.name.slice(0, 18)}...`
+            });
+
+            if (item.productUrl && item.productUrl.includes('/products/')) {
+              const res = await chrome.runtime.sendMessage({
+                type: 'HYDRATE_ALDI_PDP',
+                url: item.productUrl,
+              });
+              if (res) {
+                if (res.description) item.description = res.description;
+                if (res.ingredients) item.ingredients = res.ingredients;
+                if (res.unit && (item.unit === 'Each' || !item.unit)) {
+                  item.unit = res.unit;
+                  item.unitShort = res.unit;
+                }
+                if (res.description || res.ingredients || res.unit) enrichedCount++;
+              }
+            } else {
+              const matchingBtn = Array.from(document.querySelectorAll('[data-item-card-button="true"]')).find(
+                (btn) => {
+                  const h = btn.querySelector('h2, h3, [role="heading"]');
+                  return h && h.textContent.replace(/\s+/g, ' ').trim() === item.name;
+                }
+              );
+
+              if (matchingBtn) {
+                matchingBtn.click();
+                const res = await waitForHydratedAldiPdp();
+
+                if (window.location.pathname.includes('/products/')) {
+                  item.productUrl = window.location.href.split('?')[0];
+                }
+
+                if (res.description) item.description = res.description;
+                if (res.ingredients) item.ingredients = res.ingredients;
+                if (res.unit && (item.unit === 'Each' || !item.unit)) {
+                  item.unit = res.unit;
+                  item.unitShort = res.unit;
+                }
+                if (res.description || res.ingredients || res.unit) enrichedCount++;
+
+                const closeBtn = document.querySelector(
+                  '[role="dialog"] button[aria-label*="close" i], [role="dialog"] button[aria-label*="back" i]'
+                );
+                if (closeBtn) {
+                  closeBtn.click();
+                } else {
+                  document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+                }
+                await new Promise((r) => setTimeout(r, 350));
+              }
+            }
+          }
+
+          downloadJsonFile(items, request.fileName || 'aldi_enriched_catalog.json');
+          chrome.runtime.sendMessage({
+            type: 'STATUS_UPDATE',
+            text: `✅ Enriched ${enrichedCount} ALDI items & fixed image URLs!`
+          });
+          return;
+        }
+
+        // --- BBW ENRICHMENT WORKFLOW ---
         for (let i = 0; i < items.length; i++) {
           const item = items[i];
           if (isUnscentedHardware(item.name)) {
