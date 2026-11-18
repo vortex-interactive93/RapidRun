@@ -189,6 +189,8 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  bool get _isAldiEnabled => false; // Flip to true when re-enabling ALDI
+
   Widget _dualFlagshipSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -220,18 +222,19 @@ class _HomePageState extends State<HomePage> {
           },
         ),
 
-        // 2. ALDI Market Flagship Card
-        FlagshipStoreCard(
-          type: FlagshipType.aldi,
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => const AldiStoreScreen(),
-              ),
-            );
-          },
-        ),
+        // 2. ALDI Market Flagship Card (Temporarily hidden for Order #1 live test)
+        if (_isAldiEnabled)
+          FlagshipStoreCard(
+            type: FlagshipType.aldi,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const AldiStoreScreen(),
+                ),
+              );
+            },
+          ),
       ],
     );
   }

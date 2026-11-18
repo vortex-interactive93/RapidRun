@@ -24,7 +24,7 @@ class DriverDispatchListener {
         final data = doc.data();
         final s = (data['status'] ?? '').toString();
         final dId = data['driverId'];
-        return (s == 'pendingDispatch' || s == 'pending_dispatch') &&
+        return (s == 'pendingDispatch' || s == 'pending_dispatch' || s == 'pending') &&
             (dId == null || dId == '');
       }).toList();
 
