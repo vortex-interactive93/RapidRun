@@ -10,14 +10,21 @@
       .filter((n) => n.length > 1 && n.length < 60);
   }
 
+  function findFragranceButton() {
+    const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
+    return (
+      buttons.find((b) => b.textContent.trim().toLowerCase() === 'fragrance') ||
+      document.querySelector('[id*="trigger:fragrance"]')
+    );
+  }
+
   function findFragranceRegion() {
     const direct = document.querySelector(
-      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"], [id*="item:fragrance"]'
+      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"]'
     );
     if (direct) return direct;
 
-    const buttons = Array.from(document.querySelectorAll('button, [role="button"]'));
-    const fragBtn = buttons.find((b) => b.innerText.trim().toLowerCase() === 'fragrance');
+    const fragBtn = findFragranceButton();
     if (fragBtn) {
       const controlsId = fragBtn.getAttribute('aria-controls');
       if (controlsId) {
@@ -29,30 +36,59 @@
     return null;
   }
 
+  // Reads the "What it smells like" editorial block & its sibling StaticText note blocks
   function extractFromWhatItSmellsLike() {
     const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, [role="heading"]'));
     const smellHeading = headings.find(
-      (h) => h.innerText.trim().toLowerCase() === 'what it smells like'
+      (h) => h.textContent.trim().toLowerCase() === 'what it smells like'
     );
-    if (!smellHeading || !smellHeading.parentElement) return { overview: '', notes: [] };
+    if (!smellHeading) return { overview: '', notes: [] };
 
-    const section = smellHeading.closest('section, div[class*="layout"], div[class*="stack"]') || smellHeading.parentElement.parentElement;
+    // Walk up 2 levels so both the description paragraphs and sibling note divs are included
+    const section =
+      smellHeading.parentElement?.parentElement ||
+      smellHeading.closest('section, div[class*="layout"]') ||
+      smellHeading.parentElement;
     if (!section) return { overview: '', notes: [] };
 
-    const lines = Array.from(section.querySelectorAll('p, span, div'))
+    const leafTexts = Array.from(section.querySelectorAll('p, span, div'))
       .filter((el) => el.children.length === 0)
-      .map((el) => el.innerText.replace(/\s+/g, ' ').trim())
-      .filter((t) => t.length > 1 && t.toLowerCase() !== 'what it smells like');
+      .map((el) => el.textContent.replace(/\s+/g, ' ').trim())
+      .filter(
+        (t) =>
+          t.length > 1 &&
+          t.toLowerCase() !== 'what it smells like' &&
+          !/^shop collection/i.test(t)
+      );
 
-    const uniqueLines = [...new Set(lines)];
+    const uniqueLines = [...new Set(leafTexts)];
     if (uniqueLines.length === 0) return { overview: '', notes: [] };
 
-    const overview = uniqueLines.find((l) => l.length > 35) || '';
+    // Prefer the fuller descriptive paragraph (or combine short tagline + description)
+    const longParagraphs = uniqueLines.filter((l) => l.length > 35 || l.endsWith('.'));
+    const overview = longParagraphs.length > 0 ? longParagraphs[longParagraphs.length - 1] : '';
+
     const notes = uniqueLines
-      .filter((l) => l !== overview && l.length <= 45 && !l.endsWith('.'))
-      .slice(0, 5);
+      .filter((l) => !longParagraphs.includes(l) && l.length >= 2 && l.length <= 42)
+      .slice(0, 6);
 
     return { overview, notes };
+  }
+
+  // Reads the PDP's true deal status from [data-component="product-deals"]
+  function readLivePdpPromo() {
+    const dealEl = document.querySelector('[data-component="product-deals"]');
+    if (!dealEl) return { hasDealBlock: false, promoBadge: '' };
+
+    const raw = dealEl.textContent
+      .replace(/\bdetails\b/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    if (!raw || /^limited time only$/i.test(raw)) {
+      return { hasDealBlock: true, promoBadge: '' };
+    }
+    return { hasDealBlock: true, promoBadge: raw };
   }
 
   function readRenderedFragranceDom() {
@@ -60,11 +96,11 @@
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
-
+    const container = findFragranceRegion();
     if (container) {
+      // Use textContent (not innerText) so collapsed/hidden accordion panels still yield their text
       const paragraphs = Array.from(container.querySelectorAll('p'))
-        .map((p) => p.innerText.replace(/\s+/g, ' ').trim())
+        .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
         .filter((t) => t.length > 0);
 
       for (const text of paragraphs) {
@@ -90,48 +126,55 @@
       notes = [...tiers.top, ...tiers.heart, ...tiers.base];
     }
 
+    // Fallback to the "What it smells like" section
     if (notes.length === 0 || !overview) {
       const fallback = extractFromWhatItSmellsLike();
       if (!overview && fallback.overview) overview = fallback.overview;
       if (notes.length === 0 && fallback.notes.length > 0) notes = fallback.notes;
     }
 
-    if (notes.length === 0 || !overview) {
-      const allElements = Array.from(document.querySelectorAll('h2, h3, h4, p, div'));
-      for (const el of allElements) {
-        const txt = el.innerText.trim();
-        if (/^what it smells like/i.test(txt)) {
-          if (!overview && el.nextElementSibling) {
-            overview = el.nextElementSibling.innerText.trim();
-          }
-        } else if (notes.length === 0 && /^(?:fragrance\s+)?notes\s*:\s*.+/i.test(txt)) {
-          notes = splitNotesString(txt);
-          if (!overview && el.previousElementSibling) {
-            const prev = el.previousElementSibling.innerText.replace(/\s+/g, ' ').trim();
-            if (prev.length > 12) overview = prev;
-          }
-        }
-      }
-    }
-
-    return { overview, notes, tiers };
+    const promoInfo = readLivePdpPromo();
+    return { overview, notes, tiers, promoInfo };
   }
 
-  // Poll every 250ms up to 4.5s until React finishes hydrating wick-skeleton
+  // Clicks the "Fragrance" accordion if closed and polls until React hydrates the notes
   async function waitForHydratedFragrance() {
-    for (let attempt = 0; attempt < 18; attempt++) {
+    for (let attempt = 0; attempt < 20; attempt++) {
+      const fragBtn = findFragranceButton();
+      if (fragBtn && fragBtn.getAttribute('aria-expanded') === 'false') {
+        fragBtn.click();
+      }
+
       const data = readRenderedFragranceDom();
-      if (data.notes.length > 0 || data.overview.length > 0) {
-        if (data.notes.length === 0 && attempt < 10) {
-          await new Promise((r) => setTimeout(r, 250));
-          return readRenderedFragranceDom();
-        }
+      if (data.notes.length > 0 && data.overview.length > 0) {
+        return data;
+      }
+      if ((data.notes.length > 0 || data.overview.length > 0) && attempt >= 8) {
         return data;
       }
       await new Promise((r) => setTimeout(r, 250));
     }
     return readRenderedFragranceDom();
   }
+
+  chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    if (!msg || msg.type !== 'READ_LIVE_PDP_NOTES') {
+      return false;
+    }
+    waitForHydratedFragrance()
+      .then((data) => sendResponse(data))
+      .catch(() =>
+        sendResponse({
+          overview: '',
+          notes: [],
+          tiers: { top: [], heart: [], base: [] },
+          promoInfo: { hasDealBlock: false, promoBadge: '' },
+        })
+      );
+    return true;
+  });
+
+  if (document.getElementById('pluck-hud-root')) return;
 
   function getPageCategoryName() {
     const headingEl = document.querySelector(
@@ -144,6 +187,7 @@
     if (!rawTitle) return 'bbw_catalog.json';
     const clean = rawTitle
       .toLowerCase()
+      .replace(/&/g, 'and')
       .replace(/&/g, 'and')
       .replace(/['"]/g, '')
       .replace(/[^a-z0-9]+/g, '_')
@@ -173,8 +217,56 @@
     );
   }
 
+  const initialTitle = getPageCategoryName();
+  const hud = document.createElement('div');
+  hud.id = 'pluck-hud-root';
+  hud.innerHTML = `
+    <div id="pluck-hud">
+      <div id="pluck-hud-header">
+        <div class="pluck-title-row">
+          <span class="pluck-icon">⚡</span>
+          <span class="pluck-title">Pluck 3.2</span>
+        </div>
+        <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
+      </div>
+
+      <div class="pluck-field-group">
+        <label for="pluck-filename-input" class="pluck-label">Output Filename:</label>
+        <input type="text" id="pluck-filename-input" value="${slugifyToFilename(initialTitle)}" spellcheck="false" />
+      </div>
+
+      <button id="pluck-autoscroll-btn" class="pluck-primary-btn">🧲 Auto-Scroll & Pluck All</button>
+      <button id="pluck-extract-btn" class="pluck-secondary-btn">⚡ Pluck Current View Only</button>
+      <button id="pluck-enrich-btn" class="pluck-enrich-btn">✨ Enrich Notes & Fix Promos</button>
+      <input type="file" id="pluck-file-input" accept=".json" style="display:none;" />
+      <div id="pluck-status">Ready to pluck</div>
+    </div>
+  `;
+  document.body.appendChild(hud);
+
+  const filenameInput = document.getElementById('pluck-filename-input');
+  const statusEl = document.getElementById('pluck-status');
+  const fileInput = document.getElementById('pluck-file-input');
+  let isAutoScrolling = false;
+
+  function rescanPage() {
+    const title = getPageCategoryName();
+    filenameInput.value = slugifyToFilename(title);
+    const cards = document.querySelectorAll('.product-tile, .product, .grid-tile, [data-component="product-card"]');
+    statusEl.innerText = `🔄 View: "${title || 'Catalog'}" (${cards.length} visible)`;
+  }
+
+  document.getElementById('pluck-refresh-btn').addEventListener('click', rescanPage);
+  window.addEventListener('popstate', rescanPage);
+
   function harvestVisibleCards(productMap) {
-    const cardSelectors = ['.product-tile', '.product', '.grid-tile', '[data-component*="product"]', 'article'];
+    // Strictly select individual product cards so page-level banners/carousels never bleed in
+    const cardSelectors = [
+      '[data-component="product-card"]',
+      '.product-tile',
+      '.grid-tile',
+      'article[data-pid]',
+    ];
     let candidateCards = [];
 
     for (const sel of cardSelectors) {
@@ -187,17 +279,17 @@
 
     if (candidateCards.length === 0) {
       candidateCards = Array.from(document.querySelectorAll('[data-pid]')).filter(
-        (el) => !el.matches('button, a, input, select')
+        (el) => !el.matches('button, a, input, select') && el.querySelector('a[href*="/p/"]')
       );
     }
 
     candidateCards.forEach((card) => {
       try {
-        const linkEl = card.querySelector('a[href*="/p/"]') || card.querySelector('a.link, a[class*="name"]');
+        const linkEl = card.querySelector('a[href*="/p/"]');
         const imgEl = card.querySelector('img[src*="/hires/"], img[data-src*="/hires/"], img[src*="/dw/image/"], img');
-        if (!linkEl && !imgEl) return;
+        if (!linkEl || !imgEl) return;
 
-        let productUrl = linkEl ? linkEl.href : '';
+        let productUrl = linkEl.href;
         if (productUrl.startsWith('/')) productUrl = window.location.origin + productUrl;
 
         let pid = card.getAttribute('data-pid') || '';
@@ -205,39 +297,28 @@
           const match = productUrl.match(/-([0-9]{8,10})(?:\.html|\?|$)/);
           if (match) pid = match[1];
         }
-        if (!pid) {
-          const btn = card.querySelector('[data-pid]');
-          if (btn) pid = btn.getAttribute('data-pid') || '';
-        }
         if (!pid) return;
 
         let name = '';
-        if (imgEl) {
-          const alt = (imgEl.getAttribute('alt') || imgEl.getAttribute('title') || '').trim();
-          if (alt.length > 3 && !alt.toLowerCase().includes('swatch') && !alt.toLowerCase().includes('icon')) {
-            name = alt;
-          }
-        }
-        if (!name && linkEl) {
-          const linkText = linkEl.innerText.trim();
-          if (linkText.length > 3) name = linkText;
+        const alt = (imgEl.getAttribute('alt') || imgEl.getAttribute('title') || '').trim();
+        if (alt.length > 3 && !alt.toLowerCase().includes('swatch') && !alt.toLowerCase().includes('icon')) {
+          name = alt;
         }
         if (!name) {
-          const titleEl = card.querySelector('[class*="title"], [class*="name"], h2, h3');
+          const titleEl = card.querySelector('[data-component="product-title"], [class*="title"], [class*="name"], h2, h3');
           if (titleEl) name = titleEl.innerText.trim();
         }
         if (!name) return;
 
-        let imageUrl = '';
-        if (imgEl) {
-          imageUrl = imgEl.getAttribute('data-src') || imgEl.getAttribute('src') || '';
-          if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
-        }
+        let imageUrl = imgEl.getAttribute('data-src') || imgEl.getAttribute('src') || '';
+        if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
 
         let salePrice = 0.0;
         let regularPrice = 0.0;
-        const cardText = card.innerText;
-        const pricesFound = [...cardText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) => parseFloat(m[1]));
+        const priceContainer = card.querySelector('[data-component="product-price"]') || card;
+        const pricesFound = [...priceContainer.innerText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
+          parseFloat(m[1])
+        );
 
         if (pricesFound.length === 1) {
           salePrice = pricesFound[0];
@@ -247,21 +328,13 @@
           regularPrice = Math.max(...pricesFound);
         }
 
+        // Only read promo badges from the card's own deal element (never from global banners)
         let promoBadge = '';
-        const lines = cardText.split('\n').map((l) => l.trim()).filter((l) => l.length > 0);
-        for (const line of lines) {
-          const lineUpper = line.toUpperCase();
-          if (
-            lineUpper.includes('MIX & MATCH') ||
-            lineUpper.includes('BUY 3, GET 3') ||
-            lineUpper.includes('BUY 2, GET 1') ||
-            lineUpper.includes('BUY 3, GET 1') ||
-            lineUpper.includes('BUY 1, GET 1') ||
-            lineUpper.includes('FREE') ||
-            /\b\d+\/\$\d+\b/.test(lineUpper)
-          ) {
-            promoBadge = line.replace(/\s+/g, ' ');
-            break;
+        const dealEl = card.querySelector('[data-component="product-deals"], [class*="promo"], [class*="deal"]');
+        if (dealEl) {
+          const dealText = dealEl.innerText.replace(/\s+/g, ' ').trim();
+          if (dealText && !/^limited time only$/i.test(dealText)) {
+            promoBadge = dealText;
           }
         }
         const hasSpecial = promoBadge.length > 0 || salePrice < regularPrice;
@@ -282,7 +355,7 @@
           promoBadge: promoBadge,
           hasSpecial: hasSpecial,
           imageUrl: imageUrl,
-          productUrl: productUrl || `${window.location.origin}/p/${pid}`,
+          productUrl: productUrl.split('?')[0],
           unit: 'Standard',
           unitShort: 'Item',
           fragranceNotes: [],
@@ -291,7 +364,7 @@
           inStock: true,
           isOnlineExclusive: false,
           rating: 4.8,
-          ratingCount: 140
+          ratingCount: 140,
         });
       } catch (err) {
         console.warn('Card parse skipped:', err);
@@ -318,8 +391,15 @@
     if (request.type === 'READ_LIVE_PDP_NOTES') {
       waitForHydratedFragrance()
         .then((data) => sendResponse(data))
-        .catch(() => sendResponse({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] } }));
-      return true; // Keeps channel open until waitForHydratedFragrance() resolves
+        .catch(() =>
+          sendResponse({
+            overview: '',
+            notes: [],
+            tiers: { top: [], heart: [], base: [] },
+            promoInfo: { hasDealBlock: false, promoBadge: '' },
+          })
+        );
+      return true;
     }
 
     if (request.action === 'GET_PAGE_INFO') {
@@ -442,7 +522,12 @@
 
           const needsOverview = !item.fragranceOverview || item.fragranceOverview.trim().length === 0;
           const needsNotes = !item.fragranceNotes || item.fragranceNotes.length <= 1;
-          if ((!needsOverview && !needsNotes) || !item.productUrl) continue;
+          const hasSuspiciousPromo =
+            item.salePrice < item.regularPrice &&
+            item.promoBadge &&
+            /buy 3/i.test(item.promoBadge);
+
+          if ((!needsOverview && !needsNotes && !hasSuspiciousPromo) || !item.productUrl) continue;
 
           chrome.runtime.sendMessage({
             type: 'STATUS_UPDATE',
@@ -460,6 +545,10 @@
             if (res.tiers && (res.tiers.top?.length || res.tiers.heart?.length || res.tiers.base?.length)) {
               item.fragranceTiers = res.tiers;
             }
+            if (res.promoInfo && res.promoInfo.hasDealBlock) {
+              item.promoBadge = res.promoInfo.promoBadge;
+              item.hasSpecial = item.promoBadge.length > 0 || item.salePrice < item.regularPrice;
+            }
             if (res.overview || (res.notes && res.notes.length > 0)) {
               enrichedCount++;
             }
@@ -469,7 +558,7 @@
         downloadJsonFile(items, request.fileName || 'enriched_catalog.json');
         chrome.runtime.sendMessage({
           type: 'STATUS_UPDATE',
-          text: `✅ Enriched ${enrichedCount} items! (${skippedHardware} holders skipped)`
+          text: `✅ Enriched ${enrichedCount} items & verified promos! (${skippedHardware} holders skipped)`
         });
       })();
       return true;
