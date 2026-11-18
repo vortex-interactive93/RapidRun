@@ -17,7 +17,12 @@ async function getActiveTab() {
 
 function updateUiForStoreMode(mode) {
   if (enrichNotesBtn) {
-    enrichNotesBtn.style.display = mode === 'aldi' ? 'none' : 'flex';
+    enrichNotesBtn.style.display = 'flex';
+    if (mode === 'aldi') {
+      enrichNotesBtn.innerText = '✨ ENRICH DETAILS';
+    } else {
+      enrichNotesBtn.innerText = '✨ ENRICH NOTES';
+    }
   }
 }
 
@@ -59,7 +64,7 @@ pluckAutoScrollBtn.addEventListener('click', async () => {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'PLUCK_AUTOSCROLL',
       filename: filenameInput.value.trim(),
-      storeMode: storeSelect.value
+      storeMode: storeSelect ? storeSelect.value : 'auto'
     });
     if (res && res.success) {
       statusBox.innerText = `✅ Captured all ${res.count} products to ${res.filename}!`;
@@ -81,7 +86,7 @@ pluckQuickBtn.addEventListener('click', async () => {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'PLUCK_QUICK',
       filename: filenameInput.value.trim(),
-      storeMode: storeSelect.value
+      storeMode: storeSelect ? storeSelect.value : 'auto'
     });
     if (res && res.success) {
       statusBox.innerText = `✅ Plucked ${res.count} items to ${res.filename}!`;
@@ -103,7 +108,7 @@ copyJsonBtn.addEventListener('click', async () => {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'COPY_JSON',
       filename: filenameInput.value.trim(),
-      storeMode: storeSelect.value
+      storeMode: storeSelect ? storeSelect.value : 'auto'
     });
     if (res && res.success) {
       statusBox.innerText = `📋 Copied ${res.count} items to Clipboard!`;
@@ -125,7 +130,7 @@ downloadJsonBtn.addEventListener('click', async () => {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'DOWNLOAD_JSON',
       filename: filenameInput.value.trim(),
-      storeMode: storeSelect.value
+      storeMode: storeSelect ? storeSelect.value : 'auto'
     });
     if (res && res.success) {
       statusBox.innerText = `📄 Downloaded ${res.count} items as ${res.filename}!`;
@@ -137,7 +142,7 @@ downloadJsonBtn.addEventListener('click', async () => {
   }
 });
 
-// 5. Enrich Missing Notes
+// 5. Enrich Notes / Details
 if (enrichNotesBtn) {
   enrichNotesBtn.addEventListener('click', () => {
     fileInput.value = '';
@@ -163,11 +168,13 @@ fileInput.addEventListener('change', async (e) => {
       return;
     }
 
-    statusBox.innerText = `✨ Enriched notes for ${items.length} items starting...`;
+    const selectedMode = storeSelect ? storeSelect.value : 'auto';
+    statusBox.innerText = `✨ Enriching ${items.length} items starting...`;
     chrome.tabs.sendMessage(tab.id, {
       action: 'ENRICH_NOTES',
       items: items,
-      fileName: file.name
+      fileName: file.name,
+      storeMode: selectedMode
     });
   } catch (err) {
     statusBox.innerText = '❌ Failed to parse JSON file';
