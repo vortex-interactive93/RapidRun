@@ -36,11 +36,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
         setTimeout(() => {
           chrome.tabs.onUpdated.removeListener(listener);
           resolve();
-        }, 7000);
+        }, 8000);
       });
 
-      await new Promise((r) => setTimeout(r, 1400));
-
+      // Ask content.js to poll until wick-skeleton hydrates into Fragrance notes
       const result = await chrome.tabs.sendMessage(tabId, { type: 'READ_LIVE_PDP_NOTES' });
       safeRespond(result || { overview: '', notes: [], tiers: { top: [], heart: [], base: [] } });
     } catch (err) {
@@ -54,5 +53,5 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     }
   })();
 
-  return true; // Keeps channel open safely until safeRespond() fires
+  return true;
 });

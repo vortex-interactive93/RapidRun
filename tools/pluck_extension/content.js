@@ -29,6 +29,32 @@
     return null;
   }
 
+  function extractFromWhatItSmellsLike() {
+    const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, [role="heading"]'));
+    const smellHeading = headings.find(
+      (h) => h.innerText.trim().toLowerCase() === 'what it smells like'
+    );
+    if (!smellHeading || !smellHeading.parentElement) return { overview: '', notes: [] };
+
+    const section = smellHeading.closest('section, div[class*="layout"], div[class*="stack"]') || smellHeading.parentElement.parentElement;
+    if (!section) return { overview: '', notes: [] };
+
+    const lines = Array.from(section.querySelectorAll('p, span, div'))
+      .filter((el) => el.children.length === 0)
+      .map((el) => el.innerText.replace(/\s+/g, ' ').trim())
+      .filter((t) => t.length > 1 && t.toLowerCase() !== 'what it smells like');
+
+    const uniqueLines = [...new Set(lines)];
+    if (uniqueLines.length === 0) return { overview: '', notes: [] };
+
+    const overview = uniqueLines.find((l) => l.length > 35) || '';
+    const notes = uniqueLines
+      .filter((l) => l !== overview && l.length <= 45 && !l.endsWith('.'))
+      .slice(0, 5);
+
+    return { overview, notes };
+  }
+
   function readRenderedFragranceDom() {
     let overview = '';
     let notes = [];
@@ -65,6 +91,12 @@
     }
 
     if (notes.length === 0 || !overview) {
+      const fallback = extractFromWhatItSmellsLike();
+      if (!overview && fallback.overview) overview = fallback.overview;
+      if (notes.length === 0 && fallback.notes.length > 0) notes = fallback.notes;
+    }
+
+    if (notes.length === 0 || !overview) {
       const allElements = Array.from(document.querySelectorAll('h2, h3, h4, p, div'));
       for (const el of allElements) {
         const txt = el.innerText.trim();
@@ -83,6 +115,22 @@
     }
 
     return { overview, notes, tiers };
+  }
+
+  // Poll every 250ms up to 4.5s until React finishes hydrating wick-skeleton
+  async function waitForHydratedFragrance() {
+    for (let attempt = 0; attempt < 18; attempt++) {
+      const data = readRenderedFragranceDom();
+      if (data.notes.length > 0 || data.overview.length > 0) {
+        if (data.notes.length === 0 && attempt < 10) {
+          await new Promise((r) => setTimeout(r, 250));
+          return readRenderedFragranceDom();
+        }
+        return data;
+      }
+      await new Promise((r) => setTimeout(r, 250));
+    }
+    return readRenderedFragranceDom();
   }
 
   function getPageCategoryName() {
@@ -268,12 +316,10 @@
     if (!request) return false;
 
     if (request.type === 'READ_LIVE_PDP_NOTES') {
-      try {
-        sendResponse(readRenderedFragranceDom());
-      } catch (_) {
-        sendResponse({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] } });
-      }
-      return false; // Synchronous response — closes channel cleanly with zero dangling promises
+      waitForHydratedFragrance()
+        .then((data) => sendResponse(data))
+        .catch(() => sendResponse({ overview: '', notes: [], tiers: { top: [], heart: [], base: [] } }));
+      return true; // Keeps channel open until waitForHydratedFragrance() resolves
     }
 
     if (request.action === 'GET_PAGE_INFO') {
