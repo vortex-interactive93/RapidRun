@@ -44,12 +44,12 @@
       for (const text of paragraphs) {
         if (/^(?:fragrance\s+)?notes\s*:/i.test(text)) {
           notes = splitNotesString(text);
-        } else if (/^top\s*:/i.test(text)) {
-          tiers.top = splitNotesString(text.replace(/^top\s*:\s*/i, ''));
-        } else if (/^heart\s*:/i.test(text)) {
-          tiers.heart = splitNotesString(text.replace(/^heart\s*:\s*/i, ''));
-        } else if (/^base\s*:/i.test(text)) {
-          tiers.base = splitNotesString(text.replace(/^base\s*:\s*/i, ''));
+        } else if (/^top(?:\s+notes)?\s*:/i.test(text)) {
+          tiers.top = splitNotesString(text.replace(/^top(?:\s+notes)?\s*:\s*/i, ''));
+        } else if (/^heart(?:\s+notes)?\s*:/i.test(text)) {
+          tiers.heart = splitNotesString(text.replace(/^heart(?:\s+notes)?\s*:\s*/i, ''));
+        } else if (/^base(?:\s+notes)?\s*:/i.test(text)) {
+          tiers.base = splitNotesString(text.replace(/^base(?:\s+notes)?\s*:\s*/i, ''));
         } else if (
           !overview &&
           text.length > 10 &&
