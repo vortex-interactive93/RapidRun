@@ -1,11 +1,8 @@
 // File: tools/pluck_extension/content.js
 
 (function () {
-  const IS_ALDI = window.location.hostname.includes('aldi.us');
-  const IS_BBW = window.location.hostname.includes('bathandbodyworks.com');
-
   // =========================================================================
-  // 1. BATH & BODY WORKS PDP HYDRATION ENGINE (UNTOUCHED & LOCKED IN)
+  // 1. BATH & BODY WORKS PDP HYDRATION ENGINE (LOCKED & UNTOUCHED)
   // =========================================================================
   function splitNotesString(rawNotes) {
     return rawNotes
@@ -26,7 +23,7 @@
 
   function findFragranceRegion() {
     const direct = document.querySelector(
-      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"], [id*="item:fragrance"]'
+      '[role="region"][aria-label*="fragrance" i], [id*="content:fragrance"]'
     );
     if (direct) return direct;
 
@@ -93,7 +90,7 @@
     let notes = [];
     const tiers = { top: [], heart: [], base: [] };
 
-    const container = findFragranceRegion() || document.querySelector('.emotion-16zqzjt');
+    const container = findFragranceRegion();
     if (container) {
       const paragraphs = Array.from(container.querySelectorAll('p'))
         .map((p) => p.textContent.replace(/\s+/g, ' ').trim())
@@ -161,18 +158,35 @@
     return true;
   });
 
+  if (document.getElementById('pluck-hud-root')) return;
+
   // =========================================================================
-  // 2. SHARED CATEGORY TITLE & SLUG ENGINE
+  // 2. STORE MODE & CATEGORY TITLE ENGINE
   // =========================================================================
+  function detectStoreKey() {
+    const host = window.location.hostname.toLowerCase();
+    if (host.includes('aldi.us')) return 'aldi';
+    return 'bbw';
+  }
+
+  function getActiveStoreMode() {
+    const selectEl = document.getElementById('pluck-store-select');
+    if (selectEl && selectEl.value !== 'auto') {
+      return selectEl.value;
+    }
+    return detectStoreKey();
+  }
+
   function getPageCategoryName() {
     const headingEl = document.querySelector(
-      'h1[data-dan-display="product-list--heading"], h1.wick-heading, [data-testid="category-title"], h1'
+      'h1[data-dan-display="product-list--heading"], h1.wick-heading, [data-testid="category-title"], main h1, h1'
     );
     return headingEl ? headingEl.innerText.trim() : '';
   }
 
-  function slugifyToFilename(rawTitle) {
-    const prefix = IS_ALDI ? 'aldi_' : '';
+  function slugifyToFilename(rawTitle, storeMode) {
+    const mode = storeMode || getActiveStoreMode();
+    const prefix = mode === 'aldi' ? 'aldi_' : '';
     if (!rawTitle) return `${prefix}catalog.json`;
 
     const clean = rawTitle
@@ -182,7 +196,7 @@
       .replace(/[^a-z0-9]+/g, '_')
       .replace(/^_+|_+$/g, '');
 
-    if (IS_ALDI) return `aldi_${clean}.json`;
+    if (mode === 'aldi') return `aldi_${clean}.json`;
 
     if (clean.includes('candle')) return 'candles.json';
     if (clean.includes('wallflower') || clean.includes('diffuser')) return 'wallflowers_diffusers.json';
@@ -195,109 +209,97 @@
   }
 
   // =========================================================================
-  // 3. ALDI STORE ADAPTER (GROCERY CARDS, WEIGHT UNITS & ALDI FINDS)
+  // 3. ALDI (INSTACART STOREFRONT PRO) CARD HARVESTER
   // =========================================================================
   function harvestAldiCards(productMap) {
     const categoryName = getPageCategoryName() || 'Groceries';
-    const cardSelectors = [
-      '.product-tile',
-      '[data-testid="product-tile"]',
-      '[class*="product-tile"]',
-      'article',
-    ];
 
-    let candidateCards = [];
-    for (const sel of cardSelectors) {
-      const found = document.querySelectorAll(sel);
-      if (found.length > 0) {
-        candidateCards = Array.from(found);
-        break;
-      }
-    }
+    let candidateCards = Array.from(document.querySelectorAll('[data-item-card-holder="true"]'));
 
     if (candidateCards.length === 0) {
-      const links = Array.from(document.querySelectorAll('a[href*="/product/"]'));
-      const containers = new Set();
+      const links = Array.from(document.querySelectorAll('a[href*="/products/"]'));
+      const tiles = new Set();
       links.forEach((a) => {
-        const tile = a.closest('li, article, div[class*="tile"], div[class*="card"], div[class*="grid"] > div');
-        if (tile) containers.add(tile);
+        const container = a.closest('li, [data-item-card-holder], article') || a.parentElement;
+        if (container) tiles.add(container);
       });
-      candidateCards = Array.from(containers);
+      candidateCards = Array.from(tiles);
     }
 
     candidateCards.forEach((card) => {
       try {
-        const linkEl = card.querySelector('a[href*="/product/"]') || card.querySelector('a[href]');
-        const imgEl = card.querySelector('img');
+        const linkEl = card.querySelector('a[href*="/products/"]');
         if (!linkEl) return;
 
-        let productUrl = linkEl.href;
-        if (productUrl.startsWith('/')) productUrl = window.location.origin + productUrl;
+        let productUrl = linkEl.getAttribute('href') || '';
+        if (productUrl.startsWith('/')) {
+          productUrl = window.location.origin + productUrl;
+        }
 
-        const urlIdMatch =
-          productUrl.match(/\/product\/[^/]+-([0-9]{5,12})(?:\/|\?|$)/) ||
-          productUrl.match(/([0-9]{6,12})(?:\/|\?|$)/);
-        const rawId =
-          card.getAttribute('data-product-id') ||
-          card.getAttribute('data-sku') ||
-          (urlIdMatch ? urlIdMatch[1] : '');
-
+        const idMatch = productUrl.match(/\/products\/([0-9]{4,12})(?:\/|\?|$)/);
+        const rawId = idMatch ? idMatch[1] : '';
         if (!rawId) return;
 
-        const titleEl = card.querySelector(
-          '.product-tile__name, [data-testid="product-title"], [class*="title"], [class*="name"], h2, h3'
-        );
-        const brandEl = card.querySelector(
-          '.product-tile__brand, [data-testid="product-brand"], [class*="brand"]'
-        );
-
-        let name = titleEl ? titleEl.innerText.replace(/\s+/g, ' ').trim() : '';
-        if (!name && imgEl) name = (imgEl.getAttribute('alt') || '').trim();
+        const headingEl = card.querySelector('h2, h3, [role="heading"]');
+        let name = headingEl ? headingEl.textContent.replace(/\s+/g, ' ').trim() : '';
+        if (!name) {
+          name = (linkEl.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim();
+        }
         if (!name || name.length < 2) return;
 
-        const brand = brandEl ? brandEl.innerText.trim() : 'ALDI';
-        if (brand && brand !== 'ALDI' && !name.toLowerCase().startsWith(brand.toLowerCase())) {
-          name = `${brand} ${name}`;
+        const imgEl = card.querySelector('img');
+        let imageUrl = '';
+        if (imgEl) {
+          const srcset = imgEl.getAttribute('srcset') || '';
+          if (srcset) {
+            const parts = srcset.split(',').map((s) => s.trim().split(' ')[0]).filter(Boolean);
+            imageUrl = parts[parts.length - 1] || '';
+          }
+          if (!imageUrl) {
+            imageUrl = imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || '';
+          }
+          if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
         }
 
-        const unitEl = card.querySelector(
-          '.product-tile__unit, [data-testid="product-unit"], [class*="unit"], [class*="weight"], [class*="size"]'
-        );
-        let unit = unitEl ? unitEl.innerText.replace(/\s+/g, ' ').trim() : '';
-        if (!unit) {
-          const unitMatch = card.innerText.match(
-            /\b(\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack))\b/i
-          );
-          unit = unitMatch ? unitMatch[1] : 'Each';
-        }
+        const fullText = card.textContent.replace(/\s+/g, ' ');
+        const currentMatch = fullText.match(/Current price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
+        const originalMatch = fullText.match(/Original price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
 
-        const cardText = card.innerText;
-        const pricesFound = [...cardText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
-          parseFloat(m[1])
-        );
         let salePrice = 0.0;
         let regularPrice = 0.0;
-        if (pricesFound.length === 1) {
-          salePrice = pricesFound[0];
-          regularPrice = pricesFound[0];
-        } else if (pricesFound.length >= 2) {
-          salePrice = Math.min(...pricesFound);
-          regularPrice = Math.max(...pricesFound);
+
+        if (currentMatch) {
+          salePrice = parseFloat(currentMatch[1]);
+          regularPrice = originalMatch ? parseFloat(originalMatch[1]) : salePrice;
+        } else {
+          const pricesFound = [...fullText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
+            parseFloat(m[1])
+          );
+          if (pricesFound.length === 1) {
+            salePrice = pricesFound[0];
+            regularPrice = pricesFound[0];
+          } else if (pricesFound.length >= 2) {
+            salePrice = Math.min(...pricesFound);
+            regularPrice = Math.max(...pricesFound);
+          }
         }
 
-        let promoBadge = '';
-        if (/price drop|save/i.test(cardText)) promoBadge = 'Price Drop';
-        else if (/aldi finds/i.test(cardText)) promoBadge = 'ALDI Finds';
-        else if (/weekly special/i.test(cardText)) promoBadge = 'Weekly Special';
+        const unitMatch = fullText.match(
+          /\b(\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack)|per\s+lb)\b/i
+        );
+        const unit = unitMatch ? unitMatch[1] : 'Each';
 
-        let imageUrl = imgEl ? imgEl.getAttribute('src') || imgEl.getAttribute('data-src') || '' : '';
-        if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
+        const inStock = !/out of stock|sold out/i.test(fullText);
+        let promoBadge = '';
+        if (salePrice < regularPrice) promoBadge = 'Price Drop';
+        else if (/aldi finds/i.test(fullText)) promoBadge = 'ALDI Finds';
+        else if (/weekly special/i.test(fullText)) promoBadge = 'Weekly Special';
 
         productMap.set(rawId, {
           id: `aldi_${rawId}`,
           sku: rawId,
           name: name,
-          brand: brand || 'ALDI',
+          brand: 'ALDI',
           store: 'ALDI',
           category: categoryName,
           department: categoryName,
@@ -312,7 +314,7 @@
           productUrl: productUrl.split('?')[0],
           unit: unit,
           unitShort: unit,
-          inStock: true,
+          inStock: inStock,
           isOnlineExclusive: false,
           rating: 4.7,
           ratingCount: 85,
@@ -438,12 +440,88 @@
   }
 
   function harvestVisibleCards(productMap) {
-    if (IS_ALDI) {
+    if (getActiveStoreMode() === 'aldi') {
       harvestAldiCards(productMap);
     } else {
       harvestBbwCards(productMap);
     }
   }
+
+  // =========================================================================
+  // 5. HUD WITH STORE SELECTOR & ACTIONS
+  // =========================================================================
+  function isUnscentedHardware(name) {
+    const lower = (name || '').toLowerCase();
+    return (
+      lower.includes('holder') ||
+      lower.includes('pedestal') ||
+      lower.includes('fragrance plug') ||
+      lower.includes('duo plug') ||
+      lower.includes('reed vessel') ||
+      lower.includes('wristlet') ||
+      lower.includes('lanyard') ||
+      lower.includes('snapcase')
+    );
+  }
+
+  const detectedStore = detectStoreKey();
+  const initialTitle = getPageCategoryName();
+  const hud = document.createElement('div');
+  hud.id = 'pluck-hud-root';
+  hud.innerHTML = `
+    <div id="pluck-hud">
+      <div id="pluck-hud-header">
+        <div class="pluck-title-row">
+          <span class="pluck-icon">⚡</span>
+          <span class="pluck-title">Pluck 4.1</span>
+        </div>
+        <button id="pluck-refresh-btn" title="Refresh & Rescan Page">🔄 Rescan</button>
+      </div>
+
+      <div class="pluck-field-group">
+        <label for="pluck-store-select" class="pluck-label">Target Store Adapter:</label>
+        <select id="pluck-store-select" style="background:#161922;border:1px solid rgba(255,255,255,0.18);color:#fff;font-size:12px;font-weight:700;padding:7px 10px;border-radius:8px;outline:none;">
+          <option value="auto" selected>Auto-Detect (${detectedStore.toUpperCase()})</option>
+          <option value="bbw">Bath & Body Works</option>
+          <option value="aldi">ALDI (Instacart Storefront)</option>
+        </select>
+      </div>
+
+      <div class="pluck-field-group">
+        <label for="pluck-filename-input" class="pluck-label">Output Filename:</label>
+        <input type="text" id="pluck-filename-input" value="${slugifyToFilename(initialTitle, detectedStore)}" spellcheck="false" />
+      </div>
+
+      <button id="pluck-autoscroll-btn" class="pluck-primary-btn">🧲 Auto-Scroll & Pluck All</button>
+      <button id="pluck-extract-btn" class="pluck-secondary-btn">⚡ Pluck Current View Only</button>
+      <button id="pluck-enrich-btn" class="pluck-enrich-btn" style="display:${detectedStore === 'bbw' ? 'block' : 'none'};">✨ Enrich Notes & Fix Promos</button>
+      <input type="file" id="pluck-file-input" accept=".json" style="display:none;" />
+      <div id="pluck-status">Ready (${detectedStore.toUpperCase()} mode)</div>
+    </div>
+  `;
+  document.body.appendChild(hud);
+
+  const storeSelect = document.getElementById('pluck-store-select');
+  const filenameInput = document.getElementById('pluck-filename-input');
+  const statusEl = document.getElementById('pluck-status');
+  const enrichBtn = document.getElementById('pluck-enrich-btn');
+  const fileInput = document.getElementById('pluck-file-input');
+  let isAutoScrolling = false;
+
+  function rescanPage() {
+    const mode = getActiveStoreMode();
+    const title = getPageCategoryName();
+    filenameInput.value = slugifyToFilename(title, mode);
+    if (enrichBtn) enrichBtn.style.display = mode === 'bbw' ? 'block' : 'none';
+
+    const probeMap = new Map();
+    harvestVisibleCards(probeMap);
+    statusEl.innerText = `🔄 ${mode.toUpperCase()}: "${title || 'Catalog'}" (${probeMap.size} visible)`;
+  }
+
+  storeSelect.addEventListener('change', rescanPage);
+  document.getElementById('pluck-refresh-btn').addEventListener('click', rescanPage);
+  window.addEventListener('popstate', rescanPage);
 
   function downloadJsonFile(products, filename) {
     const blob = new Blob([JSON.stringify(products, null, 2)], { type: 'application/json' });
@@ -457,120 +535,94 @@
     URL.revokeObjectURL(url);
   }
 
-  // =========================================================================
-  // 5. RUNTIME MESSAGE LISTENERS (Communicates with popup.js & background.js)
-  // =========================================================================
-  chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (!request) return false;
-
-    if (request.action === 'GET_PAGE_INFO') {
-      const cat = getPageCategoryName();
-      const filename = slugifyToFilename(cat);
-      const tempMap = new Map();
-      harvestVisibleCards(tempMap);
-      sendResponse({ categoryName: cat, filename: filename, count: tempMap.size });
-      return true;
+  document.getElementById('pluck-autoscroll-btn').addEventListener('click', async () => {
+    if (isAutoScrolling) {
+      isAutoScrolling = false;
+      return;
     }
 
-    if (request.action === 'PLUCK_QUICK') {
-      const filename = request.filename || slugifyToFilename(getPageCategoryName());
-      const collected = new Map();
-      harvestVisibleCards(collected);
-      const products = Array.from(collected.values());
+    isAutoScrolling = true;
+    const btn = document.getElementById('pluck-autoscroll-btn');
+    btn.innerText = '🛑 Stop & Save Collected';
 
-      if (products.length > 0) {
-        downloadJsonFile(products, filename);
-        sendResponse({ success: true, count: products.length, filename: filename });
-      } else {
-        sendResponse({ success: false, message: 'No visible products found.' });
+    const filename = (filenameInput.value || 'catalog.json').trim();
+    const collected = new Map();
+
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    await new Promise((r) => setTimeout(r, 400));
+    harvestVisibleCards(collected);
+
+    let unchangedCycles = 0;
+    while (isAutoScrolling && unchangedCycles < 4) {
+      const prevSize = collected.size;
+
+      const loadMoreBtn = Array.from(document.querySelectorAll('button, a')).find((el) =>
+        /^(load more|show more|view more)/i.test(el.innerText.trim())
+      );
+      if (loadMoreBtn) {
+        loadMoreBtn.click();
+        await new Promise((r) => setTimeout(r, 1100));
       }
-      return true;
+
+      window.scrollBy({ top: Math.floor(window.innerHeight * 0.75), behavior: 'smooth' });
+      await new Promise((r) => setTimeout(r, 550));
+      harvestVisibleCards(collected);
+
+      statusEl.innerText = `🧲 Sweeping... ${collected.size} unique products captured`;
+
+      const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 40;
+      if (collected.size === prevSize && atBottom) {
+        unchangedCycles++;
+      } else {
+        unchangedCycles = 0;
+      }
     }
 
-    if (request.action === 'PLUCK_AUTOSCROLL') {
-      (async () => {
-        const filename = request.filename || slugifyToFilename(getPageCategoryName());
-        const collected = new Map();
+    isAutoScrolling = false;
+    btn.innerText = '🧲 Auto-Scroll & Pluck All';
 
-        window.scrollTo({ top: 0, behavior: 'instant' });
-        await new Promise((r) => setTimeout(r, 400));
-        harvestVisibleCards(collected);
+    const allProducts = Array.from(collected.values());
+    if (allProducts.length === 0) {
+      statusEl.innerText = '❌ 0 products found.';
+      return;
+    }
 
-        let unchangedCycles = 0;
-        let isAutoScrolling = true;
+    downloadJsonFile(allProducts, filename);
+    statusEl.innerText = `✅ Captured all ${allProducts.length} products to ${filename}!`;
+  });
 
-        while (isAutoScrolling && unchangedCycles < 4) {
-          const prevSize = collected.size;
+  document.getElementById('pluck-extract-btn').addEventListener('click', () => {
+    const filename = (filenameInput.value || 'catalog.json').trim();
+    const collected = new Map();
+    harvestVisibleCards(collected);
+    const products = Array.from(collected.values());
 
-          const loadMoreBtn = Array.from(document.querySelectorAll('button, a')).find((el) =>
-            /^(load more|show more|view more)/i.test(el.innerText.trim())
-          );
-          if (loadMoreBtn) {
-            loadMoreBtn.click();
-            await new Promise((r) => setTimeout(r, 1100));
-          }
+    if (products.length === 0) {
+      statusEl.innerText = '❌ 0 products found.';
+      return;
+    }
+    downloadJsonFile(products, filename);
+    statusEl.innerText = `✅ Plucked ${products.length} visible items to ${filename}!`;
+  });
 
-          window.scrollBy({ top: Math.floor(window.innerHeight * 0.75), behavior: 'smooth' });
-          await new Promise((r) => setTimeout(r, 550));
-          harvestVisibleCards(collected);
+  if (enrichBtn && fileInput) {
+    enrichBtn.addEventListener('click', () => {
+      fileInput.value = '';
+      fileInput.click();
+    });
 
-          chrome.runtime.sendMessage({
-            type: 'STATUS_UPDATE',
-            text: `🧲 Sweeping... ${collected.size} unique products captured`
-          });
+    fileInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
 
-          const atBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 40;
-          if (collected.size === prevSize && atBottom) {
-            unchangedCycles++;
-          } else {
-            unchangedCycles = 0;
-          }
+      try {
+        const rawText = await file.text();
+        const items = JSON.parse(rawText);
+        if (!Array.isArray(items)) {
+          statusEl.innerText = '❌ Invalid JSON array file';
+          return;
         }
 
-        const allProducts = Array.from(collected.values());
-        if (allProducts.length > 0) {
-          downloadJsonFile(allProducts, filename);
-          sendResponse({ success: true, count: allProducts.length, filename: filename });
-        } else {
-          sendResponse({ success: false, message: 'No products captured.' });
-        }
-      })();
-      return true;
-    }
-
-    if (request.action === 'COPY_JSON') {
-      const collected = new Map();
-      harvestVisibleCards(collected);
-      const products = Array.from(collected.values());
-
-      if (products.length > 0) {
-        navigator.clipboard.writeText(JSON.stringify(products, null, 2))
-          .then(() => sendResponse({ success: true, count: products.length }))
-          .catch(() => sendResponse({ success: false, message: 'Clipboard error' }));
-      } else {
-        sendResponse({ success: false, message: 'No products found.' });
-      }
-      return true;
-    }
-
-    if (request.action === 'DOWNLOAD_JSON') {
-      const filename = request.filename || slugifyToFilename(getPageCategoryName());
-      const collected = new Map();
-      harvestVisibleCards(collected);
-      const products = Array.from(collected.values());
-
-      if (products.length > 0) {
-        downloadJsonFile(products, filename);
-        sendResponse({ success: true, count: products.length, filename: filename });
-      } else {
-        sendResponse({ success: false, message: 'No products found.' });
-      }
-      return true;
-    }
-
-    if (request.action === 'ENRICH_NOTES') {
-      (async () => {
-        const items = request.items || [];
         let enrichedCount = 0;
         let skippedHardware = 0;
 
@@ -590,14 +642,11 @@
 
           if ((!needsOverview && !needsNotes && !hasSuspiciousPromo) || !item.productUrl) continue;
 
-          chrome.runtime.sendMessage({
-            type: 'STATUS_UPDATE',
-            text: `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 18)}...`
-          });
+          statusEl.innerText = `✨ Hydrating (${i + 1}/${items.length}) ${item.name.slice(0, 20)}...`;
 
           const res = await chrome.runtime.sendMessage({
             type: 'HYDRATE_PDP',
-            url: item.productUrl
+            url: item.productUrl,
           });
 
           if (res) {
@@ -616,13 +665,11 @@
           }
         }
 
-        downloadJsonFile(items, request.fileName || 'enriched_catalog.json');
-        chrome.runtime.sendMessage({
-          type: 'STATUS_UPDATE',
-          text: `✅ Enriched ${enrichedCount} items & verified promos! (${skippedHardware} holders skipped)`
-        });
-      })();
-      return true;
-    }
-  });
+        downloadJsonFile(items, file.name);
+        statusEl.innerText = `✅ Enriched ${enrichedCount} items & verified promos! (${skippedHardware} holders skipped)`;
+      } catch (err) {
+        statusEl.innerText = '❌ Failed to parse JSON file';
+      }
+    });
+  }
 })();
