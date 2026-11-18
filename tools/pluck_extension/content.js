@@ -193,48 +193,50 @@
   // =========================================================================
   // 3. ALDI (INSTACART STOREFRONT PRO) CARD HARVESTER
   // =========================================================================
+  function buildDeterministicAldiId(imgUrl, name, unit) {
+    // 1. Prefer the unique Cloudfront UUID in the image URL (e.g., large_12242429-639e-40ef-9400-8ba8f9b7e21d)
+    const uuidMatch = imgUrl ? imgUrl.match(/large_([a-z0-9-]{8,40})\./i) : null;
+    if (uuidMatch && uuidMatch[1]) {
+      return uuidMatch[1];
+    }
+    // 2. Fallback: clean deterministic slug from name + unit
+    return `${name}_${unit}`
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+  }
+
   function harvestAldiCards(productMap) {
     const categoryName = getPageCategoryName() || 'Groceries';
 
-    let candidateCards = Array.from(document.querySelectorAll('[data-item-card-holder="true"]'));
+    // Target the exact Instacart/ALDI card button verified in DevTools
+    let candidateCards = Array.from(document.querySelectorAll('[data-item-card-button="true"]'));
 
     if (candidateCards.length === 0) {
-      const links = Array.from(document.querySelectorAll('a[href*="/products/"]'));
-      const tiles = new Set();
-      links.forEach((a) => {
-        const container = a.closest('li, [data-item-card-holder], article') || a.parentElement;
-        if (container) tiles.add(container);
-      });
-      candidateCards = Array.from(tiles);
+      candidateCards = Array.from(document.querySelectorAll('li [role="button"]')).filter((btn) =>
+        btn.querySelector('h2, h3, [role="heading"]')
+      );
     }
 
-    candidateCards.forEach((card) => {
+    candidateCards.forEach((btnCard) => {
       try {
-        const linkEl = card.querySelector('a[href*="/products/"]');
-        if (!linkEl) return;
+        const card = btnCard.closest('li, [role="group"]') || btnCard;
 
-        let productUrl = linkEl.getAttribute('href') || '';
-        if (productUrl.startsWith('/')) {
-          productUrl = window.location.origin + productUrl;
-        }
-
-        const idMatch = productUrl.match(/\/products\/([0-9]{4,12})(?:\/|\?|$)/);
-        const rawId = idMatch ? idMatch[1] : '';
-        if (!rawId) return;
-
+        // 1. Extract Product Name from heading
         const headingEl = card.querySelector('h2, h3, [role="heading"]');
-        let name = headingEl ? headingEl.textContent.replace(/\s+/g, ' ').trim() : '';
-        if (!name) {
-          name = (linkEl.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim();
-        }
+        const name = headingEl ? headingEl.textContent.replace(/\s+/g, ' ').trim() : '';
         if (!name || name.length < 2) return;
 
+        // 2. Extract Image URL (prefer crisp 386x386 / 514x514 from srcset or src)
         const imgEl = card.querySelector('img');
         let imageUrl = '';
         if (imgEl) {
           const srcset = imgEl.getAttribute('srcset') || '';
           if (srcset) {
-            const parts = srcset.split(',').map((s) => s.trim().split(' ')[0]).filter(Boolean);
+            const parts = srcset
+              .split(',')
+              .map((s) => s.trim().split(' ')[0])
+              .filter(Boolean);
             imageUrl = parts[parts.length - 1] || '';
           }
           if (!imageUrl) {
@@ -243,7 +245,8 @@
           if (imageUrl.startsWith('//')) imageUrl = 'https:' + imageUrl;
         }
 
-        const fullText = card.textContent.replace(/\s+/g, ' ');
+        // 3. Extract Exact Current & Original Prices (ignores per-lb unit rate like "$6.49 / lb")
+        const fullText = btnCard.textContent.replace(/\s+/g, ' ');
         const currentMatch = fullText.match(/Current price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
         const originalMatch = fullText.match(/Original price:\s*\$([0-9]+(?:\.[0-9]{2})?)/i);
 
@@ -254,7 +257,9 @@
           salePrice = parseFloat(currentMatch[1]);
           regularPrice = originalMatch ? parseFloat(originalMatch[1]) : salePrice;
         } else {
-          const pricesFound = [...fullText.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
+          // Fallback: strip "$X.XX / lb" before reading standalone prices
+          const textWithoutPerLb = fullText.replace(/\$[0-9]+(?:\.[0-9]{2})?\s*\/\s*(?:lb|oz|ct|ea)/gi, '');
+          const pricesFound = [...textWithoutPerLb.matchAll(/\$([0-9]+(?:\.[0-9]{2})?)/g)].map((m) =>
             parseFloat(m[1])
           );
           if (pricesFound.length === 1) {
@@ -266,16 +271,34 @@
           }
         }
 
+        // 4. Extract Package Size / Weight ("16 oz", "About 3.5 lb / package", "12 oz")
         const unitMatch = fullText.match(
-          /\b(\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack)|per\s+lb)\b/i
+          /\b(About\s+\d+(?:\.\d+)?\s*(?:lb|lbs|oz)\s*\/\s*package|\d+(?:\.\d+)?\s*(?:fl\s*oz|oz|lb|lbs|gal|qt|pt|ml|l|g|kg|ct|pk|pack)|per\s+lb)\b/i
         );
-        const unit = unitMatch ? unitMatch[1] : 'Each';
+        const unit = unitMatch ? unitMatch[1].trim() : 'Each';
 
+        // 5. Extract In-Store Aisle / Department ("Cooler Doors", "Fresh Meat", etc.)
+        const leafTexts = Array.from(btnCard.querySelectorAll('span, div, p'))
+          .filter((el) => el.children.length === 0)
+          .map((el) => el.textContent.replace(/\s+/g, ' ').trim())
+          .filter(
+            (t) =>
+              t.length > 2 &&
+              t !== name &&
+              t !== unit &&
+              !t.startsWith('$') &&
+              !/current price|original price|per package|many in stock|low stock|out of stock|add/i.test(t)
+          );
+        const aisleLocation = leafTexts.length > 0 ? leafTexts[leafTexts.length - 1] : categoryName;
+
+        // 6. Stock & Promo Status
         const inStock = !/out of stock|sold out/i.test(fullText);
         let promoBadge = '';
         if (salePrice < regularPrice) promoBadge = 'Price Drop';
         else if (/aldi finds/i.test(fullText)) promoBadge = 'ALDI Finds';
         else if (/weekly special/i.test(fullText)) promoBadge = 'Weekly Special';
+
+        const rawId = buildDeterministicAldiId(imageUrl, name, unit);
 
         productMap.set(rawId, {
           id: `aldi_${rawId}`,
@@ -286,14 +309,15 @@
           category: categoryName,
           department: categoryName,
           productType: categoryName,
-          subCategory: categoryName,
+          subCategory: aisleLocation,
+          aisle: aisleLocation,
           price: salePrice,
           regularPrice: regularPrice,
           salePrice: salePrice,
           promoBadge: promoBadge,
           hasSpecial: promoBadge.length > 0 || salePrice < regularPrice,
           imageUrl: imageUrl,
-          productUrl: productUrl.split('?')[0],
+          productUrl: window.location.href.split('?')[0],
           unit: unit,
           unitShort: unit,
           inStock: inStock,
