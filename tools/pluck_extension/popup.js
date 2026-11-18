@@ -1,5 +1,6 @@
 // File: tools/pluck_extension/popup.js
 
+const storeSelect = document.getElementById('storeSelect');
 const filenameInput = document.getElementById('filenameInput');
 const pluckAutoScrollBtn = document.getElementById('pluckAutoScrollBtn');
 const pluckQuickBtn = document.getElementById('pluckQuickBtn');
@@ -14,21 +15,39 @@ async function getActiveTab() {
   return tab;
 }
 
-// Auto-detect page category title & filename on open
-(async () => {
+function updateUiForStoreMode(mode) {
+  if (enrichNotesBtn) {
+    enrichNotesBtn.style.display = mode === 'aldi' ? 'none' : 'flex';
+  }
+}
+
+async function refreshPageInfo() {
   try {
     const tab = await getActiveTab();
     if (!tab || !tab.id) return;
 
-    const res = await chrome.tabs.sendMessage(tab.id, { action: 'GET_PAGE_INFO' });
+    const selectedMode = storeSelect ? storeSelect.value : 'auto';
+    const res = await chrome.tabs.sendMessage(tab.id, {
+      action: 'GET_PAGE_INFO',
+      storeMode: selectedMode
+    });
+
     if (res && res.filename) {
       filenameInput.value = res.filename;
-      statusBox.innerText = `Detected: "${res.categoryName || 'Catalog'}" (${res.count || 0} visible items)`;
+      updateUiForStoreMode(res.activeStoreMode || selectedMode);
+      statusBox.innerText = `Detected (${(res.activeStoreMode || selectedMode).toUpperCase()}): "${res.categoryName || 'Catalog'}" (${res.count || 0} items)`;
     }
   } catch (_) {
-    statusBox.innerText = 'Open bathandbodyworks.com to pluck';
+    statusBox.innerText = 'Navigate to store page to pluck';
   }
-})();
+}
+
+// Auto-detect page category title & filename on open
+refreshPageInfo();
+
+if (storeSelect) {
+  storeSelect.addEventListener('change', refreshPageInfo);
+}
 
 // 1. Auto-Scroll & Pluck All
 pluckAutoScrollBtn.addEventListener('click', async () => {
@@ -39,7 +58,8 @@ pluckAutoScrollBtn.addEventListener('click', async () => {
   try {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'PLUCK_AUTOSCROLL',
-      filename: filenameInput.value.trim()
+      filename: filenameInput.value.trim(),
+      storeMode: storeSelect.value
     });
     if (res && res.success) {
       statusBox.innerText = `✅ Captured all ${res.count} products to ${res.filename}!`;
@@ -60,7 +80,8 @@ pluckQuickBtn.addEventListener('click', async () => {
   try {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'PLUCK_QUICK',
-      filename: filenameInput.value.trim()
+      filename: filenameInput.value.trim(),
+      storeMode: storeSelect.value
     });
     if (res && res.success) {
       statusBox.innerText = `✅ Plucked ${res.count} items to ${res.filename}!`;
@@ -81,7 +102,8 @@ copyJsonBtn.addEventListener('click', async () => {
   try {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'COPY_JSON',
-      filename: filenameInput.value.trim()
+      filename: filenameInput.value.trim(),
+      storeMode: storeSelect.value
     });
     if (res && res.success) {
       statusBox.innerText = `📋 Copied ${res.count} items to Clipboard!`;
@@ -102,7 +124,8 @@ downloadJsonBtn.addEventListener('click', async () => {
   try {
     const res = await chrome.tabs.sendMessage(tab.id, {
       action: 'DOWNLOAD_JSON',
-      filename: filenameInput.value.trim()
+      filename: filenameInput.value.trim(),
+      storeMode: storeSelect.value
     });
     if (res && res.success) {
       statusBox.innerText = `📄 Downloaded ${res.count} items as ${res.filename}!`;
@@ -115,10 +138,12 @@ downloadJsonBtn.addEventListener('click', async () => {
 });
 
 // 5. Enrich Missing Notes
-enrichNotesBtn.addEventListener('click', () => {
-  fileInput.value = '';
-  fileInput.click();
-});
+if (enrichNotesBtn) {
+  enrichNotesBtn.addEventListener('click', () => {
+    fileInput.value = '';
+    fileInput.click();
+  });
+}
 
 fileInput.addEventListener('change', async (e) => {
   const file = e.target.files[0];
@@ -134,7 +159,7 @@ fileInput.addEventListener('change', async (e) => {
 
     const tab = await getActiveTab();
     if (!tab || !tab.id) {
-      statusBox.innerText = '❌ Open bathandbodyworks.com tab first';
+      statusBox.innerText = '❌ Open store tab first';
       return;
     }
 
