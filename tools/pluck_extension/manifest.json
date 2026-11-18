@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Pluck - RapidRun BBW Catalog Exporter",
-  "version": "3.1.0",
-  "description": "High-fidelity in-store retail catalog harvester for RapidRun.",
+  "name": "Pluck 4.0 - RapidRun Multi-Store Exporter",
+  "version": "4.0.0",
+  "description": "Extracts & hydrates Bath & Body Works and ALDI catalogs for RapidRun.",
   "permissions": [
     "activeTab",
     "scripting",
