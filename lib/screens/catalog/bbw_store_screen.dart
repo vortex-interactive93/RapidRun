@@ -1123,6 +1123,29 @@ class _BbwSensoryProductCard extends StatelessWidget {
     return raw.replaceFirst(RegExp(r'^note:\s*', caseSensitive: false), '').trim();
   }
 
+  static String _formatCompactBbwPromo(String rawPromo) {
+    final trimmed = rawPromo.trim();
+    if (trimmed.isEmpty) return '';
+
+    final lower = trimmed.toLowerCase();
+    if (lower.contains('buy 3, get 3') && lower.contains('buy 2, get 1')) {
+      return 'Buy 3, Get 3 or Buy 2, Get 1 FREE';
+    }
+    if (lower.startsWith('mix & match minis:')) {
+      return trimmed.replaceFirst(
+        RegExp(r'^mix\s*&\s*match\s+minis:\s*', caseSensitive: false),
+        'Minis: ',
+      );
+    }
+    if (lower.startsWith('mix & match:')) {
+      return trimmed.replaceFirst(
+        RegExp(r'^mix\s*&\s*match:\s*', caseSensitive: false),
+        '',
+      );
+    }
+    return trimmed;
+  }
+
   @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE5A93C);
@@ -1136,15 +1159,31 @@ class _BbwSensoryProductCard extends StatelessWidget {
         .take(2)
         .toList();
 
-    // Normalize unit display for Travel Size and Hand Cream
-    String displayUnit = product.unitShort ?? 'Standard';
-    final lowerName = product.name.toLowerCase();
-    if (lowerName.contains('travel size') || lowerName.contains('mini')) {
-      displayUnit = '2.5 oz';
-    } else if (lowerName.contains('hand cream')) {
-      displayUnit = '1 oz';
-    } else if (lowerName.contains('hand mask')) {
-      displayUnit = '1 Pair';
+    // Normalize unit display for all formats
+    String displayUnit = (product.unitShort ?? '').trim();
+    if (displayUnit.isEmpty || displayUnit == 'Item' || displayUnit == 'Standard') {
+      final lowerName = product.name.toLowerCase();
+      if (lowerName.contains('3-wick candle') || lowerName.contains('3 wick candle')) {
+        displayUnit = '14.5 oz';
+      } else if (lowerName.contains('single wick candle')) {
+        displayUnit = '8 oz';
+      } else if (lowerName.contains('fine fragrance mist') || lowerName.contains('perfume mist')) {
+        displayUnit = '8 fl oz';
+      } else if (lowerName.contains('travel size') || lowerName.contains('mini')) {
+        displayUnit = '2.5 oz';
+      } else if (lowerName.contains('ultimate hydration body cream') || lowerName.contains('body lotion')) {
+        displayUnit = '8 oz';
+      } else if (lowerName.contains('body wash') || lowerName.contains('shower gel')) {
+        displayUnit = '10 fl oz';
+      } else if (lowerName.contains('foaming hand soap') || lowerName.contains('hand soap')) {
+        displayUnit = '8.75 fl oz';
+      } else if (lowerName.contains('pocketbac') || lowerName.contains('hand sanitizer')) {
+        displayUnit = '1 fl oz';
+      } else if (lowerName.contains('hand cream')) {
+        displayUnit = '1 oz';
+      } else {
+        displayUnit = 'Standard';
+      }
     }
 
     return GestureDetector(
@@ -1171,7 +1210,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Product Image + Floating Promo Badge
+            // Product Image + Flush Top Promo Ribbon
             Expanded(
               flex: 10,
               child: Stack(
@@ -1193,33 +1232,30 @@ class _BbwSensoryProductCard extends StatelessWidget {
                   ),
                   if (hasPromo || hasDiscount)
                     Positioned(
-                      top: 6,
-                      left: 6,
-                      right: 6,
-                      child: Align(
-                        alignment: Alignment.topLeft,
-                        child: Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFE11D48),
-                            borderRadius: BorderRadius.circular(6),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withValues(alpha: 0.25),
-                                blurRadius: 4,
-                              ),
-                            ],
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                        decoration: const BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Color(0xFFD81B60), Color(0xFFAD1457)],
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
                           ),
-                          child: Text(
-                            hasPromo ? product.promoBadge! : 'SALE',
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 8.5,
-                              fontWeight: FontWeight.w900,
-                              letterSpacing: 0.4,
-                            ),
+                          borderRadius: BorderRadius.vertical(top: Radius.circular(17)),
+                        ),
+                        child: Text(
+                          hasPromo ? _formatCompactBbwPromo(product.promoBadge!) : 'FLASH SALE',
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 9.5,
+                            fontWeight: FontWeight.w800,
+                            height: 1.15,
+                            letterSpacing: 0.2,
                           ),
                         ),
                       ),
