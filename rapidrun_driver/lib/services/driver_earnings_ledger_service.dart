@@ -30,14 +30,16 @@ class DriverLedgerSummary {
 class DriverEarningsLedgerService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
+  final String? explicitDriverId;
 
   DriverEarningsLedgerService({
     FirebaseFirestore? firestore,
     FirebaseAuth? auth,
+    this.explicitDriverId,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  String get _driverId => _auth.currentUser?.uid ?? 'driver_local_tester';
+  String get _driverId => explicitDriverId ?? (_auth.currentUser?.uid ?? 'driver_local_tester');
 
   DocumentReference<Map<String, dynamic>> get _driverDoc =>
       _firestore.collection('drivers').doc(_driverId);

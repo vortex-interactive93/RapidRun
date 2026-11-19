@@ -10,6 +10,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
+import '../../services/driver_earnings_ledger_service.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../widgets/navigation/turn_by_turn_hud_banner.dart';
 
@@ -182,7 +183,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       // Commit the batch safely without unpermitted sub-collections
       await batch.commit();
 
-      // 3. Immediately update shared local state for instant ledger reflection
+      // 3. Record batch credit entry in DriverEarningsLedgerService & update local state
+      final basePayout = (widget.payout - widget.tipAmount).clamp(0.0, widget.payout);
+      await DriverEarningsLedgerService(explicitDriverId: user?.uid).recordCompletedBatch(
+        orderId: widget.orderId,
+        storeName: 'Bath & Body Works',
+        basePayout: basePayout,
+        initialTip: widget.tipAmount,
+      );
+
       driverEarningsState.recordCompletedBatch(
         payoutAmount: widget.payout,
         tip: widget.tipAmount,
