@@ -12,6 +12,7 @@ import '../presentation/home/map_styles/midnight_titanium.dart';
 import '../presentation/home/tactical_flight_deck.dart';
 import '../presentation/home/tactical_demand_deck.dart';
 import '../services/driver_dispatch_listener.dart';
+import '../services/driver_earnings_ledger_service.dart';
 import '../services/route_polyline_service.dart';
 import '../widgets/radar/driver_shift_adjustment_sheet.dart';
 import '../widgets/order/transparent_batch_offer_card.dart';
@@ -244,7 +245,15 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'pendingBoostAmount': FieldValue.delete(),
         });
 
-        // 2. Credit driver wallet document ONCE
+        // 2. Record tip boost delta in DriverEarningsLedgerService (append-only ledger)
+        final String storeName = (data['storeName'] ?? 'Bath & Body Works').toString();
+        await DriverEarningsLedgerService().recordTipBoostDelta(
+          orderId: doc.id,
+          storeName: storeName,
+          newTotalTipBoost: incrementalBoost,
+        );
+
+        // 3. Credit driver wallet document ONCE
         await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
           'todayEarnings': FieldValue.increment(incrementalBoost),
           'balance': FieldValue.increment(incrementalBoost),
@@ -253,7 +262,7 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
 
-        // 3. Update local reactive state
+        // 4. Update local reactive state
         driverEarningsState.recordTipBoost(incrementalBoost);
 
         // 4. Trigger celebration banner

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
+import '../../services/driver_earnings_ledger_service.dart';
 
 class DriverCashoutSheet extends StatefulWidget {
   final double? availableBalance;
@@ -25,9 +26,12 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
     setState(() => _isProcessing = true);
     HapticFeedback.heavyImpact();
 
-    await Future.delayed(const Duration(milliseconds: 1200));
-
-    final double transferred = driverEarningsState.executeInstantCashout();
+    double transferred = await DriverEarningsLedgerService().cashOutAvailableBalance(cardLast4: '4242');
+    if (transferred <= 0) {
+      transferred = driverEarningsState.executeInstantCashout();
+    } else {
+      driverEarningsState.executeInstantCashout();
+    }
 
     if (mounted) {
       showDialog(
