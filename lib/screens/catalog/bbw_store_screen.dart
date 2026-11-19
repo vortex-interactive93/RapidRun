@@ -1195,25 +1195,31 @@ class _BbwSensoryProductCard extends StatelessWidget {
                     Positioned(
                       top: 6,
                       left: 6,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFE11D48),
-                          borderRadius: BorderRadius.circular(6),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withValues(alpha: 0.25),
-                              blurRadius: 4,
+                      right: 6,
+                      child: Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFE11D48),
+                            borderRadius: BorderRadius.circular(6),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.25),
+                                blurRadius: 4,
+                              ),
+                            ],
+                          ),
+                          child: Text(
+                            hasPromo ? product.promoBadge! : 'SALE',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 8.5,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: 0.4,
                             ),
-                          ],
-                        ),
-                        child: Text(
-                          hasPromo ? product.promoBadge! : 'SALE',
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 8.5,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 0.4,
                           ),
                         ),
                       ),
@@ -1289,27 +1295,29 @@ class _BbwSensoryProductCard extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            if (hasDiscount)
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              if (hasDiscount)
+                                Text(
+                                  '\$${regPrice.toStringAsFixed(2)}',
+                                  style: const TextStyle(
+                                    color: Colors.white38,
+                                    fontSize: 9.5,
+                                    decoration: TextDecoration.lineThrough,
+                                  ),
+                                ),
                               Text(
-                                '\$${regPrice.toStringAsFixed(2)}',
+                                '\$${curPrice.toStringAsFixed(2)}',
                                 style: const TextStyle(
-                                  color: Colors.white38,
-                                  fontSize: 9.5,
-                                  decoration: TextDecoration.lineThrough,
+                                  color: Colors.white,
+                                  fontSize: 14.5,
+                                  fontWeight: FontWeight.w900,
                                 ),
                               ),
-                            Text(
-                              '\$${curPrice.toStringAsFixed(2)}',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 14.5,
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
 
                         ListenableBuilder(

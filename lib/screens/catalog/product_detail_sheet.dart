@@ -190,10 +190,11 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                       ),
                       const SizedBox(height: 10),
 
-                      // 4. Price & Promotion Row
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.baseline,
-                        textBaseline: TextBaseline.alphabetic,
+                      // 4. Price & Promotion Row (Wrap layout prevents any right overflow)
+                      Wrap(
+                        spacing: 10,
+                        runSpacing: 8,
+                        crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           Text(
                             '\$${curPrice.toStringAsFixed(2)}',
@@ -203,8 +204,7 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                               fontWeight: FontWeight.w900,
                             ),
                           ),
-                          if (hasRealDiscount) ...[
-                            const SizedBox(width: 10),
+                          if (hasRealDiscount)
                             Text(
                               '\$${regPrice.toStringAsFixed(2)}',
                               style: TextStyle(
@@ -213,11 +213,9 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                                 decoration: TextDecoration.lineThrough,
                               ),
                             ),
-                          ],
-                          if ((p.promoBadge ?? '').isNotEmpty) ...[
-                            const SizedBox(width: 12),
+                          if ((p.promoBadge ?? '').isNotEmpty)
                             Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                              padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
                               decoration: BoxDecoration(
                                 color: const Color(0xFFD32F2F).withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(6),
@@ -225,14 +223,16 @@ class _ProductDetailSheetState extends State<ProductDetailSheet> {
                               ),
                               child: Text(
                                 p.promoBadge!.toUpperCase(),
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
                                 style: const TextStyle(
                                   color: Color(0xFFFF8A80),
                                   fontSize: 10,
                                   fontWeight: FontWeight.w800,
+                                  letterSpacing: 0.3,
                                 ),
                               ),
                             ),
-                          ],
                         ],
                       ),
                       const SizedBox(height: 18),
