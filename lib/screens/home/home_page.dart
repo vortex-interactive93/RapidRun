@@ -15,9 +15,8 @@ import 'widgets/service_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../services/config_service.dart';
 import '../../widgets/catalog/independent_retailer_disclaimer.dart';
-import '../../widgets/home/flagship_store_card.dart';
+import '../../widgets/flagship_home_showcase.dart';
 import '../../services/favorites_cart_service.dart';
-import '../shopping_delivery/aldi_store_screen.dart';
 import '../catalog/bbw_store_screen.dart';
 
 class HomePage extends StatefulWidget {
@@ -159,13 +158,28 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  _dualFlagshipSection(),
-                  const SizedBox(height: 24),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: _recommendationSection(),
+                  FlagshipHomeShowcase(
+                    onOpenBbwStore: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const BbwStoreScreen(),
+                        ),
+                      );
+                    },
+                    onSelectBbwRoom: (roomId) {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => BbwStoreScreen(initialRoomId: roomId),
+                        ),
+                      );
+                    },
+                    recommendedSection: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: _recommendationSection(),
+                    ),
                   ),
-                  const SizedBox(height: 24),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: _favoritesRail(),
@@ -186,56 +200,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-    );
-  }
-
-  bool get _isAldiEnabled => false; // Flip to true when re-enabling ALDI
-
-  Widget _dualFlagshipSection() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          child: Text(
-            'Flagship Destinations',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontWeight: FontWeight.w900,
-              letterSpacing: -0.2,
-            ),
-          ),
-        ),
-        const SizedBox(height: 8),
-
-        // 1. Bath & Body Works Flagship Card
-        FlagshipStoreCard(
-          type: FlagshipType.bathAndBodyWorks,
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => const BbwStoreScreen(),
-              ),
-            );
-          },
-        ),
-
-        // 2. ALDI Market Flagship Card (Temporarily hidden for Order #1 live test)
-        if (_isAldiEnabled)
-          FlagshipStoreCard(
-            type: FlagshipType.aldi,
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => const AldiStoreScreen(),
-                ),
-              );
-            },
-          ),
-      ],
     );
   }
 
