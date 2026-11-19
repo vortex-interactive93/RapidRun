@@ -1151,8 +1151,11 @@ class _BbwSensoryProductCard extends StatelessWidget {
     const gold = Color(0xFFE5A93C);
     final curPrice = (product.price ?? (product.salePrice ?? 16.95)).toDouble();
     final regPrice = (product.msrp ?? (product.regularPrice ?? curPrice)).toDouble();
-    final hasPromo = (product.promoBadge ?? '').isNotEmpty;
-    final hasDiscount = hasPromo && regPrice > curPrice && curPrice > 0;
+    final String promoText = _formatCompactBbwPromo(product.promoBadge ?? '');
+    final bool isSale = (regPrice - curPrice) > 0.05 && curPrice > 0;
+    final bool showBadge = promoText.isNotEmpty || isSale;
+    final String badgeText = promoText.isNotEmpty ? promoText : 'SALE';
+
     final topNotes = product.fragranceNotes
         .map(_cleanNote)
         .where((n) => n.isNotEmpty)
@@ -1230,7 +1233,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                  if (hasPromo || hasDiscount)
+                  if (showBadge)
                     Positioned(
                       top: 0,
                       left: 0,
@@ -1246,7 +1249,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                           borderRadius: BorderRadius.vertical(top: Radius.circular(17)),
                         ),
                         child: Text(
-                          hasPromo ? _formatCompactBbwPromo(product.promoBadge!) : 'FLASH SALE',
+                          badgeText,
                           textAlign: TextAlign.center,
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
@@ -1335,7 +1338,7 @@ class _BbwSensoryProductCard extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              if (hasDiscount)
+                              if (isSale)
                                 Text(
                                   '\$${regPrice.toStringAsFixed(2)}',
                                   style: const TextStyle(
