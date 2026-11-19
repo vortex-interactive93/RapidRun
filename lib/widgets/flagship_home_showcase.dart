@@ -23,7 +23,6 @@ class FlagshipHomeShowcase extends StatefulWidget {
   final ValueChanged<String> onSelectBbwRoom;
   final Widget recommendedSection;
 
-  /// Pass exact asset paths from pubspec.yaml (defaults provided below)
   final String bbwLogoAsset;
   final String aldiLogoAsset;
   final String targetLogoAsset;
@@ -33,9 +32,9 @@ class FlagshipHomeShowcase extends StatefulWidget {
     required this.onOpenBbwStore,
     required this.onSelectBbwRoom,
     required this.recommendedSection,
-    this.bbwLogoAsset = 'assets/images/bbw_logo.png',
-    this.aldiLogoAsset = 'assets/images/aldi_logo.png',
-    this.targetLogoAsset = 'assets/images/target_logo.png',
+    this.bbwLogoAsset = 'assets/logos/bath_and_body_works_logo.png',
+    this.aldiLogoAsset = 'assets/logos/aldi_logo.png',
+    this.targetLogoAsset = 'assets/logos/target_logo.png',
   });
 
   @override
@@ -88,6 +87,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
   @override
   void initState() {
     super.initState();
+    // 120fps tactile spring press for the Featured Store hero card
     _pressController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 110),
@@ -152,7 +152,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // 1. MINIMAL SECTION HEADER
+        // 1. FEATURED STORE HEADER
         const Padding(
           padding: EdgeInsets.fromLTRB(16, 8, 16, 12),
           child: Text(
@@ -166,7 +166,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
           ),
         ),
 
-        // 2. CLEAN, DECLUTTERED FLAGSHIP HERO CARD (BATH & BODY WORKS)
+        // 2. HERO FLAGSHIP CARD (BATH & BODY WORKS)
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: RepaintBoundary(
@@ -183,16 +183,16 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
               child: ScaleTransition(
                 scale: _scaleAnim,
                 child: Container(
-                  height: 176,
+                  height: 178,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(24),
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Color(0xFF241E26),
+                        Color(0xFF261E28),
                         Color(0xFF171920),
-                        Color(0xFF1F1C18),
+                        Color(0xFF211D18),
                       ],
                     ),
                     border: Border.all(
@@ -212,13 +212,15 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        // Top Row: Real BBW Logo Badge + Single ETA Pill
+                        // Top Row: Real BBW Gingham Logo Medallion + Single ETA Pill
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             _buildBrandLogoContainer(
                               assetPath: widget.bbwLogoAsset,
-                              size: 48,
+                              size: 54,
+                              padding: 0,
+                              coverFit: true,
                               fallbackIcon: Icons.spa_rounded,
                               fallbackColor: _goldAccent,
                             ),
@@ -251,7 +253,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
                           ],
                         ),
                         const Spacer(),
-                        // Bottom Row: Clean Store Title, Subtitle & Action Button
+                        // Bottom Row: Store Title, Subtitle & Gold Action Button
                         Row(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
@@ -315,7 +317,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
           ),
         ),
 
-        // 3. 1-TAP BOUTIQUE ROOM LAUNCHER
+        // 3. 1-TAP BOUTIQUE DEPARTMENT CAROUSEL
         const Padding(
           padding: EdgeInsets.fromLTRB(16, 22, 16, 10),
           child: Text(
@@ -401,7 +403,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
         const SizedBox(height: 12),
         widget.recommendedSection,
 
-        // 5. COMING SOON STORES (WITH REAL ASSETS & ZERO OVERFLOW)
+        // 5. COMING SOON STORES (ALDI & TARGET ONLY — CLEAN & FOCUSED)
         const Padding(
           padding: EdgeInsets.fromLTRB(16, 22, 16, 10),
           child: Text(
@@ -442,31 +444,44 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
     );
   }
 
-  /// Renders the store's real PNG/SVG logo from assets/ inside a crisp rounded frame
+  /// Renders official brand logos on a crisp white rounded medallion so full-color
+  /// logos (BBW gingham, ALDI shield, Target bullseye) pop cleanly in dark mode.
   Widget _buildBrandLogoContainer({
     required String assetPath,
     required double size,
+    double padding = 6,
+    bool coverFit = false,
     required IconData fallbackIcon,
     required Color fallbackColor,
   }) {
     return Container(
       width: size,
       height: size,
-      padding: const EdgeInsets.all(6),
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
+        color: Colors.white,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.9), width: 1),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: 10,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(9),
+        borderRadius: BorderRadius.circular(padding == 0 ? 13 : 8),
         child: Image.asset(
           assetPath,
-          fit: BoxFit.contain,
-          errorBuilder: (_, __, ___) => Icon(
-            fallbackIcon,
-            color: fallbackColor,
-            size: size * 0.48,
+          fit: coverFit ? BoxFit.cover : BoxFit.contain,
+          errorBuilder: (_, __, ___) => Container(
+            color: const Color(0xFF1E222B),
+            child: Icon(
+              fallbackIcon,
+              color: fallbackColor,
+              size: size * 0.48,
+            ),
           ),
         ),
       ),
@@ -496,15 +511,16 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
           ),
           child: Row(
             children: [
-              // Real Store Logo from assets/
+              // Official Brand Logo Medallion
               _buildBrandLogoContainer(
                 assetPath: logoAsset,
                 size: 46,
+                padding: 5,
                 fallbackIcon: fallbackIcon,
                 fallbackColor: accentColor,
               ),
               const SizedBox(width: 12),
-              // Store Name + Coming Soon Pill (Flexible prevents any pixel overflow)
+              // Store Name + Coming Soon Pill
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -517,7 +533,7 @@ class _FlagshipHomeShowcaseState extends State<FlagshipHomeShowcase>
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
-                              color: Colors.white.withValues(alpha: 0.88),
+                              color: Colors.white.withValues(alpha: 0.9),
                               fontSize: 15,
                               fontWeight: FontWeight.w800,
                             ),
