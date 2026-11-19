@@ -77,55 +77,64 @@ class _TransparentBatchOfferCardState extends State<TransparentBatchOfferCard> {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      HapticFeedback.selectionClick();
-                      setState(() => _showBreakdown = !_showBreakdown);
-                    },
-                    child: Row(
-                      children: [
-                        Text(
-                          '\$${guaranteedPayout.toStringAsFixed(2)}',
-                          style: const TextStyle(
-                            color: gold,
-                            fontSize: 28,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: -0.6,
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        HapticFeedback.selectionClick();
+                        setState(() => _showBreakdown = !_showBreakdown);
+                      },
+                      child: Row(
+                        children: [
+                          Text(
+                            '\$${guaranteedPayout.toStringAsFixed(2)}',
+                            style: const TextStyle(
+                              color: gold,
+                              fontSize: 28,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: -0.6,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 8),
-                        Container(
-                          margin: const EdgeInsets.only(top: 4),
-                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
-                          decoration: BoxDecoration(
-                            color: green.withValues(alpha: 0.15),
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Row(
-                            children: [
-                              Text(
-                                'Includes \$${tipAmount.toStringAsFixed(2)} Tip',
-                                style: const TextStyle(
-                                  color: green,
-                                  fontSize: 10.5,
-                                  fontWeight: FontWeight.w800,
-                                ),
+                          const SizedBox(width: 8),
+                          Flexible(
+                            child: Container(
+                              margin: const EdgeInsets.only(top: 4),
+                              padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
+                              decoration: BoxDecoration(
+                                color: green.withValues(alpha: 0.15),
+                                borderRadius: BorderRadius.circular(8),
                               ),
-                              const SizedBox(width: 2),
-                              Icon(
-                                _showBreakdown
-                                    ? Icons.keyboard_arrow_up_rounded
-                                    : Icons.keyboard_arrow_down_rounded,
-                                color: green,
-                                size: 14,
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      'Includes \$${tipAmount.toStringAsFixed(2)} Tip',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                        color: green,
+                                        fontSize: 10.5,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 2),
+                                  Icon(
+                                    _showBreakdown
+                                        ? Icons.keyboard_arrow_up_rounded
+                                        : Icons.keyboard_arrow_down_rounded,
+                                    color: green,
+                                    size: 14,
+                                  ),
+                                ],
                               ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                  const Spacer(),
+                  const SizedBox(width: 8),
                   Container(
                     width: 36,
                     height: 36,
