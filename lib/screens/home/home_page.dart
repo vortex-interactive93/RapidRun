@@ -11,7 +11,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../models/product.dart';
 import '../../services/recent_items_service.dart';
 import '../../widgets/product/product_card_v2.dart';
-import 'widgets/service_grid.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../services/config_service.dart';
 import '../../widgets/catalog/independent_retailer_disclaimer.dart';
@@ -150,14 +149,6 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: ServiceGrid(
-                      onNavigate: (route) =>
-                          Navigator.pushNamed(context, route),
-                    ),
-                  ),
-                  const SizedBox(height: 16),
                   FlagshipHomeShowcase(
                     onOpenBbwStore: () {
                       Navigator.push(
