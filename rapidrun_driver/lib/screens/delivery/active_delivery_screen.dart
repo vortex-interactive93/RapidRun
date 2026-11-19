@@ -173,6 +173,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
           'currentOrderStatus': FieldValue.delete(),
           'activeOrderId': FieldValue.delete(),
           'todayEarnings': FieldValue.increment(widget.payout),
+          'balance': FieldValue.increment(widget.payout),
           'totalDeliveriesCompleted': FieldValue.increment(1),
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));

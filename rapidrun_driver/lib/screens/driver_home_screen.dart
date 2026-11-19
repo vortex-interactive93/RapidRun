@@ -189,6 +189,7 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
       if (!snap.exists) return;
       final data = snap.data() ?? {};
       final newOnline = data['online'] == true;
+      final balance = (data['balance'] as num?)?.toDouble() ?? 0.0;
       final earnings = (data['todayEarnings'] as num?)?.toDouble() ?? 0.0;
       final trips = (data['totalDeliveriesCompleted'] as num?)?.toInt() ?? 0;
       final boosted = (data['boostedTips'] as num?)?.toDouble() ?? 0.0;
@@ -204,7 +205,12 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           _completedTrips = trips;
         });
 
-        driverEarningsState.syncEarnings(earnings, trips, boosted: boosted);
+        driverEarningsState.syncFromFirestoreData(
+          balance: balance,
+          todayEarnings: earnings,
+          completedRuns: trips,
+          boosted: boosted,
+        );
 
         if (_online && _availableUntil != null) {
           _startCountdownTimer();

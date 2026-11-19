@@ -1,5 +1,7 @@
 // File: rapidrun_driver/lib/screens/wallet/driver_cashout_sheet.dart
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
@@ -31,6 +33,16 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
       transferred = driverEarningsState.executeInstantCashout();
     } else {
       driverEarningsState.executeInstantCashout();
+    }
+
+    try {
+      final uid = widget.driverId ?? FirebaseAuth.instance.currentUser?.uid ?? 'driver_local_tester';
+      await FirebaseFirestore.instance.collection('drivers').doc(uid).set({
+        'balance': 0.0,
+        'lastCashoutAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('Firestore balance reset notice: $e');
     }
 
     if (mounted) {
