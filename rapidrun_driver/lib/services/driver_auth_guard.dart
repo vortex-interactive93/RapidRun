@@ -48,9 +48,28 @@ class DriverAuthGuard {
 
   /// Ensures the driver profile document exists before incrementing earnings or trips
   Future<void> ensureDriverDocExists(String driverId) async {
-    await _firestore.collection('drivers').doc(driverId).set({
-      'driverId': driverId,
-      'updatedAt': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true));
+    final docRef = _firestore.collection('drivers').doc(driverId);
+    final snap = await docRef.get();
+    if (!snap.exists) {
+      await docRef.set({
+        'driverId': driverId,
+        'balance': 0.0,
+        'availableCashout': 0.0,
+        'todayEarnings': 0.0,
+        'thisWeekEarnings': 0.0,
+        'basePay': 0.0,
+        'customerTips': 0.0,
+        'boostedTips': 0.0,
+        'surgeBonuses': 0.0,
+        'totalDeliveriesCompleted': 0,
+        'createdAt': FieldValue.serverTimestamp(),
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+    } else {
+      await docRef.set({
+        'driverId': driverId,
+        'updatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+    }
   }
 }

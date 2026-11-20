@@ -30,6 +30,7 @@ class TripHistoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     const gold = Color(0xFFE5A93C);
     final user = FirebaseAuth.instance.currentUser;
+    final driverId = user?.uid ?? 'driver_local_tester';
 
     return Scaffold(
       backgroundColor: const Color(0xFF121418),
@@ -48,34 +49,24 @@ class TripHistoryScreen extends StatelessWidget {
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
         stream: FirebaseFirestore.instance
             .collection('orders')
-            .where('status', isEqualTo: 'completed')
-            .orderBy('deliveredAt', descending: true)
-            .limit(30)
+            .where('driverId', isEqualTo: driverId)
             .snapshots(),
         builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            // Fallback for missing index or ordering: query completed orders without server-side ordering
-            return StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
-              stream: FirebaseFirestore.instance
-                  .collection('orders')
-                  .where('status', isEqualTo: 'completed')
-                  .snapshots(),
-              builder: (context, fallbackSnap) {
-                if (fallbackSnap.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator(color: gold));
-                }
-                final docs = fallbackSnap.data?.docs ?? [];
-                if (docs.isEmpty) return _buildEmptyState();
-                return _buildTripList(docs, gold);
-              },
-            );
-          }
-
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator(color: gold));
           }
 
-          final docs = snapshot.data?.docs ?? [];
+          final rawDocs = snapshot.data?.docs ?? [];
+          final docs = rawDocs.where((d) => d.data()['status'] == 'completed').toList();
+
+          docs.sort((a, b) {
+            final aTs = a.data()['deliveredAt'] ?? a.data()['createdAt'];
+            final bTs = b.data()['deliveredAt'] ?? b.data()['createdAt'];
+            final aMs = aTs is Timestamp ? aTs.millisecondsSinceEpoch : 0;
+            final bMs = bTs is Timestamp ? bTs.millisecondsSinceEpoch : 0;
+            return bMs.compareTo(aMs);
+          });
+
           if (docs.isEmpty) return _buildEmptyState();
 
           return _buildTripList(docs, gold);
