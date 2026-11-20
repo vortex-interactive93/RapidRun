@@ -12,6 +12,7 @@ import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_earnings_ledger_service.dart';
 import '../../services/canonical_driver_earnings.dart';
+import '../../services/unified_driver_wallet_controller.dart';
 import '../../services/driver_auth_guard.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../widgets/navigation/turn_by_turn_hud_banner.dart';
@@ -228,7 +229,12 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       debugPrint('Driver ledger record notice: $e');
     }
 
-    // 4. Update shared reactive earnings state immediately for 120fps UI response
+    // 4. Update unified wallet controller & shared reactive earnings state immediately
+    UnifiedDriverWalletController.instance.recordOrderCompleted(
+      orderId: widget.orderId,
+      totalPayout: widget.payout,
+      tipAmount: widget.tipAmount,
+    );
     driverEarningsState.recordCompletedBatch(
       payoutAmount: widget.payout,
       tip: widget.tipAmount,

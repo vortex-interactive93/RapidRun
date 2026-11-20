@@ -14,6 +14,7 @@ import '../presentation/home/tactical_demand_deck.dart';
 import '../services/driver_dispatch_listener.dart';
 import '../services/driver_earnings_ledger_service.dart';
 import '../services/canonical_driver_earnings.dart';
+import '../services/unified_driver_wallet_controller.dart';
 import '../services/route_polyline_service.dart';
 import '../widgets/radar/driver_shift_adjustment_sheet.dart';
 import '../widgets/order/transparent_batch_offer_card.dart';
@@ -274,7 +275,12 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
 
-        // 4. Update local reactive state
+        // 4. Update unified wallet controller & local reactive state
+        UnifiedDriverWalletController.instance.recordTipBoost(
+          boostEventId: token,
+          orderId: doc.id,
+          incrementalBoost: incrementalBoost,
+        );
         driverEarningsState.recordTipBoost(incrementalBoost);
 
         // 4. Trigger celebration banner

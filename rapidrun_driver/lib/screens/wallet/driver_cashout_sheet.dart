@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/canonical_driver_earnings.dart';
+import '../../services/unified_driver_wallet_controller.dart';
 
 class DriverCashoutSheet extends StatefulWidget {
   final double? availableBalance;
@@ -60,6 +61,7 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
       } else {
         driverEarningsState.executeInstantCashout();
       }
+      UnifiedDriverWalletController.instance.executeCashout();
 
       // 2. Keep legacy profile fields synchronized without re-declaring `uid`
       await FirebaseFirestore.instance.collection('drivers').doc(driverId).set({
