@@ -11,6 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_earnings_ledger_service.dart';
+import '../../services/canonical_driver_earnings.dart';
 import '../../services/driver_auth_guard.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../widgets/navigation/turn_by_turn_hud_banner.dart';
@@ -207,9 +208,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       debugPrint('Driver profile update notice: $e');
     }
 
-    // 3. Record batch credit entry in DriverEarningsLedgerService
+    // 3. Record batch credit entry in CanonicalEarningsService & DriverEarningsLedgerService
     final basePayout = (widget.payout - widget.tipAmount).clamp(0.0, widget.payout);
     try {
+      await CanonicalEarningsService().recordCompletedBatch(
+        driverId: targetDriverDocId,
+        orderId: widget.orderId,
+        totalPayout: widget.payout,
+        tipAmount: widget.tipAmount,
+      );
       await DriverEarningsLedgerService(overrideDriverId: targetDriverDocId)
           .recordCompletedBatch(
         orderId: widget.orderId,

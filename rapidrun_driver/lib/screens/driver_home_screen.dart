@@ -13,6 +13,7 @@ import '../presentation/home/tactical_flight_deck.dart';
 import '../presentation/home/tactical_demand_deck.dart';
 import '../services/driver_dispatch_listener.dart';
 import '../services/driver_earnings_ledger_service.dart';
+import '../services/canonical_driver_earnings.dart';
 import '../services/route_polyline_service.dart';
 import '../widgets/radar/driver_shift_adjustment_sheet.dart';
 import '../widgets/order/transparent_batch_offer_card.dart';
@@ -251,8 +252,13 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'pendingBoostAmount': FieldValue.delete(),
         });
 
-        // 2. Record tip boost delta in DriverEarningsLedgerService (append-only ledger)
+        // 2. Record tip boost delta in CanonicalEarningsService & DriverEarningsLedgerService
         final String storeName = (data['storeName'] ?? 'Bath & Body Works').toString();
+        await CanonicalEarningsService().applyIncrementalTipBoost(
+          driverId: widget.driverId,
+          orderId: doc.id,
+          incrementalBoost: incrementalBoost,
+        );
         await DriverEarningsLedgerService().recordTipBoostDelta(
           orderId: doc.id,
           storeName: storeName,

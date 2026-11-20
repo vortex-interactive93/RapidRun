@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_earnings_ledger_service.dart';
+import '../../services/canonical_driver_earnings.dart';
 
 class DriverCashoutSheet extends StatefulWidget {
   final double? availableBalance;
@@ -41,8 +42,16 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
 
     double transferred = 0.0;
     try {
-      // 1. Append an immutable 'cashout' debit entry in Firestore ledger
+      // 1. Append an immutable 'cashout' debit entry in CanonicalEarningsService & DriverEarningsLedgerService
+      final uid = widget.driverId ??
+          FirebaseAuth.instance.currentUser?.uid ??
+          'driver_local_tester';
+      final canonicalTransferred = await CanonicalEarningsService().executeCashout(
+        driverId: uid,
+        cardLast4: '4242',
+      );
       transferred = await _ledgerService.cashOutAvailableBalance(cardLast4: '4242');
+      if (transferred <= 0) transferred = canonicalTransferred;
 
       // Fallback if ledger had local-only test earnings not yet written as ledger docs
       if (transferred <= 0) {
