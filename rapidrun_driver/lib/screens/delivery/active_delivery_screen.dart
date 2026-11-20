@@ -11,6 +11,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_earnings_ledger_service.dart';
+import '../../services/driver_auth_guard.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../widgets/navigation/turn_by_turn_hud_banner.dart';
 
@@ -155,8 +156,9 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
     HapticFeedback.heavyImpact();
 
     try {
-      final user = FirebaseAuth.instance.currentUser;
-      final driverId = user?.uid ?? 'driver_local_tester';
+      final authGuard = DriverAuthGuard();
+      final driverId = await authGuard.resolveEffectiveDriverId(screenDriverId: 'driver_local_tester');
+      await authGuard.ensureDriverDocExists(driverId);
 
       // 1. Mark order completed in Firestore
       final orderRef = FirebaseFirestore.instance.collection('orders').doc(widget.orderId);
