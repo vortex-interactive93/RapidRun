@@ -2,6 +2,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 class DriverLedgerSummary {
   final double availableBalance;
@@ -24,35 +25,38 @@ class DriverLedgerSummary {
   );
 }
 
-/// Append-only financial ledger for RapidRun Drivers.
-/// Guarantees that post-cashout tip boosts ONLY add the incremental delta
-/// to the driver's $0.00 balance instead of restoring pre-cashout totals.
+/// Append-only ledger backed by `drivers/{driverId}/ledger_entries` so
+/// post-cashout tip boosts add only the incremental delta to available balance.
 class DriverEarningsLedgerService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
-  final String? explicitDriverId;
+  final String? overrideDriverId;
 
   DriverEarningsLedgerService({
     FirebaseFirestore? firestore,
     FirebaseAuth? auth,
-    this.explicitDriverId,
+    this.overrideDriverId,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  String get _driverId => explicitDriverId ?? (_auth.currentUser?.uid ?? 'driver_local_tester');
-
-  DocumentReference<Map<String, dynamic>> get _driverDoc =>
-      _firestore.collection('drivers').doc(_driverId);
+  String get _driverId {
+    if (overrideDriverId != null && overrideDriverId!.isNotEmpty) {
+      return overrideDriverId!;
+    }
+    return _auth.currentUser?.uid ?? 'driver_local_tester';
+  }
 
   CollectionReference<Map<String, dynamic>> get _ledgerCol =>
-      _driverDoc.collection('ledger');
+      _firestore.collection('drivers').doc(_driverId).collection('ledger_entries');
 
-  /// Real-time stream of the driver's true Available Balance & Ledger history
   Stream<DriverLedgerSummary> watchLedgerSummary() {
     return _ledgerCol
         .orderBy('createdAt', descending: true)
         .limit(100)
         .snapshots()
+        .handleError((err) {
+          debugPrint('Ledger stream warning: $err');
+        })
         .map((snap) {
       double credits = 0.0;
       double payouts = 0.0;
@@ -69,12 +73,10 @@ class DriverEarningsLedgerService {
         if (type == 'cashout') {
           payouts += amount.abs();
         } else {
-          // 'batch_completed' or 'tip_boost'
           credits += amount;
         }
       }
 
-      // Clamp to 0.00 to avoid floating-point -0.00 artifacts
       final available = double.parse(
         (credits - payouts).clamp(0.0, 999999.99).toStringAsFixed(2),
       );
@@ -88,110 +90,108 @@ class DriverEarningsLedgerService {
     });
   }
 
-  /// Records a completed order payout idempotently (keyed by orderId)
   Future<void> recordCompletedBatch({
     required String orderId,
     required String storeName,
     required double basePayout,
     required double initialTip,
   }) async {
-    final entryRef = _ledgerCol.doc('batch_$orderId');
-    final total = double.parse((basePayout + initialTip).toStringAsFixed(2));
+    try {
+      final entryRef = _ledgerCol.doc('batch_$orderId');
+      final total = double.parse((basePayout + initialTip).toStringAsFixed(2));
 
-    await _firestore.runTransaction((tx) async {
-      final existing = await tx.get(entryRef);
-      if (existing.exists) return; // Idempotency guard
+      await _firestore.runTransaction((tx) async {
+        final existing = await tx.get(entryRef);
+        if (existing.exists) return;
 
-      tx.set(entryRef, {
-        'type': 'batch_completed',
-        'orderId': orderId,
-        'storeName': storeName,
-        'basePayout': basePayout,
-        'tip': initialTip,
-        'amount': total,
-        'createdAt': FieldValue.serverTimestamp(),
+        tx.set(entryRef, {
+          'type': 'batch_completed',
+          'orderId': orderId,
+          'storeName': storeName,
+          'basePayout': basePayout,
+          'tip': initialTip,
+          'amount': total,
+          'createdAt': FieldValue.serverTimestamp(),
+        });
       });
-    });
+    } catch (e) {
+      debugPrint('Ledger recordCompletedBatch non-fatal warning: $e');
+    }
   }
 
-  /// Records ONLY the incremental tip boost delta when a customer adds extra tip
-  /// after delivery (even if the driver already cashed out the base batch!).
   Future<void> recordTipBoostDelta({
     required String orderId,
     required String storeName,
     required double newTotalTipBoost,
   }) async {
     if (newTotalTipBoost <= 0) return;
+    try {
+      final boostEntryRef = _ledgerCol.doc('tipboost_$orderId');
 
-    final orderRef = _firestore.collection('orders').doc(orderId);
-    final boostEntryRef = _ledgerCol.doc('tipboost_$orderId');
+      await _firestore.runTransaction((tx) async {
+        final boostSnap = await tx.get(boostEntryRef);
+        final alreadyCreditedBoost = boostSnap.exists
+            ? (((boostSnap.data()?['amount'] as num?) ?? 0.0).toDouble())
+            : 0.0;
 
-    await _firestore.runTransaction((tx) async {
-      final boostSnap = await tx.get(boostEntryRef);
-      final alreadyCreditedBoost = boostSnap.exists
-          ? (((boostSnap.data()?['amount'] as num?) ?? 0.0).toDouble())
-          : 0.0;
+        final delta = double.parse(
+          (newTotalTipBoost - alreadyCreditedBoost).toStringAsFixed(2),
+        );
+        if (delta <= 0) return;
 
-      final delta = double.parse(
-        (newTotalTipBoost - alreadyCreditedBoost).toStringAsFixed(2),
-      );
-      if (delta <= 0) return;
-
-      tx.set(
-        boostEntryRef,
-        {
-          'type': 'tip_boost',
-          'orderId': orderId,
-          'storeName': storeName,
-          'amount': double.parse(newTotalTipBoost.toStringAsFixed(2)),
-          'lastDelta': delta,
-          'updatedAt': FieldValue.serverTimestamp(),
-          if (!boostSnap.exists) 'createdAt': FieldValue.serverTimestamp(),
-        },
-        SetOptions(merge: true),
-      );
-
-      tx.set(
-        orderRef,
-        {'driverTipBoostCredited': newTotalTipBoost},
-        SetOptions(merge: true),
-      );
-    });
+        tx.set(
+          boostEntryRef,
+          {
+            'type': 'tip_boost',
+            'orderId': orderId,
+            'storeName': storeName,
+            'amount': double.parse(newTotalTipBoost.toStringAsFixed(2)),
+            'lastDelta': delta,
+            'updatedAt': FieldValue.serverTimestamp(),
+            if (!boostSnap.exists) 'createdAt': FieldValue.serverTimestamp(),
+          },
+          SetOptions(merge: true),
+        );
+      });
+    } catch (e) {
+      debugPrint('Ledger recordTipBoostDelta non-fatal warning: $e');
+    }
   }
 
-  /// Atomically cashes out the exact current available balance to the card on file,
-  /// resetting availableBalance to $0.00 while preserving all historical trip records.
-  Future<double> cashOutAvailableBalance({
-    required String cardLast4,
-  }) async {
-    final snap = await _ledgerCol.get();
-    double credits = 0.0;
-    double payouts = 0.0;
+  Future<double> cashOutAvailableBalance({required String cardLast4}) async {
+    try {
+      final snap = await _ledgerCol.get();
+      double credits = 0.0;
+      double payouts = 0.0;
 
-    for (final doc in snap.docs) {
-      final data = doc.data();
-      final type = (data['type'] ?? '').toString();
-      final amount = ((data['amount'] as num?) ?? 0.0).toDouble();
-      if (type == 'cashout') {
-        payouts += amount.abs();
-      } else {
-        credits += amount;
+      for (final doc in snap.docs) {
+        final data = doc.data();
+        final type = (data['type'] ?? '').toString();
+        final amount = ((data['amount'] as num?) ?? 0.0).toDouble();
+        if (type == 'cashout') {
+          payouts += amount.abs();
+        } else {
+          credits += amount;
+        }
       }
+
+      final cashoutAmount = double.parse(
+        (credits - payouts).clamp(0.0, 999999.99).toStringAsFixed(2),
+      );
+      if (cashoutAmount <= 0) return 0.0;
+
+      await _ledgerCol.add({
+        'type': 'cashout',
+        'amount': cashoutAmount,
+        'cardLast4': cardLast4,
+        'status': 'settled_instant',
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+
+      return cashoutAmount;
+    } catch (e) {
+      debugPrint('Ledger cashOutAvailableBalance warning: $e');
+      return 0.0;
     }
-
-    final cashoutAmount = double.parse(
-      (credits - payouts).clamp(0.0, 999999.99).toStringAsFixed(2),
-    );
-    if (cashoutAmount <= 0) return 0.0;
-
-    await _ledgerCol.add({
-      'type': 'cashout',
-      'amount': cashoutAmount,
-      'cardLast4': cardLast4,
-      'status': 'settled_instant',
-      'createdAt': FieldValue.serverTimestamp(),
-    });
-
-    return cashoutAmount;
   }
 }

@@ -188,7 +188,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       // 3. Record batch credit entry in DriverEarningsLedgerService & update local state
       final basePayout = (widget.payout - widget.tipAmount).clamp(0.0, widget.payout);
       try {
-        await DriverEarningsLedgerService(explicitDriverId: driverId).recordCompletedBatch(
+        await DriverEarningsLedgerService(overrideDriverId: driverId).recordCompletedBatch(
           orderId: widget.orderId,
           storeName: 'Bath & Body Works',
           basePayout: basePayout,
