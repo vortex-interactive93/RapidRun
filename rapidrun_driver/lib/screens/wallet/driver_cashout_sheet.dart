@@ -29,7 +29,7 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
   void initState() {
     super.initState();
     _ledgerService = DriverEarningsLedgerService(
-      explicitDriverId: widget.driverId,
+      overrideDriverId: widget.driverId,
     );
   }
 

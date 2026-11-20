@@ -35,9 +35,11 @@ class DriverEarningsLedgerService {
   DriverEarningsLedgerService({
     FirebaseFirestore? firestore,
     FirebaseAuth? auth,
-    this.overrideDriverId,
+    String? overrideDriverId,
+    String? explicitDriverId,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _auth = auth ?? FirebaseAuth.instance;
+        _auth = auth ?? FirebaseAuth.instance,
+        overrideDriverId = overrideDriverId ?? explicitDriverId;
 
   String get _driverId {
     if (overrideDriverId != null && overrideDriverId!.isNotEmpty) {
