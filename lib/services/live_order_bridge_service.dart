@@ -87,13 +87,24 @@ class LiveOrderBridgeService {
   Stream<List<Map<String, dynamic>>> watchPendingOrders() {
     return _ordersCol
         .where('status', isEqualTo: 'pending')
-        .orderBy('createdAt', descending: true)
         .snapshots()
-        .map((snap) => snap.docs.map((doc) {
-              final map = Map<String, dynamic>.from(doc.data());
-              map['orderId'] = doc.id;
-              return map;
-            }).toList());
+        .map((snap) {
+      final list = snap.docs.map((doc) {
+        final map = Map<String, dynamic>.from(doc.data());
+        map['orderId'] = doc.id;
+        return map;
+      }).toList();
+
+      list.sort((a, b) {
+        final aTs = a['createdAt'];
+        final bTs = b['createdAt'];
+        final aMs = aTs is Timestamp ? aTs.millisecondsSinceEpoch : 0;
+        final bMs = bTs is Timestamp ? bTs.millisecondsSinceEpoch : 0;
+        return bMs.compareTo(aMs);
+      });
+
+      return list;
+    });
   }
 
   /// Driver atomically claims the order so no duplicate acceptance occurs

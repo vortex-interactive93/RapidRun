@@ -28,6 +28,14 @@ class DriverDispatchListener {
             (dId == null || dId == '');
       }).toList();
 
+      unassignedDocs.sort((a, b) {
+        final aTs = a.data()['createdAt'];
+        final bTs = b.data()['createdAt'];
+        final aMs = aTs is Timestamp ? aTs.millisecondsSinceEpoch : 0;
+        final bMs = bTs is Timestamp ? bTs.millisecondsSinceEpoch : 0;
+        return bMs.compareTo(aMs);
+      });
+
       if (unassignedDocs.isNotEmpty) {
         final doc = unassignedDocs.first;
         final data = Map<String, dynamic>.from(doc.data());
