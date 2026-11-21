@@ -1,14 +1,26 @@
+// File: rapidrun_driver/android/app/src/main/kotlin/com/example/rapidrun_driver/MainActivity.kt
+
 package com.example.rapidrun_driver
 
+import android.app.UiModeManager
+import android.content.res.Configuration
+import android.os.Build
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity : FlutterActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Force Dark Mode so Google Maps Android SDK selects the Dark mode
-        // Cloud Map Style slot ("RapidRun Midnight Gold 3D") on Map ID 2af4647f58c6980d6ea47ab0.
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        enforceDarkModeForMaps()
         super.onCreate(savedInstanceState)
+    }
+
+    private fun enforceDarkModeForMaps() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            val uiModeManager = getSystemService(UiModeManager::class.java)
+            uiModeManager?.setApplicationNightMode(UiModeManager.MODE_NIGHT_YES)
+        }
+        resources.configuration.uiMode =
+            (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK.inv()) or
+                Configuration.UI_MODE_NIGHT_YES
     }
 }
