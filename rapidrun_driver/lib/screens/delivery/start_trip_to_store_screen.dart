@@ -33,7 +33,7 @@ class StartTripToStoreScreen extends StatefulWidget {
     super.key,
     required this.orderId,
     required this.storeName,
-    this.storeAddress = 'Bath & Body Works • Ridgmar Plaza, Fort Worth, TX',
+    this.storeAddress = '669 Sherry Ln, Fort Worth, TX 76114',
     this.storeLat = 32.7478,
     this.storeLng = -97.4278,
     this.routingPreference = DriverRoutingPreference.ecoFriendly,
@@ -306,6 +306,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     );
   }
 
+  /// Sweet-spot recenter zoom (16.0): gives clear block/street readability
+  /// without zooming too close into gray parcel fills.
   Future<void> _centerOnUserLocation() async {
     if (_mapController == null) return;
     _isProgrammaticCameraMove = true;
@@ -314,7 +316,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
         CameraUpdate.newCameraPosition(
           CameraPosition(
             target: _currentLoc,
-            zoom: 15.8,
+            zoom: 16.0,
             tilt: 0.0,
             bearing: 0.0,
           ),
@@ -537,11 +539,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
       backgroundColor: const Color(0xFF141821),
       body: Stack(
         children: [
-          // Isolate GoogleMap in a RepaintBoundary for fluid 60fps marker & camera motion
+          // Isolate GoogleMap inside RepaintBoundary for fluid 60fps camera & marker motion
           Positioned.fill(
             child: RepaintBoundary(
               child: GoogleMap(
-                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.8),
+                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 16.0),
                 style: midnightTitaniumMapStyle,
                 myLocationEnabled: false,
                 myLocationButtonEnabled: false,
@@ -624,7 +626,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ),
           ),
 
-          // Top Turn-by-Turn / Pickup Briefing Banner
+          // Top HUD: Pickup Briefing before trip start, Active Turn-by-Turn HUD once started
           Positioned(
             top: MediaQuery.of(context).padding.top + 10,
             left: 14,
@@ -660,9 +662,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                             decoration: BoxDecoration(
                               color: gold.withValues(alpha: 0.16),
                               borderRadius: BorderRadius.circular(14),
-                              border: Border.all(
-                                color: gold.withValues(alpha: 0.5),
-                              ),
+                              border: Border.all(color: gold.withValues(alpha: 0.5)),
                             ),
                             child: const Icon(
                               Icons.storefront_rounded,
@@ -724,7 +724,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                             color: const Color(0xFF14171E).withValues(alpha: 0.96),
                             borderRadius: BorderRadius.circular(18),
                             border: Border.all(
-                              color: turnImminent ? urgencyAmber : gold.withValues(alpha: 0.45),
+                              color: turnImminent
+                                  ? urgencyAmber
+                                  : gold.withValues(alpha: 0.45),
                               width: turnImminent ? 1.8 : 1.2,
                             ),
                             boxShadow: [
@@ -814,7 +816,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             decoration: BoxDecoration(
                               color: const Color(0xFF1E222B).withValues(alpha: 0.95),
-                              borderRadius: const BorderRadius.vertical(bottom: Radius.circular(12)),
+                              borderRadius:
+                                  const BorderRadius.vertical(bottom: Radius.circular(12)),
                               border: Border.all(color: Colors.white10),
                             ),
                             child: Row(
@@ -968,13 +971,14 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   foregroundColor: _followCamera ? gold : Colors.white70,
                   onPressed: () {
                     HapticFeedback.selectionClick();
-                    setState(() {
-                      _tripStarted = true;
-                      _followCamera = true;
-                    });
-                    _sync3DCameraIfFollowing(force: true);
+                    if (!_tripStarted) {
+                      _centerOnUserLocation();
+                    } else {
+                      setState(() => _followCamera = true);
+                      _sync3DCameraIfFollowing(force: true);
+                    }
                   },
-                  child: const Icon(Icons.navigation_rounded, size: 20),
+                  child: const Icon(Icons.my_location_rounded, size: 20),
                 ),
                 const SizedBox(height: 8),
                 FloatingActionButton.small(
@@ -992,7 +996,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ),
           ),
 
-          // Bottom Telemetry, Routing Mode Selector & Arrival Deck
+          // Bottom Telemetry, Routing Mode Selector & Full Address Arrival Deck
           Positioned(
             bottom: 0,
             left: 0,
@@ -1045,7 +1049,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                     ],
                   ),
                   const SizedBox(height: 8),
-                  // Interactive Eco-Friendly / Fastest / No Highway selector chips
                   Wrap(
                     spacing: 8,
                     runSpacing: 6,
@@ -1086,7 +1089,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   ),
                   Text(
                     widget.storeAddress,
-                    style: const TextStyle(color: Colors.white54, fontSize: 12),
+                    style: const TextStyle(color: Colors.white70, fontSize: 12),
                   ),
                   const SizedBox(height: 12),
                   if (!_tripStarted)
