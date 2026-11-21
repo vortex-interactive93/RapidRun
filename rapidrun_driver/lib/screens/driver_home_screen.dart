@@ -503,8 +503,20 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
                 todayEarnings: UnifiedDriverWalletController.instance.todayEarnings,
                 onToggleOnline: _handleStatusTap,
                 onOpenDrawer: () => _scaffoldKey.currentState?.openDrawer(),
-                onRecenterMap: () {
-                  _map?.animateCamera(CameraUpdate.newCameraPosition(_initialCamera));
+                onRecenterMap: () async {
+                  HapticFeedback.selectionClick();
+                  final liveLoc = await _resolveDriverCurrentLatLng();
+                  if (!mounted || _map == null) return;
+                  await _map!.animateCamera(
+                    CameraUpdate.newCameraPosition(
+                      CameraPosition(
+                        target: liveLoc,
+                        zoom: 16.0,
+                        tilt: 0.0,
+                        bearing: 0.0,
+                      ),
+                    ),
+                  );
                 },
                 onOpenWallet: _openCashoutSheet,
               );
