@@ -50,13 +50,14 @@ class DriverDrawer extends StatelessWidget {
       listenable: UnifiedDriverWalletController.instance,
       builder: (context, _) {
         final wallet = UnifiedDriverWalletController.instance;
+        debugPrint(
+          '🧭 [DriverDrawer] propToday=$todayEarnings '
+          'walletToday=${wallet.todayEarnings} walletAvail=${wallet.availableCashout} '
+          'trips=${wallet.completedTrips}',
+        );
 
-        // If todayEarnings was explicitly passed and wallet hasn't recorded activity yet,
-        // use wallet.availableCashout once active so cash-out zeroes the drawer payout cleanly.
-        final double drawerPayout = wallet.completedTrips > 0 || wallet.totalCashedOut > 0
-            ? wallet.availableCashout
-            : (todayEarnings ?? wallet.availableCashout);
-        final int activeTrips = completedTrips ?? wallet.completedTrips;
+        final double drawerPayout = wallet.todayEarnings;
+        final int activeTrips = wallet.completedTrips;
 
         return RepaintBoundary(
           child: Drawer(

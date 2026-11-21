@@ -466,16 +466,21 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
               child: Container(color: const Color(0xFF121418)),
             ),
           ),
-          TacticalFlightDeck(
-            isOnline: _online,
-            remainingTime: _online ? remaining : null,
-            todayEarnings: _todayEarnings,
-            onToggleOnline: _handleStatusTap,
-            onOpenDrawer: () => _scaffoldKey.currentState?.openDrawer(),
-            onRecenterMap: () {
-              _map?.animateCamera(CameraUpdate.newCameraPosition(_initialCamera));
+          ListenableBuilder(
+            listenable: UnifiedDriverWalletController.instance,
+            builder: (context, _) {
+              return TacticalFlightDeck(
+                isOnline: _online,
+                remainingTime: _online ? remaining : null,
+                todayEarnings: UnifiedDriverWalletController.instance.todayEarnings,
+                onToggleOnline: _handleStatusTap,
+                onOpenDrawer: () => _scaffoldKey.currentState?.openDrawer(),
+                onRecenterMap: () {
+                  _map?.animateCamera(CameraUpdate.newCameraPosition(_initialCamera));
+                },
+                onOpenWallet: _openCashoutSheet,
+              );
             },
-            onOpenWallet: _openCashoutSheet,
           ),
 
           // 4. Persistent Tactical Demand & Surge Radar Base

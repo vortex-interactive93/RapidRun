@@ -83,13 +83,19 @@ class _EarningsDashboardScreenState extends State<EarningsDashboardScreen> {
       listenable: UnifiedDriverWalletController.instance,
       builder: (context, _) {
         final wallet = UnifiedDriverWalletController.instance;
-        final currentBalance = widget.currentBalance ?? wallet.availableCashout;
-        final weekTotal = widget.weekTotal ?? wallet.thisWeekEarnings;
-        final basePay = widget.basePay ?? wallet.basePay;
-        final customerTips = widget.customerTips ?? wallet.customerTips;
-        final boostedTips = widget.boostedTips ?? wallet.boostedTips;
-        final surgeBonus = widget.surgeBonus ?? driverEarningsState.surgeBonuses;
-        final ytdMiles = widget.ytdMiles ?? driverEarningsState.ytdMiles;
+        debugPrint(
+          '💰 [EarningsDashboard] avail=${wallet.availableCashout} '
+          'today=${wallet.todayEarnings} week=${wallet.thisWeekEarnings} '
+          'base=${wallet.basePay} tips=${wallet.customerTips} boost=${wallet.boostedTips}',
+        );
+
+        final currentBalance = wallet.availableCashout;
+        final weekTotal = wallet.thisWeekEarnings;
+        final basePay = wallet.basePay;
+        final customerTips = wallet.customerTips;
+        final boostedTips = wallet.boostedTips;
+        final surgeBonus = driverEarningsState.surgeBonuses;
+        final ytdMiles = driverEarningsState.ytdMiles;
 
         return Scaffold(
           backgroundColor: bg,
