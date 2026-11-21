@@ -32,9 +32,9 @@ class StartTripToStoreScreen extends StatefulWidget {
     super.key,
     required this.orderId,
     required this.storeName,
-    this.storeAddress = 'Westover Village, Fort Worth, TX',
-    this.storeLat = 32.7482,
-    this.storeLng = -97.4248,
+    this.storeAddress = 'Bath & Body Works • Ridgmar Plaza, Fort Worth, TX',
+    this.storeLat = 32.7478,
+    this.storeLng = -97.4278,
     this.routingPreference = DriverRoutingPreference.ecoFriendly,
     required this.items,
   });

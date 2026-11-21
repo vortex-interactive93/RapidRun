@@ -121,7 +121,7 @@ class SmoothNavigationTracker {
       _currentSpeedMps = pos.speed.clamp(0.0, 60.0);
 
       _interpStartLoc = _renderedLoc;
-      _interpTargetLoc = snappedState.snappedLocation;
+      _interpTargetLoc = rawLatLng;
 
       _interpStartHeading = _renderedHeading;
       final double targetBrg = (pos.heading > 0 && _currentSpeedMps > 1.5)
