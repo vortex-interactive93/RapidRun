@@ -11,6 +11,7 @@ import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/route_navigation_helper.dart';
+import '../../services/driver_camera_helper.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -151,15 +152,15 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   Future<void> _animate3DFollowCamera() async {
     if (_mapController == null) return;
     _isProgrammaticMove = true;
+    final cameraPos = DriverCameraHelper.buildForward3DCamera(
+      driverLocation: _currentLoc,
+      bearingDegrees: _heading,
+      zoom: 17.6,
+      tilt: 58.0,
+      lookAheadMeters: 65.0,
+    );
     await _mapController!.animateCamera(
-      CameraUpdate.newCameraPosition(
-        CameraPosition(
-          target: _currentLoc,
-          zoom: 18.0,
-          tilt: 58.0,
-          bearing: _heading,
-        ),
-      ),
+      CameraUpdate.newCameraPosition(cameraPos),
     );
     await Future.delayed(const Duration(milliseconds: 300));
     _isProgrammaticMove = false;
