@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/route_polyline_service.dart';
+import '../../services/route_navigation_helper.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -45,6 +46,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   late final LatLng _storeLoc;
   List<LatLng> _routePoints = const [];
   List<NavigationStep> _steps = const [];
+  int _activeStepIndex = 0;
 
   bool _tripStarted = false;
   bool _followCamera = true;
@@ -83,13 +85,22 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     _posSub = Geolocator.getPositionStream(
       locationSettings: const LocationSettings(
         accuracy: LocationAccuracy.high,
-        distanceFilter: 12,
+        distanceFilter: 10,
       ),
     ).listen((pos) async {
       if (!mounted) return;
       final updated = LatLng(pos.latitude, pos.longitude);
+
+      final eval = RouteNavigationHelper.evaluate(
+        rawLocation: updated,
+        routePoints: _routePoints,
+        steps: _steps,
+        currentStepIndex: _activeStepIndex,
+      );
+
       setState(() {
-        _currentLoc = updated;
+        _currentLoc = eval.snappedLocation;
+        _activeStepIndex = eval.activeStepIndex;
         if (pos.heading > 0) _heading = pos.heading;
       });
 
@@ -250,8 +261,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     const gold = Color(0xFFE6B450);
     const cardBg = Color(0xFF171A21);
 
-    final NavigationStep? currentStep = _steps.isNotEmpty ? _steps.first : null;
-    final NavigationStep? nextStep = _steps.length > 1 ? _steps[1] : null;
+    final NavigationStep? currentStep = _steps.isNotEmpty && _activeStepIndex < _steps.length
+        ? _steps[_activeStepIndex]
+        : null;
+    final NavigationStep? nextStep = _steps.length > _activeStepIndex + 1
+        ? _steps[_activeStepIndex + 1]
+        : null;
 
     return Scaffold(
       backgroundColor: const Color(0xFF121418),

@@ -12,6 +12,7 @@ import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_auth_guard.dart';
 import '../../services/route_polyline_service.dart';
+import '../../services/route_navigation_helper.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 
@@ -57,6 +58,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
   List<LatLng> _routePoints = const [];
   List<NavigationStep> _steps = const [];
+  int _activeStepIndex = 0;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
 
@@ -103,8 +105,17 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         .listen((position) async {
       if (!mounted) return;
       final updated = LatLng(position.latitude, position.longitude);
+
+      final eval = RouteNavigationHelper.evaluate(
+        rawLocation: updated,
+        routePoints: _routePoints,
+        steps: _steps,
+        currentStepIndex: _activeStepIndex,
+      );
+
       setState(() {
-        _currentLoc = updated;
+        _currentLoc = eval.snappedLocation;
+        _activeStepIndex = eval.activeStepIndex;
         if (position.heading > 0) _heading = position.heading;
       });
 
@@ -396,8 +407,12 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
     const bg = Color(0xFF141414);
     const cardSurface = Color(0xFF171A21);
 
-    final NavigationStep? currentStep = _steps.isNotEmpty ? _steps.first : null;
-    final NavigationStep? nextStep = _steps.length > 1 ? _steps[1] : null;
+    final NavigationStep? currentStep = _steps.isNotEmpty && _activeStepIndex < _steps.length
+        ? _steps[_activeStepIndex]
+        : null;
+    final NavigationStep? nextStep = _steps.length > _activeStepIndex + 1
+        ? _steps[_activeStepIndex + 1]
+        : null;
 
     return Scaffold(
       backgroundColor: bg,
