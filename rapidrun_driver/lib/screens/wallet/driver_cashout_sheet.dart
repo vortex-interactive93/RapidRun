@@ -126,19 +126,11 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
   @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE5A93C);
-    final driverId = _resolvedDriverId;
 
-    // StreamBuilder keeps the cashout modal reactive to post-cashout tip boosts
-    // even if a tip boost lands while the wallet sheet is open.
-    return StreamBuilder<CanonicalDriverEarnings>(
-      stream: _earningsService.watchEarnings(driverId),
-      builder: (context, snapshot) {
-        return ListenableBuilder(
-          listenable: driverEarningsState,
-          builder: (context, _) {
-            final double balance = snapshot.hasData
-                ? snapshot.data!.availableCashout
-                : (widget.availableBalance ?? driverEarningsState.availableCashout);
+    return ListenableBuilder(
+      listenable: UnifiedDriverWalletController.instance,
+      builder: (context, _) {
+        final double balance = UnifiedDriverWalletController.instance.availableCashout;
 
             return RepaintBoundary(
               child: Container(
@@ -236,7 +228,5 @@ class _DriverCashoutSheetState extends State<DriverCashoutSheet> {
             );
           },
         );
-      },
-    );
   }
 }

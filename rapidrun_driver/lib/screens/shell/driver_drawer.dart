@@ -44,19 +44,13 @@ class DriverDrawer extends StatelessWidget {
         (user?.email?.split('@').first) ??
         'Thomas';
 
-    // Listen to UnifiedDriverWalletController so Drawer balances always stay
-    // locked in sync with Earnings & Payouts and Cash Out actions.
+    // Read directly from UnifiedDriverWalletController.instance so cash-outs
+    // immediately zero TODAY'S PAYOUT and post-cashout tip boosts update it cleanly.
     return ListenableBuilder(
       listenable: UnifiedDriverWalletController.instance,
       builder: (context, _) {
         final wallet = UnifiedDriverWalletController.instance;
-        debugPrint(
-          '🧭 [DriverDrawer] propToday=$todayEarnings '
-          'walletToday=${wallet.todayEarnings} walletAvail=${wallet.availableCashout} '
-          'trips=${wallet.completedTrips}',
-        );
-
-        final double drawerPayout = wallet.todayEarnings;
+        final double drawerPayout = wallet.availableCashout;
         final int activeTrips = wallet.completedTrips;
 
         return RepaintBoundary(
@@ -187,24 +181,30 @@ class DriverDrawer extends StatelessWidget {
                               ),
                               ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: drawerPayout > 0 ? gold : const Color(0xFF2A2E37),
-                                  foregroundColor: drawerPayout > 0 ? Colors.black : Colors.white54,
+                                  backgroundColor:
+                                      drawerPayout > 0 ? gold : const Color(0xFF2A2E37),
+                                  foregroundColor:
+                                      drawerPayout > 0 ? Colors.black : Colors.white54,
                                   elevation: 0,
                                   padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10),
                                   ),
                                 ),
-                                onPressed: () {
-                                  HapticFeedback.lightImpact();
-                                  Navigator.pop(context);
-                                  showModalBottomSheet(
-                                    context: context,
-                                    isScrollControlled: true,
-                                    backgroundColor: Colors.transparent,
-                                    builder: (_) => const DriverCashoutSheet(),
-                                  );
-                                },
+                                onPressed: drawerPayout <= 0
+                                    ? null
+                                    : () {
+                                        HapticFeedback.lightImpact();
+                                        Navigator.pop(context);
+                                        showModalBottomSheet(
+                                          context: context,
+                                          isScrollControlled: true,
+                                          backgroundColor: Colors.transparent,
+                                          builder: (_) => DriverCashoutSheet(
+                                            availableBalance: drawerPayout,
+                                          ),
+                                        );
+                                      },
                                 child: const Text(
                                   'Cash Out',
                                   style: TextStyle(
