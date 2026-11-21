@@ -1,5 +1,6 @@
 // File: rapidrun_driver/lib/screens/earnings/earnings_dashboard_screen.dart
 
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
@@ -283,10 +284,17 @@ class _EarningsDashboardScreenState extends State<EarningsDashboardScreen> {
                         children: List.generate(7, (idx) {
                           final weekday = idx + 1; // 1 = Mon, 2 = Tue, ..., 7 = Sun
                           final dayLabels = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
-                          final dayEarnings = driverEarningsState.getDailyEarnings(weekday);
-                          final maxVal = driverEarningsState.maxDailyEarnings;
-                          final fraction = dayEarnings > 0 ? (dayEarnings / maxVal).clamp(0.15, 1.0) : 0.0;
                           final isToday = weekday == DateTime.now().weekday;
+                          final dayEarnings = isToday
+                              ? wallet.todayEarnings
+                              : driverEarningsState.getDailyEarnings(weekday);
+
+                          final maxVal = math.max(
+                            wallet.todayEarnings,
+                            driverEarningsState.maxDailyEarnings,
+                          );
+                          final effectiveMax = maxVal > 0 ? maxVal : 1.0;
+                          final fraction = dayEarnings > 0 ? (dayEarnings / effectiveMax).clamp(0.15, 1.0) : 0.0;
 
                           final label = dayEarnings == 0
                               ? '\$0'
