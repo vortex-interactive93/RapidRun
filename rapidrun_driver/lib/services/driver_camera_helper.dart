@@ -8,7 +8,6 @@ class DriverCameraHelper {
 
   static const double _earthRadiusMeters = 6378137.0;
 
-  /// Computes compass bearing (0..360 deg, 0=North, 90=East) from [from] to [to].
   static double bearingBetween(LatLng from, LatLng to) {
     final lat1 = from.latitude * math.pi / 180.0;
     final lat2 = to.latitude * math.pi / 180.0;
@@ -21,7 +20,6 @@ class DriverCameraHelper {
     return (deg + 360.0) % 360.0;
   }
 
-  /// Shortest-path angular interpolation across the 0/360 degree wrap boundary.
   static double lerpAngleDegrees(double currentDeg, double targetDeg, double t) {
     final a = (currentDeg % 360.0 + 360.0) % 360.0;
     final b = (targetDeg % 360.0 + 360.0) % 360.0;
@@ -29,7 +27,6 @@ class DriverCameraHelper {
     return (a + diff * t.clamp(0.0, 1.0) + 360.0) % 360.0;
   }
 
-  /// Converts a 0..360 degree heading into a crisp cardinal label (N, NE, E, SE...).
   static String cardinalDirection(double headingDeg) {
     const dirs = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
     final normalized = ((headingDeg % 360.0) + 360.0) % 360.0;
@@ -64,7 +61,24 @@ class DriverCameraHelper {
     return LatLng(lat2 * 180.0 / math.pi, lon2 * 180.0 / math.pi);
   }
 
-  /// Builds either a 3D forward-looking cockpit camera or a crisp North-Up camera.
+  /// Keeps existing callers working while delegating to [buildNavigationCamera].
+  static CameraPosition buildForward3DCamera({
+    required LatLng driverLocation,
+    required double bearingDegrees,
+    double zoom = 18.4,
+    double tilt = 63.0,
+    double lookAheadMeters = 120.0,
+  }) {
+    return buildNavigationCamera(
+      driverLocation: driverLocation,
+      headingDegrees: bearingDegrees,
+      northUpMode: false,
+      zoom3D: zoom,
+      tilt3D: tilt,
+      lookAheadMeters: lookAheadMeters,
+    );
+  }
+
   static CameraPosition buildNavigationCamera({
     required LatLng driverLocation,
     required double headingDegrees,
