@@ -9,6 +9,8 @@ class SnappedRouteState {
   final LatLng snappedLocation;
   final List<LatLng> remainingPoints;
   final double roadBearing;
+  final double distanceToRouteMeters;
+  final bool isOffRoute;
   final int activeStepIndex;
   final double distanceToStepMeters;
   final double remainingRouteMeters;
@@ -17,14 +19,19 @@ class SnappedRouteState {
     required this.snappedLocation,
     required this.remainingPoints,
     required this.roadBearing,
+    required this.distanceToRouteMeters,
+    required this.isOffRoute,
     required this.activeStepIndex,
     required this.distanceToStepMeters,
     required this.remainingRouteMeters,
   });
 }
 
-/// Snaps GPS coordinates onto the active polyline, trims the traveled trail behind
-/// the driver, computes road-aligned bearing, and advances turn maneuvers.
+/// Evaluates driver position against the active road polyline:
+/// - Snaps driver marker cleanly to road segments
+/// - Trims traveled trail behind the driver
+/// - Computes true road segment bearing & off-route status
+/// - Advances active turn steps smoothly
 class RouteNavigationHelper {
   RouteNavigationHelper._();
 
@@ -34,14 +41,17 @@ class RouteNavigationHelper {
     required List<NavigationStep> steps,
     int currentStepIndex = 0,
     double fallbackHeading = 0.0,
-    double maxSnapMeters = 50.0,
-    double stepAdvanceThresholdMeters = 30.0,
+    double maxSnapMeters = 55.0,
+    double offRouteThresholdMeters = 68.0,
+    double stepAdvanceThresholdMeters = 32.0,
   }) {
     if (routePoints.isEmpty) {
       return SnappedRouteState(
         snappedLocation: rawLocation,
         remainingPoints: const [],
         roadBearing: fallbackHeading,
+        distanceToRouteMeters: 0,
+        isOffRoute: false,
         activeStepIndex: 0,
         distanceToStepMeters: 0,
         remainingRouteMeters: 0,
@@ -53,13 +63,15 @@ class RouteNavigationHelper {
         snappedLocation: routePoints.first,
         remainingPoints: routePoints,
         roadBearing: fallbackHeading,
+        distanceToRouteMeters: 0,
+        isOffRoute: false,
         activeStepIndex: 0,
         distanceToStepMeters: 0,
         remainingRouteMeters: 0,
       );
     }
 
-    // 1. Find closest point on polyline segments so joystick drift stays road-aligned
+    // 1. Closest point on polyline segments
     LatLng bestPoint = rawLocation;
     double bestDistMeters = double.infinity;
     int closestVertexIdx = 0;
@@ -81,27 +93,27 @@ class RouteNavigationHelper {
       }
     }
 
-    final snappedLoc =
-        bestDistMeters <= maxSnapMeters ? bestPoint : rawLocation;
+    final bool offRoute = bestDistMeters > offRouteThresholdMeters;
+    final snappedLoc = bestDistMeters <= maxSnapMeters ? bestPoint : rawLocation;
 
-    // 2. Build remaining polyline starting at snappedLoc (erasing traveled trail!)
+    // 2. Remaining route points ahead of snapped position (erases traveled trail)
     final remaining = <LatLng>[snappedLoc];
     for (int i = closestVertexIdx + 1; i < routePoints.length; i++) {
       remaining.add(routePoints[i]);
     }
 
-    // 3. Compute road-aligned bearing from current segment (no sideways joystick jitter!)
+    // 3. Road segment bearing
     final segStart = routePoints[closestVertexIdx];
-    final segEnd = routePoints[(closestVertexIdx + 1).clamp(0, routePoints.length - 1)];
+    final segEnd =
+        routePoints[(closestVertexIdx + 1).clamp(0, routePoints.length - 1)];
     final double bearing = (segStart.latitude == segEnd.latitude &&
             segStart.longitude == segEnd.longitude)
         ? fallbackHeading
         : _computeBearing(segStart, segEnd);
 
-    // 4. Advance active step if within threshold of current step's endLocation
-    int stepIdx = steps.isEmpty
-        ? 0
-        : currentStepIndex.clamp(0, steps.length - 1);
+    // 4. Advance step when approaching/passing current maneuver target
+    int stepIdx =
+        steps.isEmpty ? 0 : currentStepIndex.clamp(0, steps.length - 1);
 
     if (steps.isNotEmpty) {
       while (stepIdx < steps.length - 1) {
@@ -128,7 +140,7 @@ class RouteNavigationHelper {
           )
         : 0.0;
 
-    // 5. Sum remaining route meters ahead
+    // 5. Remaining distance along the road ahead
     double remainingMeters = 0.0;
     for (int i = 0; i < remaining.length - 1; i++) {
       remainingMeters += Geolocator.distanceBetween(
@@ -143,6 +155,8 @@ class RouteNavigationHelper {
       snappedLocation: snappedLoc,
       remainingPoints: remaining,
       roadBearing: bearing,
+      distanceToRouteMeters: bestDistMeters,
+      isOffRoute: offRoute,
       activeStepIndex: stepIdx,
       distanceToStepMeters: distToStep,
       remainingRouteMeters: remainingMeters,

@@ -10,9 +10,10 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/driver_camera_helper.dart';
+import '../../services/nav_voice_guidance.dart';
+import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
-import '../../services/rapidrun_map_markers.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -44,42 +45,49 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   StreamSubscription<Position>? _posSub;
 
   LatLng _currentLoc = const LatLng(32.7568, -97.4768);
-  LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
   LatLng _previousRawLoc = const LatLng(32.7568, -97.4768);
-  double _heading = 0.0;
+  LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
   double _chevronHeading360 = 0.0;
+  double _speedMps = 0.0;
   late final LatLng _storeLoc;
 
-  List<LatLng> _routePoints = const [];
+  List<LatLng> _fullRoutePoints = const [];
   List<LatLng> _remainingRoutePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
-  double _roadBearing = 0.0;
-  double _speedMps = 0.0;
+  double _distanceToStepMeters = 0.0;
+
+  bool _tripStarted = false;
+  bool _followCamera = true;
+  bool _northUpMode = false;
+  bool _muted = false;
+  bool _mapReady = false;
+  double _distanceMiles = 0.0;
+  int _etaMinutes = 0;
+  DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
   BitmapDescriptor _driverPuckIcon =
-      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan);
-
-  bool _tripStarted = false;
-  bool _followCamera = true;
-  bool _isProgrammaticMove = false;
-  bool _mapReady = false;
-  double _distanceMiles = 0.0;
-  int _etaMinutes = 0;
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
 
   @override
   void initState() {
     super.initState();
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
-    RapidRunMapMarkers.getPartnerStoreMarker().then((icon) {
-      if (mounted) setState(() => _storeMarkerIcon = icon);
-    });
-    RapidRunMapMarkers.getDriverNavigationPuck().then((icon) {
-      if (mounted) setState(() => _driverPuckIcon = icon);
-    });
+    NavVoiceGuidance.instance.resetTrip();
+    _loadMarkers();
     _initLocationAndRoute();
+  }
+
+  Future<void> _loadMarkers() async {
+    final storePin = await RapidRunMapMarkers.getPartnerStoreMarker();
+    final puckPin = await RapidRunMapMarkers.getDriverNavigationPuck();
+    if (!mounted) return;
+    setState(() {
+      _storeMarkerIcon = storePin;
+      _driverPuckIcon = puckPin;
+    });
   }
 
   Future<void> _initLocationAndRoute() async {
@@ -94,19 +102,20 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
           desiredAccuracy: LocationAccuracy.high,
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
+        _previousRawLoc = _currentLoc;
         _snappedLoc = _currentLoc;
-        if (pos.heading > 0) _heading = pos.heading;
+        if (pos.heading > 0) _chevronHeading360 = pos.heading % 360.0;
       }
     } catch (e) {
       debugPrint('Initial store GPS notice: $e');
     }
 
-    await _computeInitialRoute();
+    await _computeRoute(fromOrigin: _currentLoc);
 
     _posSub = Geolocator.getPositionStream(
       locationSettings: const LocationSettings(
         accuracy: LocationAccuracy.high,
-        distanceFilter: 10,
+        distanceFilter: 8,
       ),
     ).listen((pos) async {
       if (!mounted) return;
@@ -114,10 +123,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
       final snappedState = RouteNavigationHelper.evaluate(
         rawLocation: raw,
-        routePoints: _routePoints,
+        routePoints: _fullRoutePoints,
         steps: _steps,
         currentStepIndex: _activeStepIndex,
-        fallbackHeading: pos.heading > 0 ? pos.heading : _roadBearing,
+        fallbackHeading: _chevronHeading360,
       );
 
       final movedMeters = Geolocator.distanceBetween(
@@ -126,22 +135,34 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         raw.latitude,
         raw.longitude,
       );
-
-      final double travelBearing = movedMeters > 2.5
+      final double travelDeg = movedMeters > 2.0
           ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
           : snappedState.roadBearing;
 
-      final double desiredHeading = pos.heading > 0 && pos.speed > 1.0
-          ? DriverCameraHelper.lerpAngleDegrees(travelBearing, pos.heading, 0.35)
-          : DriverCameraHelper.lerpAngleDegrees(snappedState.roadBearing, travelBearing, 0.5);
+      final double blendedTarget = (pos.heading > 0 && pos.speed > 1.2)
+          ? DriverCameraHelper.lerpAngleDegrees(travelDeg, pos.heading, 0.35)
+          : DriverCameraHelper.lerpAngleDegrees(
+              snappedState.roadBearing,
+              travelDeg,
+              0.55,
+            );
 
-      final double smooth360Heading = DriverCameraHelper.lerpAngleDegrees(
+      final double smoothHeading = DriverCameraHelper.lerpAngleDegrees(
         _chevronHeading360,
-        desiredHeading,
-        0.45,
+        blendedTarget,
+        0.5,
       );
 
       _previousRawLoc = raw;
+
+      final now = DateTime.now();
+      if (_tripStarted &&
+          snappedState.isOffRoute &&
+          now.difference(_lastRerouteAt).inSeconds >= 6) {
+        _lastRerouteAt = now;
+        await _computeRoute(fromOrigin: raw);
+        return;
+      }
 
       final meters = snappedState.remainingRouteMeters > 0
           ? snappedState.remainingRouteMeters
@@ -159,38 +180,48 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         _snappedLoc = snappedState.snappedLocation;
         _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
             ? snappedState.remainingPoints
-            : _routePoints;
-        _roadBearing = smooth360Heading;
-        _chevronHeading360 = smooth360Heading;
+            : _fullRoutePoints;
+        _chevronHeading360 = smoothHeading;
         _speedMps = pos.speed.clamp(0.0, 60.0);
         _activeStepIndex = snappedState.activeStepIndex;
+        _distanceToStepMeters = snappedState.distanceToStepMeters;
         _distanceMiles = miles;
         _etaMinutes = mins;
       });
 
+      if (_steps.isNotEmpty) {
+        final activeStep =
+            _steps[_activeStepIndex.clamp(0, _steps.length - 1)];
+        NavVoiceGuidance.instance.onStepUpdated(
+          stepIndex: _activeStepIndex,
+          instruction: activeStep.instruction,
+          distanceToStepMeters: snappedState.distanceToStepMeters,
+        );
+      }
+
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
         'driverLat': pos.latitude,
         'driverLng': pos.longitude,
-        'driverHeading': _roadBearing,
+        'driverHeading': smoothHeading,
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true)).catchError((_) {});
 
       if (_tripStarted && _followCamera) {
-        await _animate3DFollowCamera();
+        await _applyNavigationCamera();
       }
     });
   }
 
-  Future<void> _computeInitialRoute() async {
+  Future<void> _computeRoute({required LatLng fromOrigin}) async {
     final result = await RoutePolylineService.instance.computeDrivingRoute(
-      origin: _currentLoc,
+      origin: fromOrigin,
       destination: _storeLoc,
       preference: widget.routingPreference,
     );
 
     final fallbackMeters = Geolocator.distanceBetween(
-      _currentLoc.latitude,
-      _currentLoc.longitude,
+      fromOrigin.latitude,
+      fromOrigin.longitude,
       _storeLoc.latitude,
       _storeLoc.longitude,
     );
@@ -201,13 +232,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         ? result.duration.inMinutes
         : (miles * 2.4).ceil().clamp(1, 99);
 
+    final pts =
+        result.points.isNotEmpty ? result.points : [fromOrigin, _storeLoc];
+
     if (!mounted) return;
     setState(() {
       _distanceMiles = miles;
       _etaMinutes = mins;
-      _routePoints =
-          result.points.isNotEmpty ? result.points : [_currentLoc, _storeLoc];
-      _remainingRoutePoints = _routePoints;
+      _fullRoutePoints = pts;
+      _remainingRoutePoints = pts;
+      _snappedLoc = fromOrigin;
       _steps = result.steps;
       _activeStepIndex = 0;
     });
@@ -215,12 +249,14 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
   String _formattedStepDistance(NavigationStep? step) {
     if (step == null) return '${_distanceMiles.toStringAsFixed(1)} mi';
-    final meters = Geolocator.distanceBetween(
-      _snappedLoc.latitude,
-      _snappedLoc.longitude,
-      step.endLocation.latitude,
-      step.endLocation.longitude,
-    );
+    final meters = _distanceToStepMeters > 0
+        ? _distanceToStepMeters
+        : Geolocator.distanceBetween(
+            _snappedLoc.latitude,
+            _snappedLoc.longitude,
+            step.endLocation.latitude,
+            step.endLocation.longitude,
+          );
     final feet = meters * 3.28084;
     if (feet < 1000) {
       final roundedFeet = ((feet / 25).round() * 25).clamp(25, 975);
@@ -229,31 +265,23 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     return '${(meters / 1609.344).toStringAsFixed(1)} mi';
   }
 
-  Future<void> _animate3DFollowCamera() async {
-    if (_mapController == null) return;
-    _isProgrammaticMove = true;
-    final cameraPos = DriverCameraHelper.buildForward3DCamera(
+  Future<void> _applyNavigationCamera() async {
+    final cameraPos = DriverCameraHelper.buildNavigationCamera(
       driverLocation: _snappedLoc,
-      bearingDegrees: _roadBearing,
-      zoom: 18.4,
-      tilt: 63.0,
-      lookAheadMeters: 120.0,
+      headingDegrees: _chevronHeading360,
+      northUpMode: _northUpMode,
     );
-    await _mapController!.animateCamera(
-      CameraUpdate.newCameraPosition(cameraPos),
-    );
-    await Future.delayed(const Duration(milliseconds: 300));
-    _isProgrammaticMove = false;
+    await _mapController?.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
   }
 
   Future<void> _fitFullRouteOverview() async {
-    if (_routePoints.length < 2 || _mapController == null) return;
-    double minLat = _routePoints.first.latitude;
-    double maxLat = _routePoints.first.latitude;
-    double minLng = _routePoints.first.longitude;
-    double maxLng = _routePoints.first.longitude;
+    if (_remainingRoutePoints.length < 2 || _mapController == null) return;
+    double minLat = _remainingRoutePoints.first.latitude;
+    double maxLat = _remainingRoutePoints.first.latitude;
+    double minLng = _remainingRoutePoints.first.longitude;
+    double maxLng = _remainingRoutePoints.first.longitude;
 
-    for (final p in _routePoints) {
+    for (final p in _remainingRoutePoints) {
       if (p.latitude < minLat) minLat = p.latitude;
       if (p.latitude > maxLat) maxLat = p.latitude;
       if (p.longitude < minLng) minLng = p.longitude;
@@ -285,7 +313,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       }, SetOptions(merge: true));
     } catch (_) {}
 
-    await _animate3DFollowCamera();
+    await _applyNavigationCamera();
   }
 
   Future<void> _openExternalGoogleMaps() async {
@@ -340,12 +368,19 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE6B450);
+    const urgencyAmber = Color(0xFFFFC857);
     const cardBg = Color(0xFF171A21);
 
-    final NavigationStep? currentStep =
-        _steps.isNotEmpty ? _steps[_activeStepIndex.clamp(0, _steps.length - 1)] : null;
+    final NavigationStep? currentStep = _steps.isNotEmpty
+        ? _steps[_activeStepIndex.clamp(0, _steps.length - 1)]
+        : null;
     final NavigationStep? nextStep =
         (_activeStepIndex + 1 < _steps.length) ? _steps[_activeStepIndex + 1] : null;
+
+    final bool turnImminent =
+        _distanceToStepMeters > 0 && _distanceToStepMeters <= 68.0;
+    final int mph = (_speedMps * 2.23694).round();
+    final String cardinal = DriverCameraHelper.cardinalDirection(_chevronHeading360);
 
     return Scaffold(
       backgroundColor: const Color(0xFF121418),
@@ -363,18 +398,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 buildingsEnabled: true,
                 trafficEnabled: false,
                 onCameraMoveStarted: () {
-                  if (!_isProgrammaticMove && _tripStarted && _followCamera) {
+                  if (_tripStarted && _followCamera) {
                     setState(() => _followCamera = false);
                   }
                 },
                 onMapCreated: (c) async {
                   _mapController = c;
                   if (mounted) setState(() => _mapReady = true);
-                  try {
-                    await c.setMapStyle(midnightTitaniumMapStyle);
-                  } catch (e) {
-                    debugPrint('Map style notice: $e');
-                  }
                   await _fitFullRouteOverview();
                 },
                 markers: {
@@ -402,7 +432,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 polylines: {
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_glow'),
-                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
+                    points: _remainingRoutePoints,
                     color: gold.withValues(alpha: 0.30),
                     width: 12,
                     jointType: JointType.round,
@@ -411,7 +441,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   ),
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_core'),
-                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
+                    points: _remainingRoutePoints,
                     color: gold,
                     width: 6,
                     jointType: JointType.round,
@@ -440,12 +470,17 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 220),
+                  curve: Curves.fastOutSlowIn,
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: const Color(0xFF14171E).withValues(alpha: 0.96),
                     borderRadius: BorderRadius.circular(18),
-                    border: Border.all(color: gold.withValues(alpha: 0.45), width: 1.2),
+                    border: Border.all(
+                      color: turnImminent ? urgencyAmber : gold.withValues(alpha: 0.45),
+                      width: turnImminent ? 1.8 : 1.2,
+                    ),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black.withValues(alpha: 0.65),
@@ -460,7 +495,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                         width: 48,
                         height: 48,
                         decoration: BoxDecoration(
-                          color: gold,
+                          color: turnImminent ? urgencyAmber : gold,
                           borderRadius: BorderRadius.circular(14),
                         ),
                         child: Icon(
@@ -474,14 +509,39 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              _formattedStepDistance(currentStep),
-                              style: const TextStyle(
-                                color: gold,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: -0.3,
-                              ),
+                            Row(
+                              children: [
+                                Text(
+                                  _formattedStepDistance(currentStep),
+                                  style: TextStyle(
+                                    color: turnImminent ? urgencyAmber : gold,
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w900,
+                                    letterSpacing: -0.3,
+                                  ),
+                                ),
+                                if (turnImminent) ...[
+                                  const SizedBox(width: 8),
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 6,
+                                      vertical: 2,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: urgencyAmber.withValues(alpha: 0.2),
+                                      borderRadius: BorderRadius.circular(6),
+                                    ),
+                                    child: const Text(
+                                      'TURN NOW',
+                                      style: TextStyle(
+                                        color: urgencyAmber,
+                                        fontSize: 9.5,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ],
                             ),
                             const SizedBox(height: 2),
                             Text(
@@ -548,48 +608,73 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             ),
           ),
 
-          if (_tripStarted)
-            Positioned(
-              left: 16,
-              bottom: 215,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF14171E).withValues(alpha: 0.96),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: gold.withValues(alpha: 0.4)),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: 0.5),
-                      blurRadius: 12,
-                    ),
-                  ],
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      '${(_speedMps * 2.23694).round()}',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 19,
-                        fontWeight: FontWeight.w900,
-                        height: 1.0,
+          Positioned(
+            left: 14,
+            bottom: 215,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
+              decoration: BoxDecoration(
+                color: cardBg.withValues(alpha: 0.95),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: gold.withValues(alpha: 0.35)),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        '$mph',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w900,
+                          height: 1.0,
+                        ),
                       ),
-                    ),
-                    const Text(
-                      'MPH',
-                      style: TextStyle(
-                        color: gold,
-                        fontSize: 9,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 0.8,
+                      const Text(
+                        'MPH',
+                        style: TextStyle(
+                          color: gold,
+                          fontSize: 8.5,
+                          fontWeight: FontWeight.w900,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
+                    ],
+                  ),
+                  Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 9),
+                    width: 1,
+                    height: 24,
+                    color: Colors.white12,
+                  ),
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        cardinal,
+                        style: const TextStyle(
+                          color: gold,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w900,
+                          height: 1.0,
+                        ),
+                      ),
+                      Text(
+                        '${_chevronHeading360.round()}°',
+                        style: const TextStyle(
+                          color: Colors.white60,
+                          fontSize: 9,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
+          ),
 
           Positioned(
             right: 14,
@@ -597,13 +682,46 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             child: Column(
               children: [
                 FloatingActionButton.small(
+                  heroTag: 'north_3d_toggle',
+                  backgroundColor: cardBg,
+                  foregroundColor: _northUpMode ? const Color(0xFF38BDF8) : gold,
+                  tooltip: _northUpMode ? 'Switch to 3D Heading-Up' : 'Switch to North-Up',
+                  onPressed: () {
+                    HapticFeedback.selectionClick();
+                    setState(() {
+                      _northUpMode = !_northUpMode;
+                      _followCamera = true;
+                    });
+                    _applyNavigationCamera();
+                  },
+                  child: Icon(
+                    _northUpMode ? Icons.explore_rounded : Icons.view_in_ar_rounded,
+                    size: 20,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                FloatingActionButton.small(
+                  heroTag: 'voice_mute_toggle',
+                  backgroundColor: cardBg,
+                  foregroundColor: _muted ? Colors.white38 : gold,
+                  onPressed: () {
+                    NavVoiceGuidance.instance.toggleMute();
+                    setState(() => _muted = NavVoiceGuidance.instance.muted);
+                  },
+                  child: Icon(
+                    _muted ? Icons.volume_off_rounded : Icons.volume_up_rounded,
+                    size: 20,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                FloatingActionButton.small(
                   heroTag: 'recenter_3d_cam',
                   backgroundColor: cardBg,
                   foregroundColor: _followCamera ? gold : Colors.white70,
                   onPressed: () {
                     HapticFeedback.selectionClick();
                     setState(() => _followCamera = true);
-                    _animate3DFollowCamera();
+                    _applyNavigationCamera();
                   },
                   child: const Icon(Icons.navigation_rounded, size: 20),
                 ),
@@ -669,7 +787,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                           borderRadius: BorderRadius.circular(6),
                         ),
                         child: Text(
-                          widget.routingPreference.name.toUpperCase(),
+                          _northUpMode ? 'NORTH-UP' : widget.routingPreference.name.toUpperCase(),
                           style: const TextStyle(
                             color: gold,
                             fontSize: 9.5,
