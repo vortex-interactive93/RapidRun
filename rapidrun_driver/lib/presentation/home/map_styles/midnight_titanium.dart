@@ -1,7 +1,9 @@
 // File: rapidrun_driver/lib/presentation/home/map_styles/midnight_titanium.dart
 
-/// Validated dark-titanium Google Maps style JSON with lifted building and
-/// road contrast tailored for RapidRun's gold (#E6B450) navigation UI.
+/// Ultra-clean dark-titanium map style for RapidRun:
+/// - Lifts 3D building silhouettes for depth without visual noise
+/// - Hides ALL third-party Google POI icons & business labels (dealerships,
+///   pet stores, restaurants) so ONLY RapidRun partner stores stand out!
 const String midnightTitaniumMapStyle = '''
 [
   {
@@ -13,7 +15,7 @@ const String midnightTitaniumMapStyle = '''
   {
     "elementType": "labels.text.fill",
     "stylers": [
-      { "color": "#B6C0CE" }
+      { "color": "#9AA5B4" }
     ]
   },
   {
@@ -27,36 +29,42 @@ const String midnightTitaniumMapStyle = '''
     "featureType": "landscape",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#181C24" }
+      { "color": "#171B23" }
     ]
   },
   {
     "featureType": "landscape.man_made",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#282E3A" }
+      { "color": "#262C38" }
     ]
   },
   {
     "featureType": "landscape.man_made",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#6B572B" },
+      { "color": "#5C4B26" },
       { "weight": 0.7 }
     ]
   },
   {
     "featureType": "poi",
-    "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#242934" }
+      { "visibility": "off" }
     ]
   },
   {
     "featureType": "poi.park",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#14221B" }
+      { "visibility": "on" },
+      { "color": "#14211B" }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      { "visibility": "off" }
     ]
   },
   {
@@ -70,7 +78,7 @@ const String midnightTitaniumMapStyle = '''
     "featureType": "road",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#13161D" },
+      { "color": "#12151C" },
       { "weight": 1.1 }
     ]
   },
@@ -78,7 +86,7 @@ const String midnightTitaniumMapStyle = '''
     "featureType": "road.highway",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#313746" }
+      { "color": "#303645" }
     ]
   },
   {

@@ -12,6 +12,7 @@ import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/driver_camera_helper.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
+import '../../services/rapidrun_map_markers.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -51,6 +52,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
 
+  BitmapDescriptor _storeMarkerIcon =
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
+
   bool _tripStarted = false;
   bool _followCamera = true;
   bool _isProgrammaticMove = false;
@@ -62,6 +66,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   void initState() {
     super.initState();
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
+    RapidRunMapMarkers.getPartnerStoreMarker().then((icon) {
+      if (mounted) setState(() => _storeMarkerIcon = icon);
+    });
     _initLocationAndRoute();
   }
 
@@ -340,12 +347,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                     icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan),
                   ),
                   Marker(
-                    markerId: const MarkerId('store_pin'),
+                    markerId: const MarkerId('rapidrun_partner_store'),
                     position: _storeLoc,
-                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+                    icon: _storeMarkerIcon,
+                    anchor: const Offset(0.5, 0.9),
                     infoWindow: InfoWindow(
                       title: widget.storeName,
-                      snippet: widget.storeAddress,
+                      snippet: 'RapidRun Partner Store • ${widget.storeAddress}',
                     ),
                   ),
                 },
