@@ -1,9 +1,7 @@
 // File: rapidrun_driver/lib/presentation/home/map_styles/midnight_titanium.dart
 
-/// High-contrast dark-titanium map theme engineered to stay legible at wide,
-/// mid-range, and close zoom levels while keeping POI clutter off so RapidRun
-/// partner stores and the gold (#E6B450) route command attention.
-const String midnightTitaniumMapStyle = '''
+/// High-contrast dark-titanium map theme for RapidRun maps and navigation.
+const String midnightTitaniumMapStyle = r'''
 [
   {
     "elementType": "geometry",
