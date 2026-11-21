@@ -3,7 +3,7 @@
 /// Official Google Cloud Vector Map ID linked to RapidRun Midnight Gold 3D style.
 const String rapidRunCloudMapId = String.fromEnvironment(
   'GOOGLE_MAPS_CLOUD_MAP_ID',
-  defaultValue: '2af4647f58c6980d282d3d4b',
+  defaultValue: '2af4647f58c6980d6ea47ab0',
 );
 
 /// High-contrast dark-titanium map style fallback for RapidRun maps and navigation.
