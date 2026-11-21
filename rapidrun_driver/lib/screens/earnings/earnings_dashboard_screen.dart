@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
+import '../../services/unified_driver_wallet_controller.dart';
 import '../../widgets/wallet/apex_pro_tax_card.dart';
 
 class EarningsDashboardScreen extends StatefulWidget {
@@ -38,7 +39,8 @@ class _EarningsDashboardScreenState extends State<EarningsDashboardScreen> {
 
     await Future.delayed(const Duration(milliseconds: 1200));
 
-    final double transferred = driverEarningsState.executeInstantCashout();
+    final double transferred = UnifiedDriverWalletController.instance.executeCashout();
+    driverEarningsState.executeInstantCashout();
 
     if (!mounted) return;
     setState(() => _cashingOut = false);
@@ -78,13 +80,14 @@ class _EarningsDashboardScreenState extends State<EarningsDashboardScreen> {
     const cardSurface = Color(0xFF1C1C1C);
 
     return ListenableBuilder(
-      listenable: driverEarningsState,
+      listenable: UnifiedDriverWalletController.instance,
       builder: (context, _) {
-        final currentBalance = widget.currentBalance ?? driverEarningsState.availableCashout;
-        final weekTotal = widget.weekTotal ?? driverEarningsState.thisWeekTotal;
-        final basePay = widget.basePay ?? driverEarningsState.basePay;
-        final customerTips = widget.customerTips ?? driverEarningsState.customerTips;
-        final boostedTips = widget.boostedTips ?? driverEarningsState.boostedTips;
+        final wallet = UnifiedDriverWalletController.instance;
+        final currentBalance = widget.currentBalance ?? wallet.availableCashout;
+        final weekTotal = widget.weekTotal ?? wallet.thisWeekEarnings;
+        final basePay = widget.basePay ?? wallet.basePay;
+        final customerTips = widget.customerTips ?? wallet.customerTips;
+        final boostedTips = widget.boostedTips ?? wallet.boostedTips;
         final surgeBonus = widget.surgeBonus ?? driverEarningsState.surgeBonuses;
         final ytdMiles = widget.ytdMiles ?? driverEarningsState.ytdMiles;
 

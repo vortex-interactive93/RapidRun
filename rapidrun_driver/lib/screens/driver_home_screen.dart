@@ -12,8 +12,6 @@ import '../presentation/home/map_styles/midnight_titanium.dart';
 import '../presentation/home/tactical_flight_deck.dart';
 import '../presentation/home/tactical_demand_deck.dart';
 import '../services/driver_dispatch_listener.dart';
-import '../services/driver_earnings_ledger_service.dart';
-import '../services/canonical_driver_earnings.dart';
 import '../services/unified_driver_wallet_controller.dart';
 import '../services/route_polyline_service.dart';
 import '../widgets/radar/driver_shift_adjustment_sheet.dart';
@@ -191,10 +189,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
       if (!snap.exists) return;
       final data = snap.data() ?? {};
       final newOnline = data['online'] == true;
-      final balance = (data['balance'] as num?)?.toDouble() ?? 0.0;
       final earnings = (data['todayEarnings'] as num?)?.toDouble() ?? 0.0;
       final trips = (data['totalDeliveriesCompleted'] as num?)?.toInt() ?? 0;
-      final boosted = (data['boostedTips'] as num?)?.toDouble() ?? 0.0;
       final ts = data['availableUntil'];
       DateTime? until;
       if (ts is Timestamp) until = ts.toDate();
@@ -206,13 +202,6 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           _todayEarnings = earnings;
           _completedTrips = trips;
         });
-
-        driverEarningsState.syncFromFirestoreData(
-          balance: balance,
-          todayEarnings: earnings,
-          completedRuns: trips,
-          boosted: boosted,
-        );
 
         if (_online && _availableUntil != null) {
           _startCountdownTimer();
@@ -253,37 +242,27 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'pendingBoostAmount': FieldValue.delete(),
         });
 
-        // 2. Record tip boost delta in CanonicalEarningsService & DriverEarningsLedgerService
-        final String storeName = (data['storeName'] ?? 'Bath & Body Works').toString();
-        await CanonicalEarningsService().applyIncrementalTipBoost(
-          driverId: widget.driverId,
-          orderId: doc.id,
-          incrementalBoost: incrementalBoost,
-        );
-        await DriverEarningsLedgerService().recordTipBoostDelta(
-          orderId: doc.id,
-          storeName: storeName,
-          newTotalTipBoost: incrementalBoost,
-        );
-
-        // 3. Credit driver wallet document ONCE
-        await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
-          'todayEarnings': FieldValue.increment(incrementalBoost),
-          'balance': FieldValue.increment(incrementalBoost),
-          'customerTips': FieldValue.increment(incrementalBoost),
-          'boostedTips': FieldValue.increment(incrementalBoost),
-          'updatedAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
-
-        // 4. Update unified wallet controller & local reactive state
+        // 2. Record tip boost in UnifiedDriverWalletController (idempotent single source of truth)
         UnifiedDriverWalletController.instance.recordTipBoost(
           boostEventId: token,
           orderId: doc.id,
           incrementalBoost: incrementalBoost,
         );
-        driverEarningsState.recordTipBoost(incrementalBoost);
+
+        // 3. Persist exact wallet totals to Firestore drivers doc
+        final wallet = UnifiedDriverWalletController.instance;
+        await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
+          'todayEarnings': wallet.todayEarnings,
+          'thisWeekEarnings': wallet.thisWeekEarnings,
+          'balance': wallet.availableCashout,
+          'availableCashout': wallet.availableCashout,
+          'customerTips': wallet.customerTips,
+          'boostedTips': wallet.boostedTips,
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
 
         // 4. Trigger celebration banner
+        HapticFeedback.heavyImpact();
         HapticFeedback.heavyImpact();
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(

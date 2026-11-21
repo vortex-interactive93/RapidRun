@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
+import '../../services/unified_driver_wallet_controller.dart';
 import '../earnings/earnings_dashboard_screen.dart';
 import '../driver_menu/trip_history_screen.dart';
 import '../driver_menu/vehicle_compliance_screen.dart';
@@ -46,10 +47,11 @@ class DriverDrawer extends StatelessWidget {
     final displayName = driverName ?? user?.displayName ?? (user?.email?.split('@').first) ?? 'Courier';
 
     return ListenableBuilder(
-      listenable: driverEarningsState,
+      listenable: UnifiedDriverWalletController.instance,
       builder: (context, _) {
-        final activeEarnings = todayEarnings ?? driverEarningsState.availableCashout;
-        final activeTrips = completedTrips ?? driverEarningsState.completedTrips;
+        final wallet = UnifiedDriverWalletController.instance;
+        final activeEarnings = todayEarnings ?? wallet.todayEarnings;
+        final activeTrips = completedTrips ?? wallet.completedTrips;
 
         return Drawer(
           backgroundColor: bg,

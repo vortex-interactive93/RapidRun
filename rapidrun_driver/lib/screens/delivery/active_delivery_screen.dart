@@ -189,7 +189,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       debugPrint('Order completion Firestore notice: $e');
     }
 
-    // 2. Update authenticated driver profile & earnings doc safely
+    // 2. Record completed order in UnifiedDriverWalletController (idempotent single source of truth)
+    UnifiedDriverWalletController.instance.recordOrderCompleted(
+      orderId: widget.orderId,
+      totalPayout: widget.payout,
+      tipAmount: widget.tipAmount,
+    );
+    final wallet = UnifiedDriverWalletController.instance;
+
+    // 3. Persist exact wallet totals to Firestore drivers doc
     final targetDriverDocId =
     (authUid != null && authUid.isNotEmpty) ? authUid : resolvedDriverId;
     try {
@@ -200,45 +208,19 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         'currentOrderId': FieldValue.delete(),
         'currentOrderStatus': FieldValue.delete(),
         'activeOrderId': FieldValue.delete(),
-        'todayEarnings': FieldValue.increment(widget.payout),
-        'balance': FieldValue.increment(widget.payout),
-        'totalDeliveriesCompleted': FieldValue.increment(1),
+        'todayEarnings': wallet.todayEarnings,
+        'thisWeekEarnings': wallet.thisWeekEarnings,
+        'balance': wallet.availableCashout,
+        'availableCashout': wallet.availableCashout,
+        'basePay': wallet.basePay,
+        'customerTips': wallet.customerTips,
+        'boostedTips': wallet.boostedTips,
+        'totalDeliveriesCompleted': wallet.completedTrips,
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
     } catch (e) {
       debugPrint('Driver profile update notice: $e');
     }
-
-    // 3. Record batch credit entry in CanonicalEarningsService & DriverEarningsLedgerService
-    final basePayout = (widget.payout - widget.tipAmount).clamp(0.0, widget.payout);
-    try {
-      await CanonicalEarningsService().recordCompletedBatch(
-        driverId: targetDriverDocId,
-        orderId: widget.orderId,
-        totalPayout: widget.payout,
-        tipAmount: widget.tipAmount,
-      );
-      await DriverEarningsLedgerService(overrideDriverId: targetDriverDocId)
-          .recordCompletedBatch(
-        orderId: widget.orderId,
-        storeName: 'Bath & Body Works',
-        basePayout: basePayout,
-        initialTip: widget.tipAmount,
-      );
-    } catch (e) {
-      debugPrint('Driver ledger record notice: $e');
-    }
-
-    // 4. Update unified wallet controller & shared reactive earnings state immediately
-    UnifiedDriverWalletController.instance.recordOrderCompleted(
-      orderId: widget.orderId,
-      totalPayout: widget.payout,
-      tipAmount: widget.tipAmount,
-    );
-    driverEarningsState.recordCompletedBatch(
-      payoutAmount: widget.payout,
-      tip: widget.tipAmount,
-    );
 
     if (!mounted) return;
     setState(() => _isCompleting = false);

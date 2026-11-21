@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
+import '../services/unified_driver_wallet_controller.dart';
 import '../widgets/radar/driver_availability_orb.dart';
 import '../widgets/radar/surge_radar_bar.dart';
 import '../widgets/map/driver_map_overlay_painter.dart';
@@ -145,7 +146,7 @@ class _DriverCockpitScreenState extends State<DriverCockpitScreen>
 
                         // Synchronized Earnings
                         ListenableBuilder(
-                          listenable: driverEarningsState,
+                          listenable: UnifiedDriverWalletController.instance,
                           builder: (context, _) {
                             return Container(
                               padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 8.0),
@@ -155,7 +156,7 @@ class _DriverCockpitScreenState extends State<DriverCockpitScreen>
                                 border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
                               ),
                               child: Text(
-                                '\$${driverEarningsState.todayEarnings.toStringAsFixed(2)}',
+                                '\$${UnifiedDriverWalletController.instance.todayEarnings.toStringAsFixed(2)}',
                                 style: const TextStyle(
                                   color: Color(0xFFE5A93C),
                                   fontSize: 13.0,
