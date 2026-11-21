@@ -15,6 +15,7 @@ import '../../services/nav_voice_guidance.dart';
 import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
+import '../../services/arrival_proximity_helper.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -63,11 +64,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   bool _northUpMode = false;
   bool _muted = false;
   bool _mapReady = false;
+  bool _withinStoreRange = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+  final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -180,6 +183,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       final miles = meters / 1609.344;
       final mins = (miles * 2.4).ceil().clamp(1, 99);
 
+      final bool inRange = _proximityHelper.checkWithinRange(
+        currentLocation: snappedState.snappedLocation,
+        targetLocation: _storeLoc,
+        thresholdMeters: 50.0,
+      );
+
       setState(() {
         _currentLoc = raw;
         _snappedLoc = snappedState.snappedLocation;
@@ -192,6 +201,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         _distanceToStepMeters = snappedState.distanceToStepMeters;
         _distanceMiles = miles;
         _etaMinutes = mins;
+        _withinStoreRange = inRange;
       });
 
       if (_steps.isNotEmpty) {
@@ -879,9 +889,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                               ),
                               onPressed: _arrivedAtStoreAndPick,
                               icon: const Icon(Icons.storefront_rounded, size: 20),
-                              label: const Text(
-                                'ARRIVED AT STORE • START PICKING',
-                                style: TextStyle(
+                              label: Text(
+                                _withinStoreRange
+                                    ? 'STORE NEARBY • START PICKING'
+                                    : 'ARRIVED AT STORE • START PICKING',
+                                style: const TextStyle(
                                   fontWeight: FontWeight.w900,
                                   fontSize: 13,
                                   letterSpacing: 0.4,

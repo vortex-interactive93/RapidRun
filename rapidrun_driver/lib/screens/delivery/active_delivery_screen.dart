@@ -16,6 +16,7 @@ import '../../services/phone_heading_controller.dart';
 import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
+import '../../services/arrival_proximity_helper.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 
@@ -80,6 +81,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   bool _mapReady = false;
 
   final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+  final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
 
   BitmapDescriptor _driverPuckIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -186,6 +188,12 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       final miles = meters / 1609.344;
       final mins = (miles * 2.4).ceil().clamp(1, 99);
 
+      final bool inRange = _proximityHelper.checkWithinRange(
+        currentLocation: snappedState.snappedLocation,
+        targetLocation: _customerLoc,
+        thresholdMeters: 50.0,
+      );
+
       setState(() {
         _currentLoc = raw;
         _snappedLoc = snappedState.snappedLocation;
@@ -198,6 +206,9 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         _activeStepIndex = snappedState.activeStepIndex;
         _distanceMiles = miles;
         _etaMinutes = mins;
+        if (inRange && !_arrivedAtCustomer) {
+          _arrivedAtCustomer = true;
+        }
       });
 
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
