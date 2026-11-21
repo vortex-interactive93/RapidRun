@@ -10,12 +10,12 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/driver_camera_helper.dart';
-import '../../services/phone_heading_controller.dart';
 import '../../services/nav_voice_guidance.dart';
+import '../../services/phone_heading_controller.dart';
 import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
-import '../../services/arrival_proximity_helper.dart';
+import '../../services/smooth_navigation_tracker.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -42,12 +42,13 @@ class StartTripToStoreScreen extends StatefulWidget {
   State<StartTripToStoreScreen> createState() => _StartTripToStoreScreenState();
 }
 
-class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
+class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
+    with WidgetsBindingObserver, TickerProviderStateMixin {
   GoogleMapController? _mapController;
-  StreamSubscription<Position>? _posSub;
+  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+  final SmoothNavigationTracker _navTracker = SmoothNavigationTracker();
 
   LatLng _currentLoc = const LatLng(32.7568, -97.4768);
-  LatLng _previousRawLoc = const LatLng(32.7568, -97.4768);
   LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
   double _chevronHeading360 = 0.0;
   double _speedMps = 0.0;
@@ -64,13 +65,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   bool _northUpMode = false;
   bool _muted = false;
   bool _mapReady = false;
-  bool _withinStoreRange = false;
+  bool _hasInitialRoute = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
+  DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
-
-  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
-  final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -80,19 +79,18 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
     NavVoiceGuidance.instance.resetTrip();
-    _phoneHeading.startListening(
-      onHeadingChanged: (deg) {
-        if (!mounted || _speedMps >= 2.2) return;
-        setState(() => _chevronHeading360 = deg);
-        if (_tripStarted && _followCamera) {
-          _applyNavigationCamera();
-        }
-      },
-    );
     _loadMarkers();
     _initLocationAndRoute();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _tripStarted && _followCamera) {
+      _applyNavigationCamera(force: true);
+    }
   }
 
   Future<void> _loadMarkers() async {
@@ -117,7 +115,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
           desiredAccuracy: LocationAccuracy.high,
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
-        _previousRawLoc = _currentLoc;
         _snappedLoc = _currentLoc;
         if (pos.heading > 0) _chevronHeading360 = pos.heading % 360.0;
       }
@@ -127,104 +124,110 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
     await _computeRoute(fromOrigin: _currentLoc);
 
-    _posSub = Geolocator.getPositionStream(
-      locationSettings: const LocationSettings(
-        accuracy: LocationAccuracy.high,
-        distanceFilter: 8,
-      ),
-    ).listen((pos) async {
-      if (!mounted) return;
-      final raw = LatLng(pos.latitude, pos.longitude);
+    _phoneHeading.startListening(
+      onHeadingChanged: (deg) {
+        if (!mounted || _speedMps >= 2.2) return;
+        setState(() => _chevronHeading360 = deg);
+      },
+    );
 
-      final snappedState = RouteNavigationHelper.evaluate(
-        rawLocation: raw,
-        routePoints: _fullRoutePoints,
-        steps: _steps,
-        currentStepIndex: _activeStepIndex,
-        fallbackHeading: _chevronHeading360,
-      );
+    _navTracker.start(
+      vsync: this,
+      initialLocation: _snappedLoc,
+      initialHeading: _chevronHeading360,
+      getFullRoutePoints: () => _fullRoutePoints,
+      getSteps: () => _steps,
+      getActiveStepIndex: () => _activeStepIndex,
+      onFrameTick: (smoothLoc, smoothHeading) {
+        if (!mounted) return;
+        final displayHeading = (_navTracker.currentSpeedMps < 2.2)
+            ? _phoneHeading.fusedHeadingDeg
+            : smoothHeading;
 
-      final movedMeters = Geolocator.distanceBetween(
-        _previousRawLoc.latitude,
-        _previousRawLoc.longitude,
-        raw.latitude,
-        raw.longitude,
-      );
-      final double travelDeg = movedMeters > 2.0
-          ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
-          : snappedState.roadBearing;
+        setState(() {
+          _snappedLoc = smoothLoc;
+          _chevronHeading360 = displayHeading;
+        });
 
-      final double speedMpsVal = pos.speed.clamp(0.0, 60.0);
-      final double smoothHeading = _phoneHeading.updateHeading(
-        movementOrRoadBearingDeg: travelDeg,
-        speedMps: speedMpsVal,
-        gpsHeadingDeg: pos.heading > 0 ? pos.heading : null,
-      );
+        if (_tripStarted && _followCamera && _mapController != null) {
+          final now = DateTime.now();
+          if (now.difference(_lastCameraMoveAt).inMilliseconds < 60) return;
+          _lastCameraMoveAt = now;
 
-      _previousRawLoc = raw;
+          final cam = DriverCameraHelper.buildNavigationCamera(
+            driverLocation: smoothLoc,
+            headingDegrees: displayHeading,
+            northUpMode: _northUpMode,
+            zoom3D: 18.2,
+            tilt3D: 60.0,
+            lookAheadMeters: 105.0,
+          );
+          _mapController!.moveCamera(CameraUpdate.newCameraPosition(cam));
+        }
+      },
+      onGpsFix: (pos, snappedState) async {
+        if (!mounted || !_hasInitialRoute) return;
+        final raw = LatLng(pos.latitude, pos.longitude);
 
-      final now = DateTime.now();
-      if (_tripStarted &&
-          snappedState.isOffRoute &&
-          now.difference(_lastRerouteAt).inSeconds >= 6) {
-        _lastRerouteAt = now;
-        await _computeRoute(fromOrigin: raw);
-        return;
-      }
-
-      final meters = snappedState.remainingRouteMeters > 0
-          ? snappedState.remainingRouteMeters
-          : Geolocator.distanceBetween(
-              raw.latitude,
-              raw.longitude,
-              _storeLoc.latitude,
-              _storeLoc.longitude,
-            );
-      final miles = meters / 1609.344;
-      final mins = (miles * 2.4).ceil().clamp(1, 99);
-
-      final bool inRange = _proximityHelper.checkWithinRange(
-        currentLocation: snappedState.snappedLocation,
-        targetLocation: _storeLoc,
-        thresholdMeters: 50.0,
-      );
-
-      setState(() {
-        _currentLoc = raw;
-        _snappedLoc = snappedState.snappedLocation;
-        _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
-            ? snappedState.remainingPoints
-            : _fullRoutePoints;
-        _chevronHeading360 = smoothHeading;
-        _speedMps = pos.speed.clamp(0.0, 60.0);
-        _activeStepIndex = snappedState.activeStepIndex;
-        _distanceToStepMeters = snappedState.distanceToStepMeters;
-        _distanceMiles = miles;
-        _etaMinutes = mins;
-        _withinStoreRange = inRange;
-      });
-
-      if (_steps.isNotEmpty) {
-        final activeStep =
-            _steps[_activeStepIndex.clamp(0, _steps.length - 1)];
-        NavVoiceGuidance.instance.onStepUpdated(
-          stepIndex: _activeStepIndex,
-          instruction: activeStep.instruction,
-          distanceToStepMeters: snappedState.distanceToStepMeters,
+        _phoneHeading.updateHeading(
+          movementOrRoadBearingDeg: snappedState.roadBearing,
+          speedMps: pos.speed.clamp(0.0, 60.0),
+          gpsHeadingDeg: pos.heading > 0 ? pos.heading : null,
         );
-      }
 
-      FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
-        'driverLat': pos.latitude,
-        'driverLng': pos.longitude,
-        'driverHeading': smoothHeading,
-        'updatedAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true)).catchError((_) {});
+        final now = DateTime.now();
+        if (_tripStarted &&
+            snappedState.distanceToRouteMeters > 110.0 &&
+            now.difference(_lastRerouteAt).inSeconds >= 10) {
+          _lastRerouteAt = now;
+          await _computeRoute(fromOrigin: raw);
+          return;
+        }
 
-      if (_tripStarted && _followCamera) {
-        await _applyNavigationCamera();
-      }
-    });
+        final meters = snappedState.remainingRouteMeters > 0
+            ? snappedState.remainingRouteMeters
+            : Geolocator.distanceBetween(
+                raw.latitude,
+                raw.longitude,
+                _storeLoc.latitude,
+                _storeLoc.longitude,
+              );
+        final miles = meters / 1609.344;
+        final rawMins = (miles * 2.3).ceil().clamp(1, 99);
+        final steadyMins = _etaMinutes == 0
+            ? rawMins
+            : ((_etaMinutes * 0.7) + (rawMins * 0.3)).round().clamp(1, 99);
+
+        setState(() {
+          _currentLoc = raw;
+          _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
+              ? snappedState.remainingPoints
+              : _fullRoutePoints;
+          _speedMps = pos.speed.clamp(0.0, 60.0);
+          _activeStepIndex = snappedState.activeStepIndex;
+          _distanceToStepMeters = snappedState.distanceToStepMeters;
+          _distanceMiles = miles;
+          _etaMinutes = steadyMins;
+        });
+
+        if (_steps.isNotEmpty) {
+          final activeStep =
+              _steps[_activeStepIndex.clamp(0, _steps.length - 1)];
+          NavVoiceGuidance.instance.onStepUpdated(
+            stepIndex: _activeStepIndex,
+            instruction: activeStep.instruction,
+            distanceToStepMeters: snappedState.distanceToStepMeters,
+          );
+        }
+
+        FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
+          'driverLat': pos.latitude,
+          'driverLng': pos.longitude,
+          'driverHeading': _chevronHeading360,
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true)).catchError((_) {});
+      },
+    );
   }
 
   Future<void> _computeRoute({required LatLng fromOrigin}) async {
@@ -245,13 +248,14 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         : fallbackMeters / 1609.344;
     final mins = result.duration.inMinutes > 0
         ? result.duration.inMinutes
-        : (miles * 2.4).ceil().clamp(1, 99);
+        : (miles * 2.3).ceil().clamp(1, 99);
 
     final pts =
         result.points.isNotEmpty ? result.points : [fromOrigin, _storeLoc];
 
     if (!mounted) return;
     setState(() {
+      _hasInitialRoute = true;
       _distanceMiles = miles;
       _etaMinutes = mins;
       _fullRoutePoints = pts;
@@ -280,11 +284,21 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     return '${(meters / 1609.344).toStringAsFixed(1)} mi';
   }
 
-  Future<void> _applyNavigationCamera() async {
+  Future<void> _applyNavigationCamera({bool force = false}) async {
+    if (_mapController == null) return;
+    final now = DateTime.now();
+    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 60) {
+      return;
+    }
+    _lastCameraMoveAt = now;
+
     final cameraPos = DriverCameraHelper.buildNavigationCamera(
       driverLocation: _snappedLoc,
       headingDegrees: _chevronHeading360,
       northUpMode: _northUpMode,
+      zoom3D: 18.2,
+      tilt3D: 60.0,
+      lookAheadMeters: 105.0,
     );
     await _mapController?.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
   }
@@ -328,7 +342,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       }, SetOptions(merge: true));
     } catch (_) {}
 
-    await _applyNavigationCamera();
+    await _applyNavigationCamera(force: true);
   }
 
   Future<void> _openExternalGoogleMaps() async {
@@ -357,8 +371,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _navTracker.dispose();
     _phoneHeading.dispose();
-    _posSub?.cancel();
     _mapController?.dispose();
     super.dispose();
   }
@@ -402,6 +417,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       backgroundColor: const Color(0xFF121418),
       body: Stack(
         children: [
+          // RepaintBoundary isolates GoogleMap so 60fps marker & camera moves don't repaint HUD
           Positioned.fill(
             child: RepaintBoundary(
               child: GoogleMap(
@@ -422,6 +438,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   _mapController = c;
                   if (mounted) setState(() => _mapReady = true);
                   await _fitFullRouteOverview();
+                },
+                circles: {
+                  Circle(
+                    circleId: const CircleId('store_arrival_geofence'),
+                    center: _storeLoc,
+                    radius: 50.0,
+                    fillColor: gold.withValues(alpha: 0.10),
+                    strokeColor: gold.withValues(alpha: 0.55),
+                    strokeWidth: 2,
+                  ),
                 },
                 markers: {
                   if (_tripStarted)
@@ -708,7 +734,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                       _northUpMode = !_northUpMode;
                       _followCamera = true;
                     });
-                    _applyNavigationCamera();
+                    _applyNavigationCamera(force: true);
                   },
                   child: Icon(
                     _northUpMode ? Icons.explore_rounded : Icons.view_in_ar_rounded,
@@ -737,7 +763,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   onPressed: () {
                     HapticFeedback.selectionClick();
                     setState(() => _followCamera = true);
-                    _applyNavigationCamera();
+                    _applyNavigationCamera(force: true);
                   },
                   child: const Icon(Icons.navigation_rounded, size: 20),
                 ),
@@ -889,11 +915,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                               ),
                               onPressed: _arrivedAtStoreAndPick,
                               icon: const Icon(Icons.storefront_rounded, size: 20),
-                              label: Text(
-                                _withinStoreRange
-                                    ? 'STORE NEARBY • START PICKING'
-                                    : 'ARRIVED AT STORE • START PICKING',
-                                style: const TextStyle(
+                              label: const Text(
+                                'ARRIVED AT STORE • START PICKING',
+                                style: TextStyle(
                                   fontWeight: FontWeight.w900,
                                   fontSize: 13,
                                   letterSpacing: 0.4,

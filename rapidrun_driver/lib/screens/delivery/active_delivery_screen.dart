@@ -17,6 +17,7 @@ import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/arrival_proximity_helper.dart';
+import '../../services/smooth_navigation_tracker.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 
@@ -52,13 +53,15 @@ class ActiveDeliveryScreen extends StatefulWidget {
   State<ActiveDeliveryScreen> createState() => _ActiveDeliveryScreenState();
 }
 
-class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
+class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
+    with WidgetsBindingObserver, TickerProviderStateMixin {
   GoogleMapController? _mapController;
-  StreamSubscription<Position>? _positionSub;
+  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+  final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
+  final SmoothNavigationTracker _navTracker = SmoothNavigationTracker();
 
   LatLng _currentLoc = const LatLng(32.7482, -97.4248);
   LatLng _snappedLoc = const LatLng(32.7482, -97.4248);
-  LatLng _previousRawLoc = const LatLng(32.7482, -97.4248);
   double _roadBearing = 0.0;
   double _chevronHeading360 = 0.0;
   double _speedMps = 0.0;
@@ -68,6 +71,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   List<LatLng> _remainingRoutePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
+  double _distanceToStepMeters = 0.0;
 
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
@@ -77,11 +81,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   bool _dropoffPhotoTaken = false;
   bool _isCompleting = false;
   bool _followCamera = true;
+  bool _northUpMode = false;
   bool _isProgrammaticMove = false;
   bool _mapReady = false;
-
-  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
-  final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
+  bool _hasInitialRoute = false;
+  DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   BitmapDescriptor _driverPuckIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -91,18 +95,23 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _customerLoc = LatLng(widget.customerLat, widget.customerLng);
     _phoneHeading.startListening(
       onHeadingChanged: (deg) {
         if (!mounted || _speedMps >= 2.2) return;
         setState(() => _chevronHeading360 = deg);
-        if (_followCamera && _mapController != null) {
-          _animate3DFollowCamera();
-        }
       },
     );
     _loadCustomMarkers();
     _initTelemetryAndRoute();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed && _followCamera) {
+      _applyNavigationCamera(force: true);
+    }
   }
 
   Future<void> _loadCustomMarkers() async {
@@ -128,106 +137,107 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
         _snappedLoc = _currentLoc;
-        if (pos.heading > 0) _roadBearing = pos.heading;
+        if (pos.heading > 0) _chevronHeading360 = pos.heading % 360.0;
       }
     } catch (e) {
       debugPrint('Initial delivery GPS notice: $e');
     }
 
     await _computeInitialCustomerRoute();
-    if (_followCamera && _mapController != null) {
-      await _animate3DFollowCamera();
-    }
 
-    const locationSettings = LocationSettings(
-      accuracy: LocationAccuracy.high,
-      distanceFilter: 8,
-    );
+    _navTracker.start(
+      vsync: this,
+      initialLocation: _snappedLoc,
+      initialHeading: _chevronHeading360,
+      getFullRoutePoints: () => _fullRoutePoints,
+      getSteps: () => _steps,
+      getActiveStepIndex: () => _activeStepIndex,
+      onFrameTick: (smoothLoc, smoothHeading) {
+        if (!mounted) return;
+        final displayHeading = (_navTracker.currentSpeedMps < 2.2)
+            ? _phoneHeading.fusedHeadingDeg
+            : smoothHeading;
 
-    _positionSub = Geolocator.getPositionStream(locationSettings: locationSettings)
-        .listen((position) async {
-      if (!mounted) return;
-      final raw = LatLng(position.latitude, position.longitude);
+        setState(() {
+          _snappedLoc = smoothLoc;
+          _chevronHeading360 = displayHeading;
+        });
 
-      final snappedState = RouteNavigationHelper.evaluate(
-        rawLocation: raw,
-        routePoints: _fullRoutePoints,
-        steps: _steps,
-        currentStepIndex: _activeStepIndex,
-        fallbackHeading: position.heading > 0 ? position.heading : _roadBearing,
-      );
+        if (_followCamera && _mapController != null) {
+          final now = DateTime.now();
+          if (now.difference(_lastCameraMoveAt).inMilliseconds < 60) return;
+          _lastCameraMoveAt = now;
 
-      final movedMeters = Geolocator.distanceBetween(
-        _previousRawLoc.latitude,
-        _previousRawLoc.longitude,
-        raw.latitude,
-        raw.longitude,
-      );
-
-      final double travelBearing = movedMeters > 2.0
-          ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
-          : snappedState.roadBearing;
-
-      final double speedMpsVal = position.speed.clamp(0.0, 60.0);
-      final double smoothHeading = _phoneHeading.updateHeading(
-        movementOrRoadBearingDeg: travelBearing,
-        speedMps: speedMpsVal,
-        gpsHeadingDeg: position.heading > 0 ? position.heading : null,
-      );
-
-      _previousRawLoc = raw;
-
-      final meters = snappedState.remainingRouteMeters > 0
-          ? snappedState.remainingRouteMeters
-          : Geolocator.distanceBetween(
-              raw.latitude,
-              raw.longitude,
-              _customerLoc.latitude,
-              _customerLoc.longitude,
-            );
-      final miles = meters / 1609.344;
-      final mins = (miles * 2.4).ceil().clamp(1, 99);
-
-      final bool inRange = _proximityHelper.checkWithinRange(
-        currentLocation: snappedState.snappedLocation,
-        targetLocation: _customerLoc,
-        thresholdMeters: 50.0,
-      );
-
-      setState(() {
-        _currentLoc = raw;
-        _snappedLoc = snappedState.snappedLocation;
-        _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
-            ? snappedState.remainingPoints
-            : _fullRoutePoints;
-        _roadBearing = smoothHeading;
-        _chevronHeading360 = smoothHeading;
-        _speedMps = position.speed.clamp(0.0, 60.0);
-        _activeStepIndex = snappedState.activeStepIndex;
-        _distanceMiles = miles;
-        _etaMinutes = mins;
-        if (inRange && !_arrivedAtCustomer) {
-          _arrivedAtCustomer = true;
+          final cam = DriverCameraHelper.buildNavigationCamera(
+            driverLocation: smoothLoc,
+            headingDegrees: displayHeading,
+            northUpMode: _northUpMode,
+            zoom3D: 18.2,
+            tilt3D: 60.0,
+            lookAheadMeters: 105.0,
+          );
+          _mapController!.moveCamera(CameraUpdate.newCameraPosition(cam));
         }
-      });
+      },
+      onGpsFix: (position, snappedState) async {
+        if (!mounted || !_hasInitialRoute) return;
+        final raw = LatLng(position.latitude, position.longitude);
 
-      FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
-        'driverLat': position.latitude,
-        'driverLng': position.longitude,
-        'driverHeading': _roadBearing,
-        'driverLocation': {
-          'latitude': position.latitude,
-          'longitude': position.longitude,
-        },
-        'lastTelemetryAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true)).catchError((e) {
-        debugPrint('Telemetry sync notice: $e');
-      });
+        _phoneHeading.updateHeading(
+          movementOrRoadBearingDeg: snappedState.roadBearing,
+          speedMps: position.speed.clamp(0.0, 60.0),
+          gpsHeadingDeg: position.heading > 0 ? position.heading : null,
+        );
 
-      if (!_arrivedAtCustomer && _followCamera) {
-        await _animate3DFollowCamera();
-      }
-    });
+        final bool inRange = _proximityHelper.checkWithinRange(
+          currentLocation: snappedState.snappedLocation,
+          targetLocation: _customerLoc,
+          thresholdMeters: 50.0,
+        );
+
+        final meters = snappedState.remainingRouteMeters > 0
+            ? snappedState.remainingRouteMeters
+            : Geolocator.distanceBetween(
+                raw.latitude,
+                raw.longitude,
+                _customerLoc.latitude,
+                _customerLoc.longitude,
+              );
+        final miles = meters / 1609.344;
+        final rawMins = (miles * 2.3).ceil().clamp(1, 99);
+        final steadyMins = _etaMinutes == 0
+            ? rawMins
+            : ((_etaMinutes * 0.7) + (rawMins * 0.3)).round().clamp(1, 99);
+
+        setState(() {
+          _currentLoc = raw;
+          _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
+              ? snappedState.remainingPoints
+              : _fullRoutePoints;
+          _speedMps = position.speed.clamp(0.0, 60.0);
+          _activeStepIndex = snappedState.activeStepIndex;
+          _distanceToStepMeters = snappedState.distanceToStepMeters;
+          _distanceMiles = miles;
+          _etaMinutes = steadyMins;
+          if (inRange && !_arrivedAtCustomer) {
+            _arrivedAtCustomer = true;
+          }
+        });
+
+        FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
+          'driverLat': position.latitude,
+          'driverLng': position.longitude,
+          'driverHeading': _chevronHeading360,
+          'driverLocation': {
+            'latitude': position.latitude,
+            'longitude': position.longitude,
+          },
+          'lastTelemetryAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true)).catchError((e) {
+          debugPrint('Telemetry sync notice: $e');
+        });
+      },
+    );
   }
 
   Future<void> _computeInitialCustomerRoute() async {
@@ -262,6 +272,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
     if (!mounted) return;
     setState(() {
+      _hasInitialRoute = true;
       _distanceMiles = miles;
       _etaMinutes = mins;
       _fullRoutePoints = pts;
@@ -291,19 +302,27 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
     return '${(metersToTurn / 1609.344).toStringAsFixed(1)} mi';
   }
 
-  Future<void> _animate3DFollowCamera() async {
+  Future<void> _applyNavigationCamera({bool force = false}) async {
     if (_mapController == null) return;
-    _isProgrammaticMove = true;
-    final cameraPos = DriverCameraHelper.buildForward3DCamera(
+    final now = DateTime.now();
+    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 60) {
+      return;
+    }
+    _lastCameraMoveAt = now;
+
+    final cameraPos = DriverCameraHelper.buildNavigationCamera(
       driverLocation: _snappedLoc,
-      bearingDegrees: _roadBearing,
-      zoom: 18.4,
-      tilt: 63.0,
-      lookAheadMeters: 120.0,
+      headingDegrees: _chevronHeading360,
+      northUpMode: _northUpMode,
+      zoom3D: 18.2,
+      tilt3D: 60.0,
+      lookAheadMeters: 105.0,
     );
-    await _mapController!.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
-    await Future.delayed(const Duration(milliseconds: 300));
-    _isProgrammaticMove = false;
+    await _mapController?.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
+  }
+
+  Future<void> _animate3DFollowCamera() async {
+    await _applyNavigationCamera(force: true);
   }
 
   Future<void> _fitFullRouteOverview() async {
@@ -333,8 +352,9 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _navTracker.dispose();
     _phoneHeading.dispose();
-    _positionSub?.cancel();
     _mapController?.dispose();
     super.dispose();
   }
