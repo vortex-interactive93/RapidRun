@@ -7,20 +7,24 @@ import 'route_polyline_service.dart';
 
 class SnappedRouteState {
   final LatLng snappedLocation;
+  final List<LatLng> remainingPoints;
+  final double roadBearing;
   final int activeStepIndex;
   final double distanceToStepMeters;
   final double remainingRouteMeters;
 
   const SnappedRouteState({
     required this.snappedLocation,
+    required this.remainingPoints,
+    required this.roadBearing,
     required this.activeStepIndex,
     required this.distanceToStepMeters,
     required this.remainingRouteMeters,
   });
 }
 
-/// Snaps simulated or noisy GPS coordinates onto the road-snapped polyline and
-/// advances the active turn step as the driver approaches each maneuver point.
+/// Snaps GPS coordinates onto the active polyline, trims the traveled trail behind
+/// the driver, computes road-aligned bearing, and advances turn maneuvers.
 class RouteNavigationHelper {
   RouteNavigationHelper._();
 
@@ -29,12 +33,26 @@ class RouteNavigationHelper {
     required List<LatLng> routePoints,
     required List<NavigationStep> steps,
     int currentStepIndex = 0,
-    double maxSnapMeters = 45.0,
-    double stepAdvanceThresholdMeters = 28.0,
+    double fallbackHeading = 0.0,
+    double maxSnapMeters = 50.0,
+    double stepAdvanceThresholdMeters = 30.0,
   }) {
     if (routePoints.isEmpty) {
       return SnappedRouteState(
         snappedLocation: rawLocation,
+        remainingPoints: const [],
+        roadBearing: fallbackHeading,
+        activeStepIndex: 0,
+        distanceToStepMeters: 0,
+        remainingRouteMeters: 0,
+      );
+    }
+
+    if (routePoints.length == 1) {
+      return SnappedRouteState(
+        snappedLocation: routePoints.first,
+        remainingPoints: routePoints,
+        roadBearing: fallbackHeading,
         activeStepIndex: 0,
         distanceToStepMeters: 0,
         remainingRouteMeters: 0,
@@ -66,7 +84,21 @@ class RouteNavigationHelper {
     final snappedLoc =
         bestDistMeters <= maxSnapMeters ? bestPoint : rawLocation;
 
-    // 2. Advance active step if within threshold of current step's endLocation
+    // 2. Build remaining polyline starting at snappedLoc (erasing traveled trail!)
+    final remaining = <LatLng>[snappedLoc];
+    for (int i = closestVertexIdx + 1; i < routePoints.length; i++) {
+      remaining.add(routePoints[i]);
+    }
+
+    // 3. Compute road-aligned bearing from current segment (no sideways joystick jitter!)
+    final segStart = routePoints[closestVertexIdx];
+    final segEnd = routePoints[(closestVertexIdx + 1).clamp(0, routePoints.length - 1)];
+    final double bearing = (segStart.latitude == segEnd.latitude &&
+            segStart.longitude == segEnd.longitude)
+        ? fallbackHeading
+        : _computeBearing(segStart, segEnd);
+
+    // 4. Advance active step if within threshold of current step's endLocation
     int stepIdx = steps.isEmpty
         ? 0
         : currentStepIndex.clamp(0, steps.length - 1);
@@ -96,35 +128,40 @@ class RouteNavigationHelper {
           )
         : 0.0;
 
-    // 3. Sum remaining polyline distance from snapped point to route end
-    double remainingMeters = Geolocator.distanceBetween(
-      snappedLoc.latitude,
-      snappedLoc.longitude,
-      routePoints[(closestVertexIdx + 1).clamp(0, routePoints.length - 1)]
-          .latitude,
-      routePoints[(closestVertexIdx + 1).clamp(0, routePoints.length - 1)]
-          .longitude,
-    );
-
-    for (int i = closestVertexIdx + 1; i < routePoints.length - 1; i++) {
+    // 5. Sum remaining route meters ahead
+    double remainingMeters = 0.0;
+    for (int i = 0; i < remaining.length - 1; i++) {
       remainingMeters += Geolocator.distanceBetween(
-        routePoints[i].latitude,
-        routePoints[i].longitude,
-        routePoints[i + 1].latitude,
-        routePoints[i + 1].longitude,
+        remaining[i].latitude,
+        remaining[i].longitude,
+        remaining[i + 1].latitude,
+        remaining[i + 1].longitude,
       );
     }
 
     return SnappedRouteState(
       snappedLocation: snappedLoc,
+      remainingPoints: remaining,
+      roadBearing: bearing,
       activeStepIndex: stepIdx,
       distanceToStepMeters: distToStep,
       remainingRouteMeters: remainingMeters,
     );
   }
 
+  static double _computeBearing(LatLng from, LatLng to) {
+    final lat1 = from.latitude * math.pi / 180.0;
+    final lat2 = to.latitude * math.pi / 180.0;
+    final dLon = (to.longitude - from.longitude) * math.pi / 180.0;
+
+    final y = math.sin(dLon) * math.cos(lat2);
+    final x = math.cos(lat1) * math.sin(lat2) -
+        math.sin(lat1) * math.cos(lat2) * math.cos(dLon);
+    final brng = math.atan2(y, x) * 180.0 / math.pi;
+    return (brng + 360.0) % 360.0;
+  }
+
   static LatLng _projectOntoSegment(LatLng p, LatLng a, LatLng b) {
-    // Equirectangular local projection for fast, accurate sub-100m geometry
     const metersPerDegLat = 111320.0;
     final cosLat = math.cos(p.latitude * math.pi / 180.0);
     final metersPerDegLng = 111320.0 * (cosLat.abs() < 0.01 ? 0.01 : cosLat);
@@ -140,8 +177,9 @@ class RouteNavigationHelper {
     if (lenSq <= 0.0001) return a;
 
     final t = ((-ax * dx - ay * dy) / lenSq).clamp(0.0, 1.0);
-    final projLng = a.longitude + t * (b.longitude - a.longitude);
-    final projLat = a.latitude + t * (b.latitude - a.latitude);
-    return LatLng(projLat, projLng);
+    return LatLng(
+      a.latitude + t * (b.latitude - a.latitude),
+      a.longitude + t * (b.longitude - a.longitude),
+    );
   }
 }

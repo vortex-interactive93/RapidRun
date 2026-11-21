@@ -49,11 +49,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   late final LatLng _storeLoc;
 
   List<LatLng> _routePoints = const [];
+  List<LatLng> _remainingRoutePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
+  double _roadBearing = 0.0;
+  double _speedMps = 0.0;
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
+  BitmapDescriptor _driverPuckIcon =
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan);
 
   bool _tripStarted = false;
   bool _followCamera = true;
@@ -68,6 +73,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
     RapidRunMapMarkers.getPartnerStoreMarker().then((icon) {
       if (mounted) setState(() => _storeMarkerIcon = icon);
+    });
+    RapidRunMapMarkers.getDriverNavigationPuck().then((icon) {
+      if (mounted) setState(() => _driverPuckIcon = icon);
     });
     _initLocationAndRoute();
   }
@@ -107,6 +115,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         routePoints: _routePoints,
         steps: _steps,
         currentStepIndex: _activeStepIndex,
+        fallbackHeading: pos.heading > 0 ? pos.heading : _roadBearing,
       );
 
       final meters = snappedState.remainingRouteMeters > 0
@@ -123,7 +132,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       setState(() {
         _currentLoc = raw;
         _snappedLoc = snappedState.snappedLocation;
-        if (pos.heading > 0) _heading = pos.heading;
+        _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
+            ? snappedState.remainingPoints
+            : _routePoints;
+        _roadBearing = snappedState.roadBearing;
+        _speedMps = pos.speed.clamp(0.0, 60.0);
         _activeStepIndex = snappedState.activeStepIndex;
         _distanceMiles = miles;
         _etaMinutes = mins;
@@ -132,7 +145,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
         'driverLat': pos.latitude,
         'driverLng': pos.longitude,
-        'driverHeading': pos.heading,
+        'driverHeading': _roadBearing,
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true)).catchError((_) {});
 
@@ -168,6 +181,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       _etaMinutes = mins;
       _routePoints =
           result.points.isNotEmpty ? result.points : [_currentLoc, _storeLoc];
+      _remainingRoutePoints = _routePoints;
       _steps = result.steps;
       _activeStepIndex = 0;
     });
@@ -194,10 +208,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     _isProgrammaticMove = true;
     final cameraPos = DriverCameraHelper.buildForward3DCamera(
       driverLocation: _snappedLoc,
-      bearingDegrees: _heading,
-      zoom: 18.2,
-      tilt: 62.0,
-      lookAheadMeters: 95.0,
+      bearingDegrees: _roadBearing,
+      zoom: 18.4,
+      tilt: 63.0,
+      lookAheadMeters: 120.0,
     );
     await _mapController!.animateCamera(
       CameraUpdate.newCameraPosition(cameraPos),
@@ -316,7 +330,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.0),
                 style: midnightTitaniumMapStyle,
-                myLocationEnabled: true,
+                myLocationEnabled: !_tripStarted,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
@@ -338,14 +352,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   await _fitFullRouteOverview();
                 },
                 markers: {
-                  Marker(
-                    markerId: const MarkerId('driver_vehicle_puck'),
-                    position: _snappedLoc,
-                    rotation: _heading,
-                    flat: true,
-                    anchor: const Offset(0.5, 0.5),
-                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan),
-                  ),
+                  if (_tripStarted)
+                    Marker(
+                      markerId: const MarkerId('rapidrun_driver_puck'),
+                      position: _snappedLoc,
+                      icon: _driverPuckIcon,
+                      flat: true,
+                      rotation: _roadBearing,
+                      anchor: const Offset(0.5, 0.5),
+                      zIndexInt: 10,
+                    ),
                   Marker(
                     markerId: const MarkerId('rapidrun_partner_store'),
                     position: _storeLoc,
@@ -360,18 +376,18 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 polylines: {
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_glow'),
-                    points: _routePoints,
+                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
                     color: gold.withValues(alpha: 0.30),
-                    width: 11,
+                    width: 12,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
                   ),
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_core'),
-                    points: _routePoints,
+                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
                     color: gold,
-                    width: 5,
+                    width: 6,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
@@ -505,6 +521,49 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
               ],
             ),
           ),
+
+          if (_tripStarted)
+            Positioned(
+              left: 16,
+              bottom: 215,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF14171E).withValues(alpha: 0.96),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: gold.withValues(alpha: 0.4)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.5),
+                      blurRadius: 12,
+                    ),
+                  ],
+                ),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      '${(_speedMps * 2.23694).round()}',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 19,
+                        fontWeight: FontWeight.w900,
+                        height: 1.0,
+                      ),
+                    ),
+                    const Text(
+                      'MPH',
+                      style: TextStyle(
+                        color: gold,
+                        fontSize: 9,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 0.8,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
 
           Positioned(
             right: 14,

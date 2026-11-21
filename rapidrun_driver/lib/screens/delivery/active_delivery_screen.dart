@@ -13,6 +13,7 @@ import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_auth_guard.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/route_navigation_helper.dart';
+import '../../services/rapidrun_map_markers.dart';
 import '../../services/driver_camera_helper.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
@@ -59,10 +60,16 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   late final LatLng _customerLoc;
 
   List<LatLng> _routePoints = const [];
+  List<LatLng> _remainingRoutePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
+  double _roadBearing = 0.0;
+  double _speedMps = 0.0;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
+
+  BitmapDescriptor _driverPuckIcon =
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan);
 
   bool _arrivedAtCustomer = false;
   bool _dropoffPhotoTaken = false;
@@ -75,6 +82,9 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   void initState() {
     super.initState();
     _customerLoc = LatLng(widget.customerLat, widget.customerLng);
+    RapidRunMapMarkers.getDriverNavigationPuck().then((icon) {
+      if (mounted) setState(() => _driverPuckIcon = icon);
+    });
     _initTelemetryAndRoute();
   }
 
@@ -113,19 +123,24 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         routePoints: _routePoints,
         steps: _steps,
         currentStepIndex: _activeStepIndex,
+        fallbackHeading: position.heading > 0 ? position.heading : _roadBearing,
       );
 
       setState(() {
         _currentLoc = updated;
         _snappedLoc = eval.snappedLocation;
+        _remainingRoutePoints = eval.remainingPoints.isNotEmpty
+            ? eval.remainingPoints
+            : _routePoints;
+        _roadBearing = eval.roadBearing;
+        _speedMps = position.speed.clamp(0.0, 60.0);
         _activeStepIndex = eval.activeStepIndex;
-        if (position.heading > 0) _heading = position.heading;
       });
 
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
         'driverLat': position.latitude,
         'driverLng': position.longitude,
-        'driverHeading': position.heading,
+        'driverHeading': _roadBearing,
         'driverLocation': {
           'latitude': position.latitude,
           'longitude': position.longitude,
@@ -168,6 +183,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       _etaMinutes = mins;
       _routePoints =
           result.points.isNotEmpty ? result.points : [_currentLoc, _customerLoc];
+      _remainingRoutePoints = _routePoints;
       _steps = result.steps;
     });
   }
@@ -429,7 +445,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   zoom: 15.0,
                 ),
                 style: midnightTitaniumMapStyle,
-                myLocationEnabled: true,
+                myLocationEnabled: false,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
@@ -451,12 +467,13 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 },
                 markers: {
                   Marker(
-                    markerId: const MarkerId('driver_vehicle_puck'),
-                    position: _currentLoc,
-                    rotation: _heading,
+                    markerId: const MarkerId('rapidrun_driver_puck'),
+                    position: _snappedLoc,
+                    rotation: _roadBearing,
                     flat: true,
                     anchor: const Offset(0.5, 0.5),
-                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan),
+                    icon: _driverPuckIcon,
+                    zIndexInt: 10,
                   ),
                   Marker(
                     markerId: const MarkerId('exact_dropoff_target'),
@@ -471,18 +488,18 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 polylines: {
                   Polyline(
                     polylineId: const PolylineId('dropoff_gold_glow'),
-                    points: _routePoints,
+                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
                     color: gold.withValues(alpha: 0.35),
-                    width: 10,
+                    width: 12,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
                   ),
                   Polyline(
                     polylineId: const PolylineId('dropoff_gold_core'),
-                    points: _routePoints,
+                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
                     color: gold,
-                    width: 5,
+                    width: 6,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
@@ -612,6 +629,48 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                     ),
                   ),
               ],
+            ),
+          ),
+
+          Positioned(
+            left: 16,
+            bottom: 270,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              decoration: BoxDecoration(
+                color: const Color(0xFF14171E).withValues(alpha: 0.96),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: gold.withValues(alpha: 0.4)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.5),
+                    blurRadius: 12,
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    '${(_speedMps * 2.23694).round()}',
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 19,
+                      fontWeight: FontWeight.w900,
+                      height: 1.0,
+                    ),
+                  ),
+                  const Text(
+                    'MPH',
+                    style: TextStyle(
+                      color: gold,
+                      fontSize: 9,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
 
