@@ -1,8 +1,8 @@
 // File: rapidrun_driver/lib/presentation/home/map_styles/midnight_titanium.dart
 
-/// High-legibility dark-titanium map style for RapidRun:
-/// Keeps street grids, road labels, and 3D buildings crisp even when zoomed
-/// in close on residential streets while hiding third-party POI clutter.
+/// High-contrast dark-titanium map theme engineered to stay legible at wide,
+/// mid-range, and close zoom levels while keeping POI clutter off so RapidRun
+/// partner stores and the gold (#E6B450) route command attention.
 const String midnightTitaniumMapStyle = '''
 [
   {
@@ -14,36 +14,36 @@ const String midnightTitaniumMapStyle = '''
   {
     "elementType": "labels.text.fill",
     "stylers": [
-      { "color": "#CFD8E3" }
+      { "color": "#DCE4EE" }
     ]
   },
   {
     "elementType": "labels.text.stroke",
     "stylers": [
-      { "color": "#11141C" },
-      { "weight": 3.5 }
+      { "color": "#0D1017" },
+      { "weight": 4 }
     ]
   },
   {
     "featureType": "landscape",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#1B202C" }
+      { "color": "#161A24" }
     ]
   },
   {
     "featureType": "landscape.man_made",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#2E3544" }
+      { "color": "#232938" }
     ]
   },
   {
     "featureType": "landscape.man_made",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#786132" },
-      { "weight": 0.85 }
+      { "color": "#5A4A28" },
+      { "weight": 0.9 }
     ]
   },
   {
@@ -57,7 +57,7 @@ const String midnightTitaniumMapStyle = '''
     "elementType": "geometry.fill",
     "stylers": [
       { "visibility": "on" },
-      { "color": "#182921" }
+      { "color": "#172922" }
     ]
   },
   {
@@ -67,47 +67,55 @@ const String midnightTitaniumMapStyle = '''
     ]
   },
   {
-    "featureType": "road",
+    "featureType": "road.local",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#2B3242" }
+      { "color": "#2E3648" }
     ]
   },
   {
-    "featureType": "road",
+    "featureType": "road.local",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#141821" },
-      { "weight": 1.2 }
+      { "color": "#12151D" },
+      { "weight": 1.1 }
     ]
   },
   {
     "featureType": "road.arterial",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#333B4E" }
+      { "color": "#3A445A" }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      { "color": "#11141C" },
+      { "weight": 1.3 }
     ]
   },
   {
     "featureType": "road.highway",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#3D465C" }
+      { "color": "#47536E" }
     ]
   },
   {
     "featureType": "road.highway",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#D4A346" },
-      { "weight": 1.1 }
+      { "color": "#D9A74A" },
+      { "weight": 1.2 }
     ]
   },
   {
     "featureType": "water",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#0D1826" }
+      { "color": "#0C1724" }
     ]
   }
 ]

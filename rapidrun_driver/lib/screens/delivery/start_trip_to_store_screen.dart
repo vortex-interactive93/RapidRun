@@ -340,8 +340,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
       driverLocation: _snappedLoc,
       headingDegrees: _chevronHeading360,
       northUpMode: _northUpMode,
-      zoom3D: 17.9,
-      tilt3D: 58.0,
+      zoom3D: 17.5,
+      tilt3D: 56.0,
       lookAheadMeters: 95.0,
     );
 
