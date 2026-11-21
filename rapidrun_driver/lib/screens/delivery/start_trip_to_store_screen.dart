@@ -48,6 +48,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
   bool _tripStarted = false;
   bool _followCamera = true;
+  bool _isProgrammaticMove = false;
   bool _mapReady = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
@@ -137,16 +138,20 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   }
 
   Future<void> _animate3DFollowCamera() async {
-    await _mapController?.animateCamera(
+    if (_mapController == null) return;
+    _isProgrammaticMove = true;
+    await _mapController!.animateCamera(
       CameraUpdate.newCameraPosition(
         CameraPosition(
           target: _currentLoc,
-          zoom: 17.5,
-          tilt: 52.0,
+          zoom: 18.0,
+          tilt: 58.0,
           bearing: _heading,
         ),
       ),
     );
+    await Future.delayed(const Duration(milliseconds: 300));
+    _isProgrammaticMove = false;
   }
 
   Future<void> _fitFullRouteOverview() async {
@@ -264,7 +269,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 buildingsEnabled: true,
                 trafficEnabled: true,
                 onCameraMoveStarted: () {
-                  if (_tripStarted && _followCamera) {
+                  if (!_isProgrammaticMove && _tripStarted && _followCamera) {
                     setState(() => _followCamera = false);
                   }
                 },
@@ -275,6 +280,14 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   await _fitFullRouteOverview();
                 },
                 markers: {
+                  Marker(
+                    markerId: const MarkerId('driver_vehicle_puck'),
+                    position: _currentLoc,
+                    rotation: _heading,
+                    flat: true,
+                    anchor: const Offset(0.5, 0.5),
+                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan),
+                  ),
                   Marker(
                     markerId: const MarkerId('store_pin'),
                     position: _storeLoc,

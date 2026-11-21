@@ -64,6 +64,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   bool _dropoffPhotoTaken = false;
   bool _isCompleting = false;
   bool _followCamera = false;
+  bool _isProgrammaticMove = false;
   bool _mapReady = false;
 
   @override
@@ -174,16 +175,20 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   }
 
   Future<void> _animate3DFollowCamera() async {
-    await _mapController?.animateCamera(
+    if (_mapController == null) return;
+    _isProgrammaticMove = true;
+    await _mapController!.animateCamera(
       CameraUpdate.newCameraPosition(
         CameraPosition(
           target: _currentLoc,
-          zoom: 17.5,
-          tilt: 52.0,
+          zoom: 18.0,
+          tilt: 58.0,
           bearing: _heading,
         ),
       ),
     );
+    await Future.delayed(const Duration(milliseconds: 300));
+    _isProgrammaticMove = false;
   }
 
   Future<void> _fitFullRouteOverview() async {
@@ -411,7 +416,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 compassEnabled: false,
                 trafficEnabled: true,
                 onCameraMoveStarted: () {
-                  if (_followCamera) {
+                  if (!_isProgrammaticMove && _followCamera) {
                     setState(() => _followCamera = false);
                   }
                 },
@@ -422,6 +427,14 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   await _fitFullRouteOverview();
                 },
                 markers: {
+                  Marker(
+                    markerId: const MarkerId('driver_vehicle_puck'),
+                    position: _currentLoc,
+                    rotation: _heading,
+                    flat: true,
+                    anchor: const Offset(0.5, 0.5),
+                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan),
+                  ),
                   Marker(
                     markerId: const MarkerId('exact_dropoff_target'),
                     position: _customerLoc,
