@@ -568,6 +568,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
                   bearing: _roadBearing,
                 ),
                 cloudMapId: rapidRunCloudMapId,
+                style: midnightTitaniumMapStyle,
                 myLocationEnabled: !_navActive,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,

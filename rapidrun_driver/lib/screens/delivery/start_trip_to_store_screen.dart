@@ -545,6 +545,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 16.0),
                 cloudMapId: rapidRunCloudMapId,
+                style: midnightTitaniumMapStyle,
                 myLocationEnabled: false,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
