@@ -468,7 +468,6 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
               child: GoogleMap(
                 initialCameraPosition: _initialCamera,
                 cloudMapId: rapidRunCloudMapId,
-                style: midnightTitaniumMapStyle,
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
