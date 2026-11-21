@@ -61,7 +61,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       if (perm != LocationPermission.denied &&
           perm != LocationPermission.deniedForever) {
         final pos = await Geolocator.getCurrentPosition(
-          locationSettings: const LocationSettings(accuracy: LocationAccuracy.high),
+          desiredAccuracy: LocationAccuracy.high,
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
       }
