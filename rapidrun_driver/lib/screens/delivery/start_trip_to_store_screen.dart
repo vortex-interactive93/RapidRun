@@ -308,6 +308,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             child: RepaintBoundary(
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.0),
+                style: midnightTitaniumMapStyle,
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
@@ -321,8 +322,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 },
                 onMapCreated: (c) async {
                   _mapController = c;
-                  await c.setMapStyle(midnightTitaniumMapStyle);
                   if (mounted) setState(() => _mapReady = true);
+                  try {
+                    await c.setMapStyle(midnightTitaniumMapStyle);
+                  } catch (e) {
+                    debugPrint('Map style notice: $e');
+                  }
                   await _fitFullRouteOverview();
                 },
                 markers: {

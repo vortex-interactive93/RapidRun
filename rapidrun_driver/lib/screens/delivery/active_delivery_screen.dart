@@ -426,6 +426,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   target: _customerLoc,
                   zoom: 15.0,
                 ),
+                style: midnightTitaniumMapStyle,
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
@@ -438,8 +439,12 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 },
                 onMapCreated: (c) async {
                   _mapController = c;
-                  await c.setMapStyle(midnightTitaniumMapStyle);
                   if (mounted) setState(() => _mapReady = true);
+                  try {
+                    await c.setMapStyle(midnightTitaniumMapStyle);
+                  } catch (e) {
+                    debugPrint('Map style notice: $e');
+                  }
                   await _fitFullRouteOverview();
                 },
                 markers: {

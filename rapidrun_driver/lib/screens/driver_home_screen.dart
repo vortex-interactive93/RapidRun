@@ -467,6 +467,7 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
             child: RepaintBoundary(
               child: GoogleMap(
                 initialCameraPosition: _initialCamera,
+                style: midnightTitaniumMapStyle,
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
@@ -474,8 +475,12 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
                 polylines: _online ? _activeOfferPolylines : {},
                 onMapCreated: (controller) async {
                   _map = controller;
-                  await controller.setMapStyle(midnightTitaniumMapStyle);
                   if (mounted) setState(() => _mapReady = true);
+                  try {
+                    await controller.setMapStyle(midnightTitaniumMapStyle);
+                  } catch (e) {
+                    debugPrint('Map style notice: $e');
+                  }
                 },
               ),
             ),

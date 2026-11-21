@@ -1,105 +1,91 @@
 // File: rapidrun_driver/lib/presentation/home/map_styles/midnight_titanium.dart
 
-/// Dark-titanium map theme tuned for RapidRun's gold (#E6B450) navigation UI,
-/// lifting building & structure geometry so 3D extrusions read clearly at speed.
+/// Validated dark-titanium Google Maps style JSON with lifted building and
+/// road contrast tailored for RapidRun's gold (#E6B450) navigation UI.
 const String midnightTitaniumMapStyle = '''
 [
   {
     "elementType": "geometry",
     "stylers": [
-      { "color": "#11141A" }
+      { "color": "#12151C" }
     ]
   },
   {
     "elementType": "labels.text.fill",
     "stylers": [
-      { "color": "#B8C0CC" }
+      { "color": "#B6C0CE" }
     ]
   },
   {
     "elementType": "labels.text.stroke",
     "stylers": [
-      { "color": "#11141A" },
+      { "color": "#12151C" },
       { "weight": 3 }
     ]
   },
   {
-    "featureType": "landscape.manuscript",
+    "featureType": "landscape",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#262B36" }
+      { "color": "#181C24" }
     ]
   },
   {
-    "featureType": "landscape.manuscript",
+    "featureType": "landscape.man_made",
+    "elementType": "geometry.fill",
+    "stylers": [
+      { "color": "#282E3A" }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#6E5A2E" },
-      { "weight": 0.8 }
+      { "color": "#6B572B" },
+      { "weight": 0.7 }
     ]
   },
   {
-    "featureType": "poi.business",
+    "featureType": "poi",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#2C2923" }
-    ]
-  },
-  {
-    "featureType": "poi.government",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#252A34" }
-    ]
-  },
-  {
-    "featureType": "poi.medical",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#242C33" }
-    ]
-  },
-  {
-    "featureType": "poi.school",
-    "elementType": "geometry.fill",
-    "stylers": [
-      { "color": "#292822" }
+      { "color": "#242934" }
     ]
   },
   {
     "featureType": "poi.park",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#15221C" }
+      { "color": "#14221B" }
     ]
   },
   {
     "featureType": "road",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#202530" }
+      { "color": "#222733" }
     ]
   },
   {
     "featureType": "road",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#14171F" },
-      { "weight": 1.2 }
+      { "color": "#13161D" },
+      { "weight": 1.1 }
     ]
   },
   {
     "featureType": "road.highway",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#2E3442" }
+      { "color": "#313746" }
     ]
   },
   {
     "featureType": "road.highway",
     "elementType": "geometry.stroke",
     "stylers": [
-      { "color": "#C99A3E" },
+      { "color": "#C6973E" },
       { "weight": 1.0 }
     ]
   },
@@ -107,7 +93,7 @@ const String midnightTitaniumMapStyle = '''
     "featureType": "water",
     "elementType": "geometry.fill",
     "stylers": [
-      { "color": "#0C1521" }
+      { "color": "#0B131E" }
     ]
   }
 ]
