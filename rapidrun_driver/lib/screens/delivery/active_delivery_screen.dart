@@ -85,6 +85,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
   bool _followCamera = true;
   bool _northUpMode = false;
   bool _isProgrammaticMove = false;
+  bool _isProgrammaticCameraMove = false;
   bool _mapReady = false;
   bool _hasInitialRoute = false;
   bool _debugForceCustomerArrivalUnlocked = false;
@@ -166,21 +167,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
           _chevronHeading360 = displayHeading;
         });
 
-        if (_followCamera && _mapController != null) {
-          final now = DateTime.now();
-          if (now.difference(_lastCameraMoveAt).inMilliseconds < 60) return;
-          _lastCameraMoveAt = now;
-
-          final cam = DriverCameraHelper.buildNavigationCamera(
-            driverLocation: smoothLoc,
-            headingDegrees: displayHeading,
-            northUpMode: _northUpMode,
-            zoom3D: 18.2,
-            tilt3D: 60.0,
-            lookAheadMeters: 105.0,
-          );
-          _mapController!.moveCamera(CameraUpdate.newCameraPosition(cam));
-        }
+        _sync3DCameraIfFollowing();
       },
       onGpsFix: (position, snappedState) async {
         if (!mounted || !_hasInitialRoute) return;
@@ -305,10 +292,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
     return '${(metersToTurn / 1609.344).toStringAsFixed(1)} mi';
   }
 
-  Future<void> _applyNavigationCamera({bool force = false}) async {
-    if (_mapController == null) return;
+  Future<void> _sync3DCameraIfFollowing({bool force = false}) async {
+    if (!_navActive || !_followCamera || _mapController == null) return;
+
     final now = DateTime.now();
-    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 60) {
+    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 180) {
       return;
     }
     _lastCameraMoveAt = now;
@@ -317,11 +305,23 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
       driverLocation: _snappedLoc,
       headingDegrees: _chevronHeading360,
       northUpMode: _northUpMode,
-      zoom3D: 18.2,
-      tilt3D: 60.0,
-      lookAheadMeters: 105.0,
+      zoom3D: 18.4,
+      tilt3D: 63.0,
+      lookAheadMeters: 120.0,
     );
-    await _mapController?.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
+
+    _isProgrammaticCameraMove = true;
+    try {
+      await _mapController?.animateCamera(
+        CameraUpdate.newCameraPosition(cameraPos),
+      );
+    } finally {
+      _isProgrammaticCameraMove = false;
+    }
+  }
+
+  Future<void> _applyNavigationCamera({bool force = false}) async {
+    await _sync3DCameraIfFollowing(force: force);
   }
 
   Future<void> _animate3DFollowCamera() async {
@@ -564,7 +564,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
                 buildingsEnabled: true,
                 trafficEnabled: false,
                 onCameraMoveStarted: () {
-                  if (!_isProgrammaticMove && _followCamera) {
+                  if (!_isProgrammaticCameraMove && !_isProgrammaticMove && _followCamera) {
                     setState(() => _followCamera = false);
                   }
                 },

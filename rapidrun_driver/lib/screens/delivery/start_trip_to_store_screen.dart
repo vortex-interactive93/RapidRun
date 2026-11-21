@@ -68,6 +68,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   bool _mapReady = false;
   bool _hasInitialRoute = false;
   bool _debugForceArrivalUnlocked = false;
+  bool _isProgrammaticCameraMove = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
   DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
@@ -153,21 +154,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
           _chevronHeading360 = displayHeading;
         });
 
-        if (_tripStarted && _followCamera && _mapController != null) {
-          final now = DateTime.now();
-          if (now.difference(_lastCameraMoveAt).inMilliseconds < 60) return;
-          _lastCameraMoveAt = now;
-
-          final cam = DriverCameraHelper.buildNavigationCamera(
-            driverLocation: smoothLoc,
-            headingDegrees: displayHeading,
-            northUpMode: _northUpMode,
-            zoom3D: 18.2,
-            tilt3D: 60.0,
-            lookAheadMeters: 105.0,
-          );
-          _mapController!.moveCamera(CameraUpdate.newCameraPosition(cam));
-        }
+        _sync3DCameraIfFollowing();
       },
       onGpsFix: (pos, snappedState) async {
         if (!mounted || !_hasInitialRoute) return;
@@ -288,10 +275,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     return '${(meters / 1609.344).toStringAsFixed(1)} mi';
   }
 
-  Future<void> _applyNavigationCamera({bool force = false}) async {
-    if (_mapController == null) return;
+  Future<void> _sync3DCameraIfFollowing({bool force = false}) async {
+    if (!_tripStarted || !_followCamera || _mapController == null) return;
+
     final now = DateTime.now();
-    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 60) {
+    if (!force && now.difference(_lastCameraMoveAt).inMilliseconds < 180) {
       return;
     }
     _lastCameraMoveAt = now;
@@ -300,11 +288,23 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
       driverLocation: _snappedLoc,
       headingDegrees: _chevronHeading360,
       northUpMode: _northUpMode,
-      zoom3D: 18.2,
-      tilt3D: 60.0,
-      lookAheadMeters: 105.0,
+      zoom3D: 18.4,
+      tilt3D: 63.0,
+      lookAheadMeters: 120.0,
     );
-    await _mapController?.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
+
+    _isProgrammaticCameraMove = true;
+    try {
+      await _mapController?.animateCamera(
+        CameraUpdate.newCameraPosition(cameraPos),
+      );
+    } finally {
+      _isProgrammaticCameraMove = false;
+    }
+  }
+
+  Future<void> _applyNavigationCamera({bool force = false}) async {
+    await _sync3DCameraIfFollowing(force: force);
   }
 
   Future<void> _fitFullRouteOverview() async {
@@ -337,7 +337,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     setState(() {
       _tripStarted = true;
       _followCamera = true;
+      _northUpMode = false;
     });
+
+    await _sync3DCameraIfFollowing(force: true);
 
     try {
       await FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
@@ -345,8 +348,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
         'tripStartedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
     } catch (_) {}
-
-    await _applyNavigationCamera(force: true);
   }
 
   Future<void> _openExternalGoogleMaps() async {
@@ -461,7 +462,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                 buildingsEnabled: true,
                 trafficEnabled: false,
                 onCameraMoveStarted: () {
-                  if (_tripStarted && _followCamera) {
+                  if (!_isProgrammaticCameraMove && _tripStarted && _followCamera) {
                     setState(() => _followCamera = false);
                   }
                 },
