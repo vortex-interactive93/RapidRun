@@ -1,6 +1,12 @@
 // File: rapidrun_driver/lib/presentation/home/map_styles/midnight_titanium.dart
 
-/// High-contrast dark-titanium map theme for RapidRun maps and navigation.
+/// Official Google Cloud Vector Map ID linked to RapidRun Midnight Gold 3D style.
+const String rapidRunCloudMapId = String.fromEnvironment(
+  'GOOGLE_MAPS_CLOUD_MAP_ID',
+  defaultValue: '2af4647f58c6980d282d3d4b',
+);
+
+/// High-contrast dark-titanium map style fallback for RapidRun maps and navigation.
 const String midnightTitaniumMapStyle = r'''
 [
   {

@@ -567,12 +567,13 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
                   tilt: 63.0,
                   bearing: _roadBearing,
                 ),
-                style: midnightTitaniumMapStyle,
+                cloudMapId: rapidRunCloudMapId,
                 myLocationEnabled: !_navActive,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
                 buildingsEnabled: true,
+                indoorViewEnabled: true,
                 trafficEnabled: false,
                 onCameraMoveStarted: () {
                   if (!_isProgrammaticCameraMove && !_isProgrammaticMove && _followCamera) {
@@ -582,11 +583,6 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
                 onMapCreated: (c) async {
                   _mapController = c;
                   if (mounted) setState(() => _mapReady = true);
-                  try {
-                    await c.setMapStyle(midnightTitaniumMapStyle);
-                  } catch (e) {
-                    debugPrint('Map style notice: $e');
-                  }
                   await _fitFullRouteOverview();
                 },
                 markers: {

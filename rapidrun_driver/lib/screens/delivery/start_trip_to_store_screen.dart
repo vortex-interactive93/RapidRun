@@ -544,12 +544,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             child: RepaintBoundary(
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 16.0),
-                style: midnightTitaniumMapStyle,
+                cloudMapId: rapidRunCloudMapId,
                 myLocationEnabled: false,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
                 buildingsEnabled: true,
+                indoorViewEnabled: true,
                 trafficEnabled: false,
                 onCameraMoveStarted: () {
                   if (!_isProgrammaticCameraMove && _tripStarted && _followCamera) {
