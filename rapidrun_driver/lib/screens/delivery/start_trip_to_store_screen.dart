@@ -18,15 +18,17 @@ class StartTripToStoreScreen extends StatefulWidget {
   final String storeAddress;
   final double storeLat;
   final double storeLng;
+  final DriverRoutingPreference routingPreference;
   final List<PickItem> items;
 
   const StartTripToStoreScreen({
     super.key,
     required this.orderId,
     required this.storeName,
-    this.storeAddress = 'Bath & Body Works • Westover Village',
+    this.storeAddress = 'Westover Village, Fort Worth, TX',
     this.storeLat = 32.7482,
     this.storeLng = -97.4248,
+    this.routingPreference = DriverRoutingPreference.ecoFriendly,
     required this.items,
   });
 
@@ -44,6 +46,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   bool _tripStarted = false;
   bool _mapReady = false;
   double _distanceMiles = 0.0;
+  int _etaMinutes = 0;
 
   @override
   void initState() {
@@ -66,10 +69,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         _currentLoc = LatLng(pos.latitude, pos.longitude);
       }
     } catch (e) {
-      debugPrint('Initial store-trip GPS notice: $e');
+      debugPrint('Initial store GPS notice: $e');
     }
 
-    await _recalculateRouteToStore();
+    await _recalculateRoute();
 
     _posSub = Geolocator.getPositionStream(
       locationSettings: const LocationSettings(
@@ -88,30 +91,39 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true)).catchError((_) {});
 
-      await _recalculateRouteToStore();
+      await _recalculateRoute();
     });
   }
 
-  Future<void> _recalculateRouteToStore() async {
-    final meters = Geolocator.distanceBetween(
+  Future<void> _recalculateRoute() async {
+    final result = await RoutePolylineService.instance.computeDrivingRoute(
+      origin: _currentLoc,
+      destination: _storeLoc,
+      preference: widget.routingPreference,
+    );
+
+    final fallbackMeters = Geolocator.distanceBetween(
       _currentLoc.latitude,
       _currentLoc.longitude,
       _storeLoc.latitude,
       _storeLoc.longitude,
     );
-    final pts = await RoutePolylineService.instance.getDrivingRoute(
-      origin: _currentLoc,
-      destination: _storeLoc,
-    );
+    final miles = result.distanceMeters > 0
+        ? result.distanceMiles
+        : fallbackMeters / 1609.344;
+    final mins = result.duration.inMinutes > 0
+        ? result.duration.inMinutes
+        : (miles * 2.5).ceil().clamp(1, 99);
 
     if (!mounted) return;
     setState(() {
-      _distanceMiles = meters / 1609.344;
-      _routePoints = pts.isNotEmpty ? pts : [_currentLoc, _storeLoc];
+      _distanceMiles = miles;
+      _etaMinutes = mins;
+      _routePoints = result.points.isNotEmpty ? result.points : [_currentLoc, _storeLoc];
     });
   }
 
-  Future<void> _startTripAndNavigate() async {
+  Future<void> _startInAppTrip() async {
     HapticFeedback.heavyImpact();
     setState(() => _tripStarted = true);
 
@@ -122,15 +134,18 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       }, SetOptions(merge: true));
     } catch (_) {}
 
+    await _mapController?.animateCamera(
+      CameraUpdate.newLatLngZoom(_currentLoc, 16.2),
+    );
+  }
+
+  Future<void> _openExternalGoogleMaps() async {
+    HapticFeedback.lightImpact();
     final navUri = Uri.parse(
       'google.navigation:q=${_storeLoc.latitude},${_storeLoc.longitude}&mode=d',
     );
     if (await canLaunchUrl(navUri)) {
       await launchUrl(navUri);
-    } else if (_mapController != null) {
-      await _mapController!.animateCamera(
-        CameraUpdate.newLatLngZoom(_currentLoc, 16.0),
-      );
     }
   }
 
@@ -178,7 +193,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 },
                 markers: {
                   Marker(
-                    markerId: const MarkerId('store_pickup_pin'),
+                    markerId: const MarkerId('store_pin'),
                     position: _storeLoc,
                     icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
                     infoWindow: InfoWindow(
@@ -189,7 +204,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 },
                 polylines: {
                   Polyline(
-                    polylineId: const PolylineId('driver_to_store_polyline'),
+                    polylineId: const PolylineId('in_app_gold_glow'),
+                    points: _routePoints,
+                    color: gold.withValues(alpha: 0.35),
+                    width: 9,
+                    jointType: JointType.round,
+                    startCap: Cap.roundCap,
+                    endCap: Cap.roundCap,
+                  ),
+                  Polyline(
+                    polylineId: const PolylineId('in_app_gold_core'),
                     points: _routePoints,
                     color: gold,
                     width: 5,
@@ -204,7 +228,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
           IgnorePointer(
             ignoring: _mapReady,
             child: AnimatedOpacity(
-              duration: const Duration(milliseconds: 300),
+              duration: const Duration(milliseconds: 280),
               curve: Curves.fastOutSlowIn,
               opacity: _mapReady ? 0.0 : 1.0,
               child: Container(color: const Color(0xFF121418)),
@@ -225,14 +249,27 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(
-                    _tripStarted ? 'EN ROUTE TO STORE' : 'READY TO HEAD TO STORE',
-                    style: const TextStyle(
-                      color: gold,
-                      fontSize: 11,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.8,
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        _tripStarted ? 'IN-APP NAVIGATION ACTIVE' : 'READY TO HEAD TO STORE',
+                        style: const TextStyle(
+                          color: gold,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.8,
+                        ),
+                      ),
+                      Text(
+                        '$_etaMinutes min • ${_distanceMiles.toStringAsFixed(1)} mi',
+                        style: const TextStyle(
+                          color: Colors.white70,
+                          fontSize: 11.5,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 4),
                   Text(
@@ -245,32 +282,54 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    '${widget.storeAddress} • ${_distanceMiles.toStringAsFixed(1)} mi away',
+                    widget.storeAddress,
                     style: const TextStyle(color: Colors.white60, fontSize: 12),
                   ),
                   const SizedBox(height: 16),
                   if (!_tripStarted)
-                    SizedBox(
-                      height: 50,
-                      child: ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: gold,
-                          foregroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
+                    Row(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: SizedBox(
+                            height: 50,
+                            child: ElevatedButton.icon(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: gold,
+                                foregroundColor: Colors.black,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                              ),
+                              onPressed: _startInAppTrip,
+                              icon: const Icon(Icons.navigation_rounded, size: 20),
+                              label: const Text(
+                                'START TRIP',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 14,
+                                  letterSpacing: 0.6,
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                        onPressed: _startTripAndNavigate,
-                        icon: const Icon(Icons.navigation_rounded, size: 20),
-                        label: const Text(
-                          'START TRIP',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 14,
-                            letterSpacing: 0.6,
+                        const SizedBox(width: 10),
+                        SizedBox(
+                          height: 50,
+                          child: OutlinedButton(
+                            style: OutlinedButton.styleFrom(
+                              side: BorderSide(color: gold.withValues(alpha: 0.5)),
+                              foregroundColor: gold,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(14),
+                              ),
+                            ),
+                            onPressed: _openExternalGoogleMaps,
+                            child: const Icon(Icons.open_in_new_rounded, size: 20),
                           ),
                         ),
-                      ),
+                      ],
                     )
                   else
                     SizedBox(

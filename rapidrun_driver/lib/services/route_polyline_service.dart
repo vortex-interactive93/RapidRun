@@ -4,143 +4,219 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:http/http.dart' as http;
+import 'package:rapidrun_shared/rapidrun_shared.dart';
 
 enum DriverRoutingPreference {
-  ecoFriendly,    // Fuel-efficient surface route (Plaza Pkwy -> Lockheed -> White Settlement)
-  fastestTraffic, // Highway route (I-30 West -> Loop 820 North)
-  avoidHighways,  // Surface streets only
+  ecoFriendly,
+  fastestTraffic,
+  avoidHighways,
+  fastest,
+  noHighways,
 }
 
-class RoutePolylineService {
-  static final RoutePolylineService instance = RoutePolylineService._internal();
-  RoutePolylineService._internal();
+class DrivingRouteResult {
+  final List<LatLng> points;
+  final double distanceMeters;
+  final Duration duration;
 
-  /// Google Maps / Directions API Key loaded from environment or fallback
-  static const String googleMapsApiKey = String.fromEnvironment(
+  const DrivingRouteResult({
+    required this.points,
+    required this.distanceMeters,
+    required this.duration,
+  });
+
+  double get distanceMiles => distanceMeters / 1609.344;
+}
+
+/// Computes road-snapped driving routes via Google Routes API (v2) using the
+/// driver's selected routing preference (Eco-Gas, Fastest, No Hwy).
+class RoutePolylineService {
+  RoutePolylineService._();
+  static final RoutePolylineService instance = RoutePolylineService._();
+
+  static const String _routesApiKey = String.fromEnvironment(
     'GOOGLE_MAPS_ROUTES_API_KEY',
     defaultValue: 'AIzaSyB1c6_nJBhUsSbLmuGb3HiGfeA29CmOkTQ',
   );
 
-  /// Fetches road-snapped polyline coordinates from Google Directions API or precise fallback
+  Future<DrivingRouteResult> computeDrivingRoute({
+    required LatLng origin,
+    required LatLng destination,
+    DriverRoutingPreference preference = DriverRoutingPreference.ecoFriendly,
+    String apiKeyOverride = '',
+  }) async {
+    final effectiveKey =
+        apiKeyOverride.trim().isNotEmpty ? apiKeyOverride.trim() : _routesApiKey;
+
+    if (effectiveKey.isNotEmpty) {
+      final result = await _fetchGoogleRoutes(
+        origin: origin,
+        destination: destination,
+        preference: preference,
+        apiKey: effectiveKey,
+      );
+      if (result != null && result.points.isNotEmpty) {
+        return result;
+      }
+    }
+
+    // Fallback to OSRM road-snapped polyline so roads are still followed if key isn't passed via --dart-define
+    final osrmResult = await _fetchOsrmRoute(origin: origin, destination: destination);
+    if (osrmResult != null && osrmResult.points.isNotEmpty) {
+      return osrmResult;
+    }
+
+    return DrivingRouteResult(
+      points: [origin, destination],
+      distanceMeters: 0,
+      duration: Duration.zero,
+    );
+  }
+
+  // Backward-compatible helper for callers expecting List<LatLng>
   Future<List<LatLng>> getDrivingRoute({
     required LatLng origin,
     required LatLng destination,
     DriverRoutingPreference preference = DriverRoutingPreference.ecoFriendly,
   }) async {
-    if (googleMapsApiKey.isNotEmpty) {
-      try {
-        final bool avoidHwy = preference == DriverRoutingPreference.avoidHighways;
-        final url = Uri.parse(
-          'https://maps.googleapis.com/maps/api/directions/json?'
-          'origin=${origin.latitude},${origin.longitude}&'
-          'destination=${destination.latitude},${destination.longitude}&'
-          'mode=driving&'
-          '${avoidHwy ? "avoid=highways&" : ""}'
-          'key=$googleMapsApiKey',
-        );
-
-        final response = await http.get(url);
-        if (response.statusCode == 200) {
-          final data = json.decode(response.body);
-          final routes = data['routes'] as List<dynamic>?;
-
-          if (routes != null && routes.isNotEmpty) {
-            final points = routes.first['overview_polyline']['points'] as String;
-            final decoded = _decodePolyline(points);
-            if (decoded.isNotEmpty) return decoded;
-          }
-        } else {
-          debugPrint('Directions API response error: ${response.statusCode} -> ${response.body}');
-        }
-      } catch (e) {
-        debugPrint('Directions API network exception: $e');
-      }
-    }
-
-    // Precise turn-by-turn road fallback matching the Google Maps eco-route
-    return _buildPreciseStreetCurvature(origin, destination, preference);
+    final res = await computeDrivingRoute(
+      origin: origin,
+      destination: destination,
+      preference: preference,
+    );
+    return res.points;
   }
 
-  /// High-density street-following coordinates
-  List<LatLng> _buildPreciseStreetCurvature(
-    LatLng origin,
-    LatLng destination,
-    DriverRoutingPreference preference,
-  ) {
-    if (preference == DriverRoutingPreference.fastestTraffic) {
-      // HIGHWAY ROUTE: Westover -> I-30 West -> Loop 820 North -> White Settlement Rd
-      return [
-        origin,
-        const LatLng(32.7480, -97.4248),
-        const LatLng(32.7460, -97.4255),
-        const LatLng(32.7445, -97.4270), // On-ramp to I-30 West
-        const LatLng(32.7441, -97.4320),
-        const LatLng(32.7438, -97.4380), // I-30 Westbound
-        const LatLng(32.7437, -97.4440),
-        const LatLng(32.7439, -97.4500),
-        const LatLng(32.7442, -97.4552), // Loop 820 / I-30 Interchange
-        const LatLng(32.7460, -97.4555), // Transition to Loop 820 North
-        const LatLng(32.7500, -97.4552),
-        const LatLng(32.7540, -97.4548),
-        const LatLng(32.7580, -97.4542), // Loop 820 Northbound
-        const LatLng(32.7598, -97.4540), // Off-ramp to White Settlement Rd
-        const LatLng(32.7600, -97.4560), // Turn West on White Settlement Rd
-        const LatLng(32.7600, -97.4600),
-        const LatLng(32.7601, -97.4655),
-        destination, // 9009 White Settlement Rd
-      ];
-    }
+  Future<DrivingRouteResult?> _fetchGoogleRoutes({
+    required LatLng origin,
+    required LatLng destination,
+    required DriverRoutingPreference preference,
+    required String apiKey,
+  }) async {
+    try {
+      final uri = Uri.parse('https://routes.googleapis.com/directions/v2:computeRoutes');
 
-    // ECO / SURFACE ROUTE (Matches Google Maps screenshot):
-    // Westover Village -> Plaza Pkwy curve -> Lockheed Blvd North -> White Settlement Rd West
-    return [
-      origin, // Bath & Body Works / Westover Village
-      const LatLng(32.7483, -97.4252),
-      const LatLng(32.7486, -97.4258),
-      const LatLng(32.7490, -97.4265),
-      const LatLng(32.7495, -97.4275), // Plaza Pkwy
-      const LatLng(32.7497, -97.4285),
-      const LatLng(32.7496, -97.4298), // Curving around Ridgmar area
-      const LatLng(32.7492, -97.4310),
-      const LatLng(32.7485, -97.4322),
-      const LatLng(32.7478, -97.4335),
-      const LatLng(32.7472, -97.4348), // Underpass connector
-      const LatLng(32.7468, -97.4362),
-      const LatLng(32.7470, -97.4372), // Curve onto Lockheed Blvd North
-      const LatLng(32.7480, -97.4374),
-      const LatLng(32.7495, -97.4376),
-      const LatLng(32.7515, -97.4378), // Lockheed Blvd Northbound
-      const LatLng(32.7535, -97.4380),
-      const LatLng(32.7555, -97.4382),
-      const LatLng(32.7572, -97.4383),
-      const LatLng(32.7588, -97.4385),
-      const LatLng(32.7597, -97.4387), // Intersection at White Settlement Rd
-      const LatLng(32.7598, -97.4400), // Turn West onto White Settlement Rd
-      const LatLng(32.7598, -97.4430),
-      const LatLng(32.7599, -97.4465), // Passing S Cherry Ln
-      const LatLng(32.7599, -97.4500),
-      const LatLng(32.7600, -97.4540),
-      const LatLng(32.7600, -97.4580), // Passing S Judd St
-      const LatLng(32.7600, -97.4620),
-      const LatLng(32.7601, -97.4660), // Approaching S Las Vegas Trail
-      const LatLng(32.7601, -97.4690),
-      destination, // 9009 White Settlement Rd
-    ];
+      final bool avoidHighways = preference == DriverRoutingPreference.avoidHighways;
+      final String routingPreference = preference == DriverRoutingPreference.fastestTraffic
+          ? 'TRAFFIC_AWARE_OPTIMAL'
+          : 'TRAFFIC_AWARE';
+
+      final response = await http
+          .post(
+            uri,
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Goog-Api-Key': apiKey,
+              'X-Goog-FieldMask':
+                  'routes.distanceMeters,routes.duration,routes.polyline.encodedPolyline',
+            },
+            body: jsonEncode({
+              'origin': {
+                'location': {
+                  'latLng': {
+                    'latitude': origin.latitude,
+                    'longitude': origin.longitude,
+                  },
+                },
+              },
+              'destination': {
+                'location': {
+                  'latLng': {
+                    'latitude': destination.latitude,
+                    'longitude': destination.longitude,
+                  },
+                },
+              },
+              'travelMode': 'DRIVE',
+              'routingPreference': routingPreference,
+              'routeModifiers': {
+                'avoidTolls': preference == DriverRoutingPreference.ecoFriendly,
+                'avoidHighways': avoidHighways,
+                'avoidFerries': true,
+              },
+            }),
+          )
+          .timeout(const Duration(seconds: 8));
+
+      if (response.statusCode != 200) {
+        debugPrint('Routes API HTTP ${response.statusCode}: ${response.body}');
+        return null;
+      }
+
+      final data = jsonDecode(response.body) as Map<String, dynamic>;
+      final routes = data['routes'] as List<dynamic>? ?? const [];
+      if (routes.isEmpty) return null;
+
+      final firstRoute = routes.first as Map<String, dynamic>;
+      final encoded =
+          firstRoute['polyline']?['encodedPolyline']?.toString() ?? '';
+      if (encoded.isEmpty) return null;
+
+      final distMeters = (firstRoute['distanceMeters'] as num?)?.toDouble() ?? 0.0;
+      final rawDuration = (firstRoute['duration'] ?? '0s').toString();
+      final seconds = int.tryParse(rawDuration.replaceAll('s', '')) ?? 0;
+
+      return DrivingRouteResult(
+        points: _decodePolyline(encoded),
+        distanceMeters: distMeters,
+        duration: Duration(seconds: seconds),
+      );
+    } catch (e) {
+      debugPrint('Google Routes API error: $e');
+      return null;
+    }
+  }
+
+  Future<DrivingRouteResult?> _fetchOsrmRoute({
+    required LatLng origin,
+    required LatLng destination,
+  }) async {
+    try {
+      final uri = Uri.parse(
+        'https://router.project-osrm.org/route/v1/driving/'
+        '${origin.longitude},${origin.latitude};${destination.longitude},${destination.latitude}'
+        '?overview=full&geometries=polyline',
+      );
+      final response = await http.get(uri).timeout(const Duration(seconds: 6));
+      if (response.statusCode != 200) return null;
+
+      final data = jsonDecode(response.body) as Map<String, dynamic>;
+      final routes = data['routes'] as List<dynamic>? ?? const [];
+      if (routes.isEmpty) return null;
+
+      final route = routes.first as Map<String, dynamic>;
+      final geometry = route['geometry']?.toString() ?? '';
+      if (geometry.isEmpty) return null;
+
+      return DrivingRouteResult(
+        points: _decodePolyline(geometry),
+        distanceMeters: (route['distance'] as num?)?.toDouble() ?? 0.0,
+        duration: Duration(
+          seconds: ((route['duration'] as num?)?.round() ?? 0),
+        ),
+      );
+    } catch (e) {
+      debugPrint('OSRM fallback error: $e');
+      return null;
+    }
   }
 
   List<LatLng> _decodePolyline(String encoded) {
-    final List<LatLng> poly = [];
-    int index = 0, len = encoded.length;
-    int lat = 0, lng = 0;
+    final points = <LatLng>[];
+    int index = 0;
+    int lat = 0;
+    int lng = 0;
 
-    while (index < len) {
-      int b, shift = 0, result = 0;
+    while (index < encoded.length) {
+      int b;
+      int shift = 0;
+      int result = 0;
       do {
         b = encoded.codeUnitAt(index++) - 63;
         result |= (b & 0x1f) << shift;
         shift += 5;
       } while (b >= 0x20);
-      int dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+      final dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
       lat += dlat;
 
       shift = 0;
@@ -150,11 +226,11 @@ class RoutePolylineService {
         result |= (b & 0x1f) << shift;
         shift += 5;
       } while (b >= 0x20);
-      int dlng = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+      final dlng = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
       lng += dlng;
 
-      poly.add(LatLng(lat / 1E5, lng / 1E5));
+      points.add(LatLng(lat / 1e5, lng / 1e5));
     }
-    return poly;
+    return points;
   }
 }
