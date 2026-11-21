@@ -49,6 +49,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   GoogleMapController? _mapController;
   final PhoneHeadingController _phoneHeading = PhoneHeadingController();
   final SmoothNavigationTracker _navTracker = SmoothNavigationTracker();
+  final StoreArrivalGate _arrivalGate = StoreArrivalGate();
+  final RouteStepGuard _stepGuard = RouteStepGuard();
+
+  late DriverRoutingPreference _selectedPreference;
 
   LatLng _currentLoc = const LatLng(32.7568, -97.4768);
   LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
@@ -63,20 +67,17 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   double _distanceToStepMeters = 0.0;
 
   bool _tripStarted = false;
-  bool _followCamera = true;
+  bool _followCamera = false;
   bool _northUpMode = false;
   bool _muted = false;
   bool _mapReady = false;
   bool _hasInitialRoute = false;
-  bool _debugForceArrivalUnlocked = false;
   bool _isProgrammaticCameraMove = false;
+  bool _debugForceArrivalUnlocked = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
   DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
-
-  final StoreArrivalGate _arrivalGate = StoreArrivalGate();
-  final RouteStepGuard _stepGuard = RouteStepGuard();
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -87,6 +88,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    _selectedPreference = widget.routingPreference;
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
     NavVoiceGuidance.instance.resetTrip();
     _stepGuard.reset();
@@ -96,8 +98,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed && _tripStarted && _followCamera) {
-      _applyNavigationCamera(force: true);
+    if (state == AppLifecycleState.resumed) {
+      if (_tripStarted && _followCamera) {
+        _sync3DCameraIfFollowing(force: true);
+      } else if (!_tripStarted) {
+        _centerOnUserLocation();
+      }
     }
   }
 
@@ -131,6 +137,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     }
 
     await _computeRoute(fromOrigin: _currentLoc);
+    if (!_tripStarted) {
+      await _centerOnUserLocation();
+    }
 
     _phoneHeading.startListening(
       onHeadingChanged: (deg) {
@@ -234,7 +243,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     final result = await RoutePolylineService.instance.computeDrivingRoute(
       origin: fromOrigin,
       destination: _storeLoc,
-      preference: widget.routingPreference,
+      preference: _selectedPreference,
     );
 
     final fallbackMeters = Geolocator.distanceBetween(
@@ -267,22 +276,30 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     });
   }
 
-  String _formattedStepDistance(NavigationStep? step) {
-    if (step == null) return '${_distanceMiles.toStringAsFixed(1)} mi';
-    final meters = _distanceToStepMeters > 0
-        ? _distanceToStepMeters
-        : Geolocator.distanceBetween(
-            _snappedLoc.latitude,
-            _snappedLoc.longitude,
-            step.endLocation.latitude,
-            step.endLocation.longitude,
-          );
-    final feet = meters * 3.28084;
-    if (feet < 1000) {
-      final roundedFeet = ((feet / 25).round() * 25).clamp(25, 975);
-      return '$roundedFeet ft';
+  Future<void> _selectRoutingPreference(DriverRoutingPreference pref) async {
+    if (_selectedPreference == pref) return;
+    HapticFeedback.selectionClick();
+    setState(() => _selectedPreference = pref);
+    await _computeRoute(fromOrigin: _currentLoc);
+  }
+
+  Future<void> _centerOnUserLocation() async {
+    if (_mapController == null) return;
+    _isProgrammaticCameraMove = true;
+    try {
+      await _mapController!.animateCamera(
+        CameraUpdate.newCameraPosition(
+          CameraPosition(
+            target: _currentLoc,
+            zoom: 15.8,
+            tilt: 0.0,
+            bearing: 0.0,
+          ),
+        ),
+      );
+    } finally {
+      _isProgrammaticCameraMove = false;
     }
-    return '${(meters / 1609.344).toStringAsFixed(1)} mi';
   }
 
   Future<void> _sync3DCameraIfFollowing({bool force = false}) async {
@@ -305,16 +322,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
 
     _isProgrammaticCameraMove = true;
     try {
-      await _mapController?.animateCamera(
+      await _mapController!.animateCamera(
         CameraUpdate.newCameraPosition(cameraPos),
       );
     } finally {
       _isProgrammaticCameraMove = false;
     }
-  }
-
-  Future<void> _applyNavigationCamera({bool force = false}) async {
-    await _sync3DCameraIfFollowing(force: force);
   }
 
   Future<void> _fitFullRouteOverview() async {
@@ -331,15 +344,20 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
       if (p.longitude > maxLng) maxLng = p.longitude;
     }
 
-    await _mapController!.animateCamera(
-      CameraUpdate.newLatLngBounds(
-        LatLngBounds(
-          southwest: LatLng(minLat - 0.003, minLng - 0.003),
-          northeast: LatLng(maxLat + 0.003, maxLng + 0.003),
+    _isProgrammaticCameraMove = true;
+    try {
+      await _mapController!.animateCamera(
+        CameraUpdate.newLatLngBounds(
+          LatLngBounds(
+            southwest: LatLng(minLat - 0.003, minLng - 0.003),
+            northeast: LatLng(maxLat + 0.003, maxLng + 0.003),
+          ),
+          90.0,
         ),
-        90.0,
-      ),
-    );
+      );
+    } finally {
+      _isProgrammaticCameraMove = false;
+    }
   }
 
   Future<void> _startInAppTrip() async {
@@ -355,19 +373,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     try {
       await FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
         'status': 'headingToStore',
+        'routingPreference': _selectedPreference.name,
         'tripStartedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
     } catch (_) {}
-  }
-
-  Future<void> _openExternalGoogleMaps() async {
-    HapticFeedback.lightImpact();
-    final navUri = Uri.parse(
-      'google.navigation:q=${_storeLoc.latitude},${_storeLoc.longitude}&mode=d',
-    );
-    if (await canLaunchUrl(navUri)) {
-      await launchUrl(navUri);
-    }
   }
 
   void _handleArrivedAtStoreTap() {
@@ -397,6 +406,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     _arrivedAtStoreAndPick();
   }
 
+  Future<void> _openExternalGoogleMaps() async {
+    HapticFeedback.lightImpact();
+    final navUri = Uri.parse(
+      'google.navigation:q=${_storeLoc.latitude},${_storeLoc.longitude}&mode=d',
+    );
+    if (await canLaunchUrl(navUri)) {
+      await launchUrl(navUri);
+    }
+  }
+
   void _arrivedAtStoreAndPick() {
     HapticFeedback.heavyImpact();
     Navigator.pushReplacement(
@@ -420,6 +439,24 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     super.dispose();
   }
 
+  String _formattedStepDistance(NavigationStep? step) {
+    if (step == null) return '${_distanceMiles.toStringAsFixed(1)} mi';
+    final meters = _distanceToStepMeters > 0
+        ? _distanceToStepMeters
+        : Geolocator.distanceBetween(
+            _snappedLoc.latitude,
+            _snappedLoc.longitude,
+            step.endLocation.latitude,
+            step.endLocation.longitude,
+          );
+    final feet = meters * 3.28084;
+    if (feet < 1000) {
+      final roundedFeet = ((feet / 25).round() * 25).clamp(25, 975);
+      return '$roundedFeet ft';
+    }
+    return '${(meters / 1609.344).toStringAsFixed(1)} mi';
+  }
+
   IconData _iconForManeuver(String maneuver) {
     final m = maneuver.toUpperCase();
     if (m.contains('LEFT')) return Icons.turn_left_rounded;
@@ -436,6 +473,16 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     final mins = eta.minute.toString().padLeft(2, '0');
     final suffix = eta.hour >= 12 ? 'PM' : 'AM';
     return '$hour12:$mins $suffix';
+  }
+
+  String _labelForPref(DriverRoutingPreference pref) {
+    return switch (pref) {
+      DriverRoutingPreference.ecoFriendly => 'Eco-Friendly',
+      DriverRoutingPreference.fastest => 'Fastest',
+      DriverRoutingPreference.noHighways => 'No Highway',
+      DriverRoutingPreference.fastestTraffic => 'Fastest',
+      DriverRoutingPreference.avoidHighways => 'No Highway',
+    };
   }
 
   @override
@@ -455,17 +502,25 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     final int mph = (_speedMps * 2.23694).round();
     final String cardinal = DriverCameraHelper.cardinalDirection(_chevronHeading360);
 
+    final arrivalStatus = _arrivalGate.evaluate(
+      currentLocation: _snappedLoc,
+      storeLocation: _storeLoc,
+      radiusMeters: 75.0,
+    );
+    final bool canConfirmArrival =
+        arrivalStatus.isWithinRadius || _debugForceArrivalUnlocked;
+
     return Scaffold(
-      backgroundColor: const Color(0xFF121418),
+      backgroundColor: const Color(0xFF141821),
       body: Stack(
         children: [
-          // RepaintBoundary isolates GoogleMap so 60fps marker & camera moves don't repaint HUD
+          // Isolate GoogleMap in a RepaintBoundary for fluid 60fps marker & camera motion
           Positioned.fill(
             child: RepaintBoundary(
               child: GoogleMap(
-                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.0),
+                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.8),
                 style: midnightTitaniumMapStyle,
-                myLocationEnabled: !_tripStarted,
+                myLocationEnabled: false,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
@@ -479,7 +534,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                 onMapCreated: (c) async {
                   _mapController = c;
                   if (mounted) setState(() => _mapReady = true);
-                  await _fitFullRouteOverview();
+                  await _centerOnUserLocation();
                 },
                 circles: {
                   Circle(
@@ -492,16 +547,15 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   ),
                 },
                 markers: {
-                  if (_tripStarted)
-                    Marker(
-                      markerId: const MarkerId('rapidrun_driver_puck'),
-                      position: _snappedLoc,
-                      icon: _driverPuckIcon,
-                      flat: true,
-                      rotation: _chevronHeading360,
-                      anchor: const Offset(0.5, 0.5),
-                      zIndexInt: 10,
-                    ),
+                  Marker(
+                    markerId: const MarkerId('rapidrun_driver_puck'),
+                    position: _snappedLoc,
+                    icon: _driverPuckIcon,
+                    flat: true,
+                    rotation: _chevronHeading360,
+                    anchor: const Offset(0.5, 0.5),
+                    zIndexInt: 10,
+                  ),
                   Marker(
                     markerId: const MarkerId('rapidrun_partner_store'),
                     position: _storeLoc,
@@ -526,7 +580,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_core'),
                     points: _remainingRoutePoints,
-                    color: const Color(0xFFE6B450),
+                    color: gold,
                     width: 6,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
@@ -543,10 +597,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
               duration: const Duration(milliseconds: 280),
               curve: Curves.fastOutSlowIn,
               opacity: _mapReady ? 0.0 : 1.0,
-              child: Container(color: const Color(0xFF121418)),
+              child: Container(color: const Color(0xFF141821)),
             ),
           ),
 
+          // Top Turn-by-Turn Banner
           Positioned(
             top: MediaQuery.of(context).padding.top + 10,
             left: 14,
@@ -692,9 +747,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ),
           ),
 
+          // Bottom-Left Speed + Live Cardinal Compass Pill
           Positioned(
             left: 14,
-            bottom: 215,
+            bottom: 245,
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 8),
               decoration: BoxDecoration(
@@ -760,23 +816,23 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ),
           ),
 
+          // Right Co-Pilot Controls
           Positioned(
             right: 14,
-            bottom: 215,
+            bottom: 245,
             child: Column(
               children: [
                 FloatingActionButton.small(
                   heroTag: 'north_3d_toggle',
                   backgroundColor: cardBg,
                   foregroundColor: _northUpMode ? const Color(0xFF38BDF8) : gold,
-                  tooltip: _northUpMode ? 'Switch to 3D Heading-Up' : 'Switch to North-Up',
                   onPressed: () {
                     HapticFeedback.selectionClick();
                     setState(() {
                       _northUpMode = !_northUpMode;
                       _followCamera = true;
                     });
-                    _applyNavigationCamera(force: true);
+                    _sync3DCameraIfFollowing(force: true);
                   },
                   child: Icon(
                     _northUpMode ? Icons.explore_rounded : Icons.view_in_ar_rounded,
@@ -804,8 +860,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   foregroundColor: _followCamera ? gold : Colors.white70,
                   onPressed: () {
                     HapticFeedback.selectionClick();
-                    setState(() => _followCamera = true);
-                    _applyNavigationCamera(force: true);
+                    setState(() {
+                      _tripStarted = true;
+                      _followCamera = true;
+                    });
+                    _sync3DCameraIfFollowing(force: true);
                   },
                   child: const Icon(Icons.navigation_rounded, size: 20),
                 ),
@@ -825,12 +884,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ),
           ),
 
+          // Bottom Telemetry, Routing Mode Selector & Arrival Deck
           Positioned(
             bottom: 0,
             left: 0,
             right: 0,
             child: Container(
-              padding: const EdgeInsets.fromLTRB(18, 16, 18, 24),
+              padding: const EdgeInsets.fromLTRB(18, 14, 18, 22),
               decoration: BoxDecoration(
                 color: cardBg,
                 borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
@@ -843,45 +903,52 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Row(
-                        children: [
-                          Text(
-                            '$_etaMinutes min',
-                            style: const TextStyle(
-                              color: Color(0xFF4ADE80),
-                              fontSize: 20,
-                              fontWeight: FontWeight.w900,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '• ${_distanceMiles.toStringAsFixed(1)} mi • Arrive ${_formattedArrivalClock()}',
-                            style: const TextStyle(
-                              color: Colors.white70,
-                              fontSize: 12.5,
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                        decoration: BoxDecoration(
-                          color: gold.withValues(alpha: 0.16),
-                          borderRadius: BorderRadius.circular(6),
-                        ),
+                      Flexible(
                         child: Text(
-                          _northUpMode ? 'NORTH-UP' : widget.routingPreference.name.toUpperCase(),
+                          '$_etaMinutes min • ${_distanceMiles.toStringAsFixed(1)} mi • Arrive ${_formattedArrivalClock()}',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
-                            color: gold,
-                            fontSize: 9.5,
+                            color: Color(0xFF4ADE80),
+                            fontSize: 13.5,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 6),
+                  const SizedBox(height: 8),
+                  // Interactive Eco-Friendly / Fastest / No Highway selector chips
+                  Wrap(
+                    spacing: 8,
+                    runSpacing: 6,
+                    children: [
+                      DriverRoutingPreference.ecoFriendly,
+                      DriverRoutingPreference.fastestTraffic,
+                      DriverRoutingPreference.avoidHighways,
+                    ].map((pref) {
+                      final selected = _selectedPreference == pref;
+                      return ChoiceChip(
+                        selected: selected,
+                        label: Text(
+                          _labelForPref(pref),
+                          style: TextStyle(
+                            color: selected ? Colors.black : Colors.white70,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        selectedColor: gold,
+                        backgroundColor: const Color(0xFF222733),
+                        side: BorderSide(
+                          color: selected ? gold : Colors.white12,
+                        ),
+                        visualDensity: VisualDensity.compact,
+                        onSelected: (_) => _selectRoutingPreference(pref),
+                      );
+                    }).toList(),
+                  ),
+                  const SizedBox(height: 8),
                   Text(
                     'Pickup: ${widget.storeName}',
                     style: const TextStyle(
@@ -894,7 +961,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                     widget.storeAddress,
                     style: const TextStyle(color: Colors.white54, fontSize: 12),
                   ),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: 12),
                   if (!_tripStarted)
                     Row(
                       children: [
@@ -948,60 +1015,44 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                           child: GestureDetector(
                             onLongPress: () {
                               HapticFeedback.mediumImpact();
-                              setState(() => _debugForceArrivalUnlocked = !_debugForceArrivalUnlocked);
-                              ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  behavior: SnackBarBehavior.floating,
-                                  backgroundColor: const Color(0xFFE5A93C),
-                                  content: Text(
-                                    _debugForceArrivalUnlocked
-                                        ? '🛠️ QA OVERRIDE: Arrival Unlocked'
-                                        : '🔒 QA OVERRIDE: Proximity Gate Enforced',
-                                    style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                              setState(() {
+                                _debugForceArrivalUnlocked =
+                                    !_debugForceArrivalUnlocked;
+                              });
+                            },
+                            child: SizedBox(
+                              height: 50,
+                              child: ElevatedButton.icon(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: canConfirmArrival
+                                      ? const Color(0xFF4ADE80)
+                                      : Colors.white12,
+                                  foregroundColor:
+                                      canConfirmArrival ? Colors.black : Colors.white54,
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14),
                                   ),
                                 ),
-                              );
-                            },
-                            child: Builder(
-                              builder: (ctx) {
-                                final arrivalStatus = _arrivalGate.evaluate(
-                                  currentLocation: _snappedLoc,
-                                  storeLocation: _storeLoc,
-                                  radiusMeters: 75.0,
-                                );
-                                final bool canConfirm = arrivalStatus.isWithinRadius || _debugForceArrivalUnlocked;
-
-                                return SizedBox(
-                                  height: 50,
-                                  child: ElevatedButton.icon(
-                                    style: ElevatedButton.styleFrom(
-                                      backgroundColor: canConfirm ? const Color(0xFF4ADE80) : Colors.white12,
-                                      foregroundColor: canConfirm ? Colors.black : Colors.white54,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(14),
-                                      ),
-                                    ),
-                                    onPressed: _handleArrivedAtStoreTap,
-                                    icon: Icon(
-                                      canConfirm ? Icons.storefront_rounded : Icons.lock_clock_rounded,
-                                      size: 20,
-                                    ),
-                                    label: Text(
-                                      canConfirm
-                                          ? 'ARRIVED AT STORE • START PICKING'
-                                          : 'ARRIVE (${arrivalStatus.distanceLabel})',
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.w900,
-                                        fontSize: 12.5,
-                                        letterSpacing: 0.3,
-                                      ),
-                                    ),
+                                onPressed: _handleArrivedAtStoreTap,
+                                icon: Icon(
+                                  canConfirmArrival
+                                      ? Icons.storefront_rounded
+                                      : Icons.lock_clock_rounded,
+                                  size: 20,
+                                ),
+                                label: Text(
+                                  canConfirmArrival
+                                      ? 'ARRIVED AT STORE • START PICKING'
+                                      : 'ARRIVE (${arrivalStatus.distanceLabel})',
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.w900,
+                                    fontSize: 12.5,
+                                    letterSpacing: 0.3,
                                   ),
-                                );
-                              },
+                                ),
+                              ),
                             ),
                           ),
                         ),
