@@ -1,3 +1,16 @@
+import java.util.Properties
+import java.io.FileInputStream
+
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localProperties.load(FileInputStream(localPropertiesFile))
+}
+
+val mapsApiKey = localProperties.getProperty("MAPS_API_KEY")
+    ?: System.getenv("MAPS_API_KEY")
+    ?: "AIzaSyB1c6_nJBhUsSbLmuGb3HiGfeA29CmOkTQ"
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -9,7 +22,6 @@ plugins {
 
 android {
     namespace = "com.rapidrun.rapidrun"
-    // Use explicit SDK versions to avoid plugin complaints about unresolved constants.
     compileSdk = 35
     ndkVersion = "27.0.12077973"
 
@@ -23,26 +35,22 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.rapidrun.rapidrun"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 23  // Firebase & modern plugin minimum
-    targetSdk = 35
+        minSdk = 23
+        targetSdk = 35
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        manifestPlaceholders["MAPS_API_KEY"] = mapsApiKey
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
         }
     }
     packagingOptions {
         resources {
-            excludes += "/META-INF/{LICENSE*,NOTICE*,DEPENDENCIES}" // Prevent duplicate license merge issues
+            excludes += "/META-INF/{LICENSE*,NOTICE*,DEPENDENCIES}"
         }
     }
 }
@@ -52,7 +60,6 @@ flutter {
 }
 
 dependencies {
-    // Keep the Firebase BoM reasonably current (ensure matches FlutterFire plugin expectations)
     implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
     implementation("com.google.firebase:firebase-analytics")
 }

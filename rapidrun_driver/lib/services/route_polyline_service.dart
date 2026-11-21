@@ -15,8 +15,11 @@ class RoutePolylineService {
   static final RoutePolylineService instance = RoutePolylineService._internal();
   RoutePolylineService._internal();
 
-  /// Google Maps / Directions API Key loaded from Android project resources
-  static const String googleMapsApiKey = 'AIzaSyAjtmblGZLpiX77_oBYjEIZoXvFLoL0EFM';
+  /// Google Maps / Directions API Key loaded from environment or fallback
+  static const String googleMapsApiKey = String.fromEnvironment(
+    'GOOGLE_MAPS_ROUTES_API_KEY',
+    defaultValue: 'AIzaSyB1c6_nJBhUsSbLmuGb3HiGfeA29CmOkTQ',
+  );
 
   /// Fetches road-snapped polyline coordinates from Google Directions API or precise fallback
   Future<List<LatLng>> getDrivingRoute({
