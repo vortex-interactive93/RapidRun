@@ -74,6 +74,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   bool _hasInitialRoute = false;
   bool _isProgrammaticCameraMove = false;
   bool _debugForceArrivalUnlocked = false;
+  bool _isRecalculatingRoute = false;
+  bool _usingLiveRoutesApi = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
   DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
@@ -266,6 +268,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     _stepGuard.reset();
     setState(() {
       _hasInitialRoute = true;
+      _usingLiveRoutesApi = result.usedGoogleRoutesApi;
       _distanceMiles = miles;
       _etaMinutes = mins;
       _fullRoutePoints = pts;
@@ -279,8 +282,28 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   Future<void> _selectRoutingPreference(DriverRoutingPreference pref) async {
     if (_selectedPreference == pref) return;
     HapticFeedback.selectionClick();
-    setState(() => _selectedPreference = pref);
+    setState(() {
+      _selectedPreference = pref;
+      _isRecalculatingRoute = true;
+    });
+
     await _computeRoute(fromOrigin: _currentLoc);
+
+    if (!mounted) return;
+    setState(() => _isRecalculatingRoute = false);
+
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        behavior: SnackBarBehavior.floating,
+        duration: const Duration(milliseconds: 1400),
+        backgroundColor: const Color(0xFF1E222B),
+        content: Text(
+          'Route set to ${_labelForPref(pref)} • $_etaMinutes min (${_distanceMiles.toStringAsFixed(1)} mi)',
+          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w700),
+        ),
+      ),
+    );
   }
 
   Future<void> _centerOnUserLocation() async {
@@ -1000,6 +1023,25 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                           ),
                         ),
                       ),
+                      if (_isRecalculatingRoute)
+                        const SizedBox(
+                          width: 14,
+                          height: 14,
+                          child: CircularProgressIndicator(
+                            strokeWidth: 2,
+                            color: gold,
+                          ),
+                        )
+                      else
+                        Text(
+                          _usingLiveRoutesApi ? 'LIVE TRAFFIC' : 'ROAD ROUTE',
+                          style: const TextStyle(
+                            color: gold,
+                            fontSize: 10,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 0.5,
+                          ),
+                        ),
                     ],
                   ),
                   const SizedBox(height: 8),

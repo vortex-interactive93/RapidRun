@@ -43,12 +43,14 @@ class DrivingRouteResult {
   final double distanceMeters;
   final Duration duration;
   final List<NavigationStep> steps;
+  final bool usedGoogleRoutesApi;
 
   const DrivingRouteResult({
     required this.points,
     required this.distanceMeters,
     required this.duration,
     this.steps = const [],
+    this.usedGoogleRoutesApi = false,
   });
 
   double get distanceMiles => distanceMeters / 1609.344;
@@ -120,10 +122,26 @@ class RoutePolylineService {
       final uri =
           Uri.parse('https://routes.googleapis.com/directions/v2:computeRoutes');
 
-      final bool avoidHighways = preference == DriverRoutingPreference.avoidHighways;
-      final String routingPreference = preference == DriverRoutingPreference.fastestTraffic
+      final String routingPreference = (preference == DriverRoutingPreference.fastestTraffic ||
+              preference == DriverRoutingPreference.fastest)
           ? 'TRAFFIC_AWARE_OPTIMAL'
           : 'TRAFFIC_AWARE';
+
+      final Map<String, dynamic> routeModifiers = switch (preference) {
+        DriverRoutingPreference.avoidHighways ||
+        DriverRoutingPreference.noHighways =>
+          {
+            'avoidHighways': true,
+            'avoidFerries': true,
+          },
+        DriverRoutingPreference.ecoFriendly => {
+            'avoidTolls': true,
+            'avoidFerries': true,
+          },
+        _ => {
+            'avoidFerries': true,
+          },
+      };
 
       final response = await http
           .post(
@@ -158,11 +176,7 @@ class RoutePolylineService {
               },
               'travelMode': 'DRIVE',
               'routingPreference': routingPreference,
-              'routeModifiers': {
-                'avoidTolls': preference == DriverRoutingPreference.ecoFriendly,
-                'avoidHighways': avoidHighways,
-                'avoidFerries': true,
-              },
+              'routeModifiers': routeModifiers,
             }),
           )
           .timeout(const Duration(seconds: 8));
@@ -186,7 +200,6 @@ class RoutePolylineService {
       final rawDuration = (firstRoute['duration'] ?? '0s').toString();
       final seconds = int.tryParse(rawDuration.replaceAll('s', '')) ?? 0;
 
-      // Parse turn-by-turn steps from first leg
       final parsedSteps = <NavigationStep>[];
       final legs = firstRoute['legs'] as List<dynamic>? ?? const [];
       if (legs.isNotEmpty) {
@@ -222,6 +235,7 @@ class RoutePolylineService {
         distanceMeters: distMeters,
         duration: Duration(seconds: seconds),
         steps: parsedSteps,
+        usedGoogleRoutesApi: true,
       );
     } catch (e) {
       debugPrint('Google Routes API error: $e');
@@ -294,6 +308,7 @@ class RoutePolylineService {
           seconds: ((route['duration'] as num?)?.round() ?? 0),
         ),
         steps: parsedSteps,
+        usedGoogleRoutesApi: false,
       );
     } catch (e) {
       debugPrint('OSRM fallback error: $e');
