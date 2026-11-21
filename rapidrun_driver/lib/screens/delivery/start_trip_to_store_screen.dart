@@ -288,9 +288,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
       driverLocation: _snappedLoc,
       headingDegrees: _chevronHeading360,
       northUpMode: _northUpMode,
-      zoom3D: 18.4,
-      tilt3D: 63.0,
-      lookAheadMeters: 120.0,
+      zoom3D: 17.9,
+      tilt3D: 58.0,
+      lookAheadMeters: 95.0,
     );
 
     _isProgrammaticCameraMove = true;
@@ -505,10 +505,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                 },
                 polylines: {
                   Polyline(
-                    polylineId: const PolylineId('in_app_gold_glow'),
+                    polylineId: const PolylineId('in_app_gold_casing'),
                     points: _remainingRoutePoints,
-                    color: gold.withValues(alpha: 0.30),
-                    width: 12,
+                    color: const Color(0xFF0A0C10).withValues(alpha: 0.90),
+                    width: 13,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
@@ -516,7 +516,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_core'),
                     points: _remainingRoutePoints,
-                    color: gold,
+                    color: const Color(0xFFE6B450),
                     width: 6,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,

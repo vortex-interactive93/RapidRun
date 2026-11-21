@@ -65,9 +65,9 @@ class DriverCameraHelper {
   static CameraPosition buildForward3DCamera({
     required LatLng driverLocation,
     required double bearingDegrees,
-    double zoom = 18.4,
-    double tilt = 63.0,
-    double lookAheadMeters = 120.0,
+    double zoom = 17.9,
+    double tilt = 58.0,
+    double lookAheadMeters = 95.0,
   }) {
     return buildNavigationCamera(
       driverLocation: driverLocation,
@@ -83,9 +83,9 @@ class DriverCameraHelper {
     required LatLng driverLocation,
     required double headingDegrees,
     required bool northUpMode,
-    double zoom3D = 18.4,
-    double tilt3D = 63.0,
-    double lookAheadMeters = 120.0,
+    double zoom3D = 17.9,
+    double tilt3D = 58.0,
+    double lookAheadMeters = 95.0,
   }) {
     if (northUpMode) {
       return CameraPosition(
