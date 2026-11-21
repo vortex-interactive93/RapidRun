@@ -9,9 +9,9 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
-import '../../services/route_polyline_service.dart';
-import '../../services/route_navigation_helper.dart';
 import '../../services/driver_camera_helper.dart';
+import '../../services/route_navigation_helper.dart';
+import '../../services/route_polyline_service.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -43,8 +43,10 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   StreamSubscription<Position>? _posSub;
 
   LatLng _currentLoc = const LatLng(32.7568, -97.4768);
+  LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
   double _heading = 0.0;
   late final LatLng _storeLoc;
+
   List<LatLng> _routePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
@@ -75,13 +77,14 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
           desiredAccuracy: LocationAccuracy.high,
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
-        _heading = pos.heading;
+        _snappedLoc = _currentLoc;
+        if (pos.heading > 0) _heading = pos.heading;
       }
     } catch (e) {
       debugPrint('Initial store GPS notice: $e');
     }
 
-    await _recalculateRoute();
+    await _computeInitialRoute();
 
     _posSub = Geolocator.getPositionStream(
       locationSettings: const LocationSettings(
@@ -90,19 +93,33 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       ),
     ).listen((pos) async {
       if (!mounted) return;
-      final updated = LatLng(pos.latitude, pos.longitude);
+      final raw = LatLng(pos.latitude, pos.longitude);
 
-      final eval = RouteNavigationHelper.evaluate(
-        rawLocation: updated,
+      final snappedState = RouteNavigationHelper.evaluate(
+        rawLocation: raw,
         routePoints: _routePoints,
         steps: _steps,
         currentStepIndex: _activeStepIndex,
       );
 
+      final meters = snappedState.remainingRouteMeters > 0
+          ? snappedState.remainingRouteMeters
+          : Geolocator.distanceBetween(
+              raw.latitude,
+              raw.longitude,
+              _storeLoc.latitude,
+              _storeLoc.longitude,
+            );
+      final miles = meters / 1609.344;
+      final mins = (miles * 2.4).ceil().clamp(1, 99);
+
       setState(() {
-        _currentLoc = eval.snappedLocation;
-        _activeStepIndex = eval.activeStepIndex;
+        _currentLoc = raw;
+        _snappedLoc = snappedState.snappedLocation;
         if (pos.heading > 0) _heading = pos.heading;
+        _activeStepIndex = snappedState.activeStepIndex;
+        _distanceMiles = miles;
+        _etaMinutes = mins;
       });
 
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
@@ -113,13 +130,12 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       }, SetOptions(merge: true)).catchError((_) {});
 
       if (_tripStarted && _followCamera) {
-        _animate3DFollowCamera();
+        await _animate3DFollowCamera();
       }
-      await _recalculateRoute();
     });
   }
 
-  Future<void> _recalculateRoute() async {
+  Future<void> _computeInitialRoute() async {
     final result = await RoutePolylineService.instance.computeDrivingRoute(
       origin: _currentLoc,
       destination: _storeLoc,
@@ -137,7 +153,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         : fallbackMeters / 1609.344;
     final mins = result.duration.inMinutes > 0
         ? result.duration.inMinutes
-        : (miles * 2.5).ceil().clamp(1, 99);
+        : (miles * 2.4).ceil().clamp(1, 99);
 
     if (!mounted) return;
     setState(() {
@@ -146,14 +162,31 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
       _routePoints =
           result.points.isNotEmpty ? result.points : [_currentLoc, _storeLoc];
       _steps = result.steps;
+      _activeStepIndex = 0;
     });
+  }
+
+  String _formattedStepDistance(NavigationStep? step) {
+    if (step == null) return '${_distanceMiles.toStringAsFixed(1)} mi';
+    final meters = Geolocator.distanceBetween(
+      _snappedLoc.latitude,
+      _snappedLoc.longitude,
+      step.endLocation.latitude,
+      step.endLocation.longitude,
+    );
+    final feet = meters * 3.28084;
+    if (feet < 1000) {
+      final roundedFeet = ((feet / 25).round() * 25).clamp(25, 975);
+      return '$roundedFeet ft';
+    }
+    return '${(meters / 1609.344).toStringAsFixed(1)} mi';
   }
 
   Future<void> _animate3DFollowCamera() async {
     if (_mapController == null) return;
     _isProgrammaticMove = true;
     final cameraPos = DriverCameraHelper.buildForward3DCamera(
-      driverLocation: _currentLoc,
+      driverLocation: _snappedLoc,
       bearingDegrees: _heading,
       zoom: 17.6,
       tilt: 58.0,
@@ -232,6 +265,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     );
   }
 
+  @override
+  void dispose() {
+    _posSub?.cancel();
+    _mapController?.dispose();
+    super.dispose();
+  }
+
   IconData _iconForManeuver(String maneuver) {
     final m = maneuver.toUpperCase();
     if (m.contains('LEFT')) return Icons.turn_left_rounded;
@@ -251,39 +291,29 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   }
 
   @override
-  void dispose() {
-    _posSub?.cancel();
-    _mapController?.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE6B450);
     const cardBg = Color(0xFF171A21);
 
-    final NavigationStep? currentStep = _steps.isNotEmpty && _activeStepIndex < _steps.length
-        ? _steps[_activeStepIndex]
-        : null;
-    final NavigationStep? nextStep = _steps.length > _activeStepIndex + 1
-        ? _steps[_activeStepIndex + 1]
-        : null;
+    final NavigationStep? currentStep =
+        _steps.isNotEmpty ? _steps[_activeStepIndex.clamp(0, _steps.length - 1)] : null;
+    final NavigationStep? nextStep =
+        (_activeStepIndex + 1 < _steps.length) ? _steps[_activeStepIndex + 1] : null;
 
     return Scaffold(
       backgroundColor: const Color(0xFF121418),
       body: Stack(
         children: [
-          // 1. Full-bleed Midnight Titanium Map isolated inside RepaintBoundary
           Positioned.fill(
             child: RepaintBoundary(
               child: GoogleMap(
-                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 14.5),
+                initialCameraPosition: CameraPosition(target: _currentLoc, zoom: 15.0),
                 myLocationEnabled: true,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
                 buildingsEnabled: true,
-                trafficEnabled: true,
+                trafficEnabled: false,
                 onCameraMoveStarted: () {
                   if (!_isProgrammaticMove && _tripStarted && _followCamera) {
                     setState(() => _followCamera = false);
@@ -298,7 +328,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                 markers: {
                   Marker(
                     markerId: const MarkerId('driver_vehicle_puck'),
-                    position: _currentLoc,
+                    position: _snappedLoc,
                     rotation: _heading,
                     flat: true,
                     anchor: const Offset(0.5, 0.5),
@@ -318,8 +348,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                   Polyline(
                     polylineId: const PolylineId('in_app_gold_glow'),
                     points: _routePoints,
-                    color: gold.withValues(alpha: 0.35),
-                    width: 10,
+                    color: gold.withValues(alpha: 0.30),
+                    width: 11,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
                     endCap: Cap.roundCap,
@@ -348,7 +378,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             ),
           ),
 
-          // 2. Top Turn-by-Turn Maneuver HUD (Uber/Spark-style Dark + Gold Banner)
           Positioned(
             top: MediaQuery.of(context).padding.top + 10,
             left: 14,
@@ -391,8 +420,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              currentStep?.formattedDistance ??
-                                  '${_distanceMiles.toStringAsFixed(1)} mi',
+                              _formattedStepDistance(currentStep),
                               style: const TextStyle(
                                 color: gold,
                                 fontSize: 18,
@@ -465,7 +493,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             ),
           ),
 
-          // 3. Floating Right Camera Controls (Recenter 3D Follow vs. Full Route Overview)
           Positioned(
             right: 14,
             bottom: 215,
@@ -498,7 +525,6 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
             ),
           ),
 
-          // 4. Bottom Driver Navigation Telemetry & Action Deck
           Positioned(
             bottom: 0,
             left: 0,
