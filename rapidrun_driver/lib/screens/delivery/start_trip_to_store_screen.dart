@@ -17,6 +17,7 @@ import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/smooth_navigation_tracker.dart';
 import '../../services/store_arrival_gate.dart';
+import '../../services/route_step_guard.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -75,6 +76,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   final StoreArrivalGate _arrivalGate = StoreArrivalGate();
+  final RouteStepGuard _stepGuard = RouteStepGuard();
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -87,6 +89,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     WidgetsBinding.instance.addObserver(this);
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
     NavVoiceGuidance.instance.resetTrip();
+    _stepGuard.reset();
     _loadMarkers();
     _initLocationAndRoute();
   }
@@ -189,13 +192,19 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
             ? rawMins
             : ((_etaMinutes * 0.7) + (rawMins * 0.3)).round().clamp(1, 99);
 
+        final forwardStepIdx = _stepGuard.resolveForwardStepIndex(
+          driverLocation: snappedState.snappedLocation,
+          steps: _steps,
+          candidateStepIndex: snappedState.activeStepIndex,
+        );
+
         setState(() {
           _currentLoc = raw;
           _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
               ? snappedState.remainingPoints
               : _fullRoutePoints;
           _speedMps = pos.speed.clamp(0.0, 60.0);
-          _activeStepIndex = snappedState.activeStepIndex;
+          _activeStepIndex = forwardStepIdx;
           _distanceToStepMeters = snappedState.distanceToStepMeters;
           _distanceMiles = miles;
           _etaMinutes = steadyMins;
@@ -245,6 +254,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
         result.points.isNotEmpty ? result.points : [fromOrigin, _storeLoc];
 
     if (!mounted) return;
+    _stepGuard.reset();
     setState(() {
       _hasInitialRoute = true;
       _distanceMiles = miles;

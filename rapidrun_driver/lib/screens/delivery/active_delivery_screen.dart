@@ -18,6 +18,7 @@ import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/arrival_proximity_helper.dart';
 import '../../services/store_arrival_gate.dart';
+import '../../services/route_step_guard.dart';
 import '../../services/smooth_navigation_tracker.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
@@ -96,11 +97,14 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
   BitmapDescriptor _customerPinIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
 
+  final RouteStepGuard _stepGuard = RouteStepGuard();
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _customerLoc = LatLng(widget.customerLat, widget.customerLng);
+    _stepGuard.reset();
     _phoneHeading.startListening(
       onHeadingChanged: (deg) {
         if (!mounted || _speedMps >= 2.2) return;
@@ -199,13 +203,19 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
             ? rawMins
             : ((_etaMinutes * 0.7) + (rawMins * 0.3)).round().clamp(1, 99);
 
+        final forwardStepIdx = _stepGuard.resolveForwardStepIndex(
+          driverLocation: snappedState.snappedLocation,
+          steps: _steps,
+          candidateStepIndex: snappedState.activeStepIndex,
+        );
+
         setState(() {
           _currentLoc = raw;
           _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
               ? snappedState.remainingPoints
               : _fullRoutePoints;
           _speedMps = position.speed.clamp(0.0, 60.0);
-          _activeStepIndex = snappedState.activeStepIndex;
+          _activeStepIndex = forwardStepIdx;
           _distanceToStepMeters = snappedState.distanceToStepMeters;
           _distanceMiles = miles;
           _etaMinutes = steadyMins;
@@ -261,6 +271,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
     );
 
     if (!mounted) return;
+    _stepGuard.reset();
     setState(() {
       _hasInitialRoute = true;
       _distanceMiles = miles;
