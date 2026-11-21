@@ -3,14 +3,34 @@
 import 'dart:math' as math;
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Computes a 3D first-person driving CameraPosition matching Google Maps navigation:
-/// - Places driver vehicle puck at bottom ~15% of screen
-/// - Rotates camera bearing to driver travel direction
-/// - Tilts 3D perspective to 62° for deep street visibility ahead
+/// Computes 3D first-person driving CameraPosition and smooth 360° heading math
+/// for RapidRun's dark-titanium navigation system.
 class DriverCameraHelper {
   DriverCameraHelper._();
 
   static const double _earthRadiusMeters = 6378137.0;
+
+  /// Computes compass bearing (0..360 degrees, 0=North, 90=East) from [from] to [to].
+  static double bearingBetween(LatLng from, LatLng to) {
+    final lat1 = from.latitude * math.pi / 180.0;
+    final lat2 = to.latitude * math.pi / 180.0;
+    final dLon = (to.longitude - from.longitude) * math.pi / 180.0;
+
+    final y = math.sin(dLon) * math.cos(lat2);
+    final x = math.cos(lat1) * math.sin(lat2) -
+        math.sin(lat1) * math.cos(lat2) * math.cos(dLon);
+    final deg = math.atan2(y, x) * 180.0 / math.pi;
+    return (deg + 360.0) % 360.0;
+  }
+
+  /// Smoothly interpolates two angles on a 360-degree circle so the chevron
+  /// never spins the long way around across the 0/360 boundary.
+  static double lerpAngleDegrees(double currentDeg, double targetDeg, double t) {
+    final a = (currentDeg % 360.0 + 360.0) % 360.0;
+    final b = (targetDeg % 360.0 + 360.0) % 360.0;
+    double diff = (b - a + 540.0) % 360.0 - 180.0;
+    return (a + diff * t.clamp(0.0, 1.0) + 360.0) % 360.0;
+  }
 
   static LatLng offsetCoordinate({
     required LatLng origin,
@@ -39,13 +59,14 @@ class DriverCameraHelper {
     return LatLng(lat2 * 180.0 / math.pi, lon2 * 180.0 / math.pi);
   }
 
-  /// Builds a 3D first-person driving camera position anchored at bottom 15% of screen
+  /// Matches native turn-by-turn cockpit perspective: places driver near the
+  /// bottom dock and aims 120m ahead along the road segment bearing at 63° tilt.
   static CameraPosition buildForward3DCamera({
     required LatLng driverLocation,
     required double bearingDegrees,
-    double zoom = 18.2,
-    double tilt = 62.0,
-    double lookAheadMeters = 95.0,
+    double zoom = 18.4,
+    double tilt = 63.0,
+    double lookAheadMeters = 120.0,
   }) {
     final lookAheadTarget = offsetCoordinate(
       origin: driverLocation,

@@ -56,7 +56,9 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
   LatLng _currentLoc = const LatLng(32.7482, -97.4248);
   LatLng _snappedLoc = const LatLng(32.7482, -97.4248);
+  LatLng _previousRawLoc = const LatLng(32.7482, -97.4248);
   double _roadBearing = 0.0;
+  double _chevronHeading360 = 0.0;
   double _speedMps = 0.0;
   late final LatLng _customerLoc;
 
@@ -141,6 +143,29 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         fallbackHeading: position.heading > 0 ? position.heading : _roadBearing,
       );
 
+      final movedMeters = Geolocator.distanceBetween(
+        _previousRawLoc.latitude,
+        _previousRawLoc.longitude,
+        raw.latitude,
+        raw.longitude,
+      );
+
+      final double travelBearing = movedMeters > 2.5
+          ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
+          : snappedState.roadBearing;
+
+      final double desiredHeading = position.heading > 0 && position.speed > 1.0
+          ? DriverCameraHelper.lerpAngleDegrees(travelBearing, position.heading, 0.35)
+          : DriverCameraHelper.lerpAngleDegrees(snappedState.roadBearing, travelBearing, 0.5);
+
+      final double smooth360Heading = DriverCameraHelper.lerpAngleDegrees(
+        _chevronHeading360,
+        desiredHeading,
+        0.45,
+      );
+
+      _previousRawLoc = raw;
+
       final meters = snappedState.remainingRouteMeters > 0
           ? snappedState.remainingRouteMeters
           : Geolocator.distanceBetween(
@@ -158,7 +183,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
             ? snappedState.remainingPoints
             : _fullRoutePoints;
-        _roadBearing = snappedState.roadBearing;
+        _roadBearing = smooth360Heading;
+        _chevronHeading360 = smooth360Heading;
         _speedMps = position.speed.clamp(0.0, 60.0);
         _activeStepIndex = snappedState.activeStepIndex;
         _distanceMiles = miles;
@@ -515,7 +541,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                       position: _snappedLoc,
                       icon: _driverPuckIcon,
                       flat: true,
-                      rotation: _roadBearing,
+                      rotation: _chevronHeading360,
                       anchor: const Offset(0.5, 0.5),
                       zIndexInt: 10,
                     ),

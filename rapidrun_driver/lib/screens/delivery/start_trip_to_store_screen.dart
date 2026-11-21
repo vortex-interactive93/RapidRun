@@ -45,7 +45,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
   LatLng _currentLoc = const LatLng(32.7568, -97.4768);
   LatLng _snappedLoc = const LatLng(32.7568, -97.4768);
+  LatLng _previousRawLoc = const LatLng(32.7568, -97.4768);
   double _heading = 0.0;
+  double _chevronHeading360 = 0.0;
   late final LatLng _storeLoc;
 
   List<LatLng> _routePoints = const [];
@@ -118,6 +120,29 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         fallbackHeading: pos.heading > 0 ? pos.heading : _roadBearing,
       );
 
+      final movedMeters = Geolocator.distanceBetween(
+        _previousRawLoc.latitude,
+        _previousRawLoc.longitude,
+        raw.latitude,
+        raw.longitude,
+      );
+
+      final double travelBearing = movedMeters > 2.5
+          ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
+          : snappedState.roadBearing;
+
+      final double desiredHeading = pos.heading > 0 && pos.speed > 1.0
+          ? DriverCameraHelper.lerpAngleDegrees(travelBearing, pos.heading, 0.35)
+          : DriverCameraHelper.lerpAngleDegrees(snappedState.roadBearing, travelBearing, 0.5);
+
+      final double smooth360Heading = DriverCameraHelper.lerpAngleDegrees(
+        _chevronHeading360,
+        desiredHeading,
+        0.45,
+      );
+
+      _previousRawLoc = raw;
+
       final meters = snappedState.remainingRouteMeters > 0
           ? snappedState.remainingRouteMeters
           : Geolocator.distanceBetween(
@@ -135,7 +160,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
         _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
             ? snappedState.remainingPoints
             : _routePoints;
-        _roadBearing = snappedState.roadBearing;
+        _roadBearing = smooth360Heading;
+        _chevronHeading360 = smooth360Heading;
         _speedMps = pos.speed.clamp(0.0, 60.0);
         _activeStepIndex = snappedState.activeStepIndex;
         _distanceMiles = miles;
@@ -358,7 +384,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
                       position: _snappedLoc,
                       icon: _driverPuckIcon,
                       flat: true,
-                      rotation: _roadBearing,
+                      rotation: _chevronHeading360,
                       anchor: const Offset(0.5, 0.5),
                       zIndexInt: 10,
                     ),
