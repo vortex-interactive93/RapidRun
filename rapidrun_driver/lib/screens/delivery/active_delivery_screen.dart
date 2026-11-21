@@ -11,10 +11,10 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_auth_guard.dart';
-import '../../services/route_polyline_service.dart';
-import '../../services/route_navigation_helper.dart';
-import '../../services/rapidrun_map_markers.dart';
 import '../../services/driver_camera_helper.dart';
+import '../../services/rapidrun_map_markers.dart';
+import '../../services/route_navigation_helper.dart';
+import '../../services/route_polyline_service.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 
@@ -56,36 +56,47 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
   LatLng _currentLoc = const LatLng(32.7482, -97.4248);
   LatLng _snappedLoc = const LatLng(32.7482, -97.4248);
-  double _heading = 0.0;
+  double _roadBearing = 0.0;
+  double _speedMps = 0.0;
   late final LatLng _customerLoc;
 
-  List<LatLng> _routePoints = const [];
+  List<LatLng> _fullRoutePoints = const [];
   List<LatLng> _remainingRoutePoints = const [];
   List<NavigationStep> _steps = const [];
   int _activeStepIndex = 0;
-  double _roadBearing = 0.0;
-  double _speedMps = 0.0;
+
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
 
-  BitmapDescriptor _driverPuckIcon =
-      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueCyan);
-
+  bool _navActive = true;
   bool _arrivedAtCustomer = false;
   bool _dropoffPhotoTaken = false;
   bool _isCompleting = false;
-  bool _followCamera = false;
+  bool _followCamera = true;
   bool _isProgrammaticMove = false;
   bool _mapReady = false;
+
+  BitmapDescriptor _driverPuckIcon =
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
+  BitmapDescriptor _customerPinIcon =
+      BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
 
   @override
   void initState() {
     super.initState();
     _customerLoc = LatLng(widget.customerLat, widget.customerLng);
-    RapidRunMapMarkers.getDriverNavigationPuck().then((icon) {
-      if (mounted) setState(() => _driverPuckIcon = icon);
-    });
+    _loadCustomMarkers();
     _initTelemetryAndRoute();
+  }
+
+  Future<void> _loadCustomMarkers() async {
+    final puck = await RapidRunMapMarkers.getDriverNavigationPuck();
+    final destPin = await RapidRunMapMarkers.getPartnerStoreMarker();
+    if (!mounted) return;
+    setState(() {
+      _driverPuckIcon = puck;
+      _customerPinIcon = destPin;
+    });
   }
 
   Future<void> _initTelemetryAndRoute() async {
@@ -100,41 +111,58 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
           desiredAccuracy: LocationAccuracy.high,
         );
         _currentLoc = LatLng(pos.latitude, pos.longitude);
-        _heading = pos.heading;
+        _snappedLoc = _currentLoc;
+        if (pos.heading > 0) _roadBearing = pos.heading;
       }
     } catch (e) {
       debugPrint('Initial delivery GPS notice: $e');
     }
 
-    await _recalculateCustomerRoute();
+    await _computeInitialCustomerRoute();
+    if (_followCamera && _mapController != null) {
+      await _animate3DFollowCamera();
+    }
 
     const locationSettings = LocationSettings(
       accuracy: LocationAccuracy.high,
-      distanceFilter: 10,
+      distanceFilter: 8,
     );
 
     _positionSub = Geolocator.getPositionStream(locationSettings: locationSettings)
         .listen((position) async {
       if (!mounted) return;
-      final updated = LatLng(position.latitude, position.longitude);
+      final raw = LatLng(position.latitude, position.longitude);
 
-      final eval = RouteNavigationHelper.evaluate(
-        rawLocation: updated,
-        routePoints: _routePoints,
+      final snappedState = RouteNavigationHelper.evaluate(
+        rawLocation: raw,
+        routePoints: _fullRoutePoints,
         steps: _steps,
         currentStepIndex: _activeStepIndex,
         fallbackHeading: position.heading > 0 ? position.heading : _roadBearing,
       );
 
+      final meters = snappedState.remainingRouteMeters > 0
+          ? snappedState.remainingRouteMeters
+          : Geolocator.distanceBetween(
+              raw.latitude,
+              raw.longitude,
+              _customerLoc.latitude,
+              _customerLoc.longitude,
+            );
+      final miles = meters / 1609.344;
+      final mins = (miles * 2.4).ceil().clamp(1, 99);
+
       setState(() {
-        _currentLoc = updated;
-        _snappedLoc = eval.snappedLocation;
-        _remainingRoutePoints = eval.remainingPoints.isNotEmpty
-            ? eval.remainingPoints
-            : _routePoints;
-        _roadBearing = eval.roadBearing;
+        _currentLoc = raw;
+        _snappedLoc = snappedState.snappedLocation;
+        _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
+            ? snappedState.remainingPoints
+            : _fullRoutePoints;
+        _roadBearing = snappedState.roadBearing;
         _speedMps = position.speed.clamp(0.0, 60.0);
-        _activeStepIndex = eval.activeStepIndex;
+        _activeStepIndex = snappedState.activeStepIndex;
+        _distanceMiles = miles;
+        _etaMinutes = mins;
       });
 
       FirebaseFirestore.instance.collection('orders').doc(widget.orderId).set({
@@ -151,13 +179,12 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       });
 
       if (!_arrivedAtCustomer && _followCamera) {
-        _animate3DFollowCamera();
+        await _animate3DFollowCamera();
       }
-      await _recalculateCustomerRoute();
     });
   }
 
-  Future<void> _recalculateCustomerRoute() async {
+  Future<void> _computeInitialCustomerRoute() async {
     final result = await RoutePolylineService.instance.computeDrivingRoute(
       origin: _currentLoc,
       destination: _customerLoc,
@@ -177,22 +204,36 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         ? result.duration.inMinutes
         : (miles * 2.5).ceil().clamp(1, 99);
 
+    final pts =
+        result.points.isNotEmpty ? result.points : [_currentLoc, _customerLoc];
+    final initialSnap = RouteNavigationHelper.evaluate(
+      rawLocation: _currentLoc,
+      routePoints: pts,
+      steps: result.steps,
+      currentStepIndex: 0,
+      fallbackHeading: _roadBearing,
+    );
+
     if (!mounted) return;
     setState(() {
       _distanceMiles = miles;
       _etaMinutes = mins;
-      _routePoints =
-          result.points.isNotEmpty ? result.points : [_currentLoc, _customerLoc];
-      _remainingRoutePoints = _routePoints;
+      _fullRoutePoints = pts;
+      _remainingRoutePoints = initialSnap.remainingPoints.isNotEmpty
+          ? initialSnap.remainingPoints
+          : pts;
+      _snappedLoc = initialSnap.snappedLocation;
+      _roadBearing = initialSnap.roadBearing;
       _steps = result.steps;
+      _activeStepIndex = 0;
     });
   }
 
   String _liveStepDistanceText(NavigationStep? step) {
     if (step == null) return '${_distanceMiles.toStringAsFixed(1)} mi';
     final metersToTurn = Geolocator.distanceBetween(
-      _currentLoc.latitude,
-      _currentLoc.longitude,
+      _snappedLoc.latitude,
+      _snappedLoc.longitude,
       step.endLocation.latitude,
       step.endLocation.longitude,
     );
@@ -209,26 +250,24 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
     _isProgrammaticMove = true;
     final cameraPos = DriverCameraHelper.buildForward3DCamera(
       driverLocation: _snappedLoc,
-      bearingDegrees: _heading,
-      zoom: 18.2,
-      tilt: 62.0,
-      lookAheadMeters: 95.0,
+      bearingDegrees: _roadBearing,
+      zoom: 18.4,
+      tilt: 63.0,
+      lookAheadMeters: 120.0,
     );
-    await _mapController!.animateCamera(
-      CameraUpdate.newCameraPosition(cameraPos),
-    );
+    await _mapController!.animateCamera(CameraUpdate.newCameraPosition(cameraPos));
     await Future.delayed(const Duration(milliseconds: 300));
     _isProgrammaticMove = false;
   }
 
   Future<void> _fitFullRouteOverview() async {
-    if (_routePoints.length < 2 || _mapController == null) return;
-    double minLat = _routePoints.first.latitude;
-    double maxLat = _routePoints.first.latitude;
-    double minLng = _routePoints.first.longitude;
-    double maxLng = _routePoints.first.longitude;
+    if (_remainingRoutePoints.length < 2 || _mapController == null) return;
+    double minLat = _remainingRoutePoints.first.latitude;
+    double maxLat = _remainingRoutePoints.first.latitude;
+    double minLng = _remainingRoutePoints.first.longitude;
+    double maxLng = _remainingRoutePoints.first.longitude;
 
-    for (final p in _routePoints) {
+    for (final p in _remainingRoutePoints) {
       if (p.latitude < minLat) minLat = p.latitude;
       if (p.latitude > maxLat) maxLat = p.latitude;
       if (p.longitude < minLng) minLng = p.longitude;
@@ -423,33 +462,37 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   @override
   Widget build(BuildContext context) {
     const gold = Color(0xFFE6B450);
-    const bg = Color(0xFF141414);
+    const bg = Color(0xFF12151C);
     const cardSurface = Color(0xFF171A21);
 
-    final NavigationStep? currentStep = _steps.isNotEmpty && _activeStepIndex < _steps.length
-        ? _steps[_activeStepIndex]
+    final NavigationStep? currentStep = _steps.isNotEmpty
+        ? _steps[_activeStepIndex.clamp(0, _steps.length - 1)]
         : null;
-    final NavigationStep? nextStep = _steps.length > _activeStepIndex + 1
-        ? _steps[_activeStepIndex + 1]
-        : null;
+    final NavigationStep? nextStep =
+        (_activeStepIndex + 1 < _steps.length) ? _steps[_activeStepIndex + 1] : null;
+    final int mph = (_speedMps * 2.23694).round();
 
     return Scaffold(
       backgroundColor: bg,
       body: Stack(
         children: [
+          // 1. 3D Behind-the-Wheel GoogleMap isolated in RepaintBoundary for 120fps motion
           Positioned.fill(
             child: RepaintBoundary(
               child: GoogleMap(
                 initialCameraPosition: CameraPosition(
                   target: _customerLoc,
-                  zoom: 15.0,
+                  zoom: 18.4,
+                  tilt: 63.0,
+                  bearing: _roadBearing,
                 ),
                 style: midnightTitaniumMapStyle,
-                myLocationEnabled: false,
+                myLocationEnabled: !_navActive,
                 myLocationButtonEnabled: false,
                 zoomControlsEnabled: false,
                 compassEnabled: false,
-                trafficEnabled: true,
+                buildingsEnabled: true,
+                trafficEnabled: false,
                 onCameraMoveStarted: () {
                   if (!_isProgrammaticMove && _followCamera) {
                     setState(() => _followCamera = false);
@@ -466,19 +509,21 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   await _fitFullRouteOverview();
                 },
                 markers: {
-                  Marker(
-                    markerId: const MarkerId('rapidrun_driver_puck'),
-                    position: _snappedLoc,
-                    rotation: _roadBearing,
-                    flat: true,
-                    anchor: const Offset(0.5, 0.5),
-                    icon: _driverPuckIcon,
-                    zIndexInt: 10,
-                  ),
+                  if (_navActive)
+                    Marker(
+                      markerId: const MarkerId('rapidrun_driver_puck'),
+                      position: _snappedLoc,
+                      icon: _driverPuckIcon,
+                      flat: true,
+                      rotation: _roadBearing,
+                      anchor: const Offset(0.5, 0.5),
+                      zIndexInt: 10,
+                    ),
                   Marker(
                     markerId: const MarkerId('exact_dropoff_target'),
                     position: _customerLoc,
-                    icon: BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow),
+                    icon: _customerPinIcon,
+                    anchor: const Offset(0.5, 0.9),
                     infoWindow: InfoWindow(
                       title: widget.customerName,
                       snippet: widget.customerAddress,
@@ -488,8 +533,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 polylines: {
                   Polyline(
                     polylineId: const PolylineId('dropoff_gold_glow'),
-                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
-                    color: gold.withValues(alpha: 0.35),
+                    points: _remainingRoutePoints,
+                    color: gold.withValues(alpha: 0.30),
                     width: 12,
                     jointType: JointType.round,
                     startCap: Cap.roundCap,
@@ -497,7 +542,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   ),
                   Polyline(
                     polylineId: const PolylineId('dropoff_gold_core'),
-                    points: _remainingRoutePoints.isNotEmpty ? _remainingRoutePoints : _routePoints,
+                    points: _remainingRoutePoints,
                     color: gold,
                     width: 6,
                     jointType: JointType.round,
@@ -519,7 +564,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
             ),
           ),
 
-          // Top Dark + Gold Turn-by-Turn Banner
+          // 2. Top Dark + Gold Turn-by-Turn Banner
           Positioned(
             top: MediaQuery.of(context).padding.top + 10,
             left: 14,
@@ -632,19 +677,21 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
             ),
           ),
 
+          // 3. Live Speedometer Pill (Bottom-Left above Delivery Deck)
           Positioned(
-            left: 16,
-            bottom: 270,
+            left: 14,
+            bottom: 266,
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               decoration: BoxDecoration(
-                color: const Color(0xFF14171E).withValues(alpha: 0.96),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: gold.withValues(alpha: 0.4)),
+                color: cardSurface.withValues(alpha: 0.95),
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: gold.withValues(alpha: 0.35)),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.5),
+                    color: Colors.black.withValues(alpha: 0.6),
                     blurRadius: 12,
+                    offset: const Offset(0, 4),
                   ),
                 ],
               ),
@@ -652,21 +699,22 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    '${(_speedMps * 2.23694).round()}',
+                    '$mph',
                     style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 19,
+                      fontSize: 18,
                       fontWeight: FontWeight.w900,
                       height: 1.0,
                     ),
                   ),
+                  const SizedBox(height: 2),
                   const Text(
                     'MPH',
                     style: TextStyle(
                       color: gold,
                       fontSize: 9,
                       fontWeight: FontWeight.w900,
-                      letterSpacing: 0.8,
+                      letterSpacing: 0.6,
                     ),
                   ),
                 ],
@@ -674,10 +722,10 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
             ),
           ),
 
-          // Camera 3D Follow / Full Route Toggles
+          // 4. Camera 3D Follow / Full Route Overview Toggles
           Positioned(
             right: 14,
-            bottom: 270,
+            bottom: 266,
             child: Column(
               children: [
                 FloatingActionButton.small(
@@ -686,7 +734,10 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                   foregroundColor: _followCamera ? gold : Colors.white70,
                   onPressed: () {
                     HapticFeedback.selectionClick();
-                    setState(() => _followCamera = true);
+                    setState(() {
+                      _navActive = true;
+                      _followCamera = true;
+                    });
                     _animate3DFollowCamera();
                   },
                   child: const Icon(Icons.navigation_rounded, size: 20),
@@ -707,7 +758,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
             ),
           ),
 
-          // Bottom Delivery Telemetry & Arrival/Completion Deck
+          // 5. Bottom Delivery Telemetry & Arrival/Completion Deck
           Positioned(
             bottom: 0,
             left: 0,
@@ -824,7 +875,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                         .snapshots(),
                     builder: (context, snapshot) {
                       final data = snapshot.data?.data();
-                      final liveNotes = (data?['deliveryNotes'] ?? widget.deliveryNotes).toString();
+                      final liveNotes =
+                          (data?['deliveryNotes'] ?? widget.deliveryNotes).toString();
 
                       return Container(
                         padding: const EdgeInsets.all(10),
@@ -841,7 +893,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                             Expanded(
                               child: Text(
                                 liveNotes,
-                                style: const TextStyle(color: Colors.white70, fontSize: 11.5, height: 1.25),
+                                style: const TextStyle(
+                                  color: Colors.white70,
+                                  fontSize: 11.5,
+                                  height: 1.25,
+                                ),
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                               ),
@@ -859,17 +915,27 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                         style: ElevatedButton.styleFrom(
                           backgroundColor: gold,
                           foregroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14),
+                          ),
                           elevation: 4,
                         ),
                         onPressed: () {
                           HapticFeedback.heavyImpact();
                           setState(() => _arrivedAtCustomer = true);
                         },
-                        icon: const Icon(Icons.location_on_rounded, color: Colors.black, size: 18),
+                        icon: const Icon(
+                          Icons.location_on_rounded,
+                          color: Colors.black,
+                          size: 18,
+                        ),
                         label: const Text(
                           'ARRIVED AT CUSTOMER',
-                          style: TextStyle(fontWeight: FontWeight.w900, fontSize: 13.5, letterSpacing: 0.5),
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 13.5,
+                            letterSpacing: 0.5,
+                          ),
                         ),
                       ),
                     ),
@@ -882,11 +948,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                             child: OutlinedButton(
                               style: OutlinedButton.styleFrom(
                                 side: BorderSide(
-                                  color: _dropoffPhotoTaken ? const Color(0xFF4ADE80) : gold,
+                                  color: _dropoffPhotoTaken
+                                      ? const Color(0xFF4ADE80)
+                                      : gold,
                                   width: 1.5,
                                 ),
                                 padding: const EdgeInsets.symmetric(horizontal: 4),
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
                               ),
                               onPressed: _simulatePhotoCapture,
                               child: Row(
@@ -916,7 +986,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                                       ),
                                     ),
                                   ] else ...[
-                                    const Icon(Icons.camera_alt_outlined, color: gold, size: 16),
+                                    const Icon(
+                                      Icons.camera_alt_outlined,
+                                      color: gold,
+                                      size: 16,
+                                    ),
                                     const SizedBox(width: 4),
                                     const Flexible(
                                       child: Text(
@@ -946,15 +1020,22 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
                                 disabledBackgroundColor: Colors.white12,
                                 foregroundColor: Colors.black,
                                 disabledForegroundColor: Colors.white38,
-                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
                                 elevation: 4,
                               ),
-                              onPressed: (_dropoffPhotoTaken && !_isCompleting) ? _completeDelivery : null,
+                              onPressed: (_dropoffPhotoTaken && !_isCompleting)
+                                  ? _completeDelivery
+                                  : null,
                               child: _isCompleting
                                   ? const SizedBox(
                                       width: 20,
                                       height: 20,
-                                      child: CircularProgressIndicator(strokeWidth: 2, color: Colors.black),
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        color: Colors.black,
+                                      ),
                                     )
                                   : const Text(
                                       'COMPLETE RUN',
@@ -1009,12 +1090,20 @@ class _EarningsCelebrationModal extends StatelessWidget {
               color: Color(0xFF0F2618),
               shape: BoxShape.circle,
             ),
-            child: const Icon(Icons.check_circle_rounded, color: Colors.greenAccent, size: 48),
+            child: const Icon(
+              Icons.check_circle_rounded,
+              color: Colors.greenAccent,
+              size: 48,
+            ),
           ),
           const SizedBox(height: 16),
           const Text(
             'Batch Completed!',
-            style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.w900),
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 22,
+              fontWeight: FontWeight.w900,
+            ),
           ),
           const SizedBox(height: 4),
           Text(
@@ -1033,7 +1122,12 @@ class _EarningsCelebrationModal extends StatelessWidget {
               children: [
                 const Text(
                   'TOTAL ADDED TO BALANCE',
-                  style: TextStyle(color: Colors.white38, fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 0.8),
+                  style: TextStyle(
+                    color: Colors.white38,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 0.8,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -1049,10 +1143,17 @@ class _EarningsCelebrationModal extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Base Pay: \$${basePay.toStringAsFixed(2)}', style: const TextStyle(color: Colors.white70, fontSize: 12)),
+                    Text(
+                      'Base Pay: \$${basePay.toStringAsFixed(2)}',
+                      style: const TextStyle(color: Colors.white70, fontSize: 12),
+                    ),
                     Text(
                       '100% Tip: +\$${tip.toStringAsFixed(2)}',
-                      style: const TextStyle(color: Colors.greenAccent, fontSize: 12, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                        color: Colors.greenAccent,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ],
                 ),
@@ -1067,12 +1168,18 @@ class _EarningsCelebrationModal extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: gold,
                 foregroundColor: Colors.black,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
               ),
               onPressed: onFinish,
               child: const Text(
                 'BACK TO DISPATCH MAP',
-                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 14, letterSpacing: 0.5),
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 14,
+                  letterSpacing: 0.5,
+                ),
               ),
             ),
           ),
