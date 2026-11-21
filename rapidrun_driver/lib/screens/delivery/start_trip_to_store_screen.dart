@@ -16,6 +16,7 @@ import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/smooth_navigation_tracker.dart';
+import '../../services/store_arrival_gate.dart';
 import '../shopping/in_store_picking_screen.dart';
 
 class StartTripToStoreScreen extends StatefulWidget {
@@ -66,10 +67,13 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
   bool _muted = false;
   bool _mapReady = false;
   bool _hasInitialRoute = false;
+  bool _debugForceArrivalUnlocked = false;
   double _distanceMiles = 0.0;
   int _etaMinutes = 0;
   DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
+
+  final StoreArrivalGate _arrivalGate = StoreArrivalGate();
 
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
@@ -353,6 +357,33 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
     if (await canLaunchUrl(navUri)) {
       await launchUrl(navUri);
     }
+  }
+
+  void _handleArrivedAtStoreTap() {
+    final status = _arrivalGate.evaluate(
+      currentLocation: _snappedLoc,
+      storeLocation: _storeLoc,
+      radiusMeters: 75.0,
+    );
+
+    final canArrive = status.isWithinRadius || _debugForceArrivalUnlocked;
+    if (!canArrive) {
+      HapticFeedback.selectionClick();
+      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: const Color(0xFF1E222B),
+          content: Text(
+            '📍 ${status.distanceLabel} from ${widget.storeName}. Get within 246 ft (75m) to mark arrived.',
+            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+          ),
+        ),
+      );
+      return;
+    }
+
+    _arrivedAtStoreAndPick();
   }
 
   void _arrivedAtStoreAndPick() {
@@ -903,26 +934,63 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen>
                       children: [
                         Expanded(
                           flex: 3,
-                          child: SizedBox(
-                            height: 50,
-                            child: ElevatedButton.icon(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF4ADE80),
-                                foregroundColor: Colors.black,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(14),
+                          child: GestureDetector(
+                            onLongPress: () {
+                              HapticFeedback.mediumImpact();
+                              setState(() => _debugForceArrivalUnlocked = !_debugForceArrivalUnlocked);
+                              ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  behavior: SnackBarBehavior.floating,
+                                  backgroundColor: const Color(0xFFE5A93C),
+                                  content: Text(
+                                    _debugForceArrivalUnlocked
+                                        ? '🛠️ QA OVERRIDE: Arrival Unlocked'
+                                        : '🔒 QA OVERRIDE: Proximity Gate Enforced',
+                                    style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                                  ),
                                 ),
-                              ),
-                              onPressed: _arrivedAtStoreAndPick,
-                              icon: const Icon(Icons.storefront_rounded, size: 20),
-                              label: const Text(
-                                'ARRIVED AT STORE • START PICKING',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w900,
-                                  fontSize: 13,
-                                  letterSpacing: 0.4,
-                                ),
-                              ),
+                              );
+                            },
+                            child: Builder(
+                              builder: (ctx) {
+                                final arrivalStatus = _arrivalGate.evaluate(
+                                  currentLocation: _snappedLoc,
+                                  storeLocation: _storeLoc,
+                                  radiusMeters: 75.0,
+                                );
+                                final bool canConfirm = arrivalStatus.isWithinRadius || _debugForceArrivalUnlocked;
+
+                                return SizedBox(
+                                  height: 50,
+                                  child: ElevatedButton.icon(
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: canConfirm ? const Color(0xFF4ADE80) : Colors.white12,
+                                      foregroundColor: canConfirm ? Colors.black : Colors.white54,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(14),
+                                      ),
+                                    ),
+                                    onPressed: _handleArrivedAtStoreTap,
+                                    icon: Icon(
+                                      canConfirm ? Icons.storefront_rounded : Icons.lock_clock_rounded,
+                                      size: 20,
+                                    ),
+                                    label: Text(
+                                      canConfirm
+                                          ? 'ARRIVED AT STORE • START PICKING'
+                                          : 'ARRIVE (${arrivalStatus.distanceLabel})',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 12.5,
+                                        letterSpacing: 0.3,
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              },
                             ),
                           ),
                         ),

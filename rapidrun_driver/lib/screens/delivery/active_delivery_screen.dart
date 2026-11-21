@@ -17,6 +17,7 @@ import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
 import '../../services/arrival_proximity_helper.dart';
+import '../../services/store_arrival_gate.dart';
 import '../../services/smooth_navigation_tracker.dart';
 import '../../services/unified_driver_wallet_controller.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
@@ -58,6 +59,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
   GoogleMapController? _mapController;
   final PhoneHeadingController _phoneHeading = PhoneHeadingController();
   final ArrivalProximityHelper _proximityHelper = ArrivalProximityHelper();
+  final StoreArrivalGate _arrivalGate = StoreArrivalGate();
   final SmoothNavigationTracker _navTracker = SmoothNavigationTracker();
 
   LatLng _currentLoc = const LatLng(32.7482, -97.4248);
@@ -85,6 +87,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
   bool _isProgrammaticMove = false;
   bool _mapReady = false;
   bool _hasInitialRoute = false;
+  bool _debugForceCustomerArrivalUnlocked = false;
   DateTime _lastCameraMoveAt = DateTime.fromMillisecondsSinceEpoch(0);
 
   BitmapDescriptor _driverPuckIcon =
@@ -976,34 +979,81 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen>
                   ),
                   const SizedBox(height: 12),
                   if (!_arrivedAtCustomer) ...[
-                    SizedBox(
-                      height: 48,
-                      child: ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: gold,
-                          foregroundColor: Colors.black,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14),
+                    GestureDetector(
+                      onLongPress: () {
+                        HapticFeedback.mediumImpact();
+                        setState(() => _debugForceCustomerArrivalUnlocked = !_debugForceCustomerArrivalUnlocked);
+                        ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            behavior: SnackBarBehavior.floating,
+                            backgroundColor: const Color(0xFFE5A93C),
+                            content: Text(
+                              _debugForceCustomerArrivalUnlocked
+                                  ? '🛠️ QA OVERRIDE: Customer Arrival Unlocked'
+                                  : '🔒 QA OVERRIDE: Customer Proximity Enforced',
+                              style: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                            ),
                           ),
-                          elevation: 4,
-                        ),
-                        onPressed: () {
-                          HapticFeedback.heavyImpact();
-                          setState(() => _arrivedAtCustomer = true);
+                        );
+                      },
+                      child: Builder(
+                        builder: (ctx) {
+                          final arrivalStatus = _arrivalGate.evaluate(
+                            currentLocation: _snappedLoc,
+                            storeLocation: _customerLoc,
+                            radiusMeters: 75.0,
+                          );
+                          final bool canArrive = arrivalStatus.isWithinRadius || _debugForceCustomerArrivalUnlocked;
+
+                          return SizedBox(
+                            height: 48,
+                            child: ElevatedButton.icon(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: canArrive ? gold : Colors.white12,
+                                foregroundColor: canArrive ? Colors.black : Colors.white54,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                elevation: 4,
+                              ),
+                              onPressed: () {
+                                if (!canArrive) {
+                                  HapticFeedback.selectionClick();
+                                  ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      behavior: SnackBarBehavior.floating,
+                                      backgroundColor: const Color(0xFF1E222B),
+                                      content: Text(
+                                        '📍 ${arrivalStatus.distanceLabel} from ${widget.customerName}. Get within 246 ft (75m) to mark arrived.',
+                                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  );
+                                  return;
+                                }
+                                HapticFeedback.heavyImpact();
+                                setState(() => _arrivedAtCustomer = true);
+                              },
+                              icon: Icon(
+                                canArrive ? Icons.location_on_rounded : Icons.lock_clock_rounded,
+                                color: canArrive ? Colors.black : Colors.white54,
+                                size: 18,
+                              ),
+                              label: Text(
+                                canArrive
+                                    ? 'ARRIVED AT CUSTOMER'
+                                    : 'ARRIVE (${arrivalStatus.distanceLabel})',
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 13.5,
+                                  letterSpacing: 0.5,
+                                ),
+                              ),
+                            ),
+                          );
                         },
-                        icon: const Icon(
-                          Icons.location_on_rounded,
-                          color: Colors.black,
-                          size: 18,
-                        ),
-                        label: const Text(
-                          'ARRIVED AT CUSTOMER',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 13.5,
-                            letterSpacing: 0.5,
-                          ),
-                        ),
                       ),
                     ),
                   ] else ...[
