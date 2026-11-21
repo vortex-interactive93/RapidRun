@@ -54,6 +54,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   StreamSubscription<Position>? _positionSub;
 
   LatLng _currentLoc = const LatLng(32.7482, -97.4248);
+  LatLng _snappedLoc = const LatLng(32.7482, -97.4248);
   double _heading = 0.0;
   late final LatLng _customerLoc;
 
@@ -115,7 +116,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
       );
 
       setState(() {
-        _currentLoc = eval.snappedLocation;
+        _currentLoc = updated;
+        _snappedLoc = eval.snappedLocation;
         _activeStepIndex = eval.activeStepIndex;
         if (position.heading > 0) _heading = position.heading;
       });
@@ -190,11 +192,11 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
     if (_mapController == null) return;
     _isProgrammaticMove = true;
     final cameraPos = DriverCameraHelper.buildForward3DCamera(
-      driverLocation: _currentLoc,
+      driverLocation: _snappedLoc,
       bearingDegrees: _heading,
-      zoom: 17.6,
-      tilt: 58.0,
-      lookAheadMeters: 65.0,
+      zoom: 18.2,
+      tilt: 62.0,
+      lookAheadMeters: 95.0,
     );
     await _mapController!.animateCamera(
       CameraUpdate.newCameraPosition(cameraPos),

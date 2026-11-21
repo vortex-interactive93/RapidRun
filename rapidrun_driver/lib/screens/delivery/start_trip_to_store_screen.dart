@@ -195,9 +195,9 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     final cameraPos = DriverCameraHelper.buildForward3DCamera(
       driverLocation: _snappedLoc,
       bearingDegrees: _heading,
-      zoom: 17.6,
-      tilt: 58.0,
-      lookAheadMeters: 65.0,
+      zoom: 18.2,
+      tilt: 62.0,
+      lookAheadMeters: 95.0,
     );
     await _mapController!.animateCamera(
       CameraUpdate.newCameraPosition(cameraPos),

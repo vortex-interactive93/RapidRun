@@ -3,8 +3,10 @@
 import 'dart:math' as math;
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-/// Computes a 3D first-person driving CameraPosition that places the driver
-/// slightly down-screen and looks ahead along the current travel bearing.
+/// Computes a 3D first-person driving CameraPosition matching Google Maps navigation:
+/// - Places driver vehicle puck at bottom ~15% of screen
+/// - Rotates camera bearing to driver travel direction
+/// - Tilts 3D perspective to 62° for deep street visibility ahead
 class DriverCameraHelper {
   DriverCameraHelper._();
 
@@ -37,14 +39,13 @@ class DriverCameraHelper {
     return LatLng(lat2 * 180.0 / math.pi, lon2 * 180.0 / math.pi);
   }
 
-  /// Shifts camera target forward along [bearingDegrees] so the driver has
-  /// generous forward visibility down the upcoming street/turn.
+  /// Builds a 3D first-person driving camera position anchored at bottom 15% of screen
   static CameraPosition buildForward3DCamera({
     required LatLng driverLocation,
     required double bearingDegrees,
-    double zoom = 17.6,
-    double tilt = 58.0,
-    double lookAheadMeters = 65.0,
+    double zoom = 18.2,
+    double tilt = 62.0,
+    double lookAheadMeters = 95.0,
   }) {
     final lookAheadTarget = offsetCoordinate(
       origin: driverLocation,
