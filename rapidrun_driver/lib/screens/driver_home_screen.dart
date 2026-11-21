@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 
@@ -19,6 +20,7 @@ import '../widgets/order/transparent_batch_offer_card.dart';
 import 'shell/driver_drawer.dart';
 import 'shopping/in_store_picking_screen.dart';
 import 'delivery/active_delivery_screen.dart';
+import 'delivery/start_trip_to_store_screen.dart';
 import 'wallet/driver_cashout_sheet.dart';
 import 'earnings/earnings_dashboard_screen.dart';
 import 'driver_menu/trip_history_screen.dart';
@@ -93,23 +95,44 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     }
   }
 
+  Future<LatLng> _resolveDriverCurrentLatLng() async {
+    try {
+      final serviceEnabled = await Geolocator.isLocationServiceEnabled();
+      if (!serviceEnabled) return const LatLng(32.7568, -97.4768);
+
+      var permission = await Geolocator.checkPermission();
+      if (permission == LocationPermission.denied) {
+        permission = await Geolocator.requestPermission();
+      }
+      if (permission == LocationPermission.denied ||
+          permission == LocationPermission.deniedForever) {
+        return const LatLng(32.7568, -97.4768);
+      }
+
+      final pos = await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high,
+      );
+      return LatLng(pos.latitude, pos.longitude);
+    } catch (e) {
+      debugPrint('Live GPS fallback notice: $e');
+      return const LatLng(32.7568, -97.4768);
+    }
+  }
+
   Future<void> _updateOfferRoute(
     Map<String, dynamic> offer, {
     DriverRoutingPreference? preference,
   }) async {
     if (preference != null) _currentRoutePref = preference;
 
+    final driverOrigin = await _resolveDriverCurrentLatLng();
     final double storeLat = (offer['storeLat'] as num?)?.toDouble() ?? 32.7482;
     final double storeLng = (offer['storeLng'] as num?)?.toDouble() ?? -97.4248;
-    final double custLat = (offer['customerLat'] as num?)?.toDouble() ?? 32.7596;
-    final double custLng = (offer['customerLng'] as num?)?.toDouble() ?? -97.4714;
-
     final storePoint = LatLng(storeLat, storeLng);
-    final custPoint = LatLng(custLat, custLng);
 
     final routePoints = await RoutePolylineService.instance.getDrivingRoute(
-      origin: storePoint,
-      destination: custPoint,
+      origin: driverOrigin,
+      destination: storePoint,
       preference: _currentRoutePref,
     );
 
@@ -720,12 +743,17 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
         );
       }).toList();
 
+      // Route to StartTripToStoreScreen first so the driver can pull live GPS,
+      // see the route to the store, start navigation, and confirm store arrival.
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (_) => InStorePickingScreen(
+          builder: (_) => StartTripToStoreScreen(
             orderId: orderId,
-            storeName: (data['storeName'] ?? 'Store').toString(),
+            storeName: (data['storeName'] ?? 'Bath & Body Works').toString(),
+            storeAddress: (data['storeAddress'] ?? 'Westover Village').toString(),
+            storeLat: (data['storeLat'] as num?)?.toDouble() ?? 32.7482,
+            storeLng: (data['storeLng'] as num?)?.toDouble() ?? -97.4248,
             items: itemsList,
           ),
         ),
