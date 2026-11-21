@@ -10,6 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../presentation/home/map_styles/midnight_titanium.dart';
 import '../../services/driver_camera_helper.dart';
+import '../../services/phone_heading_controller.dart';
 import '../../services/nav_voice_guidance.dart';
 import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
@@ -66,6 +67,8 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
   int _etaMinutes = 0;
   DateTime _lastRerouteAt = DateTime.fromMillisecondsSinceEpoch(0);
 
+  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+
   BitmapDescriptor _storeMarkerIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
   BitmapDescriptor _driverPuckIcon =
@@ -76,6 +79,15 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
     super.initState();
     _storeLoc = LatLng(widget.storeLat, widget.storeLng);
     NavVoiceGuidance.instance.resetTrip();
+    _phoneHeading.startListening(
+      onHeadingChanged: (deg) {
+        if (!mounted || _speedMps >= 2.2) return;
+        setState(() => _chevronHeading360 = deg);
+        if (_tripStarted && _followCamera) {
+          _applyNavigationCamera();
+        }
+      },
+    );
     _loadMarkers();
     _initLocationAndRoute();
   }
@@ -139,18 +151,11 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
           ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
           : snappedState.roadBearing;
 
-      final double blendedTarget = (pos.heading > 0 && pos.speed > 1.2)
-          ? DriverCameraHelper.lerpAngleDegrees(travelDeg, pos.heading, 0.35)
-          : DriverCameraHelper.lerpAngleDegrees(
-              snappedState.roadBearing,
-              travelDeg,
-              0.55,
-            );
-
-      final double smoothHeading = DriverCameraHelper.lerpAngleDegrees(
-        _chevronHeading360,
-        blendedTarget,
-        0.5,
+      final double speedMpsVal = pos.speed.clamp(0.0, 60.0);
+      final double smoothHeading = _phoneHeading.updateHeading(
+        movementOrRoadBearingDeg: travelDeg,
+        speedMps: speedMpsVal,
+        gpsHeadingDeg: pos.heading > 0 ? pos.heading : null,
       );
 
       _previousRawLoc = raw;
@@ -342,6 +347,7 @@ class _StartTripToStoreScreenState extends State<StartTripToStoreScreen> {
 
   @override
   void dispose() {
+    _phoneHeading.dispose();
     _posSub?.cancel();
     _mapController?.dispose();
     super.dispose();

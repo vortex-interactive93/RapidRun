@@ -12,6 +12,7 @@ import 'package:rapidrun_shared/rapidrun_shared.dart';
 import '../../services/driver_dispatch_listener.dart';
 import '../../services/driver_auth_guard.dart';
 import '../../services/driver_camera_helper.dart';
+import '../../services/phone_heading_controller.dart';
 import '../../services/rapidrun_map_markers.dart';
 import '../../services/route_navigation_helper.dart';
 import '../../services/route_polyline_service.dart';
@@ -78,6 +79,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   bool _isProgrammaticMove = false;
   bool _mapReady = false;
 
+  final PhoneHeadingController _phoneHeading = PhoneHeadingController();
+
   BitmapDescriptor _driverPuckIcon =
       BitmapDescriptor.defaultMarkerWithHue(BitmapDescriptor.hueYellow);
   BitmapDescriptor _customerPinIcon =
@@ -87,6 +90,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
   void initState() {
     super.initState();
     _customerLoc = LatLng(widget.customerLat, widget.customerLng);
+    _phoneHeading.startListening(
+      onHeadingChanged: (deg) {
+        if (!mounted || _speedMps >= 2.2) return;
+        setState(() => _chevronHeading360 = deg);
+        if (_followCamera && _mapController != null) {
+          _animate3DFollowCamera();
+        }
+      },
+    );
     _loadCustomMarkers();
     _initTelemetryAndRoute();
   }
@@ -150,18 +162,15 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         raw.longitude,
       );
 
-      final double travelBearing = movedMeters > 2.5
+      final double travelBearing = movedMeters > 2.0
           ? DriverCameraHelper.bearingBetween(_previousRawLoc, raw)
           : snappedState.roadBearing;
 
-      final double desiredHeading = position.heading > 0 && position.speed > 1.0
-          ? DriverCameraHelper.lerpAngleDegrees(travelBearing, position.heading, 0.35)
-          : DriverCameraHelper.lerpAngleDegrees(snappedState.roadBearing, travelBearing, 0.5);
-
-      final double smooth360Heading = DriverCameraHelper.lerpAngleDegrees(
-        _chevronHeading360,
-        desiredHeading,
-        0.45,
+      final double speedMpsVal = position.speed.clamp(0.0, 60.0);
+      final double smoothHeading = _phoneHeading.updateHeading(
+        movementOrRoadBearingDeg: travelBearing,
+        speedMps: speedMpsVal,
+        gpsHeadingDeg: position.heading > 0 ? position.heading : null,
       );
 
       _previousRawLoc = raw;
@@ -183,8 +192,8 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
         _remainingRoutePoints = snappedState.remainingPoints.isNotEmpty
             ? snappedState.remainingPoints
             : _fullRoutePoints;
-        _roadBearing = smooth360Heading;
-        _chevronHeading360 = smooth360Heading;
+        _roadBearing = smoothHeading;
+        _chevronHeading360 = smoothHeading;
         _speedMps = position.speed.clamp(0.0, 60.0);
         _activeStepIndex = snappedState.activeStepIndex;
         _distanceMiles = miles;
@@ -313,6 +322,7 @@ class _ActiveDeliveryScreenState extends State<ActiveDeliveryScreen> {
 
   @override
   void dispose() {
+    _phoneHeading.dispose();
     _positionSub?.cancel();
     _mapController?.dispose();
     super.dispose();
