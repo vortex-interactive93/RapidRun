@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:rapidrun_shared/rapidrun_shared.dart';
 
 import '../presentation/home/map_styles/midnight_titanium.dart';
 import '../presentation/home/tactical_flight_deck.dart';
@@ -35,7 +34,8 @@ class DriverHomeScreen extends StatefulWidget {
   State<DriverHomeScreen> createState() => _DriverHomeScreenState();
 }
 
-class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProviderStateMixin {
+class _DriverHomeScreenState extends State<DriverHomeScreen>
+    with TickerProviderStateMixin {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   GoogleMapController? _map;
 
@@ -51,8 +51,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     zoom: 14.5,
   );
 
-  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _driverSub;
-  StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _tipBoostSub;
+  StreamSubscription<DocumentSnapshot>? _driverSub;
+  StreamSubscription<QuerySnapshot>? _tipBoostSub;
   Set<Polyline> _activeOfferPolylines = {};
   DriverRoutingPreference _currentRoutePref = DriverRoutingPreference.ecoFriendly;
 
@@ -79,7 +79,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     _setSystemUI();
     _subscribeDriver();
     _listenForIncomingTipBoosts();
-    DriverDispatchListener.instance.activeOfferNotifier.addListener(_handleOfferStateChange);
+    DriverDispatchListener.instance.activeOfferNotifier
+        .addListener(_handleOfferStateChange);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       DriverDispatchListener.instance.initializeAutoDispatch(context);
@@ -120,9 +121,9 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
   }
 
   Future<void> _updateOfferRoute(
-    Map<String, dynamic> offer, {
-    DriverRoutingPreference? preference,
-  }) async {
+      Map<String, dynamic> offer, {
+        DriverRoutingPreference? preference,
+      }) async {
     if (preference != null) _currentRoutePref = preference;
 
     final driverOrigin = await _resolveDriverCurrentLatLng();
@@ -250,31 +251,30 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
         final String token = data['boostToken']?.toString() ?? doc.id;
         final double incrementalBoost =
             (data['pendingBoostAmount'] as num?)?.toDouble() ??
-            (data['tipBoost'] as num?)?.toDouble() ??
-            0.0;
+                (data['tipBoost'] as num?)?.toDouble() ??
+                0.0;
 
-        // Guard against duplicate execution or re-entrancy snapshots
         if (_processedBoostTokens.contains(token) || incrementalBoost <= 0) {
           continue;
         }
         _processedBoostTokens.add(token);
 
-        // 1. Immediately consume pending state and clear pendingBoostAmount on order
         await doc.reference.update({
           'tipBoostPending': false,
           'pendingBoostAmount': FieldValue.delete(),
         });
 
-        // 2. Record tip boost in UnifiedDriverWalletController (idempotent single source of truth)
         UnifiedDriverWalletController.instance.recordTipBoost(
           boostEventId: token,
           orderId: doc.id,
           incrementalBoost: incrementalBoost,
         );
 
-        // 3. Persist exact wallet totals to Firestore drivers doc
         final wallet = UnifiedDriverWalletController.instance;
-        await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
+        await FirebaseFirestore.instance
+            .collection('drivers')
+            .doc(widget.driverId)
+            .set({
           'todayEarnings': wallet.todayEarnings,
           'thisWeekEarnings': wallet.thisWeekEarnings,
           'balance': wallet.availableCashout,
@@ -284,7 +284,6 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
 
-        // 4. Trigger celebration banner
         HapticFeedback.heavyImpact();
         HapticFeedback.heavyImpact();
         if (mounted) {
@@ -303,12 +302,20 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'CUSTOMER TIP BOOST! 🚀',
-                          style: TextStyle(color: Colors.black, fontWeight: FontWeight.w900, fontSize: 12),
+                          'CUSTOMER TIP BOOST!',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 12,
+                          ),
                         ),
                         Text(
                           'Customer added an extra +\$${incrementalBoost.toStringAsFixed(2)} for great service!',
-                          style: const TextStyle(color: Colors.black87, fontSize: 11, fontWeight: FontWeight.w600),
+                          style: const TextStyle(
+                            color: Colors.black87,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ],
                     ),
@@ -334,13 +341,15 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     });
   }
 
-  /// Sets driver online with minimum 4 hours active time
   Future<void> _setOnlineWith4Hours() async {
     HapticFeedback.heavyImpact();
     final until = DateTime.now().add(const Duration(hours: 4));
 
     try {
-      await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
+      await FirebaseFirestore.instance
+          .collection('drivers')
+          .doc(widget.driverId)
+          .set({
         'online': true,
         'active': true,
         'availableUntil': Timestamp.fromDate(until),
@@ -362,7 +371,10 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     _countdownTimer?.cancel();
 
     try {
-      await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
+      await FirebaseFirestore.instance
+          .collection('drivers')
+          .doc(widget.driverId)
+          .set({
         'online': false,
         'availableUntil': null,
         'updatedAt': FieldValue.serverTimestamp(),
@@ -381,7 +393,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
     if (!_online) {
       _setOnlineWith4Hours();
     } else {
-      final remaining = _availableUntil?.difference(DateTime.now()) ?? const Duration(hours: 4);
+      final remaining =
+          _availableUntil?.difference(DateTime.now()) ?? const Duration(hours: 4);
 
       showModalBottomSheet(
         context: context,
@@ -390,7 +403,10 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
           remainingDuration: remaining,
           onAdjustRemaining: (newDuration) async {
             final newUntil = DateTime.now().add(newDuration);
-            await FirebaseFirestore.instance.collection('drivers').doc(widget.driverId).set({
+            await FirebaseFirestore.instance
+                .collection('drivers')
+                .doc(widget.driverId)
+                .set({
               'availableUntil': Timestamp.fromDate(newUntil),
             }, SetOptions(merge: true));
             setState(() => _availableUntil = newUntil);
@@ -415,7 +431,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
 
   @override
   void dispose() {
-    DriverDispatchListener.instance.activeOfferNotifier.removeListener(_handleOfferStateChange);
+    DriverDispatchListener.instance.activeOfferNotifier
+        .removeListener(_handleOfferStateChange);
     _driverSub?.cancel();
     _tipBoostSub?.cancel();
     _countdownTimer?.cancel();
@@ -463,231 +480,267 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
       ),
       body: Stack(
         children: [
-          Positioned.fill(
-            child: RepaintBoundary(
-              child: GoogleMap(
-                initialCameraPosition: _initialCamera,
-                cloudMapId: rapidRunCloudMapId,
-                myLocationEnabled: true,
-                myLocationButtonEnabled: false,
-                zoomControlsEnabled: false,
-                buildingsEnabled: true,
-                indoorViewEnabled: true,
-                polygons: _online ? _surgePolygons : {},
-                polylines: _online ? _activeOfferPolylines : {},
-                onMapCreated: (controller) async {
-                  _map = controller;
-                  if (mounted) setState(() => _mapReady = true);
-                },
-              ),
-            ),
-          ),
-          IgnorePointer(
-            ignoring: _mapReady,
-            child: AnimatedOpacity(
-              duration: const Duration(milliseconds: 400),
-              curve: Curves.easeOut,
-              opacity: _mapReady ? 0.0 : 1.0,
-              child: Container(color: const Color(0xFF121418)),
-            ),
-          ),
-          ListenableBuilder(
-            listenable: UnifiedDriverWalletController.instance,
-            builder: (context, _) {
-              return TacticalFlightDeck(
-                isOnline: _online,
-                remainingTime: _online ? remaining : null,
-                todayEarnings: UnifiedDriverWalletController.instance.todayEarnings,
-                onToggleOnline: _handleStatusTap,
-                onOpenDrawer: () => _scaffoldKey.currentState?.openDrawer(),
-                onRecenterMap: () async {
-                  HapticFeedback.selectionClick();
-                  final liveLoc = await _resolveDriverCurrentLatLng();
-                  if (!mounted || _map == null) return;
-                  await _map!.animateCamera(
-                    CameraUpdate.newCameraPosition(
-                      CameraPosition(
-                        target: liveLoc,
-                        zoom: 16.4,
-                        tilt: 32.0,
-                        bearing: 0.0,
-                      ),
-                    ),
-                  );
-                },
-                onOpenWallet: _openCashoutSheet,
-              );
-            },
-          ),
-
-          // 4. Persistent Tactical Demand & Surge Radar Base
-          const Positioned(
-            left: 0,
-            right: 0,
-            bottom: 12,
-            child: RepaintBoundary(
-              child: TacticalDemandDeck(),
-            ),
-          ),
-
-          // 5. In-Tree Floating Batch Offer (Floats 18px directly above Demand Deck)
-          ValueListenableBuilder<Map<String, dynamic>?>(
-            valueListenable: DriverDispatchListener.instance.activeOfferNotifier,
-            builder: (context, activeOffer, _) {
-              if (activeOffer == null) return const SizedBox.shrink();
-
-              return Positioned(
-                left: 14,
-                right: 14,
-                bottom: 210, // Perfectly clears the ~192px Demand Deck + 18px air gap
-                child: TweenAnimationBuilder<double>(
-                  duration: const Duration(milliseconds: 320),
-                  curve: Curves.easeOutCubic,
-                  tween: Tween(begin: 0.0, end: 1.0),
-                  builder: (context, progress, child) {
-                    return Transform.translate(
-                      offset: Offset(0, (1.0 - progress) * 80),
-                      child: Opacity(
-                        opacity: progress,
-                        child: child,
-                      ),
-                    );
-                  },
-                  child: RepaintBoundary(
-                    child: TransparentBatchOfferCard(
-                      offer: activeOffer,
-                      onPreferenceChanged: (pref) {
-                        _updateOfferRoute(activeOffer, preference: pref);
-                      },
-                      onAccept: () async {
-                        final orderId = activeOffer['orderId'];
-                        await _claimAndAcceptBatch(orderId, activeOffer);
-                      },
-                      onDecline: () {
-                        HapticFeedback.lightImpact();
-                        _clearBatchOfferRoute();
-                        DriverDispatchListener.instance.dismissOffer();
-                      },
-                    ),
-                  ),
-                ),
-              );
-            },
-          ),
-
-          // 6. In-Flight Active Order Recovery Banner
-          _buildActiveOrderRecoveryBanner(),
-        ],
+      // Isolate GoogleMap inside RepaintBoundary so pan, zoom, and tilt stay
+      // separate from surrounding HUD widget rebuilds.
+      Positioned.fill(
+      child: RepaintBoundary(
+      child: GoogleMap(
+        initialCameraPosition: _initialCamera,
+        cloudMapId:
+        rapidRunCloudMapId.isNotEmpty ? rapidRunCloudMapId : null,
+        myLocationEnabled: true,
+        myLocationButtonEnabled: false,
+        zoomControlsEnabled: false,
+        buildingsEnabled: true,
+        indoorViewEnabled: true,
+        polygons: _online ? _surgePolygons : {},
+        polylines: _online ? _activeOfferPolylines : {},
+        onMapCreated: (controller) async {
+          _map = controller;
+          if (mounted) setState(() => _mapReady = true);
+        },
       ),
+    ),
+    ),
+    IgnorePointer(
+    ignoring: _mapReady,
+    child: AnimatedOpacity(
+    duration: const Duration(milliseconds: 400),
+    curve: Curves.fastOutSlowIn,
+    opacity: _mapReady ? 0.0 : 1.0,
+    child: Container(color: const Color(0xFF121418)),
+    ),
+    ),
+    ListenableBuilder(
+    listenable: UnifiedDriverWalletController.instance,
+    builder: (context, _) {
+    return TacticalFlightDeck(
+    isOnline: _online,
+    remainingTime: _online ? remaining : null,
+    todayEarnings:
+    UnifiedDriverWalletController.instance.todayEarnings,
+    onToggleOnline: _handleStatusTap,
+    onOpenDrawer: () => _scaffoldKey.currentState?.openDrawer(),
+    onRecenterMap: () async {
+    HapticFeedback.selectionClick();
+    final liveLoc = await _resolveDriverCurrentLatLng();
+    if (!mounted || _map == null) return;
+    await _map!.animateCamera(
+    CameraUpdate.newCameraPosition(
+    CameraPosition(
+    target: liveLoc,
+    zoom: 16.4,
+    tilt: 32.0,
+    bearing: 0.0,
+    ),
+    ),
+    );
+    },
+    onOpenWallet: _openCashoutSheet,
+    );
+    },
+    ),
+
+    // 4. Persistent Tactical Demand & Surge Radar Base
+    const Positioned(
+    left: 0,
+    right: 0,
+    bottom: 12,
+    child: RepaintBoundary(
+    child: TacticalDemandDeck(),
+    ),
+    ),
+
+    // 5. In-Tree Floating Batch Offer (Floats 18px directly above Demand Deck)
+    ValueListenableBuilder<Map<String, dynamic>?>(
+    valueListenable: DriverDispatchListener.instance.activeOfferNotifier,
+    builder: (context, activeOffer, _) {
+    if (activeOffer == null) return const SizedBox.shrink();
+
+    return Positioned(
+    left: 14,
+    right: 14,
+    bottom: 210,
+    child: TweenAnimationBuilder<double>(
+    duration: const Duration(milliseconds: 320),
+    curve: Curves.fastOutSlowIn,
+    tween: Tween(begin: 0.0, end: 1.0),
+    builder: (context, progress, child) {
+    return Transform.translate(
+    offset: Offset(0, (1.0 - progress) * 80),
+    child: Opacity(
+    opacity: progress,
+    child: child,
+    ),
+    );
+    },
+    child: RepaintBoundary(
+    child: TransparentBatchOfferCard(
+    offer: activeOffer,
+    onPreferenceChanged: (pref) {
+    _updateOfferRoute(activeOffer, preference: pref);
+    },
+    onAccept: () async {
+    final orderId = activeOffer['orderId'];
+    await _claimAndAcceptBatch(orderId, activeOffer);
+    },
+    onDecline: () {
+    HapticFeedback.lightImpact();
+    _clearBatchOfferRoute();
+    DriverDispatchListener.instance.dismissOffer();
+    },
+    ),
+    ),
+    ),
+    );
+    },
+    ),
+
+    // 6. In-Flight Active Order Recovery Banner
+    _buildActiveOrderRecoveryBanner(),
+    ],
+    ),
     );
   }
 
   Widget _buildActiveOrderRecoveryBanner() {
     return StreamBuilder<DocumentSnapshot<Map<String, dynamic>>>(
-      stream: FirebaseFirestore.instance
-          .collection('drivers')
-          .doc(widget.driverId)
-          .snapshots(),
-      builder: (context, snapshot) {
-        if (!snapshot.hasData || !snapshot.data!.exists) return const SizedBox.shrink();
-        final data = snapshot.data!.data() ?? {};
-        final activeOrderId = data['currentOrderId'] as String?;
+    stream: FirebaseFirestore.instance
+        .collection('drivers')
+        .doc(widget.driverId)
+        .snapshots(),
+    builder: (context, snapshot) {
+      if (!snapshot.hasData || !snapshot.data!.exists) {
+        return const SizedBox.shrink();
+      }
+      final data = snapshot.data!.data() ?? {};
+      final activeOrderId = data['currentOrderId'] as String?;
 
-        if (activeOrderId == null || activeOrderId.isEmpty) return const SizedBox.shrink();
+      if (activeOrderId == null || activeOrderId.isEmpty) {
+        return const SizedBox.shrink();
+      }
 
-        return FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
-          future: FirebaseFirestore.instance.collection('orders').doc(activeOrderId).get(),
-          builder: (context, orderSnap) {
-            if (!orderSnap.hasData || !orderSnap.data!.exists) return const SizedBox.shrink();
-            final orderData = orderSnap.data!.data() ?? {};
-            final status = orderData['status']?.toString() ?? '';
+      return FutureBuilder<DocumentSnapshot<Map<String, dynamic>>>(
+      future: FirebaseFirestore.instance
+          .collection('orders')
+          .doc(activeOrderId)
+          .get(),
+      builder: (context, orderSnap) {
+        if (!orderSnap.hasData || !orderSnap.data!.exists) {
+          return const SizedBox.shrink();
+        }
+        final orderData = orderSnap.data!.data() ?? {};
+        final status = orderData['status']?.toString() ?? '';
 
-            if (status == 'completed' || status == 'cancelled' || status == 'cancelled_stockout') {
-              return const SizedBox.shrink();
-            }
+        if (status == 'completed' ||
+            status == 'cancelled' ||
+            status == 'cancelled_stockout') {
+          return const SizedBox.shrink();
+        }
 
-            const gold = Color(0xFFE6B450);
+        const gold = Color(0xFFE6B450);
 
-            return Positioned(
-              left: 14,
-              right: 14,
-              bottom: 180,
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () => _resumeActiveOrder(activeOrderId, status, orderData),
+        return Positioned(
+          left: 14,
+          right: 14,
+          bottom: 180,
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () =>
+                  _resumeActiveOrder(activeOrderId, status, orderData),
+              borderRadius: BorderRadius.circular(18),
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF181B22).withValues(alpha: 0.95),
                   borderRadius: BorderRadius.circular(18),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF181B22).withValues(alpha: 0.95),
-                      borderRadius: BorderRadius.circular(18),
-                      border: Border.all(color: gold, width: 1.2),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.6),
-                          blurRadius: 18,
-                          offset: const Offset(0, 4),
-                        ),
-                      ],
+                  border: Border.all(color: gold, width: 1.2),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.6),
+                      blurRadius: 18,
+                      offset: const Offset(0, 4),
                     ),
-                    child: Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: BoxDecoration(
-                            color: gold.withValues(alpha: 0.15),
-                            shape: BoxShape.circle,
-                          ),
-                          child: const Icon(Icons.delivery_dining_rounded, color: gold, size: 20),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              const Text(
-                                'ACTIVE RUN IN PROGRESS',
-                                style: TextStyle(
-                                  color: gold,
-                                  fontSize: 9.5,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.5,
-                                ),
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                'Order #$activeOrderId • Tap to resume',
-                                style: const TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const Icon(Icons.arrow_forward_ios_rounded, color: gold, size: 14),
-                      ],
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: gold.withValues(alpha: 0.15),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.delivery_dining_rounded,
+                        color: gold,
+                        size: 20,
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text(
+                            'ACTIVE RUN IN PROGRESS',
+                            style: TextStyle(
+                              color: gold,
+                              fontSize: 9.5,
+                              fontWeight: FontWeight.w900,
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            'Order #$activeOrderId • Tap to resume',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      color: gold,
+                      size: 14,
+                    ),
+                  ],
                 ),
               ),
-            );
-          },
+            ),
+          ),
         );
       },
+      );
+    },
     );
   }
 
-  Future<void> _claimAndAcceptBatch(String orderId, Map<String, dynamic> orderData) async {
+  Future<void> _claimAndAcceptBatch(
+      String orderId,
+      Map<String, dynamic> orderData,
+      ) async {
     HapticFeedback.heavyImpact();
 
     try {
       final user = FirebaseAuth.instance.currentUser;
       final driverName = user?.displayName ??
-          (user?.email != null && user!.email!.contains('@') ? user.email!.split('@').first : 'Thomas Davis');
+          (user?.email != null && user!.email!.contains('@')
+              ? user.email!.split('@').first
+              : 'Thomas Davis');
       final batch = FirebaseFirestore.instance.batch();
 
-      // 1. Update Order Document -> Notifies Customer App Immediately!
-      final orderRef = FirebaseFirestore.instance.collection('orders').doc(orderId);
+      final orderRef =
+      FirebaseFirestore.instance.collection('orders').doc(orderId);
       batch.update(orderRef, {
         'status': 'shoppingActive',
         'driverId': widget.driverId,
@@ -697,18 +750,21 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
         'shopperAssignedAt': FieldValue.serverTimestamp(),
       });
 
-      // 2. Link Active Order to Driver Profile
-      final driverRef = FirebaseFirestore.instance.collection('drivers').doc(widget.driverId);
-      batch.set(driverRef, {
-        'currentOrderId': orderId,
-        'currentOrderStatus': 'shoppingActive',
-        'activeOrderId': orderId,
-        'updatedAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+      final driverRef =
+      FirebaseFirestore.instance.collection('drivers').doc(widget.driverId);
+      batch.set(
+        driverRef,
+        {
+          'currentOrderId': orderId,
+          'currentOrderStatus': 'shoppingActive',
+          'activeOrderId': orderId,
+          'updatedAt': FieldValue.serverTimestamp(),
+        },
+        SetOptions(merge: true),
+      );
 
       await batch.commit();
 
-      // 3. Clear Offer UI and Transition to Picking
       _clearBatchOfferRoute();
       DriverDispatchListener.instance.dismissOffer();
 
@@ -718,13 +774,20 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
       debugPrint('Error claiming batch: $e');
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to claim batch: $e'), backgroundColor: Colors.redAccent),
+          SnackBar(
+            content: Text('Failed to claim batch: $e'),
+            backgroundColor: Colors.redAccent,
+          ),
         );
       }
     }
   }
 
-  void _resumeActiveOrder(String orderId, String status, Map<String, dynamic> data) {
+  void _resumeActiveOrder(
+      String orderId,
+      String status,
+      Map<String, dynamic> data,
+      ) {
     HapticFeedback.heavyImpact();
 
     if (status == 'outForDelivery') {
@@ -736,7 +799,8 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
             customerName: (data['customerName'] ?? 'Customer').toString(),
             customerAddress: (data['customerAddress'] ?? '').toString(),
             customerLat: (data['customerLat'] as num?)?.toDouble() ?? 32.759602,
-            customerLng: (data['customerLng'] as num?)?.toDouble() ?? -97.471416,
+            customerLng:
+            (data['customerLng'] as num?)?.toDouble() ?? -97.471416,
             payout: (data['guaranteedPayout'] as num?)?.toDouble() ?? 12.50,
             tipAmount: (data['customerTip'] as num?)?.toDouble() ?? 5.00,
             bagCount: (data['bagCount'] as num?)?.toInt() ?? 1,
@@ -757,8 +821,6 @@ class _DriverHomeScreenState extends State<DriverHomeScreen> with TickerProvider
         );
       }).toList();
 
-      // Route to StartTripToStoreScreen first so the driver can pull live GPS,
-      // see the route to the store, start navigation, and confirm store arrival.
       Navigator.push(
         context,
         MaterialPageRoute(
